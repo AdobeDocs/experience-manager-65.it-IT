@@ -1,10 +1,12 @@
 ---
 title: Pubblicazione delle pagine
 description: Dopo aver creato e rivisto i contenuti nell’ambiente di authoring, li rende disponibili sul sito web pubblico.
+
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
+
 docset: aem65
 exl-id: 3f6aa06e-b5fd-4ab0-9ecc-14250cb3f55e
 solution: Experience Manager, Experience Manager Sites
@@ -12,11 +14,9 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 9%
-
+source-wordcount: '1032'
+ht-degree: 8%
 ---
-
 # Pubblicazione delle pagine{#publishing-pages}
 
 Dopo aver creato e rivisto i contenuti nell’ambiente di authoring, li rende disponibili sul sito web pubblico (l’ambiente di pubblicazione).
@@ -29,13 +29,13 @@ Puoi anche pubblicare/annullare la pubblicazione di una pagina immediatamente o 
 >
 >Alcuni termini relativi alla pubblicazione possono essere confusi:
 >
->* **Pubblicare/Annullare la pubblicazione**
+>* **Pubblica/Annulla pubblicazione**
 >  Termini principali per le azioni che consentono di rendere o meno i contenuti disponibili al pubblico nell’ambiente di pubblicazione.
 >
->* **Attivare/Disattivare**
+>* **Attiva/Disattiva**
 >  Sinonimi di pubblicare/annullare la pubblicazione.
 >
->* **Replicare/Replica**
+>* **Replica/Replica**
 >  Questi sono i termini tecnici che descrivono lo spostamento di dati (ad esempio contenuto di una pagina, file, codice e commenti degli utenti) da un ambiente all’altro, ad esempio durante la pubblicazione o la replica inversa di commenti degli utenti.
 >
 
@@ -79,17 +79,17 @@ Esistono due metodi per attivare una pagina:
 
    ![chlimage_1-100](assets/chlimage_1-100.png)
 
-1. WCM per AEM attiva il contenuto selezionato. Le pagine pubblicate vengono visualizzate nella [console Siti Web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) (contrassegnata in verde) con informazioni su chi ha attivato il contenuto e la data e l&#39;ora dell&#39;attivazione.
+1. AEM WCM attiva il contenuto selezionato. Le pagine pubblicate vengono visualizzate nella [console Siti Web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) (contrassegnata in verde) con informazioni su chi ha attivato il contenuto e la data e l&#39;ora dell&#39;attivazione.
 
    ![schermata_shot_2012-02-08at14335pm](assets/screen_shot_2012-02-08at14335pm.png)
 
-### Attivazione di una pagina da un Sidekick {#activating-a-page-from-sidekick}
+### Attivazione di una pagina da Sidekick {#activating-a-page-from-sidekick}
 
 Puoi anche attivare una pagina quando è aperta per la modifica.
 
 Dopo aver aperto la pagina e averne modificato il contenuto:
 
-1. Selezionare la scheda **Pagina** nel Sidekick.
+1. Selezionare la scheda **Pagina** in Sidekick.
 1. Fare clic su **Attiva pagina**.
 Nella parte superiore destra della finestra viene visualizzato un messaggio che conferma l’attivazione della pagina.
 

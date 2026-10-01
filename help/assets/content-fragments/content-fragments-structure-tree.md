@@ -9,9 +9,7 @@ source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '110'
 ht-degree: 88%
-
 ---
-
 # Struttura dei frammenti di contenuto {#content-fragment-structure-tree}
 
 Utilizza la funzione Struttura dell’Editor frammenti di contenuto in AEM per comprendere meglio i contenuti headless.

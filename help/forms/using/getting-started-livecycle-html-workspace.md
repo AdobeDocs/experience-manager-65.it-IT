@@ -1,6 +1,6 @@
 ---
-title: Guida introduttiva all’area di lavoro di AEM Forms
-description: Come iniziare a utilizzare l’area di lavoro LiveCycle di AEM Forms per gestire i processi di automazione aziendale.
+title: Guida introduttiva all’area di lavoro AEM Forms
+description: Come iniziare a utilizzare l’area di lavoro AEM Forms LiveCycle per gestire i processi di automazione aziendale.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,10 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 0%
-
+source-wordcount: '1010'
+ht-degree: 1%
 ---
-
-# Guida introduttiva all’area di lavoro di AEM Forms {#getting-started-with-aem-forms-workspace}
+# Guida introduttiva all’area di lavoro AEM Forms {#getting-started-with-aem-forms-workspace}
 
 Puoi utilizzare l’area di lavoro di AEM Forms per eseguire le seguenti attività:
 
@@ -50,13 +48,13 @@ Per utilizzare l’area di lavoro di AEM Forms con un’utilità per la lettura 
 
 ## Navigazione nell’area di lavoro di AEM Forms tramite tastiera {#navigating-html-workspace-using-a-keyboard}
 
-Quando si accede all’area di lavoro di AEM Forms utilizzando una tastiera, la navigazione è conforme alle convenzioni HTML di accessibilità. In alcune situazioni, l&#39;ordine di tabulazione non segue il tipico ordine convenzionale. I seguenti suggerimenti aiutano a navigare nell’interfaccia:
+Quando si accede all’area di lavoro di AEM Forms utilizzando una tastiera, la navigazione è conforme alle convenzioni di accessibilità di HTML. In alcune situazioni, l&#39;ordine di tabulazione non segue il tipico ordine convenzionale. I seguenti suggerimenti aiutano a navigare nell’interfaccia:
 
 * In caso di problemi durante l&#39;estrazione dalle barre degli strumenti nella parte superiore del browser, premere Ctrl+Tab per passare al contenuto della finestra del browser.
 * La Guida dell’area di lavoro di AEM Forms si apre in una finestra del browser separata. Dopo aver visualizzato la Guida in linea, viene visualizzata nuovamente la finestra del browser che contiene l&#39;area di lavoro di AEM Forms. Il menu Aiuto rimane attivo quando lo stato attivo viene ripristinato.
 * Quando si apre un modulo per avviare un processo o completare un&#39;attività, lo stato attivo rimane sull&#39;elemento esistente e non viene modificato nel modulo. Utilizzare TAB per spostare lo stato attivo sul modulo e sfogliarlo. L&#39;ordine di tabulazione nel modulo dipende dal tipo e dalla struttura del modulo.
 
-  Per i PDF forms, quando si passa alla fine del modulo o si invia il modulo, lo stato attivo del cursore si sposta sulla barra degli indirizzi del browser. Passare di nuovo ai menu, ma non all&#39;intero modulo, per passare ai pulsanti delle azioni del modulo, ad esempio Salva come bozza e Completa. Se la maschera è ancora aperta, è anche possibile passare oltre i pulsanti e tornare alla maschera.
+  In PDF forms, quando si passa alla fine del modulo o si invia il modulo, lo stato attivo del cursore si sposta sulla barra degli indirizzi del browser. Passare di nuovo ai menu, ma non all&#39;intero modulo, per passare ai pulsanti delle azioni del modulo, ad esempio Salva come bozza e Completa. Se la maschera è ancora aperta, è anche possibile passare oltre i pulsanti e tornare alla maschera.
 
 ## Gestione delle preferenze {#managing-preferences}
 

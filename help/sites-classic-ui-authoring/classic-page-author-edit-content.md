@@ -12,11 +12,9 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1829'
-ht-degree: 16%
-
+source-wordcount: '1843'
+ht-degree: 17%
 ---
-
 # Modifica del contenuto di una pagina{#editing-page-content}
 
 Una volta creata la pagina (nuova o come parte di un lancio o una live copy) è possibile aggiornarla modificandone i contenuti.
@@ -92,7 +90,7 @@ Puoi anche aggiungere un nuovo componente alla pagina trascinando una risorsa da
 
 Questa opzione è valida per i seguenti tipi di risorse (alcune dipenderanno dal sistema pagina/paragrafo):
 
-| Tipo risorsa | Tipo di componente risultante |
+| Tipo di risorsa | Tipo di componente risultante |
 |---|---|
 | Immagine | Immagine |
 | Documento | Scarica |
@@ -135,7 +133,7 @@ Per spostare un paragrafo:
 
    ![schermata_shot_2012-02-15at115855am](assets/screen_shot_2012-02-15at115855am.png)
 
-1. Trascina il paragrafo nella nuova posizione: AEM indica dove è possibile spostare il paragrafo con un segno di spunta verde. Rilascialo nella posizione desiderata.
+1. Trascina il paragrafo nella nuova posizione: AEM indica dove può essere spostato con un segno di spunta verde. Rilascialo nella posizione desiderata.
 1. Il paragrafo è stato spostato:
 
    ![schermata_shot_2012-02-15at120030pm](assets/screen_shot_2012-02-15at120030pm.png)
@@ -148,7 +146,7 @@ Per eliminare un paragrafo:
 
    ![schermata_shot_2012-02-15at120220pm](assets/screen_shot_2012-02-15at120220pm.png)
 
-1. Selezionare **Elimina** dal menu. WCM AEM richiede di confermare l’eliminazione del paragrafo, poiché questa azione non può essere annullata.
+1. Selezionare **Elimina** dal menu. AEM WCM richiede di confermare l’eliminazione del paragrafo, poiché questa azione non può essere annullata.
 1. Fai clic su **OK**.
 
 >[!NOTE]
@@ -178,7 +176,7 @@ I componenti ereditati possono essere il risultato di vari scenari, tra cui:
 * [Gestione multisito](/help/sites-administering/msm.md); anche in combinazione con [scaffolding](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md#scaffolding-with-msm-inheritance).
 
 * [Lanci](/help/sites-classic-ui-authoring/classic-launches.md) (se basati su Live Copy).
-* Componenti specifici, ad esempio il sistema paragrafo ereditato all&#39;interno di Geometrixx.
+* Componenti specifici, ad esempio il sistema paragrafo ereditato in Geometrixx.
 
 È possibile annullare l’ereditarietà, quindi riabilitarla. A seconda del componente, questo può essere disponibile da:
 
@@ -196,7 +194,7 @@ I componenti ereditati possono essere il risultato di vari scenari, tra cui:
 
 1. **Un Sistema Di Paragrafi Ereditato**
 
-   La finestra di dialogo di configurazione. Ad esempio, come con il sistema paragrafo ereditato all’interno di Geometrixx:
+   La finestra di dialogo di configurazione. Ad esempio, come con il sistema paragrafo ereditato in Geometrixx:
 
    ![chlimage_1-74](assets/chlimage_1-74.png)
 
@@ -220,13 +218,13 @@ Il bordo inferiore della barra laterale contiene due icone importanti per l&#39;
 
   In modalità anteprima la barra laterale viene ridotta, fai clic sull’icona freccia giù per tornare alla modalità di modifica:
 
-  ![Barra con AEM come titolo e un&#39;icona della modalità di modifica a destra del titolo indicata da un simbolo di freccia giù.](do-not-localize/chlimage_1-8.png)
+  ![Barra con AEM come titolo e un&#39;icona della modalità di modifica a destra del titolo indicato da un simbolo di freccia giù.](do-not-localize/chlimage_1-8.png)
 
 ## Trova e sostituisci {#find-replace}
 
 Per modifiche su larga scala della stessa frase, un&#39;opzione di menu **[Trova e sostituisci](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** consente di cercare e sostituire più istanze di una stringa all&#39;interno di una sezione del sito Web.
 
-## Blocco di una pagina   {#locking-a-page}
+## Blocco di una pagina {#locking-a-page}
 
 AEM consente di bloccare una pagina in modo che nessun altro possa modificarne il contenuto. Questa funzione è utile quando si apportano numerose modifiche a una pagina specifica o quando è necessario bloccarla per un breve periodo di tempo.
 
@@ -242,7 +240,7 @@ Per bloccare una pagina:
 
    ![schermata_shot_2012-02-08at15750pm](assets/screen_shot_2012-02-08at15750pm.png)
 
-   Un messaggio mostra che la pagina è bloccata per altri utenti. Inoltre, nel riquadro destro della console **Siti Web**, WCM AEM visualizza la pagina come bloccata e indica l&#39;utente che ha bloccato la pagina.
+   Un messaggio mostra che la pagina è bloccata per altri utenti. Inoltre, nel riquadro destro della console **Siti Web**, AEM WCM visualizza la pagina come bloccata e indica quale utente ha bloccato la pagina.
 
    ![schermata_shot_2012-02-08at20657pm](assets/screen_shot_2012-02-08at20657pm.png)
 

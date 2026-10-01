@@ -11,11 +11,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1306'
 ht-degree: 0%
-
 ---
-
 # Utilizzo di recensioni e riepilogo recensioni (visualizzazione) {#using-reviews-and-reviews-summary-display}
 
 Il componente `Reviews` è un composito di [Commenti](comments.md) e [Valutazione](rating.md) componenti pronti per l&#39;uso.
@@ -178,7 +176,7 @@ Nella scheda **[!UICONTROL Riepilogo recensioni]**
 
 * `Review Path`
 
-  Immettere o passare all&#39;istanza inserita del componente `reviews` in modo da poter riepilogare, ad esempio, se aggiunto alla pagina Web del sito [Geometrixx Engage](getting-started.md), il percorso sarà:
+  Immettere o individuare l&#39;istanza inserita del componente `reviews` in modo da poter riepilogare, ad esempio, se aggiunto alla pagina Web del [sito Geometrixx Engage](getting-started.md), il percorso sarà:
 
   `/content/sites/engage/en/page/jcr:content/content/primary/reviews`
 
@@ -200,13 +198,13 @@ Nella scheda **[!UICONTROL Tipi di risorse]**, specificare il tipo di risorsa pe
 
 * **[!UICONTROL Tipo risorsa commento]**
 
-  Passare alla classe resourceType di un componente `comment` esteso (commento singolo) in /apps. Esempio: `/apps/social/commons/components/hbs/comments/comment`.
+  Passare alla classe resourceType di un componente `comment` esteso (commento singolo) in /apps. Ad esempio, `/apps/social/commons/components/hbs/comments/comment`.
 
   Questa risorsa identifica il resourceType del UGC creato quando un visitatore pubblica un commento.
 
 * **[!UICONTROL Tipo risorsa voto]**
 
-  Passare alla classe resourceType di un componente `voting` esteso in /apps. Esempio: `/apps/social/components/hbs/voting`.
+  Passare alla classe resourceType di un componente `voting` esteso in /apps. Ad esempio, `/apps/social/components/hbs/voting`.
 
   Questa risorsa identifica il tipo di risorsa dell’UGC creato quando un visitatore pubblica un voto.
 
@@ -224,7 +222,7 @@ Quando l&#39;utente connesso dispone dei privilegi di moderatore o amministrator
 
 Quando il visitatore del sito ha effettuato l’accesso, a seconda della configurazione, può:
 
-* Post: una nuova recensione
+* Pubblica una nuova recensione
 * Modifica la propria recensione
 * Elimina la propria recensione
 * Contrassegna i commenti di revisione di altri utenti

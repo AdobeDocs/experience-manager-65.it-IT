@@ -1,5 +1,5 @@
 ---
-title: Console classica per l’assegnazione di tag dell’interfaccia utente
+title: Console per l’assegnazione di tag dell’interfaccia classica
 description: Scopri la console di assegnazione tag dell’interfaccia utente classica di Adobe Experience Manager.
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,13 +12,11 @@ feature: Administering
 role: Admin
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 1%
-
+source-wordcount: '905'
+ht-degree: 2%
 ---
 
-
-# Console classica per l’assegnazione di tag dell’interfaccia utente{#classic-ui-tagging-console}
+# Console per l’assegnazione di tag dell’interfaccia classica{#classic-ui-tagging-console}
 
 Questa sezione è per la console di assegnazione tag dell’interfaccia classica.
 
@@ -50,19 +48,19 @@ ad esempio, [https://localhost:4502/tagging](https://localhost:4502/tagging)
 1. In entrambi i casi immettere:
 
    * **Titolo**
-(*Obbligatorio*) Titolo visualizzato per il tag. È possibile immettere qualsiasi carattere,
-si consiglia di non utilizzare i seguenti caratteri speciali:
+     (*Obbligatorio*) Titolo visualizzato per il tag. È possibile immettere qualsiasi carattere,
+     si consiglia di non utilizzare i seguenti caratteri speciali:
 
-      * `colon (:)` - delimitatore spazio dei nomi
-      * `forward slash (/)` - delimitatore tag secondario
+     * `colon (:)` - delimitatore spazio dei nomi
+     * `forward slash (/)` - delimitatore tag secondario
 
      Questi caratteri non vengono visualizzati se vengono immessi.
 
    * **Nome**
-(*Obbligatorio*) Nome del nodo per il tag.
+     (*Obbligatorio*) Nome del nodo per il tag.
 
    * **Descrizione**
-(*Facoltativo*) Descrizione del tag.
+     (*Facoltativo*) Descrizione del tag.
 
    * seleziona **Crea**
 

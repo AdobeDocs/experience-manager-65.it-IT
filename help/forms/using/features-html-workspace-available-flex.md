@@ -11,11 +11,9 @@ feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 0%
-
+source-wordcount: '384'
+ht-degree: 5%
 ---
-
 # Funzioni dell’area di lavoro di AEM Forms non disponibili in Flex {#features-of-aem-forms-workspace-not-available-in-flex-workspace}
 
 AEM Forms Workspace innova oltre lo spazio di lavoro basato su Flex per offrire funzioni e funzionalità che contribuiscono a migliorare l’integrazione aziendale e la produttività degli utenti.
@@ -40,4 +38,4 @@ La funzionalità di integrazione con applicazioni di terze parti può essere uti
 
 ## Supporto per il rendering di attività personalizzato in base al dispositivo dell&#39;utente finale {#support-for-custom-task-rendering-based-on-end-user-s-device}
 
-L’area di lavoro AEM Forms supporta il rendering HTML dei moduli XDP. Questo supporto, se utilizzato in un processo di rendering che indirizza diverse rappresentazioni di XDP in base al dispositivo o all’agente utente, consente agli utenti di visualizzare un modulo XDP come HTML su dispositivi mobili e come PDF su un desktop. Questo consente di fornire una copertura completa della gestione dei processi agli utenti che lavorano in ambienti diversi su dispositivi diversi.
+L’area di lavoro AEM Forms supporta il rendering HTML dei moduli XDP. Questo supporto, se utilizzato in un processo di rendering che indirizza diverse rappresentazioni di XDP in base al dispositivo o all’agente utente, consente agli utenti di visualizzare un modulo XDP come HTML sui dispositivi mobili e come PDF su un desktop. Questo consente di fornire una copertura completa della gestione dei processi agli utenti che lavorano in ambienti diversi su dispositivi diversi.

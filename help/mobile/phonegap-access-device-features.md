@@ -1,6 +1,6 @@
 ---
 title: Accedere alle funzioni del dispositivo
-description: Segui questa pagina per scoprire come creare componenti Adobe Experience Manager (AEM) che accedono alle funzioni del dispositivo. L’archivio GitHub AEM PhoneGap Kitchen Sink fornisce agli sviluppatori un’app AEM funzionale che illustra l’utilizzo di diverse API Cordova di base.
+description: Segui questa pagina per scoprire come creare componenti di Adobe Experience Manager (AEM) che accedono alle funzioni del dispositivo. L’archivio GitHub AEM PhoneGap Kitchen Sink fornisce agli sviluppatori un’app AEM funzionale che illustra l’utilizzo di diverse API Cordova di base.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -11,11 +11,9 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '150'
-ht-degree: 3%
-
+source-wordcount: '174'
+ht-degree: 2%
 ---
-
 # Accedere alle funzioni del dispositivo{#access-device-features}
 
 {{ue-over-mobile}}

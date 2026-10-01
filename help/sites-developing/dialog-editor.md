@@ -1,5 +1,5 @@
 ---
-title: Editor finestre di dialogo
+title: Editor delle finestre di dialogo
 description: L'editor di finestre di dialogo fornisce un'interfaccia grafica per creare e modificare facilmente finestre di dialogo e scaffold.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,10 @@ feature: Developing,Developer Tools
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 0%
-
+source-wordcount: '478'
+ht-degree: 1%
 ---
-
-# Editor finestre di dialogo{#dialog-editor}
+# Editor delle finestre di dialogo{#dialog-editor}
 
 L&#39;editor di finestre di dialogo fornisce un&#39;interfaccia grafica per creare e modificare facilmente finestre di dialogo e scaffold.
 

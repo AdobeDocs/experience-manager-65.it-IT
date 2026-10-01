@@ -1,5 +1,5 @@
 ---
-title: Estendi editor risorse
+title: Estendere l’editor risorse
 description: Scopri come estendere le funzionalità dell’Editor risorse utilizzando componenti personalizzati.
 contentOwner: AG
 role: User, Admin
@@ -8,12 +8,10 @@ exl-id: de1c63c1-a0e5-470b-8d83-b594513a5dbd
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '694'
 ht-degree: 12%
-
 ---
-
-# Estendi editor risorse {#extending-asset-editor}
+# Estendere l’editor risorse {#extending-asset-editor}
 
 L’Editor risorse è la pagina che si apre quando si fa clic su una risorsa trovata tramite Condivisione risorse, consentendo all’utente di modificare aspetti della risorsa come metadati, miniature, titolo e tag.
 
@@ -23,7 +21,7 @@ Oltre a utilizzare componenti editor preesistenti, gli sviluppatori di [!DNL Ado
 
 ## Creare un modello di Editor risorse {#creating-an-asset-editor-template}
 
-Le pagine di esempio seguenti sono incluse in Geometrixx:
+In Geometrixx sono incluse le seguenti pagine di esempio:
 
 * Pagina di esempio Geometrixx: `/content/geometrixx/en/press/asseteditor.html`
 * Modello di esempio: `/apps/geometrixx/templates/asseteditor`
@@ -59,7 +57,7 @@ Alcuni dei componenti [!DNL Assets] utilizzano la libreria dei widget. Per esegu
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
 ```
 
-### Foglio di stile Geometrixx {#geometrixx-style-sheet}
+### Foglio di stile di Geometrixx {#geometrixx-style-sheet}
 
 I componenti della pagina di esempio richiedono che tutti i selettori inizino con `.asseteditor` di `static.css` (`/etc/designs/geometrixx/static.css`). Best practice: copia tutti i `.asseteditor` selettori nel foglio di stile e regola le regole come desiderato.
 
@@ -201,7 +199,7 @@ Questo esempio descrive come creare un componente che mostra e visualizza i meta
 
 1. Passa al browser e, nella pagina di esempio (ad esempio, `asseteditor.html`), passa alla modalità progettazione e abilita il nuovo componente per il sistema paragrafo.
 
-1. Nella modalità **Modifica**, il nuovo componente, ad esempio, **Metadati campione**, è ora disponibile nella barra laterale (gruppo **Editor risorse**). Inserisci il componente. Per memorizzare i metadati, è necessario aggiungerli al modulo relativo.
+1. Nella modalità **Modifica**, il nuovo componente, ad esempio, **Metadati campione**, è ora disponibile nella barra laterale (gruppo **Editor risorse**). Inserisci il componente. Per memorizzare i metadati, è necessario aggiungerli al modulo metadati.
 
 ## Modifica opzioni metadati {#modifying-metadata-options}
 

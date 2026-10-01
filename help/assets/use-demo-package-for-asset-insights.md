@@ -10,9 +10,7 @@ source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 2%
-
 ---
-
 # Utilizza il pacchetto demo per Approfondimenti Assets {#using-demo-package-for-asset-insights}
 
 Utilizzando il pacchetto demo, puoi abilitare Adobe Assets Insights per acquisire dati da una pagina web di esempio e generarne di nuovi.
@@ -22,11 +20,11 @@ Utilizzando il pacchetto demo, puoi abilitare Adobe Assets Insights per acquisir
 1. Configura Assets Insights seguendo le istruzioni riportate in [Configurazione di Assets Insights](configure-asset-insights.md).
 1. Scarica il pacchetto Assets di esempio da qui sotto e installalo da Gestione pacchetti CRXDE.
 
-[Ottieni file](assets/insightsdemo.zip)
+   [Ottieni il file](assets/insightsdemo.zip)
 
 1. Scarica il file ZIP contenente la pagina web di esempio dal basso ed estrai sul file system locale.
 
-[Ottieni file](assets/demosite.zip)
+   [Ottieni il file](assets/demosite.zip)
 
 1. Fare clic sulla pagina Web visualizzata nel browser.
 

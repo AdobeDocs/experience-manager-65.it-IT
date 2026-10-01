@@ -12,11 +12,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 2%
-
+source-wordcount: '425'
+ht-degree: 3%
 ---
-
 # Funzione classifica {#leaderboard-feature}
 
 ## Introduzione {#introduction}
@@ -59,22 +57,22 @@ Nella scheda **[!UICONTROL Impostazioni]**, specifica le informazioni relative a
 * **Nome visualizzato**
 
   Nome descrittivo da visualizzare per la bacheca, che riflette le regole selezionate per la visualizzazione di badge e punteggi.
-Il valore predefinito è `Leaderboard` se non viene immesso alcun valore.
+  Il valore predefinito è `Leaderboard` se non viene immesso alcun valore.
 
 * **Badge**
 
   Se questa opzione è selezionata, nella classifica verrà inclusa una colonna per le icone dei badge.
-L&#39;impostazione predefinita è deselezionata.
+  L&#39;impostazione predefinita è deselezionata.
 
 * **Nome badge**
 
   Se questa opzione è selezionata, nella classifica viene inclusa una colonna per il nome del badge.
-L&#39;impostazione predefinita è deselezionata.
+  L&#39;impostazione predefinita è deselezionata.
 
 * **Usa avatar**
 
   Se questa opzione è selezionata, l&#39;immagine avatar del membro viene inclusa nella classifica, accanto al collegamento del nome al suo profilo membro.
-L&#39;impostazione predefinita è deselezionata.
+  L&#39;impostazione predefinita è deselezionata.
 
 #### Scheda Regole {#rules-tab}
 
@@ -104,19 +102,19 @@ Configurazione componente classifica:
 
 * Scheda Impostazioni:
 
-   * Nome visualizzato = `Participation Board`
-   * `checked`:
+  * Nome visualizzato = `Participation Board`
+  * `checked`:
 
-      * Badge
-      * Nome badge
-      * Usa avatar
+    * Badge
+    * Nome badge
+    * Usa avatar
 
 * Scheda Regole:
 
-   * Posizione regola = `/content/sites/<site name>/jcr:content`
-   * Regola punteggio = `/libs/settings/community/scoring/rules/forums-scoring`
-   * Regola assegnazione badge = `/libs/settings/community/badging/rules//reference-badging`
-   * Limite di visualizzazione = `10`
+  * Posizione regola = `/content/sites/<site name>/jcr:content`
+  * Regola punteggio = `/libs/settings/community/scoring/rules/forums-scoring`
+  * Regola assegnazione badge = `/libs/settings/community/badging/rules//reference-badging`
+  * Limite di visualizzazione = `10`
 
 ![partecipanti-classifica](assets/participants-leaderboard.png)
 
@@ -128,18 +126,18 @@ Configurazione componente classifica:
 
 * Scheda Impostazioni:
 
-   * Nome visualizzato = `Expertise Board`
-   * `checked`:
+  * Nome visualizzato = `Expertise Board`
+  * `checked`:
 
-      * Badge
-      * Usa avatar
+    * Badge
+    * Usa avatar
 
 * Scheda Regole:
 
-   * Posizione regola = `/content/sites/<site name>/jcr:content`
-   * Regola punteggio = `/libs/settings/community/scoring/rules/adv-forums-scoring`
-   * Regola assegnazione badge = `/libs/settings/community/badging/rules/adv-forums-badging`
-   * Limite di visualizzazione = `10`
+  * Posizione regola = `/content/sites/<site name>/jcr:content`
+  * Regola punteggio = `/libs/settings/community/scoring/rules/adv-forums-scoring`
+  * Regola assegnazione badge = `/libs/settings/community/badging/rules/adv-forums-badging`
+  * Limite di visualizzazione = `10`
 
 ![esperti-classifica](assets/experts-leaderboard.png)
 

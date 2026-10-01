@@ -12,12 +12,10 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1342'
 ht-degree: 19%
-
 ---
-
-# Utilizzo delle versioni di una pagina  {#working-with-page-versions}
+# Utilizzo delle versioni di una pagina{#working-with-page-versions}
 
 Il controllo delle versioni crea lo snapshot di una pagina in un determinato momento. Con il controllo delle versioni è possibile eseguire le azioni seguenti:
 
@@ -30,7 +28,7 @@ Il controllo delle versioni crea lo snapshot di una pagina in un determinato mom
 Per creare una versione di una pagina:
 
 1. Nel browser, apri la pagina per la quale desideri creare una versione.
-1. Nel Sidekick, selezionare la scheda **Controllo delle versioni**, quindi la scheda secondaria **Crea versione**.
+1. In Sidekick, seleziona la scheda **Controllo delle versioni**, quindi la scheda secondaria **Crea versione**.
 
    ![schermata_shot_2012-02-14alle40259pm](assets/screen_shot_2012-02-14at40259pm.png)
 
@@ -43,7 +41,7 @@ Versione 1.2 creata per: Camicie.
 >
 >Quando la pagina viene attivata, viene creata automaticamente una versione.
 
-## Ripristino di una versione di pagina dal Sidekick {#restoring-a-page-version-from-sidekick}
+## Ripristino di una versione di pagina da Sidekick {#restoring-a-page-version-from-sidekick}
 
 Per ripristinare la pagina a una versione precedente:
 
@@ -86,7 +84,7 @@ Questo metodo può essere utilizzato per ripristinare una versione della pagina.
 Per confrontare la versione corrente della pagina con una versione precedente:
 
 1. Nel browser, apri la pagina da confrontare con una versione precedente.
-1. Nel Sidekick, selezionare la scheda **Controllo delle versioni**, quindi la scheda secondaria **Ripristina versione** n.
+1. In Sidekick, selezionare la scheda **Controllo delle versioni**, quindi la scheda secondaria **Ripristina versione** n.
 
    ![schermata_shot_2012-02-14at42949pm-1](assets/screen_shot_2012-02-14at42949pm-1.png)
 
@@ -99,9 +97,9 @@ Per confrontare la versione corrente della pagina con una versione precedente:
 
    ![chlimage_1-75](assets/chlimage_1-75.png)
 
-1. Nel Sidekick, selezionare la scheda secondaria **Ripristina versione** e fare clic sul pulsante **&lt;&lt;Indietro** per visualizzare la versione corrente.
+1. In Sidekick, selezionare la scheda secondaria **Ripristina versione** e fare clic sul pulsante **&lt;&lt;Back** per visualizzare la versione corrente.
 
-## Timewarp   {#timewarp}
+## Timewarp {#timewarp}
 
 Timewarp è una funzione progettata per simulare lo stato ***di pubblicazione*** di una pagina in specifici momenti nel passato.
 
@@ -170,8 +168,8 @@ Se si desidera visualizzare la sequenza temporale del documento:
 1. Selezionare e spostare (tenere premuto e trascinare) la sequenza temporale per spostarla nella sequenza temporale del documento.
 
    * Tutte le righe indicano le versioni pubblicate.
-Quando viene attivata una pagina, inizia una nuova riga. Ogni volta che il documento viene modificato, viene visualizzato un nuovo colore.
-Nell’esempio seguente, la linea rossa indica che la pagina è stata modificata durante l’intervallo di tempo della versione verde iniziale. La linea gialla indica che la pagina è stata modificata durante la versione rossa e così via.
+     Quando viene attivata una pagina, inizia una nuova riga. Ogni volta che il documento viene modificato, viene visualizzato un nuovo colore.
+     Nell’esempio seguente, la linea rossa indica che la pagina è stata modificata durante l’intervallo di tempo della versione verde iniziale. La linea gialla indica che la pagina è stata modificata durante la versione rossa e così via.
 
    ![chlimage_1-79](assets/chlimage_1-79.png)
 

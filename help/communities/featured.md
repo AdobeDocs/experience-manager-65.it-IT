@@ -11,11 +11,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '349'
 ht-degree: 2%
-
 ---
-
 # Funzione Contenuto in primo piano {#featured-content-feature}
 
 ## Introduzione {#introduction}
@@ -69,7 +67,7 @@ Nella scheda **[!UICONTROL Impostazioni]**, identifica il contenuto da visualizz
 
 * **[!UICONTROL Posizione del contenuto in primo piano]**
 
-  *(Obbligatorio)* Passa alla pagina contenente il contenuto che potrebbe essere visualizzato (i componenti della pagina devono essere configurati per Consentire contenuto in primo piano). Esempio: `/content/sites/engage/en/forum`.
+  *(Obbligatorio)* Passa alla pagina contenente il contenuto che potrebbe essere visualizzato (i componenti della pagina devono essere configurati per Consentire contenuto in primo piano). Ad esempio, `/content/sites/engage/en/forum`.
 
 * **[!UICONTROL Limite di visualizzazione]**
 

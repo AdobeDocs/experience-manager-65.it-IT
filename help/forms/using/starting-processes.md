@@ -1,6 +1,6 @@
 ---
 title: Avvio dei processi
-description: 'Come utilizzare LiveCycle AEM Forms Workspace: selezionare i processi, aggiungere note e allegati, salvare le bozze e aggiungerle ai preferiti.'
+description: 'Come utilizzare l''area di lavoro di AEM Forms LiveCycle: selezionare i processi, aggiungere note e allegati, salvare le bozze e aggiungerle ai preferiti.'
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1356'
 ht-degree: 0%
-
 ---
-
 # Avvio dei processi {#starting-processes}
 
 AEM Forms workspace organizza i processi in base alle categorie impostate dall&#39;amministratore o dal designer processi. È inoltre possibile inserire i processi utilizzati di frequente nella categoria Preferiti in modo da poterli trovare rapidamente.
@@ -58,11 +56,11 @@ Quando si seleziona un processo, vengono visualizzate le schede Modulo e Dettagl
 
    Gestione processi avvia il processo e indirizza il modulo agli elenchi Da fare delle persone appropriate che devono completare l&#39;attività successiva nel processo.
 
-   Se è necessario chiudere un modulo prima di inviarlo e senza perdere i dati immessi, salvare una bozza e completarla in un secondo momento se il processo lo consente. Se il modulo e la procedura lo consentono, puoi anche fare clic su **Offline** e inviarlo successivamente da Adobe® Reader® o Adobe® Acrobat® Professional o Acrobat Standard.
+   Se è necessario chiudere un modulo prima di inviarlo e senza perdere i dati immessi, salvare una bozza e completarla in un secondo momento se il processo lo consente. Se il modulo e il processo lo consentono, puoi anche fare clic su **Offline** e inviarlo successivamente da Adobe® Reader® o Adobe® Acrobat® Professional o Acrobat Standard.
 
    >[!NOTE]
    >
-   >L’opzione offline è disponibile solo per i PDF forms.
+   >L’opzione offline è disponibile solo per PDF forms.
 
 ## Aggiunta di note e allegati {#adding-notes-and-attachments}
 
@@ -81,7 +79,7 @@ Potete aggiungere più note, modificare le note scritte ed eliminarle. A ciascun
 1. Apri un&#39;attività e fai clic sulla scheda **Note**, se il processo lo consente.
 1. Digitare un titolo per la nota nella casella **Titolo** e digitare il testo della nota nella casella **Nota**.
 1. Seleziona il livello **Autorizzazioni** per la nota per gli altri utenti che partecipano al processo.
-1. Fare clic su **OK**. Al modulo viene allegato un file di testo contenente la nota. È possibile aggiornare una nota facendo clic su di essa e modificando direttamente il testo. Puoi eliminare una nota facendo clic sul pulsante **Elimina** ![Immagine di un cestino](assets/icondelete.png) accanto alla nota.
+1. Fai clic su **OK**. Al modulo viene allegato un file di testo contenente la nota. È possibile aggiornare una nota facendo clic su di essa e modificando direttamente il testo. Puoi eliminare una nota facendo clic sul pulsante **Elimina** ![Immagine di un cestino](assets/icondelete.png) accanto alla nota.
 
 ### Aggiungi un allegato {#add-an-attachment}
 
@@ -96,7 +94,7 @@ Potete aggiungere più note, modificare le note scritte ed eliminarle. A ciascun
 1. Fare clic sulla scheda **Allegati** e selezionare **Allegato**.
 1. Fare clic su **Sfoglia** per selezionare il file da allegare.
 1. Selezionare il livello **Autorizzazioni** per l&#39;allegato per gli altri utenti che partecipano al processo. Se selezioni **Leggi**, gli altri utenti potranno salvare il file localmente. Se selezioni una delle autorizzazioni di modifica, anche altri utenti possono caricare un nuovo file per sostituire l’allegato.
-1. Fare clic su **OK**. Il file viene allegato al modulo. Puoi eliminare un file facendo clic sul pulsante **Elimina** ![Immagine di un cestino](assets/icondelete.png) accanto all&#39;allegato.
+1. Fai clic su **OK**. Il file viene allegato al modulo. Puoi eliminare un file facendo clic sul pulsante **Elimina** ![Immagine di un cestino](assets/icondelete.png) accanto all&#39;allegato.
 
 ## Salvataggio delle bozze dei moduli {#saving-draft-copies-of-forms}
 
