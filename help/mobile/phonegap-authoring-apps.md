@@ -11,11 +11,9 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '993'
 ht-degree: 0%
-
 ---
-
 # Authoring di applicazioni mobili{#authoring-mobile-applications}
 
 {{ue-over-mobile}}
@@ -24,11 +22,11 @@ La dashboard di AEM Mobile consente di creare, generare e distribuire l’app mo
 
 Per generare la tua applicazione AEM Mobile, consulta la pagina [Creazione di applicazioni mobili](/help/mobile/building-app-mobile-phonegap.md).
 
-Per configurare l&#39;ambiente e iniziare, vedere [Amministrazione dell&#39;AEM per utilizzare l&#39;AEM PhoneGap Enterprise](/help/mobile/administer-phonegap.md).
+Per configurare l&#39;ambiente e iniziare, consulta [Amministrazione di AEM per utilizzare AEM PhoneGap Enterprise](/help/mobile/administer-phonegap.md).
 
 ## Catalogo delle app AEM Mobile {#the-aem-mobile-apps-catalog}
 
-Nel [Catalogo app AEM Mobile](http://localhost:4502/aem/apps.html/content/phonegap) sono visualizzate tutte le app mobili gestite nell&#39;AEM.
+Nel [Catalogo app AEM Mobile](http://localhost:4502/aem/apps.html/content/phonegap) sono visualizzate tutte le app mobili gestite in AEM.
 
 Considera questo catalogo come la &quot;pagina di destinazione&quot; per AEM Mobile, in cui gli amministratori possono avviare una nuova applicazione AEM Mobile creando in base a un modello o caricando un’app esistente già avviata da uno sviluppatore mobile.
 
@@ -66,7 +64,7 @@ I contenuti possono essere creati, aggiornati ed eliminati in AEM Mobile nello s
 
 Dopo aver aggiunto o modificato il contenuto tramite il riquadro Gestisci contenuto pagina, puoi inviare tali modifiche ai clienti con un aggiornamento sulla versione del contenuto.
 
-Il pacchetto di contenuti consente all’autore dell’app AEM di gestire il contenuto della pagina nell’AEM e, chiedere al team di sviluppo di modificare l’applicazione PhoneGap Shell (ovvero il framework o l’infrastruttura dell’app) e quindi di inviare tali modifiche ai clienti in modo rapido e senza la necessità di coinvolgere uno sviluppatore per inviarle nuovamente ai vari store per la distribuzione.
+Il pacchetto di contenuti consente all’autore dell’app AEM di gestire il contenuto della pagina in AEM e di far sì che il team di sviluppo modifichi l’applicazione PhoneGap Shell (ovvero il framework o l’infrastruttura dell’app) e quindi invii rapidamente tali modifiche ai clienti senza dover reclutare uno sviluppatore per inviarle nuovamente ai vari store per la distribuzione.
 
 Pacchetto di contenuti crea un file ZIP, considerato un pacchetto di rilascio dei contenuti, per ogni aggiornamento. Questi pacchetti contengono risorse HTML e pagine HTML generate durante il rendering dell’app ed è sufficientemente intelligente da includere solo i file che sono stati modificati dopo l’ultimo aggiornamento.
 
@@ -94,7 +92,7 @@ Il riquadro **PhoneGap Build** si connette con `https://build.phonegap.com` per 
 
 In alternativa, è possibile scaricare l&#39;origine del dispositivo per la compilazione locale tramite PhoneGap CLI (`https://docs.phonegap.com/en/3.5.0/guide_cli_index.md.html`).
 
-![PhoneGap Build](assets/chlimage_1-140.png)
+![Sezione PhoneGap Build](assets/chlimage_1-140.png)
 
 ### Sezione metriche {#the-metrics-tile}
 
@@ -102,7 +100,7 @@ In alternativa, è possibile scaricare l&#39;origine del dispositivo per la comp
 >
 >Il riquadro Metriche viene visualizzato solo dopo aver configurato il servizio cloud.
 >
->Per informazioni dettagliate, consulta [Configurare il Cloud Service Adobe Mobile Services](/help/mobile/configure-adobe-mobile-cloud-service.md).
+>Per informazioni dettagliate, consulta [Configurare il Cloud Service di Adobe Mobile Services](/help/mobile/configure-adobe-mobile-cloud-service.md).
 
 AEM Mobile si integra con Adobe Analytics tramite [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=it) (AMS).
 

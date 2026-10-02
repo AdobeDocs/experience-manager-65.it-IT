@@ -11,21 +11,19 @@ feature: Integration
 role: Admin
 source-git-commit: c4133584e9c2328b3a55042902c67770d78afcf7
 workflow-type: tm+mt
-source-wordcount: '1482'
-ht-degree: 1%
-
+source-wordcount: '1625'
+ht-degree: 2%
 ---
-
 # Connettore SharePoint{#sharepoint-connector}
 
-Questo articolo include informazioni dettagliate sul connettore JCR di Adobe per Microsoft SharePoint 2010 e Microsoft SharePoint 2013, versione 4.0.
+Questo articolo include informazioni dettagliate sul connettore JCR Adobe per Microsoft SharePoint 2010 e Microsoft SharePoint 2013, versione 4.0.
 
 Il connettore SharePoint supporta le seguenti funzionalità di base:
 
 * Lettura di contenuti e metadati da SharePoint.
 * Riconoscimento delle impostazioni di protezione di SharePoint per il contenuto a cui si accede applicando l&#39;autenticazione e l&#39;autorizzazione native di SharePoint
 * Integrazione dei contenuti tramite Content Finder
-* Utilizzo di componenti AEM, ad esempio risorse esterne, per visualizzare immagini e video SharePoint
+* Utilizzo di componenti AEM, ad esempio una risorsa esterna, per visualizzare immagini e video SharePoint
 * Sincronizzazione di SharePoint con AEM Assets
 
 Tutte le funzionalità vengono implementate utilizzando i servizi web nativi di SharePoint come interfaccia per i contenuti e i servizi SharePoint.
@@ -70,14 +68,14 @@ Il connettore SharePoint è disponibile per il download da [Distribuzione softwa
 
 Il connettore supporta quanto segue:
 
-* Versioni AEM:
+* Versioni di AEM:
 
-   * AEM 6.4, 6.3
+  * AEM 6.4, 6.3
 
 * Versioni di Microsoft SharePoint:
 
-   * Microsoft Office SharePoint Server (MOSS) 2010
-   * Microsoft Office SharePoint Server (MOSS) 2013
+  * Microsoft Office SharePoint Server (MOSS) 2010
+  * Microsoft Office SharePoint Server (MOSS) 2013
 
 * Se hai bisogno di supporto per le distribuzioni personalizzate del connettore (OEM, requisiti speciali, metodi di autenticazione personalizzati), contatta l’ufficio Adobe della tua regione.
 
@@ -90,12 +88,12 @@ Il connettore supporta quanto segue:
 La Distribuzione di software viene utilizzata per distribuire funzionalità, esempi e hotfix dei prodotti. Per informazioni dettagliate, vedere la [documentazione sulla distribuzione software](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=it#software-distribution).
 
 
-#### Integrazione con l’AEM {#integrating-with-aem}
+#### Integrazione con AEM {#integrating-with-aem}
 
 Per installare il pacchetto di contenuti del connettore.
 
 1. Apri un ticket di supporto Adobe per richiedere il pacchetto di funzioni del connettore.
-1. Scarica il pacchetto quando è disponibile e quindi apri Gestione pacchetti per l’istanza AEM.
+1. Scarica il pacchetto quando è disponibile e quindi apri Gestione pacchetti per la tua istanza di AEM.
 1. Fare clic su **Installa** nella pagina di descrizione del pacchetto.
 1. Nella finestra di dialogo **Installa pacchetto**, fare clic su **Installa**.
 
@@ -128,11 +126,11 @@ Per impostazione predefinita, il connettore espone una singola area di lavoro JC
 Il connettore può essere configurato anche per più aree di lavoro. In questo caso, ogni area di lavoro è associata all&#39;URL del relativo server SharePoint esposto tramite l&#39;area di lavoro. Per aggiungere un&#39;area di lavoro, aggiungete una definizione di area di lavoro al parametro Workspace. Una definizione di area di lavoro ha il seguente formato:
 `<name>`= `<url>` dove
 `<name>` è il nome dell&#39;area di lavoro JCR e
-`<url>` è l&#39;URL del server SharePoint per tale area di lavoro.
+`<url>` è l&#39;URL del server SharePoint per quell&#39;area di lavoro.
 
-In AEM, esegui un ulteriore passaggio oltre ai passaggi di configurazione precedenti. Elenco consentiti del bundle &#39;**com.day.cq.dam.cq-dam-jcr-connectors**&#39;.
+In AEM, esegui un altro passaggio oltre ai passaggi di configurazione precedenti. Elenco consentiti del bundle &#39;**com.day.cq.dam.cq-dam-jcr-connectors**&#39;.
 
-Per elenco consentiti di bundle nell’AEM, effettua le seguenti operazioni:
+Per elenco consentiti dei bundle in AEM, effettua le seguenti operazioni:
 
 1. Passa alla console di gestione OSGi: http://localhost:4502/system/console/configMgr.
 1. Cerca il servizio &quot;Apache Sling Login Admin Whitelist&quot;.
@@ -158,7 +156,7 @@ Dopo aver configurato il connettore, verifica quanto segue:
 
 ### Configurazione della sincronizzazione DAM con il server SharePoint {#configuring-dam-sync-with-the-sharepoint-server}
 
-Per sincronizzare l&#39;Assets di SharePoint con l&#39;AEM, effettuare le seguenti operazioni:
+Per sincronizzare SharePoint Assets con AEM, effettua le seguenti operazioni:
 
 1. Passare alla console di gestione OSGi: [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
 1. Cercare il servizio &quot;Default DAMAssetSynchronization&quot;.
@@ -194,7 +192,7 @@ In particolare, sono disponibili i seguenti tipi di autenticazione:
 * Claims-Basic
 * Basato su Forms per attestazioni
 
-Il connettore JCR AEM per Microsoft SharePoint 2010 e Microsoft SharePoint 2013, versione 4.0. supporta l’autenticazione basata sulle attestazioni (suggerita da Microsoft), che funziona nelle seguenti modalità:
+Connettore JCR AEM per Microsoft SharePoint 2010 e Microsoft SharePoint 2013, versione 4.0. supporta l’autenticazione basata su attestazioni (suggerita da Microsoft), che funziona nelle seguenti modalità:
 
 * **Autenticazione di base/NTLM**: il connettore tenta prima di connettersi utilizzando l&#39;autenticazione di base. Se non disponibile, viene utilizzata l&#39;autenticazione basata su NTLM.
 * **Autenticazione basata su Forms**: gli utenti vengono convalidati in base alle credenziali digitate dagli utenti in un modulo di accesso, in genere una pagina Web. Il sistema emette un token per le richieste autenticate che contiene una chiave per ristabilire l’identità per le richieste successive.

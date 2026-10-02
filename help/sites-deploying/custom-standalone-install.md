@@ -1,5 +1,5 @@
 ---
-title: Installazione autonoma personalizzata
+title: Installazione personalizzata indipendente
 description: Scopri le opzioni disponibili per l’installazione di un’istanza AEM autonoma.
 content-type: reference
 topic-tags: deploying
@@ -9,12 +9,10 @@ feature: Deploying
 role: Admin
 source-git-commit: 3effd4fa686ac89421ffe74e52bf34830ddd776c
 workflow-type: tm+mt
-source-wordcount: '1614'
-ht-degree: 0%
-
+source-wordcount: '1637'
+ht-degree: 1%
 ---
-
-# Installazione autonoma personalizzata{#custom-standalone-install}
+# Installazione personalizzata indipendente{#custom-standalone-install}
 
 In questa sezione sono descritte le opzioni disponibili durante l’installazione di un’istanza AEM autonoma. È inoltre possibile leggere [Elementi di archiviazione](/help/sites-deploying/storage-elements-in-aem-6.md) per ulteriori informazioni sulla scelta del tipo di archiviazione back-end dopo l&#39;installazione di AEM 6.
 
@@ -368,11 +366,11 @@ o per la pagina Bundle
 
 Per ulteriori dettagli, vedere [Configurazione OSGi con la console Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console).
 
-## Risoluzione dei problemi {#troubleshooting}
+## Risoluzione di problemi {#troubleshooting}
 
 Per informazioni su come risolvere i problemi che possono verificarsi durante l&#39;installazione, vedere:
 
-* [Risoluzione dei problemi](/help/sites-deploying/troubleshooting.md)
+* [Risoluzione di problemi](/help/sites-deploying/troubleshooting.md)
 
 ## Disinstallazione di Adobe Experience Manager {#uninstalling-adobe-experience-manager}
 

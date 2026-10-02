@@ -1,21 +1,23 @@
 ---
 title: Gestori di app pronti all’uso
+
 description: Segui questa pagina per scoprire i gestori predefiniti per Adobe PhoneGap Enterprise con AEM.
+
+
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
+
 exl-id: e2ddf5d1-0f5b-4f3b-9666-0f388915730e
 solution: Experience Manager
 feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1419'
 ht-degree: 0%
-
 ---
-
 # Gestori di app pronti all’uso{#out-of-the-box-app-handlers}
 
 {{ue-over-mobile}}
@@ -24,7 +26,7 @@ Consulta le seguenti linee guida per lo sviluppo di gestori di sincronizzazione 
 
 * I gestori devono implementare *com.day.cq.contentsync.handler.ContentUpdateHandler* (direttamente o estendendo una classe che esegue)
 * I gestori possono estendere *com.adobe.cq.mobile.platform.impl.contentsync.handler.AbstractSlingResourceUpdateHandler*
-* Il gestore deve segnalare true solo se ha aggiornato la cache di ContentSync. Segnalare falsamente true consentirà al AEM di creare un aggiornamento.
+* Il gestore deve segnalare true solo se ha aggiornato la cache di ContentSync. Se la segnalazione è falsa, true consentirà ad AEM di creare un aggiornamento.
 * Il gestore deve aggiornare la cache solo se il contenuto è stato effettivamente modificato. Non scrivere nella cache se non è necessario un bianco ed evita di creare un aggiornamento non necessario.
 
 ## Gestori pronti all’uso {#out-of-the-box-handlers}
@@ -43,23 +45,23 @@ Di seguito sono elencati i gestori di app predefiniti:
 
 * ***includeImages - Booleano*** - Proprietà booleana opzionale che determina se le immagini devono essere incluse. Il valore predefinito è *true*.
 
-   * Per impostazione predefinita, solo i componenti immagine con un tipo di risorsa fondazione/componenti/immagine vengono considerati per l’inclusione.
+  * Per impostazione predefinita, solo i componenti immagine con un tipo di risorsa fondazione/componenti/immagine vengono considerati per l’inclusione.
 
 * ***includeVideos - Booleano*** - La proprietà booleana opzionale determina se i video devono essere inclusi. Il valore predefinito è *true*.
 
 * ***includeModifiedPagesOnly - Booleano*** - Se false o omesse, esegui il rendering di tutte le pagine e controlla gli aggiornamenti nel rendering. Se true, base differisce in base alle modifiche apportate a una pagina lastModified.
-* ***+ riscrittura (nodo)***
+* Riscrittura di ***+ (nodo)***
   ***- relativeParentPath - String*** - percorso per la scrittura di tutti gli altri percorsi relativi a.
 
 >[!NOTE]
 >
->Il tipo di risorsa dei componenti immagine e video interessati da questo gestore viene impostato configurando le proprietà di *com.adobe.cq.mobile.platform.impl.contentsync.handler*.*Servizio OSGi MobilePagesUpdateHandler*.
+>Il tipo di risorsa dei componenti immagine e video interessati da questo gestore viene impostato configurando le proprietà del servizio OSGi *com.adobe.cq.mobile.platform.impl.contentsync.handler*.*MobilePagesUpdateHandler*.
 
 **mobilepageassets** Raccoglie le risorse della pagina dell&#39;app.
 
-**mobilecontentlisting** Elenca il contenuto del file zip ContentSync. Viene utilizzato dal js lato client sul dispositivo per eseguire la copia iniziale del file necessaria per le app AEM.
+**mobilecontentlisting** Elenca il contenuto del file zip ContentSync. Viene utilizzato dal js lato client sul dispositivo per eseguire la copia iniziale del file richiesta per le app AEM.
 
-Questo gestore deve essere aggiunto a qualsiasi configurazione di ContentSync per app AEM.
+Questo gestore deve essere aggiunto a qualsiasi configurazione ContentSync di AEM Apps.
 
 * ***tipo - Stringa - mobilecontentlisting***
 * ***percorso*** - Stringa - mantieni vuoto, deve essere presente per essere visualizzato come un gestore valido, ma si deduce che il percorso sia la cache ContentSync corrente. Questo valore viene ignorato.
@@ -86,7 +88,7 @@ Questo gestore deve essere aggiunto a qualsiasi configurazione di ContentSync pe
 
 **mobilecontentpackageslisting** Elenca il pacchetto di contenuti AEM in una determinata app e l&#39;URL del server a cui inviare le richieste di aggiornamento. Viene utilizzato da JS lato client sul dispositivo per richiedere aggiornamenti del contenuto
 
-Il gestore deve essere utilizzato nella configurazione ContentSync della shell dell’app AEM (nodo con pge-type=app-instance)
+Il gestore deve essere utilizzato nella configurazione ContentSync di AEM App Shell (nodo con page-type=app-instance)
 
 * ***tipo - Stringa - mobilecontentpackageslisting***
 * ***percorso &#x200B;**-**Stringa*** - Percorso di una shell app (nodo con pge-type=app-instance).
@@ -121,7 +123,7 @@ Il gestore deve essere utilizzato nella configurazione ContentSync della shell d
 
 **widgetconfig** Include un file config.xml aggiornato che unisce eventuali modifiche apportate tramite il centro comandi con un file config.xml fornito. Se questo gestore non è incluso, i dettagli dell’app modificati tramite l’interfaccia di amministrazione non verranno inclusi nella cache.
 
-Questo gestore deve essere utilizzato in una configurazione ContentSync della shell dell&#39;app AEM (nodo con pge-type=[app-instance]).
+Questo gestore deve essere utilizzato in una configurazione ContentSync di AEM App Shell (nodo con pge-type=[app-instance]).
 
 * ***tipo - Stringa* - &#x200B;** widgetconfig
 * ***percorso &#x200B;**-**Stringa*** - Percorso di qualsiasi nodo figlio della shell dell&#39;app (nodo con pge-type=[app-instance]).
@@ -132,7 +134,7 @@ Questo gestore deve essere utilizzato in una configurazione ContentSync della sh
 
 Viene utilizzato in fase di compilazione per configurare il plug-in AMS per il supporto analitico.
 
-Il gestore deve essere utilizzato nella configurazione ContentSync della shell dell’app AEM (nodo con pge-type=app-instance)
+Il gestore deve essere utilizzato nella configurazione ContentSync di AEM App Shell (nodo con page-type=app-instance)
 
 * ***tipo - Stringa*** - mobileADBMobileConfigJSON
 * ***percorso - Stringa*** - Percorso di una shell dell&#39;app (nodo con pge-type=app-instance o RT che estende /libs/mobileapps/core/components/instance)
@@ -140,9 +142,9 @@ Il gestore deve essere utilizzato nella configurazione ContentSync della shell d
 
 **notificationsconfig** Estrae le configurazioni delle notifiche necessarie sul dispositivo. Le proprietà vengono estratte dalla rispettiva configurazione del servizio cloud del servizio push associata all’app.
 
-Le proprietà non AEM nel nodo jcr:content del servizio cloud vengono estratte e aggiunte al file JSON **pge-notifications-config.json** per l&#39;inclusione nella directory principale www del contenuto dell&#39;app.
+Le proprietà non AEM nel nodo jcr:content del servizio cloud vengono estratte e aggiunte al file JSON **pge-notifications-config.json** per l&#39;inclusione nella radice www del contenuto dell&#39;app.
 
-Le proprietà dell’AEM sono quelle con spazio dei nomi tra &quot;cq&quot;, &quot;sling&quot; o &quot;jcr&quot;. Altre proprietà possono essere escluse utilizzando la proprietà &quot;excludeProperties&quot; nel nodo di configurazione content-sync.
+Le proprietà di AEM sono quelle con spazio dei nomi &quot;cq&quot;, &quot;sling&quot; o &quot;jcr&quot;. Altre proprietà possono essere escluse utilizzando la proprietà &quot;excludeProperties&quot; nel nodo di configurazione content-sync.
 
 * ***type - String*** - notificationsconfig
 * ***excludeProperties - Stringa[]*** - proprietà da escludere
@@ -152,9 +154,9 @@ Le proprietà dell’AEM sono quelle con spazio dei nomi tra &quot;cq&quot;, &qu
 * ***type - String*** - contentsyncconfigcontent
 * ***percorso - Stringa*** - Percorso di uno dei seguenti elementi:
 
-   * un&#39;altra configurazione ContentSync
-   * in un pacchetto di contenuti (utilizzerà la proprietà phonegap-exportTemplate per trovare la relativa configurazione ContentSync)
-   * a una risorsa mobile (i contenuti dell’app si trovano sotto tale risorsa e, se tali pacchetti di contenuto hanno una proprietà page-includeInBuild che è true, phonegap-exportTemplate viene utilizzato per trovare la relativa configurazione ContentSync)
+  * un&#39;altra configurazione ContentSync
+  * in un pacchetto di contenuti (utilizzerà la proprietà phonegap-exportTemplate per trovare la relativa configurazione ContentSync)
+  * a una risorsa mobile (i contenuti dell’app si trovano sotto tale risorsa e, se tali pacchetti di contenuto hanno una proprietà page-includeInBuild che è true, phonegap-exportTemplate viene utilizzato per trovare la relativa configurazione ContentSync)
 
 * ***autoCreateFirstUpdateBeforeImport - Booleano*** - se true, creare un **aggiornamento** iniziale nella configurazione di destinazione prima dell&#39;importazione se non esiste già una volta
 
