@@ -10,18 +10,16 @@ feature: Configuring
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '985'
 ht-degree: 0%
-
 ---
-
 # Indicizzazione tramite il file JAR eseguito da Oak {#indexing-via-the-oak-run-jar}
 
 Oak-run supporta tutti i casi di utilizzo dell’indicizzazione sulla riga di comando senza dover operare dal livello JMX. I vantaggi dell’approccio oak-run sono:
 
-1. Si tratta di un nuovo set di strumenti di indicizzazione per AEM 6.4
+1. È un nuovo set di strumenti di indicizzazione per AEM 6.4
 1. Riduce il tempo di reindicizzazione, che influisce positivamente sui tempi di reindicizzazione su archivi più grandi
-1. Sta riducendo il consumo di risorse durante la reindicizzazione nell&#39;AEM, il che si traduce in migliori prestazioni del sistema per altre attività dell&#39;AEM
+1. Sta riducendo il consumo di risorse durante la reindicizzazione in AEM, il che si traduce in migliori prestazioni del sistema per altre attività di AEM
 1. Oak-run fornisce supporto out-of-band: se le condizioni di produzione non consentono di eseguire la reindicizzazione sulle istanze di produzione, è possibile utilizzare un ambiente clonato per la reindicizzazione al fine di evitare un impatto critico sulle prestazioni.
 
 Di seguito è riportato un elenco di casi d&#39;uso che possono essere utilizzati durante l&#39;esecuzione di operazioni di indicizzazione tramite lo strumento `oak-run`.
@@ -33,7 +31,7 @@ Di seguito è riportato un elenco di casi d&#39;uso che possono essere utilizzat
 >Per informazioni più dettagliate su questo scenario, vedi [Caso d&#39;uso 1: verifica di coerenza indice](/help/sites-deploying/oak-run-indexing-usecases.md#usercase1indexconsistencycheck).
 
 * `oak-run.jar`determina rapidamente se gli indici Lucene Oak sono danneggiati.
-* È sicuro operare su un’istanza AEM in uso per i livelli di controllo di coerenza 1 e 2.
+* È sicuro eseguire su un’istanza AEM in uso per i livelli di controllo di coerenza 1 e 2.
 
 ![Verifica coerenza indice](assets/screen_shot_2017-12-14at135758.png)
 
@@ -62,7 +60,7 @@ Questo diagramma è un albero decisionale per quando utilizzare i vari approcci 
 
 ### Pre-estrazione del testo per SegmentNodeStore e DocumentNodeStore {#textpre-extraction}
 
-[È possibile utilizzare la funzione di pre-estrazione del testo](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-perform-text-pre-extraction) (già disponibile con AEM 6.3) per ridurre il tempo di reindicizzazione. La pre-estrazione del testo può essere utilizzata con tutti gli approcci di reindicizzazione.
+[È possibile utilizzare la funzione di pre-estrazione del testo](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-perform-text-pre-extraction) (già disponibile in AEM 6.3) per ridurre il tempo di reindicizzazione. La pre-estrazione del testo può essere utilizzata con tutti gli approcci di reindicizzazione.
 
 A seconda dell&#39;approccio di indicizzazione `oak-run.jar`, sono disponibili vari passaggi su entrambi i lati del passaggio Esegui reindicizzazione nel diagramma seguente.
 
@@ -70,7 +68,7 @@ A seconda dell&#39;approccio di indicizzazione `oak-run.jar`, sono disponibili v
 
 >[!NOTE]
 >
->Arancione indica le attività in cui l’AEM deve trovarsi in una finestra di manutenzione.
+>Arancione indica le attività in cui AEM deve trovarsi in una finestra di manutenzione.
 
 ### Reindicizzazione online per MongoMK o RDBMK tramite oak-run.jar {#onlinere-indexingformongomk}
 
@@ -78,9 +76,9 @@ A seconda dell&#39;approccio di indicizzazione `oak-run.jar`, sono disponibili v
 >
 >Per informazioni più dettagliate su questo scenario, vedi [Reindicizza - DocumentNodeStore](/help/sites-deploying/oak-run-indexing-usecases.md#reindexdocumentnodestore).
 
-Questo è il metodo consigliato per la reindicizzazione delle installazioni di AEM MongoMK (e RDBMK). Non utilizzare altri metodi.
+Questo è il metodo consigliato per la reindicizzazione delle installazioni AEM MongoMK (e RDBMK). Non utilizzare altri metodi.
 
-Eseguire questo processo solo su una singola istanza AEM nel cluster.
+Eseguire questo processo solo su una singola istanza di AEM nel cluster.
 
 ![Reindicizzazione online per MongoMK o RDBMK tramite oak-run.jar](assets/5.png)
 
@@ -92,11 +90,11 @@ Eseguire questo processo solo su una singola istanza AEM nel cluster.
 
 * **Considerazioni sullo standby a freddo (TarMK)**
 
-   * Non vi sono considerazioni speciali per lo standby a freddo; le istanze dello standby a freddo sincronizzano le modifiche come di consueto.
+  * Non vi sono considerazioni speciali per lo standby a freddo; le istanze dello standby a freddo sincronizzano le modifiche come di consueto.
 
-* **Farm Publish AEM (le farm Publish AE devono essere sempre TarMK)**
+* **Farm di pubblicazione AEM (le farm di pubblicazione AE devono essere sempre TarMK)**
 
-   * Per la farm di pubblicazione, deve essere eseguito per tutti OPPURE eseguire i passaggi su una singola pubblicazione. Quindi, clona la configurazione per gli altri (adottando tutte le consuete precauzioni durante la clonazione delle istanze AEM; sling.id - dovrebbe essere collegato a qualcosa qui).
+  * Per la farm di pubblicazione, deve essere eseguito per tutti OPPURE eseguire i passaggi su una singola pubblicazione. Quindi, clona la configurazione per gli altri (seguendo tutte le consuete precauzioni durante la clonazione delle istanze di AEM; sling.id - dovrebbe essere collegato a qualcosa qui).
 
 ### Reindicizzazione online per TarMK {#onlinere-indexingfortarmk}
 
@@ -106,7 +104,7 @@ Eseguire questo processo solo su una singola istanza AEM nel cluster.
 
 Questo è il metodo utilizzato prima dell’introduzione delle nuove funzionalità di indicizzazione di oak-run.jar. Questa operazione viene eseguita impostando la proprietà `reindex=true` sull&#39;indice Oak.
 
-Questo approccio può essere utilizzato se gli effetti di indicizzazione in termini di tempo e prestazioni sono accettabili per il cliente. Questo è spesso il caso degli impianti AEM di piccole e medie dimensioni.
+Questo approccio può essere utilizzato se gli effetti di indicizzazione in termini di tempo e prestazioni sono accettabili per il cliente. Questo è spesso il caso delle installazioni AEM di piccole e medie dimensioni.
 
 ![Reindicizzazione online per TarMK](assets/6.png)
 
@@ -114,13 +112,13 @@ Questo approccio può essere utilizzato se gli effetti di indicizzazione in term
 
 >[!NOTE]
 >
->Per informazioni più dettagliate su questo scenario, vedi [Reindicizzazione online - SegmentNodeStore - L&#39;istanza AEM è in esecuzione](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestoretheaeminstanceisrunning).
+>Per informazioni più dettagliate su questo scenario, vedi [Reindicizzazione online - SegmentNodeStore - L&#39;istanza di AEM è in esecuzione](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestoretheaeminstanceisrunning).
 
 La reindicizzazione online di TarMK utilizzando oak-run.jar è più veloce della [reindicizzazione online per TarMK](#onlinere-indexingfortarmk) descritta sopra. Tuttavia, richiede anche l&#39;esecuzione durante una finestra di manutenzione; con la menzione che la finestra è più corta e sono necessari più passaggi per eseguire la reindicizzazione.
 
 >[!NOTE]
 >
->L&#39;arancione indica le operazioni in cui l&#39;AEM deve essere effettuato durante un periodo di mantenimento.
+>Arancione indica le operazioni in cui AEM deve essere eseguito in un periodo di manutenzione.
 
 ![Reindicizzazione online di TarMK tramite oak-run.jar](assets/7.png)
 
@@ -128,13 +126,13 @@ La reindicizzazione online di TarMK utilizzando oak-run.jar è più veloce della
 
 >[!NOTE]
 >
->Per informazioni più dettagliate su questo scenario, vedi [Reindicizzazione online - SegmentNodeStore - L&#39;istanza AEM è chiusa](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestoreaeminstanceisdown).
+>Per informazioni più dettagliate su questo scenario, vedi [Reindicizzazione online - SegmentNodeStore - L&#39;istanza di AEM è chiusa](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestoreaeminstanceisdown).
 
-La reindicizzazione offline di TarMK è l&#39;approccio più semplice basato su `oak-run.jar` per TarMK in quanto richiede un singolo commento `oak-run.jar`. Tuttavia, richiede la chiusura dell’istanza AEM.
+La reindicizzazione offline di TarMK è l&#39;approccio più semplice basato su `oak-run.jar` per TarMK in quanto richiede un singolo commento `oak-run.jar`. Tuttavia, richiede la chiusura dell’istanza di AEM.
 
 >[!NOTE]
 >
->Il rosso indica le operazioni in cui l&#39;AEM deve essere interrotto.
+>Rosso indica le operazioni in cui AEM deve essere arrestato.
 
 ![Nuova indicizzazione offline di TarMK tramite oak-run.jar](assets/8.png)
 
@@ -144,11 +142,11 @@ La reindicizzazione offline di TarMK è l&#39;approccio più semplice basato su 
 >
 >Per informazioni più dettagliate su questo scenario, vedi [Reindicizzazione fuori banda - SegmentNodeStore](/help/sites-deploying/oak-run-indexing-usecases.md#outofbandreindexsegmentnodestore).
 
-La reindicizzazione fuori banda riduce al minimo l’impatto della reindicizzazione sulle istanze di AEM in uso.
+La reindicizzazione fuori banda riduce al minimo l’impatto della reindicizzazione sulle istanze AEM in uso.
 
 >[!NOTE]
 >
->Il rosso indica le operazioni in cui l’AEM può essere interrotto.
+>Rosso indica le operazioni in cui AEM potrebbe essere arrestato.
 
 ![Nuova indicizzazione fuori banda di TarMK tramite oak-run.jar](assets/9.png)
 
@@ -170,12 +168,12 @@ Per ulteriori informazioni, consulta la [documentazione ACS Ensure Index](https:
 
 ### Creazione e aggiornamento delle definizioni degli indici in TarMK tramite oak-run.jar {#creatingandupdatingindexdefinitionsontarmkusingoak-run-jar}
 
-Se il tempo o l&#39;impatto sulle prestazioni della reindicizzazione utilizzando metodi diversi da `oak-run.jar` è troppo elevato, è possibile utilizzare il seguente approccio basato su `oak-run.jar` per importare e reindicizzare le definizioni dell&#39;indice di Lucene in un&#39;installazione AEM basata su TarMK.
+Se il tempo o l&#39;impatto sulle prestazioni della reindicizzazione utilizzando metodi diversi da `oak-run.jar` è troppo elevato, è possibile utilizzare il seguente approccio basato su `oak-run.jar` per importare e reindicizzare le definizioni dell&#39;indice Lucene in un&#39;installazione AEM basata su TarMK.
 
 ![Creazione e aggiornamento delle definizioni degli indici in TarMK tramite oak-run.jar](assets/10.png)
 
 ### Creazione e aggiornamento delle definizioni degli indici in MonogMK tramite oak-run.jar {#creatingandupdatingindexdefinitionsonmonogmkusingoak-run-jar}
 
-Se il tempo o l&#39;impatto sulle prestazioni della reindicizzazione utilizzando metodi diversi da `oak-run.jar` è troppo elevato, è possibile utilizzare il seguente approccio basato su `oak-run.jar` per importare e reindicizzare le definizioni dell&#39;indice di Lucene nelle installazioni AEM basate su MongoMK.
+Se l&#39;impatto sulle prestazioni o sul tempo della reindicizzazione utilizzando metodi diversi da `oak-run.jar` è troppo elevato, è possibile utilizzare il seguente approccio basato su `oak-run.jar` per importare e reindicizzare le definizioni dell&#39;indice di Lucene nelle installazioni AEM basate su MongoMK.
 
 ![Creazione e aggiornamento delle definizioni degli indici in MonogMK tramite oak-run.jar](assets/11.png)

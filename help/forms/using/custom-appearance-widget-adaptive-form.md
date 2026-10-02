@@ -11,11 +11,9 @@ role: User, Developer
 feature: Adaptive Forms,Foundation Components
 source-git-commit: 8a77756e8ba771c8de9950c2323bef8f23cc59b4
 workflow-type: tm+mt
-source-wordcount: '1702'
-ht-degree: 0%
-
+source-wordcount: '1744'
+ht-degree: 1%
 ---
-
 # Creare aspetti personalizzati per i campi del modulo adattivo{#create-custom-appearances-for-adaptive-form-fields}
 
 ## Introduzione {#introduction}
@@ -30,7 +28,7 @@ Esaminiamo innanzitutto i termini e i concetti chiave utilizzati in questo artic
 
 **jQuery plugin** Fornisce un meccanismo standard, basato sul framework widget jQuery, per implementare un aspetto alternativo.
 
-**ClientLib** Sistema di librerie lato client nell&#39;elaborazione lato client AEM basato su codice JavaScript e CSS complesso. Per ulteriori informazioni, consulta Utilizzo delle librerie lato client.
+**ClientLib** Un sistema di librerie lato client nell&#39;elaborazione lato client di AEM basato su codice JavaScript e CSS complesso. Per ulteriori informazioni, consulta Utilizzo delle librerie lato client.
 
 **Archetipo** toolkit per modelli di progetto Maven definito come modello o modello originale per progetti Maven. Per ulteriori informazioni, consulta Introduzione agli archetipi.
 
@@ -44,7 +42,7 @@ Per creare un aspetto personalizzato, effettua le seguenti operazioni:
 1. **Estendere una classe widget esistente**: estendere una classe widget esistente ed eseguire l&#39;override delle classi richieste.
 1. **Crea una libreria client**: crea una libreria `clientLib: af.customwidget` e aggiungi i file JavaScript e CSS richiesti.
 
-1. **Genera e installa il progetto**: genera il progetto Maven e installa il pacchetto di contenuti generato su AEM.
+1. **Generare e installare il progetto**: generare il progetto Maven e installare il pacchetto di contenuti generato in AEM.
 1. **Aggiorna il modulo adattivo**: aggiorna le proprietà del campo modulo adattivo per utilizzare l&#39;aspetto personalizzato.
 
 ### Creare un progetto {#create-a-project}
@@ -66,7 +64,7 @@ Il comando scarica i plug-in Maven e le informazioni di archetipo dall’archivi
 * **artifactId**: ID artefatto utilizzato dal progetto Maven generato.
 * **versione**: versione per il progetto Maven generato.
 * **pacchetto**: pacchetto utilizzato per la struttura del file.
-* **artifactName**: nome dell&#39;artifact del pacchetto AEM generato.
+* **artifactName**: nome dell&#39;artefatto del pacchetto AEM generato.
 * **packageGroup**: gruppo di pacchetti del pacchetto AEM generato.
 * **widgetName**: nome dell&#39;aspetto utilizzato come riferimento.
 
@@ -126,13 +124,13 @@ Una volta creato il modello di progetto, effettua le seguenti modifiche, in base
   </tr>
   <tr>
    <td><code>render</code></td>
-   <td>La funzione render restituisce l’oggetto jQuery per l’elemento HTML predefinito del widget. L’elemento HTML predefinito deve essere di tipo attivabile. Ad esempio, <code>&lt;a&gt;</code>, <code>&lt;input&gt;</code> e <code>&lt;li&gt;</code>. L'elemento restituito viene utilizzato come <code>$userControl</code>. Se <code>$userControl</code> specifica il vincolo di cui sopra, le funzioni della classe <code>AbstractWidget</code> funzionano come previsto, altrimenti alcune delle API comuni (attivazione, clic) richiedono modifiche. </td>
+   <td>La funzione di rendering restituisce l'oggetto jQuery per l'elemento HTML predefinito del widget. L’elemento HTML predefinito deve essere di tipo attivabile. Ad esempio, <code>&lt;a&gt;</code>, <code>&lt;input&gt;</code> e <code>&lt;li&gt;</code>. L'elemento restituito viene utilizzato come <code>$userControl</code>. Se <code>$userControl</code> specifica il vincolo di cui sopra, le funzioni della classe <code>AbstractWidget</code> funzionano come previsto, altrimenti alcune delle API comuni (attivazione, clic) richiedono modifiche. </td>
   </tr>
   <tr>
    <td><code>getEventMap</code></td>
-   <td>Restituisce una mappa per convertire gli eventi HTML in eventi XFA. <br /> <code class="code">&lbrace;
+   <td>Restituisce una mappa per convertire gli eventi HTML in eventi XFA. <br /> <code class="code">{
       blur: XFA_EXIT_EVENT,
-      &rbrace;</code><br /> Questo esempio mostra che <code>blur</code> è un evento HTML e <code>XFA_EXIT_EVENT</code> è l'evento XFA corrispondente. </td>
+      }</code><br /> Questo esempio mostra che <code>blur</code> è un evento HTML e <code>XFA_EXIT_EVENT</code> è l'evento XFA corrispondente. </td>
   </tr>
   <tr>
    <td><code>getOptionsMap</code></td>
@@ -173,7 +171,7 @@ Il progetto di esempio generato dall&#39;archetipo Maven crea automaticamente le
 
 ### Generare e installare {#build-and-install}
 
-Per generare il progetto, esegui il comando seguente sulla shell per generare un pacchetto CRX che deve essere installato sul server AEM.
+Per generare il progetto, esegui il seguente comando sulla shell per generare un pacchetto CRX che deve essere installato sul server AEM.
 
 `mvn clean install`
 
@@ -191,7 +189,7 @@ Per applicare l’aspetto personalizzato a un campo modulo adattivo:
 
 ## Esempio: creare un aspetto personalizzato   {#sample-create-a-custom-appearance-nbsp}
 
-Esaminiamo ora un esempio per creare un aspetto personalizzato in modo che un campo numerico venga visualizzato come un indicatore numerico o un dispositivo di scorrimento. Effettua le seguenti operazioni:
+Esaminiamo ora un esempio per creare un aspetto personalizzato in modo che un campo numerico venga visualizzato come un indicatore numerico o un dispositivo di scorrimento. Esegui i passaggi seguenti:
 
 1. Esegui il seguente comando per creare un progetto locale basato su Archetipo Maven:
 
@@ -224,7 +222,7 @@ Esaminiamo ora un esempio per creare un aspetto personalizzato in modo che un ca
 
    1. Individuare e selezionare la cartella in cui è stato eseguito il comando `archetype:generate`.
 
-   1. Fare clic su **[!UICONTROL Fine]**.
+   1. Fai clic su **[!UICONTROL Fine]**.
 
       ![schermata eclissi](assets/eclipse-screenshot.png)
 
@@ -311,7 +309,7 @@ Esaminiamo ora un esempio per creare un aspetto personalizzato in modo che un ca
 
    `mvn clean install`
 
-1. Installa il pacchetto utilizzando Gestione pacchetti AEM.
+1. Installa il pacchetto utilizzando Gestione pacchetti di AEM.
 
 1. Apri il modulo adattivo in modalità di modifica in cui desideri applicare l’aspetto personalizzato ed effettua le seguenti operazioni:
 
