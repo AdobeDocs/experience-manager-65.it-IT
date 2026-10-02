@@ -1,5 +1,5 @@
 ---
-title: Rendering di Forms per valore
+title: Rendering dei moduli per valore
 description: Utilizza Forms API (Java) per eseguire il rendering di un modulo per valore utilizzando Java API e Web Service API.
 contentOwner: admin
 content-type: reference
@@ -9,15 +9,14 @@ topic-tags: operations
 role: Developer
 exl-id: a3a6a06d-ec90-4147-a5f0-e776a086ee12
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1822'
-ht-degree: 0%
-
+source-wordcount: '1848'
+ht-degree: 1%
 ---
-
-# Rendering di Forms per valore {#rendering-forms-by-value}
+# Rendering dei moduli per valore {#rendering-forms-by-value}
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 
@@ -35,11 +34,11 @@ Quando la progettazione di un modulo viene passata in base al valore, si applica
 
 * Nessun contenuto collegato relativo può essere incluso nella progettazione del modulo. Tutte le immagini e i frammenti devono essere incorporati nella struttura del modulo o essere assolutamente referenziati.
 * Non è possibile eseguire calcoli lato server dopo il rendering del modulo. Se il modulo viene inviato nuovamente al servizio Forms, i dati vengono estratti e restituiti senza calcoli lato server.
-* Poiché HTML può utilizzare solo immagini collegate in fase di runtime, non è possibile generare HTML con immagini incorporate. Questo perché il servizio Forms supporta le immagini incorporate con HTML recuperando le immagini da una progettazione di modulo di riferimento. Poiché una struttura di modulo passata da un valore non dispone di una posizione di riferimento, le immagini incorporate non possono essere estratte durante la visualizzazione della pagina HTML. Pertanto, i riferimenti immagine devono essere percorsi assoluti per essere sottoposti a rendering in HTML.
+* Poiché HTML può utilizzare solo immagini collegate in fase di esecuzione, non è possibile generare HTML con immagini incorporate. Questo perché il servizio Forms supporta le immagini incorporate con HTML recuperando le immagini da una progettazione di modulo di riferimento. Poiché una progettazione di modulo passata da un valore non dispone di una posizione di riferimento, le immagini incorporate non possono essere estratte durante la visualizzazione della pagina HTML. Pertanto, i riferimenti immagine devono essere percorsi assoluti per essere sottoposti a rendering in HTML.
 
 >[!NOTE]
 >
->Sebbene sia possibile eseguire il rendering di diversi tipi di moduli in base al valore, ad esempio moduli HTML o moduli che contengono diritti di utilizzo, in questa sezione viene descritto come eseguire il rendering di PDF forms interattivi.
+>Sebbene sia possibile eseguire il rendering di diversi tipi di moduli in base al valore (ad esempio, moduli di HTML o moduli che contengono diritti di utilizzo), in questa sezione viene descritto il rendering di PDF forms interattivi.
 
 >[!NOTE]
 >
@@ -61,7 +60,7 @@ Includi i file necessari nel progetto di sviluppo. Se stai creando un’applicaz
 
 **Creare un oggetto API client di Forms**
 
-Prima di poter importare i dati in modo programmatico in un modulo PDF API client, è necessario creare un client del servizio di integrazione dati. Quando si crea un client di servizio, vengono definite le impostazioni di connessione necessarie per richiamare un servizio.
+Prima di poter importare i dati in modo programmatico in un&#39;API client di PDF form, è necessario creare un client del servizio di integrazione dei dati. Quando si crea un client di servizio, vengono definite le impostazioni di connessione necessarie per richiamare un servizio.
 
 **Fai riferimento alla progettazione del modulo**
 
@@ -93,7 +92,7 @@ Quando il servizio Forms esegue il rendering di un modulo in base al valore, res
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Guida introduttiva all’API di servizio Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Avvio rapido di API Java per il servizio dei moduli](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
 [Trasmissione di documenti al servizio Forms](/help/forms/developing/passing-documents-forms-service.md)
 
@@ -142,7 +141,7 @@ Eseguire il rendering di un modulo per valore utilizzando l’API Forms (Java):
 
 **Consulta anche**
 
-[Rendering di Forms per valore](/help/forms/developing/rendering-forms.md)
+[Rendering dei moduli per valore](/help/forms/developing/rendering-forms.md)
 
 [Quick Start (modalità SOAP): rendering per valore utilizzando l’API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
 
@@ -180,7 +179,7 @@ Eseguire il rendering di un modulo in base al valore utilizzando l’API di Form
    * Un oggetto `PDFFormRenderSpec` che memorizza le opzioni di runtime. Questo è un parametro facoltativo ed è possibile specificare `null` se non si desidera specificare le opzioni di runtime.
    * Oggetto `URLSpec` contenente i valori URI richiesti dal servizio Forms.
    * Oggetto `java.util.HashMap` che memorizza gli allegati. Questo è un parametro facoltativo ed è possibile specificare `null` se non si desidera allegare file al modulo.
-   * Oggetto `com.adobe.idp.services.holders.BLOBHolder` vuoto popolato dal metodo. Viene utilizzato per memorizzare il modulo PDF di cui è stato eseguito il rendering.
+   * Oggetto `com.adobe.idp.services.holders.BLOBHolder` vuoto popolato dal metodo. Viene utilizzato per memorizzare il modulo di PDF sottoposto a rendering.
    * Oggetto `javax.xml.rpc.holders.LongHolder` vuoto popolato dal metodo. Questo argomento consente di memorizzare il numero di pagine del modulo.
    * Oggetto `javax.xml.rpc.holders.StringHolder` vuoto popolato dal metodo. Questo argomento consente di memorizzare il valore delle impostazioni locali.
    * Oggetto `com.adobe.idp.services.holders.FormsResultHolder` vuoto che conterrà i risultati dell&#39;operazione.
@@ -199,6 +198,6 @@ Eseguire il rendering di un modulo in base al valore utilizzando l’API di Form
 
 **Consulta anche**
 
-[Rendering di Forms per valore](#rendering-forms-by-value)
+[Rendering dei moduli per valore](#rendering-forms-by-value)
 
 [Richiamare AEM Forms utilizzando la codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

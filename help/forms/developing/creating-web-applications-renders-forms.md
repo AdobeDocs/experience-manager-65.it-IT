@@ -1,22 +1,25 @@
 ---
-title: Creazione di applicazioni Web per il rendering di Forms
+title: Creazione di applicazioni web per il rendering dei moduli
+
 description: Creare un’applicazione basata sul web che utilizza servlet Java per richiamare il servizio Forms ed eseguire il rendering dei moduli. Il servlet Java funge da collegamento tra il servizio Forms che restituisce un modulo e un browser web client.
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: 85e00003-8c8b-463a-b728-66af174be295
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Workbench,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1832'
+source-wordcount: '1870'
 ht-degree: 0%
-
 ---
-
 # Creazione di applicazioni Web per il rendering di Forms {#creating-web-applications-thatrenders-forms}
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
@@ -63,7 +66,7 @@ I file di dati XML utilizzati dall&#39;applicazione Web sono stati spostati dall
 
 >[!NOTE]
 >
->Per informazioni sulla creazione di un&#39;applicazione Forms tramite Workbench, vedere la [Guida di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
+>Per informazioni sulla creazione di un&#39;applicazione Forms tramite Workbench, vedere la [Guida di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_it).
 
 ### Riepilogo dei passaggi {#summary-of-steps}
 
@@ -114,8 +117,8 @@ Per il percorso di questi file JAR, vedi [Inclusi i file della libreria Java di 
 **Per aggiungere una pagina HTML al progetto:**
 
 1. Nella finestra Esplora progetti fare clic con il pulsante destro del mouse sul progetto `FragmentsWebApplication` e selezionare **Nuovo** > **Altro**.
-1. Espandi la cartella **Web**, seleziona **HTML**, quindi fai clic su **Avanti**.
-1. Nella finestra di dialogo Nuovo HTML, digitare `index.html` per il nome del file, quindi fare clic su **Fine**.
+1. Espandi la cartella **Web**, seleziona **HTML** e fai clic su **Avanti**.
+1. Nella finestra di dialogo Nuovo HTML digitare `index.html` per il nome del file, quindi fare clic su **Fine**.
 
 >[!NOTE]
 >
@@ -143,7 +146,7 @@ In genere, il codice client non viene inserito nel metodo `doGet` o `doPost` di 
 Per eseguire il rendering di un modulo basato su frammenti utilizzando l’API di servizio Forms, esegui le seguenti attività:
 
 1. Includi i file JAR client, ad esempio adobe-forms-client.jar, nel percorso di classe del progetto Java. Per informazioni sul percorso di questi file, vedere [Inclusi i file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
-1. Recupera il valore del pulsante di opzione inviato dal modulo HTML e specifica se utilizzare i dati americani o canadesi. Se viene inviato American, creare un `com.adobe.idp.Document` che memorizzi i dati nell&#39;*Ordine di acquisto US.xml*. Analogamente, se canadese, creare un `com.adobe.idp.Document` che memorizzi i dati nel file *Ordine di acquisto Canada.xml*.
+1. Recupera il valore del pulsante di scelta inviato dal modulo di HTML e specifica se utilizzare i dati americani o canadesi. Se viene inviato American, creare un `com.adobe.idp.Document` che memorizzi i dati nell&#39;*Ordine di acquisto US.xml*. Analogamente, se canadese, creare un `com.adobe.idp.Document` che memorizzi i dati nel file *Ordine di acquisto Canada.xml*.
 1. Creare un oggetto `ServiceClientFactory` contenente le proprietà di connessione. (Vedere [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
 1. Creare un oggetto `FormsServiceClient` utilizzando il relativo costruttore e passando l&#39;oggetto `ServiceClientFactory`.
 1. Creare un oggetto `URLSpec` che memorizza i valori URI utilizzando il relativo costruttore.
@@ -307,7 +310,7 @@ Esempio Nell&#39;esempio di codice riportato di seguito viene rappresentato il s
 
 ### Creazione della pagina web {#creating-the-web-page}
 
-La pagina web index.html fornisce un punto di ingresso al servlet Java e richiama il servizio Forms. Questa pagina Web è un modulo HTML di base che contiene due pulsanti di scelta e un pulsante di invio. Il nome dei pulsanti di scelta è radio. Quando l&#39;utente fa clic sul pulsante di invio, i dati del modulo vengono inviati al servlet Java `RenderFormFragment`.
+La pagina web index.html fornisce un punto di ingresso al servlet Java e richiama il servizio Forms. Questa pagina Web è un modulo di base di HTML che contiene due pulsanti di scelta e un pulsante di invio. Il nome dei pulsanti di scelta è radio. Quando l&#39;utente fa clic sul pulsante di invio, i dati del modulo vengono inviati al servlet Java `RenderFormFragment`.
 
 Il servlet Java acquisisce i dati pubblicati dalla pagina HTML utilizzando il seguente codice Java:
 
@@ -383,7 +386,7 @@ Per distribuire il servlet Java che richiama il servizio Forms, crea un pacchett
 
 ### Distribuzione del file WAR sul server applicazioni J2EE {#deploying-the-war-file-to-the-j2ee-application-server}
 
-È possibile distribuire il file WAR sul server applicazioni J2EE sul quale viene distribuito AEM Forms. Dopo aver distribuito il file WAR, puoi accedere alla pagina web HTML utilizzando un browser web.
+È possibile distribuire il file WAR sul server applicazioni J2EE sul quale viene distribuito AEM Forms. Dopo aver distribuito il file WAR, puoi accedere alla pagina web di HTML utilizzando un browser web.
 
 **Per distribuire il file WAR nel server applicazioni J2EE:**
 

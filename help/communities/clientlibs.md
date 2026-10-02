@@ -12,11 +12,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '406'
 ht-degree: 0%
-
 ---
-
 # Clientlibs per i componenti Communities {#clientlibs-for-communities-components}
 
 ## Introduzione {#introduction}
@@ -49,12 +47,12 @@ Quando mancano le clientlibs richieste, [l&#39;aggiunta di un componente Communi
 
 Le informazioni essenziali sulle funzioni per gli sviluppatori identificano le clientlibs richieste.
 
-Inoltre, da un&#39;istanza AEM, la navigazione alla [Guida ai componenti della community](/help/communities/components-guide.md) consente di accedere a un elenco di categorie clientlib richieste per un componente.
+Inoltre, da un&#39;istanza di AEM, la navigazione alla [Guida ai componenti della community](/help/communities/components-guide.md) consente di accedere a un elenco di categorie clientlib richieste per un componente.
 
 Ad esempio, nella parte superiore della pagina [Recensioni](https://localhost:4502/content/community-components/en/reviews.html) sono elencate le clientlibs richieste
 
 * cq.ckeditor
-* cq.social.hbs.reviews
+* cq.social.hbs.Reviews
 
 ![clientlibs-Reviews](assets/clientlibs-reviews.png)
 
@@ -64,26 +62,26 @@ Quando si desidera aggiungere un componente Communities a una pagina, se non è 
 
 Utilizza [CRXDE|Lite](#using-crxde-lite) per modificare un elenco clientlibslist esistente per una pagina del sito community.
 
-Per aggiungere una clientlib per un sito community utilizzando [CRXDE Liti](/help/sites-developing/developing-with-crxde-lite.md):
+Per aggiungere una clientlib per un sito community utilizzando [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
 * Passa a [https://&lt;server>:&lt;porta>/crx/de](https://localhost:4502/crx/de).
 * Individua il nodo `clientlibslist` per la pagina in cui desideri aggiungere il componente:
 
-   * `/content/sites/sample/en/page/jcr:content/clientlibslist`
+  * `/content/sites/sample/en/page/jcr:content/clientlibslist`
 
 * Con `clientlibslist` nodo selezionato:
 
-   * Individuare la proprietà String[] `scg:requiredClientLibs`.
-   * Selezionare `Value` per accedere alla finestra di dialogo Array di stringhe.
+  * Individuare la proprietà String[] `scg:requiredClientLibs`.
+  * Selezionare `Value` per accedere alla finestra di dialogo Array di stringhe.
 
-      * Scorri verso il basso, se necessario.
-      * Seleziona + per immettere una nuova libreria client.
+    * Scorri verso il basso, se necessario.
+    * Seleziona + per immettere una nuova libreria client.
 
-         * Ripeti l’operazione per aggiungere altre librerie client.
+      * Ripeti l’operazione per aggiungere altre librerie client.
 
-         * Selezionare **OK**.
+      * Selezionare **OK**.
 
-   * Seleziona **Salva tutto**.
+  * Seleziona **Salva tutto**.
 
 >[!NOTE]
 >

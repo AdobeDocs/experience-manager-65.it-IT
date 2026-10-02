@@ -1,22 +1,25 @@
 ---
-title: Gestire i metadati del modulo
+title: Gestire i metadati dei moduli
+
 description: I metadati semplificano la classificazione e l’organizzazione delle risorse e aiutano gli utenti che cercano una risorsa specifica.
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
+
 docset: aem65
+
 role: Admin,User
 exl-id: f82bbd39-b655-47a9-bca9-21d7cd30c082
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '1967'
+source-wordcount: '1998'
 ht-degree: 2%
-
 ---
-
-# Gestire i metadati del modulo{#manage-form-metadata}
+# Gestire i metadati dei moduli{#manage-form-metadata}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
@@ -41,9 +44,9 @@ In AEM Forms sono supportati i seguenti tipi di risorse:
 
 * Modelli di modulo (moduli XFA)
 * PDF forms
-* Documento (PDF flat)
+* Documento (PDF semplici)
 * Moduli adattivi
-* Riferimenti
+* Risorse
 * XFS
 
 #### Ampio elenco di metadati {#extensive-list-of-metadata}
@@ -73,7 +76,7 @@ Di seguito è riportato un elenco completo delle proprietà di metadati supporta
    <td><p>Valore di sola lettura che specifica il tipo di risorsa. Può avere uno dei seguenti valori:</p> 
     <ul> 
      <li>Modello di modulo</li> 
-     <li>Modulo PDF, Modulo PDF (Acroform) o Modulo PDF (Signed)</li> 
+     <li>Modulo PDF, Modulo PDF (Acroform) o Modulo PDF (Firmato)</li> 
      <li>Documento, Documento (Firmato)</li> 
      <li>Modulo adattivo</li> 
      <li>Risorsa</li> 
@@ -94,7 +97,7 @@ Di seguito è riportato un elenco completo delle proprietà di metadati supporta
    <td>Tutto tranne la risorsa</td> 
    <td><p>Valore di sola lettura calcolato automaticamente in base al tipo di modulo.</p> 
     <ul> 
-     <li>PDF/Modello modulo/Documento: recuperato dal file binario caricato.</li> 
+     <li>PDF/Modello di modulo/Documento - recuperato dal file binario caricato.</li> 
      <li>Modulo adattivo: utente connesso al momento della creazione del modulo.</li> 
     </ul> </td> 
   </tr> 
@@ -114,16 +117,16 @@ Di seguito è riportato un elenco completo delle proprietà di metadati supporta
    <td>Valore di sola lettura che specifica l'ora dell'ultima pubblicazione del modulo.</td> 
   </tr> 
   <tr> 
-   <td>Ora di attivazione/disattivazione Publish</td> 
+   <td>Ora di attivazione/disattivazione pubblicazione</td> 
    <td>Tutto tranne la risorsa</td> 
    <td><p>Ora in cui è pianificata la pubblicazione automatica o l'annullamento della pubblicazione del modulo. L’utente imposta questo valore durante la modifica dei metadati.</p> 
     <ul> 
-     <li>L'ora di attivazione e disattivazione del Publish deve essere successiva alla data corrente. </li> 
-     <li>L'ora di disattivazione del Publish deve essere successiva all'ora di attivazione della pubblicazione. </li> 
+     <li>L'ora di attivazione e disattivazione della pubblicazione deve essere successiva alla data corrente. </li> 
+     <li>L'ora di disattivazione della pubblicazione deve essere successiva all'ora di attivazione della pubblicazione. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Invia URL</td> 
+   <td>URL di invio</td> 
    <td><p>Modello di modulo</p> <p>Modulo PDF</p> </td> 
    <td><p>Per configurare un URL specificato dall'utente per l'invio dei dati del modulo a un servlet.</p> <p>L’URL di invio può essere configurato utilizzando uno dei seguenti metodi, elencati in ordine di precedenza:</p> 
     <ul> 
@@ -133,7 +136,7 @@ Di seguito è riportato un elenco completo delle proprietà di metadati supporta
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Profilo rendering HTML</td> 
+   <td>Profilo di rendering HTML</td> 
    <td>Modello di modulo</td> 
    <td>Il profilo di rendering HTML utilizzato durante il rendering di un modello di modulo in formato HTML.</td> 
   </tr> 
@@ -168,7 +171,7 @@ Di seguito è riportato un elenco completo delle proprietà di metadati supporta
     <ul> 
      <li>Modello di modulo: viene selezionato un modello di modulo tra quelli esistenti nel repository. Questo valore può essere aggiornato.</li> 
      <li>Schema XML: viene caricato un file XSD. Questo valore può essere aggiornato.</li> 
-     <li>Nessuno</li> 
+     <li>Nessuna</li> 
     </ul> 
     <div>
       Un modello di modulo selezionato può essere aggiornato ma non rimosso. 
@@ -299,7 +302,7 @@ AEM Forms espone gli schemi di metadati dei tipi di moduli supportati in questo 
 
       >[!NOTE]
       >
-      >Non modificare il prefisso ‘./jcr:content/metadata/’, che definisce il percorso in cui è memorizzata la proprietà.
+      >Non modificare il prefisso ‘./jcr:content/metadata/’ in quanto definisce il percorso in cui è memorizzata la proprietà.
       >
       >Inoltre, il nome della proprietà deve essere univoco per evitare di scrivere valori per due o più proprietà nella stessa posizione nell’archivio. Pertanto, si consiglia di modificare il valore &quot;default&quot;.
 

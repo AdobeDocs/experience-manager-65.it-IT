@@ -1,22 +1,20 @@
 ---
-title: Creazione di un handler per l’invito di utenti esterni
-description: Scopri come creare un handler per l’invito di utenti esterni. Consente al servizio di Rights Management di invitare utenti esterni a diventare utenti del Rights Management.
+title: Creazione di un gestore per l’invito di utenti esterni
+description: Scopri come creare un handler per l’invito di utenti esterni. Consente al servizio Rights Management di invitare utenti esterni a diventare utenti Rights Management.
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 0%
-
+source-wordcount: '1165'
+ht-degree: 4%
 ---
-
-# Creazione di un handler per l’invito di utenti esterni {#create-invite-external-users-handler}
+# Creazione di un gestore per l’invito di utenti esterni {#create-invite-external-users-handler}
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 
-È possibile creare un gestore di invito di utenti esterni per il servizio di Rights Management. Un gestore di invito utenti esterni consente al servizio di Rights Management di invitare utenti esterni a diventare utenti del Rights Management. Quando un utente diventa un utente del Rights Management, può eseguire attività quali l’apertura di un documento di PDF protetto tramite policy. Dopo aver distribuito ad AEM Forms il gestore per l’invito di utenti esterni, puoi utilizzare la console di amministrazione per interagire con esso.
+Puoi creare un gestore per l’invito di utenti esterni per il servizio Rights Management. Un gestore per l’invito di utenti esterni consente al servizio Rights Management di invitare utenti esterni a diventare utenti di Rights Management. Dopo che un utente diventa un utente di Rights Management, può eseguire attività quali l’apertura di un documento PDF protetto tramite policy. Dopo aver distribuito ad AEM Forms il gestore per l’invito di utenti esterni, puoi utilizzare la console di amministrazione per interagire con esso.
 
 >[!NOTE]
 >
@@ -36,13 +34,13 @@ Per sviluppare un handler per l’invito di utenti esterni, è necessario attene
 
 Per configurare l’ambiente di sviluppo, devi creare un progetto Java, ad esempio un progetto Eclipse. La versione di Eclipse supportata è `3.2.1` o successiva.
 
-L&#39;SPI di Rights Management richiede che il file `edc-server-spi.jar` sia impostato nel percorso di classe del progetto. Se non fai riferimento a questo file JAR, non puoi utilizzare l’SPI di Rights Management nel tuo progetto Java. Questo file JAR è installato con l&#39;SDK AEM Forms nella cartella `[install directory]\Adobe\Adobe_Experience_Manager_forms\sdk\spi`.
+L&#39;SPI di Rights Management richiede che il file `edc-server-spi.jar` sia impostato nel percorso della classe del progetto. Se non fai riferimento a questo file JAR, non puoi utilizzare la SPI di Rights Management nel tuo progetto Java. Questo file JAR è installato con AEM Forms SDK nella cartella `[install directory]\Adobe\Adobe_Experience_Manager_forms\sdk\spi`.
 
-Oltre ad aggiungere il file `edc-server-spi.jar` al percorso della classe del progetto, è necessario aggiungere anche i file JAR necessari per utilizzare l&#39;API Servizio di Rights Management. Questi file sono necessari per utilizzare l’API Servizio di Rights Management nel gestore Invita utenti esterni.
+Oltre ad aggiungere il file `edc-server-spi.jar` al percorso della classe del progetto, è necessario aggiungere anche i file JAR necessari per utilizzare l&#39;API del servizio Rights Management. Questi file sono necessari per utilizzare l’API del servizio Rights Management nel gestore Invita utenti esterni.
 
 ## Definizione dell’implementazione del gestore di inviti di utenti esterni {#define-invite-external-users-handler}
 
-Per sviluppare un gestore di inviti esterni, è necessario creare una classe Java che implementi l&#39;interfaccia `com.adobe.edc.server.spi.ersp.InvitedUserProvider`. Questa classe contiene un metodo denominato `invitedUser` che il servizio di Rights Management richiama quando gli indirizzi di posta elettronica vengono inviati tramite la pagina **Aggiungi utenti invitati** accessibile tramite la console di amministrazione.
+Per sviluppare un gestore di inviti esterni, è necessario creare una classe Java che implementi l&#39;interfaccia `com.adobe.edc.server.spi.ersp.InvitedUserProvider`. Questa classe contiene un metodo denominato `invitedUser` che il servizio Rights Management richiama quando gli indirizzi e-mail vengono inviati tramite la pagina **Aggiungi utenti invitati** accessibile tramite la console di amministrazione.
 
 Il metodo `invitedUser` accetta un&#39;istanza `java.util.List` che contiene indirizzi di posta elettronica di tipo stringa inviati dalla pagina **Aggiungi utenti invitati**. Il metodo `invitedUser` restituisce un array di `InvitedUserProviderResult` oggetti, che in genere è un mapping di indirizzi e-mail a oggetti utente (non restituisce null).
 
@@ -215,7 +213,7 @@ L’illustrazione seguente mostra il contenuto del progetto Java inserito nel fi
 
 ![Invita utenti](assets/ci_ci_InviteUsers.png)
 
-A. File JAR esterni richiesti dal file JAVA del componente B.
+A. File JAR esterni richiesti dal componente B. File JAVA
 
 Crea un pacchetto del gestore di inviti di utenti esterni in un file JAR. Nel diagramma precedente, si noti che sono elencati i file .JAVA. Una volta inseriti in un file JAR, è necessario specificare anche i file .CLASS corrispondenti. Senza i file .CLASS, il gestore autorizzazioni non funziona.
 
@@ -234,19 +232,19 @@ Per testare il gestore di inviti di utenti esterni, puoi aggiungere utenti ester
 Per aggiungere utenti esterni da invitare tramite la console di amministrazione:
 
 1. Distribuisci il file JAR del gestore inviti utenti esterni tramite Workbench.
-1. Riavviare il server applicazioni.
+1. Riavvia il server applicazioni.
 
    >[!NOTE]
    >
-   > Per riavviare l&#39;SDK, si consiglia di utilizzare il comando &#39;Ctrl + C&#39;. Il riavvio dell’SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java, può causare incongruenze nell’ambiente di sviluppo dell’AEM.
+   > Si consiglia di utilizzare il comando “Ctrl + C” per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.
 
-1. Accedere alla console di amministrazione.
+1. Accedi alla console di amministrazione.
 1. Fai clic su **[!UICONTROL Servizi]** > **[!UICONTROL Rights Management]** > **[!UICONTROL Configurazione]** > **[!UICONTROL Registrazione utente]** invitata.
 1. Abilitare la registrazione degli utenti invitati selezionando la casella **[!UICONTROL Abilita registrazione utenti invitati]**. In **[!UICONTROL Usa sistema di registrazione predefinito]**, fare clic su **[!UICONTROL No]**. Salva le impostazioni.
 1. Dalla home page della console di amministrazione, fare clic su **[!UICONTROL Impostazioni]** > **[!UICONTROL Gestione utente]** > **[!UICONTROL Gestione dominio]**.
 1. Fare clic su **[!UICONTROL Nuovo dominio locale]**. Nella pagina seguente creare un dominio con il nome e il valore dell&#39;identificatore `EDC_EXTERNAL_REGISTERED`. Salva le modifiche.
 1. Dalla home page della console di amministrazione, fare clic su **[!UICONTROL Servizi]** > **[!UICONTROL Rights Management]** > **[!UICONTROL Utenti invitati e locali]**. Viene visualizzata la pagina **[!UICONTROL Aggiungi utente invitato]**.
-1. Immetti gli indirizzi e-mail (poiché il gestore di inviti esterni corrente non invia effettivamente i messaggi e-mail, l’indirizzo e-mail non deve essere valido). Fare clic su **[!UICONTROL OK]**. Gli utenti vengono invitati al sistema.
+1. Immetti gli indirizzi e-mail (poiché il gestore di inviti esterni corrente non invia effettivamente i messaggi e-mail, l’indirizzo e-mail non deve essere valido). Fai clic su **[!UICONTROL OK]**. Gli utenti vengono invitati al sistema.
 1. Dalla home page della console di amministrazione, fare clic su **[!UICONTROL Impostazioni]** > **[!UICONTROL Gestione utente]** > **[!UICONTROL Utenti e gruppi]**.
 1. Nel campo **[!UICONTROL Trova]**, immetti un indirizzo e-mail specificato. Fare clic su **[!UICONTROL Trova]**. L&#39;utente invitato viene visualizzato come utente nel dominio locale `EDC_EXTERNAL_REGISTERED`.
 

@@ -1,6 +1,6 @@
 ---
-title: Rendering dei PDF forms interattivi
-description: Utilizza il servizio Forms per eseguire il rendering dei PDF forms interattivi su dispositivi client, in genere browser web, per raccogliere informazioni dagli utenti. Puoi utilizzare il servizio Forms per eseguire il rendering dei moduli interattivi utilizzando l’API Java e l’API del servizio web.
+title: Rendering di moduli PDF interattivi
+description: Utilizza il servizio Forms per eseguire il rendering di PDF forms interattivi su dispositivi client, in genere browser web, per raccogliere informazioni dagli utenti. Puoi utilizzare il servizio Forms per eseguire il rendering dei moduli interattivi utilizzando l’API Java e l’API del servizio web.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
@@ -9,19 +9,18 @@ topic-tags: operations
 role: Developer
 exl-id: d9f32939-c2c0-4531-b15e-f63941c289e3
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2455'
+source-wordcount: '2471'
 ht-degree: 0%
-
 ---
-
-# Rendering dei PDF forms interattivi {#rendering-interactive-pdf-forms}
+# Rendering di moduli PDF interattivi {#rendering-interactive-pdf-forms}
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 
-Il servizio Forms esegue il rendering dei PDF forms interattivi sui dispositivi client, in genere i browser web, per raccogliere informazioni dagli utenti. Dopo aver eseguito il rendering di un modulo interattivo, un utente può immettere i dati nei campi del modulo e fare clic su un pulsante di invio presente nel modulo per inviare nuovamente le informazioni al servizio Forms. Adobe Reader o Acrobat devono essere installati nel computer che ospita il browser web client per rendere visibile un modulo interattivo di PDF.
+Il servizio Forms esegue il rendering di PDF forms interattivi su dispositivi client, in genere browser web, per raccogliere informazioni dagli utenti. Dopo aver eseguito il rendering di un modulo interattivo, un utente può immettere i dati nei campi del modulo e fare clic su un pulsante di invio presente nel modulo per inviare nuovamente le informazioni al servizio Forms. Per rendere visibile un modulo PDF interattivo, è necessario che Adobe Reader o Acrobat sia installato nel computer che ospita il browser Web client.
 
 >[!NOTE]
 >
@@ -133,7 +132,7 @@ Per accedere alla struttura del modulo, specificare `Applications/FormsApplicati
 
 >[!NOTE]
 >
->Per informazioni sulla creazione di un&#39;applicazione Forms tramite Workbench, vedere la [Guida di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
+>Per informazioni sulla creazione di un&#39;applicazione Forms tramite Workbench, vedere la [Guida di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_it).
 
 Il percorso di una risorsa in un’applicazione Forms è:
 
@@ -150,7 +149,7 @@ Quando esegui il rendering di un modulo interattivo, puoi definire valori URI co
 * Sul pulsante Invia durante la progettazione della struttura del modulo in Designer
 * Utilizzando l’API client del servizio Forms
 
-Se l’URL di destinazione è definito nella progettazione del modulo, non eseguirne l’override con l’API client del servizio Forms. In altre parole, impostando l’URL di destinazione utilizzando l’API di Forms, l’URL specificato nella progettazione del modulo viene reimpostato su quello specificato utilizzando l’API. Se desideri inviare il modulo PDF all’URL di destinazione specificato nella progettazione del modulo, imposta a livello di programmazione l’URL di destinazione su una stringa vuota.
+Se l’URL di destinazione è definito nella progettazione del modulo, non eseguirne l’override con l’API client del servizio Forms. In altre parole, impostando l’URL di destinazione utilizzando l’API di Forms, l’URL specificato nella progettazione del modulo viene reimpostato su quello specificato utilizzando l’API. Se si desidera inviare il modulo PDF all&#39;URL di destinazione specificato nella progettazione del modulo, impostare l&#39;URL di destinazione a livello di programmazione su una stringa vuota.
 
 Se si dispone di un modulo contenente un pulsante di invio e un pulsante di calcolo (con uno script corrispondente in esecuzione sul server), è possibile definire a livello di programmazione l&#39;URL a cui inviare il modulo per eseguire lo script. Utilizza il pulsante Invia nella struttura del modulo per specificare l’URL in cui vengono pubblicati i dati del modulo. (Vedi [Calcolo dei dati del modulo](/help/forms/developing/calculating-form-data.md).)
 
@@ -160,7 +159,7 @@ Se si dispone di un modulo contenente un pulsante di invio e un pulsante di calc
 
 **Allega file al modulo**
 
-È possibile allegare file a un modulo. Quando si esegue il rendering di un modulo PDF con file allegati, gli utenti possono recuperare i file allegati in Acrobat utilizzando il riquadro dei file allegati. È possibile allegare tipi di file diversi a un modulo, ad esempio un file di testo, oppure a un file binario, ad esempio un file JPG.
+È possibile allegare file a un modulo. Quando si esegue il rendering di un modulo di PDF con file allegati, gli utenti possono recuperare i file allegati in Acrobat utilizzando il riquadro dei file allegati. È possibile allegare tipi di file diversi a un modulo, ad esempio un file di testo, oppure a un file binario, ad esempio un file di JPG.
 
 >[!NOTE]
 >
@@ -176,11 +175,11 @@ Il metodo `renderPDFForm2` accetta un&#39;istanza `com.adobe.idp.Document` che c
 
 >[!NOTE]
 >
->Impossibile impostare l&#39;opzione di runtime PDF con tag se il documento di input è un documento PDF. Se il file di input è un file XDP, è possibile impostare l&#39;opzione PDF con tag.
+>Impossibile impostare l&#39;opzione di runtime di PDF con tag se il documento di input è un documento di PDF. Se il file di input è un file XDP, è possibile impostare l&#39;opzione PDF con tag.
 
 ## Eseguire il rendering di un modulo PDF interattivo tramite l’API Java {#render-an-interactive-pdf-form-using-the-java-api}
 
-Esegui il rendering di un modulo PDF interattivo utilizzando l’API Forms (Java):
+Eseguire il rendering di un modulo PDF interattivo utilizzando l’API Forms (Java):
 
 1. Includi file di progetto
 
@@ -203,7 +202,7 @@ Esegui il rendering di un modulo PDF interattivo utilizzando l’API Forms (Java
    * Creare un oggetto `java.util.HashMap` per archiviare gli allegati utilizzando il relativo costruttore.
    * Richiama il metodo `put` dell&#39;oggetto `java.util.HashMap` per ogni file da allegare al modulo di cui è stato eseguito il rendering. Passa i seguenti valori a questo metodo:
 
-      * Valore stringa che specifica il nome del file allegato, inclusa l&#39;estensione.
+     * Valore stringa che specifica il nome del file allegato, inclusa l&#39;estensione.
 
    * Oggetto `com.adobe.idp.Document` contenente il file allegato.
 
@@ -233,9 +232,9 @@ Esegui il rendering di un modulo PDF interattivo utilizzando l’API Forms (Java
    * Creare una matrice di byte e popolarla con il flusso di dati del modulo richiamando il metodo `read` dell&#39;oggetto `InputStream` e passando la matrice di byte come argomento.
    * Richiama il metodo `write` dell&#39;oggetto `javax.servlet.ServletOutputStream` per inviare il flusso di dati del modulo al browser Web client. Passare la matrice di byte al metodo `write`.
 
-## Eseguire il rendering di un modulo PDF interattivo utilizzando l’API del servizio web {#render-an-interactive-pdf-form-using-the-web-service-api}
+## Eseguire il rendering di un modulo PDF interattivo tramite l’API del servizio web {#render-an-interactive-pdf-form-using-the-web-service-api}
 
-Esegui il rendering di un modulo PDF interattivo utilizzando l’API Forms (servizio web):
+Eseguire il rendering di un modulo PDF interattivo utilizzando l’API Forms (servizio web):
 
 1. Includi file di progetto
 
@@ -258,7 +257,7 @@ Esegui il rendering di un modulo PDF interattivo utilizzando l’API Forms (serv
    * Creare un oggetto `java.util.HashMap` per archiviare gli allegati utilizzando il relativo costruttore.
    * Richiama il metodo `put` dell&#39;oggetto `java.util.HashMap` per ogni file da allegare al modulo di cui è stato eseguito il rendering. Passa i seguenti valori a questo metodo:
 
-      * Valore stringa che specifica il nome dell&#39;allegato, inclusa l&#39;estensione del nome file
+     * Valore stringa che specifica il nome dell&#39;allegato, inclusa l&#39;estensione del nome file
 
    * Oggetto `BLOB` contenente il file allegato
 
@@ -275,7 +274,7 @@ Esegui il rendering di un modulo PDF interattivo utilizzando l’API Forms (serv
    * Un oggetto `PDFFormRenderSpec` che memorizza le opzioni di runtime. Questo è un parametro facoltativo ed è possibile specificare `null` se non si desidera specificare le opzioni di runtime.
    * Oggetto `URLSpec` contenente i valori URI richiesti dal servizio Forms.
    * Oggetto `java.util.HashMap` che memorizza gli allegati. Questo è un parametro facoltativo ed è possibile specificare `null` se non si desidera allegare file al modulo.
-   * Oggetto `com.adobe.idp.services.holders.BLOBHolder` vuoto popolato dal metodo. Viene utilizzato per memorizzare il modulo PDF di cui è stato eseguito il rendering.
+   * Oggetto `com.adobe.idp.services.holders.BLOBHolder` vuoto popolato dal metodo. Viene utilizzato per memorizzare il modulo di PDF sottoposto a rendering.
    * Oggetto `javax.xml.rpc.holders.LongHolder` vuoto popolato dal metodo. Questo argomento consente di memorizzare il numero di pagine nel modulo.
    * Oggetto `javax.xml.rpc.holders.StringHolder` vuoto popolato dal metodo. Questo argomento consente di memorizzare il valore delle impostazioni locali.
    * Oggetto `com.adobe.idp.services.holders.FormsResultHolder` vuoto che conterrà i risultati dell&#39;operazione.

@@ -1,27 +1,30 @@
 ---
-title: Passaggio di documenti al servizio Forms
+title: Trasmissione dei documenti al servizio Forms
+
 description: Passa al servizio Forms un oggetto com.adobe.idp.Document contenente la struttura del modulo. Il servizio Forms esegue il rendering della struttura del modulo nell'oggetto com.adobe.idp.Document.
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: 29c7ebda-407a-464b-a9db-054163f5b737
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1677'
-ht-degree: 0%
-
+source-wordcount: '1689'
+ht-degree: 1%
 ---
-
 # Trasmissione di documenti al servizio Forms {#passing-documents-to-the-formsservice}
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 
-Il servizio AEM Forms esegue il rendering dei PDF forms interattivi sui dispositivi client, in genere i browser web, per raccogliere informazioni dagli utenti. Un modulo di PDF interattivo si basa su una struttura di modulo che in genere viene salvata come file XDP e creata in Designer. In AEM Forms, è possibile passare un oggetto `com.adobe.idp.Document` che contiene la struttura del modulo al servizio Forms. Il servizio Forms esegue quindi il rendering della struttura del modulo nell&#39;oggetto `com.adobe.idp.Document`.
+Il servizio AEM Forms esegue il rendering di PDF forms interattivi su dispositivi client, in genere browser web, per raccogliere informazioni dagli utenti. Un modulo PDF interattivo si basa su una struttura di modulo generalmente salvata come file XDP e creata in Designer. In AEM Forms, è possibile passare un oggetto `com.adobe.idp.Document` che contiene la struttura del modulo al servizio Forms. Il servizio Forms esegue quindi il rendering della struttura del modulo nell&#39;oggetto `com.adobe.idp.Document`.
 
 Un vantaggio del passaggio di un oggetto `com.adobe.idp.Document` al servizio Forms è che altre operazioni del servizio restituiscono un&#39;istanza `com.adobe.idp.Document`. In altre parole, è possibile ottenere un&#39;istanza `com.adobe.idp.Document` da un&#39;altra operazione di servizio ed eseguirne il rendering. Si supponga, ad esempio, che un file XDP sia memorizzato in un nodo Content Services (obsoleto) denominato `/Company Home/Form Designs`, come illustrato nella figura seguente.
 
@@ -38,7 +41,7 @@ Per passare un documento ottenuto da Content Services (obsoleto) (obsoleto) al s
 1. Includi file di progetto.
 1. Creare un oggetto Forms e un oggetto API Client di Document Management.
 1. Recupera la progettazione del modulo da Content Services (obsoleto).
-1. Esegui il rendering del modulo di PDF interattivo.
+1. Eseguire il rendering del modulo PDF interattivo.
 1. Eseguire un&#39;azione con il flusso di dati del modulo.
 
 **Includi file di progetto**
@@ -71,7 +74,7 @@ A seconda del tipo di applicazione client, è possibile scrivere il modulo in un
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Guida introduttiva all’API di servizio Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Avvio rapido di API Java per il servizio dei moduli](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
 ## Trasmettere i documenti al servizio Forms tramite API Java {#pass-documents-to-the-forms-service-using-the-java-api}
 
@@ -121,7 +124,7 @@ Passa un documento ottenuto da Content Services (obsoleto) utilizzando il serviz
 
 **Consulta anche**
 
-[Quick Start (modalità SOAP): trasmissione di documenti al servizio Forms tramite l’API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)
+[Guida rapida (modalità SOAP): passare documenti al servizio Forms utilizzando l’API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)
 
 [Inclusione dei file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -151,9 +154,9 @@ Passa un documento ottenuto da Content Services (obsoleto) utilizzando il serviz
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegnare il nome utente dei moduli AEM al campo `FormsServiceClient.ClientCredentials.UserName.UserName`.
-      * Assegnare il valore della password corrispondente al campo `FormsServiceClient.ClientCredentials.UserName.Password`.
-      * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Assegnare il nome utente di AEM Forms al campo `FormsServiceClient.ClientCredentials.UserName.UserName`.
+     * Assegnare il valore della password corrispondente al campo `FormsServiceClient.ClientCredentials.UserName.Password`.
+     * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
@@ -184,9 +187,9 @@ Passa un documento ottenuto da Content Services (obsoleto) utilizzando il serviz
    * Oggetto `Map` che memorizza gli allegati. Questo valore è un parametro facoltativo ed è possibile specificare `null` se non si desidera allegare file al modulo.
    * Un parametro di output lungo utilizzato per memorizzare il conteggio delle pagine.
    * Parametro di output stringa utilizzato per memorizzare il valore delle impostazioni locali.
-   * Un parametro di output `FormsResult` utilizzato per memorizzare il modulo di interactrive PDF `.`
+   * Un parametro di output `FormsResult` utilizzato per memorizzare il modulo PDF interattivo `.`
 
-   Il metodo `renderPDFForm2` restituisce un oggetto `FormsResult` che contiene il modulo PDF interattivo.
+   Il metodo `renderPDFForm2` restituisce un oggetto `FormsResult` contenente il modulo PDF interattivo.
 
 1. Eseguire un&#39;azione con il flusso di dati del modulo
 
