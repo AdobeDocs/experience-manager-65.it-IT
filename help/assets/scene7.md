@@ -329,7 +329,7 @@ Per impostazione predefinita, Experience Manager esegue la ricerca nella cartell
 >
 >* Nell&#39;interfaccia classica, è inoltre possibile cercare **Flash** e **FXG**. Il filtro per questi tipi nell’interfaccia touch non è supportato.
 >
->* Durante la ricerca di un video, viene eseguita la ricerca in un&#39;unica rappresentazione. I risultati restituiscono la rappresentazione originale (solo &amp;ast;.mp4) e la rappresentazione codificata.
+>* Durante la ricerca di un video, viene eseguita la ricerca in un&#39;unica rappresentazione. I risultati restituiscono la rappresentazione originale (solo &ast;.mp4) e la rappresentazione codificata.
 >* Durante la ricerca in un set di video adattivi, la ricerca viene eseguita nella cartella e in tutte le sottocartelle, ma solo se alla ricerca è stata aggiunta una parola chiave. Se non hai aggiunto una parola chiave, Experience Manager non esegue la ricerca nelle sottocartelle.
 >
 
