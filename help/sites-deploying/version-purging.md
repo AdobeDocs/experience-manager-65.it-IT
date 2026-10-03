@@ -29,7 +29,7 @@ Queste versioni non vengono mai eliminate, pertanto le dimensioni dell’archivi
 
 AEM viene fornito con vari meccanismi per aiutarti a gestire l’archivio:
 
-* Gestione versioni [](#version-manager)
+* Gestione versioni [&#128279;](#version-manager)
 Questa può essere configurata per eliminare le versioni precedenti quando vengono create nuove versioni.
 
 * strumento [Rimuovi versioni](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool)
