@@ -1,6 +1,6 @@
 ---
-title: Visualizzazione di dati aggiuntivi nell'elenco Da fare
-description: Come personalizzare la visualizzazione dell’elenco Da fare dell’area di lavoro AEM Forms di LiveCycle in modo da visualizzare ulteriori informazioni oltre a quelle predefinite.
+title: Visualizzazione di dati aggiuntivi nell’elenco delle attività da svolgere
+description: Personalizzare la visualizzazione dell'elenco attività dell'area di lavoro AEM Forms LiveCycle per visualizzare ulteriori informazioni oltre a quelle predefinite.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -11,12 +11,10 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 0%
-
+source-wordcount: '288'
+ht-degree: 4%
 ---
-
-# Visualizzazione di dati aggiuntivi nell&#39;elenco Da fare{#displaying-additional-data-in-todo-list}
+# Visualizzazione di dati aggiuntivi nell’elenco delle attività da svolgere{#displaying-additional-data-in-todo-list}
 
 Per impostazione predefinita, nell’elenco Da fare dell’area di lavoro di AEM Forms vengono visualizzati il nome visualizzato e la descrizione dell’attività. Tuttavia, puoi aggiungere altre informazioni quali la data di creazione e la data di scadenza. È inoltre possibile aggiungere icone e modificare lo stile della visualizzazione.
 

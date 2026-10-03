@@ -1,5 +1,5 @@
 ---
-title: Rendering del modello di modulo per i moduli HTML5
+title: Rendering del modello per moduli HTML5
 description: I profili HTML5 forms sono associati ai rendering dei profili. I rendering profili sono pagine JSP responsabili della generazione della rappresentazione HTML del modulo chiamando il servizio OSGi di Forms.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,18 +11,16 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '535'
-ht-degree: 1%
-
+source-wordcount: '543'
+ht-degree: 3%
 ---
-
-# Rendering del modello di modulo per i moduli HTML5 {#rendering-form-template-for-html-forms}
+# Rendering del modello per moduli HTML5 {#rendering-form-template-for-html-forms}
 
 ## Endpoint di rendering {#render-endpoint}
 
 I moduli HTML5 hanno il concetto di **Profili** che sono esposti come endpoint REST per abilitare il rendering mobile dei modelli di modulo. A questi profili è associato **Rendering profilo**. Si tratta di pagine JSP responsabili della generazione della rappresentazione HTML del modulo chiamando il servizio Forms OSGi. Il percorso JCR del nodo Profilo determina l’URL dell’endpoint di rendering. Il punto finale predefinito del rendering del modulo che punta al profilo &quot;predefinito&quot; è simile al seguente:
 
-https://&lt;*host*>:&lt;*porta*>/content/xfaforms/profiles/default.html?contentRoot=&lt;*percorso della cartella contenente il modulo xdp*>&amp;template=&lt;*nome dell&#39;xdp*>
+https://<*host*>:<*porta*>/content/xfaforms/profiles/default.html?contentRoot=<*percorso della cartella che contiene il modulo xdp*>&modello=<*nome dell'xdp*>
 
 Ad esempio `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=c:/xdps&template=sampleForm.xdp`
 
@@ -30,7 +28,7 @@ Per un profilo personalizzato, l’endpoint cambia di conseguenza. Ad esempio, i
 
 `http://localhost:4502/content/xfaforms/profiles/hrforms.html?contentRoot=c:/xdps&template=sampleForm.xdp`
 
-Se il modello risiede nell’archivio AEM in un’applicazione denominata FormSubmission, l’URI è:
+Se il modello risiede nel repository di AEM in un&#39;applicazione denominata FormSubmission, l&#39;URI è:
 
 ```http
 http://localhost:4502/content/xfaforms/profiles/default.html?
@@ -76,10 +74,10 @@ I moduli HTML5 supportano tre metodi per il passaggio dei parametri di rendering
 
 * **Parametri di richiesta URL**: è possibile specificare i parametri di rendering nell&#39;URL. Nei parametri di richiesta dell’URL, i parametri sono visibili all’utente finale. Ad esempio, il seguente URL di invio contiene il parametro di modello nell&#39;URL: `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=/Applications/FormSubmission/1.0&template=sampleForm.xdp`
 
-* **Parametri della richiesta SetAttribute**: è possibile specificare i parametri di rendering come coppia chiave-valore. Nei parametri della richiesta SetAttribute, i parametri non sono visibili all&#39;utente finale. È possibile inoltrare una richiesta da qualsiasi altro JSP al modulo JSP HTML5 per il rendering dei profili e utilizzare *setAttribute* sull&#39;oggetto della richiesta per trasmettere tutti i parametri di rendering. Questo metodo ha la precedenza più alta.
+* **Parametri della richiesta SetAttribute**: è possibile specificare i parametri di rendering come coppia chiave-valore. Nei parametri della richiesta SetAttribute, i parametri non sono visibili all&#39;utente finale. È possibile inoltrare una richiesta da qualsiasi altro JSP al JSP del modulo di rendering dei profili di HTML5 e utilizzare *setAttribute* sull&#39;oggetto della richiesta per trasmettere tutti i parametri di rendering. Questo metodo ha la precedenza più alta.
 
 * **Parametri di richiesta del nodo di profilo:** È possibile specificare i parametri di rendering come proprietà del nodo di un nodo di profilo. Nei parametri di richiesta del nodo del profilo, i parametri non sono visibili all’utente finale. Il nodo del profilo è il nodo in cui viene inviata la richiesta. Per specificare i parametri come proprietà del nodo, utilizzate CRXDE lite.
 
 ### Invia parametri {#submit-parameters}
 
-I moduli HTML5 inviano dati; eseguono script e servizi web lato server sui server AEM. Per informazioni dettagliate sui parametri utilizzati per eseguire script e servizi Web lato server sui server AEM, vedere [HTML5 Forms Service Proxy](/help/forms/using/service-proxy.md).
+I moduli HTML5 inviano dati; eseguono script e servizi Web lato server sui server AEM. Per informazioni dettagliate sui parametri utilizzati per eseguire script e servizi Web lato server sui server AEM, vedere [Proxy servizio HTML5 forms](/help/forms/using/service-proxy.md).

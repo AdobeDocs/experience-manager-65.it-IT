@@ -1,24 +1,24 @@
 ---
 title: Editor immagine
-description: L’Editor di immagini è un elemento fondamentale dell’AEM e può essere utilizzato dai componenti per facilitare la manipolazione delle immagini da parte degli autori di contenuti.
+description: L’Editor immagini è un elemento fondamentale di AEM e può essere utilizzato dai componenti per facilitare la manipolazione delle immagini da parte degli autori di contenuti.
+
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
+
 exl-id: af6cf1e0-8901-4621-9f72-e791cb8d68ae
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 9%
-
+source-wordcount: '322'
+ht-degree: 17%
 ---
-
 # Editor immagine{#image-editor}
 
-L’Editor di immagini è un elemento fondamentale dell’AEM e può essere utilizzato dai componenti per facilitare la manipolazione delle immagini da parte degli autori di contenuti.
+L’Editor immagini è un elemento fondamentale di AEM e può essere utilizzato dai componenti per facilitare la manipolazione delle immagini da parte degli autori di contenuti.
 
 >[!CAUTION]
 >
@@ -47,7 +47,7 @@ Esempio:
 
 ## Supporto per immagini SVG {#support-for-svg-images}
 
-L&#39;editor di immagini supporta la grafica vettoriale scalabile (SVG).
+L&#39;Editor immagini supporta la grafica vettoriale scalabile (SVG).
 
 * L’inserimento tramite trascinamento di una risorsa SVG da DAM e il caricamento di un file SVG da un file system locale sono entrambi supportati.
 
@@ -59,7 +59,7 @@ I plug-in nell&#39;Editor immagini possono essere attivati in modo selettivo per
 
 ### Esempio {#example}
 
-Ad esempio, supponiamo che la possibilità di ritagliare debba essere consentita solo per immagini GIF, JPEG, PNG, WEBP e TIFF.
+Ad esempio, supponiamo che la possibilità di ritagliare debba essere consentita solo per le immagini GIF, JPEG, PNG, WEBP e TIFF.
 
 La proprietà `supportedMimeTypes` deve quindi essere impostata come stringa dei tipi MIME consentiti nel nodo di configurazione del plug-in nel nodo `cq:editConfig` del componente immagine.
 

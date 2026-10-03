@@ -12,20 +12,18 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '812'
-ht-degree: 2%
-
+source-wordcount: '825'
+ht-degree: 4%
 ---
-
 # Creazione di stili CSS per i moduli HTML5 {#creating-css-styles-for-html-forms}
 
-La rappresentazione HTML5 di un modello di modulo basato su XFA è costituita da diversi elementi HTML. Questi elementi sono disposti in ordine. Ogni elemento dispone di classi CSS ben definite. È possibile utilizzare queste classi CSS per selezionare e modificare l&#39;aspetto di un elemento.
+Il rendering HTML5 di un modello di modulo basato su XFA è costituito da diversi elementi di HTML. Questi elementi sono disposti in ordine. Ogni elemento dispone di classi CSS ben definite. È possibile utilizzare queste classi CSS per selezionare e modificare l&#39;aspetto di un elemento.
 
 >[!NOTE]
 >
 >Nelle classi CSS, non modificare il valore degli attributi width, height, border-thickness, top, left, right, bottom, padding, margin e altri attributi di posizione e dimensione. Qualsiasi modifica negli attributi di posizione e dimensione determina modifiche al layout del modulo.
 
-## Classi CSS  per gli elementi  {#css-classes-nbsp-for-elements-nbsp}
+## Classi CSS per gli elementi  {#css-classes-nbsp-for-elements-nbsp}
 
 Ogni elemento contiene classi CSS ben definite. È possibile modificare queste classi per modificare l&#39;aspetto di un elemento. Ogni elemento, ad eccezione degli elementi field e draw, dispone di due classi CSS: la classe Type e la classe Name.
 
@@ -37,7 +35,7 @@ Ogni elemento contiene classi CSS ben definite. È possibile modificare queste c
 >
 >Alcuni elementi XFA non hanno un nome. Per modificare gli stili di tali componenti, modificate tutti i componenti di quel particolare tipo.
 
-Per le pagine non denominate in AEM Forms Designer, le pagine di un modulo HTML 5 vengono denominate in ordine crescente di numero. Nel caso di un modulo di HTML5 con due pagine, ad esempio, le pagine vengono denominate Pagina1, Pagina2.
+Per le pagine non denominate in AEM Forms Designer, le pagine di un modulo HTML5 vengono denominate in ordine crescente di numero. Per un modulo di HTML5 con due pagine, ad esempio, le pagine sono denominate Pagina1, Pagina2.
 
 ## Elemento campo {#field-element}
 
@@ -131,7 +129,7 @@ A ogni campo è associato un widget che rappresenta l’elemento dell’interfac
 <table>
  <tbody>
   <tr>
-   <td><strong>Tipo di campo</strong></td>
+   <td><strong>Tipo campo</strong></td>
    <td><strong>Sottotipo</strong></td>
    <td><strong>Nome widget</strong></td>
    <td><strong>Tipo widget</strong></td>
@@ -224,11 +222,11 @@ A ogni campo è associato un widget che rappresenta l’elemento dell’interfac
  </tbody>
 </table>
 
-## Classi CSS per diversi elementi di Draw {#css-classes-for-different-draw-elements}
+## Classi CSS per diversi elementi di disegno {#css-classes-for-different-draw-elements}
 
 È possibile inserire elementi di disegno statici come testo e immagini utilizzando AEM Forms Designer. Per ogni elemento di disegno, a tale elemento è associata una classe CSS separata. L’elenco delle classi CSS per gli elementi disegno è elencato di seguito. A ogni elemento di disegno è associata una classe di disegno.
 
-| **Tipo Draw** | **Classe CSS** |
+| **Tipo disegno** | **Classe CSS** |
 |---|---|
 | Testo | text |
 | Immagine | immagine |
@@ -237,7 +235,7 @@ A ogni campo è associato un widget che rappresenta l’elemento dell’interfac
 
 ## Applicazione di stili ad altre parti del modulo {#styling-other-parts-of-the-form}
 
-Oltre all’aspetto dei componenti dell’interfaccia utente nel modulo HTML, puoi modificare lo stile di elementi come Errori in linea, Avvisi in linea e campi con errori di convalida.
+Oltre all’aspetto dei componenti dell’interfaccia utente nel modulo di HTML, puoi modificare lo stile di elementi come Errori in linea, Avvisi in linea e campi con errori di convalida.
 
 `Styling Inline Errors`
 

@@ -9,11 +9,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Workbench,Adaptive Forms
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2184'
-ht-degree: 0%
-
+source-wordcount: '2298'
+ht-degree: 1%
 ---
-
 # Installare Workbench {#install-workbench}
 
 Questo documento fornisce istruzioni per l’installazione e la configurazione di AEM Forms Workbench. Il programma di installazione installa anche Forms Designer.
@@ -37,15 +35,15 @@ Le risorse presenti in questa tabella possono essere utili per ulteriori informa
   </tr>
   <tr>
    <td><p>Informazioni generali su AEM Forms e su come si integra con altri prodotti Adobe</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=it">Panoramica di AEM Forms</a><br /> <br /> </p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=en">Panoramica di AEM Forms</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Tutta la documentazione disponibile per AEM Forms</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=it">Documentazione di AEM Forms</a><br /> <br /> </p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=en">Documentazione di AEM Forms</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Aggiornamenti patch, note tecniche e informazioni aggiuntive su questa versione del prodotto</p> </td>
-   <td><p>Contatta il supporto Enterprise per Adobe</a><br /> <br /> </p> </td>
+   <td><p>Contatta il supporto Adobe Enterprise</a><br /> <br /> </p> </td>
   </tr>
  </tbody>
 </table>
@@ -100,7 +98,7 @@ Spazio su disco per installazione:
 
 ### Piattaforme supportate {#supported-platforms}
 
-Consulta l&#39;elenco completo delle piattaforme supportate per Workbench in [Piattaforme supportate da AEM Forms](https://www.adobe.com/go/learn_aemforms_supportedplatforms_65_it).
+Consulta l&#39;elenco completo delle piattaforme supportate per Workbench in [Piattaforme supportate da AEM Forms](https://www.adobe.com/go/learn_aemforms_supportedplatforms_65).
 
 ## Considerazioni sull’installazione di Designer {#designer-installation-considerations}
 
@@ -122,7 +120,7 @@ Versioni diverse di Designer possono coesistere sullo stesso sistema, ad esempio
   </tr>
   <tr>
    <td><p>Designer (autonomo)</p> </td>
-   <td><p>Nessuno. <br />La versione di Designer inclusa in Workbench è in lingua inglese. <br />Il programma di installazione di Workbench non reinstalla una nuova versione di Designer. Viene invece applicata la patch a una versione aggiornata, inclusa nel pacchetto con il programma di installazione di Workbench. In questo modo è possibile utilizzare anche la versione localizzata di Designer in Workbench.<br /> </p> </td>
+   <td><p>Nessuna. <br />La versione di Designer inclusa in Workbench è in lingua inglese. <br />Il programma di installazione di Workbench non reinstalla una nuova versione di Designer. Viene invece applicata la patch a una versione aggiornata, inclusa nel pacchetto con il programma di installazione di Workbench. In questo modo è possibile utilizzare anche la versione localizzata di Designer in Workbench.<br /> </p> </td>
   </tr>
  </tbody>
 </table>
@@ -157,7 +155,7 @@ Prima di installare Workbench, è necessario assicurarsi che l&#39;ambiente incl
 
 1. Nella schermata introduttiva, fai clic su Avanti.
 1. Leggere il Contratto di Licenza del Prodotto, selezionare Accetto i termini del Contratto di Licenza e quindi fare clic su Avanti.
-1. (Facoltativo) Se questo strumento è necessario per la creazione e la modifica di moduli, seleziona Installa Designer Adobe.
+1. (Facoltativo) Se hai bisogno di questo strumento per creare e modificare i moduli, seleziona Installa Adobe Designer.
 
    >[!NOTE]
    >
@@ -173,9 +171,9 @@ Prima di installare Workbench, è necessario assicurarsi che l&#39;ambiente incl
 1. Esaminare il riepilogo dell&#39;installazione. Seleziona Avvia AEM Forms Workbench per poter avviare Workbench, quindi fai clic su Avanti.
 1. Consulta le Note sulla versione e fai clic su Fine.
 1. I seguenti elementi sono ora installati nel computer:
-   * **Workbench**: per eseguire Workbench dal menu Start, selezionare Tutti i programmi > AEM Forms > Workbench, se si è scelto di memorizzare la cartella dei collegamenti. Per informazioni,   consulta la documentazione <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">Utilizzo di Workbench</a>.
-   * **Designer**: è possibile accedere a Designer da Workbench. Per informazioni, vedere l&#39;argomento Guida introduttiva in <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf">Guida di Designer</a>.
-   * **AEM Forms SDK**: per ulteriori informazioni sull&#39;utilizzo dell&#39;SDK, vedere <a href="https://helpx.adobe.com/pdf/aem-forms/6-3/programming-with-aem-forms.pdf">Programmazione con AEM Forms</a>.
+   * **Workbench**: per eseguire Workbench dal menu Start, selezionare Tutti i programmi > AEM Forms > Workbench, se si è scelto di memorizzare la cartella dei collegamenti. Per informazioni, consulta la documentazione <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">Utilizzo di Workbench</a>.
+   * **Designer**: è possibile accedere a Designer da Workbench. Per informazioni, vedere l&#39;argomento Guida introduttiva in <a href="https://helpx.adobe.com/content/dam/help/it/experience-manager/6-5/forms/pdf/using-designer.pdf">Guida di Designer</a>.
+   * **AEM Forms SDK**: per ulteriori informazioni sull&#39;utilizzo di SDK, vedere <a href="https://helpx.adobe.com/pdf/aem-forms/6-3/programming-with-aem-forms.pdf">Programmazione con AEM Forms</a>.
 
 ## Aggiornamento dei processi {#upgrading-processes}
 
@@ -191,7 +189,7 @@ Per utilizzare Workbench, è necessario disporre di un&#39;istanza di AEM Forms 
 
 ### Configurazione delle impostazioni di timeout {#configuring-timeout-settings}
 
-Per impostazione predefinita, Workbench riceve un timeout dopo due ore, indipendentemente dall’attività o dall’inattività. Per modificare l&#39;impostazione di timeout, vedere la sezione relativa alla configurazione della gestione utente e degli attributi di sistema avanzati nella <a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html?lang=it">Guida della console di amministrazione</a>.
+Per impostazione predefinita, Workbench riceve un timeout dopo due ore, indipendentemente dall’attività o dall’inattività. Per modificare l&#39;impostazione di timeout, vedere la sezione relativa alla configurazione della gestione utente e degli attributi di sistema avanzati nella <a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">Guida della console di amministrazione</a>.
 
 ### Configurazione di Workbench per la connessione tramite HTTPS {#configuring-workbench-to-connect-over-HTTPS}
 
@@ -214,7 +212,7 @@ Assicurati di connetterti a HTTPS utilizzando il nome specificato nel certificat
 
 1. Apri una finestra del prompt dei comandi, passa a [Workbench_HOME]/workbench/jre/bin, quindi digita il comando seguente:
    `keytool -import -storepass changeit -file [Workbench_HOME]\workbench\jre\lib\security\ssl_cert_for_certname.cer -keystore [Workbench_HOME]\workbench\jre\lib\security\cacerts -alias example`
-Dove:
+   Dove:
    * `changeit` è la password predefinita per il keystore di cacerts.
    * certname è il certificato selezionato al passaggio 1.
    * esempio è l’alias scelto per il certificato. Questo valore può essere modificato.
@@ -258,8 +256,8 @@ Per i documenti non passivi in cui il nome file e la radice del contenuto fungon
 * Per i modelli di input non passivi, la memorizzazione nella cache dipende dalla directory principale del contenuto e dal nome del file da cui è stato generato il documento.
 La stessa cache viene utilizzata solo per le richieste con lo stesso nome file radice e modello di contenuto.
 Le seguenti best practice garantiscono che la cache non aumenti all’infinito quando i modelli generati in modo dinamico vengono passati al servizio Forms:
-   * Rimuovi l’UUID o passa lo stesso UUID in tutti i modelli generati in modo dinamico.
-   * Generare il documento da byte modello o dallo stesso nome file su disco.
+  * Rimuovi l’UUID o passa lo stesso UUID in tutti i modelli generati in modo dinamico.
+  * Generare il documento da byte modello o dallo stesso nome file su disco.
 
 ### Disinstallazione di Workbench {#uninstalling-workbench}
 

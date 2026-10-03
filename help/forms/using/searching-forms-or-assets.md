@@ -1,21 +1,24 @@
 ---
 title: Ricerca di moduli e risorse
-description: Puoi cercare moduli e risorse nella tua istanza AEM utilizzando la funzione di ricerca AEM. La ricerca di base e avanzata consente di individuare rapidamente le risorse.
+
+description: Puoi cercare moduli e risorse nella tua istanza di AEM utilizzando la funzione di ricerca di AEM. La ricerca di base e avanzata consente di individuare rapidamente le risorse.
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
+
 docset: aem65
+
 role: Admin,User
 exl-id: 1f4f49b7-5f32-47dd-9dc7-a6974faf2bdf
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '689'
-ht-degree: 3%
-
+source-wordcount: '690'
+ht-degree: 5%
 ---
-
 # Ricerca di moduli e risorse{#searching-for-forms-and-assets}
 
 È possibile cercare i moduli o le risorse dei moduli utilizzando una stringa di testo o una stringa di testo insieme a caratteri jolly. Potete anche restringere la ricerca utilizzando i criteri disponibili in varie categorie nel pannello Ricerca.
@@ -49,7 +52,7 @@ Nei criteri di ricerca, oltre alla query puoi specificare alcuni parametri di ri
 
 ![Campo di ricerca e parametri o filtri per il modulo AEM e la ricerca di risorse](assets/search_forms_assets.png)
 
-Campo di ricerca e parametri o filtri per il modulo AEM e la ricerca di risorse
+Campo di ricerca e parametri o filtri per la ricerca di risorse e moduli in AEM
 
 ### Percorso risorsa {#asset-path}
 
@@ -76,7 +79,7 @@ Puoi cercare le risorse utilizzando uno dei seguenti stati:
 
 * **Modificato**: cerca tutte le risorse modificate o non pubblicate dopo la pubblicazione.
 
-### Tipo risorsa {#asset-type}
+### Tipo di risorsa {#asset-type}
 
 Puoi selezionare un numero qualsiasi di tipi di risorse. La ricerca restituisce l’unione di tutti i tipi di risorse selezionati.
 

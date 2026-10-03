@@ -1,21 +1,24 @@
 ---
 title: Preparazione di AEM Forms per il backup
+
 description: Scopri come utilizzare il servizio Backup e ripristino per accedere e uscire dalla modalità di backup per il server AEM Forms utilizzando l’API Java e l’API del servizio Web.
+
+
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: aeab003d-ba64-4760-9c56-44638501e9ff
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2484'
+source-wordcount: '2536'
 ht-degree: 0%
-
 ---
-
 # Preparazione di AEM Forms per il backup {#preparing-aem-forms-for-backup}
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
@@ -141,7 +144,7 @@ Attiva la modalità di backup utilizzando l’API del servizio Backup e ripristi
 
 1. Eseguire il backup di GDS e database
 
-   Eseguire il backup di GDS (Global Document Storage) e del database a cui è connesso Forms Server. Le azioni per eseguire il backup non fanno parte dell’SDK di AEM Forms e possono anche includere passaggi manuali specifici per le procedure di backup dell’organizzazione.
+   Eseguire il backup di GDS (Global Document Storage) e del database a cui è connesso Forms Server. Le azioni per eseguire il backup non fanno parte di AEM Forms SDK e possono anche includere passaggi manuali specifici per le procedure di backup dell’organizzazione.
 
 ### Entra in modalità di backup utilizzando l’API del servizio web {#enter-backup-mode-using-the-web-service-api}
 
@@ -176,7 +179,7 @@ Attiva la modalità di backup utilizzando il servizio Web fornito dall&#39;API d
 
 1. Eseguire il backup di GDS e database
 
-   Eseguire il backup di GDS (Global Document Storage) e del database a cui è connesso Forms Server. Le azioni per eseguire il backup non fanno parte dell’SDK di AEM Forms e possono anche includere passaggi manuali specifici per le procedure di backup dell’organizzazione.
+   Eseguire il backup di GDS (Global Document Storage) e del database a cui è connesso Forms Server. Le azioni per eseguire il backup non fanno parte di AEM Forms SDK e possono anche includere passaggi manuali specifici per le procedure di backup dell’organizzazione.
 
 ## Uscita dalla modalità di backup sul server Forms {#leaving-backup-mode-on-the-forms-server}
 

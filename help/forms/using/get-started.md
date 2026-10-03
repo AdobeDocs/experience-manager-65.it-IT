@@ -1,6 +1,6 @@
 ---
-title: Guida introduttiva ai moduli di HTML5
-description: Per iniziare, distribuisci il pacchetto del componente aggiuntivo AEM Forms e importa i moduli HTML5 esistenti nell’AEM.
+title: Introduzione ai moduli HTML5
+description: Per iniziare, distribuisci il pacchetto del componente aggiuntivo AEM Forms e importa i moduli HTML5 esistenti in AEM.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
@@ -11,20 +11,18 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 0%
-
+source-wordcount: '236'
+ht-degree: 4%
 ---
+# Introduzione ai moduli HTML5 {#getting-started-with-html-forms}
 
-# Guida introduttiva ai moduli di HTML5 {#getting-started-with-html-forms}
+I moduli HTML5 offrono numerose funzionalità pronte per l&#39;uso su dispositivi mobili. Consente di espandere le soluzioni e i flussi di lavoro correnti a tablet o smartphone con browser HTML5. Alcune delle funzionalità includono:
 
-I moduli HTML5 offrono numerose funzionalità pronte per l’uso su dispositivi mobili. Consente di espandere le soluzioni e i flussi di lavoro correnti a tablet o dispositivi smartphone con browser HTML5. Alcune delle funzionalità includono:
+* **Rendering basato su HTML5 dei modelli di modulo XFA:** Oltre al normale PDF forms, ora è possibile eseguire il rendering dei moduli basati su XFA esistenti in formato HTML5. Consente di espandere la piattaforma client ai dispositivi mobili (Apple iPad, tablet Android, smartphone e così via) che supportano HTML5 e non supportano Adobe Reader con XFA Forms. Per ulteriori informazioni sulla funzionalità di rendering basata su HTML5, vedere [Introduzione ai moduli HTML5](/help/forms/using/introduction.md).
 
-* **Rendering basato su HTML5 dei modelli di modulo XFA:** Oltre ai normali PDF forms, ora è possibile eseguire il rendering dei moduli basati su XFA esistenti in formato HTML5. Consente di espandere la piattaforma client ai dispositivi mobili (Apple iPad, tablet Android, smartphone e così via) che supportano HTML5 e non supportano Adobe Reader con XFA Forms. Per ulteriori informazioni sulla funzionalità di rendering basata su HTML5, vedere [Introduzione ai moduli HTML5](/help/forms/using/introduction.md).
+* **Gestione di Forms:** Inoltre, AEM include nuove funzionalità per semplificare il processo di organizzazione e gestione dei moduli. Puoi attivare, disattivare, pubblicare e visualizzare in anteprima i moduli. Per ulteriori informazioni, vedere [Introduzione alla gestione dei moduli](/help/forms/using/introduction-managing-forms.md).
 
-* **Gestione di Forms:** Inoltre, l&#39;AEM include nuove funzionalità per semplificare il processo di organizzazione e gestione dei moduli. Puoi attivare, disattivare, pubblicare e visualizzare in anteprima i moduli. Per ulteriori informazioni, vedere [Introduzione alla gestione dei moduli](/help/forms/using/introduction-managing-forms.md).
-
-## Installazione dei moduli di HTML5 {#installing-html-forms}
+## Installazione di HTML5 Forms {#installing-html-forms}
 
 Dopo aver installato AEM, effettua le seguenti operazioni per importare Mobile Forms in AEM:
 
