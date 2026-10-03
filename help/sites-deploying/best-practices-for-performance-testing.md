@@ -1,22 +1,22 @@
 ---
-title: Best practice per i test delle prestazioni
+title: Best practice per il test delle prestazioni
 description: Scopri le strategie e le metodologie generali utilizzate per i test delle prestazioni e alcuni degli strumenti disponibili per facilitare il processo.
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
+
 exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 0%
-
+source-wordcount: '1827'
+ht-degree: 2%
 ---
-
-# Best practice per i test delle prestazioni{#best-practices-for-performance-testing}
+# Best practice per il test delle prestazioni{#best-practices-for-performance-testing}
 
 ## Introduzione {#introduction}
 
@@ -62,8 +62,8 @@ Sul mercato sono disponibili molti strumenti di test delle prestazioni. Quando s
 * È inoltre possibile utilizzare strumenti di test del caricamento del sito Web come [Vercara](https://vercara.com/website-performance-management).
 * Quando si esegue il test di siti web mobili o reattivi, è necessario utilizzare un set di strumenti separato. Funzionano limitando la larghezza di banda della rete, simulando connessioni mobili più lente come 3G o EDGE. Tra gli strumenti più utilizzati vi sono:
 
-   * **[Condizionatore collegamento di rete](https://nshipster.com/network-link-conditioner/)** - fornisce un&#39;interfaccia utente di facile utilizzo e funziona a un livello abbastanza basso nello stack di rete. Include versioni per OS X e iOS;
-   * [**Charles**](https://www.charlesproxy.com/) - un&#39;applicazione proxy di debug Web che, oltre a diversi altri utilizzi, fornisce la limitazione della rete. Sono disponibili versioni per Windows, OS X e Linux®.
+  * **[Condizionatore collegamento di rete](https://nshipster.com/network-link-conditioner/)** - fornisce un&#39;interfaccia utente di facile utilizzo e funziona a un livello abbastanza basso nello stack di rete. Include versioni per OS X e iOS;
+  * [**Charles**](https://www.charlesproxy.com/) - un&#39;applicazione proxy di debug Web che, oltre a diversi altri utilizzi, fornisce la limitazione della rete. Sono disponibili versioni per Windows, OS X e Linux®.
 
 #### Strumenti di ottimizzazione {#optimization-tools}
 
@@ -73,7 +73,7 @@ La documentazione di [Monitoraggio delle prestazioni](/help/sites-deploying/moni
 
 **Modalità sviluppatore nell&#39;interfaccia utente touch**
 
-Una delle nuove funzioni nell’interfaccia utente touch di AEM 6 è la Modalità sviluppatore. Così come gli autori possono passare dalla modalità di modifica a quella di anteprima, gli sviluppatori possono passare alla modalità sviluppatore nell’interfaccia utente di authoring. In questo modo puoi visualizzare il tempo di rendering per ciascuno dei componenti della pagina e le tracce dello stack di eventuali errori. Per ulteriori informazioni sulla modalità sviluppatore, consulta questa [presentazione CQ Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=it).
+Una delle nuove funzioni nell’interfaccia utente touch di AEM 6 è la Modalità sviluppatore. Così come gli autori possono passare dalla modalità di modifica a quella di anteprima, gli sviluppatori possono passare alla modalità sviluppatore nell’interfaccia utente di authoring. In questo modo puoi visualizzare il tempo di rendering per ciascuno dei componenti della pagina e le tracce dello stack di eventuali errori. Per ulteriori informazioni sulla modalità sviluppatore, consulta questa [presentazione CQ Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html).
 
 **Utilizzo di rlog.jar per leggere i registri di richiesta**
 

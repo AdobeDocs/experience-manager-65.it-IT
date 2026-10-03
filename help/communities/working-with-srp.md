@@ -12,18 +12,16 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '906'
+source-wordcount: '912'
 ht-degree: 0%
-
 ---
-
 # SRP - Archiviazione di contenuti community {#srp-community-content-storage}
 
 ## Introduzione {#introduction}
 
 A partire da AEM Communities 6.1, i contenuti generati dagli utenti (UGC, User-Generated Content) vengono memorizzati in un unico archivio comune fornito da un provider di risorse di archiviazione (SRP, Storage Resource Provider). Sono disponibili diverse opzioni SRP tra cui scegliere, ad esempio ASRP, MSRP e JSRP.
 
-A differenza delle versioni precedenti, non esiste alcuna replica in avanti/indietro di UGC tra le istanze AEM. SRP rende invece direttamente accessibili i contenuti generati dagli utenti (UGC, User-Generated Content) per operazioni di creazione, lettura, aggiornamento ed eliminazione (CRUD, Create, Update, Delete) da tutte le istanze di authoring e pubblicazione, con un&#39;eccezione per JSRP.
+A differenza delle versioni precedenti, non esiste alcuna replica in avanti/indietro di UGC tra le istanze di AEM. SRP rende invece direttamente accessibili i contenuti generati dagli utenti (UGC, User-Generated Content) per operazioni di creazione, lettura, aggiornamento ed eliminazione (CRUD, Create, Update, Delete) da tutte le istanze di authoring e pubblicazione, con un&#39;eccezione per JSRP.
 
 Di seguito sono riportate le [caratteristiche di ogni opzione SRP](#characteristics-of-srp-options), che sono informazioni fondamentali per il processo decisionale durante la scelta dell&#39;SRP appropriato e della [distribuzione sottostante](/help/communities/topologies.md).
 
@@ -31,21 +29,21 @@ Per informazioni dettagliate sull&#39;utilizzo di SRP per UGC, vedere [Panoramic
 
 >[!NOTE]
 >
->SRP si applica solo al contenuto della community. Non influisce sulla posizione in cui è archiviato il contenuto del sito ([archivio nodi](/help/sites-deploying/data-store-config.md)) e non influisce sulla gestione sicura della registrazione degli utenti, dei profili utente e dei gruppi di utenti tra le istanze AEM (vedi anche [Gestione dei dati utente](#managing-user-data)).
+>SRP si applica solo al contenuto della community. Non influisce sulla posizione in cui è archiviato il contenuto del sito ([archivio nodi](/help/sites-deploying/data-store-config.md)) e non influisce sulla gestione sicura della registrazione degli utenti, dei profili utente e dei gruppi di utenti tra le istanze di AEM (vedi anche [Gestione dei dati utente](#managing-user-data)).
 
 >[!CAUTION]
 >
 >A partire da AEM 6.1, [UGC non viene mai replicato](#ugc-never-replicated).
 >
->Se la distribuzione non include un archivio comune, ad esempio la topologia predefinita [JSRP](/help/communities/topologies.md#jsrp), UGC sarà visibile solo nell&#39;istanza di pubblicazione o di authoring dell&#39;AEM in cui è stato immesso. Solo se la topologia include un cluster di pubblicazione, l&#39;UGC sarà visibile in qualsiasi istanza di pubblicazione.
+>Se la distribuzione non include un archivio comune, ad esempio la topologia predefinita [JSRP](/help/communities/topologies.md#jsrp), UGC sarà visibile solo nell&#39;istanza di pubblicazione o di authoring di AEM in cui è stato immesso. Solo se la topologia include un cluster di pubblicazione, l&#39;UGC sarà visibile in qualsiasi istanza di pubblicazione.
 
 ## Caratteristiche delle opzioni SRP {#characteristics-of-srp-options}
 
-[ASRP - Provider risorsa di archiviazione Adobe](/help/communities/asrp.md)
+[ASRP - Provider risorse di archiviazione Adobe](/help/communities/asrp.md)
 
 Con questa opzione, l’UGC viene mantenuto in remoto in un servizio cloud ospitato e gestito da Adobe. È necessaria una licenza aggiuntiva e la collaborazione con un rappresentante del conto per effettuare il provisioning del conto per quella specifica licenza. ASRP richiede:
 
-* Servizio cloud associato fornito e supportato da Adobe per archiviare i contenuti della community.
+* Servizio cloud associato fornito e supportato da Adobe per l’archiviazione dei contenuti della community.
 * Scelta di un centro dati in una specifica area geografica (Stati Uniti, EMEA, APAC).
 
 * Tutti gli accessi programmatici a UGC devono essere effettuati tramite l’API SRP.
@@ -93,11 +91,11 @@ DSRP è adatto:
 
 [JSRP - Provider risorsa di archiviazione JCR](/help/communities/jsrp.md)
 
-Con l’opzione predefinita, non esiste un archivio comune. L’UGC viene mantenuto solo nello stesso archivio JCR dell’istanza AEM in cui è stato inserito.
+Con l’opzione predefinita, non esiste un archivio comune. L’UGC viene mantenuto solo nello stesso archivio JCR dell’istanza AEM in cui è stato immesso.
 
 JSRP:
 
-* Memorizza il contenuto della community nell’archivio JCR dell’istanza di authoring o pubblicazione AEM in cui è stato pubblicato.
+* Memorizza il contenuto della community nell’archivio JCR dell’istanza di authoring o pubblicazione di AEM in cui è stato pubblicato.
 * Richiede l’accesso programmatico a UGC tramite l’API SRP.
 * Richiede un cluster di pubblicazione se viene distribuita più di un’istanza di pubblicazione (non esiste alcun meccanismo di replica tra le istanze di pubblicazione in una farm TarMK).
 * la moderazione viene eseguita solo nell&#39;ambiente di pubblicazione (non esiste alcun meccanismo di replica inversa/avanti tra authoring e pubblicazione).
@@ -109,7 +107,7 @@ L&#39;opzione di archiviazione predefinita, basata sulla distribuzione sottostan
 
 Per informazioni dettagliate sulla configurazione di ciascuna opzione, consulta:
 
-* [ASRP - Provider risorsa di archiviazione Adobe](/help/communities/asrp.md)
+* [ASRP - Provider risorse di archiviazione Adobe](/help/communities/asrp.md)
 * [MSRP - Provider risorsa di archiviazione MongoDB](/help/communities/msrp.md)
 * [DSRP - Provider risorsa di archiviazione database relazionale](/help/communities/dsrp.md)
 * [JSRP - Provider risorsa di archiviazione JCR](/help/communities/jsrp.md)
@@ -122,7 +120,7 @@ Se non è selezionata alcuna opzione di archiviazione attiva, JSRP è attivato p
 
 Nell’ambiente di authoring, un autore crea il contenuto della pagina e lo replica nell’ambiente di pubblicazione. Quando una pagina include una funzione interattiva di AEM Communities, ad esempio commenti, recensioni, forum, blog o domande e risposte, l’interazione dei membri (visitatori del sito con accesso) su un’istanza Publish genera contenuti generati dagli utenti (UGC, User Generated Content) immessi nell’ambiente di pubblicazione.
 
-In precedenza, questo contenuto della community veniva replicato inverso nelle istanze di authoring e dall’istanza di authoring a quella di pubblicazione. È stato problematico mantenere la coerenza tra le istanze AEM con la replica inversa e successiva.
+In precedenza, questo contenuto della community veniva replicato inverso nelle istanze di authoring e dall’istanza di authoring a quella di pubblicazione. È stato problematico mantenere la coerenza tra le istanze di AEM con la replica inversa e in avanti.
 
 A partire da AEM Communities 6.1, la necessità di replica di UGC è stata eliminata utilizzando lo storage condiviso per UGC, come descritto in precedenza.
 
@@ -136,6 +134,6 @@ A partire da AEM Communities 6.1, i dati relativi all’utente vengono sincroniz
 
 ### Aggiornamento ad AEM Communities 6.5 {#upgrading-to-aem-communities}
 
-Quando si esegue l’aggiornamento alle community AEM 6.5, se è necessario mantenere le UGC preesistenti, è necessario adottare misure a seconda che la community AEM 5.6.1 o AEM 6.0 utilizzasse lo storage Adobe on-demand o lo storage on-premise delle UGC.
+Quando si esegue l’aggiornamento a AEM 6.5 Communities, se è necessario mantenere i contenuti UGC preesistenti, è necessario intraprendere dei passaggi a seconda che la community AEM 5.6.1 o AEM 6.0 utilizzi o meno lo storage Adobe on-demand o lo storage on-premise di tali contenuti.
 
 Per informazioni dettagliate, visita [Aggiornamento ad AEM Communities 6.5](/help/communities/upgrade.md).

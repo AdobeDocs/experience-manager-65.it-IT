@@ -11,14 +11,12 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '1212'
 ht-degree: 0%
-
 ---
-
 # Guida ai componenti della community  {#community-components-guide}
 
-La guida dei componenti community è uno strumento di sviluppo interattivo per il [framework dei componenti social (SCF)](scf.md). Fornisce un elenco dei componenti disponibili di Adobe Experience Manager (AEM) Communities o delle funzioni più complesse create da più componenti.
+La guida dei componenti community è uno strumento di sviluppo interattivo per il [framework dei componenti social (SCF)](scf.md). Fornisce un elenco dei componenti di Adobe Experience Manager (AEM) Communities disponibili o delle funzioni più complesse create da più componenti.
 
 Oltre alle informazioni di base per ciascun componente, la guida consente di sperimentare il funzionamento dei componenti e delle funzioni SCF e come configurarli o personalizzarli.
 
@@ -59,7 +57,7 @@ Per attivare la modalità di modifica, inserire `editor.html` o `cf#` come primo
 >
 >Per informazioni generali sull&#39;authoring, consulta la [guida rapida all&#39;authoring delle pagine](../../help/sites-authoring/qg-page-authoring.md).
 >
->Se non conosci l&#39;AEM, consulta la documentazione sulle [operazioni di base](../../help/sites-authoring/basic-handling.md).
+>Se non conosci AEM, consulta la documentazione sulle [operazioni di base](../../help/sites-authoring/basic-handling.md).
 
 ### Pagina home {#home-page}
 
@@ -107,15 +105,15 @@ Nella scheda **Modelli**:
 
   Se questa opzione è deselezionata, la Guida dei componenti utilizza la risorsa esistente nell’archivio (un nodo jcr che è figlio di un nodo par).
 
-   * il testo visualizzato è: &quot;Questo componente è incluso tramite il suo nodo par&quot;.
+  * il testo visualizzato è: &quot;Questo componente è incluso tramite il suo nodo par&quot;.
 
   Se questa opzione è selezionata, nella Guida dei componenti viene utilizzato sling per includere in modo dinamico un componente del resourceType del nodo figlio (risorsa non esistente).
 
-   * il testo visualizzato è: &quot;Questo componente è incluso in modo dinamico&quot;.
+  * il testo visualizzato è: &quot;Questo componente è incluso in modo dinamico&quot;.
 
   L&#39;impostazione predefinita è deselezionata.
 
-### Interazioni Publish {#publish-interactions}
+### Pubblica interazioni {#publish-interactions}
 
 Quando si utilizza la guida in un’istanza di pubblicazione, è possibile provare i componenti e le funzionalità come visitatore del sito (non connesso) e come membri con vari privilegi quando si è connessi.
 
@@ -149,7 +147,7 @@ Per sperimentare rapidamente le personalizzazioni, la proprietà `scg:showIde` d
 
 Utilizzando il componente commenti come esempio, nell’istanza di authoring o di pubblicazione è stato effettuato l’accesso con privilegi di amministratore:
 
-1. Passa a [CRXDE Liti](../../help/sites-developing/developing-with-crxde-lite.md)
+1. Passa a [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)
 
    Ad esempio, [http://localhost:4503/crx/de](http://localhost:4503/crx/de)
 
