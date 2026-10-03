@@ -1,5 +1,5 @@
 ---
-title: Rimozione versione
+title: Eliminazione della versione
 description: Questo articolo descrive le opzioni disponibili per l’eliminazione della versione.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,10 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 0%
-
+source-wordcount: '732'
+ht-degree: 1%
 ---
-
-# Rimozione versione{#version-purging}
+# Eliminazione della versione{#version-purging}
 
 In un’installazione standard, Adobe Experience Manager (AEM) crea una versione di una pagina o di un nodo quando attivi una pagina dopo l’aggiornamento del contenuto.
 
@@ -29,20 +27,20 @@ Puoi creare versioni aggiuntive su richiesta utilizzando la scheda **Controllo v
 
 Queste versioni non vengono mai eliminate, pertanto le dimensioni dell’archivio aumentano nel tempo e devono quindi essere gestite.
 
-L’AEM viene fornito con vari meccanismi per aiutarti a gestire l’archivio:
+AEM viene fornito con vari meccanismi per aiutarti a gestire l’archivio:
 
-* [Gestione versioni](#version-manager)
+* Gestione versioni [&#128279;](#version-manager)
 Questa può essere configurata per eliminare le versioni precedenti quando vengono create nuove versioni.
 
 * strumento [Rimuovi versioni](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool)
 Viene utilizzato come parte del monitoraggio e della manutenzione dell’archivio.
 Consente di intervenire per rimuovere le versioni precedenti di un nodo o di una gerarchia di nodi, in base ai seguenti parametri:
 
-   * Il numero massimo di versioni da mantenere nell’archivio.
-Se questo numero viene superato, viene rimossa la versione meno recente.
+  * Il numero massimo di versioni da mantenere nell’archivio.
+    Se questo numero viene superato, viene rimossa la versione meno recente.
 
-   * L’età massima di qualsiasi versione mantenuta nell’archivio.
-Quando la validità di una versione supera questo valore, viene eliminata dall’archivio.
+  * L’età massima di qualsiasi versione mantenuta nell’archivio.
+    Quando la validità di una versione supera questo valore, viene eliminata dall’archivio.
 
 * l&#39;attività di manutenzione [Pulizia versione](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). È possibile pianificare l&#39;attività di manutenzione Pulizia delle versioni per eliminare automaticamente le versioni precedenti. In questo modo si riduce la necessità di utilizzare manualmente gli strumenti di Pulizia delle versioni.
 
@@ -85,7 +83,7 @@ Il numero minimo di versioni mantenute indipendentemente dall’età. Se il valo
 
 >[!NOTE]
 >
->Si sconsiglia di mantenere molte versioni nell’archivio. Pertanto, durante la configurazione dell’operazione di eliminazione della versione, fai attenzione a non escludere troppe versioni dalla rimozione, altrimenti la dimensione dell’archivio non viene ottimizzata correttamente. Se conservi un numero elevato di versioni a causa di requisiti aziendali, contatta il supporto di Adobe per trovare modi alternativi per ottimizzare la dimensione dell’archivio.
+>Si sconsiglia di mantenere molte versioni nell’archivio. Pertanto, durante la configurazione dell’operazione di eliminazione della versione, fai attenzione a non escludere troppe versioni dalla rimozione, altrimenti la dimensione dell’archivio non viene ottimizzata correttamente. Se conservi un numero elevato di versioni a causa di requisiti aziendali, contatta il supporto Adobe per trovare modi alternativi per ottimizzare la dimensione dell’archivio.
 
 ### Combinazione delle opzioni di conservazione {#combining-retention-options}
 
@@ -95,34 +93,34 @@ Ad esempio, quando definisci il numero massimo di versioni da mantenere E la ver
 
 * Impostazione:
 
-   * `maxNumberVersions` = 7
+  * `maxNumberVersions` = 7
 
-   * `maxAgeDays` = 30
+  * `maxAgeDays` = 30
 
 * Con:
 
-   * Sono state realizzate dieci versioni negli ultimi 60 giorni
-   * Tre di queste versioni sono state create negli ultimi 30 giorni
+  * Sono state realizzate dieci versioni negli ultimi 60 giorni
+  * Tre di queste versioni sono state create negli ultimi 30 giorni
 
 * Ciò significa che:
 
-   * Le ultime tre versioni vengono mantenute
+  * Le ultime tre versioni vengono mantenute
 
 Ad esempio, quando definisci il numero massimo E minimo di versioni da mantenere E la versione più vecchia da mantenere:
 
 * Impostazione:
 
-   * `maxNumberVersions` = 3
-   * `maxAgeDays` = 30
-   * `minNumberVersions` = 3
+  * `maxNumberVersions` = 3
+  * `maxAgeDays` = 30
+  * `minNumberVersions` = 3
 
 * Con:
 
-   * Cinque versioni sono state realizzate 60 giorni fa
+  * Cinque versioni sono state realizzate 60 giorni fa
 
 * Ciò significa che:
 
-   * Vengono conservate tre versioni
+  * Vengono conservate tre versioni
 
 ## Strumento Rimuovi versioni {#purge-versions-tool}
 

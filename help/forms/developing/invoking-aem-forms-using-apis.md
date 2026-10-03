@@ -1,6 +1,6 @@
 ---
 title: Come si richiama AEM Forms utilizzando le API?
-description: Scopri come richiamare i servizi AEM Forms utilizzando Java&trade; API, servizi web, comunicazione remota e REST.
+description: Scopri come richiamare i servizi AEM Forms utilizzando un’API Java&trade; API, servizi web, comunicazione remota e REST.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,16 +11,14 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 939a2efa64c853928a9082aa30d7338e98deb695
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 0%
-
+source-wordcount: '298'
+ht-degree: 1%
 ---
-
 # Richiamare AEM Forms tramite API {#invoking-aem-forms-using-apis}
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 
-Adobe Experience Manager Forms è un software aziendale basato su J2EE costituito da servizi che operano all&#39;interno di un&#39;infrastruttura condivisa. In genere, le operazioni di assistenza utilizzano o producono documenti. Utilizzando AEM Forms, puoi combinare il Forms Workflow con moduli elettronici, sicurezza dei documenti e generazione di documenti in un set di servizi integrato e coeso. Questi servizi sono accessibili dall&#39;interno e dall&#39;esterno del firewall.
+Adobe Experience Manager Forms è un software aziendale basato su J2EE costituito da servizi che operano all&#39;interno di un&#39;infrastruttura condivisa. In genere, le operazioni di assistenza utilizzano o producono documenti. Utilizzando AEM Forms, puoi combinare Forms Workflow con moduli elettronici, sicurezza dei documenti e generazione di documenti in un set di servizi integrato e coeso. Questi servizi sono accessibili dall&#39;interno e dall&#39;esterno del firewall.
 
 Le applicazioni client possono richiamare in modo programmatico i servizi AEM Forms utilizzando un’API Java™, servizi web, comunicazione remota e REST. Utilizzando la console di amministrazione, puoi configurare un servizio in modo da esporre un endpoint che consenta ai servizi di AEM Forms di essere richiamati a livello di programmazione. Per impostazione predefinita, la maggior parte dei servizi è preconfigurata per esporre endpoint di tipo remoto™ Java e servizio Web.
 
@@ -30,4 +28,4 @@ I servizi richiedono l’esecuzione di un contenitore di servizi, in modo analog
 
 >[!NOTE]
 >
->La programmazione con i moduli AEM non include informazioni su come richiamare AEM Forms utilizzando Cartelle controllate o posta elettronica.
+>La programmazione con AEM Forms non include informazioni su come richiamare AEM Forms utilizzando Cartelle controllate o posta elettronica.

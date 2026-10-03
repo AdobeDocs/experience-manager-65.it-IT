@@ -12,10 +12,8 @@ role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '145'
-ht-degree: 0%
-
+ht-degree: 5%
 ---
-
 # Informazioni sulla struttura delle cartelle {#understanding-the-folder-structure}
 
 I componenti dell’area di lavoro AEM Forms sono progettati sull’architettura MVC utilizzando Backbone. Ogni componente ha un file per:

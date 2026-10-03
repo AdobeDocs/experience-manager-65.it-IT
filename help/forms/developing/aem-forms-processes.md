@@ -11,16 +11,14 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 939a2efa64c853928a9082aa30d7338e98deb695
 workflow-type: tm+mt
-source-wordcount: '793'
-ht-degree: 0%
-
+source-wordcount: '831'
+ht-degree: 2%
 ---
-
 # Informazioni sui processi di AEM Forms {#understanding-aem-forms-processes}
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 
-Un caso d’uso comune prevede che un set di servizi AEM Forms funzioni su un singolo documento. Puoi inviare una richiesta al contenitore del servizio creando un processo utilizzando Workbench. Un processo rappresenta un processo aziendale che si sta automatizzando. Per informazioni sulla creazione di processi, vedere [Utilizzo di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
+Un caso d’uso comune prevede che un set di servizi AEM Forms funzioni su un singolo documento. Puoi inviare una richiesta al contenitore del servizio creando un processo utilizzando Workbench. Un processo rappresenta un processo aziendale che si sta automatizzando. Per informazioni sulla creazione di processi, vedere [Utilizzo di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_it).
 
 Una volta attivato, il processo diventa un servizio e può essere richiamato come altri servizi. Una differenza tra un servizio standard, ad esempio Crittografia, e un servizio che ha avuto origine da un processo, è che quest&#39;ultimo ha un&#39;operazione che esegue molte azioni. Al contrario, un servizio standard ha molte operazioni. Ogni operazione in genere esegue un&#39;azione, ad esempio l&#39;applicazione di una policy a un documento o la crittografia di un documento.
 
@@ -46,7 +44,7 @@ Nell&#39;illustrazione seguente viene illustrato un processo di breve durata den
 
 >[!NOTE]
 >
->Questo processo non è basato su un processo AEM Forms esistente. Per seguire gli esempi di codice che illustrano come richiamare questo processo, creare un processo denominato `MyApplication/EncryptDocument` utilizzando Workbench. (Vedi [Utilizzo di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+>Questo processo non è basato su un processo AEM Forms esistente. Per seguire gli esempi di codice che illustrano come richiamare questo processo, creare un processo denominato `MyApplication/EncryptDocument` utilizzando Workbench. (Vedi [Utilizzo di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_it).)
 
 Quando viene richiamato, questo processo di breve durata esegue le azioni seguenti:
 
@@ -58,9 +56,9 @@ Quando viene richiamato, questo processo di breve durata esegue le azioni seguen
 
    >[!NOTE]
    >
-   >In genere, un processo di breve durata è costituito da più di tre azioni. È possibile creare un processo utilizzando Workbench. (Vedi [Utilizzo di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+   >In genere, un processo di breve durata è costituito da più di tre azioni. È possibile creare un processo utilizzando Workbench. (Vedi [Utilizzo di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_it).)
 
-   *La programmazione con moduli AEM* descrive i seguenti modi in cui è possibile richiamare a livello di programmazione questo processo di breve durata:
+   *La programmazione con AEM Forms* descrive i seguenti modi in cui è possibile richiamare a livello di programmazione questo processo di breve durata:
 
    * [Richiamare un processo di breve durata passando un documento non sicuro tramite AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting) (utilizzando un&#39;applicazione Flex)
    * [Richiamo di un processo di breve durata tramite l&#39;API di chiamata](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api) (API di chiamata Java™)

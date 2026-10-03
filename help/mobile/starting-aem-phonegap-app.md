@@ -1,5 +1,5 @@
 ---
-title: Avvio di PhoneGap AEM
+title: Avvio di AEM PhoneGap
 description: Scopri come utilizzare starterkit per iniziare a utilizzare le nozioni di base sullo sviluppo di Adobe Experience Manager Mobili.
 contentOwner: User
 content-type: reference
@@ -11,12 +11,10 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '424'
 ht-degree: 1%
-
 ---
-
-# Avvio di PhoneGap AEM {#starting-aem-phonegap}
+# Avvio di AEM PhoneGap {#starting-aem-phonegap}
 
 {{ue-over-mobile}}
 
@@ -28,7 +26,7 @@ Lo starterkit ti guida rapidamente attraverso le nozioni di base sullo sviluppo 
 
 Gli sviluppatori possono utilizzare questo esempio come punto di partenza per provare un’applicazione AEM Mobile utilizzando PhoneGap. L’esecuzione del starterkit e dell’applicazione di riferimento offre una solida comprensione delle nozioni di base per la creazione di applicazioni mobili avanzate.
 
-* Utilizza [PhoneGap Starter Kit per AEM](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit) per creare app adatte per il catalogo AEM Mobile.
+* Utilizza [AEM PhoneGap Starter Kit](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit) per creare app adatte al catalogo AEM Mobile.
 * È stata creata una [app di riferimento](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) con origine completa che illustra molte delle nuove funzioni di AEM Mobile, sia che si stia eseguendo la migrazione di un&#39;app esistente in AEM Mobile sia che si stia iniziando da zero.
 * Tutti gli esempi sono disponibili su github: [https://github.com/Adobe-Marketing-Cloud-Apps](https://github.com/Adobe-Marketing-Cloud-Apps) e includono l&#39;avvio del progetto con Maven.
 * La maggior parte delle conferenze utilizza l&#39;[esercitazione Sink in cucina](https://github.com/blefebvre/aem-phonegap-kitchen-sink), disponibile anche in GitHub e incentrata sull&#39;utilizzo dell&#39;estensibilità nativa di Apache Cordova.
@@ -39,7 +37,7 @@ Gli sviluppatori possono utilizzare questo esempio come punto di partenza per pr
 
 ## Modelli e componenti {#templates-and-components}
 
-I *modelli* e i *componenti* dell&#39;AEM consentono ai proprietari delle linee di business di creare esperienze personalizzate. Sia i *Modelli *che i *Componenti* sono disponibili come standard o possono essere sviluppati da te, tramite l&#39;estensione dei componenti esistenti o la creazione di greenfield (avanzato). I *modelli* e i *componenti* sono ciò che consentono all&#39;autore dell&#39;AEM di trascinare e rilasciare per creare esperienze coinvolgenti e rilevanti.
+I *modelli* e i *componenti* di AEM consentono ai proprietari delle linee di business di creare esperienze personalizzate. Sia i *Modelli* che i *Componenti* sono disponibili come standard o possono essere sviluppati da te, tramite l&#39;estensione dei componenti esistenti o la creazione di greenfield (avanzato). I *modelli* e i *componenti* sono ciò che consentono all&#39;autore di AEM di trascinare e rilasciare per creare esperienze coinvolgenti e rilevanti.
 
 1. [Creazione di componenti](/help/sites-developing/components.md)
 1. [Creazione di modelli](/help/sites-developing/templates.md)
@@ -55,6 +53,6 @@ Una volta acquisite una solida conoscenza dei due passaggi precedenti, effettua 
 1. [Avvia la mia esperienza con l’app AEM Mobile](/help/mobile/starting-aem-phonegap-app.md)
 1. [Gestire il contenuto dell’app](/help/mobile/phonegap-manage-app-content.md)
 1. [Genera la mia applicazione](/help/mobile/building-app-mobile-phonegap.md)
-1. [Monitora le prestazioni dell’app con Adobe Mobile Analytics](/help/mobile/phonegap-intro-to-app-analytics.md)
+1. [Monitora le prestazioni dell&#39;app con Adobe Mobile Analytics](/help/mobile/phonegap-intro-to-app-analytics.md)
 1. [Distribuire un’esperienza app personalizzata con Adobe Target](/help/mobile/phonegap-aem-mobile-content-personalization.md)
 1. [Invia messaggi importanti agli utenti](/help/mobile/phonegap-push-notifications.md)

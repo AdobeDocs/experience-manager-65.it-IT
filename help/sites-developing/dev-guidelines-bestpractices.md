@@ -1,6 +1,6 @@
 ---
-title: 'Sviluppo AEM: linee guida e best practice'
-description: Linee guida e best practice per lo sviluppo sull’AEM
+title: Sviluppo AEM - Linee guida e best practice
+description: Linee guida e best practice per lo sviluppo su AEM
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
@@ -11,12 +11,10 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1091'
 ht-degree: 1%
-
 ---
-
-# Sviluppo AEM: linee guida e best practice{#aem-development-guidelines-and-best-practices}
+# Sviluppo AEM - Linee guida e best practice{#aem-development-guidelines-and-best-practices}
 
 ## Linee guida per l’utilizzo di modelli e componenti {#guidelines-for-using-templates-and-components}
 
@@ -36,7 +34,7 @@ Il modo consigliato per affrontare tale sfida consiste nel:
 
 Questo illustra come questo approccio consenta agli utenti e agli amministratori del sito web che vi contribuiscono di rispondere rapidamente alle esigenze aziendali senza richiedere il coinvolgimento di team di sviluppo. I metodi alternativi, come la creazione di un modello, sono in genere costosi e richiedono un processo di gestione delle modifiche e il coinvolgimento del team di sviluppo. Ciò rende l&#39;intero processo più lungo e costoso.
 
-Gli sviluppatori di sistemi basati sull’AEM dovrebbero pertanto utilizzare:
+Gli sviluppatori di sistemi basati su AEM devono quindi utilizzare:
 
 * modelli e controllo di accesso alla progettazione del sistema paragrafo per uniformità e protezione del brand
 * sistema paragrafo, incluse le opzioni di configurazione per la flessibilità.
@@ -45,11 +43,11 @@ Le seguenti regole generali per gli sviluppatori hanno senso nella maggior parte
 
 * Mantieni basso il numero di modelli, anche se si tratta solo del numero di strutture di pagina fondamentalmente diverse sui siti web.
 * Fornisci la flessibilità e le funzionalità di configurazione necessarie ai componenti personalizzati.
-* Massimizzare l&#39;uso della potenza e della flessibilità del sistema paragrafo dell&#39;AEM - i componenti parsys e iparsys.
+* Sfrutta al massimo la potenza e la flessibilità del sistema di paragrafi AEM: i componenti parsys e iparsys.
 
 ### Personalizzazione di componenti e altri elementi {#customizing-components-and-other-elements}
 
-Quando crei componenti personalizzati o personalizzi un componente esistente, spesso è più semplice (e sicuro) riutilizzare le definizioni esistenti. Gli stessi principi si applicano anche ad altri elementi all’interno dell’AEM, ad esempio il gestore degli errori.
+Quando crei componenti personalizzati o personalizzi un componente esistente, spesso è più semplice (e sicuro) riutilizzare le definizioni esistenti. Gli stessi principi si applicano anche ad altri elementi all’interno di AEM, ad esempio il gestore degli errori.
 
 Questo può essere fatto copiando e sovrapponendo la definizione esistente. In altre parole, copia della definizione da `/libs` a `/apps/<your-project>`. Questa nuova definizione, in `/apps`, può essere aggiornata in base alle tue esigenze.
 
@@ -63,21 +61,21 @@ Ad esempio:
 
   Ciò comportava la sovrapposizione di una definizione di componente:
 
-   * Creare una cartella di componenti in `/apps/<website-name>/components/<MyComponent>` copiando un componente esistente:
+  * Creare una cartella di componenti in `/apps/<website-name>/components/<MyComponent>` copiando un componente esistente:
 
-      * Ad esempio, per personalizzare la copia del componente Testo:
+    * Ad esempio, per personalizzare la copia del componente Testo:
 
-         * da `/libs/foundation/components/text`
-         * a `/apps/myProject/components/text`
+      * da `/libs/foundation/components/text`
+      * a `/apps/myProject/components/text`
 
 * [Personalizzazione delle pagine visualizzate dal gestore degli errori](/help/sites-developing/customizing-errorhandler-pages.md#how-to-customize-pages-shown-by-the-error-handler)
 
   Questo caso prevede la sovrapposizione di un servlet:
 
-   * Nell’archivio, copia uno o più script predefiniti:
+  * Nell’archivio, copia uno o più script predefiniti:
 
-      * da `/libs/sling/servlet/errorhandler/`
-      * a `/apps/sling/servlet/errorhandler/`
+    * da `/libs/sling/servlet/errorhandler/`
+    * a `/apps/sling/servlet/errorhandler/`
 
 >[!CAUTION]
 >
@@ -126,23 +124,23 @@ Utilizza la sessione utente, non la sessione amministrativa. Ciò significa che 
 slingRequest.getResourceResolver().adaptTo(Session.class);
 ```
 
-### Protect contro il cross-site scripting (XSS) {#protect-against-cross-site-scripting-xss}
+### Protezione da vulnerabilità cross-site scripting (XSS) {#protect-against-cross-site-scripting-xss}
 
 Il cross-site scripting (XSS) consente agli aggressori di inserire codice nelle pagine web visualizzate da altri utenti. Questa vulnerabilità di sicurezza può essere sfruttata da utenti Web malintenzionati per aggirare i controlli di accesso.
 
-L&#39;AEM applica il principio di filtrare tutti i contenuti forniti dall&#39;utente al momento dell&#39;output. Prevenire l’XSS è data la massima priorità sia durante lo sviluppo che durante il test.
+AEM applica il principio di filtrare tutti i contenuti forniti dall’utente al momento dell’output. Prevenire l’XSS è data la massima priorità sia durante lo sviluppo che durante il test.
 
 Inoltre, un firewall dell&#39;applicazione Web, ad esempio [mod_security per Apache](https://modsecurity.org), può fornire un controllo centrale e affidabile sulla sicurezza dell&#39;ambiente di distribuzione e proteggere da attacchi di cross-site scripting non rilevati in precedenza.
 
 >[!CAUTION]
 >
->Il codice di esempio fornito con l’AEM potrebbe non proteggere da tali attacchi e in genere si basa sul filtraggio delle richieste da parte di un firewall dell’applicazione web.
+>Il codice di esempio fornito con AEM potrebbe non proteggere da tali attacchi e in genere si basa sul filtraggio delle richieste da parte di un firewall dell’applicazione web.
 
 La scheda di riferimento rapido API XSS contiene informazioni necessarie per utilizzare l’API XSS e rendere più sicura un’app AEM. Puoi scaricarlo qui:
 
 Scheda di riferimento rapido XSSAPI.
 
-[Ottieni file](assets/xss_cheat_sheet_2016.pdf)
+[Ottieni il file](assets/xss_cheat_sheet_2016.pdf)
 
 ### Come proteggere la comunicazione per informazioni confidenziali {#securing-communication-for-confidential-information}
 
@@ -157,12 +155,12 @@ Questo vale per le informazioni riservate al sistema (come la configurazione o l
 
 ### Personalizzazione delle pagine di errore {#customizing-error-pages}
 
-Le pagine di errore possono essere personalizzate per l’AEM. È consigliabile evitare che l’istanza riveli tracce sling in caso di errori interni del server.
+Le pagine di errore possono essere personalizzate per AEM. È consigliabile evitare che l’istanza riveli tracce sling in caso di errori interni del server.
 
 Per informazioni dettagliate, vedere [Personalizzazione delle pagine di errore visualizzate dal gestore degli errori](/help/sites-developing/customizing-errorhandler-pages.md).
 
 ### Apri file nel processo Java™ {#open-files-in-the-java-process}
 
-Poiché l&#39;AEM può accedere a molti file, si consiglia di configurare in modo esplicito per l&#39;AEM il numero di [file aperti per un processo Java™](/help/sites-deploying/configuring.md#open-files-in-the-java-process).
+Poiché AEM può accedere a molti file, si consiglia di configurare in modo esplicito per AEM il numero di [file aperti per un processo Java™](/help/sites-deploying/configuring.md#open-files-in-the-java-process).
 
 Per ridurre al minimo questo problema, lo sviluppo deve garantire che qualsiasi file aperto venga chiuso correttamente quando (significativamente) possibile.
