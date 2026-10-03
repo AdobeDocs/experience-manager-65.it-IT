@@ -12,11 +12,9 @@ feature: Developing,Personalization
 role: Developer
 source-git-commit: f965c449da06a1b7e60428e0734c621f004d318c
 workflow-type: tm+mt
-source-wordcount: '2791'
-ht-degree: 1%
-
+source-wordcount: '2898'
+ht-degree: 2%
 ---
-
 # Utilizzo delle librerie lato client{#using-client-side-libraries}
 
 I siti web moderni si basano in larga misura sull’elaborazione lato client guidata da codice JavaScript e CSS complesso. L’organizzazione e l’ottimizzazione della trasmissione di questo codice possono essere un problema complesso.
@@ -97,11 +95,11 @@ La pagina HTML generata contiene il seguente codice:
 <script type="text/javascript" src="/etc/clientlibs/foundation/jquery.js"></script>
 ```
 
-Per informazioni complete, inclusi gli attributi per filtrare le librerie JS, CSS o theme, vedi [ui:includeClientLib](/help/sites-developing/taglib.md#lt-ui-includeclientlib).
+Per informazioni complete, inclusi gli attributi per filtrare JS, CSS o le librerie dei temi, vedere [ui:includeClientLib](/help/sites-developing/taglib.md#lt-ui-includeclientlib).
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>`, che in passato veniva comunemente utilizzato per includere le librerie client, è stato dichiarato obsoleto a partire da AEM 5.6. Utilizzare [`<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) come descritto in precedenza.
+>`<cq:includeClientLib>`, che in passato veniva comunemente utilizzato per includere le librerie client, è diventato obsoleto a partire da AEM 5.6. Utilizzare [`<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) come descritto in precedenza.
 
 ## Creazione di cartelle di librerie client {#creating-client-library-folders}
 
@@ -446,7 +444,7 @@ Il componente `dumplibs` include un selettore di test che visualizza il codice s
 
    * Apri il seguente URL nel browser web (utilizza un host e una porta diversi, a seconda delle necessità):
 
-      * `http://<host>:<port>/libs/granite/ui/content/dumplibs.html`
+     * `http://<host>:<port>/libs/granite/ui/content/dumplibs.html`
 
    La pagina predefinita mostra l’output per i tag senza alcun valore per l’attributo categorie.
 

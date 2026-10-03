@@ -1,32 +1,34 @@
 ---
 title: Configurazione manuale dell’integrazione con Adobe Target
+
 description: Scopri come configurare manualmente l’integrazione con Adobe Target.
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
+
 exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 source-git-commit: d2623c78e8c779b20303865d4bb40effd1e5fe59
 workflow-type: tm+mt
-source-wordcount: '2125'
+source-wordcount: '2209'
 ht-degree: 28%
-
 ---
-
 # Configurazione manuale dell’integrazione con Adobe Target {#manually-configuring-the-integration-with-adobe-target}
 
 Puoi modificare le configurazioni della procedura guidata di consenso effettuate durante l’utilizzo della procedura guidata, oppure integrarle manualmente con Adobe Target senza utilizzare la procedura guidata.
 
 ## Modifica delle configurazioni della procedura guidata Opt-in {#modifying-the-opt-in-wizard-configurations}
 
-La procedura guidata [Opt-in](/help/sites-administering/opt-in.md) che [integra l&#39;AEM con Adobe Target](/help/sites-administering/target.md) crea automaticamente una configurazione cloud di Target denominata Configurazione di Target con provisioning. La procedura guidata crea anche un framework Target per la configurazione cloud denominato Provisioned Target Framework. Se necessario, puoi modificare le proprietà della configurazione e del framework cloud.
+La procedura guidata [Opt-in](/help/sites-administering/opt-in.md) che [integra AEM con Adobe Target](/help/sites-administering/target.md) crea automaticamente una configurazione cloud di Target denominata Configurazione di Target con provisioning. La procedura guidata crea anche un framework Target per la configurazione cloud denominato Provisioned Target Framework. Se necessario, puoi modificare le proprietà della configurazione e del framework cloud.
 
 Puoi anche configurare Adobe Target per utilizzare Adobe Target come origine per la generazione di rapporti quando esegui il targeting del contenuto configurando la configurazione di A4T Analytics Cloud.
 
-Per individuare la configurazione cloud e il framework, passa a **Cloud Service** tramite **Strumenti** > **Distribuzione** > **Cloud**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+Per individuare la configurazione cloud e il framework, passa a **Servizi cloud** tramite **Strumenti** > **Distribuzione** > **Cloud**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 Sotto Adobe Target, fai clic su **Mostra configurazioni**.
 
 ### Proprietà configurazione destinazione predisposta {#provisioned-target-configuration-properties}
@@ -40,7 +42,7 @@ I seguenti valori delle proprietà vengono utilizzati nella configurazione cloud
 * **Sincronizza Segmenti Da Adobe Target:** Selezionati.
 
 * **Libreria client:** mbox.js.
-* **Utilizza DTM per distribuire la libreria client:** non selezionata. Seleziona questa opzione se [utilizzi DTM](/help/sites-administering/dtm.md) o un altro sistema di gestione dei tag per ospitare il file mbox.js o AT.js. Adobe Per la distribuzione della libreria, si consiglia di utilizzare DTM anziché AEM.
+* **Utilizza DTM per distribuire la libreria client:** non selezionata. Seleziona questa opzione se [utilizzi DTM](/help/sites-administering/dtm.md) o un altro sistema di gestione dei tag per ospitare il file mbox.js o AT.js. Adobe consiglia di utilizzare DTM anziché AEM per distribuire la libreria.
 
 * **Mbox.js personalizzato:** Nessuno specificato in modo che venga utilizzato il file mbox.js predefinito. Specifica un file mbox.js personalizzato da utilizzare, se necessario. Viene visualizzato solo se hai selezionato mbox.js.
 * **AT.js personalizzato:** Nessuno specificato in modo che venga utilizzato il file AT.js predefinito. Specifica un file AT.js personalizzato da utilizzare, in base alle esigenze. Viene visualizzato solo se avete selezionato AT.js.
@@ -76,7 +78,7 @@ Puoi configurare Adobe Target per l’utilizzo di Adobe Analytics come origine p
 
 A questo scopo, specifica la configurazione cloud A4T con cui collegare la configurazione cloud di Adobe Target:
 
-1. Passa a **Cloud Service** tramite il **logo AEM** > **Strumenti** > **Distribuzione** > **Cloud Service**.
+1. Passa a **Servizi cloud** tramite il **logo AEM** > **Strumenti** > **Distribuzione** > **Servizi cloud**.
 1. Nella sezione **Adobe Target**, fai clic su **Configura ora**.
 1. Riconnetti alla configurazione di Adobe Target.
 1. Nel menu a discesa **Configurazione Analytics Cloud A4T**, seleziona il framework.
@@ -100,7 +102,7 @@ A questo scopo, specifica la configurazione cloud A4T con cui collegare la confi
 
 ![ImpostazioniAdobeTarget](assets/adobe-target-settings.jpg)
 
-Fare clic su **OK**. Quando esegui il targeting dei contenuti con Adobe Target, puoi [selezionare l&#39;origine del rapporto](/help/sites-authoring/content-targeting-touch.md).
+Fai clic su **OK**. Quando esegui il targeting dei contenuti con Adobe Target, puoi [selezionare l&#39;origine del rapporto](/help/sites-authoring/content-targeting-touch.md).
 
 ## Integrazione manuale con Adobe Target {#manually-integrating-with-adobe-target}
 
@@ -108,7 +110,7 @@ Integrazione manuale con Adobe Target invece di utilizzare la procedura guidata 
 
 >[!NOTE]
 >
->Il file della libreria di Target, [AT.JS](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/mboxcreate-atjs/), è una nuova libreria di implementazione per Adobe Target progettata sia per le tipiche implementazioni web che per le applicazioni a pagina singola. Adobe consiglia di utilizzare AT.js invece di mbox.js come libreria client.
+>Il file della libreria di Target, [AT.JS](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/mboxcreate-atjs/), è una nuova libreria di implementazione di Adobe Target progettata sia per le tipiche implementazioni web che per le applicazioni a pagina singola. Adobe consiglia di utilizzare AT.js invece di mbox.js come libreria client.
 >
 >AT.js offre diversi miglioramenti rispetto alla libreria mbox.js:
 >
@@ -131,9 +133,9 @@ Puoi impostare la configurazione cloud in modo da sincronizzare i segmenti da Ad
 
 Segui la procedura seguente per creare una configurazione cloud di Target in AEM:
 
-1. Passa a **Cloud Service** tramite il **logo AEM** > **Strumenti** > **Cloud Service** > **Cloud Service precedenti**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+1. Passa a **Servizi cloud** tramite il **logo AEM** > **Strumenti** > **Servizi cloud** > **Servizi cloud precedenti**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 
-   Viene visualizzata la pagina di panoramica **Cloud Service**.
+   Viene visualizzata la pagina di panoramica di **Cloud Services**.
 
 1. Nella sezione **Adobe Target**, fai clic su **Configura ora**.
 1. Nella finestra di dialogo **Crea configurazione**:
@@ -167,9 +169,9 @@ Segui la procedura seguente per creare una configurazione cloud di Target in AEM
    * **Configurazione A4T Analytics Cloud**: seleziona la configurazione di Analytics Cloud utilizzata per gli obiettivi e le metriche delle attività di destinazione. È necessaria questa configurazione se utilizzi Adobe Analytics come origine per la generazione di rapporti durante il targeting del contenuto. Se la configurazione cloud non è visibile, vedi la nota in [Configurazione della configurazione di A4T Analytics Cloud](#configuring-a-t-analytics-cloud-configuration).
 
    * **Utilizza targeting accurato:** per impostazione predefinita questa casella di controllo è selezionata. Se viene selezionata, la configurazione del servizio cloud attende il caricamento del contesto prima di caricare il contenuto. Vedi la nota che segue.
-   * **Sincronizza segmenti da Adobe Target:** Seleziona questa opzione per scaricare i segmenti definiti in Target e utilizzarli nell&#39;AEM. Seleziona questa opzione quando la proprietà Tipo API è REST, perché i segmenti in linea non sono supportati e devi utilizzare i segmenti da Target. Il termine AEM &quot;segmento&quot; equivale al termine Target &quot;pubblico&quot;.
+   * **Sincronizza segmenti da Adobe Target:** Seleziona questa opzione per scaricare i segmenti definiti in Target e utilizzarli in AEM. Seleziona questa opzione quando la proprietà Tipo API è REST, perché i segmenti in linea non sono supportati e devi utilizzare i segmenti da Target. Il termine AEM &quot;segmento&quot; equivale al termine Target &quot;pubblico&quot;.
    * **Libreria client:** seleziona se desideri la libreria client mbox.js o AT.js.
-   * **Utilizza DTM per distribuire la libreria client**. Seleziona questa opzione per utilizzare AT.js o mbox.js da DTM o un altro sistema di gestione dei tag. Configura [l&#39;integrazione DTM](/help/sites-administering/dtm.md) per utilizzare questa opzione. Adobe Per la distribuzione della libreria, si consiglia di utilizzare DTM anziché AEM.
+   * **Utilizza DTM per distribuire la libreria client**. Seleziona questa opzione per utilizzare AT.js o mbox.js da DTM o un altro sistema di gestione dei tag. Configura [l&#39;integrazione DTM](/help/sites-administering/dtm.md) per utilizzare questa opzione. Adobe consiglia di utilizzare DTM anziché AEM per distribuire la libreria.
    * **Mbox.js personalizzato**: lascia vuoto se hai selezionato la casella DTM o per utilizzare il file mbox.js predefinito. In alternativa, puoi caricare il file mbox.js personalizzato. Viene visualizzato solo se hai selezionato mbox.js.
    * **AT.js personalizzato**: lascia vuoto se hai selezionato la casella DTM o per utilizzare il file AT.js predefinito. In alternativa, carica il tuo file AT.js personalizzato. Viene visualizzato solo se avete selezionato AT.js.
 
@@ -179,7 +181,7 @@ Segui la procedura seguente per creare una configurazione cloud di Target in AEM
    >
    >Il targeting accurato significa che la configurazione del servizio cloud attende il caricamento del contesto prima di caricare il contenuto. Di conseguenza, in termini di prestazioni, un targeting accurato può creare un ritardo di alcuni millisecondi prima del caricamento del contenuto.
    >
-   >Il targeting accurato è sempre abilitato nell’istanza di authoring. Tuttavia, nell’istanza di pubblicazione puoi scegliere di disattivare il targeting accurato a livello globale cancellando il segno di spunta accanto a Targeting accurato nella configurazione del servizio cloud (**http://localhost:4502/etc/cloudservices.html**). Puoi inoltre attivare e disattivare il targeting accurato per i singoli componenti indipendentemente dall’impostazione nella configurazione del servizio cloud.
+   >Il targeting accurato è sempre abilitato nell’istanza di authoring. Tuttavia, nell&#39;istanza di pubblicazione puoi scegliere di disattivare il targeting accurato a livello globale cancellando il segno di spunta accanto a Targeting accurato nella configurazione del servizio cloud (**http://localhost:4502/etc/cloudservices.html**). Puoi inoltre attivare e disattivare il targeting accurato per i singoli componenti indipendentemente dall’impostazione nella configurazione del servizio cloud.
    >
    >Se hai ***già*** creato i componenti di destinazione e modificato questa impostazione, le modifiche non influiscono su tali componenti. Modifica direttamente tali componenti.
 
@@ -198,7 +200,7 @@ Puoi creare più framework per una singola configurazione di Target. I framework
 
    ![Finestra di dialogo Crea framework](assets/chlimage_1-161.png)
 
-   Viene visualizzata la pagina framework. Il Sidekick fornisce componenti che rappresentano informazioni provenienti da [ClientContext](/help/sites-administering/client-context.md) o [ContextHub](/help/sites-developing/ch-configuring.md) che è possibile mappare.
+   Viene visualizzata la pagina framework. Sidekick fornisce componenti che rappresentano informazioni provenienti da [ClientContext](/help/sites-administering/client-context.md) o [ContextHub](/help/sites-developing/ch-configuring.md) che è possibile mappare.
 
    ![Componenti per framework](assets/chlimage_1-162.png)
 
@@ -231,11 +233,11 @@ Associa le [attività AEM](/help/sites-authoring/activitylib.md) alla configuraz
 >Il tipo di attività disponibile viene stabilito in base ai seguenti elementi:
 >
 >
->* Se l&#39;opzione **xt_only** è abilitata nel tenant di Adobe Target (clientcode) utilizzato sul lato AEM per connettersi ad Adobe Target, puoi creare **solo** attività XT in AEM.
+>* Se l&#39;opzione **xt_only** è abilitata nel tenant di Adobe Target (clientcode) utilizzato sul lato AEM per la connessione ad Adobe Target, puoi creare **solo** attività XT in AEM.
 >
->* Se l&#39;opzione **xt_only** è abilitata **not** nel tenant di Adobe Target (clientcode), puoi creare **entrambe** le attività XT e A/B nell&#39;AEM.
+>* Se l&#39;opzione **xt_only** è abilitata **not** nel tenant di Adobe Target (clientcode), puoi creare **entrambe** le attività XT e A/B in AEM.
 >
->**Nota aggiuntiva:** l&#39;opzione **xt_only** è un&#39;impostazione applicata a un determinato tenant di Target (clientcode) e può essere modificata solo direttamente in Adobe Target. Non puoi attivare o disattivare questa opzione da AEM.
+>**Nota aggiuntiva:** l&#39;opzione **xt_only** è un&#39;impostazione applicata a un determinato tenant di Target (clientcode) e può essere modificata solo direttamente in Adobe Target. Non puoi abilitare o disabilitare questa opzione da AEM.
 
 ### Associazione del framework di Target al sito {#associating-the-target-framework-with-your-site}
 
@@ -258,7 +260,7 @@ Quando si associa una pagina al framework, le pagine figlie ereditano l&#39;asso
    >Accertati di selezionare il **framework** specifico creato e non la configurazione cloud di Target in cui è stato creato.
 
 1. Fai clic su **Fine**.
-1. Attiva la pagina root del sito web in modo da replicarlo sul server di pubblicazione. (Vedi [Come Utilizzare Le Pagine Di Publish](/help/sites-authoring/publishing-pages.md).)
+1. Attiva la pagina root del sito web in modo da replicarlo sul server di pubblicazione. (Vedi [Come Pubblicare Le Pagine](/help/sites-authoring/publishing-pages.md).)
 
    >[!NOTE]
    >
@@ -269,6 +271,6 @@ Quando si associa una pagina al framework, le pagine figlie ereditano l&#39;asso
 Per risolvere i problemi che si verificano durante la connessione a Target, puoi eseguire le seguenti attività:
 
 * Verifica che le credenziali utente fornite siano corrette.
-* Assicurati che l’istanza AEM possa connettersi al server Target. Ad esempio, assicurati che le regole del firewall non blocchino le connessioni AEM in uscita o che l’AEM sia configurato per l’utilizzo dei proxy necessari.
-* Cerca messaggi utili nel registro degli errori AEM. Il file error.log si trova nella directory **crx-quickstart/logs** in cui è installato AEM.
+* Assicurati che l’istanza di AEM possa connettersi al server Target. Ad esempio, assicurati che le regole del firewall non blocchino le connessioni AEM in uscita o che AEM sia configurato per l’utilizzo dei proxy necessari.
+* Cerca messaggi utili nel registro errori di AEM. Il file error.log si trova nella directory **crx-quickstart/logs** in cui è installato AEM.
 * Quando modifichi l’attività in Adobe Target, l’URL punta a localhost. Per ovviare a questo problema, imposta AEM Externalizer sull’URL corretto.

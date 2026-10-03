@@ -1,5 +1,5 @@
 ---
-title: Guida alle prestazioni di Assets
+title: Guida delle prestazioni delle risorse
 description: Scopri come determinare il dimensionamento hardware ottimale per una nuova configurazione di Digital Asset Management (DAM) e come risolvere i problemi di prestazioni
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,10 @@ feature: Configuring
 role: Admin
 source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '1205'
-ht-degree: 0%
-
+source-wordcount: '1224'
+ht-degree: 5%
 ---
-
-# Guida alle prestazioni di Assets{#assets-performance-guide}
+# Guida delle prestazioni delle risorse{#assets-performance-guide}
 
 Il Digital Asset Management (DAM) viene spesso utilizzato nei casi in cui le prestazioni sono importanti. Tuttavia, la tipica configurazione DAM contiene diversi componenti hardware e software che possono influire sulle prestazioni. Questo documento fornisce quanto segue:
 
@@ -61,7 +59,7 @@ I processi DAM sono molto adatti per essere eseguiti in parallelo per grandi qua
 
 L’elaborazione intensiva di risorse digitali richiede risorse hardware ottimizzate, i fattori più rilevanti sono le dimensioni delle immagini e il picco di trasmissione delle immagini elaborate.
 
-Alloca almeno 16 GB di heap e configura il flusso di lavoro [!UICONTROL Risorsa di aggiornamento DAM] per utilizzare il [pacchetto Camera Raw](/help/assets/camera-raw.md) per l&#39;acquisizione di immagini non elaborate.
+Alloca almeno 16 GB di memoria heap e configura il flusso di lavoro [!UICONTROL Risorsa di aggiornamento DAM] per utilizzare il [pacchetto Camera Raw](/help/assets/camera-raw.md) per l’acquisizione di immagini non elaborate.
 
 ## Informazioni sul sistema {#understanding-the-system}
 

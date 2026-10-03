@@ -13,18 +13,16 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '854'
 ht-degree: 0%
-
 ---
-
 # Procedura di aggiornamento {#upgrade-procedure}
 
 >[!NOTE]
 >
->L’aggiornamento richiede tempi di inattività per il livello di authoring, in quanto la maggior parte degli aggiornamenti Adobe Experience Manager (AEM) viene eseguita sul posto. Seguendo queste best practice, è possibile ridurre al minimo o eliminare i tempi di inattività a livello di Publish.
+>L’aggiornamento richiede tempi di inattività per il livello di authoring, in quanto la maggior parte degli aggiornamenti di Adobe Experience Manager (AEM) viene eseguita sul posto. Seguendo queste best practice, è possibile ridurre o eliminare i tempi di inattività del livello di pubblicazione.
 
-Durante l’aggiornamento degli ambienti AEM, è necessario tenere conto delle differenze di approccio tra l’aggiornamento degli ambienti di authoring e di pubblicazione per ridurre al minimo i tempi di inattività sia per gli autori che per gli utenti finali. Questa pagina illustra la procedura di alto livello per l’aggiornamento di una topologia AEM attualmente in esecuzione su una versione di AEM 6.x. Poiché il processo varia tra i livelli di authoring e pubblicazione e le distribuzioni basate su Mongo e TarMK, ogni livello e microkernel è stato elencato in una sezione separata. Durante l’esecuzione della distribuzione, Adobe consiglia innanzitutto di aggiornare l’ambiente di authoring, determinare il successo e quindi procedere con gli ambienti di pubblicazione.
+Quando esegui l’aggiornamento degli ambienti AEM, è necessario tenere conto delle differenze di approccio tra l’aggiornamento degli ambienti di authoring e di pubblicazione, per ridurre al minimo i tempi di inattività sia per gli autori che per gli utenti finali. Questa pagina illustra la procedura di alto livello per l’aggiornamento di una topologia AEM attualmente in esecuzione su una versione di AEM 6.x. Poiché il processo varia tra i livelli di authoring e pubblicazione e le distribuzioni basate su Mongo e TarMK, ogni livello e microkernel è stato elencato in una sezione separata. Durante l’esecuzione della distribuzione, Adobe consiglia innanzitutto di aggiornare l’ambiente di authoring, determinare il successo e quindi procedere con gli ambienti di pubblicazione.
 
 <!--
 >[!IMPORTANT]
@@ -85,7 +83,7 @@ La topologia ipotizzata per questa sezione è costituita da un server di authori
 
 ### Topologia iniziale {#starting-topology-1}
 
-La topologia ipotizzata per questa sezione è costituita da un cluster di authoring MongoMK con almeno due istanze di authoring AEM, supportate da almeno due database MongoMK. Tutte le istanze dell’Autore condividono un archivio dati. Questi passaggi devono essere applicati sia agli archivi dati S3 che a quelli di file. La replica viene eseguita dai server di authoring alla farm di Publish TarMK.
+La topologia ipotizzata per questa sezione è costituita da un cluster di authoring MongoMK con almeno due istanze di authoring AEM, supportate da almeno due database MongoMK. Tutte le istanze dell’Autore condividono un archivio dati. Questi passaggi devono essere applicati sia agli archivi dati S3 che a quelli di file. La replica viene eseguita dai server di authoring alla farm di pubblicazione TarMK.
 
 ![topologia mongo](assets/mongo-topology.jpg)
 
@@ -95,7 +93,7 @@ La topologia ipotizzata per questa sezione è costituita da un cluster di author
 
 1. Interrompere l&#39;authoring dei contenuti.
 1. Clonare l&#39;archivio dati per il backup.
-1. Arresta tutte le istanze di AEM Author tranne una, ovvero l’istanza Autore principale.
+1. Arresta tutte le istanze di AEM Author tranne una, ossia l’istanza di authoring principale.
 1. Rimuovi tutti i nodi MongoDB tranne uno dal set di repliche, l’istanza principale di Mongo.
 1. Aggiornare il file `DocumentNodeStoreService.cfg` nell&#39;istanza di authoring primaria in modo che rifletta il set di repliche a membro singolo.
 1. Riavvia l’Autore primario per assicurarti che venga riavviato correttamente.
@@ -143,11 +141,11 @@ La topologia ipotizzata per questa sezione è costituita da un cluster di author
 
 1. Rimuovi le istanze di authoring, il nodo Mongo e l’archivio dati aggiornati.
 
-## Farm Publish TarMK {#tarmk-publish-farm}
+## Farm di pubblicazione TarMK {#tarmk-publish-farm}
 
-### Farm Publish TarMK {#tarmk-publish-farm-1}
+### Farm di pubblicazione TarMK {#tarmk-publish-farm-1}
 
-La topologia ipotizzata per questa sezione è costituita da due istanze di pubblicazione TarMK, precedute da Dispatcher che sono a loro volta precedute da un load balancer. La replica viene eseguita dal server Author alla farm di Publish TarMK.
+La topologia ipotizzata per questa sezione è costituita da due istanze di pubblicazione TarMK, precedute da Dispatcher che sono a loro volta precedute da un load balancer. La replica viene eseguita dal server di authoring alla farm di pubblicazione TarMK.
 
 ![tarmk-pub-farmv5](assets/tarmk-pub-farmv5.png)
 
@@ -155,43 +153,43 @@ La topologia ipotizzata per questa sezione è costituita da due istanze di pubbl
 
 ![aggiornamento-pubblicazione2](assets/upgrade-publish2.png)
 
-1. Arresta il traffico verso l&#39;istanza di Publish 2 nel load balancer.
-1. Esegui [manutenzione pre-aggiornamento](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) in Publish 2.
-1. Esegui un [aggiornamento sul posto](/help/sites-deploying/in-place-upgrade.md) in Publish 2.
+1. Arresta il traffico verso l&#39;istanza Publish 2 nel load balancer.
+1. Esegui [manutenzione pre-aggiornamento](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) nella pubblicazione 2.
+1. Esegui un [aggiornamento sul posto](/help/sites-deploying/in-place-upgrade.md) alla pubblicazione 2.
 1. Aggiornare il Dispatcher o il modulo Web *se necessario*.
 1. Svuota la cache di Dispatcher.
-1. Il controllo qualità convalida Publish 2 tramite Dispatcher, dietro il firewall.
-1. Arresta Publish 2.
-1. Copia l’istanza di Publish 2.
-1. Avviare Publish 2.
+1. Il controllo qualità convalida la pubblicazione 2 tramite Dispatcher, dietro il firewall.
+1. Chiudi pubblicazione 2.
+1. Copia l’istanza Publish 2.
+1. Avvia pubblicazione 2.
 
 ### In caso di esito positivo {#if-successful-2}
 
 ![aggiornamento-pubblicazione1](assets/upgrade-publish1.png)
 
-1. Abilita il traffico verso Publish 2.
-1. Arrestare il traffico verso Publish 1.
-1. Arresta l&#39;istanza di Publish 1.
-1. Sostituisci l’istanza di Publish 1 con una copia di Publish 2.
+1. Attiva traffico per Pubblicazione 2.
+1. Arresta il traffico per la pubblicazione 1.
+1. Arresta l&#39;istanza Publish 1.
+1. Sostituisci l’istanza Publish 1 con una copia di Publish 2.
 1. Aggiornare il Dispatcher o il modulo Web *se necessario*.
-1. Svuota la cache di Dispatcher per Publish 1.
-1. Avviare Publish 1.
-1. Il controllo qualità convalida Publish 1 tramite Dispatcher, dietro il firewall.
+1. Svuota la cache di Dispatcher per la pubblicazione 1.
+1. Avvia pubblicazione 1.
+1. Il controllo qualità convalida la pubblicazione 1 tramite Dispatcher, dietro il firewall.
 
 ### In caso di esito negativo (rollback) {#if-unsuccessful-rollback-1}
 
 ![pub_rollback](assets/pub_rollback.jpg)
 
 1. Crea una copia di Publish 1.
-1. Sostituisci l’istanza di Publish 2 con una copia di Publish 1.
-1. Svuota la cache di Dispatcher per Publish 2.
-1. Avviare Publish 2.
-1. Il controllo qualità convalida Publish 2 tramite Dispatcher, dietro il firewall.
-1. Abilita il traffico verso Publish 2.
+1. Sostituisci l’istanza Publish 2 con una copia di Publish 1.
+1. Svuota la cache di Dispatcher per la pubblicazione 2.
+1. Avvia pubblicazione 2.
+1. Il controllo qualità convalida la pubblicazione 2 tramite Dispatcher, dietro il firewall.
+1. Attiva traffico per Pubblicazione 2.
 
 ## Passaggi per l&#39;aggiornamento finale {#final-upgrade-steps}
 
-1. Abilita il traffico verso Publish 1.
+1. Attiva traffico per Pubblicazione 1.
 1. Il controllo qualità esegue la convalida finale da un URL pubblico.
 1. Abilita gli agenti di replica dall’ambiente di authoring.
 1. Riprendi l’authoring dei contenuti.

@@ -1,5 +1,5 @@
 ---
-title: API Bridge per moduli HTML5
+title: API Form Bridge per moduli HTML5
 description: Le applicazioni esterne utilizzano l’API FormBridge per connettersi al modulo mobile XFA. L'API invia un evento FormBridgeInitialized nella finestra padre.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,15 +11,13 @@ role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '938'
-ht-degree: 0%
-
+ht-degree: 1%
 ---
+# API Form Bridge per moduli HTML5 {#form-bridge-apis-for-html-forms}
 
-# API Bridge per moduli HTML5 {#form-bridge-apis-for-html-forms}
+È possibile utilizzare le API di Bridge per moduli per aprire un canale di comunicazione tra moduli HTML5 basati su XFA e le applicazioni. Le API di Bridge Form forniscono un&#39;API **connect** per creare la connessione.
 
-Puoi utilizzare le API Bridge per moduli per aprire un canale di comunicazione tra moduli HTML5 basati su XFA e le tue applicazioni. Le API di Bridge Form forniscono un&#39;API **connect** per creare la connessione.
-
-L&#39;API **connect** accetta un gestore come argomento. Dopo aver creato una connessione tra il modulo HTML5 basato su XFA e Form Bridge, viene richiamato l’handle.
+L&#39;API **connect** accetta un gestore come argomento. Dopo aver creato una connessione tra il modulo HTML5 basato su XFA e il Bridge del modulo, viene richiamato l’handle.
 
 Per creare la connessione, puoi utilizzare il seguente codice di esempio.
 
@@ -59,8 +57,8 @@ Restituisce il numero di versione della libreria Script
 
 * **Input**:
 
-   * **gestore**: funzione da eseguire dopo la connessione a Form Bridge
-   * **contesto**: l&#39;oggetto su cui è impostato il contesto (this) della funzione *handler*.
+  * **gestore**: funzione da eseguire dopo la connessione a Form Bridge
+  * **contesto**: l&#39;oggetto su cui è impostato il contesto (this) della funzione *handler*.
 
 * **Output**: nessuno
 * **Errore**: nessuno
@@ -69,13 +67,13 @@ Restituisce il numero di versione della libreria Script
 
 * **Input:**
 
-   * **opzioni:** oggetto JavaScript contenente le proprietà seguenti:
+  * **opzioni:** oggetto JavaScript contenente le proprietà seguenti:
 
-      * **Errore**: funzione gestore errori
-      * **success**: funzione gestore operazioni riuscite. Questa funzione ha passato un oggetto contenente XML nella proprietà *data*.
-      * **contesto**: l&#39;oggetto su cui è impostato il contesto (questo) della funzione *success*
-      * **validationChecker**: Funzione da chiamare per controllare gli errori di convalida ricevuti dal server. Alla funzione di convalida viene passata una matrice di stringhe di errore.
-      * **formState**: lo stato JSON del modulo XFA per il quale deve essere restituito l&#39;XML dati. Se non viene specificato, verrà restituito il codice XML dei dati per il modulo di cui è stato eseguito il rendering.
+    * **Errore**: funzione gestore errori
+    * **success**: funzione gestore operazioni riuscite. Questa funzione ha passato un oggetto contenente XML nella proprietà *data*.
+    * **contesto**: l&#39;oggetto su cui è impostato il contesto (questo) della funzione *success*
+    * **validationChecker**: Funzione da chiamare per controllare gli errori di convalida ricevuti dal server. Alla funzione di convalida viene passata una matrice di stringhe di errore.
+    * **formState**: lo stato JSON del modulo XFA per il quale deve essere restituito l&#39;XML dati. Se non viene specificato, verrà restituito il codice XML dei dati per il modulo di cui è stato eseguito il rendering.
 
 * **Output:** Nessuno
 * **Errore:** Nessuno
@@ -84,42 +82,42 @@ Restituisce il numero di versione della libreria Script
 
 * **Input:**
 
-   * **configName:** Nome della configurazione da ignorare
+  * **configName:** Nome della configurazione da ignorare
 
-      * **widgetConfig:** consente all&#39;utente di sostituire i widget predefiniti nel modulo con widget personalizzati. La configurazione viene sovrascritta come segue:
+    * **widgetConfig:** consente all&#39;utente di sostituire i widget predefiniti nel modulo con widget personalizzati. La configurazione viene sovrascritta come segue:
 
-        *formBridge.registerConfig(&quot;widgetConfig&quot;:{/&ast;configuration&ast;/})*
+      *formBridge.registerConfig(&quot;widgetConfig&quot;:{/&ast;configuration&ast;/})*
 
-      * **pagingConfig:** consente all&#39;utente di ignorare il comportamento predefinito del rendering solo della prima pagina. La configurazione viene sovrascritta come segue:
+    * **pagingConfig:** consente all&#39;utente di ignorare il comportamento predefinito del rendering solo della prima pagina. La configurazione viene sovrascritta come segue:
 
-        *window.formBridge.registerConfig(&quot;pagingConfig&quot;:{pagingDisabled: &lt;true | false>, shrinkPageDisabled: &lt;true | false> }).*
+      *window.formBridge.registerConfig(&quot;pagingConfig&quot;:{pagingDisabled: &lt;true | false>, shrinkPageDisabled: &lt;true | false> }).*
 
-      * **LoggingConfig:** consente all&#39;utente di ignorare il livello di registrazione, disabilitare la registrazione per una categoria, visualizzare la console dei registri o inviare messaggi al server. La configurazione può essere sovrascritta come segue:
+    * **LoggingConfig:** consente all&#39;utente di ignorare il livello di registrazione, disabilitare la registrazione per una categoria, visualizzare la console dei registri o inviare messaggi al server. La configurazione può essere sovrascritta come segue:
 
-     ```javascript
-     formBridge.registerConfig{
-       "LoggerConfig" : {
-     {
-     "on":`<true *| *false>`,
-     "category":`<array of categories>`,
-     "level":`<level of categories>`, "
-     type":`<"console"/"server"/"both">`
-     }
-       }
-     ```
+    ```javascript
+    formBridge.registerConfig{
+      "LoggerConfig" : {
+    {
+    "on":`<true *| *false>`,
+    "category":`<array of categories>`,
+    "level":`<level of categories>`, "
+    type":`<"console"/"server"/"both">`
+    }
+      }
+    ```
 
-      * **SubmitServiceProxyConfig:** Consenti agli utenti di registrare i servizi proxy di invio e logger.
+    * **SubmitServiceProxyConfig:** Consenti agli utenti di registrare i servizi proxy di invio e logger.
 
-        ```javascript
-        window.formBridge.registerConfig("submitServiceProxyConfig",
-        {
-        "submitServiceProxy" : "`<submitServiceProxy>`",
-        "logServiceProxy": "`<logServiceProxy>`",
-        "submitUrl" : "`<submitUrl>`"
-        });
-        ```
+      ```javascript
+      window.formBridge.registerConfig("submitServiceProxyConfig",
+      {
+      "submitServiceProxy" : "`<submitServiceProxy>`",
+      "logServiceProxy": "`<logServiceProxy>`",
+      "submitUrl" : "`<submitUrl>`"
+      });
+      ```
 
-   * **config:** Valore della configurazione
+  * **config:** Valore della configurazione
 
 * **Output:** oggetto contenente il valore originale della configurazione nella proprietà *data*.
 
@@ -129,7 +127,7 @@ Restituisce il numero di versione della libreria Script
 
 * **Input:**
 
-   * **fieldArray:** Array di espressioni Som per i campi da nascondere
+  * **fieldArray:** Array di espressioni Som per i campi da nascondere
 
 * **Output:** Nessuno
 * **Errore:** Nessuno
@@ -138,7 +136,7 @@ Restituisce il numero di versione della libreria Script
 
 * **Input:**
 
-   * **fieldArray:** Array di espressioni Som per i campi da visualizzare
+  * **fieldArray:** Array di espressioni Som per i campi da visualizzare
 
 * **Output:** Nessuno
 * **Errore:** Nessuno
@@ -160,12 +158,12 @@ Restituisce il numero di versione della libreria Script
 
 * **Input:**
 
-   * **Opzioni:** oggetto JavaScript contenente le proprietà seguenti:
+  * **Opzioni:** oggetto JavaScript contenente le proprietà seguenti:
 
-      * **Errore**: funzione gestore errori
-      * **success**: funzione gestore operazioni riuscite
-      * **contesto**: l&#39;oggetto su cui è impostato il contesto (questo) della funzione *success*
-      * **formState**: stato JSON del modulo. Il modulo viene ripristinato allo stato JSON.
+    * **Errore**: funzione gestore errori
+    * **success**: funzione gestore operazioni riuscite
+    * **contesto**: l&#39;oggetto su cui è impostato il contesto (questo) della funzione *success*
+    * **formState**: stato JSON del modulo. Il modulo viene ripristinato allo stato JSON.
 
 * **Output:** Nessuno
 * **Errore:** Nessuno
@@ -180,8 +178,8 @@ Restituisce il numero di versione della libreria Script
 
 * **Input:**
 
-   * **som:** Array contenente alcune espressioni del campo. L’espressione som per impostare il valore dei campi.
-   * **valore:** Array contenente i valori corrispondenti alle espressioni Som fornite in un array **som**. Se il tipo di dati del valore non è uguale a fieldType, il valore non viene modificato.
+  * **som:** Array contenente alcune espressioni del campo. L’espressione som per impostare il valore dei campi.
+  * **valore:** Array contenente i valori corrispondenti alle espressioni Som fornite in un array **som**. Se il tipo di dati del valore non è uguale a fieldType, il valore non viene modificato.
 
 * **Output:** Nessuno
 * **Errore:** genera un&#39;eccezione se è presente un&#39;espressione Som non corretta
@@ -210,8 +208,8 @@ if(a.errors) {
 
 * **Input:**
 
-   * **som:** Array contenente espressioni Som per i campi
-   * **proprietà**: nome della proprietà il cui valore è obbligatorio
+  * **som:** Array contenente espressioni Som per i campi
+  * **proprietà**: nome della proprietà il cui valore è obbligatorio
 
 * **Output:** Oggetto contenente il risultato come array nella proprietà *data*
 
@@ -221,9 +219,9 @@ if(a.errors) {
 
 * **Input:**
 
-   * **som:** Array contenente alcune espressioni dei campi il cui valore deve essere impostato
-   * **proprietà**: proprietà il cui valore deve essere impostato
-   * **valore:** Array contenente i valori della proprietà specificata per i campi specificati nelle espressioni Som
+  * **som:** Array contenente alcune espressioni dei campi il cui valore deve essere impostato
+  * **proprietà**: proprietà il cui valore deve essere impostato
+  * **valore:** Array contenente i valori della proprietà specificata per i campi specificati nelle espressioni Som
 
 * **Output:** Nessuno
 * **Errore:** Nessuno
