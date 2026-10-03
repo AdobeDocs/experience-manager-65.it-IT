@@ -1,5 +1,5 @@
 ---
-title: Valutazione della complessità dell’aggiornamento con il rilevatore pattern
+title: Valutazione della complessità dell’aggiornamento con il rilevamento pattern
 description: Scopri come utilizzare il rilevatore pattern per valutare la complessità dell’aggiornamento.
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,25 +12,23 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 1%
-
+source-wordcount: '532'
+ht-degree: 4%
 ---
-
-# Valutazione della complessità dell’aggiornamento con il rilevatore pattern
+# Valutazione della complessità dell’aggiornamento con il rilevamento pattern
 
 ## Panoramica {#overview}
 
-Questa funzione consente di verificare le istanze AEM esistenti per la loro aggiornabilità rilevando i pattern in uso che:
+Questa funzione consente di verificare la possibilità di aggiornamento delle istanze AEM esistenti rilevando i pattern in uso che:
 
 1. Violano alcune regole e vengono eseguiti in aree che saranno interessate o sovrascritte dall’aggiornamento
-1. Utilizza una funzione AEM 6.x o un’API che non è compatibile con le versioni precedenti di AEM 6.5 e può potenzialmente interrompersi dopo l’aggiornamento.
+1. Utilizza una funzione di AEM 6.x o un’API che non è compatibile con le versioni precedenti in AEM 6.5 e che potrebbe interrompersi dopo l’aggiornamento.
 
-Ciò potrebbe servire come valutazione dello sforzo di sviluppo che è coinvolto nell&#39;aggiornamento all&#39;AEM 6.5.
+Questo potrebbe servire come valutazione dello sforzo di sviluppo che è coinvolto nell’aggiornamento ad AEM 6.5.
 
 ## Configurazione {#how-to-set-up}
 
-Il rilevatore pattern viene rilasciato separatamente come [un pacchetto](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) che funziona su qualsiasi versione AEM di origine dalla 6.1 alla 6.5 e ha come destinazione l&#39;aggiornamento AEM 6.5. Può essere installato utilizzando [Gestione pacchetti](/help/sites-administering/package-manager.md).
+Il rilevatore pattern viene rilasciato separatamente come [un pacchetto](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) che funziona su qualsiasi versione di AEM di origine dalla 6.1 alla 6.5 e ha come destinazione l&#39;aggiornamento a AEM 6.5. Può essere installato utilizzando [Gestione pacchetti](/help/sites-administering/package-manager.md).
 
 ## Guida all’uso {#how-to-use}
 
@@ -47,13 +45,13 @@ Il rilevatore pattern viene rilasciato separatamente come [un pacchetto](https:/
 
 * **Tramite la console Inventario Felix:**
 
-1. Passa alla console Web AEM navigando su *https://serveraddress:serverport/system/console/configMgr*
+1. Passa alla console Web di AEM passando a *https://serveraddress:serverport/system/console/configMgr*
 1. Selezionare **Stato - Rilevatore pattern** come illustrato nell&#39;immagine seguente:
 
    ![screenshot-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
 
 * **Tramite un&#39;interfaccia JSON normale o basata su testo reattivo**
-* **Tramite un’interfaccia per righe JSON reattive, &#x200B;** che genera un documento JSON separato in ogni riga.
+* **Tramite un’interfaccia per righe JSON reattive, **che genera un documento JSON separato in ogni riga.
 
 Entrambi i metodi sono descritti di seguito:
 
@@ -114,7 +112,7 @@ Con l&#39;output:
     "code": "ECU",
     "type": "extraneous.content.usage",
     "detective": "ContentAccessDetector",
-    "moreInfo": "https://www.adobe.com/go/aem6_ECU_it"
+    "moreInfo": "https://www.adobe.com/go/aem6_ECU"
   },
   "item": {
     "id": "a07fd94318f12312c165e06d890cbd3c2c8b8dad0c030663db8b4c800dd7c33f",
@@ -218,7 +216,7 @@ Al momento il rilevatore pattern consente di controllare quanto segue:
 * Sovrautilizzi di tipi di risorse e super tipi Sling (con sovrapposizioni di contenuto del percorso di ricerca)
 * definizioni degli indici di Oak (compatibilità)
 * Pacchetti VLT (uso eccessivo)
-* rep:Compatibilità dei nodi utente (nel contesto della configurazione OAuth)
+* compatibilità nodi rep:User (nel contesto della configurazione OAuth)
 
 >[!NOTE]
 >

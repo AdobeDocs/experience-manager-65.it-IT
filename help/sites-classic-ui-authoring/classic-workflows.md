@@ -1,6 +1,6 @@
 ---
 title: Utilizzo dei flussi di lavoro
-description: I flussi di lavoro AEM consentono di automatizzare una serie di passaggi eseguiti su una pagina o una risorsa. Ad esempio, per la pubblicazione, un editor deve rivedere il contenuto prima che l’amministratore del sito attivi la pagina. Un flusso di lavoro che automatizza questo esempio avvisa ogni partecipante quando è il momento di eseguire il lavoro richiesto.
+description: I flussi di lavoro di AEM consentono di automatizzare una serie di passaggi eseguiti su una pagina o una risorsa. Ad esempio, per la pubblicazione, un editor deve rivedere il contenuto prima che l’amministratore del sito attivi la pagina. Un flusso di lavoro che automatizza questo esempio avvisa ogni partecipante quando è il momento di eseguire il lavoro richiesto.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -13,12 +13,10 @@ source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 75%
-
 ---
-
 # Utilizzo dei flussi di lavoro{#working-with-workflows}
 
-I flussi di lavoro AEM consentono di automatizzare una serie di passaggi eseguiti su una pagina o una risorsa. Ad esempio, per la pubblicazione, un editor deve rivedere il contenuto prima che l’amministratore del sito attivi la pagina. Un flusso di lavoro che automatizza questo esempio avvisa ogni partecipante quando è il momento di eseguire il lavoro richiesto:
+I flussi di lavoro di AEM consentono di automatizzare una serie di passaggi eseguiti su una pagina o una risorsa. Ad esempio, per la pubblicazione, un editor deve rivedere il contenuto prima che l’amministratore del sito attivi la pagina. Un flusso di lavoro che automatizza questo esempio avvisa ogni partecipante quando è il momento di eseguire il lavoro richiesto:
 
 1. L’autore applica il flusso di lavoro alla pagina.
 1. L’editor riceve un elemento di lavoro che indica che è necessario rivedere il contenuto della pagina. Al termine, sarà indicato che l’elemento di lavoro è stato completato.

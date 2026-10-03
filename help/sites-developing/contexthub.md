@@ -11,11 +11,9 @@ feature: Developing,Personalization
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '285'
 ht-degree: 1%
-
 ---
-
 # ContextHub{#contexthub}
 
 ContextHub è un framework per l’archiviazione, la manipolazione e la presentazione dei dati contestuali. L’API JavaScript lato client ti consente di accedere ai dati per personalizzare il contenuto.
@@ -37,7 +35,7 @@ ContextHub archivia i dati contestuali persistenti sul client. L’API JavaScrip
 Ogni archivio ContextHub è un’istanza di un tipo di archivio predefinito:
 
 * ContextHub fornisce diversi [tipi di archivio di esempio](/help/sites-developing/ch-samplestores.md).
-* Usa le console AEM per [creare archivi](ch-configuring.md#creating-a-contexthub-store).
+* Usa le console AEM per [creare store](ch-configuring.md#creating-a-contexthub-store).
 * Gli sviluppatori possono [creare tipi di archivio personalizzati](/help/sites-developing/ch-extend.md#creating-custom-store-candidates).
 * Gli sviluppatori possono [accedere ai dati dell&#39;archivio](/help/sites-developing/ch-adding.md#interacting-with-contexthub-stores) tramite JavaScript.
 
@@ -52,7 +50,7 @@ La barra degli strumenti [ContextHub](/help/sites-authoring/ch-previewing.md) co
 Ogni modulo dell’interfaccia utente ContextHub è un’istanza di un tipo di modulo predefinito:
 
 * ContextHub fornisce diversi [tipi di moduli di esempio](/help/sites-developing/ch-samplemodules.md).
-* Utilizza le console AEM per [aggiungere moduli di interfaccia utente](ch-configuring.md#adding-a-ui-module) e per [raggrupparli in modalità interfaccia utente](ch-configuring.md#adding-a-ui-mode).
+* Usa le console di AEM per [aggiungere moduli di interfaccia utente](ch-configuring.md#adding-a-ui-module) e per [raggrupparli in modalità interfaccia utente](ch-configuring.md#adding-a-ui-mode).
 
 * Gli sviluppatori possono [creare tipi di moduli personalizzati](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types).
 

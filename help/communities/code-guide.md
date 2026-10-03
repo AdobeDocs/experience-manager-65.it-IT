@@ -12,10 +12,8 @@ role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '180'
-ht-degree: 1%
-
+ht-degree: 3%
 ---
-
 # Linee guida per la codifica {#coding-guidelines}
 
 ## Linee guida, suggerimenti {#guidelines-tips-and-tricks}

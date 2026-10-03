@@ -1,6 +1,6 @@
 ---
-title: Introduzione a AEM Forms Workspace
-description: Aumentare l'efficienza dell'organizzazione e creare uffici senza carta mediante l'automazione dei processi aziendali utilizzando LiveCycle AEM Forms Workspace.
+title: Introduzione all’area di lavoro di AEM Forms
+description: Aumenta l’efficienza dell’organizzazione e crea uffici senza carta mediante l’automazione dei processi aziendali utilizzando l’area di lavoro AEM Forms LiveCycle.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -12,16 +12,14 @@ feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 0%
-
+source-wordcount: '213'
+ht-degree: 4%
 ---
+# Introduzione all’area di lavoro di AEM Forms{#introduction-to-aem-forms-workspace}
 
-# Introduzione a AEM Forms Workspace{#introduction-to-aem-forms-workspace}
+Il flusso di lavoro di Forms aumenta l&#39;efficienza aziendale automatizzando e fornendo visibilità ai processi aziendali critici relativi a documenti e moduli. Tramite il modulo di gestione dei processi è possibile creare flussi di lavoro completi e semplificati, inclusi utenti, sistemi, contenuti e regole aziendali, accessibili online o offline.Il flusso di lavoro di Forms include l’area di lavoro AEM Forms. AEM Forms Workspace aggiunge nuove funzionalità per estendere e integrare Workspace e renderlo più semplice da usare.
 
-Il flusso di lavoro di Forms aumenta l&#39;efficienza aziendale automatizzando e fornendo visibilità ai processi aziendali critici relativi a documenti e moduli. Tramite il modulo Gestione processi è possibile creare flussi di lavoro end-to-end semplificati, inclusi utenti, sistemi, contenuti e regole aziendali accessibili online o offline.Il flusso di lavoro di Forms include l&#39;area di lavoro AEM Forms. AEM Forms Workspace aggiunge nuove funzionalità per estendere e integrare Workspace e renderlo più semplice da usare.
-
-L’area di lavoro di AEM Forms è compatibile con un numero maggiore di dispositivi e fattori di forma. Consente la gestione delle attività sui client senza Flash ® Lettore e Adobe ® Reader ®. Semplifica il rendering di HTML Forms oltre ai PDF forms.
+L’area di lavoro di AEM Forms è compatibile con un numero maggiore di dispositivi e fattori di forma. Consente la gestione delle operazioni sui client senza Flash® Player e Adobe® Reader®. Semplifica il rendering di HTML Forms oltre a PDF forms.
 
 ![html-ws](assets/html-ws.png)
 
