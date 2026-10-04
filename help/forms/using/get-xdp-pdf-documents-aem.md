@@ -1,21 +1,24 @@
 ---
 title: Recupero documenti XDP e PDF in AEM Forms
+
 description: AEM Forms consente di caricare moduli e risorse supportate da utilizzare con i moduli adattivi. Puoi anche caricare in blocco i moduli e le risorse correlate come file ZIP.
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
+
 docset: aem65
+
 role: Admin,User
 exl-id: 9ecdc50a-31e3-46ae-948a-d1f6e6085734
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '671'
-ht-degree: 0%
-
+source-wordcount: '672'
+ht-degree: 2%
 ---
-
 # Recupero documenti XDP e PDF in AEM Forms{#getting-xdp-and-pdf-documents-in-aem-forms}
 
 ## Panoramica {#overview}
@@ -66,7 +69,7 @@ Il server AEM Forms consente di eseguire il codice JavaScript. Un codice JavaScr
 
 Per impostazione predefinita, la modalità protetta è attivata. Se necessario, puoi disattivare la modalità protetta:
 
-1. Accedi alla console web dell’AEM come amministratore. L&#39;URL è https://&#39;[server]:[porta]&#39;/system/console/configMgr
+1. Accedi ad AEM Web Console come amministratore. L&#39;URL è https://&#39;[server]:[porta]&#39;/system/console/configMgr
 1. Apri Configurazioni Forms per dispositivi mobili per la modifica.
 1. Deseleziona l&#39;opzione Modalità protetta e fai clic su **Salva**. La modalità protetta è disabilitata.
 

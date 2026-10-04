@@ -1,5 +1,5 @@
 ---
-title: Aggiungere funzioni di Dynamic Media Classic alle pagine
+title: Aggiungere risorse Dynamic Media Classic alle pagine
 description: Come aggiungere funzioni e componenti di Dynamic Media Classic a una pagina in Adobe Experience Manager.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -12,16 +12,14 @@ exl-id: 815f577d-4774-4830-8baf-0294bd085b83
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2851'
-ht-degree: 2%
-
+source-wordcount: '2909'
+ht-degree: 3%
 ---
-
-# Aggiungere funzioni di Dynamic Media Classic alle pagine {#adding-scene-features-to-your-page}
+# Aggiungere risorse Dynamic Media Classic alle pagine {#adding-scene-features-to-your-page}
 
 [Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html?lang=it) è una soluzione ospitata per la gestione, l&#39;ottimizzazione, la pubblicazione e la distribuzione di risorse rich media a visualizzazioni e stampe connesse a Internet, dispositivi mobili e posta elettronica.
 
-Puoi visualizzare le risorse di Experience Manager pubblicate in Dynamic Media Classic in vari visualizzatori:
+Puoi visualizzare le risorse Experience Manager pubblicate in Dynamic Media Classic in vari visualizzatori:
 
 * Zoom
 * A comparsa
@@ -29,17 +27,17 @@ Puoi visualizzare le risorse di Experience Manager pubblicate in Dynamic Media C
 * Modello immagini
 * Immagine
 
-Puoi pubblicare le risorse digitali direttamente da Experience Manager a Dynamic Media Classic, e le risorse digitali da Dynamic Media Classic a Experience Manager.
+Puoi pubblicare le risorse digitali direttamente da Experience Manager a Dynamic Media Classic, e le risorse digitali da Dynamic Media Classic ad Experience Manager.
 
-Questo documento descrive come pubblicare le risorse digitali da Experience Manager a Dynamic Media Classic e viceversa. Vengono descritti in dettaglio anche i visualizzatori. Per informazioni sulla configurazione di Experience Manager per Dynamic Media Classic, consulta [Integrare Dynamic Media Classic con Experience Manager](/help/sites-administering/scene7.md).
+Questo documento descrive come pubblicare risorse digitali da Experience Manager a Dynamic Media Classic e viceversa. Vengono descritti in dettaglio anche i visualizzatori. Per informazioni sulla configurazione di Experience Manager per Dynamic Media Classic, vedi [Integrare Dynamic Media Classic con Experience Manager](/help/sites-administering/scene7.md).
 
 Vedi anche [Aggiungi mappe immagine](image-maps.md).
 
-Per ulteriori informazioni sull&#39;utilizzo dei componenti video con Experience Manager, vedere [Video](video.md).
+Per ulteriori informazioni sull&#39;utilizzo di componenti video con Experience Manager, vedi [Video](video.md).
 
 >[!NOTE]
 >
->Se le risorse Dynamic Media Classic non vengono visualizzate correttamente, verificare che Dynamic Medie sia [disabilitato](config-dynamic.md#disabling-dynamic-media), quindi aggiornare la pagina.
+>Se le risorse Dynamic Media Classic non vengono visualizzate correttamente, accertati che Dynamic Media sia [disabilitato](config-dynamic.md#disabling-dynamic-media), quindi aggiorna la pagina.
 
 ## Pubblicazione manuale in Dynamic Media Classic dalle risorse {#manually-publishing-to-scene-from-assets}
 
@@ -51,7 +49,7 @@ Puoi pubblicare le risorse digitali in Dynamic Media Classic nel modo seguente:
 
 >[!NOTE]
 >
->Experience Manager pubblica in Dynamic Media Classic in modo asincrono. Dopo aver selezionato **[!UICONTROL Publish]**, la pubblicazione della risorsa in Dynamic Media Classic richiede alcuni secondi.
+>Experience Manager pubblica in Dynamic Media Classic in modo asincrono. Dopo aver selezionato **[!UICONTROL Pubblica]**, la pubblicazione della risorsa in Dynamic Media Classic richiede alcuni secondi.
 >
 
 ## Componenti Dynamic Media Classic {#scene-components}
@@ -74,17 +72,17 @@ Dopo che sono stati resi disponibili in modalità **[!UICONTROL Progettazione]**
 >
 >Se crei e sviluppi visualizzatori personalizzati e utilizzi Content Finder, devi aggiungere esplicitamente il parametro `allowfullscreen`.
 
-### Avviso sulla fine del ciclo di vita dei visualizzatori di Flash {#flash-viewers-end-of-life-notice}
+### Avviso sulla fine del ciclo di vita dei visualizzatori Flash {#flash-viewers-end-of-life-notice}
 
-A partire dal 31 gennaio 2017, Adobe Dynamic Media Classic ha terminato il supporto per la piattaforma di visualizzazione dei Flash.
+A partire dal 31 gennaio 2017, Adobe Dynamic Media Classic ha terminato il supporto per la piattaforma di visualizzazione Flash.
 
 ### Aggiungere un componente Dynamic Media Classic (Scene7) a una pagina {#adding-a-scene-component-to-a-page}
 
-L’aggiunta di un componente Dynamic Media Classic (Scene7) a una pagina equivale all’aggiunta di un componente a qualsiasi pagina. I componenti Dynamic Media Classic sono descritti in dettaglio nelle sezioni seguenti.
+L&#39;aggiunta di un componente Dynamic Media Classic (Scene7) a una pagina equivale all&#39;aggiunta di un componente a qualsiasi pagina. I componenti Dynamic Media Classic sono descritti in dettaglio nelle sezioni seguenti.
 
 **Per aggiungere un componente Dynamic Media Classic (Scene7) a una pagina:**
 
-1. Ad Experience Manager, aprire la pagina in cui si desidera aggiungere il componente **[!UICONTROL Dynamic Media Classic (Scene7)]**.
+1. In Experience Manager, apri la pagina in cui desideri aggiungere il componente **[!UICONTROL Dynamic Media Classic (Scene7)]**.
 
 1. Se non sono disponibili componenti di Dynamic Media Classic, selezionare la modalità **[!UICONTROL Progettazione]**, selezionare qualsiasi componente con un bordo blu, selezionare l&#39;icona **[!UICONTROL Elemento padre]** e quindi l&#39;icona **[!UICONTROL Configurazione]**. In **[!UICONTROL Parsys (Progettazione)]**, selezionare tutti i componenti di Dynamic Media Classic per renderli disponibili e selezionare **[!UICONTROL OK]**.
 
@@ -111,7 +109,7 @@ Vedi anche [Progettazione reattiva per le pagine Web](/help/sites-developing/res
 
 **Per aggiungere un&#39;esperienza di visualizzazione interattiva a un sito reattivo:**
 
-1. Accedi ad Experience Manager e accertati di disporre di [Cloud Service Adobe Dynamic Media Classic configurati](/help/sites-administering/scene7.md#configuring-scene-integration) e che i componenti Dynamic Media Classic siano disponibili.
+1. Accedi ad Experience Manager e accertati di avere [configurato Adobe Dynamic Media Classic Cloud Services](/help/sites-administering/scene7.md#configuring-scene-integration) e che i componenti di Dynamic Media Classic siano disponibili.
 
    >[!NOTE]
    >
@@ -147,7 +145,7 @@ La risorsa presenta strumenti di zoom in basso. Selezionare **[!UICONTROL +]** s
 
 ### A comparsa {#flyout}
 
-Nel componente HTML5 **[!UICONTROL A comparsa]**, la risorsa viene visualizzata come schermata divisa; la risorsa viene lasciata nelle dimensioni specificate; a destra viene visualizzata la porzione di zoom. Seleziona **[!UICONTROL Modifica]** per configurare il componente. Con questo componente è possibile configurare [impostazioni comuni a tutti i componenti di Dynamic Media Classic](#settings-common-to-all-scene-components).
+Nel componente **[!UICONTROL A comparsa]** di HTML5, la risorsa viene visualizzata come schermata divisa; la risorsa viene lasciata nelle dimensioni specificate; a destra viene visualizzata la porzione di zoom. Seleziona **[!UICONTROL Modifica]** per configurare il componente. Con questo componente è possibile configurare [impostazioni comuni a tutti i componenti di Dynamic Media Classic](#settings-common-to-all-scene-components).
 
 >[!NOTE]
 >
@@ -238,7 +236,7 @@ Il testo riflette il nome dell’utente attualmente connesso. Per ripristinare i
 
 ### Componente video {#video-component}
 
-Il componente **[!UICONTROL Video]** di Dynamic Media Classic (disponibile nella sezione Dynamic Media Classic della barra laterale) utilizza il rilevamento del dispositivo e della larghezza di banda per distribuire il video corretto a ogni schermata. Questo componente è un lettore video HTML5; è un singolo visualizzatore che può essere utilizzato cross channel.
+Il componente **[!UICONTROL Video]** di Dynamic Media Classic (disponibile nella sezione Dynamic Media Classic della barra laterale) utilizza il rilevamento del dispositivo e della larghezza di banda per distribuire il video corretto a ogni schermata. Questo componente è un lettore video HTML5; è un singolo visualizzatore che può essere utilizzato su più canali.
 
 Può essere utilizzato per set video adattivi, un singolo video MP4 o un singolo video F4V.
 
@@ -259,12 +257,12 @@ Quando utilizzi un set di video adattivi con il componente video Dynamic Media C
 
 Il browser del contenuto di Dynamic Media Classic consente di visualizzare il contenuto da Dynamic Media Classic direttamente in Experience Manager. Per accedere al browser dei contenuti, in **[!UICONTROL Content Finder]**, seleziona **[!UICONTROL Dynamic Media Classic]** nell&#39;interfaccia utente ottimizzata per il tocco o l&#39;icona **[!UICONTROL S7]** nell&#39;interfaccia utente classica. La funzionalità è identica tra le due interfacce utente.
 
-Se sono presenti più configurazioni, per impostazione predefinita in Experience Manager viene visualizzata la [configurazione predefinita](/help/sites-administering/scene7.md#configuring-a-default-configuration). Puoi selezionare diverse configurazioni direttamente nel browser del contenuto di Dynamic Media Classic nel menu a discesa.
+Se sono presenti più configurazioni, Experience Manager visualizza per impostazione predefinita la [configurazione predefinita](/help/sites-administering/scene7.md#configuring-a-default-configuration). Puoi selezionare diverse configurazioni direttamente nel browser del contenuto di Dynamic Media Classic nel menu a discesa.
 
 >[!NOTE]
 >
 >* Assets nella cartella on-demand non viene visualizzato nel browser contenuti di Dynamic Media Classic.
->* Dynamic Media Classic Quando [Anteprima sicura è abilitata](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), nel browser del contenuto di Dynamic Media Classic vengono visualizzate sia le risorse pubblicate che quelle non pubblicate.
+>* Quando [Anteprima sicura è abilitata](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), nel browser del contenuto di Dynamic Media Classic vengono visualizzate sia le risorse pubblicate che quelle non pubblicate.
 >* Se **[!UICONTROL Dynamic Media Classic]** o l&#39;icona **[!UICONTROL S7]** non sono visualizzati come opzione nel browser del contenuto, è necessario [configurare Dynamic Media Classic per l&#39;utilizzo con Experience Manager](/help/sites-administering/scene7.md).
 >* Per i video, il browser dei contenuti di Dynamic Media Classic supporta:
 >
@@ -297,7 +295,7 @@ Inoltre, puoi sfogliare le informazioni sulla risoluzione, le dimensioni, i gior
 
 ### Cercare risorse Dynamic Media Classic con il browser del contenuto {#searching-for-scene-assets-with-the-content-browser}
 
-La ricerca delle risorse in Dynamic Media Classic è simile alla ricerca delle risorse in Experience Manager Assets. Tuttavia, quando esegui una ricerca, visualizzi effettivamente una visualizzazione remota delle risorse nel sistema Dynamic Media Classic, anziché importarle direttamente in Experience Manager.
+La ricerca delle risorse in Dynamic Media Classic è simile alla ricerca delle risorse in Experience Manager Assets. Tuttavia, quando esegui una ricerca, visualizzi effettivamente in remoto le risorse nel sistema Dynamic Media Classic, anziché importarle direttamente in Experience Manager.
 
 Per visualizzare e cercare le risorse puoi utilizzare sia l’interfaccia classica che quella ottimizzata per il tocco. A seconda dell’interfaccia, la modalità di ricerca è leggermente diversa.
 
@@ -311,7 +309,7 @@ Quando esegui una ricerca in una delle due interfacce, puoi filtrare in base ai 
 
 Se si immette una parola chiave e si seleziona una cartella, Experience Manager esegue la ricerca in tale cartella e nelle sottocartelle. Tuttavia, se non immetti alcuna parola chiave durante la ricerca, la selezione della cartella mostra solo le risorse presenti in quella cartella e non include alcuna sottocartella.
 
-Per impostazione predefinita, in Experience Manager vengono cercate la cartella selezionata e tutte le sottocartelle.
+Per impostazione predefinita, Experience Manager esegue la ricerca nella cartella selezionata e in tutte le sottocartelle.
 
 ![chlimage_1-243](assets/chlimage_1-243.png)
 
@@ -319,11 +317,11 @@ Per impostazione predefinita, in Experience Manager vengono cercate la cartella 
 
 ![chlimage_1-244](assets/chlimage_1-244.png)
 
-**[!UICONTROL Configurazione]** - Se in [!UICONTROL Cloud Service] sono definite più configurazioni Dynamic Media Classic, è possibile selezionarle qui. Di conseguenza, la cartella cambia in base alla configurazione scelta.
+**[!UICONTROL Configurazione]** - Se in [!UICONTROL Cloud Services] sono definite più configurazioni Dynamic Media Classic, è possibile selezionarle qui. Di conseguenza, la cartella cambia in base alla configurazione scelta.
 
 ![chlimage_1-245](assets/chlimage_1-245.png)
 
-**[!UICONTROL Tipo risorsa]** - Nel browser Dynamic Media Classic puoi filtrare i risultati in modo da includere i seguenti elementi: immagini, modelli, video e set di video adattivi. Se non selezioni alcun tipo di risorsa, ad Experience Manager, per impostazione predefinita, cerca tutti i tipi di risorsa.
+**[!UICONTROL Tipo risorsa]** - Nel browser Dynamic Media Classic puoi filtrare i risultati in modo da includere i seguenti elementi: immagini, modelli, video e set di video adattivi. Se non selezioni alcun tipo di risorsa, per impostazione predefinita Experience Manager esegue la ricerca in tutti i tipi di risorsa.
 
 ![chlimage_1-246](assets/chlimage_1-246.png)
 
@@ -332,9 +330,9 @@ Per impostazione predefinita, in Experience Manager vengono cercate la cartella 
 >* Nell&#39;interfaccia classica, è inoltre possibile cercare **Flash** e **FXG**. Il filtro per questi tipi nell’interfaccia touch non è supportato.
 >
 >* Durante la ricerca di un video, viene eseguita la ricerca in un&#39;unica rappresentazione. I risultati restituiscono la rappresentazione originale (solo &ast;.mp4) e la rappresentazione codificata.
->* Durante la ricerca in un set di video adattivi, la ricerca viene eseguita nella cartella e in tutte le sottocartelle, ma solo se alla ricerca è stata aggiunta una parola chiave. Se non è stata aggiunta alcuna parola chiave, la ricerca nelle sottocartelle non verrà eseguita in Experience Manager.
+>* Durante la ricerca in un set di video adattivi, la ricerca viene eseguita nella cartella e in tutte le sottocartelle, ma solo se alla ricerca è stata aggiunta una parola chiave. Se non hai aggiunto una parola chiave, Experience Manager non esegue la ricerca nelle sottocartelle.
 >
 
-**[!UICONTROL Stato Publish]** - È possibile filtrare le risorse in base allo stato di pubblicazione: **[!UICONTROL Non pubblicato]** o **[!UICONTROL Pubblicato]**. Se non si seleziona alcun **[!UICONTROL Stato Publish]**, per impostazione predefinita in Experience Manager vengono cercati tutti gli stati di pubblicazione.
+**[!UICONTROL Stato pubblicazione]** - È possibile filtrare le risorse in base allo stato di pubblicazione: **[!UICONTROL Non pubblicato]** o **[!UICONTROL Pubblicato]**. Se non si seleziona alcun **[!UICONTROL Stato pubblicazione]**, per impostazione predefinita Experience Manager cerca tutti gli stati di pubblicazione.
 
 ![chlimage_1-247](assets/chlimage_1-247.png)

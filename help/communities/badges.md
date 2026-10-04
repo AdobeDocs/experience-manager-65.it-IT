@@ -12,11 +12,9 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '291'
 ht-degree: 4%
-
 ---
-
 # Console badge {#badges-console}
 
 ## Informazioni sui badge {#about-badges}

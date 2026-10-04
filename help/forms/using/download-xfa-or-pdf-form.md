@@ -1,9 +1,13 @@
 ---
 title: Scaricare un modello di modulo XFA o PDF
+
 description: È possibile esportare i moduli dal repository al sistema locale e migrare i moduli scaricati nel nuovo repository.
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
+
 role: Admin,User
 exl-id: 5b7b9816-38c1-4780-b1fc-8184971f3772
 solution: Experience Manager, Experience Manager Forms
@@ -11,10 +15,8 @@ feature: Interactive Communication
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '311'
-ht-degree: 0%
-
+ht-degree: 5%
 ---
-
 # Scaricare un modello di modulo XFA o PDF {#download-an-xfa-or-a-pdf-form-template}
 
 L&#39;operazione di download, come indica il nome, consente di esportare i moduli dal repository al sistema locale. In combinazione con l’operazione di caricamento, questa operazione consente di migrare i moduli da un archivio all’altro.

@@ -12,13 +12,11 @@ role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '339'
-ht-degree: 1%
-
+ht-degree: 5%
 ---
-
 # Abilitazione degli allegati per un modulo HTML5 {#enabling-attachments-for-an-html-form}
 
-Con i moduli HTML5 puoi caricare, visualizzare in anteprima e inviare allegati. Per impostazione predefinita, il supporto degli allegati è disattivato. Per attivare il supporto degli allegati:
+Con i moduli HTML5 è possibile caricare, visualizzare in anteprima e inviare allegati. Per impostazione predefinita, il supporto degli allegati è disattivato. Per attivare il supporto degli allegati:
 
 1. Crea un [profilo personalizzato](/help/forms/using/custom-profile.md) con una proprietà stringa multiselezionata `mfAttachmentOptions`. Ogni stringa nella proprietà `mfAttachmentOptions` deve avere un formato `property=value` per configurare le opzioni del widget degli allegati. `property` e `value` possono avere uno qualsiasi dei seguenti valori:
 

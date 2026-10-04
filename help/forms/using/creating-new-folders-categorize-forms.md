@@ -1,23 +1,25 @@
 ---
 title: Creare nuove cartelle per categorizzare i moduli
+
 description: Utilizza le cartelle per organizzare modelli di modulo, PDF, risorse e moduli adattivi.
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
+
 role: Admin,User
 exl-id: f8af1ac3-6a95-4f91-8979-6b41a7e02ca4
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 0%
-
+source-wordcount: '387'
+ht-degree: 3%
 ---
-
 # Creare nuove cartelle per categorizzare i moduli {#create-new-folders-to-categorize-forms}
 
-Puoi organizzare meglio le risorse utilizzando le cartelle. Poiché AEM Forms supporta diversi tipi di risorse (modelli di modulo, PDF, documenti, risorse e moduli adattivi con vari metadati), è possibile utilizzare le cartelle per classificare i moduli in base ai criteri desiderati.
+Puoi organizzare meglio le risorse utilizzando le cartelle. Poiché AEM Forms supporta diversi tipi di risorse (modelli di modulo, PDF, documenti, risorse e moduli adattivi con vari metadati), è possibile utilizzare le cartelle per categorizzare i moduli in base ai criteri desiderati.
 
 AEM Forms consente di modificare il titolo di una cartella. Il titolo non corrisponde al nome del nodo in cui è memorizzata la cartella nell&#39;archivio. Il titolo viene invece mantenuto come metadati per la cartella. Se modifichi il titolo di una cartella, il percorso di qualsiasi risorsa presente all’interno della cartella non viene modificato.
 
