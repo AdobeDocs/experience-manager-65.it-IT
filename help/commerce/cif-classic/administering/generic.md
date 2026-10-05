@@ -1,6 +1,6 @@
 ---
 title: Amministrazione di eCommerce generico
-description: La soluzione generica dell’AEM fornisce metodi per gestire le informazioni commerciali contenute nell’archivio.
+description: La soluzione generica AEM fornisce metodi per gestire le informazioni di e-commerce contenute nell’archivio.
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
@@ -11,14 +11,12 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '2907'
+source-wordcount: '2961'
 ht-degree: 2%
-
 ---
-
 # Amministrazione di eCommerce generico {#administering-generic-ecommerce}
 
-La soluzione generica Adobe Experience Manager (AEM) fornisce metodi per gestire le informazioni di e-commerce conservate all’interno dell’archivio (anziché utilizzare un motore di e-commerce esterno). Ciò include:
+La soluzione generica Adobe Experience Manager (AEM) fornisce metodi per gestire le informazioni di e-commerce memorizzate nell’archivio (anziché utilizzare un motore di e-commerce esterno). Ciò include:
 
 * [Prodotti](/help/commerce/cif-classic/administering/concepts.md#products)
 * [Varianti prodotto](/help/commerce/cif-classic/administering/concepts.md#product-variants)
@@ -30,7 +28,7 @@ La soluzione generica Adobe Experience Manager (AEM) fornisce metodi per gestire
 
 >[!NOTE]
 >
->L’installazione standard dell’AEM include l’implementazione eCommerce generica dell’AEM (JCR).
+>L’installazione standard di AEM include l’implementazione eCommerce generica di AEM (JCR).
 >
 >Questo è a scopo dimostrativo o come base per un’implementazione personalizzata in base alle tue esigenze.
 
@@ -40,7 +38,7 @@ La soluzione generica Adobe Experience Manager (AEM) fornisce metodi per gestire
 >
 >Le procedure seguenti si applicano sia ai prodotti che alle varianti di prodotto.
 
-Prima di creare i prodotti, definire uno scaffold [&#128279;](/help/sites-authoring/scaffolding.md). Specifica i campi da definire, i prodotti e la modalità di modifica.
+Prima di creare i prodotti, definire uno scaffold [](/help/sites-authoring/scaffolding.md). Specifica i campi da definire, i prodotti e la modalità di modifica.
 
 È necessario uno scaffold per ogni tipo di prodotto distinto. Lo scaffold appropriato è associato ai prodotti da:
 
@@ -118,7 +116,7 @@ Prima di creare i prodotti, definire uno scaffold [&#128279;](/help/sites-author
 
    * **Provider Commerce**
 
-     L&#39;importazione per il tuo [provider commerce](/help/commerce/cif-classic/administering/concepts.md#commerce-providers); per impostazione predefinita, Geometrixx.
+     L&#39;importazione per il provider [commerce](/help/commerce/cif-classic/administering/concepts.md#commerce-providers); per impostazione predefinita, Geometrixx.
 
    * **File Source**
 
@@ -168,7 +166,7 @@ Prima di creare i prodotti, definire uno scaffold [&#128279;](/help/sites-author
 >
 >`/etc/commerce/products/...`
 >
->Ciò significa che, per impostazione predefinita, sono bloccati da [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it), quindi configura come richiesto.
+>Ciò significa che, per impostazione predefinita, sono bloccati da [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html), quindi configura come richiesto.
 
 #### Modifica delle informazioni di prodotto - Interfaccia utente ottimizzata per il tocco {#editing-product-information-touch-optimized-ui}
 
@@ -220,7 +218,7 @@ Prima di creare i prodotti, definire uno scaffold [&#128279;](/help/sites-author
 
 #### Estensione della ricerca {#extending-search}
 
-È possibile modificare un facet esistente o aggiungerne di nuovi utilizzando CRXDE Lite:
+Puoi modificare un facet esistente o aggiungerne di nuovi utilizzando CRXDE Lite:
 
 1. Accedi a:
 
@@ -327,9 +325,9 @@ Il meccanismo di selezione dell&#39;immagine da visualizzare è il seguente:
 
 >[!NOTE]
 >
->Spesso le informazioni sul prodotto vengono pubblicate attraverso le pagine che vi fanno riferimento. Ad esempio, quando pubblichi la pagina X che fa riferimento al prodotto Y, l’AEM ti chiede se desideri pubblicare anche il prodotto Y.
+>Spesso le informazioni sul prodotto vengono pubblicate attraverso le pagine che vi fanno riferimento. Ad esempio, quando pubblichi la pagina X che fa riferimento al prodotto Y, AEM ti chiede se desideri pubblicare anche il prodotto Y.
 >
->Per casi speciali, l’AEM supporta anche la pubblicazione diretta dai dati dei prodotti.
+>Per casi speciali, AEM supporta anche la pubblicazione diretta dai dati del prodotto.
 
 1. Utilizzando la console **Prodotti** (tramite **Commerce**) passa alle informazioni sul prodotto.
 1. Utilizzando:
@@ -337,7 +335,7 @@ Il meccanismo di selezione dell&#39;immagine da visualizzare è il seguente:
    * [azioni rapide](/help/sites-authoring/basic-handling.md#quick-actions)
    * [modalità di selezione](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
 
-   Seleziona l&#39;icona **Publish** o **Annulla pubblicazione** come richiesto:
+   Seleziona l&#39;icona **Pubblica** o **Annulla pubblicazione** come richiesto:
 
    ![icona mondo](/help/sites-administering/do-not-localize/chlimage_1-18.png) ![icona mondo con croce - nessun segno](/help/sites-administering/do-not-localize/chlimage_1-19.png)
 
@@ -384,7 +382,7 @@ Facendo clic sul punto attivo viene aperta una finestra di dialogo che consente 
 1. Passa alla pagina in cui desideri aggiungere il componente.
 1. Trascina e rilascia il componente nella pagina.
 1. Trascina un&#39;immagine nel componente dal browser [risorse](/help/sites-authoring/author-environment-tools.md#assets-browser).
-1. Puoi effettuare le seguenti operazioni:
+1. Puoi:
 
    * fai clic sul componente, quindi sull’icona Modifica
    * fare un doppio clic lento
@@ -494,11 +492,11 @@ Per generare un catalogo:
 
 1. Crea una pagina utilizzando il modello **Blueprint sezione**.
 
-   Esempio: `Swimwear`.
+   Ad esempio, `Swimwear`.
 
 1. Apri la nuova pagina `Swimwear`, quindi fai clic su **Modifica blueprint**. Viene visualizzata la finestra di dialogo **Proprietà** che consente di impostare la selezione di **Prodotti**.
 
-   Apri ad esempio il campo **Tag/Parole chiave** per selezionare Attività, quindi Nuoto dalla sezione Geometrixx all&#39;aperto.
+   Apri ad esempio il campo **Tag/Parole chiave** per selezionare Attività, quindi Nuoto dalla sezione Geometrixx-Outdoors.
 
 1. Fai clic su **OK** per salvare le proprietà; i prodotti di esempio vengono visualizzati in **Criteri di selezione prodotto** nella pagina blueprint.
 1. Fai clic su **Rollout modifiche...**, seleziona **Rollout pagina e tutte le sottopagine**, quindi fai clic su **Avanti** e poi su **Rollout**. Una volta completato correttamente il rollout, l&#39;indicatore **Stato** viene visualizzato in verde.
@@ -643,9 +641,9 @@ Nel sito demo (Geometrixx Outdoors - inglese) puoi vedere il modulo del voucher 
 
 >[!NOTE]
 >
->È opportuno ricordare che l’AEM preconfigurato non prevede azioni necessarie per le funzionalità standard relative agli ordini, come la restituzione delle merci, l’aggiornamento dello stato degli ordini, l’evasione, la generazione dei documenti di trasporto. Si tratta principalmente di un’anteprima tecnologica.
+>È opportuno ricordare che AEM non dispone delle azioni necessarie per le funzionalità standard relative agli ordini, come la restituzione della merce, l’aggiornamento dello stato dell’ordine, l’evasione, la generazione dei documenti di trasporto. Si tratta principalmente di un’anteprima tecnologica.
 >
->L’Order Management generico nell’AEM è stato mantenuto come standard; i campi disponibili nella procedura guidata dipendono dallo scaffold:
+>L’Order Management generico in AEM è stato mantenuto di base; i campi disponibili nella procedura guidata dipendono dallo scaffold:
 >`/etc/scaffolding/geometrixx-outdoors/order/jcr:content/cq:dialog`
 >
 >Se si crea uno scaffold personalizzato, è possibile memorizzare ulteriori informazioni sull&#39;ordine.
