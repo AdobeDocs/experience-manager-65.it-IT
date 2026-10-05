@@ -11,25 +11,23 @@ feature: Operations
 role: Admin
 source-git-commit: f1eb41d08bb35adb93237f0ad09daa5bcd07fac8
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '783'
 ht-degree: 2%
-
 ---
-
 # Amministrazione dei flussi di lavoro{#administering-workflows}
 
 I flussi di lavoro consentono di automatizzare le attività di Adobe Experience Manager (AEM). Flussi di lavoro:
 
 * Consiste in una serie di passaggi eseguiti in un ordine specifico.
 
-   * Ogni passaggio esegue un’attività distinta, ad esempio l’attesa dell’input dell’utente, l’attivazione di una pagina o l’invio di un messaggio e-mail.
+  * Ogni passaggio esegue un’attività distinta, ad esempio l’attesa dell’input dell’utente, l’attivazione di una pagina o l’invio di un messaggio e-mail.
 
 * Può interagire con le risorse nell’archivio, gli account utente e i servizi AEM.
 * Può coordinare attività complicate che coinvolgono qualsiasi aspetto di AEM.
 
 I processi aziendali stabiliti dalla tua organizzazione possono essere rappresentati come flussi di lavoro. Ad esempio, il processo di pubblicazione dei contenuti dei siti web include in genere passaggi quali l’approvazione e l’approvazione da parte di vari soggetti interessati. Questi processi possono essere implementati come flussi di lavoro di AEM e applicati a pagine di contenuti e risorse.
 
-* [Avvio dei flussi di lavoro](/help/sites-administering/workflows-starting.md)
+* [Avviare i flussi di lavoro](/help/sites-administering/workflows-starting.md)
 * [Amministrazione delle istanze dei flussi di lavoro](/help/sites-administering/workflows-administering.md)
 * [Gestione dell’accesso ai flussi di lavoro](/help/sites-administering/workflows-managing.md)
 

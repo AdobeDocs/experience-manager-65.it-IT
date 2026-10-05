@@ -1,5 +1,5 @@
 ---
-title: Avvio e arresto riga di comando
+title: Avvio e arresto dalla riga di comando
 description: Scopri come avviare e arrestare Adobe Experience Manager dalla riga di comando.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,10 @@ feature: Administering
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 0%
-
+source-wordcount: '358'
+ht-degree: 3%
 ---
-
-# Avvio e arresto riga di comando{#command-line-start-and-stop}
+# Avvio e arresto dalla riga di comando{#command-line-start-and-stop}
 
 ## Avvio di Adobe Experience Manager dalla riga di comando {#starting-adobe-experience-manager-from-the-command-line}
 
@@ -67,7 +65,7 @@ Queste due versioni supportano un elenco di variabili di ambiente che possono es
 
 >[!CAUTION]
 >
->Alcune modalità di esecuzione, tra cui authoring e pubblicazione, devono essere impostate prima di iniziare l’AEM e non possono essere modificate successivamente. Prima di configurare un&#39;istanza AEM utilizzata in produzione, vedere la [documentazione sulle modalità di esecuzione](/help/sites-deploying/configure-runmodes.md) per ulteriori dettagli.
+>Alcune modalità di esecuzione, tra cui authoring e pubblicazione, devono essere impostate prima di avviare AEM per la prima volta e non possono essere modificate successivamente. Prima di configurare un&#39;istanza di AEM utilizzata in produzione, vedere la [documentazione sulle modalità di esecuzione](/help/sites-deploying/configure-runmodes.md) per i dettagli.
 
 ### Esempio di script start.bat per piattaforma Windows {#windows-platform-start-bat-script-example}
 
@@ -83,16 +81,16 @@ CQ_PORT=1234 ./start
 
 >[!NOTE]
 >
->Lo script di avvio avvia Quickstart per AEM installato nella cartella *&lt;cq-installation>/app*.
+>Lo script di avvio avvia AEM Quickstart installato nella cartella *&lt;cq-installation>/app*.
 
 ## Interruzione di Adobe Experience Manager {#stopping-adobe-experience-manager}
 
-Per interrompere l&#39;AEM, effettuare una delle seguenti operazioni:
+Per interrompere AEM, effettuare una delle seguenti operazioni:
 
 * A seconda della piattaforma utilizzata:
 
-   * Se l&#39;AEM è stato avviato da uno script o dalla riga di comando, premere **Ctrl+C** per arrestare il server.
-   * Se è stato utilizzato lo script di avvio in UNIX®, è necessario utilizzare lo script di arresto per arrestare l&#39;AEM.
+  * Se AEM è stato avviato da uno script o dalla riga di comando, premere **Ctrl+C** per arrestare il server.
+  * Se è stato utilizzato lo script di avvio in UNIX®, è necessario utilizzare lo script di arresto per arrestare AEM.
 
 * Se hai avviato AEM facendo doppio clic sul file jar, fai clic sul pulsante **On** nella finestra di avvio (il pulsante diventa **Off**) per arrestare il server.
 
