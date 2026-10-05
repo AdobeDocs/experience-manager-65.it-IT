@@ -10,11 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 14%
-
+source-wordcount: '362'
+ht-degree: 16%
 ---
-
 # Utilizzo dell’API sendToPrinter {#using-the-sendtoprinter-api}
 
 ## Panoramica {#overview}
@@ -27,11 +25,11 @@ In AEM Forms è possibile utilizzare il servizio SendToPrinter per inviare un do
 
   Quando si invia un documento a una stampante, specificare uno dei seguenti protocolli di stampa:
 
-   * **TAZZE** `: A printing protocol named common UNIX printing system. This protocol is used for UNIX operating systems and enables a computer to function as a print server. The print server accepts print requests from client applications, processes them, and sends them to configured printers. On the IBM AIX® operating system, usage of CUPS is not recommended.`
-   * &quot;**DirectIP** `: A standard protocol for remote printing and managing print jobs. This protocol can be used locally or remotely. Print queues are not required.`
-   * &quot;**LPD** `: A printing protocol named Line Printer Daemon protocol or Line Printer Remote (LPR) protocol. This protocol provides network print server functionality for UNIX-based systems.`
-   * **SharedPrinter** `: A printing protocol that enables a computer to use a printer that is configured for that computer.`
-   * **CIF**: il servizio di output supporta il protocollo di stampa CIF (Common Internet File System).
+  * **TAZZE** `: A printing protocol named common UNIX printing system. This protocol is used for UNIX operating systems and enables a computer to function as a print server. The print server accepts print requests from client applications, processes them, and sends them to configured printers. On the IBM AIX® operating system, usage of CUPS is not recommended.`
+  * &quot;**DirectIP** `: A standard protocol for remote printing and managing print jobs. This protocol can be used locally or remotely. Print queues are not required.`
+  * &quot;**LPD** `: A printing protocol named Line Printer Daemon protocol or Line Printer Remote (LPR) protocol. This protocol provides network print server functionality for UNIX-based systems.`
+  * **SharedPrinter** `: A printing protocol that enables a computer to use a printer that is configured for that computer.`
+  * **CIFS**: il servizio di output supporta il protocollo CIFS (Common Internet File System).
 
 ## Utilizzo del servizio SendToPrinter {#using-sendtoprinter-service}
 
@@ -57,15 +55,15 @@ La tabella seguente elenca:
 | DirectIP | Non valido | Qualsiasi | eccezione che indica che la stampante non è stata trovata. |
 | DirectIP | Valido | Qualsiasi | Processo di stampa riuscito. |
 | CIFS | Valido | Vuoto | Processo di stampa riuscito. |
-| CIFS | Non valido | Qualsiasi | errore sconosciuto durante la stampa con CIF. |
+| CIFS | Non valido | Qualsiasi | errore sconosciuto durante la stampa con CIFS. |
 | CIFS | Vuoto | Qualsiasi | eccezione che indica che l&#39;argomento obbligatorio sPrintServerUri non può essere vuoto. |
 
 ## Supporto per l’autenticazione {#authentication-support}
 
-L&#39;autenticazione è supportata solo per la stampa CIF. Per eseguire l&#39;autenticazione, specificare il nome utente/password/dominio in PrinterSpec. È possibile crittografare una password utilizzando il servizio di supporto Cipro di AEM Granite eseguendo i seguenti passaggi:
+L&#39;autenticazione è supportata solo per la stampa CIFS. Per eseguire l&#39;autenticazione, specificare il nome utente/password/dominio in PrinterSpec. È possibile crittografare una password utilizzando il servizio AEM Granite CyprtoSupport eseguendo le seguenti operazioni:
 
 1. Visitare il sito Web all&#39;indirizzo https://&lt;server>:&lt;porta>/system/console.
 
 1. Vai a **[!UICONTROL Principale]** > **[!UICONTROL Supporto crittografia]**.
 
-1. Immettere testo normale e fare clic su **[!UICONTROL Protect]**.
+1. Immettere testo normale e fare clic su **[!UICONTROL Proteggi]**.
