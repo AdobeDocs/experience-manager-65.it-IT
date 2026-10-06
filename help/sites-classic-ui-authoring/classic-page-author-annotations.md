@@ -12,11 +12,9 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 8%
-
+source-wordcount: '770'
+ht-degree: 9%
 ---
-
 # Annotazioni durante la modifica di una pagina{#annotations-when-editing-a-page}
 
 L’aggiunta di contenuto alle pagine del sito web è spesso soggetta a discussioni prima di essere effettivamente pubblicata. Per facilitare questa fase, molti componenti direttamente correlati al contenuto (anziché, ad esempio, al layout) ti consentono di aggiungere un’annotazione.
@@ -83,16 +81,16 @@ Gli schizzi sono una caratteristica delle annotazioni che consente di creare sem
 
 ![chlimage_1-138](assets/chlimage_1-138.png)
 
-* Il cursore si trasforma in un reticolo incrociato quando siete in modalità sketch. È possibile disegnare più linee distinte.
+* Il cursore si trasforma in un reticolo incrociato quando siete in modalità sketch. Puoi disegnare più linee distinte.
 * La linea dello schizzo riflette il colore dell’annotazione e può essere:
 
-   * mano libera
+  * mano libera
 
-     la modalità predefinita; terminare rilasciando il pulsante del mouse.
+    la modalità predefinita; terminare rilasciando il pulsante del mouse.
 
-   * dritto:
+  * dritto:
 
-     tenere premuto `ALT` e fare clic sui punti iniziale e finale; terminare con un doppio clic.
+    tenere premuto `ALT` e fare clic sui punti iniziale e finale; terminare con un doppio clic.
 
 * Dopo aver chiuso la modalità di sketch, potete fare clic su una linea di sketch per selezionarla.
 * Spostate uno sketch selezionandolo, quindi trascinandolo nella posizione desiderata.

@@ -1,22 +1,22 @@
 ---
-title: Come sviluppare progetti AEM utilizzando IntelliJ IDEA
+title: Sviluppare progetti AEM con IntelliJ IDEA
 description: Scopri come utilizzare IntelliJ IDEA per sviluppare progetti Adobe Experience Manager.
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
+
 exl-id: 5a79c79b-df65-4cb2-b9d4-eda994c992ec
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 2%
-
+source-wordcount: '663'
+ht-degree: 4%
 ---
-
-# Come sviluppare progetti AEM utilizzando IntelliJ IDEA{#how-to-develop-aem-projects-using-intellij-idea}
+# Sviluppare progetti AEM con IntelliJ IDEA{#how-to-develop-aem-projects-using-intellij-idea}
 
 ## Panoramica {#overview}
 
@@ -25,7 +25,7 @@ Per iniziare a sviluppare AEM su IntelliJ, sono necessari i seguenti passaggi.
 Ogni passaggio è descritto più dettagliatamente nel resto di questo argomento.
 
 * Installa IntelliJ
-* Configurare il progetto AEM in base a Maven
+* Configurare il progetto AEM basato su Maven
 * Preparare il supporto JSP per IntelliJ nel POM Maven
 * Importare il progetto Maven in IntelliJ
 
@@ -39,7 +39,7 @@ Scarica IntelliJ IDEA da [la pagina Download in JetBrains](https://www.jetbrains
 
 Quindi, seguire le istruzioni di installazione riportate in quella pagina.
 
-### Configurare il progetto AEM in base a Maven {#set-up-your-aem-project-based-on-maven}
+### Configurare il progetto AEM basato su Maven {#set-up-your-aem-project-based-on-maven}
 
 Quindi, configura il tuo progetto utilizzando Maven come descritto in [Come creare progetti AEM utilizzando Apache Maven](/help/sites-developing/ht-projects-maven.md).
 
@@ -52,7 +52,7 @@ IntelliJ IDEA può anche fornire supporto nell’utilizzo di JSP, ad esempio:
 * completamento automatico delle librerie di tag
 * conoscenza degli oggetti definiti da `<cq:defineObjects />` e `<sling:defineObjects />`
 
-Affinché ciò funzioni, segui le istruzioni su [Come lavorare con JSP](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps) in [Come creare progetti AEM utilizzando Apache Maven](/help/sites-developing/ht-projects-maven.md).
+Affinché ciò funzioni, segui le istruzioni in [Come lavorare con JSP](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps) in [Come creare progetti AEM utilizzando Apache Maven](/help/sites-developing/ht-projects-maven.md).
 
 ### Importare il progetto Maven {#import-the-maven-project}
 
@@ -70,7 +70,7 @@ Affinché ciò funzioni, segui le istruzioni su [Come lavorare con JSP](/help/si
    ![chlimage_1-46](assets/chlimage_1-46a.png)
 
 1. Continuare le seguenti finestre di dialogo facendo clic su **Avanti** e **Fine**.
-1. È ora configurato per lo sviluppo AEM utilizzando IntelliJ IDEA
+1. Ora sei configurato per lo sviluppo AEM utilizzando IntelliJ IDEA
 
    ![chlimage_1-47](assets/chlimage_1-47a.png)
 
@@ -81,7 +81,7 @@ Per il debug di JSP con IntelliJ IDEA sono necessari i passaggi seguenti
 * Configurare un facet web nel progetto
 * Installare il plug-in di supporto JSR45
 * Configurare un profilo di debug
-* Configurare AEM per la modalità debug
+* Configurare AEM per la modalità di debug
 
 #### Configurare un facet web nel progetto {#set-up-a-web-facet-in-the-project}
 
@@ -115,11 +115,11 @@ IntelliJ IDEA deve capire dove trovare le JSP per il debug. Poiché IDEA non è 
 
 ![chlimage_1-50](assets/chlimage_1-50a.png) ![chlimage_1-51](assets/chlimage_1-51a.png)
 
-#### Configurare AEM per la modalità debug {#configure-aem-for-debug-mode}
+#### Configurare AEM per la modalità di debug {#configure-aem-for-debug-mode}
 
-L’ultimo passaggio necessario consiste nell’avviare l’AEM con le opzioni JVM proposte da IntelliJ IDEA.
+L’ultimo passaggio necessario consiste nell’avviare AEM con le opzioni JVM proposte da IntelliJ IDEA.
 
-Avvia direttamente il file JAR dell’AEM e aggiungi queste opzioni, ad esempio, con la seguente riga di comando:
+Avvia direttamente il file jar di AEM e aggiungi queste opzioni, ad esempio, con la seguente riga di comando:
 
 `java -Xdebug -Xrunjdwp:transport=dt_socket,address=58242,suspend=n,server=y -Xmx1024m -jar cq-quickstart-6.5.0.jar`
 
@@ -140,7 +140,7 @@ CQ_JVM_OPTS="$CQ_JVM_OPTS -Xdebug -Xrunjdwp:transport=dt_socket,address=58242,su
 
 #### Avvia debug {#start-debugging}
 
-Ora è tutto pronto per il debug delle JSP nell’AEM.
+Ora è tutto configurato per il debug dei JSP in AEM.
 
 1. Seleziona **Esegui > Debug > Profilo di debug**
 1. Impostare i punti di interruzione nel codice del componente
