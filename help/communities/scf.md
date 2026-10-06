@@ -11,11 +11,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1478'
+source-wordcount: '1512'
 ht-degree: 0%
-
 ---
-
 # Framework componenti social {#social-component-framework}
 
 Il framework dei componenti social (SCF) semplifica il processo di configurazione, personalizzazione ed estensione dei componenti Community sia sul lato server che sul lato client.
@@ -50,19 +48,19 @@ L’API SocialComponent può essere estesa per fornire i dati richiesti da un cl
 Per personalizzare o estendere i componenti, scrivi solo le sovrapposizioni e le estensioni nella directory /apps, semplificando il processo di aggiornamento alle versioni future.
 
 * Per lo skin:
-   * Solo il file CSS [deve essere modificato](client-customize.md#skinning-css).
+  * Solo il file CSS [deve essere modificato](client-customize.md#skinning-css).
 * Per aspetto:
-   * Modifica il modello JS e il CSS.
+  * Modifica il modello JS e il CSS.
 * Per Look, Feel e UX:
-   * Modificare il modello JS, CSS e [estendere/sostituire JavaScript](client-customize.md#extending-javascript).
+  * Modificare il modello JS, CSS e [estendere/sostituire JavaScript](client-customize.md#extending-javascript).
 * Per modificare le informazioni disponibili per il modello JS o per l’endpoint GET:
-   * Estendere [SocialComponent](server-customize.md#socialcomponent-interface).
+  * Estendere [SocialComponent](server-customize.md#socialcomponent-interface).
 * Per aggiungere l&#39;elaborazione personalizzata durante le operazioni:
-   * Scrivere un [OperationExtension](server-customize.md#operationextension-class).
+  * Scrivere un [OperationExtension](server-customize.md#operationextension-class).
 * Per aggiungere un&#39;operazione personalizzata:
-   * Crea un&#39;operazione Sling Post [&#128279;](server-customize.md#postoperation-class).
-   * Utilizza [OperationServices](server-customize.md#operationservice-class) esistente in base alle esigenze.
-   * Aggiungi il codice JavaScript per richiamare l’operazione dal lato client in base alle esigenze.
+  * Crea un [operazione di post Sling](server-customize.md#postoperation-class).
+  * Utilizza [OperationServices](server-customize.md#operationservice-class) esistente in base alle esigenze.
+  * Aggiungi il codice JavaScript per richiamare l’operazione dal lato client in base alle esigenze.
 
 ## Framework lato server {#server-side-framework}
 
@@ -82,7 +80,7 @@ L&#39;API HTTP supporta la facilità di personalizzazione e la scelta delle piat
 
 ### API HTTP - Richieste GET {#http-api-get-requests}
 
-Per ogni SocialComponent, il framework fornisce un endpoint API basato su HTTP. L’endpoint è accessibile inviando una richiesta GET alla risorsa con un selettore &quot;.social.json&quot; e un’estensione. Utilizzando Sling, la richiesta viene trasmessa a `DefaultSocialGetServlet`.
+Per ogni SocialComponent, il framework fornisce un endpoint API basato su HTTP. L’endpoint è accessibile inviando una richiesta GET alla risorsa con un selettore &quot;.social.json&quot; + estensione. Utilizzando Sling, la richiesta viene trasmessa a `DefaultSocialGetServlet`.
 
 **`DefaultSocialGetServlet`**
 
@@ -94,19 +92,19 @@ Per ogni SocialComponent, il framework fornisce un endpoint API basato su HTTP. 
 
 **`GET Request`**
 
-Un servlet di GET predefinito ascolta le richieste .social.json alle quali il componente Social risponde con JSON personalizzabile.
+Un servlet GET predefinito ascolta le richieste .social.json alle quali il componente Social risponde con JSON personalizzabile.
 
 ![scf-framework](assets/scf-framework.png)
 
 ### API HTTP - Richieste POST {#http-api-post-requests}
 
-Oltre alle operazioni di GET (lettura), il framework definisce un modello di endpoint per abilitare altre operazioni su un componente, tra cui Crea, Aggiorna ed Elimina. Questi endpoint sono API HTTP che accettano input e rispondono con un codice di stato HTTP o con un oggetto di risposta JSON.
+Oltre alle operazioni GET (Lettura), il framework definisce un modello di endpoint per abilitare altre operazioni su un componente, tra cui Crea, Aggiorna ed Elimina. Questi endpoint sono API HTTP che accettano input e rispondono con un codice di stato HTTP o con un oggetto di risposta JSON.
 
 Questo modello di endpoint framework rende le operazioni CUD estensibili, riutilizzabili e testabili.
 
 **`POST Request`**
 
-È disponibile un’operazione Sling POST:per ogni operazione SocialComponent. La logica di business e il codice di manutenzione per ogni operazione sono racchiusi in un OperationService accessibile tramite l’API HTTP o da altrove come servizio OSGi. Gli hook sono forniti con supporto di estensioni di operazioni collegabili per le azioni prima/dopo.
+È presente un Sling POST:operation per ogni operazione SocialComponent. La logica di business e il codice di manutenzione per ogni operazione sono racchiusi in un OperationService accessibile tramite l’API HTTP o da altrove come servizio OSGi. Gli hook sono forniti con supporto di estensioni di operazioni collegabili per le azioni prima/dopo.
 
 ![scf-post-richiesta](assets/scf-post-request.png)
 
@@ -192,7 +190,7 @@ Per un elenco e una descrizione degli helper personalizzati disponibili in SCF, 
 
 Il framework include un&#39;estensione di [Backbone.js](https://backbonejs.org/), un framework JavaScript per la visualizzazione del modello, per facilitare lo sviluppo di componenti avanzati e interattivi. La natura orientata agli oggetti supporta un framework estensibile/riutilizzabile. La comunicazione tra client e server è semplificata con l’API HTTP.
 
-Il framework utilizza modelli Handlebars lato server per eseguire il rendering dei componenti per il client. I modelli si basano sulle risposte JSON generate dall’API HTTP. Le visualizzazioni si associano a HTML generate dai modelli Handlebars e forniscono interattività.
+Il framework utilizza modelli Handlebars lato server per eseguire il rendering dei componenti per il client. I modelli si basano sulle risposte JSON generate dall’API HTTP. Le visualizzazioni si associano a HTML generato dai modelli Handlebars e forniscono interattività.
 
 ### Convenzioni CSS {#css-conventions}
 
@@ -219,6 +217,6 @@ Le informazioni essenziali per gli sviluppatori sono descritte nella sezione [Fu
 
 Ulteriori informazioni per gli sviluppatori sono disponibili nella sezione [Coding Guidelines](code-guide.md).
 
-## Risoluzione dei problemi {#troubleshooting}
+## Risoluzione di problemi {#troubleshooting}
 
 I problemi comuni e noti sono descritti nella sezione [Risoluzione dei problemi](troubleshooting.md).

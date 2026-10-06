@@ -7,11 +7,9 @@ exl-id: 23f3391b-5ce3-48e1-ab27-a37737778089
 solution: Experience Manager, Experience Manager Sites
 source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 58%
-
+source-wordcount: '767'
+ht-degree: 57%
 ---
-
 # Risoluzione dei problemi e domande frequenti relativi a MSM {#troubleshooting-msm}
 
 ## Risoluzione dei problemi - Primi passi {#first-steps}
@@ -28,14 +26,12 @@ MSM registra diversi servlet che possono essere richiesti con i selettori sugli 
 1. `http://<host>:<port>/content/path/to/bluprint/page.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
    * Utilizza questo su una pagina blueprint per recuperare l’elenco di tutte le Live Copy ad essa collegate, con informazioni sullo stato di Live Copy aggiuntive.
    * ad esempio:
-
      `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
 
 
 1. `http://<host>:<port>/content/path/to/livecopy/page.msm.json`
    * Utilizza questo nelle pagine Live Copy per recuperare informazioni avanzate sulla loro connessione con le loro pagine blueprint. Se la pagina non è una Live Copy, non viene restituito nulla.
    * ad esempio:
-
      `http://localhost:4502/content/wknd/ca/en.msm.json`
 
 Questi servlet generano messaggi del registro DEBUG attraverso il logger `com.day.cq.wcm.msm` che può anche essere utile.
@@ -45,17 +41,17 @@ Questi servlet generano messaggi del registro DEBUG attraverso il logger `com.da
 I servlet precedenti restituivano informazioni calcolate in base ai nodi e ai mixin specifici di MSM. Le informazioni vengono memorizzate nell’archivio nel modo seguente.
 
 * Tipo mixin `cq:LiveSync`
-   * È impostato sui nodi `jcr:content` e definisce le pagine Live Copy principali.
-   * Le pagine hanno un nodo figlio `cq:LiveSyncConfig` di tipo `cq:LiveCopy` che contiene informazioni di base e obbligatorie sulla Live Copy attraverso le seguenti proprietà:
-      * `cq:master` punta alla pagina blueprint della Live Copy.
-      * `cq:rolloutConfigs` indica le configurazioni di rollout attive applicate alla Live Copy.
-      * `cq:isDeep` è true se le pagine figlie di questa pagina Live Copy principale sono incluse nella Live Copy.
+  * È impostato sui nodi `jcr:content` e definisce le pagine Live Copy principali.
+  * Le pagine hanno un nodo figlio `cq:LiveSyncConfig` di tipo `cq:LiveCopy` che contiene informazioni di base e obbligatorie sulla Live Copy attraverso le seguenti proprietà:
+    * `cq:master` punta alla pagina blueprint della Live Copy.
+    * `cq:rolloutConfigs` indica le configurazioni di rollout attive applicate alla Live Copy.
+    * `cq:isDeep` è true se le pagine secondarie di questa pagina Live Copy principale sono incluse nella Live Copy.
 * Tipo mixin `cq:LiveRelationship`
-   * Qualsiasi pagina Live Copy ha questo tipo mixin sul suo nodo `jcr:content`.
-   * In caso contrario, la pagina a un certo punto è stata scollegata o creata manualmente tramite l’interfaccia di authoring al di fuori di un’azione Live Copy (creazione o rollout).
+  * Qualsiasi pagina Live Copy ha questo tipo mixin sul suo nodo `jcr:content`.
+  * In caso contrario, la pagina a un certo punto è stata scollegata o creata manualmente tramite l’interfaccia di authoring al di fuori di un’azione Live Copy (creazione o rollout).
 * Tipo mixin `cq:LiveSyncCancelled`
-   * Aggiunto ai nodi `jcr:content` di pagine Live Copy sospese.
-   * Se la sospensione è efficace anche per le pagine figlie, una proprietà `cq:isCancelledForChildren` è impostata su true sullo stesso nodo.
+  * Aggiunto ai nodi `jcr:content` di pagine Live Copy sospese.
+  * Se la sospensione è efficace anche per le pagine secondarie, una proprietà `cq:isCancelledForChildren` è impostata su true sullo stesso nodo.
 
 Le informazioni presenti in queste proprietà devono essere riportare nell’interfaccia utente, tuttavia durante la risoluzione dei problemi può essere utile osservare il comportamento di MSM direttamente nell’archivio mentre si verificano le azioni MSM.
 

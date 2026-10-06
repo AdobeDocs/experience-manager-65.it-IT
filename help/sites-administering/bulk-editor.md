@@ -1,5 +1,5 @@
 ---
-title: Editor in blocco
+title: La modifica in serie
 description: Scopri come utilizzare l’Editor collettivo per una modifica efficiente quando il contesto della pagina visiva non è necessario.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,13 +12,11 @@ feature: Configuring
 role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 0%
-
+source-wordcount: '1174'
+ht-degree: 1%
 ---
 
-
-# Editor in blocco{#the-bulk-editor}
+# La modifica in serie{#the-bulk-editor}
 
 L’editor in blocco consente di modificare in modo efficiente quando il contesto della pagina visiva non è necessario, in quanto consente di:
 
@@ -35,13 +33,13 @@ In questa sezione viene descritto come utilizzare l&#39;editor in blocco nella c
 
 >[!CAUTION]
 >
->Con [l&#39;impostazione come obsoleta dell&#39;interfaccia utente classica](/help/release-notes/deprecated-removed-features.md) in AEM 6.4, anche l&#39;editor in blocco è stato dichiarato obsoleto, pertanto Adobe non prevede di migliorare ulteriormente l&#39;editor in blocco.
+>Con la [rimozione dell&#39;interfaccia utente classica](/help/release-notes/deprecated-removed-features.md) in AEM 6.4, anche l&#39;editor in blocco è stato dichiarato obsoleto, pertanto Adobe non prevede di migliorare ulteriormente l&#39;editor in blocco.
 
 ## Caso di utilizzo di esempio per l’editor in blocco {#example-use-case-for-the-bulk-editor}
 
 Ad esempio, se hai bisogno di tutti i nomi e gli indirizzi e-mail degli utenti che hanno compilato un sondaggio particolare, l’Editor collettivo può fornire tali informazioni e puoi esportarle in un foglio di calcolo.
 
-Un esempio per illustrare un caso d’uso di questo tipo è incluso nel Geometrixx web:
+Un esempio per illustrare un caso d’uso di questo tipo è incluso nel sito web Geometrixx:
 
 1. Passare alla pagina **Supporto** e quindi al sondaggio **Soddisfazione del servizio clienti**.
 1. **Modifica** il paragrafo **Inizio modulo**. Nella finestra di dialogo, fai clic sulla scheda **Avanzate**, espandi **Configurazione azione**, quindi fai clic su **Visualizza dati...**.
@@ -76,8 +74,8 @@ Per utilizzare l&#39;Editor collettivo per modificare più elementi contemporane
    <td>Proprietà</td>
   </tr>
   <tr>
-   <td>Percorso directory principale</td>
-   <td>Indica il percorso della directory principale cercato dall'editor di massa.<br /> Ad esempio, <code>/content/geometrixx/en</code>. L’editor collettivo esegue la ricerca su tutti i nodi secondari.</td>
+   <td>Percorso principale</td>
+   <td>Indica il percorso della directory principale cercato dall'editor in blocco.<br /> Ad esempio, <code>/content/geometrixx/en</code>. L’editor collettivo esegue la ricerca su tutti i nodi secondari.</td>
   </tr>
   <tr>
    <td>Parametri di query</td>
@@ -93,7 +91,7 @@ Per utilizzare l&#39;Editor collettivo per modificare più elementi contemporane
   </tr>
   <tr>
    <td>Proprietà/Colonne personalizzate</td>
-   <td>Immetti altre proprietà non elencate nel campo <strong>Proprietà/Colonne</strong>. Queste proprietà personalizzate vengono visualizzate nel riquadro dei risultati. Puoi aggiungere più proprietà utilizzando una virgola per separare le proprietà. <i>Nota:</i> se si aggiunge una proprietà personalizzata non ancora esistente, in WCM AEM verrà visualizzata una cella vuota. Quando modifichi la cella vuota e la salvi, la proprietà viene aggiunta al nodo. La proprietà appena creata deve rispettare i vincoli del tipo di nodo e gli spazi dei nomi delle proprietà.</td>
+   <td>Immetti altre proprietà non elencate nel campo <strong>Proprietà/Colonne</strong>. Queste proprietà personalizzate vengono visualizzate nel riquadro dei risultati. Puoi aggiungere più proprietà utilizzando una virgola per separare le proprietà. <i>Nota:</i> se si aggiunge una proprietà personalizzata che non esiste ancora, AEM WCM visualizza una cella vuota. Quando modifichi la cella vuota e la salvi, la proprietà viene aggiunta al nodo. La proprietà appena creata deve rispettare i vincoli del tipo di nodo e gli spazi dei nomi delle proprietà.</td>
   </tr>
  </tbody>
 </table>
@@ -122,7 +120,7 @@ Nell’esempio precedente, tutte le pagine che soddisfano i criteri di ricerca v
 * **percorso:** cerca solo i nodi al di sotto di questo percorso. Se specificate più di un termine con un prefisso di percorso, viene considerato solo l&#39;ultimo.
 * **tipo:** restituisce solo nodi del tipo di nodo specificato. Sono inclusi i tipi principali e mixin. È possibile specificare più tipi di nodo separati da virgole. GQL restituisce nodi di uno qualsiasi dei tipi specificati.
 * **ordine:** ordina il risultato in base alle proprietà specificate. È possibile specificare più nomi di proprietà separati da virgole. Per ordinare il risultato in ordine decrescente, aggiungi al nome della proprietà il prefisso meno. Ad esempio, order:-name. L&#39;utilizzo di un segno più restituisce il risultato in ordine crescente, che è anche l&#39;impostazione predefinita.
-* **limit:** limita il numero di risultati utilizzando un intervallo. Ad esempio, limit:10..20 L&#39;intervallo è basato su zero, l&#39;inizio è inclusivo e la fine è esclusiva. È inoltre possibile specificare un `interval:limit:10..` o un `limit:..20` aperto
+* **limit:** limita il numero di risultati utilizzando un intervallo. Ad esempio, limit:10..20 L&#39;intervallo è basato su zero, l&#39;inizio è inclusivo e la fine è esclusiva. È inoltre possibile specificare un `interval:limit:10..` aperto o `limit:..20`
 Se i punti vengono omessi e viene specificato un solo valore, GQL restituisce al massimo questo numero di risultati. Ad esempio, `limit:10` (restituisce i primi dieci risultati).
 
 ### Esportazione del contenuto {#exporting-content}
@@ -132,7 +130,7 @@ Se necessario, esporta il contenuto in un foglio di calcolo Excel per apportare 
 Per esportare il contenuto:
 
 1. Cercare il contenuto come descritto in [Ricerca e modifica del contenuto](#searching-and-editing-content).
-1. Fai clic su **Esporta** per esportare le modifiche in un foglio di calcolo Excel separato da tabulazioni. WCM AEM ti chiede dove desideri scaricare il file.
+1. Fai clic su **Esporta** per esportare le modifiche in un foglio di calcolo Excel separato da tabulazioni. AEM WCM ti chiede dove desideri scaricare il file.
 
    >[!NOTE]
    >

@@ -8,11 +8,9 @@ exl-id: 3a9b44d4-1756-4ad5-91df-df8d53e82193
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 6ab943894398733d178f561430d3f391e8722195
 workflow-type: tm+mt
-source-wordcount: '3059'
-ht-degree: 0%
-
+source-wordcount: '3255'
+ht-degree: 1%
 ---
-
 # Configurare Experience Manager Assets per Adobe Asset Link {#adobe-asset-link}
 
 [Adobe Asset Link (AAL)](https://www.adobe.com/it/creativecloud/business/enterprise/adobe-asset-link.html) semplifica la collaborazione tra creativi ed esperti di marketing nel processo di creazione dei contenuti. Collega Adobe Experience Manager Assets con le app desktop Creative Cloud Adobe InDesign, Adobe Photoshop e Adobe Illustrator. Il pannello Adobe Asset Link consente ai creativi di accedere e modificare i contenuti memorizzati in AEM Assets senza uscire dalle app creative che preferiscono.
@@ -73,10 +71,10 @@ Per configurare manualmente Experience Manager:
 
    Imposta la seguente configurazione e fai clic su **[!UICONTROL Salva]**.
 
-   * [!UICONTROL Endpoint autorizzazione]: ` https://ims-na1.adobelogin.com/ims/authorize/v1`
-   * [!UICONTROL Endpoint token]: ` https://ims-na1.adobelogin.com/ims/token/v1`
-   * [!UICONTROL Endpoint profilo]: ` https://ims-na1.adobelogin.com/ims/profile/v1`
-   * [!UICONTROL URL di convalida]: ` https://ims-na1.adobelogin.com/ims/validate_token/v1`
+   * [!UICONTROL Endpoint autorizzazione]&#x200B;: ` https://ims-na1.adobelogin.com/ims/authorize/v1`
+   * [!UICONTROL Endpoint token]&#x200B;: ` https://ims-na1.adobelogin.com/ims/token/v1`
+   * [!UICONTROL Endpoint profilo]&#x200B;: ` https://ims-na1.adobelogin.com/ims/profile/v1`
+   * [!UICONTROL URL di convalida]&#x200B;: ` https://ims-na1.adobelogin.com/ims/validate_token/v1`
    * [!UICONTROL Organizzazione]: impostato sull&#39;ID organizzazione in [Adobe Admin Console](https://adminconsole.adobe.com/).
    * [!UICONTROL Mappature gruppo]: lascia vuoto a meno che tu non abbia un caso speciale. Per ulteriori dettagli, vedere [Mappatura gruppo](#group-mapping).
 
@@ -90,10 +88,10 @@ Per configurare manualmente Experience Manager:
 
    * [!UICONTROL ID client]: non modificare
    * [!UICONTROL Segreto client]: non modificare
-   * [!UICONTROL ID configurazione]: ` ims`
+   * [!UICONTROL ID configurazione]&#x200B;: ` ims`
    * [!UICONTROL Ambito]: `AdobeID, OpenID, read_organizations` (nella configurazione possono essere presenti anche altri valori)
-   * [!UICONTROL ID provider]: ` ims`
-   * [!UICONTROL Crea utenti]: ` Checked`
+   * [!UICONTROL ID provider]&#x200B;: ` ims`
+   * [!UICONTROL Crea utenti]&#x200B;: ` Checked`
    * [!UICONTROL Proprietà ID utente]: `Email` per la configurazione appena creata. In caso contrario, non modificare.
 
 1. Individua la configurazione del **[!UICONTROL gestore di sincronizzazione predefinito di Apache Jackrabbit Oak]** con il **[!UICONTROL nome gestore di sincronizzazione]** `ims` e fai clic per modificarla.
@@ -102,7 +100,7 @@ Per configurare manualmente Experience Manager:
 
    * [!UICONTROL Scadenza utente e scadenza appartenenza utente]: dopo &#39;m&#39; in minuti non è disponibile spazio. `15m` per 15 minuti. Per ulteriori dettagli, vedere [Mappatura gruppo](#group-mapping).
    * [!UICONTROL Iscrizione automatica utente]: non modificare
-   * [!UICONTROL Appartenenza dinamica utente]: ` Deslect`
+   * [!UICONTROL Appartenenza dinamica utente]&#x200B;: ` Deslect`
 
 1. Individua la configurazione **[!UICONTROL Adobe Granite OAuth Authentication Handler]** e fai clic per modificarla. Senza apportare modifiche, fai clic su **[!UICONTROL Salva]**.
 
@@ -270,7 +268,7 @@ Experience Manager fornisce rappresentazioni utilizzate solo per il posizionamen
 
 ## Integrare con Adobe Stock {#adobe-stock-integration}
 
-Le organizzazioni integrano i propri account Adobe Stock con Experience Manager Assets. Aiuta gli esperti di marketing a rendere disponibili foto, vettori, illustrazioni, video, modelli e risorse 3D di alta qualità e senza royalty per i loro progetti creativi e di marketing. I creativi possono utilizzare queste risorse mediante il pannello Asset Link.
+Le organizzazioni integrano i propri account Adobe Stock con Experience Manager Assets. Aiuta gli esperti di marketing a rendere disponibili foto, vettori, illustrazioni, video, modelli e risorse 3D di alta qualità e senza royalty per i loro progetti creativi e di marketing. I professionisti Creative possono utilizzare queste risorse mediante il pannello Asset Link.
 
 Per l&#39;integrazione con Adobe Stock, vedi [Risorse Adobe Stock in Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md). Per l’integrazione con Adobe Stock è richiesto Experience Manager 6.4.2 o versione successiva.
 

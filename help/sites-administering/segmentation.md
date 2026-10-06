@@ -11,11 +11,9 @@ feature: Administering,Personalization
 role: Admin
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '1745'
+source-wordcount: '1763'
 ht-degree: 62%
-
 ---
-
 # Configurazione della segmentazione con ContextHub{#configuring-segmentation-with-contexthub}
 
 >[!NOTE]
@@ -29,11 +27,11 @@ A seconda delle informazioni già raccolte sui visitatori del sito e degli obiet
 
 Questi segmenti verranno poi utilizzati per fornire al visitatore i contenuti di destinazione più pertinenti. Questo contenuto viene mantenuto nella sezione [Personalization](/help/sites-authoring/personalization.md) del sito Web. Le [Attività](/help/sites-authoring/activitylib.md) qui definite possono essere incluse in qualsiasi pagina e definiscono a quale segmento visitatore è applicabile il contenuto specifico.
 
-L’AEM ti consente di personalizzare facilmente l’esperienza degli utenti. Consente inoltre di verificare i risultati delle definizioni dei segmenti.
+AEM ti consente di personalizzare facilmente l’esperienza degli utenti. Consente inoltre di verificare i risultati delle definizioni dei segmenti.
 
 ## Accesso ai segmenti {#accessing-segments}
 
-La console [Tipi di pubblico](/help/sites-authoring/managing-audiences.md) viene utilizzata per gestire i segmenti per ContextHub o ClientContext e i tipi di pubblico per il tuo account Adobe Target. Questa documentazione tratta la gestione dei segmenti per ContextHub. Per [segmenti ClientContext](/help/sites-administering/campaign-segmentation.md) e segmenti Adobe Target, consulta la relativa documentazione.
+La console [Tipi di pubblico](/help/sites-authoring/managing-audiences.md) viene utilizzata per gestire i segmenti per ContextHub o ClientContext e i tipi di pubblico per il tuo account Adobe Target. La presente documentazione riguarda la gestione dei segmenti per ContextHub. Per [segmenti ClientContext](/help/sites-administering/campaign-segmentation.md) e segmenti Adobe Target, consulta la relativa documentazione.
 
 Per accedere ai segmenti devi selezionare la configurazione. Nella navigazione globale, seleziona **Navigazione > Personalization > Tipi di pubblico**. Verranno visualizzate le configurazioni disponibili:
 
@@ -234,7 +232,7 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 Se disponi di molti segmenti, la gestione in un elenco semplice può essere complicata. In questi casi, può essere utile creare alcune cartelle per gestire i tuoi segmenti.
 
-### Crea una nuova cartella,  {#create-folder}
+### Crea una nuova cartella, {#create-folder}
 
 1. Dopo [l&#39;accesso ai segmenti](#accessing-segments), fare clic sul pulsante **Crea** e selezionare **Cartella**.
 
@@ -243,8 +241,8 @@ Se disponi di molti segmenti, la gestione in un elenco semplice può essere comp
 1. Specifica il **titolo** e il **nome** da assegnare alla cartella.
    * Il **titolo** deve essere descrittivo.
    * Il **nome** diventerà il nome del nodo nell’archivio.
-      * Viene generato automaticamente dal titolo, secondo le [convenzioni di denominazione di AEM.](/help/sites-developing/naming-conventions.md)
-      * Se necessario è possibile modificarlo.
+     * Viene generato automaticamente dal titolo, secondo le [convenzioni di denominazione di AEM.](/help/sites-developing/naming-conventions.md)
+     * Se necessario è possibile modificarlo.
 
    ![Crea cartella](assets/contexthub-create-folder.png)
 
@@ -255,7 +253,6 @@ Se disponi di molti segmenti, la gestione in un elenco semplice può essere comp
 1. La cartella verrà visualizzata nell’elenco dei segmenti.
    * L’ordinamento delle colonne incide sulla posizione di visualizzazione della nuova cartella nell’elenco.
    * Puoi fare clic sulle intestazioni di colonna per modificare l’ordinamento.
-
      ![La nuova cartella](assets/contexthub-folder.png)
 
 ### Modificare le cartelle esistenti {#modify-folders}
@@ -291,7 +288,7 @@ Se disponi di molti segmenti, la gestione in un elenco semplice può essere comp
 
 1. Se una delle cartelle selezionate contiene sottocartelle o segmenti, devi confermarne l’eliminazione.
 
-   ![Conferma l’eliminazione degli elementi figlio](assets/contexthub-confirm-segment-child-delete.png)
+   ![Conferma l’eliminazione degli elementi secondari](assets/contexthub-confirm-segment-child-delete.png)
 
    * Fai clic su **Forza eliminazione** per confermare.
    * Fai clic su **Annulla** per interrompere.
