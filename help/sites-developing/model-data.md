@@ -11,14 +11,12 @@ feature: Developing
 role: Developer
 source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 0%
-
+source-wordcount: '1780'
+ht-degree: 1%
 ---
-
 # Modellazione dati - Modello di David Nuescheler{#data-modeling-david-nuescheler-s-model}
 
-## Sorgente {#source}
+## Origine {#source}
 
 Di seguito sono riportate le idee e i commenti espressi da David Nuescheler.
 
@@ -46,7 +44,7 @@ Vorrei cominciare a riempire questo vuoto esprimendo le mie opinioni sul modo in
 
 Raccomando di non preoccuparsi di una struttura di dati dichiarata in senso ERD. Inizialmente.
 
-Scopri come amare nt:unstructured (&amp; friends) nello sviluppo.
+Scopri come amare nt:unstructured (&amp; amici) nello sviluppo.
 
 La mia linea di fondo: la struttura è costosa e spesso non è assolutamente necessario dichiarare esplicitamente la struttura allo storage sottostante.
 
@@ -173,11 +171,11 @@ Penso che ci siano casi d&#39;uso in cui un sistema non può funzionare se un ri
 
 Se un modello di contenuto espone qualcosa che odora anche in remoto come un file o una cartella, si tenta di utilizzare (o estendere da) `nt:file`, `nt:folder` e `nt:resource`.
 
-Nella mia esperienza, molte applicazioni generiche consentono l’interazione con nt:folder e nt:files in modo implicito e sanno come gestire e visualizzare tali eventi se arricchiti da metadati aggiuntivi. Ad esempio, un’interazione diretta con implementazioni di file server come CIFS o WebDAV che si trovano sopra JCR diventa implicita.
+Nella mia esperienza, molte applicazioni generiche consentono l&#39;interazione con nt:folder e nt:files in modo implicito e sanno come gestire e visualizzare tali eventi se sono arricchiti da metadati aggiuntivi. Ad esempio, un’interazione diretta con implementazioni di file server come CIFS o WebDAV che si trovano sopra JCR diventa implicita.
 
-Come buona regola empirica si potrebbe usare quanto segue: Se si deve memorizzare il nome del file e il tipo mime allora `nt:file`/ `nt:resource` è una buona corrispondenza. Se si possono avere più &quot;file&quot;, la cartella nt:folder è un buon punto in cui memorizzarli.
+Come buona regola empirica si potrebbe usare quanto segue: Se si deve memorizzare il nome del file e il tipo mime allora `nt:file`/ `nt:resource` è una buona corrispondenza. Se si possono avere più &quot;file&quot;, un nt:folder è un buon punto in cui memorizzarli.
 
-Se devi aggiungere metadati per la risorsa, ad esempio una proprietà &quot;author&quot; o &quot;description&quot;, estendi `nt:resource` e non `nt:file`. Estendo raramente nt:file e spesso `nt:resource`.
+Se devi aggiungere metadati per la risorsa, ad esempio una proprietà &quot;author&quot; o &quot;description&quot;, estendi `nt:resource` e non `nt:file`. Raramente estendo nt:file e frequentemente estendo `nt:resource`.
 
 #### Esempio {#example-6}
 
@@ -209,13 +207,13 @@ Se il modello di contenuto è pieno di proprietà che terminano con &quot;Id&quo
 
 Tieni presente che gli elementi possono essere identificati in base al percorso. Inoltre, poiché i &quot;symlink&quot; hanno più senso per la maggior parte degli utenti rispetto ai collegamenti rigidi in un file system UNIX®, un percorso è utile per la maggior parte delle applicazioni per fare riferimento a un nodo di destinazione.
 
-Fatto ancora più importante, è **mix**:referenziabile, il che significa che può essere applicato a un nodo nel momento in cui è effettivamente necessario farvi riferimento.
+Fatto ancora più importante, è **mix**:referenceable, il che significa che può essere applicato a un nodo nel momento in cui è necessario farvi riferimento.
 
 Pertanto, solo perché si desidera poter fare riferimento a un nodo di tipo &quot;Document&quot; non significa che il tipo di nodo &quot;Document&quot; debba estendersi da `mix:referenceable` in modo statico. Questo perché può essere aggiunto dinamicamente a qualsiasi istanza del &quot;Documento&quot;.
 
 #### Esempio {#example-7}
 
-Usa:
+Utilizza:
 
 ```xml
 /content/myblog/posts/iphone_shipping/attachments/front.jpg

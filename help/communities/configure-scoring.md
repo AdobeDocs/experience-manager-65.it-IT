@@ -12,11 +12,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 0%
-
+source-wordcount: '1011'
+ht-degree: 6%
 ---
-
 # Nozioni di base su punteggio e distintivi {#scoring-and-badges-essentials}
 
 La funzione di punteggio e badge di AEM Communities identifica e premia i membri della community.
@@ -106,15 +104,15 @@ Per visualizzare le voci di registro:
 
 * Dalla console web
 
-   * Nel menu **Stato**
-   * Seleziona **File di registro**
-   * Cercare il nome del file di registro, ad esempio `scoring-debug`
+  * Nel menu **Stato**
+  * Seleziona **File di registro**
+  * Cercare il nome del file di registro, ad esempio `scoring-debug`
 
 * Sul disco locale del server
 
-   * Il file di registro si trova in &lt;*server-install-dir*>/crx-quickstart/logs/&lt;*log-file-name*>.log
+  * Il file di registro si trova in &lt;*server-install-dir*>/crx-quickstart/logs/&lt;*log-file-name*>.log
 
-   * Ad esempio `.../crx-quickstart/logs/scoring-debug.log`
+  * Ad esempio `.../crx-quickstart/logs/scoring-debug.log`
 
 ![registro punteggio](assets/scoring-log.png)
 
@@ -122,7 +120,7 @@ Per visualizzare le voci di registro:
 
 È possibile visualizzare il UGC relativo al punteggio e al contrassegno quando l’SRP scelto è JSRP o MSRP, ma non ASRP. (Se non conosci questi termini, consulta [Archiviazione dei contenuti della community](/help/communities/working-with-srp.md) e [Panoramica del provider di risorse di archiviazione](/help/communities/srp.md).)
 
-Le descrizioni per l&#39;accesso ai dati di punteggio e contrassegno utilizzano JSRP, in quanto l&#39;UGC è facilmente accessibile utilizzando [CRXDE Liti](/help/sites-developing/developing-with-crxde-lite.md).
+Le descrizioni per l&#39;accesso ai dati di punteggio e contrassegno utilizzano JSRP, in quanto l&#39;UGC è facilmente accessibile utilizzando [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 **JSRP su author**: la sperimentazione nell&#39;ambiente di authoring genera un UGC visibile solo dall&#39;ambiente di authoring.
 
@@ -143,7 +141,7 @@ Gli ultimi JavaScript per il feature pack installato sono disponibili per gli sv
 
 ### Esempio di configurazione {#example-setup}
 
-Le schermate dei dati dell&#39;archivio provengono dall&#39;impostazione del punteggio e del badge per un forum su due diversi siti AEM:
+Le schermate dei dati dell&#39;archivio provengono dall&#39;impostazione di punteggi e badge per un forum su due siti AEM diversi:
 
 1. Un sito AEM *con* un ID univoco (sito community creato tramite procedura guidata):
 

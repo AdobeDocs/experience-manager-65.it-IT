@@ -1,26 +1,28 @@
 ---
-title: Accesso WebDAV
-description: Scopri come accedere a Adobe Experience Manager utilizzando WebDAV.
+title: Accesso WebDav
+
+description: Scopri come accedere ad Adobe Experience Manager utilizzando WebDAV.
+
+
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
 content-type: reference
+
 exl-id: 891ee66c-e49c-4561-8fef-e6e448a8aa1c
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1123'
 ht-degree: 1%
-
 ---
+# Accesso WebDav{#webdav-access}
 
-# Accesso WebDAV{#webdav-access}
+Per connettersi ad AEM tramite WebDAV con KDE:
 
-Per connettersi all’AEM tramite WebDAV con KDE:
-
-AEM offre il supporto WebDAV che consente di visualizzare e modificare il contenuto dell&#39;archivio. La connessione tramite WebDAV consente l&#39;accesso diretto all&#39;archivio dei contenuti attraverso il desktop. I file di testo e PDF aggiunti al repository tramite la connessione WebDAV vengono automaticamente indicizzati in formato full-text e possono essere cercati con le interfacce di ricerca standard e tramite le API Java™ standard.
+AEM offre il supporto WebDAV che consente di visualizzare e modificare il contenuto dell’archivio. La connessione tramite WebDAV consente l&#39;accesso diretto all&#39;archivio dei contenuti attraverso il desktop. I file di testo e PDF aggiunti all’archivio tramite la connessione WebDAV vengono automaticamente indicizzati in formato full-text e possono essere cercati con le interfacce di ricerca standard e tramite le API Java™ standard.
 
 ## Generale {#general}
 
@@ -82,7 +84,7 @@ L&#39;URL del server WebDAV ha la seguente struttura:
   <tr>
    <td><strong>Descrizione</strong></td>
    <td>Host e porta su cui viene eseguito AEM</td>
-   <td>Percorso per l’app web dell’archivio AEM</td>
+   <td>Percorso per l’app web dell’archivio di AEM</td>
    <td>Percorso a cui è mappato il servlet WebDAV</td>
    <td>Nome dell’area di lavoro</td>
   </tr>
@@ -103,13 +105,13 @@ Vengono fornite istruzioni su come collegare i seguenti sistemi operativi:
 
 * [Windows](/help/sites-administering/webdav-access.md#windows)
 * [macOS](/help/sites-administering/webdav-access.md#macos)
-* [Linux](/help/sites-administering/webdav-access.md#linux)
+* [Linux®](/help/sites-administering/webdav-access.md#linux)
 
 ### Windows {#windows}
 
-Per connettere correttamente un sistema Microsoft® Windows 7 (e versioni successive) a un&#39;istanza AEM non protetta con SSL, l&#39;opzione per stabilire l&#39;autenticazione di base su una rete non protetta deve essere abilitata in modo esplicito in Windows. Questa funzionalità richiede una modifica nel Registro di sistema di Windows di WebClient.
+Per connettere correttamente un sistema Microsoft® Windows 7 (e versioni successive) a un&#39;istanza di AEM non protetta con SSL, l&#39;opzione per stabilire l&#39;autenticazione di base su una rete non protetta deve essere abilitata in modo esplicito in Windows. Questa funzionalità richiede una modifica nel Registro di sistema di Windows di WebClient.
 
-Una volta aggiornato il Registro di sistema, è possibile mappare l&#39;istanza AEM come un&#39;unità.
+Una volta aggiornato il Registro di sistema, è possibile mappare l’istanza AEM come unità.
 
 #### Configurazione Windows 7 e versioni successive {#windows-and-greater-configuration}
 
@@ -129,7 +131,7 @@ Per aggiornare il Registro di sistema in modo da consentire l&#39;autenticazione
 
 >[!NOTE]
 >
->In questo Adobe si consiglia di creare un utente Windows con le stesse credenziali dell&#39;utente del repository, in caso contrario potrebbero verificarsi conflitti di autorizzazioni.
+>Adobe consiglia di creare un utente di Windows con le stesse credenziali dell&#39;utente del repository, altrimenti potrebbero verificarsi conflitti di autorizzazioni.
 
 #### Configurazione Windows 8 {#windows-configuration}
 
@@ -141,7 +143,7 @@ Dopo il riavvio, è disponibile la voce del Registro di sistema descritta per Wi
 
 #### Connessione in Windows {#connecting-in-windows}
 
-Per connettersi all&#39;AEM tramite WebDAV in un ambiente Windows:
+Per connettersi a AEM tramite WebDAV in un ambiente Windows:
 
 1. Apri **Esplora risorse** o **Esplora risorse** e fai clic su **Computer** o **Questo PC**.
 
@@ -160,9 +162,9 @@ Per connettersi all&#39;AEM tramite WebDAV in un ambiente Windows:
 
    >[!NOTE]
    >
-   >Se l&#39;AEM si trova su un&#39;altra porta, utilizzare il numero di porta anziché 4502. Inoltre, se non si esegue l&#39;archivio dei contenuti nel computer locale, sostituire `localhost` con il nome del server o l&#39;indirizzo IP corrispondente.
+   >Se AEM si trova su un’altra porta, utilizza tale numero di porta invece di 4502. Inoltre, se non si esegue l&#39;archivio dei contenuti nel computer locale, sostituire `localhost` con il nome del server o l&#39;indirizzo IP corrispondente.
 
-1. Immettere nome utente `admin` e password `admin`. L’Adobe consiglia di utilizzare l’account admin preconfigurato per il test.
+1. Immettere nome utente `admin` e password `admin`. Adobe consiglia di utilizzare l’account admin preconfigurato per i test.
 
    ![chlimage_1-114](assets/chlimage_1-114a.png)
 
@@ -170,24 +172,24 @@ Per connettersi all&#39;AEM tramite WebDAV in un ambiente Windows:
 
    ![chlimage_1-115](assets/chlimage_1-115a.png)
 
-Windows ha ora mappato l&#39;AEM come unità tramite WebDAV e può essere utilizzato come qualsiasi altra unità.
+AEM è ora mappato come unità tramite WebDAV e può essere utilizzato come qualsiasi altra unità.
 
 ### macOS {#macos}
 
 Non sono necessari passaggi di configurazione per la connessione tramite WebDAV su macOS. È possibile connettersi al server WebDAV.
 
 1. Passare a una finestra di **Finder** e fare clic su **Vai** e **Connetti al server** oppure premere **Comando+k**.
-1. Nella finestra **Connetti al server**, immettere il percorso AEM:
+1. Nella finestra **Connetti al server**, immettere il percorso di AEM:
 
    * `http://localhost:4502`
 
    >[!NOTE]
    >
-   >Se l&#39;AEM si trova su un&#39;altra porta, utilizzare il numero di porta anziché 4502. Inoltre, se non si esegue l&#39;archivio dei contenuti nel computer locale, sostituire `localhost` con il nome del server o l&#39;indirizzo IP corrispondente.
+   >Se AEM si trova su un’altra porta, utilizza tale numero di porta invece di 4502. Inoltre, se non si esegue l&#39;archivio dei contenuti nel computer locale, sostituire `localhost` con il nome del server o l&#39;indirizzo IP corrispondente.
 
-1. Quando viene richiesta l&#39;autenticazione, immettere il nome utente `admin` e la password `admin`. L’Adobe consiglia di utilizzare l’account admin preconfigurato per il test.
+1. Quando viene richiesta l&#39;autenticazione, immettere il nome utente `admin` e la password `admin`. Adobe consiglia di utilizzare l’account admin preconfigurato per i test.
 
-macOS è ora connesso all&#39;AEM tramite WebDAV e può essere utilizzato come qualsiasi altra cartella sul Mac.
+macOS è ora connesso ad AEM tramite WebDAV e può essere utilizzato come qualsiasi altra cartella sul Mac.
 
 ### Linux® {#linux}
 
@@ -195,7 +197,7 @@ La connessione tramite WebDAV su Linux® non richiede alcuna configurazione, ma 
 
 #### GNOME {#gnome}
 
-Per connettersi all&#39;AEM tramite WebDAV con GNOME:
+Per connettersi ad AEM tramite WebDAV con GNOME:
 
 1. In Nautilus (Esplora file), selezionare **Places** e **Connetti al server**.
 1. Nella finestra **Connetti al server**, selezionare WebDAV (HTTP) in Tipo di servizio.
@@ -204,31 +206,31 @@ Per connettersi all&#39;AEM tramite WebDAV con GNOME:
 
    >[!NOTE]
    >
-   >Se l&#39;AEM si trova su un&#39;altra porta, utilizzare il numero di porta anziché 4502. Inoltre, se non si esegue l&#39;archivio dei contenuti nel computer locale, sostituire `localhost` con il nome del server o l&#39;indirizzo IP corrispondente.
+   >Se AEM si trova su un’altra porta, utilizza tale numero di porta invece di 4502. Inoltre, se non si esegue l&#39;archivio dei contenuti nel computer locale, sostituire `localhost` con il nome del server o l&#39;indirizzo IP corrispondente.
 
 1. In **Cartella**, immetti `/dav`
-1. Immettere il nome utente `admin`. L’Adobe consiglia di utilizzare l’account admin preconfigurato per il test.
+1. Immettere il nome utente `admin`. Adobe consiglia di utilizzare l’account admin preconfigurato per i test.
 1. Lascia vuota la porta e immetti un nome per la connessione.
-1. Fai clic su **Connetti**. L&#39;AEM richiede la password.
+1. Fai clic su **Connetti**. AEM richiede la password.
 1. Immettere la password `admin` e fare clic su **Connetti**.
 
-GNOME ha ora montato AEM come volume e puoi usarlo come qualsiasi altro volume.
+GNOME ha ora montato AEM come volume e puoi utilizzarlo come qualsiasi altro volume.
 
 #### KDE {#kde}
 
 1. Aprire la Creazione guidata cartella di rete.
 1. Selezionare **WebFolder**(webdav) e fare clic su Avanti.
 1. In **Nome** digitare un nome di connessione.
-1. In **Utente**, immetti `admin.` Adobe consiglia di utilizzare l&#39;account amministratore preconfigurato.
+1. In **Utente**, immetti `admin.`. Adobe consiglia di utilizzare l&#39;account amministratore preconfigurato.
 1. In **Server**, immettere `http://localhost:4502/crx/repository/crx.default`
 
    >[!NOTE]
    >
-   >Se l&#39;AEM si trova su un&#39;altra porta, utilizzare il numero di porta anziché 4502. Inoltre, se non si esegue l&#39;archivio dei contenuti nel computer locale, sostituire `localhost` con il nome del server o l&#39;indirizzo IP corrispondente
+   >Se AEM si trova su un’altra porta, utilizza tale numero di porta invece di 4502. Inoltre, se non si esegue l&#39;archivio dei contenuti nel computer locale, sostituire `localhost` con il nome del server o l&#39;indirizzo IP corrispondente
 
 1. In **Cartella**, immetti `dav`
 
 1. Fai clic su **Salva e connetti**.
 1. Quando viene richiesta la password, immettere la password `admin` e fare clic su **Connetti**.
 
-KDE ha ora montato AEM come volume e puoi utilizzarlo come qualsiasi altro volume.
+KDE ora ha montato AEM come volume e puoi utilizzarlo come qualsiasi altro volume.

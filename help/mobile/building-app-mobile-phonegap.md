@@ -1,30 +1,30 @@
 ---
 title: Creazione di applicazioni mobili
-description: Questa pagina fornisce un articolo completo e dettagliato su come creare un’app mobile utilizzando il codice disponibile su GitHub. Crea l’applicazione da installare su un dispositivo o simulatore per test o per la pubblicazione in app store. Puoi creare applicazioni localmente utilizzando l'interfaccia della riga di comando di PhoneGap o nel cloud utilizzando PhoneGap Build.
+description: Questa pagina fornisce un articolo completo e dettagliato su come creare un’app mobile utilizzando il codice disponibile su GitHub. Crea l’applicazione da installare su un dispositivo o simulatore per test o per la pubblicazione in app store. Puoi creare applicazioni localmente utilizzando l'interfaccia della riga di comando PhoneGap o nel cloud utilizzando PhoneGap Build.
+
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
+
 exl-id: 7c2e5ed8-9f8e-4a81-b736-589ef4089f29
 solution: Experience Manager
 feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1053'
 ht-degree: 0%
-
 ---
-
 # Creazione di applicazioni mobili{#building-mobile-applications}
 
 {{ue-over-mobile}}
 
-Crea l’applicazione da installare su un dispositivo o simulatore per test o per la pubblicazione in app store. Puoi creare applicazioni localmente utilizzando l&#39;interfaccia della riga di comando di PhoneGap o nel cloud utilizzando PhoneGap Build.
+Crea l’applicazione da installare su un dispositivo o simulatore per test o per la pubblicazione in app store. Puoi creare applicazioni localmente utilizzando l&#39;interfaccia della riga di comando PhoneGap o nel cloud utilizzando PhoneGap Build.
 
 Un articolo completo e dettagliato su come creare un&#39;app mobile utilizzando il codice disponibile da GitHub è disponibile [qui](https://helpx.adobe.com/experience-manager/using/aem62_mobile.html).
 
-## Spostamento dell’applicazione nell’istanza di Publish {#moving-the-application-to-the-publish-instance}
+## Spostamento dell’applicazione nell’istanza di pubblicazione {#moving-the-application-to-the-publish-instance}
 
 Sposta i file dell’applicazione nell’istanza di pubblicazione in modo da poter fornire aggiornamenti del contenuto alle istanze installate dell’app mobile e da generare l’applicazione utilizzando il contenuto pubblicato. Le applicazioni sono costituite da due rami di nodo nell’archivio:
 
@@ -37,7 +37,7 @@ Sposta i file dell’applicazione nell’istanza di pubblicazione in modo da pot
 
 È sufficiente spostare i file nel ramo `/content/phonegap/content/<application name>` nell&#39;istanza Publish. I file nel ramo `/content/phonegap/apps/<application name>` vengono spostati quando l&#39;autore attiva le pagine.
 
-L’AEM fornisce due metodi per spostare contenuti in blocco nell’istanza Publish:
+AEM fornisce due metodi per spostare i contenuti in blocco nell’istanza Publish:
 
 * [Utilizzare il comando Attiva struttura](/help/sites-authoring/publishing-pages.md) nella console di replica.
 * [Creare un pacchetto](/help/sites-administering/package-manager.md) contenente il contenuto e replicare il pacchetto.
@@ -50,7 +50,7 @@ Ad esempio, viene creata un’app mobile denominata phonegapapp. Il seguente nod
 
 ## Generazione tramite l&#39;interfaccia della riga di comando PhoneGap {#building-using-the-phonegap-command-line-interface}
 
-Compilare l&#39;applicazione PhoneGap sul computer utilizzando l&#39;interfaccia della riga di comando (CLI) di PhoneGap. Per includere il contenuto dell’AEM nell’applicazione, AEM crea un file ZIP contenente il contenuto dell’app mobile, le configurazioni di sincronizzazione dei contenuti e altre risorse richieste. Scarica il file ZIP e includilo nella build.
+Compilare l&#39;applicazione PhoneGap sul computer utilizzando l&#39;interfaccia della riga di comando (CLI) di PhoneGap. Per includere il contenuto di AEM nell’applicazione, AEM crea un file ZIP contenente il contenuto dell’app mobile, le configurazioni di sincronizzazione dei contenuti e altre risorse richieste. Scarica il file ZIP e includilo nella build.
 
 ### Preparazione dell’ambiente di build {#preparing-your-build-environment}
 
@@ -123,24 +123,24 @@ Utilizza PhoneGap CLI per compilare e installare l’applicazione. Per informazi
    phonegap build android
    ```
 
-## Edificio Con PhoneGap Build {#building-using-phonegap-build}
+## Generazione tramite PhoneGap Build {#building-using-phonegap-build}
 
-Usa il servizio cloud PhoneGap per creare la tua app. Per eseguire questa procedura, è necessario innanzitutto creare una configurazione di PhoneGap Build.
+Usa il servizio cloud PhoneGap per creare la tua app. Per eseguire questa procedura, devi prima creare una configurazione di PhoneGap Build.
 
 ### Connessione a PhoneGap Build {#connecting-to-phonegap-build}
 
-Creare una configurazione di PhoneGap Build in modo da poter utilizzare i servizi PhoneGap Build dall&#39;AEM. Fornisci il nome utente e la password dell’account PhoneGap Build che utilizzerai per creare le tue app mobili.
+Crea una configurazione di PhoneGap Build per poter utilizzare i servizi PhoneGap Build da AEM. Specifica il nome utente e la password dell&#39;account PhoneGap Build che userai per creare le tue app mobili.
 
 1. Apri la pagina Strumenti. ([http://localhost:4502/tools.html](http://localhost:4502/tools.html)).
-1. Nell&#39;area Operazioni CQ fare clic su Cloud Service.
-1. Fare clic sul collegamento Configura ora per la PhoneGap Build.
+1. Nell’area Operazioni CQ, fai clic su Servizi cloud.
+1. Fai clic sul collegamento Configura ora per PhoneGap Build.
 
    ![chlimage_1-17](assets/chlimage_1-17.png)
 
 1. Nella finestra di dialogo Crea configurazione digitare un valore per la proprietà Titolo. Per impostazione predefinita, il valore della proprietà Name è derivato dal titolo, tuttavia è possibile immettere un nome. Fai clic su Crea.
-1. Nella finestra di dialogo Configurazione PhoneGap Build digitare il nome utente e la password della PhoneGap Build e quindi fare clic su OK.
+1. Nella finestra di dialogo Configurazione PhoneGap Build, digita il nome utente e la password di PhoneGap Build, quindi fai clic su OK.
 
-### Utilizzo delle PhoneGap Build {#using-phonegap-build}
+### Utilizzo di PhoneGap Build {#using-phonegap-build}
 
 Invia le risorse della tua applicazione a PhoneGap Build per la compilazione per le varie piattaforme mobili.
 
@@ -159,13 +159,13 @@ Invia le risorse della tua applicazione a PhoneGap Build per la compilazione per
 
    **Nota:** la versione Beta di AEM Beta non crea una notifica casella in entrata al completamento della compilazione.
 
-1. Nella finestra di dialogo Operazione completata, fare clic su PhoneGap Build per aprire la pagina Adobe PhoneGap Build in `https://build.phonegap.com/apps`. Se stai aspettando che l&#39;app venga visualizzata, puoi controllare lo stato della PhoneGap Build in `https://status.build.phonegap.com/`.
+1. Nella finestra di dialogo Operazione completata, fai clic su PhoneGap Build per aprire la pagina Adobe PhoneGap Build in `https://build.phonegap.com/apps`. Se stai aspettando che l&#39;app venga visualizzata, puoi controllare lo stato di PhoneGap Build all&#39;indirizzo `https://status.build.phonegap.com/`.
 
-   Per informazioni sull&#39;installazione della build, vedere la [documentazione della PhoneGap Build](https://github.com/phonegap/phonegap-docs/tree/master/docs/4-phonegap-build).
+   Per informazioni sull&#39;installazione della build, consulta la [documentazione di PhoneGap Build](https://github.com/phonegap/phonegap-docs/tree/master/docs/4-phonegap-build).
 
    >[!NOTE]
    >
-   >Gli account di PhoneGap Build gratuiti sono consentiti in un&#39;applicazione privata. Le build di PhoneGap non riescono se si sta creando un&#39;ulteriore applicazione privata.
+   >Gli account PhoneGap Build gratuiti sono consentiti per un&#39;applicazione privata. Le build di PhoneGap non riescono se si sta creando un&#39;ulteriore applicazione privata.
 
 ### Passaggi successivi {#the-next-steps}
 

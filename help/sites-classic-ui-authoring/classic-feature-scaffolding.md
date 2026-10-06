@@ -14,12 +14,10 @@ source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '1418'
 ht-degree: 0%
-
 ---
-
 # Scaffolding{#scaffolding}
 
-A volte può essere necessario creare un set di pagine di grandi dimensioni con una struttura comune ma contenuti diversi. Tramite l’interfaccia standard di Adobe Experience Manager (AEM), è necessario creare ogni pagina, trascinare i componenti appropriati nella pagina e compilarli singolarmente.
+A volte può essere necessario creare un set di pagine di grandi dimensioni con una struttura comune ma contenuti diversi. Tramite l’interfaccia standard di Adobe Experience Manager (AEM), dovrai creare ogni pagina, trascinare i componenti appropriati nella pagina e compilarli singolarmente.
 
 Con lo scaffolding è possibile creare un modulo (uno scaffold) con campi che riflettono la struttura desiderata per le pagine e quindi utilizzare questo modulo per creare facilmente pagine basate su questa struttura.
 
@@ -33,7 +31,7 @@ Gli scaffold sono archiviati nella console **Strumenti** dell&#39;amministratore
 
 * Apri la console **Strumenti** e fai clic su **Scaffolding pagine predefinito**.
 * Fare clic su **Geometrixx**.
-* In **Geometrixx** è presente una *pagina di scaffolding* denominata **Notizie**. Fare doppio clic per aprire la pagina.
+* In **Geometrixx** è presente una *pagina di scaffolding* denominata **News**. Fare doppio clic per aprire la pagina.
 
 ![lavoro_scaffold](assets/howscaffolds_work.png)
 
@@ -118,7 +116,7 @@ Poiché il testo deve essere interpretato come testo RTF, specificare la proprie
 
 >[!CAUTION]
 >
->L&#39;editor di finestre di dialogo consente all&#39;utente di modificare i valori delle proprietà *esistenti* nella definizione della finestra di dialogo. Per aggiungere una nuova proprietà, è necessario utilizzare [CRXDE Liti](/help/sites-developing/developing-with-crxde-lite.md). Ad esempio, quando un nuovo campo nascosto viene aggiunto a una definizione di finestra di dialogo con l&#39;editor di finestre di dialogo, non dispone di una proprietà *value* (ovvero, una proprietà con il nome &quot;value&quot;). Se il campo nascosto in questione richiede l&#39;impostazione di una proprietà di valore predefinita, questa proprietà deve essere aggiunta manualmente con uno degli strumenti di CRX. Impossibile aggiungere il valore con l’editor di finestre di dialogo stesso. Tuttavia, una volta presente la proprietà, il relativo valore può essere modificato con l’editor di finestre di dialogo.
+>L&#39;editor di finestre di dialogo consente all&#39;utente di modificare i valori delle proprietà *esistenti* nella definizione della finestra di dialogo. Per aggiungere una nuova proprietà, è necessario utilizzare [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Ad esempio, quando un nuovo campo nascosto viene aggiunto a una definizione di finestra di dialogo con l&#39;editor di finestre di dialogo, non dispone di una proprietà *value* (ovvero, una proprietà con il nome &quot;value&quot;). Se il campo nascosto in questione richiede l&#39;impostazione di una proprietà di valore predefinita, questa proprietà deve essere aggiunta manualmente con uno degli strumenti di CRX. Impossibile aggiungere il valore con l’editor di finestre di dialogo stesso. Tuttavia, una volta presente la proprietà, il relativo valore può essere modificato con l’editor di finestre di dialogo.
 
 Per visualizzare il secondo campo nascosto, fai clic su di esso in questo modo:
 

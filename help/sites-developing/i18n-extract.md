@@ -1,22 +1,24 @@
 ---
-title: Estrazione di stringhe per la traduzione
+title: Estrazione delle stringhe per la traduzione
+
 description: Utilizza xgettext-maven-plugin per estrarre le stringhe dal codice sorgente che richiedono la traduzione
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
+
 exl-id: 4acc5f7f-0bcb-4b5a-8531-52e146cffeae
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 0%
-
+source-wordcount: '482'
+ht-degree: 2%
 ---
-
-# Estrazione di stringhe per la traduzione{#extracting-strings-for-translating}
+# Estrazione delle stringhe per la traduzione{#extracting-strings-for-translating}
 
 Utilizza xgettext-maven-plugin per estrarre le stringhe dal codice sorgente che devono essere tradotte. Il plug-in Maven estrae le stringhe in un file XLIFF che invii per la traduzione. Le stringhe vengono estratte dalle seguenti posizioni:
 
@@ -66,10 +68,10 @@ La parte pattern di una regola viene utilizzata per far corrispondere i nomi dei
 | Prefisso | Effetto |
 |---|---|
 | / | Indica un percorso JCR. Pertanto, questo prefisso corrisponde ai file sotto la directory jcr_root. |
-| &ast; | Indica un file normale nel file system. |
+| &amp;ast; | Indica un file normale nel file system. |
 | nessuno | Nessun prefisso o pattern che inizia con una cartella o un nome di file indica un file normale nel file system. |
 
-Se utilizzato all&#39;interno di un pattern, il carattere / indica una sottodirectory e il carattere &ast; corrisponde a tutti. Nella tabella seguente sono elencati diversi esempi di regole.
+Se utilizzato all’interno di un pattern, il carattere / indica una sottodirectory e il carattere &amp;ast; corrisponde a tutto. Nella tabella seguente sono elencati diversi esempi di regole.
 
 <table>
  <tbody>

@@ -12,11 +12,9 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1601'
+source-wordcount: '1585'
 ht-degree: 2%
-
 ---
-
 # Modelli di pagina - Statici{#page-templates-static}
 
 Un modello viene utilizzato per creare una pagina e definisce quali componenti possono essere utilizzati all’interno dell’ambito selezionato. Un modello è una gerarchia di nodi con la stessa struttura della pagina da creare, ma senza alcun contenuto effettivo.
@@ -103,7 +101,7 @@ Un modello è la base di una pagina.
 
 Per creare una pagina, è necessario copiare il modello (albero dei nodi `/apps/<myapp>/template/<mytemplate>`) nella posizione corrispondente nell&#39;albero del sito: questo è ciò che accade se una pagina viene creata utilizzando la scheda **Siti Web**.
 
-Questa azione di copia fornisce anche alla pagina il suo contenuto iniziale (in genere solo Contenuto di primo livello) e la proprietà sling:resourceType, il percorso del componente pagina utilizzato per il rendering della pagina (tutto ciò che si trova nel nodo figlio jcr:content).
+Questa azione di copia fornisce anche alla pagina il suo contenuto iniziale (in genere solo Contenuto di primo livello) e la proprietà sling:resourceType, il percorso del componente page utilizzato per eseguire il rendering della pagina (tutto ciò che si trova nel nodo figlio jcr:content).
 
 ## Struttura dei modelli {#how-templates-are-structured}
 
@@ -121,7 +119,7 @@ Un modello viene creato in un nodo di tipo **cq:Template**.
 È possibile impostare varie proprietà, in particolare:
 
 * **jcr:title** - titolo del modello; viene visualizzato nella finestra di dialogo durante la creazione di una pagina.
-* **jcr:description** - descrizione del modello; viene visualizzato nella finestra di dialogo durante la creazione di una pagina.
+* **jcr:description** - descrizione del modello; viene visualizzata nella finestra di dialogo durante la creazione di una pagina.
 
 Questo nodo contiene un nodo jcr:content (cq:PageContent) che viene utilizzato come base per il nodo del contenuto delle pagine risultanti; questo fa riferimento, utilizzando sling:resourceType, al componente da utilizzare per il rendering del contenuto effettivo di una nuova pagina.
 
@@ -133,7 +131,7 @@ Questo componente viene utilizzato per definire la struttura del contenuto quand
 
 ### Contenuto prodotto da un modello {#the-content-produced-by-a-template}
 
-I modelli vengono utilizzati per creare pagine di tipo `cq:Page` (come indicato in precedenza, una pagina è un tipo speciale di componente). Ogni pagina AEM ha un nodo strutturato `jcr:content`. Tale comportamento:
+I modelli vengono utilizzati per creare pagine di tipo `cq:Page` (come indicato in precedenza, una pagina è un tipo speciale di componente). Ogni pagina di AEM ha un nodo strutturato `jcr:content`. Tale comportamento:
 
 * è di tipo cq:PageContent
 * è un tipo di nodo strutturato contenente una definizione di contenuto definita
@@ -141,14 +139,14 @@ I modelli vengono utilizzati per creare pagine di tipo `cq:Page` (come indicato 
 
 ### Modelli predefiniti {#default-templates}
 
-AEM viene fornito con vari modelli predefiniti disponibili. A volte può essere utile utilizzare i modelli così come sono. In tal caso, è necessario assicurarsi che il modello sia disponibile per il sito Web.
+AEM viene fornito con diversi modelli predefiniti disponibili. A volte può essere utile utilizzare i modelli così come sono. In tal caso, è necessario assicurarsi che il modello sia disponibile per il sito Web.
 
-Ad esempio, l’AEM viene fornito con diversi modelli, tra cui una pagina di contenuto e una pagina Home.
+Ad esempio, AEM è dotato di diversi modelli, tra cui una pagina di contenuto e una pagina Home.
 
 | **Titolo** | **Component** | **Dove si trova** | **Scopo** |
 |---|---|---|---|
-| Pagina home | homepage | geometrix | Il modello della home page del Geometrixx. |
-| Pagina contenuto | contentpage | geometrix | Il modello della pagina di contenuto del Geometrixx. |
+| Pagina home | homepage | geometrix | Il modello della home page di Geometrixx. |
+| Pagina contenuto | contentpage | geometrix | Modello per pagina di contenuto Geometrixx. |
 
 #### Visualizzazione dei modelli predefiniti {#displaying-default-templates}
 
@@ -159,7 +157,7 @@ Per visualizzare un elenco di tutti i modelli nel repository, procedere come seg
 1. Nella scheda Query
 1. Come **Tipo**, selezionare **XPath**.
 
-1. Nel campo di input **Query** immettere la stringa seguente:
+1. Nel campo di inserimento **Query**, immetti la stringa seguente:
 //element(&#42;, cq:Template)
 
 1. Fare clic su **Esegui**. L&#39;elenco viene visualizzato nella casella dei risultati.
@@ -174,7 +172,7 @@ Quando gli stili vengono definiti nell&#39;interfaccia utente tramite [Modalità
 
 >[!CAUTION]
 >
->L&#39;Adobe consiglia di applicare solo le progettazioni tramite [Modalità progettazione](/help/sites-authoring/default-components-designmode.md).
+>Adobe consiglia di applicare le progettazioni solo tramite [Modalità progettazione](/help/sites-authoring/default-components-designmode.md).
 >
 >La modifica dei progetti in CRXDE Lite, ad esempio, non è una best practice e l’applicazione di tali progetti può variare rispetto al comportamento previsto.
 
@@ -184,7 +182,7 @@ Se le progettazioni vengono applicate solo utilizzando la modalità Progettazion
 
 Quando si esegue il rendering del contenuto basato su un modello statico, AEM tenta di applicare la progettazione e gli stili più rilevanti al contenuto in base a un attraversamento della gerarchia dei contenuti.
 
-L’AEM determina lo stile più rilevante per un nodo di contenuto nel seguente ordine:
+AEM determina lo stile più rilevante per un nodo di contenuto nell’ordine seguente:
 
 * Se è presente una progettazione per il percorso completo ed esatto del nodo di contenuto (come quando la progettazione è definita in modalità Progettazione), utilizza tale progettazione.
 * Se è presente una progettazione per il nodo di contenuto dell’elemento padre, utilizza tale progettazione.
@@ -204,7 +202,7 @@ Considera una semplice struttura di contenuto come segue, in cui una progettazio
 
 `/root/branch/leaf`
 
-Nella tabella seguente viene descritto il modo in cui l&#39;AEM sceglie una struttura.
+La tabella seguente descrive come AEM sceglie una progettazione.
 
 <table>
  <tbody>
@@ -269,7 +267,7 @@ I modelli di pagina AEM sono semplicemente modelli utilizzati per creare pagine.
 
 ### Creazione di un modello (basato su un modello esistente) {#creating-a-new-template-based-on-an-existing-template}
 
-Un nuovo modello può essere creato completamente da zero, ma spesso viene copiato e aggiornato un modello esistente per risparmiare tempo e fatica. Ad esempio, puoi utilizzare i modelli all’interno di Geometrixx per iniziare.
+Un nuovo modello può essere creato completamente da zero, ma spesso viene copiato e aggiornato un modello esistente per risparmiare tempo e fatica. Ad esempio, puoi utilizzare i modelli in Geometrixx per iniziare.
 
 Per creare un modello basato su un modello esistente:
 
@@ -281,7 +279,7 @@ Per creare un modello basato su un modello esistente:
    >
    >L’elenco dei modelli disponibili dipende dalla posizione della nuova pagina e dalle restrizioni sul posizionamento specificate in ciascun modello. Vedi [Disponibilità del modello](#templateavailibility).
 
-1. Modifica il **jcr:title** del nuovo nodo modello in modo che rifletta il nuovo ruolo. Se necessario, puoi anche aggiornare **jcr:description**. Assicurati di modificare la disponibilità del modello della pagina in modo appropriato.
+1. Modifica **jcr:title** del nuovo nodo modello in base al nuovo ruolo. Se necessario, puoi anche aggiornare **jcr:description**. Assicurati di modificare la disponibilità del modello della pagina in modo appropriato.
 
    >[!NOTE]
    >
@@ -319,7 +317,7 @@ Per creare un modello basato su un modello esistente:
 
 Questo esempio illustra come consentire l’utilizzo di un modello per determinati percorsi di contenuto. I modelli disponibili per l&#39;autore della pagina durante la creazione delle pagine sono determinati dalla logica definita in [Disponibilità modello](/help/sites-developing/templates.md#template-availability).
 
-1. In CRXDE Lite, individua il modello da utilizzare per la pagina, ad esempio il modello Newsletter.
+1. In CRXDE Lite, individua il modello da utilizzare per la pagina, ad esempio il modello della newsletter.
 1. Modificare la proprietà `allowedPaths` e altre proprietà utilizzate per [disponibilità modello](/help/sites-developing/templates.md#template-availability). Ad esempio, `allowedPaths`: `/content/geometrixx-outdoors/[^/]+(/.*)?` significa che questo modello è consentito in qualsiasi percorso in `/content/geometrixx-outdoors`.
 
    ![chlimage_1-89](assets/chlimage_1-89.png)

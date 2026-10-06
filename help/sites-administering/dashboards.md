@@ -1,6 +1,6 @@
 ---
 title: Dashboard
-description: Scopri come creare, configurare e sviluppare nuove dashboard per l’AEM.
+description: Scopri come creare, configurare e sviluppare nuove dashboard di AEM.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
@@ -11,18 +11,16 @@ feature: Administering
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '834'
 ht-degree: 4%
-
 ---
-
 # Dashboard{#dashboards}
 
-Quando si utilizza l’AEM, è possibile gestire numerosi contenuti di tipi diversi (ad esempio pagine, risorse). I dashboard dell’AEM offrono un modo semplice e personalizzabile di definire le pagine che visualizzano i dati consolidati.
+Quando utilizzi AEM, puoi gestire numerosi contenuti di tipi diversi (ad esempio pagine, risorse). Le dashboard di AEM offrono un modo semplice e personalizzabile di definire le pagine che visualizzano i dati consolidati.
 
 >[!NOTE]
 >
->I dashboard di AEM vengono creati in base all’utente, in modo che un utente possa accedere solo al proprio dashboard.
+>Le dashboard di AEM vengono create in base all’utente, pertanto un utente può accedere solo alla propria dashboard.
 >
 >Tuttavia, è possibile utilizzare [modelli di dashboard](#creating-a-dashboard-template) per condividere la configurazione e il layout del dashboard comuni.
 
@@ -66,11 +64,11 @@ Potrebbe essere necessario disporre di più dashboard per visualizzare rapidamen
 
 ### Panoramica {#overview}
 
-I componenti del dashboard non sono altro che [componenti AEM regolari](/help/sites-developing/developing-components-samples.md). Questa sezione descrive i componenti di reporting forniti con AEM.
+I componenti del dashboard non sono altro che normali [componenti AEM](/help/sites-developing/developing-components-samples.md). Questa sezione descrive i componenti di reporting forniti con AEM.
 
 ### Componenti di reporting di Web Analytics {#web-analytics-reporting-components}
 
-AEM viene fornito con un set di componenti che eseguono il rendering di più metriche dei dati del [SiteCatalyst](/help/sites-administering/adobeanalytics.md). Tali componenti sono elencati nel Sidekick nella sezione **Dashboard**.
+AEM viene fornito con un set di componenti che eseguono il rendering di più metriche dei dati di [SiteCatalyst](/help/sites-administering/adobeanalytics.md). Tali componenti sono elencati in Sidekick nella sezione **Dashboard**.
 
 Ogni componente di reporting fornisce almeno tre schede:
 
@@ -89,9 +87,9 @@ La scheda **Base** consente di accedere alle seguenti voci di configurazione:
 
 **Tipo di richiesta** Modalità di richiesta dei dati.
 
-**Configurazione SiteCatalyst (facoltativa)** Configurazione che si desidera utilizzare per connettersi al SiteCatalyst. Se non specificato, la configurazione viene considerata configurata nella pagina Dashboard (tramite le proprietà della pagina).
+**Configurazione SiteCatalyst (facoltativa)** Configurazione che si desidera utilizzare per connettersi a SiteCatalyst. Se non specificato, la configurazione viene considerata configurata nella pagina Dashboard (tramite le proprietà della pagina).
 
-**ID suite di rapporti (facoltativo)** la suite di rapporti di SiteCatalyst che desideri utilizzare per generare il grafico.
+**ID suite di rapporti (facoltativo)** la suite di rapporti SiteCatalyst che si desidera utilizzare per generare il grafico.
 
 #### Configurazione del rapporto {#report-configuration}
 
@@ -117,7 +115,7 @@ Ogni componente definisce anche impostazioni specifiche.
 
 **Elementi** L&#39;elenco di elementi che suddivide i dati delle metriche nel grafico.
 
-#### Report elenco classifica {#ranked-list-report}
+#### Rapporto elenco con ranking {#ranked-list-report}
 
 ![chlimage_1-27](assets/chlimage_1-27a.png)
 
@@ -127,7 +125,7 @@ Ogni componente definisce anche impostazioni specifiche.
 
 **No. di elementi principali** Numero di elementi visualizzati dal report.
 
-#### Report classifica {#ranked-report}
+#### Rapporto con ranking {#ranked-report}
 
 ![chlimage_1-28](assets/chlimage_1-28a.png)
 
@@ -173,7 +171,7 @@ I modelli del dashboard vengono creati come gli altri modelli di pagina, tranne 
 
 ### Sviluppo di un componente Dashboard {#developing-a-dashboard-component}
 
-Lo sviluppo di un componente Dashboard consiste nella creazione di un componente AEM regolare. Questa sezione descrive un esempio di un componente che visualizza i primi 10 collaboratori.
+Lo sviluppo di un componente Dashboard consiste nella creazione di un componente AEM normale. Questa sezione descrive un esempio di un componente che visualizza i primi 10 collaboratori.
 
 ![chlimage_1-31](assets/chlimage_1-31a.png)
 

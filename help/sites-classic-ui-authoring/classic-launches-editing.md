@@ -12,11 +12,9 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '293'
 ht-degree: 8%
-
 ---
-
 # Modifica dei lanci{#editing-launches}
 
 ## Modifica delle pagine di lancio {#editing-launch-pages}
@@ -45,9 +43,9 @@ Dopo aver creato un lancio, puoi modificare il nome del lancio e la data del lan
 
    * Nella scheda **Generale** è possibile modificare:
 
-      * **Titolo**
-      * **Data attivazione**: equivalente alla data di lancio
-      * **Pronto per la produzione**
+     * **Titolo**
+     * **Data attivazione**: equivalente alla data di lancio
+     * **Pronto per la produzione**
 
      Per informazioni sullo scopo e sull&#39;interazione di questi campi, vedere [Lanci - Ordine degli eventi](/help/sites-authoring/launches.md#launches-the-order-of-events).
 
@@ -57,7 +55,7 @@ Dopo aver creato un lancio, puoi modificare il nome del lancio e la data del lan
 
 ## Esplorazione dello stato di avvio di una pagina {#discovering-the-launch-status-of-a-page}
 
-Quando modifichi il lancio di una pagina, le informazioni relative al lancio vengono visualizzate nella parte inferiore della scheda **Controllo delle versioni** del Sidekick:
+Quando modifichi un lancio di una pagina, le informazioni su tale lancio vengono visualizzate nella parte inferiore della scheda **Controllo delle versioni** di Sidekick:
 
 * Nome del lancio.
 * L’ora dall’ultima modifica.

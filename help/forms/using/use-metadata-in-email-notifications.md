@@ -9,11 +9,9 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
 workflow-type: tm+mt
-source-wordcount: '871'
-ht-degree: 0%
-
+source-wordcount: '899'
+ht-degree: 2%
 ---
-
 # Utilizzare i metadati in una notifica e-mail {#use-metadata-in-an-email-notification}
 
 È possibile utilizzare il passaggio Assegna attività per creare e assegnare attività a un utente o a un gruppo. Quando un’attività viene assegnata a un utente o a un gruppo, viene inviata una notifica e-mail all’utente definito o a ciascun membro del gruppo definito. Una [notifica e-mail](../../forms/using/use-custom-email-template-assign-task-step.md) tipica contiene il collegamento dell&#39;attività assegnata e le informazioni relative all&#39;attività.
@@ -176,7 +174,7 @@ Puoi anche utilizzare metadati personalizzati in una notifica e-mail. I metadati
    }
    ```
 
-1. Fai clic su Salva tutto. Ora lo script è disponibile per la selezione nel modello di flusso di lavoro AEM.
+1. Fai clic su Salva tutto. Ora lo script è disponibile per la selezione nel modello di flusso di lavoro di AEM.
 
    ![assigntask-metadata](assets/assigntask-metadata.png)
 
@@ -197,7 +195,7 @@ Puoi anche utilizzare metadati personalizzati in una notifica e-mail. I metadati
 
 È possibile utilizzare l&#39;interfaccia Java WorkitemUserMetadataService per aggiungere metadati personalizzati per i modelli e-mail. Puoi creare un bundle OSGi che utilizza l’interfaccia Java WorkitemUserMetadataService e distribuirlo al server AEM Forms. Rende i metadati disponibili per la selezione nel passaggio Assegna attività.
 
-Per creare un bundle OSGi con interfaccia Java, aggiungi [AEM Forms Client SDK](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) e [granite jar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) file come dipendenze esterne al progetto del bundle OSGi. Puoi utilizzare qualsiasi IDE Java per creare un bundle OSGi. La procedura seguente descrive come utilizzare Eclipse per creare un bundle OSGi:
+Per creare un bundle OSGi con interfaccia Java, aggiungi [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) e [granite jar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) file come dipendenze esterne al progetto del bundle OSGi. Puoi utilizzare qualsiasi IDE Java per creare un bundle OSGi. La procedura seguente descrive come utilizzare Eclipse per creare un bundle OSGi:
 
 1. Aprire Eclipse IDE. Passa a File > Nuovo progetto.
 
@@ -247,6 +245,6 @@ Per creare un bundle OSGi con interfaccia Java, aggiungi [AEM Forms Client SDK](
 
    `mvn clean install`
 
-1. Carica il bundle su un server AEM Forms. Puoi utilizzare Gestione pacchetti AEM per importare il bundle nel server AEM Forms.
+1. Carica il bundle su un server AEM Forms. Puoi utilizzare Gestione pacchetti di AEM per importare il bundle nel server AEM Forms.
 
 Dopo l’importazione del bundle, puoi selezionare i metadati nel passaggio Assegna attività e utilizzarli come modello e-mail.

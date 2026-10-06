@@ -11,11 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '913'
 ht-degree: 18%
-
 ---
-
 # Conflitti di rollout MSM{#msm-rollout-conflicts}
 
 Possono verificarsi conflitti se nuove pagine con lo stesso nome vengono create sia nel ramo blueprint che in un ramo Live Copy dipendente.
@@ -48,7 +46,7 @@ Nelle sezioni seguenti è necessario utilizzare l&#39;esempio di una nuova pagin
 
   Pagina creata manualmente nel ramo Live Copy; con una pagina figlio, `lc-level-1`.
 
-   * Attivato al momento della pubblicazione come `/b`, insieme alla pagina figlio.
+  * Attivato al momento della pubblicazione come `/b`, insieme alla pagina figlio.
 
 **Prima del rollout**
 
@@ -84,20 +82,20 @@ Questa operazione viene eseguita utilizzando [Configurazione OSGi](/help/sites-d
 
   Impostato su true se il gestore di rollout deve gestire i conflitti da una pagina creata nella Live Copy con un nome esistente nella blueprint.
 
-L&#39;AEM ha [comportamento predefinito quando la gestione dei conflitti è stata disattivata](#behavior-when-conflict-handling-deactivated).
+AEM ha [comportamento predefinito quando la gestione dei conflitti è stata disattivata](#behavior-when-conflict-handling-deactivated).
 
 ## Gestori dei conflitti {#conflict-handlers}
 
-L’AEM utilizza gestori di conflitti per risolvere eventuali conflitti di pagina esistenti durante il rollout del contenuto da blueprint a Live Copy. La ridenominazione delle pagine è uno dei metodi più comuni per risolvere tali conflitti. Per consentire la selezione di diversi comportamenti, è possibile utilizzare più gestori di conflitti.
+AEM utilizza gestori di conflitti per risolvere eventuali conflitti di pagina esistenti durante il rollout del contenuto da blueprint a live copy. La ridenominazione delle pagine è uno dei metodi più comuni per risolvere tali conflitti. Per consentire la selezione di diversi comportamenti, è possibile utilizzare più gestori di conflitti.
 
 AEM fornisce:
 
 * Il [gestore di conflitti predefinito](#default-conflict-handler):
 
-   * `ResourceNameRolloutConflictHandler`
+  * `ResourceNameRolloutConflictHandler`
 
 * Possibilità di implementare un [gestore personalizzato](#customized-handlers).
-* Meccanismo di classificazione del servizio che consente di impostare la priorità di ogni singolo gestore. Viene utilizzato il servizio con la classificazione più alta.
+* Meccanismo di classificazione del servizio che consente di impostare la priorità di ogni singolo gestore. Viene utilizzato il servizio con il ranking più alto.
 
 ### Gestore dei conflitti predefinito {#default-conflict-handler}
 
@@ -106,7 +104,7 @@ Il gestore di conflitti predefinito:
 * Si chiama `ResourceNameRolloutConflictHandler`
 
 * Con questo gestore, la pagina blueprint ha la precedenza.
-* La classificazione del servizio per questo gestore è impostata su bassa (ovvero al di sotto del valore predefinito per la proprietà `service.ranking`) poiché si presume che i gestori personalizzati richiedano una classificazione più elevata. Tuttavia, la classificazione non è il valore minimo assoluto per garantire flessibilità quando necessario.
+* La classificazione del servizio per questo gestore è impostata su bassa (ovvero al di sotto del valore predefinito per la proprietà `service.ranking`) poiché si presume che i gestori personalizzati richiedano una classificazione più elevata. Tuttavia, il ranking non è il valore minimo assoluto per garantire flessibilità quando necessario.
 
 Questo gestore di conflitti ha la precedenza sulla blueprint. La pagina Live Copy `/b` è stata spostata (nel ramo Live Copy) in `/b_msm_moved`.
 
@@ -114,13 +112,13 @@ Questo gestore di conflitti ha la precedenza sulla blueprint. La pagina Live Cop
 
   Viene spostato (all&#39;interno della Live Copy) in `/b_msm_moved`. Questo funge da backup e assicura che non venga perso alcun contenuto.
 
-   * `lc-level-1` non viene spostato.
+  * `lc-level-1` non viene spostato.
 
 * blueprint: `/b`
 
   Viene distribuito alla pagina Live Copy `/b`.
 
-   * Rollout di `bp-level-1` nella Live Copy eseguito.
+  * Rollout di `bp-level-1` nella Live Copy eseguito.
 
 **Dopo Rollout**
 
@@ -152,7 +150,7 @@ Questo gestore di conflitti ha la precedenza sulla blueprint. La pagina Live Cop
 
 ### Gestori personalizzati {#customized-handlers}
 
-I gestori di conflitti personalizzati ti consentono di implementare regole personalizzate. Utilizzando il meccanismo di classificazione del servizio è inoltre possibile definire il modo in cui interagiscono con altri gestori.
+I gestori di conflitti personalizzati ti consentono di implementare regole personalizzate. Utilizzando il meccanismo di ranking dei servizi è inoltre possibile definire il modo in cui interagiscono con altri gestori.
 
 I gestori di conflitti personalizzati possono disporre dei seguenti elementi:
 
@@ -160,19 +158,19 @@ I gestori di conflitti personalizzati possono disporre dei seguenti elementi:
 * Sviluppato/configurato in base alle tue esigenze; ad esempio, puoi sviluppare un gestore in modo che la pagina Live Copy abbia la precedenza.
 * Progettato per essere configurato utilizzando la [configurazione OSGi](/help/sites-deploying/configuring-osgi.md); in particolare:
 
-   * **Classifica dei servizi**:
+  * **Classifica dei servizi**:
 
-     Definisce l&#39;ordine relativo ad altri gestori di conflitti ( `service.ranking`).
+    Definisce l&#39;ordine relativo ad altri gestori di conflitti ( `service.ranking`).
 
-     Il valore predefinito è 0.
+    Il valore predefinito è 0.
 
 ### Comportamento quando la gestione dei conflitti è disattivata {#behavior-when-conflict-handling-deactivated}
 
-Se [disattivi manualmente la gestione dei conflitti](#rollout-manager-and-conflict-handling), l&#39;AEM non intraprenderà alcuna azione su alcuna pagina in conflitto (le pagine non in conflitto vengono distribuite come previsto).
+Se [disattivi manualmente la gestione dei conflitti](#rollout-manager-and-conflict-handling), AEM non intraprenderà alcuna azione su alcuna pagina in conflitto (le pagine non in conflitto vengono distribuite come previsto).
 
 >[!CAUTION]
 >
->L’AEM non fornisce alcuna indicazione che i conflitti vengano ignorati, in quanto questo comportamento deve essere configurato in modo esplicito, pertanto si presume che sia il comportamento richiesto.
+>AEM non fornisce alcuna indicazione che i conflitti vengano ignorati, in quanto questo comportamento deve essere configurato in modo esplicito, pertanto si presume che sia il comportamento richiesto.
 
 In questo caso, la Live Copy ha effettivamente la precedenza. La pagina blueprint `/b` non viene copiata e la pagina Live Copy `/b` viene lasciata intatta.
 
@@ -207,6 +205,6 @@ In questo caso, la Live Copy ha effettivamente la precedenza. La pagina blueprin
  </tbody>
 </table>
 
-### Classificazioni di servizio {#service-rankings}
+### Ranking dei servizi {#service-rankings}
 
-La classificazione del servizio [OSGi](https://www.osgi.org/) può essere utilizzata per definire la priorità dei singoli gestori di conflitti.
+Il ranking dei servizi [OSGi](https://www.osgi.org/) può essere utilizzato per definire la priorità dei singoli gestori di conflitti.

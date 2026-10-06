@@ -11,11 +11,9 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '382'
 ht-degree: 1%
-
 ---
-
 # Modelli di app e componenti{#app-templates-and-components}
 
 {{ue-over-mobile}}
@@ -35,7 +33,7 @@ Un modello è la base di una pagina.
 
 Per creare una pagina, è necessario copiare il modello (albero dei nodi **/apps/&lt;myapp>/templates/&lt;mytemplate>**) nella posizione corrispondente nell&#39;albero del sito: questo è ciò che accade se si crea una pagina utilizzando la scheda **Siti Web**.
 
-Questa azione di copia fornisce anche alla pagina il suo contenuto iniziale (in genere solo Contenuto di primo livello) e la proprietà sling:resourceType, il percorso del componente pagina utilizzato per il rendering della pagina (tutto ciò che si trova nel nodo figlio jcr:content).
+Questa azione di copia fornisce anche alla pagina il suo contenuto iniziale (in genere solo Contenuto di primo livello) e la proprietà sling:resourceType, il percorso del componente page utilizzato per eseguire il rendering della pagina (tutto ciò che si trova nel nodo figlio jcr:content).
 
 ## Struttura di un modello {#structure-of-a-template}
 
@@ -49,7 +47,7 @@ Un modello viene creato in un nodo di tipo **cq:Template**.
 È possibile impostare varie proprietà, in particolare:
 
 * **jcr:title** - titolo del modello; viene visualizzato nella finestra di dialogo durante la creazione di una pagina.
-* **jcr:description** - descrizione del modello; viene visualizzato nella finestra di dialogo durante la creazione di una pagina.
+* **jcr:description** - descrizione del modello; viene visualizzata nella finestra di dialogo durante la creazione di una pagina.
 
 Questo nodo contiene *un nodo jcr:content (cq:PageContent)* che viene utilizzato come base per il nodo di contenuto delle pagine risultanti. Questo fa riferimento, utilizzando *sling:resourceType*, al componente da utilizzare per il rendering del contenuto effettivo di una nuova pagina.
 

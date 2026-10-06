@@ -1,6 +1,6 @@
 ---
 title: SSL/TLS per impostazione predefinita
-description: Scopri come utilizzare SSL come funzione predefinita in AEM 6.5.
+description: Scopri come utilizzare la funzione SSL by Default in AEM 6.5.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,18 +12,16 @@ feature: Security
 role: Admin
 source-git-commit: 9b766fe6e253782be3bc47849b4857216274ae20
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '871'
 ht-degree: 0%
-
 ---
-
 # SSL/TLS per impostazione predefinita{#ssl-tls-by-default}
 
-Nel tentativo di migliorare continuamente la sicurezza dell&#39;AEM, Adobe ha introdotto una funzione chiamata SSL Per impostazione predefinita. L’obiettivo è incoraggiare l’utilizzo del protocollo HTTPS per connettersi alle istanze dell’AEM.
+Nel tentativo di migliorare continuamente la sicurezza di AEM, Adobe ha introdotto una funzione denominata SSL per impostazione predefinita. Lo scopo è quello di incoraggiare l’utilizzo di HTTPS per la connessione alle istanze di AEM.
 
 ## Abilitazione di SSL/TLS per impostazione predefinita {#enabling-ssl-tls-by-default}
 
-Puoi iniziare a configurare SSL/TLS per impostazione predefinita facendo clic sul messaggio della casella in entrata corrispondente nella schermata iniziale dell’AEM. Per raggiungere la Casella in entrata, premi l’icona a forma di campana nell’angolo superiore destro dello schermo. Quindi fare clic su **Visualizza tutto**. Viene visualizzato un elenco di tutti gli avvisi ordinati in una vista a elenco.
+Per iniziare a configurare SSL/TLS per impostazione predefinita, fai clic sul messaggio della casella in entrata corrispondente nella schermata iniziale di AEM. Per raggiungere la Casella in entrata, premi l’icona a forma di campana nell’angolo superiore destro dello schermo. Quindi fare clic su **Visualizza tutto**. Viene visualizzato un elenco di tutti gli avvisi ordinati in una vista a elenco.
 
 Nell&#39;elenco, selezionare e aprire l&#39;avviso **Configura HTTPS**:
 
@@ -63,7 +61,7 @@ Il primo metodo prevede la pubblicazione nel server SSLSetup utilizzato dalla pr
 POST /libs/granite/security/post/sslSetup.html
 ```
 
-Per automatizzare la configurazione, puoi utilizzare il seguente payload nel POST:
+Per automatizzare la configurazione, nel POST puoi utilizzare il seguente payload:
 
 ```xml
 ------WebKitFormBoundaryyBO4ArmGlcfdGDbs
@@ -92,7 +90,7 @@ Content-Disposition: form-data; name="httpsPort"
 8443
 ```
 
-Il servlet, come qualsiasi servlet POST di Sling, risponderà con 200 OK o un codice di stato HTTP di errore. Puoi trovare i dettagli sullo stato nel corpo HTML della risposta.
+Il servlet, come qualsiasi servlet Sling POST, risponderà con 200 OK o un codice di stato HTTP di errore. Puoi trovare i dettagli sullo stato nel corpo della risposta in HTML.
 
 Di seguito sono riportati alcuni esempi sia di risposta corretta che di errore.
 
@@ -195,7 +193,7 @@ Di seguito è riportato un esempio per la creazione di un certificato autofirmat
 
 >[!NOTE]
 >
->Per un elenco centralizzato di comandi cURL utili nell&#39;AEM, vedere [Utilizzo di cURL con AEM](https://helpx.adobe.com/it/experience-manager/6-4/sites/administering/using/curl.html).
+>Per un elenco centralizzato di comandi cURL utili in AEM, vedere [Utilizzo di cURL con AEM](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html).
 
 Puoi anche automatizzare la configurazione SSL/TLS utilizzando lo strumento cURL. Per eseguire questa operazione, invia i parametri di configurazione a questo URL:
 

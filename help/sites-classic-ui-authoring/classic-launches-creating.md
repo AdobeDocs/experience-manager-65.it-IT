@@ -1,10 +1,12 @@
 ---
 title: Creazione dei lanci
 description: Crea un lancio per abilitare l’aggiornamento di una nuova versione delle pagine web esistenti per l’attivazione futura. Quando crei un lancio, specifichi un titolo e la pagina sorgente.
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
+
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 8ab21067-c19a-4faa-8bf0-cd9f21f6df70
 solution: Experience Manager, Experience Manager Sites
@@ -12,16 +14,14 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '368'
-ht-degree: 55%
-
+source-wordcount: '374'
+ht-degree: 56%
 ---
-
 # Creazione dei lanci{#creating-launches}
 
 Crea un lancio per abilitare l’aggiornamento di una nuova versione delle pagine web esistenti per l’attivazione futura. Per creare un lancio, è necessario specificare un titolo e la pagina di origine:
 
-* Il titolo viene visualizzato nel **Sidekick**, da cui gli autori possono accedere per lavorarci.
+* Il titolo viene visualizzato in **Sidekick**, da cui gli autori possono accedere per lavorarci.
 * Per impostazione predefinita, le pagine secondarie della pagina sorgente sono incluse nel lancio. Se necessario, puoi utilizzare solo la pagina sorgente.
 * Per impostazione predefinita, [Live Copy](/help/sites-administering/msm.md) aggiorna automaticamente le pagine del lancio durante il cambio delle pagine sorgente. È possibile specificare di creare una copia statica per impedire modifiche automatiche.
 
