@@ -12,23 +12,21 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '1202'
-ht-degree: 3%
-
+source-wordcount: '1203'
+ht-degree: 4%
 ---
-
 # Teaser e strategie{#teasers-and-strategies}
 
 Le campagne utilizzano spesso i teaser come meccanismo per attrarre un segmento specifico della popolazione di visitatori, fino a contenuti incentrati sui loro interessi. Uno o più teaser sono definiti per una campagna specifica.
 
 >[!NOTE]
 >
->Il componente Teaser è ora obsoleto nell’AEM 6.2. Utilizzare invece il [componente Target](/help/sites-authoring/content-targeting-touch.md).
+>Il componente Teaser è ora obsoleto in AEM 6.2. Utilizzare invece il [componente Target](/help/sites-authoring/content-targeting-touch.md).
 
 * **Le pagine del marchio** sono archiviate nella sezione Campagne del sito Web. Un brand contiene le singole campagne.
 * **Le pagine della campagna** sono archiviate nella sezione Campagne del sito Web. Ogni campagna ha una singola pagina, in cui sono conservate le definizioni del teaser. La pagina contenitore, o panoramica, contiene anche determinate informazioni e statistiche relative alle singole pagine teaser.
 
-I teaser all’interno dell’AEM sono composti da diverse parti:
+I teaser all’interno di AEM sono composti da diverse parti:
 
 * Le **pagine teaser** sono memorizzate nella pagina della campagna appropriata e contengono le definizioni dei paragrafi teaser disponibili per ogni campagna specifica. Queste definizioni vengono utilizzate quando vengono visualizzati i paragrafi del teaser, incluse le varianti di contenuto, il segmento da utilizzare per selezionare una variante e un fattore di incremento.
 * Il componente **Teaser** è disponibile come strumento predefinito e consente di creare un&#39;istanza del paragrafo del teaser specifico in una pagina di contenuto. Puoi trascinare il componente teaser dalla barra laterale, quindi specificare la definizione del teaser per creare un paragrafo teaser personalizzato. **Nota:** il componente Teaser è ora obsoleto in AEM 6.2. Utilizzare invece il [componente Target](/help/sites-authoring/content-targeting-touch.md).
@@ -111,7 +109,7 @@ Utilizziamo inoltre le seguenti definizioni di teaser:
 
 Quindi, se applichiamo questo a un visitatore in cui:
 
-* Risoluzione di **S1**, **S2 e &#x200B;** S6** completata
+* Risoluzione di **S1**, **S2 e** S6** completata
 
 * il tag **marketing** ha tre hit
 * il tag **business** ha sei hit
@@ -235,7 +233,7 @@ Dopo aver creato il brand e la campagna, puoi creare e configurare l’esperienz
 
 >[!NOTE]
 >
->Il componente Teaser è ora obsoleto nell’AEM 6.2. Utilizzare invece il [componente Target](/help/sites-authoring/content-targeting-touch.md).
+>Il componente Teaser è ora obsoleto in AEM 6.2. Utilizzare invece il [componente Target](/help/sites-authoring/content-targeting-touch.md).
 
 1. Passa alla pagina del contenuto in cui desideri inserire il paragrafo del teaser che porterà alla pagina della campagna.
 1. Aggiungi un componente **Teaser** (disponibile nella sezione **Personalization** della barra laterale) nella posizione desiderata. La prima volta che viene creato, mostra che il percorso della campagna non è ancora configurato:
@@ -245,10 +243,10 @@ Dopo aver creato il brand e la campagna, puoi creare e configurare l’esperienz
 1. Modifica il componente teaser per aggiungere:
 
    * **Percorso campagna**
-Percorso della pagina della campagna che contiene la pagina del singolo teaser; i segmenti determinano esattamente quale teaser viene visualizzato.
+     Percorso della pagina della campagna che contiene la pagina del singolo teaser; i segmenti determinano esattamente quale teaser viene visualizzato.
 
    * **[Strategia](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#strategies)**
-Metodo utilizzato per la selezione quando più segmenti vengono risolti correttamente.
+     Metodo utilizzato per la selezione quando più segmenti vengono risolti correttamente.
 
    ![chlimage_1-1](assets/chlimage_1-1.png)
 

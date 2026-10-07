@@ -1,6 +1,6 @@
 ---
 title: Utilizzo di Adobe Campaign 6.1 e Adobe Campaign Standard
-description: Puoi creare contenuti e-mail in AEM ed elaborarli nelle e-mail di Adobe Campaign.
+description: Puoi creare contenuti e-mail in AEM ed elaborarli in e-mail Adobe Campaign.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
@@ -11,14 +11,12 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '1185'
-ht-degree: 2%
-
+source-wordcount: '1194'
+ht-degree: 3%
 ---
-
 # Utilizzo di Adobe Campaign 6.1 e Adobe Campaign Standard{#working-with-adobe-campaign-and-adobe-campaign-standard}
 
-Puoi creare contenuti e-mail in AEM ed elaborarli nelle e-mail di Adobe Campaign. Per farlo, devi:
+Puoi creare contenuti e-mail in AEM ed elaborarli in e-mail Adobe Campaign. Per farlo, devi:
 
 1. Crea una newsletter in AEM da un modello specifico di Adobe Campaign.
 1. Seleziona [un servizio Adobe Campaign](#selectingtheadobecampaigncloudservice) prima di modificare il contenuto per accedere a tutte le funzionalità.
@@ -29,17 +27,17 @@ Il contenuto può quindi essere sincronizzato con una consegna in Adobe Campaign
 
 >[!NOTE]
 >
->Prima di poter utilizzare questa funzionalità, è necessario configurare AEM per l&#39;integrazione con [Adobe Campaign](/help/sites-administering/campaignonpremise.md) o [Adobe Campaign Standard](/help/sites-administering/campaignstandard.md).
+>Prima di poter utilizzare questa funzionalità, devi configurare AEM per l&#39;integrazione con [Adobe Campaign](/help/sites-administering/campaignonpremise.md) o [Adobe Campaign Standard](/help/sites-administering/campaignstandard.md).
 
 ## Invio di contenuti e-mail tramite Adobe Campaign {#sending-email-content-via-adobe-campaign}
 
-Dopo aver configurato AEM e Adobe Campaign, puoi creare i contenuti di consegna e-mail direttamente nell’AEM e quindi elaborarli in Adobe Campaign.
+Dopo aver configurato AEM e Adobe Campaign, puoi creare i contenuti di consegna e-mail direttamente in AEM, quindi elaborarli in Adobe Campaign.
 
-Quando crei contenuti Adobe Campaign nell’AEM, devi collegare un servizio Adobe Campaign prima di modificarli per accedere a tutte le funzionalità.
+Quando crei contenuti Adobe Campaign in AEM, devi collegare un servizio Adobe Campaign prima di modificarli per accedere a tutte le funzionalità.
 
 Esistono due casi possibili:
 
-* Il contenuto può essere sincronizzato con una consegna da Adobe Campaign. Questo consente di utilizzare contenuti AEM in una consegna.
+* Il contenuto può essere sincronizzato con una consegna da Adobe Campaign. Questo consente di utilizzare il contenuto di AEM in una consegna.
 * (Solo Adobe Campaign on-premise) Il contenuto può essere inviato direttamente ad Adobe Campaign, che genera automaticamente una nuova consegna e-mail. Questa modalità presenta limitazioni.
 
 Istruzioni dettagliate sono descritte in questo documento.
@@ -51,11 +49,11 @@ Istruzioni dettagliate sono descritte in questo documento.
 >Quando aggiungi modelli e-mail, assicurati di aggiungerli in **/content/campaigns** per renderli disponibili.
 >
 
-1. In AEM, seleziona la cartella **Siti Web**, quindi sfoglia l&#39;elenco delle cartelle per trovare dove vengono gestite le campagne e-mail. Nell&#39;esempio seguente, il nodo interessato è **Siti Web** > **Campagne** > **Geometrixx Outdoors** > **Campagne e-mail**.
+1. In AEM, seleziona la cartella **Siti Web**, quindi sfoglia l&#39;esploratore per scoprire dove vengono gestite le campagne e-mail. Nell&#39;esempio seguente, il nodo interessato è **Siti Web** > **Campagne** > **Geometrixx Outdoors** > **Campagne e-mail**.
 
    >[!NOTE]
    >
-   >[Gli esempi di e-mail sono disponibili solo in Geometrixx](/help/sites-developing/we-retail.md#weretail). Scarica il contenuto di esempio di un Geometrixx da Condivisione pacchetti.
+   >[Gli esempi di e-mail sono disponibili solo in Geometrixx](/help/sites-developing/we-retail.md#weretail). Scarica contenuti Geometrixx di esempio da Package Share.
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
@@ -132,7 +130,7 @@ Consulta [Componenti Adobe Campaign](/help/sites-classic-ui-authoring/classic-pe
    >
    >I campi di contesto disponibili corrispondono alla dimensione di targeting **Profili** in Adobe Campaign.
    >
-   >Consulta [Collegamento di una pagina AEM a un&#39;e-mail di Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md#linkinganaempagetoanadobecampaignemail).
+   >Vedi [Collegamento di una pagina di AEM a un&#39;e-mail di Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md#linkinganaempagetoanadobecampaignemail).
 
    ![chlimage_1-178](assets/chlimage_1-178.png)
 
@@ -181,8 +179,8 @@ In Adobe Campaign 6.1:
 >
 >Il contenuto non approvato può essere sincronizzato con una consegna in Adobe Campaign, ma la consegna non può essere eseguita. Solo i contenuti approvati possono essere inviati tramite le consegne di Campaign.
 
-## Collegamento dell’AEM con Adobe Campaign Standard e Adobe Campaign 6.1 {#linking-aem-with-adobe-campaign-standard-and-adobe-campaign}
+## Collegamento di AEM con Adobe Campaign Standard e Adobe Campaign 6.1 {#linking-aem-with-adobe-campaign-standard-and-adobe-campaign}
 
 >[!NOTE]
 >
->Per informazioni dettagliate, consulta [Collegamento dell&#39;AEM con Adobe Campaign Standard e Adobe Campaign 6.1](/help/sites-authoring/campaign.md#linking-aem-with-adobe-campaign-standard-and-adobe-campaign-classic) in [Utilizzo di Adobe Campaign 6.1 e Adobe Campaign Standard](/help/sites-authoring/campaign.md) nella documentazione standard sull&#39;authoring.
+>Per informazioni dettagliate, consulta [Collegamento di AEM con Adobe Campaign Standard e Adobe Campaign 6.1](/help/sites-authoring/campaign.md#linking-aem-with-adobe-campaign-standard-and-adobe-campaign-classic) in [Utilizzo di Adobe Campaign 6.1 e Adobe Campaign Standard](/help/sites-authoring/campaign.md) nella documentazione standard sull&#39;authoring.

@@ -1,21 +1,23 @@
 ---
 title: Risoluzione dei problemi di integrazione
+
 description: Scopri come risolvere i problemi durante l’integrazione con Adobe Experience Manager.
+
+
 contentOwner: raiman
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
+
 exl-id: 11b0023e-34bd-4dfe-8173-5466db9fbe34
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1078'
+source-wordcount: '1102'
 ht-degree: 2%
-
 ---
-
 # Risoluzione dei problemi di integrazione{#troubleshooting-integration-issues}
 
 ## Suggerimenti generali per la risoluzione dei problemi {#general-troubleshooting-tips}
@@ -46,7 +48,7 @@ Per ulteriori dettagli sulla registrazione, vedere le pagine [Registrazione](/he
 
 ## Problemi di integrazione di Analytics {#analytics-integration-issues}
 
-### Importazione report causa un elevato utilizzo di CPU/memoria {#the-report-importer-causes-high-cpu-memory-usage}
+### La funzione di importazione report causa un elevato utilizzo di CPU e memoria {#the-report-importer-causes-high-cpu-memory-usage}
 
 Importazione report causa un elevato utilizzo di CPU/memoria o `OutOfMemoryError` eccezioni.
 
@@ -61,14 +63,14 @@ Per ulteriori informazioni sulla creazione di servizi di importazione dati perso
 
 ### L&#39;arresto richiede molto tempo a causa di Importazione polling {#shutdown-takes-a-long-time-due-to-the-pollingimporter}
 
-Analytics è stato progettato pensando a un meccanismo di ereditarietà. In genere, per abilitare Analytics per un sito si aggiunge un riferimento a una configurazione Analytics nella scheda [Cloud Service](/help/sites-developing/extending-cloud-config.md) delle proprietà della pagina. La configurazione viene quindi ereditata automaticamente da tutte le sottopagine senza dover fare nuovamente riferimento ad essa, a meno che una pagina non richieda una configurazione diversa. L’aggiunta di un riferimento a un sito crea automaticamente anche diversi nodi (12 per AEM 6.3 e versioni precedenti o 6 per AEM 6.4   e versioni successive) del tipo `cq;PollConfig` che crea un&#39;istanza di PollingImporters utilizzata per importare dati di Analytics in AEM. Di conseguenza:
+Analytics è stato progettato pensando a un meccanismo di ereditarietà. In genere, per abilitare Analytics per un sito si aggiunge un riferimento a una configurazione Analytics nella scheda [Servizi cloud](/help/sites-developing/extending-cloud-config.md) delle proprietà della pagina. La configurazione viene quindi ereditata automaticamente da tutte le sottopagine senza dover fare nuovamente riferimento ad essa, a meno che una pagina non richieda una configurazione diversa. L&#39;aggiunta di un riferimento a un sito determina inoltre la creazione automatica di diversi nodi (12 per AEM 6.3 e versioni precedenti o 6 per AEM 6.4 e versioni successive) del tipo `cq;PollConfig` che creano istanze di PollingImporters utilizzate per importare dati di Analytics in AEM. Di conseguenza:
 
 * Se un numero elevato di pagine fa riferimento ad Analytics, il numero di PollingImporters è elevato.
 * Inoltre, copiare e incollare pagine con un riferimento a una configurazione Analytics comporta la duplicazione dei relativi PollingImporters.
 
 #### Soluzione {#solution-1}
 
-In primo luogo, l&#39;analisi di [error.log](/help/sites-deploying/configure-logging.md) potrebbe fornire informazioni approfondite sulla quantità di PollingImporters attivi o registrati. Ad esempio:
+In primo luogo, l&#39;analisi del [error.log](/help/sites-deploying/configure-logging.md) potrebbe fornire informazioni insight sulla quantità di PollingImporters attivi o registrati. Ad esempio:
 
 ```
 # Count PollingImporter entries
@@ -90,21 +92,21 @@ Per ulteriori informazioni sulla creazione di servizi di importazione dati perso
 
 ### Il tag dello script DTM non viene renderizzato nell’origine della pagina {#the-dtm-script-tag-is-not-rendered-in-the-page-source}
 
-Il tag di script [DTM](/help/sites-administering/dtm.md) non è incluso correttamente nella pagina anche se nella scheda delle proprietà della pagina [Cloud Service](/help/sites-developing/extending-cloud-config.md) è stato fatto riferimento alla configurazione.
+Il tag di script [DTM](/help/sites-administering/dtm.md) non è incluso correttamente nella pagina anche se nella scheda delle proprietà della pagina [Cloud Services](/help/sites-developing/extending-cloud-config.md) è stato fatto riferimento alla configurazione.
 
 #### Soluzione {#solution-2}
 
 Per risolvere il problema, puoi provare a effettuare le seguenti operazioni:
 
-* Assicurati che le proprietà crittografate possano essere decrittografate (tieni presente che la crittografia potrebbe utilizzare una chiave generata automaticamente diversa su ogni istanza AEM). Per ulteriori dettagli, leggere anche il documento [Supporto crittografia per le proprietà di configurazione](/help/sites-administering/encryption-support-for-configuration-properties.md).
+* Assicurati che le proprietà crittografate possano essere decrittografate (la crittografia potrebbe utilizzare una chiave generata automaticamente diversa in ogni istanza di AEM). Per ulteriori dettagli, leggere anche il documento [Supporto crittografia per le proprietà di configurazione](/help/sites-administering/encryption-support-for-configuration-properties.md).
 * Ripubblica le configurazioni trovate in `/etc/cloudservices/dynamictagmanagement`
 * Controllare gli ACL su `/etc/cloudservices`. Gli ACL devono essere:
 
-   * consenti; jcr:read; webservice-support-servicelibfinder
-   * consenti; jcr:read; tutti; `rep:glob:`&ast;`/defaults/`&ast;
-   * consenti; jcr:read; tutti; `rep:glob:`&ast;`/defaults`
-   * consenti; jcr:read; tutti; `rep:glob:`&ast;`/public/`&ast;
-   * consenti; jcr:read; tutti; `rep:glob:`&ast;`/public`
+  * consenti; jcr:read; webservice-support-servicelibfinder
+  * consenti; jcr:read; tutti; `rep:glob:`&amp;ast;`/defaults/`&amp;ast;
+  * consenti; jcr:read; tutti; `rep:glob:`&amp;ast;`/defaults`
+  * consenti; jcr:read; tutti; `rep:glob:`&amp;ast;`/public/`&amp;ast;
+  * consenti; jcr:read; tutti; `rep:glob:`&amp;ast;`/public`
 
 Per ulteriori informazioni sulla gestione degli ACL, leggere la pagina [Amministrazione utenti e sicurezza](/help/sites-administering/security.md#permissions-in-aem).
 
@@ -157,20 +159,20 @@ var s=s_gi(s_account)
 
 Questo problema può avere diverse cause:
 
-* Il caricamento delle librerie client di Target ( `mbox.js` o `at.js`) in modo asincrono utilizzando sistemi Tag Management di terze parti può interrompere il targeting in modo casuale. Le librerie di Target devono essere caricate in modo sincrono nell’intestazione della pagina. Questo è sempre vero quando le librerie vengono distribuite dall’AEM.
+* Il caricamento delle librerie client di Target ( `mbox.js` o `at.js`) in modo asincrono utilizzando sistemi Tag Management di terze parti può interrompere il targeting in modo casuale. Le librerie di Target devono essere caricate in modo sincrono nell’intestazione della pagina. Questo è sempre vero quando le librerie vengono distribuite da AEM.
 
-* Caricamento simultaneo di due librerie client di Target ( `at.js`), ad esempio una che utilizza DTM e una che utilizza la configurazione di Target nell&#39;AEM. Ciò può causare conflitti per la definizione di `adobe.target` se le versioni di `at.js` sono diverse.
+* Caricamento simultaneo di due librerie client di Target ( `at.js`), ad esempio una che utilizza DTM e una che utilizza la configurazione di Target in AEM. Ciò può causare conflitti per la definizione di `adobe.target` se le versioni di `at.js` sono diverse.
 
 #### Soluzione {#solution-5}
 
 Puoi provare le seguenti soluzioni:
 
 * Assicurati che il codice del cliente che carica le librerie simili a DTM (che a sua volta caricano le librerie di Target) venga eseguito in modo sincrono nell&#39;[intestazione pagina](/help/sites-developing/target.md#enabling-targeting-with-adobe-target-on-your-pages).
-* Se il sito è configurato per l&#39;utilizzo di DTM per la distribuzione delle librerie di Target, verificare che l&#39;opzione **Clientlib consegnata da DTM** sia selezionata nella [configurazione di Target](https://helpx.adobe.com/it/experience-manager/6-3/sites/administering/using/target-configuring.html) per il sito.
+* Se il sito è configurato per l&#39;utilizzo di DTM per la distribuzione delle librerie di Target, verificare che l&#39;opzione **Clientlib consegnata da DTM** sia selezionata nella [configurazione di Target](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/target-configuring.html) per il sito.
 
 ### Viene sempre visualizzata un’offerta predefinita invece dell’offerta corretta quando si utilizza AT.js 1.3+ {#a-default-offer-is-always-displayed-instead-of-correct-offer-when-using-at-js}
 
-AEM 6.2 e 6.3 non sono compatibili con AT.js versione 1.3.0+. Con la versione 1.3.0 di AT.js che introduce la convalida dei parametri per le API, `adobe.target.applyOffer()` richiede un parametro &quot;mbox&quot; non fornito dal codice `atjs-itegration.js`.
+AEM 6.2 e 6.3 non è compatibile con AT.js versione 1.3.0+. Con la versione 1.3.0 di AT.js che introduce la convalida dei parametri per le API, `adobe.target.applyOffer()` richiede un parametro &quot;mbox&quot; non fornito dal codice `atjs-itegration.js`.
 
 #### Soluzione {#solution-6}
 
@@ -195,7 +197,7 @@ Questo problema è probabilmente un problema di provisioning di [Configurazione 
 
 #### Soluzione {#solution-7}
 
-Verifica che A4T sia abilitato correttamente per il tuo account Target emettendo la seguente richiesta di verifica all’AEM:
+Verifica che A4T sia abilitato correttamente per il tuo account Target emettendo la seguente richiesta di verifica ad AEM:
 
 ```
 http://localhost:4502/etc/cloudservices/testandtarget/<YOUR-CONFIG>/jcr:content.a4t.json
@@ -211,7 +213,7 @@ http://localhost:4502/etc/cloudservices/testandtarget/<YOUR-CONFIG>/jcr:content.
 }
 ```
 
-Se la risposta contiene la riga `a4tEnabled:false`, contatta [l&#39;Assistenza clienti Adobe](https://helpx.adobe.com/it/contact.html) per il corretto provisioning dell&#39;account.
+Se la risposta contiene la riga `a4tEnabled:false`, contatta l&#39;[Assistenza clienti Adobe](https://helpx.adobe.com/contact.html) per eseguire correttamente il provisioning del tuo account.
 
 ### API di Target utili {#helpful-target-apis}
 

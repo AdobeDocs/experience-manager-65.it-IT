@@ -11,17 +11,15 @@ feature: Integration
 role: Admin
 source-git-commit: 6fb844ea428c15adab71503dde6138e46eabf0a3
 workflow-type: tm+mt
-source-wordcount: '1564'
+source-wordcount: '1594'
 ht-degree: 52%
-
 ---
-
 
 # Integrazione di AEM 6.5 con Adobe Campaign Classic {#integrating-campaign-classic}
 
-Integrando l’AEM con Adobe Campaign Classic (ACC), puoi gestire la consegna e-mail, il contenuto e i moduli direttamente nell’AEM. Per consentire la comunicazione bidirezionale tra le soluzioni sono necessari passaggi di configurazione sia in Adobe Campaign Classic che in AEM.
+Integrando AEM con Adobe Campaign Classic (ACC), puoi gestire la consegna e-mail, il contenuto e i moduli direttamente in AEM. Per consentire la comunicazione bidirezionale tra le soluzioni sono necessari alcuni passaggi di configurazione sia in Adobe Campaign Classic che in AEM.
 
-Questa integrazione consente di utilizzare AEM e Adobe Campaign Classic in modo indipendente. Gli addetti al marketing possono creare campagne e utilizzare il targeting in Adobe Campaign, mentre i creatori di contenuti possono lavorare contemporaneamente sulla progettazione dei contenuti nell’AEM. Utilizzando l’integrazione, il contenuto e la progettazione della campagna creata in AEM possono essere mirati e consegnati da Adobe Campaign.
+Questa integrazione consente di utilizzare in modo indipendente AEM e Adobe Campaign Classic. Gli addetti al marketing possono creare campagne e utilizzare il targeting in Adobe Campaign, mentre i creatori di contenuti possono lavorare contemporaneamente sulla progettazione dei contenuti in AEM. Utilizzando l’integrazione, il contenuto e la progettazione della campagna creata in AEM possono essere targetizzati e consegnati da Adobe Campaign.
 
 >[!INFO]
 >
@@ -43,13 +41,13 @@ Questo documento illustra in dettaglio ciascuno di questi passaggi.
 ## Prerequisiti {#prerequisites}
 
 * Accesso amministratore ad Adobe Campaign Classic
-   * Per eseguire l’integrazione, è necessaria un&#39;istanza Adobe Campaign Classic funzionante, incluso un database configurato.
-   * Per ulteriori informazioni su come impostare e configurare Adobe Campaign Classic, vedere la [documentazione di Adobe Campaign Classic,](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html?lang=it) in particolare la guida all&#39;installazione e alla configurazione.
-* Accesso dell’amministratore all’AEM
+  * Per eseguire l’integrazione, è necessaria un&#39;istanza Adobe Campaign Classic funzionante, incluso un database configurato.
+  * Per ulteriori informazioni su come impostare e configurare Adobe Campaign Classic, vedere la [documentazione di Adobe Campaign Classic,](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html?lang=it) in particolare la guida all&#39;installazione e alla configurazione.
+* Accesso amministratore ad AEM
 
-## Installare il pacchetto di integrazione dell’AEM in Campaign {#install-package}
+## Installare il pacchetto di integrazione di AEM in Campaign {#install-package}
 
-Il pacchetto **Integrazione AEM** in Adobe Campaign include diverse configurazioni standard necessarie per connettersi all&#39;AEM.
+Il pacchetto di integrazione **AEM** in Adobe Campaign include diverse configurazioni standard necessarie per la connessione ad AEM.
 
 1. In qualità di amministratore, accedi all’istanza di Adobe Campaign utilizzando la console client.
 
@@ -71,7 +69,7 @@ Il pacchetto **Integrazione AEM** in Adobe Campaign include diverse configurazio
 
 Il pacchetto di integrazione adesso è installato.
 
-## Creare l’operatore per l’AEM in Campaign {#create-operator}
+## Creare l’operatore per AEM in Campaign {#create-operator}
 
 Il pacchetto di integrazione crea automaticamente l’operatore `aemserver` che AEM utilizza per connettersi ad Adobe Campaign. Definisci un’area di sicurezza per questo operatore e impostane la password.
 
@@ -145,7 +143,7 @@ AEM utilizza [l&#39;operatore che hai già configurato in Campaign](#create-oper
 
 1. Viene visualizzata una nuova finestra di dialogo per modificare la configurazione. Fornisci le informazioni necessarie.
 
-   * **Nome utente**: corrisponde [all’operatore del pacchetto di integrazione di AEM in Adobe Campaign creato nel passaggio precedente.](#create-operator)Per impostazione predefinita, è `aemserver`.
+   * **Nome utente** - Questo è [l&#39;operatore del pacchetto di integrazione di Adobe Campaign AEM creato nel passaggio precedente.](#create-operator) Per impostazione predefinita è `aemserver`.
    * **Password**: corrisponde alla password per l’[operatore del pacchetto di integrazione di AEM in Adobe Campaign creato nel passaggio precedente.](#create-operator)
    * **Endpoint API**: corrisponde all’URL dell’istanza di Adobe Campaign.
 
@@ -157,11 +155,11 @@ AEM adesso può comunicare con Adobe Campaign.
 
 >[!NOTE]
 >
->Assicurati che il server di Adobe Campaign sia raggiungibile tramite Internet. L&#39;AEM non può accedere alle reti private.
+>Assicurati che il server di Adobe Campaign sia raggiungibile tramite Internet. AEM non può accedere a reti private.
 
-## Configurare la replica nell’istanza Publish dell’AEM {#replication}
+## Configurare la replica nell’istanza AEM Publish {#replication}
 
-Il contenuto della campagna viene creato dagli autori di contenuti nell’istanza di authoring AEM. In genere questa istanza è disponibile solo internamente all’interno dell’organizzazione. Affinché contenuti come immagini e risorse siano accessibili ai destinatari della campagna, devi pubblicare tali contenuti.
+Il contenuto della campagna viene creato dagli autori di contenuti nell’istanza di authoring di AEM. In genere questa istanza è disponibile solo internamente all’interno dell’organizzazione. Affinché contenuti come immagini e risorse siano accessibili ai destinatari della campagna, devi pubblicare tali contenuti.
 
 L’agente di replica è responsabile della pubblicazione dei contenuti dall’istanza di authoring AEM all’istanza di pubblicazione e deve essere configurato affinché l’integrazione funzioni correttamente. Questo passaggio è necessario anche per replicare alcune configurazioni di istanze di authoring nell’istanza di pubblicazione.
 
@@ -175,23 +173,23 @@ Per configurare la replica dall’istanza di authoring AEM all’istanza di pubb
 
 1. Fai clic su **Modifica**, quindi seleziona la scheda **Trasporto**.
 
-1. Configurare il campo **URI** sostituendo il valore `localhost` predefinito con l&#39;indirizzo IP dell&#39;istanza di pubblicazione AEM.
+1. Configurare il campo **URI** sostituendo il valore `localhost` predefinito con l&#39;indirizzo IP dell&#39;istanza di pubblicazione di AEM.
 
    ![Scheda Trasporto](assets/acc-transport-tab.png)
 
 1. Fare clic su **OK** per salvare le modifiche alle impostazioni dell&#39;agente.
 
-Hai configurato la replica nell’istanza di pubblicazione dell’AEM in modo che i destinatari della campagna possano accedere al contenuto.
+Hai configurato la replica nell’istanza di pubblicazione di AEM in modo che i destinatari della campagna possano accedere al contenuto.
 
 >[!NOTE]
 >
 >Se non desideri utilizzare l’URL di replica ma l’URL pubblico, puoi impostarlo nella seguente impostazione di configurazione tramite OSGi
 >
->Dalla barra laterale di navigazione globale, seleziona **Strumenti** > **Operazioni** > **Console Web** > **Configurazione OSGi** e cerca **Integrazione campagna AEM - Configurazione**. Modifica la configurazione e modifica il campo **URL pubblico** (`com.day.cq.mcm.campaign.impl.IntegrationConfigImpl#aem.mcm.campaign.publicUrl`).
+>Dalla barra laterale di navigazione globale, seleziona **Strumenti** > **Operazioni** > **Console Web** > **Configurazione OSGi** e cerca **Integrazione AEM Campaign - Configurazione**. Modifica la configurazione e modifica il campo **URL pubblico** (`com.day.cq.mcm.campaign.impl.IntegrationConfigImpl#aem.mcm.campaign.publicUrl`).
 
 ## Configurare AEM Externalizer {#externalizer}
 
-[Externalizer](/help/sites-developing/externalizer.md) è un servizio OSGi in AEM che trasforma un percorso di risorsa in un URL esterno e assoluto, necessario affinché l&#39;AEM possa distribuire il contenuto utilizzabile da Campaign. Configuralo in modo che l’integrazione di Campaign funzioni.
+[Externalizer](/help/sites-developing/externalizer.md) è un servizio OSGi di AEM che trasforma un percorso di risorsa in un URL esterno e assoluto, necessario affinché AEM distribuisca il contenuto utilizzabile da Campaign. Configuralo in modo che l’integrazione di Campaign funzioni.
 
 1. Accedi all’istanza di authoring di AEM come amministratore.
 1. Dalla barra laterale di navigazione globale, seleziona **Strumenti** > **Operazioni** > **Console Web** > **Configurazione OSGi** e cerca **Day CQ Link Externalizer**.
@@ -205,7 +203,7 @@ Dopo aver configurato Externalizer, Adobe Campaign può accedere al contenuto.
 
 >[!NOTE]
 >
->L’istanza di pubblicazione deve essere raggiungibile dal server Adobe Campaign. Se punta a `localhost:4503` o a un altro server che Adobe Campaign non è in grado di raggiungere, le immagini dell&#39;AEM non verranno visualizzate nella console Adobe Campaign.
+>L’istanza di pubblicazione deve essere raggiungibile dal server Adobe Campaign. Se punta a `localhost:4503` o a un altro server che Adobe Campaign non è in grado di raggiungere, le immagini di AEM non verranno visualizzate nella console di Adobe Campaign.
 
 ## Configurare l’utente remoto di Campaign in AEM {#configure-user}
 
@@ -221,9 +219,9 @@ Per consentire a Campaign di comunicare con AEM, devi impostare una password per
 1. Fai clic su **Salva** per salvare il cambiamento della password.
 1. Fai clic su **Salva e chiudi** per salvare le modifiche apportate all’utente `campaign-remote`.
 
-## Configurare l’account esterno dell’AEM in Campaign {#acc-setup}
+## Configurare l’account esterno di AEM in Campaign {#acc-setup}
 
-Durante l’[installazione del pacchetto di **Integrazione di AEM** in Campaign,](#install-package) viene creato un account esterno per AEM. Configurando questo account esterno, Adobe Campaign può connettersi all’AEM, abilitando la comunicazione bidirezionale tra le soluzioni.
+Durante l’[installazione del pacchetto di **Integrazione di AEM** in Campaign,](#install-package) viene creato un account esterno per AEM. Configurando questo account esterno, Adobe Campaign può connettersi ad AEM, abilitando la comunicazione bidirezionale tra le soluzioni.
 
 1. Accedi ad Adobe Campaign come amministratore utilizzando la console client.
 
@@ -242,8 +240,8 @@ Durante l’[installazione del pacchetto di **Integrazione di AEM** in Campaign,
 1. Nella scheda **Generale** di questo account, inserisci le informazioni utente definite nel passaggio [Imposta password utente remoto di Campaign](#set-campaign-remote-password).
 
    * **Server**: l’indirizzo server di authoring di AEM
-      * Il server di authoring di AEM deve essere raggiungibile dall’stanza del server di Adobe Campaign Classic.
-      * Verificare che l’indirizzo del server **non** termini con una barra finale.
+     * Il server di authoring di AEM deve essere raggiungibile dall’stanza del server di Adobe Campaign Classic.
+     * Verificare che l’indirizzo del server **non** termini con una barra finale.
    * **Account**: per impostazione predefinita, rappresenta  l’utente `campaign-remote` che hai impostato in AEM nel passaggio [Imposta password utente remoto di Campaign](#set-campaign-remote-password).
    * **Password**: questa password è la stessa `campaign-remote` dell’utente che hai impostato in AEM nel passaggio [Imposta password utente remoto di Campaign](#set-campaign-remote-password).
 
@@ -255,6 +253,6 @@ Adobe Campaign adesso può comunicare con AEM.
 
 ## Passaggi successivi {#next-steps}
 
-Con Adobe Campaign Classic e AEM configurati, l’integrazione è ora completa.
+Ora che Adobe Campaign Classic e AEM sono configurati, l’integrazione è completa.
 
 Per scoprire come creare una newsletter in Adobe Experience Manager, prosegui con [il presente documento.](/help/sites-authoring/campaign.md)
