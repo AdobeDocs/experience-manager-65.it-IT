@@ -14,9 +14,7 @@ source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
-
 ---
-
 # Componenti Sovrapponi community {#overlay-communities-components}
 
 L&#39;intenzione di [sovrapporsi](/help/communities/client-customize.md#overlays) a un componente predefinito è di alterare l&#39;aspetto o il comportamento di un componente a livello globale, per tutti i riferimenti relativi al componente. Si basa sulla natura di sling per risolvere nella cartella /apps prima di effettuare la ricerca nella cartella /libs. Pertanto, il percorso del componente è identico al percorso del componente predefinito, tranne per il fatto che si trova nella cartella /apps e non nella cartella /libs.

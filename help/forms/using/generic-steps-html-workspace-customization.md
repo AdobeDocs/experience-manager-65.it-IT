@@ -12,11 +12,9 @@ feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 1%
-
+source-wordcount: '302'
+ht-degree: 6%
 ---
-
 # Passaggi generici per la personalizzazione dell’area di lavoro AEM Forms {#generic-steps-for-aem-forms-workspace-customization}
 
 I passaggi generici per eseguire qualsiasi personalizzazione sono i seguenti:
@@ -52,7 +50,7 @@ I passaggi generici per eseguire qualsiasi personalizzazione sono i seguenti:
    <link lang="en" rel="stylesheet" type="text/css" href="css/jquery-ui.css"/>
    ```
 
-   in
+   a
 
    ```javascript
    <link lang="en" rel="stylesheet" type="text/css" href="../../libs/ws/css/style.css" />
@@ -70,7 +68,7 @@ I passaggi generici per eseguire qualsiasi personalizzazione sono i seguenti:
    <script data-main="js/main" src="js/libs/require/require.js"></script>
    ```
 
-   in
+   a
 
    ```jsp
    <script data-main="js/main" src="../../libs/ws/js/libs/require/require.js"></script>
@@ -84,7 +82,7 @@ I passaggi generici per eseguire qualsiasi personalizzazione sono i seguenti:
 
    1. Copia la cartella `/libs/ws/js/libs/jqueryui` in `/apps/ws/js/libs`. Fare clic su **[!UICONTROL Salva tutto]**.
 
-1. Per le personalizzazioni di HTML, effettuate le seguenti operazioni:
+1. Per le personalizzazioni di HTML, effettuare le seguenti operazioni:
 
    1. In `/apps/ws/js` creare una cartella denominata `runtime`. Fare clic su **[!UICONTROL Salva tutto]**.
 

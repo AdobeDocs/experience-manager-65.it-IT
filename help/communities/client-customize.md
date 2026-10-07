@@ -11,11 +11,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1235'
+source-wordcount: '1242'
 ht-degree: 0%
-
 ---
-
 # Personalizzazione lato client  {#client-side-customization}
 
 | **[⇐ caratteristiche di base](essentials.md)** | **[Personalizzazione lato server ⇒](server-customize.md)** |
@@ -95,7 +93,7 @@ Per applicare lo skin a un componente:
 1. Identificare gli elementi che si desidera modificare (ad esempio l&#39;area del compositore, i pulsanti della barra degli strumenti, il carattere del messaggio e così via).
 1. Identifica la classe CSS o le regole che influenzano questi elementi.
 1. Creare un file del foglio di stile (css).
-1. Includi il foglio di stile in una cartella della libreria client ([clientlibs](#clientlibs-for-scf)) per il tuo sito e assicurati che sia incluso nei modelli e nelle pagine con [ui:includeClientLib](../../help/sites-developing/clientlibs.md).
+1. Includi il foglio di stile in una cartella della libreria client ([clientlibs](#clientlibs-for-scf)) per il tuo sito e assicurati che sia incluso nei tuoi modelli e nelle tue pagine con [ui:includeClientLib](../../help/sites-developing/clientlibs.md).
 
 1. Ridefinire le classi e le regole CSS identificate (#2) nel foglio di stile e aggiungere stili.
 
@@ -111,7 +109,7 @@ Gli stili personalizzati sovrascriveranno gli stili di framework predefiniti e i
 
 Per estendere un’implementazione di JavaScript per componenti, è necessario:
 
-1. Crea un componente per la tua app con un jcr:resourceSuperType impostato sul valore del jcr:resourceType del componente esteso, ad esempio social/forum/components/hbs/forum.
+1. Creare un componente per l&#39;app con un JCR:resourceSuperType impostato sul valore del JCR:resourceType del componente esteso, ad esempio social/forum/components/hbs/forum.
 1. Esaminate il JavaScript del componente SCF predefinito per determinare quali metodi devono essere registrati utilizzando SCF.registerComponent().
 1. Copia il JavaScript del componente esteso o inizia da zero.
 1. Estendere il metodo.
@@ -146,7 +144,7 @@ Per estendere un’implementazione di JavaScript per componenti, è necessario:
 
 I tag script sono parte integrante del framework lato client. Sono l’associazione che consente di associare il markup generato sul lato server ai modelli e alle viste sul lato client.
 
-I tag di script negli script SCF non devono essere rimossi quando si sovrappongono o si sovrascrivono i componenti. I tag script SCF creati automaticamente per l&#39;inserimento di JSON nel HTML sono identificati con l&#39;attributo `data-scf-json=true`.
+I tag di script negli script SCF non devono essere rimossi quando si sovrappongono o si sovrascrivono i componenti. I tag script SCF creati automaticamente per l&#39;inserimento di JSON in HTML sono identificati con l&#39;attributo `data-scf-json=true`.
 
 ## Clientlibs per SCF {#clientlibs-for-scf}
 
@@ -161,7 +159,7 @@ Le clientlibs per SCF seguono un pattern di denominazione molto specifico per du
 
 ### Clientlibs complete {#complete-clientlibs}
 
-Le clientlibs complete (non di authoring) includono dipendenze e sono comode da includere con ui:includeClientLib.
+Le clientlibs complete (non di authoring) includono dipendenze e sono utili per l&#39;inclusione con l&#39;interfaccia utente :includeClientLib.
 
 Queste versioni si trovano in:
 

@@ -7,11 +7,9 @@ feature: Developing
 role: Developer
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 84%
-
+source-wordcount: '806'
+ht-degree: 82%
 ---
-
 # Operazioni asincrone {#asynchronous-operations}
 
 Adobe Experience Manager, per ridurre l’impatto negativo sulle prestazioni, elabora in modo asincrono alcune operazioni che richiedono tempo e risorse. L’elaborazione asincrona comporta l’accodamento di più processi e la loro esecuzione in modo seriale, in base alla disponibilità delle risorse di sistema.
@@ -54,7 +52,7 @@ Lo stato delle operazioni asincrone è consultabile in dettaglio alla pagina **[
 
    * **[!UICONTROL Pianificato]**: l’elaborazione dell’operazione è pianificata per un momento successivo
 
-1. Per interrompere un’operazione attiva, selezionala nell’elenco e scegli **[!UICONTROL Interrompi]** nella barra degli strumenti.
+1. Per interrompere un’operazione attiva, selezionala nell’elenco e fai clic su **[!UICONTROL Interrompi]** nella barra degli strumenti.
 
    ![stop_icon](assets/async-stop-icon.png)
 
@@ -74,7 +72,7 @@ Lo stato delle operazioni asincrone è consultabile in dettaglio alla pagina **[
 
 ## Rimuovi processi completati {#purging-completed-jobs}
 
-AEM ogni giorno alle 01:00 esegue un processo che elimina i processi asincroni completati da più di un giorno.
+AEM esegue un processo di eliminazione ogni giorno alle 01:00 per eliminare i processi asincroni completati da più di un giorno.
 
 Puoi modificare la pianificazione per il processo di eliminazione e il periodo per il quale i dettagli dei processi completati vengono conservati prima di essere eliminati. Puoi anche configurare il numero massimo di processi completati per i quali i dettagli devono essere conservati.
 
@@ -91,7 +89,7 @@ Puoi modificare la pianificazione per il processo di eliminazione e il periodo p
 
 ## Configurare l’elaborazione asincrona {#configuring-asynchronous-processing}
 
-Puoi configurare il numero limite di risorse, pagine o riferimenti per l’AEM in modo da elaborare una particolare operazione in modo asincrono e attivare/disattivare le notifiche e-mail per indicare quando vengono elaborati i processi.
+Puoi configurare il numero limite di risorse, pagine o riferimenti per AEM in modo da elaborare una particolare operazione in modo asincrono e attivare/disattivare le notifiche e-mail per indicare quando vengono elaborati i processi.
 
 ### Configurare le operazioni di eliminazione delle risorse asincrone {#configuring-synchronous-delete-operations}
 
@@ -133,7 +131,7 @@ Quando il numero di risorse, cartelle o riferimenti da spostare supera la soglia
 >
 >* [Creazione e organizzazione delle pagine](/help/sites-authoring/managing-pages.md)
 >* [Creazione e sincronizzazione di Live Copy](/help/sites-administering/msm-livecopy.md)
->* [Configura e-mail in Experience Manager](/help/sites-administering/notification.md).
+>* [Configura la posta elettronica in Experience Manager](/help/sites-administering/notification.md).
 >* [Importa metadati risorsa](/help/assets/metadata.md#import-metadata).
 >* [Esporta metadati risorsa](/help/assets/metadata.md#export-metadata).
 >* [Utilizzare le risorse collegate per condividere le risorse DAM da implementazioni remote](/help/assets/use-assets-across-connected-assets-instances.md).

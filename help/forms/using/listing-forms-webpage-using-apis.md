@@ -1,5 +1,5 @@
 ---
-title: Elencare moduli su una pagina web utilizzando le API
+title: Elenco di moduli su una pagina web utilizzando le API
 description: Eseguire query a livello di codice su Forms Manager per recuperare un elenco filtrato di moduli e visualizzarli nelle proprie pagine Web.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,16 +10,14 @@ feature: Forms Portal
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 1%
-
+source-wordcount: '693'
+ht-degree: 6%
 ---
-
-# Elencare moduli su una pagina web utilizzando le API {#listing-forms-on-a-web-page-using-apis}
+# Elenco di moduli su una pagina web utilizzando le API {#listing-forms-on-a-web-page-using-apis}
 
 AEM Forms fornisce un’API di ricerca basata su REST che gli sviluppatori web possono utilizzare per eseguire query e recuperare un set di moduli che soddisfano i criteri di ricerca. Puoi utilizzare le API per cercare i moduli in base a vari filtri. L’oggetto di risposta contiene attributi del modulo, proprietà e punti finali del rendering dei moduli.
 
-Per eseguire ricerche nei moduli tramite l&#39;API REST, invia una richiesta GET al server all&#39;indirizzo `https://'[server]:[port]'/libs/fd/fm/content/manage.json` con i parametri di query descritti di seguito.
+Per cercare moduli utilizzando l’API REST, invia una richiesta GET al server all’indirizzo `https://'[server]:[port]'/libs/fd/fm/content/manage.json` con i parametri di query descritti di seguito.
 
 ## Parametri di query {#query-parameters}
 
@@ -31,7 +29,7 @@ Per eseguire ricerche nei moduli tramite l&#39;API REST, invia una richiesta GET
   </tr>
   <tr>
    <td>func<br /> </td>
-   <td><p>Specifica la funzione da chiamare. Per cercare i moduli, impostare il valore dell'attributo <code>func </code> su <code>searchForms</code>.</p> <p>Ad esempio: <code class="code">
+   <td><p>Specifica la funzione da chiamare. Per cercare i moduli, impostare il valore dell'attributo <code>func </code> su <code>searchForms</code>.</p> <p>Ad esempio, <code class="code">
        URLParameterBuilder entityBuilder=new URLParameterBuilder ();
        entityBuilder.add("func", "searchForms");</code></p> <p><strong>Nota:</strong> <em>Questo parametro è obbligatorio.</em><br /> </p> </td>
   </tr>
@@ -41,7 +39,7 @@ Per eseguire ricerche nei moduli tramite l&#39;API REST, invia una richiesta GET
   </tr>
   <tr>
    <td>cutPoints<br /> </td>
-   <td><p>Specifica le proprietà da recuperare con le risorse. Puoi usare l’asterisco (*) per recuperare tutte le proprietà contemporaneamente. Utilizzare l'operatore pipe (|) per specificare più proprietà. </p> <p>Ad esempio: <code>cutPoints=propertyName1|propertyName2|propertyName3</code></p> <p><strong>Nota</strong>: </p>
+   <td><p>Specifica le proprietà da recuperare con le risorse. Puoi usare l’asterisco (*) per recuperare tutte le proprietà contemporaneamente. Utilizzare l'operatore pipe (|) per specificare più proprietà. </p> <p>Ad esempio, <code>cutPoints=propertyName1|propertyName2|propertyName3</code></p> <p><strong>Nota</strong>: </p>
     <ul>
      <li><em>Le proprietà come ID, percorso e nome vengono sempre recuperate. </em></li>
      <li><em>Ogni risorsa ha un set diverso di proprietà. Proprietà come formUrl, pdfUrl e guideUrl non dipendono dall’attributo cutpoints. Queste proprietà dipendono dal tipo di risorsa e vengono recuperate di conseguenza. </em></li>
@@ -70,7 +68,7 @@ Per eseguire ricerche nei moduli tramite l&#39;API REST, invia una richiesta GET
   </tr>
   <tr>
    <td>istruzioni</td>
-   <td><p>Specifica l'elenco di istruzioni. Le query vengono eseguite nell’elenco delle istruzioni specificate nel formato JSON. </p> <p>Ad esempio:</p> <p><code class="code">JSONArray statementArray=new JSONArray();
+   <td><p>Specifica l'elenco di istruzioni. Le query vengono eseguite nell’elenco delle istruzioni specificate nel formato JSON. </p> <p>Ad esempio,</p> <p><code class="code">JSONArray statementArray=new JSONArray();
        JSONObject statement=new JSONObject();
        statement.put("name", "title");
        statement.put("value", "SimpleSurveyAF");
@@ -97,7 +95,7 @@ Per eseguire ricerche nei moduli tramite l&#39;API REST, invia una richiesta GET
   </tr>
   <tr>
    <td>ordini<br /> </td>
-   <td><p>Specifica i criteri di ordine per i risultati della ricerca. I criteri sono definiti in formato JSON. È possibile ordinare i risultati di ricerca in più campi. I risultati vengono ordinati in base all'ordine di visualizzazione dei campi nella query.</p> <p>Ad esempio:</p> <p>Per recuperare i risultati della query ordinati per proprietà titolo in ordine crescente, aggiungi il seguente parametro: </p> <p><code class="code">JSONArray orderingsArray=new JSONArray();
+   <td><p>Specifica i criteri di ordine per i risultati della ricerca. I criteri sono definiti in formato JSON. È possibile ordinare i risultati di ricerca in più campi. I risultati vengono ordinati in base all'ordine di visualizzazione dei campi nella query.</p> <p>Ad esempio,</p> <p>Per recuperare i risultati della query ordinati per proprietà titolo in ordine crescente, aggiungi il seguente parametro: </p> <p><code class="code">JSONArray orderingsArray=new JSONArray();
        JSONObject orderings=new JSONObject();
        orderings.put("name", "title");
        orderings.put("criteria", "ASC");
@@ -174,6 +172,6 @@ orderings:[{"name" :"lastModifiedDate":"order":"ASC"}]
 * [Elencare moduli su una pagina web utilizzando API](/help/forms/using/listing-forms-webpage-using-apis.md)
 * [Utilizzare il componente Bozze e invii](/help/forms/using/draft-submission-component.md)
 * [Personalizzare l’archiviazione delle bozze e dei moduli inviati](/help/forms/using/draft-submission-component.md)
-* [Esempio per integrare il componente Bozze e invii con il database](/help/forms/using/integrate-draft-submission-database.md)
-* [Personalizzazione dei modelli per i componenti del portale Forms](/help/forms/using/customizing-templates-forms-portal-components.md)
+* [Esempio di integrazione del componente bozze e invii con il database](/help/forms/using/integrate-draft-submission-database.md)
+* [Personalizzazione dei modelli per i componenti del portale dei moduli](/help/forms/using/customizing-templates-forms-portal-components.md)
 * [Introduzione alla pubblicazione di moduli su un portale](/help/forms/using/introduction-publishing-forms.md)

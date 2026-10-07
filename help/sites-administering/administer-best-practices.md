@@ -1,24 +1,26 @@
 ---
 title: Procedure consigliate per consentire agli amministratori di iniziare a utilizzare
-description: Trova le best practice compilate dai team tecnici e di consulenza Adobe per aiutare gli amministratori a iniziare subito.
+
+description: Trova le best practice compilate dai team tecnici e di consulenza di Adobe per aiutare gli amministratori a iniziare subito.
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
+
 exl-id: 576d87c8-cc96-45a0-b3cf-defb440babbb
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '530'
-ht-degree: 6%
-
+source-wordcount: '533'
+ht-degree: 7%
 ---
-
 # Best practice{#best-practices}
 
-Le best practice descrivono come sviluppare, amministrare o utilizzare AEM nel modo più efficiente ed efficace possibile. Questo elenco crescente di argomenti comprende una varietà di aree dell&#39;AEM.
+Le best practice descrivono come sviluppare, amministrare o utilizzare AEM nel modo più efficiente ed efficace possibile. Questo elenco crescente di argomenti include diverse aree in AEM.
 
 Nelle seguenti aree è disponibile la documentazione sulle best practice:
 
@@ -27,15 +29,15 @@ Nelle seguenti aree è disponibile la documentazione sulle best practice:
 
 Per le best practice sull’authoring, la distribuzione, la manutenzione o lo sviluppo, consulta una delle seguenti sezioni:
 
-* [Best practice di authoring](/help/sites-authoring/best-practices.md)
-* [Sviluppo di best practice](/help/sites-developing/best-practices.md)
+* [Authoring delle best practice](/help/sites-authoring/best-practices.md)
+* [Sviluppo delle best practice](/help/sites-developing/best-practices.md)
 * [Implementazione delle best practice](/help/sites-deploying/best-practices.md)
 
 I documenti specifici sono descritti e collegati nelle tabelle seguenti.
 
 ## Risorse {#assets}
 
-Le best practice relative ad Assets, incluse la funzionalità Dynamic Medie e l’integrazione con Dynamic Media Classic, sono descritte nei seguenti argomenti:
+Le best practice relative ad Assets, incluse la funzionalità Dynamic Media e l’integrazione con Dynamic Media Classic, sono descritte nei seguenti argomenti:
 
 <table>
  <tbody>
@@ -60,9 +62,9 @@ Le best practice relative ad Assets, incluse la funzionalità Dynamic Medie e l�
    <td>Come parte della documentazione su <a href="/help/assets/managing-image-presets.md">Gestione dei predefiniti immagine</a>, questi argomenti descrivono i predefiniti immagine e le best practice per la selezione delle opzioni dei predefiniti immagine.</td>
   </tr>
   <tr>
-   <td>Confronto tra Dynamic Medie e l'integrazione diretta con Scene7</td>
-   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Integrazione Scene7/AEM rispetto a Dynamic Medie</a></td>
-   <td>Descrive quando è meglio utilizzare la soluzione Dynamic Medie, quando integrare S7 con AEM o quando utilizzare entrambi.</td>
+   <td>Confronto tra Dynamic Media e l'integrazione diretta con Scene7</td>
+   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Integrazione di Scene7/AEM e Dynamic Media</a></td>
+   <td>Descrive quando è meglio utilizzare la soluzione Dynamic Media, quando integrare S7 con AEM o quando utilizzare entrambi.</td>
   </tr>
  </tbody>
 </table>
@@ -81,7 +83,7 @@ Per la gestione e l’authoring dei contenuti del sito web, vengono descritte al
   <tr>
    <td>Definisci l’interfaccia utente predefinita per l’istanza.</td>
    <td><p><a href="/help/sites-authoring/select-ui.md#configuring-the-default-ui-for-your-instance">Configurazione dell’interfaccia utente predefinita per l’istanza</a></p> </td>
-   <td>L'AEM ha due interfacce: touch-screen e classica. Questa sezione descrive come definire l’interfaccia utente predefinita per l’istanza.</td>
+   <td>AEM dispone di due interfacce: touch-screen e classica. Questa sezione descrive come definire l’interfaccia utente predefinita per l’istanza.</td>
   </tr>
   <tr>
    <td>Gestione multisito</td>
