@@ -12,11 +12,9 @@ feature: Administering,Personalization
 role: Admin
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '1961'
+source-wordcount: '2007'
 ht-degree: 0%
-
 ---
-
 
 # ClientContext{#client-context}
 
@@ -63,7 +61,7 @@ ClientContext può mostrare le seguenti proprietà ([a seconda di ciò che è st
 * la posizione **mouse X**
 * la posizione **mouse Y**
 
-**Flusso attività** Questo fornisce informazioni sull&#39;attività social dell&#39;utente su varie piattaforme, ad esempio forum, blog, valutazioni dell&#39;AEM e così via.
+**Flusso attività** Questo fornisce informazioni sull&#39;attività social dell&#39;utente su varie piattaforme, ad esempio forum, blog, valutazioni di AEM e così via.
 
 **Campagna** Consente agli autori di simulare un&#39;esperienza specifica per una campagna. Questo componente sostituisce la risoluzione normale della campagna e la selezione dell’esperienza per abilitare il test di varie permutazioni.
 
@@ -211,25 +209,25 @@ La modifica di un contesto client può essere utilizzata per impostare (o reimpo
 
 ### Aggiunta di un componente proprietà {#adding-a-property-component}
 
-Dopo aver aperto la **pagina di progettazione del ClientContext**, puoi anche **Aggiungere** una proprietà completamente nuova utilizzando i componenti disponibili (i componenti sono elencati sia nella barra laterale che nella finestra di dialogo **Inserisci nuovo componente**, aperta dopo aver fatto doppio clic sulla casella **Trascina qui i componenti o le risorse**):
+Dopo aver aperto la **pagina di progettazione di ClientContext**, è anche possibile **Aggiungere** una proprietà completamente nuova utilizzando i componenti disponibili (i componenti sono elencati nella barra laterale o dalla finestra di dialogo **Inserisci nuovo componente** che viene aperta dopo un doppio clic sulla casella **Trascina qui i componenti o le risorse**):
 
 ![Aggiunta di una proprietà alla finestra ClientContext](assets/clientcontext_alisonparker_new.png)
 
 ### Rimozione di un componente proprietà {#removing-a-property-component}
 
-Dopo aver aperto la **pagina di progettazione del ClientContext**, puoi anche **rimuovere** una proprietà se non è più necessaria. Sono incluse le proprietà fornite come predefinite; **Ripristina** le ripristinerà se sono state rimosse.
+Dopo aver aperto la **pagina di progettazione di ClientContext**, puoi anche **rimuovere** una proprietà se non è più necessaria. Sono incluse le proprietà fornite come predefinite; **Ripristina** le ripristinerà se sono state rimosse.
 
 ## Memorizzazione dei dati in ClientContext tramite JSONP {#storing-data-in-client-context-via-jsonp}
 
 Segui questo esempio per utilizzare il componente archivio di contesto JSONP Store per aggiungere dati esterni a ClientContext. Quindi, crea un segmento in base alle informazioni provenienti da tali dati. Nell&#39;esempio viene utilizzato il servizio JSONP fornito da WIPmania.com. Il servizio restituisce informazioni di geolocalizzazione in base all’indirizzo IP del client web.
 
-In questo esempio viene utilizzato il sito Web di esempio Geometrixx Outdoors per accedere a ClientContext e per verificare il segmento creato. È possibile utilizzare un sito Web diverso purché la pagina abbia abilitato ClientContext. (Vedi [Aggiunta di ClientContext a una pagina](/help/sites-developing/client-context.md#adding-client-context-to-a-page).)
+In questo esempio viene utilizzato il sito Web di esempio di Geometrixx Outdoors per accedere a ClientContext e per testare il segmento creato. È possibile utilizzare un sito Web diverso purché la pagina abbia abilitato ClientContext. (Vedi [Aggiunta di ClientContext a una pagina](/help/sites-developing/client-context.md#adding-client-context-to-a-page).)
 
 ### Aggiungi il componente JSONP Store {#add-the-jsonp-store-component}
 
 Aggiungi il componente JSONP Store a ClientContext e utilizzalo per recuperare e memorizzare le informazioni di geolocalizzazione sul client web.
 
-1. Apri la home page inglese del sito Geometrixx Outdoors nell’istanza di authoring AEM. ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html)).
+1. Apri la home page inglese del sito Geometrixx Outdoors nell’istanza di authoring di AEM. ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html)).
 1. Per aprire ClientContext, premere Ctrl-Alt-c (Windows) o Control-option-c (Mac).
 1. Per aprire ClientContext Designer, fai clic sull’icona Modifica nella parte superiore di ClientContext.
 
@@ -248,8 +246,8 @@ Aggiungi il componente JSONP Store a ClientContext e utilizzalo per recuperare e
 
    ![Proprietà del servizio JSONP](assets/chlimage_1-40.png)
 
-1. Fare clic su OK.
-1. Torna alla home page dei Geometrixx Outdoors e aggiorna la pagina. ClientContext ora include le informazioni dal componente JSONP Store.
+1. Fai clic su OK.
+1. Torna alla home page di Geometrixx Outdoors e aggiorna la pagina. ClientContext ora include le informazioni dal componente JSONP Store.
 
    ![Esempio del componente JSONP popolato con dati](assets/chlimage_1-41.png)
 
