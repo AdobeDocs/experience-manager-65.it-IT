@@ -7,18 +7,16 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 0%
-
+source-wordcount: '281'
+ht-degree: 12%
 ---
-
 # Impossibile ottenere e-mail con allegati per AEM Forms sulle piattaforme JEE{#unable-to-get-email-with-attachments}
 
 Il problema si applica alla seguente versione:
 
 * Experience Manager 6.5 Forms
 
-## Problema   {#issue}
+## Problema {#issue}
 
 L’utente non è in grado di eseguire operazioni quali Invia PDF tramite e-mail o Includi allegati con la configurazione di Invio.
 
@@ -41,7 +39,7 @@ L’utente non è in grado di eseguire operazioni quali Invia PDF tramite e-mail
 
 1. Installazione di `java.mail-1.5.jar` ottenuta dal passaggio 3. Questo passaggio riavvia le proprietà sling della distribuzione JEE. Attendi che i bundle installati in `http://<server name>:<port>/lc/system/console/bundles` mostrino lo stato come **Attivo**.
 
-   >Se lo stato è ancora **InActive**, riavviare   **JBoss®** da **Console servizi**.
+   >Se lo stato è ancora **InActive**, riavviare **JBoss®** dalla **Console servizi**.
 
 
 1. Installa `javax.mail-1.5.6.redhat-1.jar` file scaricato tramite il passaggio 5.
@@ -54,4 +52,4 @@ L’utente non è in grado di eseguire operazioni quali Invia PDF tramite e-mail
 
 >[!NOTE]
 >
-> Per riavviare l&#39;SDK, si consiglia di utilizzare il comando &#39;Ctrl + C&#39;. Il riavvio dell’SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java, può causare incongruenze nell’ambiente di sviluppo dell’AEM.
+> Si consiglia di utilizzare il comando “Ctrl + C” per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.
