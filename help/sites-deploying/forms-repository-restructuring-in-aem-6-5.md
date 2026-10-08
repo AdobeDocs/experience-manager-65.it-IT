@@ -1,5 +1,5 @@
 ---
-title: Ristrutturazione dell’archivio Forms nell’AEM 6.5
+title: Ristrutturazione dell’archivio Forms in AEM 6.5
 description: Scopri come apportare le modifiche necessarie per migrare alla nuova struttura dell’archivio in AEM 6.5 per Forms.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -10,14 +10,12 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 7%
-
+source-wordcount: '521'
+ht-degree: 9%
 ---
+# Ristrutturazione dell’archivio Forms in AEM 6.5{#forms-repository-restructuring-in-aem}
 
-# Ristrutturazione dell’archivio Forms nell’AEM 6.5{#forms-repository-restructuring-in-aem}
-
-Come descritto nella pagina padre [Ristrutturazione dell’archivio in AEM 6.5](/help/sites-deploying/repository-restructuring.md), i clienti che eseguono l’aggiornamento a AEM 6.5 devono utilizzare questa pagina per valutare l’impegno di lavoro associato alle modifiche dell’archivio che influiscono sulla soluzione AEM Forms. Alcune modifiche richiedono un impegno di lavoro durante il processo di aggiornamento AEM 6.5, mentre altre possono essere differite fino a un aggiornamento futuro.
+Come descritto nella pagina [Ristrutturazione dell’archivio padre in AEM 6.5](/help/sites-deploying/repository-restructuring.md), i clienti che eseguono l’aggiornamento ad AEM 6.5 devono utilizzare questa pagina per valutare l’impegno di lavoro associato alle modifiche dell’archivio che influiscono sulla soluzione AEM Forms. Alcune modifiche richiedono un impegno di lavoro durante il processo di aggiornamento di AEM 6.5, mentre altre possono essere differite fino a un aggiornamento futuro.
 
 **Con Aggiornamento 6.5**
 
@@ -25,9 +23,9 @@ Come descritto nella pagina padre [Ristrutturazione dell’archivio in AEM 6.5](
 
 **Prima dell&#39;aggiornamento futuro**
 
-* [Configurazione Cloud Service Echosign](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#echosign-cloud-service-configuration)
+* [Configurazione Echosign Cloud Service](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#echosign-cloud-service-configuration)
 * [Configurazioni Cloud Service Recaptcha](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#recaptcha-cloud-service-configurations)
-* [Configurazioni del Cloud Service Typekit](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#typekit-cloud-service-configurations)
+* [Configurazioni Cloud Service Typekit](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#typekit-cloud-service-configurations)
 * [Varie](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#misc)
 
 ## Con aggiornamento 6.5 {#with-upgrade}
@@ -79,18 +77,18 @@ Come descritto nella pagina padre [Ristrutturazione dell’archivio in AEM 6.5](
 | **Percorso precedente** | `/etc/clientlibs/fd/fmaddon` |
 |---|---|
 | **Nuova posizione** | `/libs/fd/fmaddon` |
-| **Linee guida per la ristrutturazione** | La modifica di queste clientlibs non è mai stata consigliata né supportata. Se sono state apportate modifiche a queste clientlibs, è necessario eseguirne il rollback per utilizzare il codice fornito dall’AEM. |
+| **Linee guida per la ristrutturazione** | La modifica di queste clientlibs non è mai stata consigliata né supportata. Se sono state apportate modifiche a queste clientlibs, è necessario ripristinarle e utilizzare il codice fornito da AEM. |
 | **Note** | N/D |
 
 | **Percorso precedente** | `/etc/aep` |
 |---|---|
 | **Nuova posizione** | `/var/fd/content/annotations` |
-| **Linee guida per la ristrutturazione** | La modifica di queste clientlibs non è mai stata consigliata né supportata. Se sono state apportate modifiche a queste clientlibs, è necessario eseguirne il rollback per utilizzare il codice fornito dall’AEM. |
+| **Linee guida per la ristrutturazione** | La modifica di queste clientlibs non è mai stata consigliata né supportata. Se sono state apportate modifiche a queste clientlibs, è necessario ripristinarle e utilizzare il codice fornito da AEM. |
 | **Note** | N/D |
 
 ## Prima di aggiornamenti futuri {#prior-to-upgrade}
 
-### Configurazione Cloud Service Echosign {#echosign-cloud-service-configuration}
+### Configurazione Echosign Cloud Service {#echosign-cloud-service-configuration}
 
 | **Percorso precedente** | `/etc/cloudservices/echosign` |
 |---|---|
@@ -106,7 +104,7 @@ Come descritto nella pagina padre [Ristrutturazione dell’archivio in AEM 6.5](
 | **Linee guida per la ristrutturazione** | L&#39;utilità [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) verrà attivata dall&#39;interfaccia utente di Forms Migration. |
 | **Note** | N/D |
 
-### Configurazioni del Cloud Service Typekit {#typekit-cloud-service-configurations}
+### Configurazioni Cloud Service Typekit {#typekit-cloud-service-configurations}
 
 | **Percorso precedente** | `/etc/cloudservices/typekit` |
 |---|---|

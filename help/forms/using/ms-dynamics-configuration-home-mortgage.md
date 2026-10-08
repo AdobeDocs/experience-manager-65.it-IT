@@ -1,5 +1,5 @@
 ---
-title: Configura Microsoft Dynamics 365 per il flusso di lavoro mutui per la casa del sito di riferimento We.Finance
+title: Configura Microsoft Dynamics 365 per il flusso di lavoro relativo ai mutui per la casa del sito di riferimento We.Finance
 description: Scopri come utilizzare i servizi di Microsoft&reg; Dynamics 365 tramite moduli adattivi per il flusso di lavoro del mutuo per la casa del sito di riferimento We.Finance.
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: develop, Configuration
@@ -9,12 +9,10 @@ feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 0%
-
+source-wordcount: '415'
+ht-degree: 7%
 ---
-
-# Configura Microsoft Dynamics 365 per il flusso di lavoro mutui per la casa del sito di riferimento We.Finance {#configure-microsoft-dynamics-for-the-home-mortgage-workflow-of-the-we-finance-reference-site}
+# Configura Microsoft Dynamics 365 per il flusso di lavoro relativo ai mutui per la casa del sito di riferimento We.Finance {#configure-microsoft-dynamics-for-the-home-mortgage-workflow-of-the-we-finance-reference-site}
 
 Scopri come utilizzare i servizi Microsoft® Dynamics 365 tramite moduli adattivi per il flusso di lavoro ipotecario per la casa del sito di riferimento We.Finance
 
@@ -51,7 +49,7 @@ Prima di iniziare l’impostazione e la configurazione di Dynamics 365, assicura
    ![selectassetpath](assets/selectassetpath.png)
 
 1. Seleziona **Fine**.
-1. Publish la pagina modificata.
+1. Pubblica la pagina modificata.
 
    >[!NOTE]
    >

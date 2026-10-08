@@ -11,11 +11,9 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '425'
 ht-degree: 0%
-
 ---
-
 # Architettura dei contenuti{#content-architecture}
 
 ## Segui il modello di David {#follow-david-s-model}
@@ -46,22 +44,22 @@ I servlet devono essere definiti in base ai resourceTypes anziché ai percorsi. 
 
 ### Evita di definire nuovi tipi di nodo {#avoid-defining-new-node-types}
 
-I tipi di nodo funzionano a un livello basso nel livello dell’infrastruttura e la maggior parte dei requisiti può essere soddisfatta utilizzando un tipo di nodo sling:resourceType assegnato a un tipo di nodo nt:unstructured, oak:Unstructured, sling:Folder o cq:Page. I tipi di nodo equivalgono allo schema nell’archivio e la modifica dei tipi di nodo può risultare costosa in qualsiasi momento.
+I tipi di nodo funzionano a un livello basso nel livello dell&#39;infrastruttura e la maggior parte dei requisiti può essere soddisfatta utilizzando un sling:resourceType assegnato a un tipo di nodo nt:unstructured, oak:Unstructured, sling:Folder o cq:Page. I tipi di nodo equivalgono allo schema nell’archivio e la modifica dei tipi di nodo può risultare costosa in qualsiasi momento.
 
 ### Rispettare le convenzioni di denominazione nel JCR {#adhere-to-naming-conventions-in-the-jcr}
 
-Il rispetto delle convenzioni di denominazione aggiunge coerenza alla base di codice, riducendo il tasso di incidenza dei difetti e aumentando la velocità degli sviluppatori che lavorano nel sistema. Le seguenti convenzioni sono utilizzate per Adobe nello sviluppo dell&#39;AEM:
+Il rispetto delle convenzioni di denominazione aggiunge coerenza alla base di codice, riducendo il tasso di incidenza dei difetti e aumentando la velocità degli sviluppatori che lavorano nel sistema. Adobe utilizza le seguenti convenzioni per lo sviluppo di AEM:
 
 * Nomi di nodo
 
-   * Tutte minuscole
-   * Separazione delle parole mediante trattini
+  * Tutte minuscole
+  * Separazione delle parole mediante trattini
 
 * Nomi di proprietà
 
-   * Camel case, a partire da una lettera minuscola
+  * Camel case, a partire da una lettera minuscola
 
 * Componenti (JSP/HTML)
 
-   * Tutte minuscole
-   * Separazione delle parole mediante trattini
+  * Tutte minuscole
+  * Separazione delle parole mediante trattini

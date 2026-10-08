@@ -1,5 +1,5 @@
 ---
-title: Utilizzo di espressioni SOM nei moduli adattivi
+title: Utilizzare le espressioni SOM nei moduli adattivi
 description: Scopri come estrarre le espressioni SOM di un pannello di un modulo adattivo.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
@@ -11,16 +11,14 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 0%
-
+source-wordcount: '354'
+ht-degree: 3%
 ---
+# Utilizzare le espressioni SOM nei moduli adattivi{#using-som-expressions-in-adaptive-forms}
 
-# Utilizzo di espressioni SOM nei moduli adattivi{#using-som-expressions-in-adaptive-forms}
+I moduli adattivi sono modellati come pagina AEM, rappresentata come struttura di contenuto JCR nell’archivio AEM. L’elemento chiave della struttura del contenuto è il nodo guideContainer. Sotto guideContainer, è presente rootPanel che può contenere pannelli e campi nidificati.
 
-I moduli adattivi sono modellati come pagina AEM che è rappresentata come struttura di contenuto JCR nell’archivio AEM. L’elemento chiave della struttura del contenuto è il nodo guideContainer. Sotto guideContainer, è presente rootPanel che può contenere pannelli e campi nidificati.
-
-È possibile utilizzare un modello a oggetti di script (SOM, scripting object model) per fare riferimento a valori, proprietà e metodi all&#39;interno di un particolare modello a oggetti documento (DOM, Document Object Model). Un DOM organizza gli oggetti e le proprietà di memoria in una gerarchia ad albero. Un’espressione SOM fa riferimento a Campi/elementi e pannelli Draw.
+È possibile utilizzare un modello a oggetti di script (SOM, scripting object model) per fare riferimento a valori, proprietà e metodi all&#39;interno di un particolare modello a oggetti documento (DOM, Document Object Model). Un DOM organizza gli oggetti e le proprietà di memoria in una gerarchia ad albero. Un&#39;espressione SOM fa riferimento a Campi/Disegna elementi e pannelli.
 
 L’immagine seguente illustra una struttura di nodi a cui si traduce un modulo adattivo quando si aggiungono componenti a un modulo. Ad esempio, puoi aggiungere un pannello al pannello principale e un pulsante di scelta nel pannello che viene trasformato in DOM in fase di esecuzione. L&#39;espressione SOM per il campo pulsante di scelta nel modulo adattivo è specificata come `guide[0].guide1[0].guideRootPanel[0].panel1[0].radiobutton[0]`.
 

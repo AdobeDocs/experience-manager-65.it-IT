@@ -1,10 +1,14 @@
 ---
-title: Console Panoramica sulla Live Copy
+title: Panoramica sulla console Live Copy
+
 description: Scopri le nozioni di base della console Panoramica Live Copy.
+
+
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
+
 feature: Multi Site Manager
 exl-id: 0c3488bd-5f32-4956-882c-93326a45b379
 solution: Experience Manager, Experience Manager Sites
@@ -13,18 +17,16 @@ source-git-commit: d5fb67933676c9ea5fdbeafe592960403e78af79
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 31%
-
 ---
-
-# Console Panoramica sulla Live Copy{#live-copy-overview-console}
+# Panoramica sulla console Live Copy{#live-copy-overview-console}
 
 La **Panoramica Live Copy** consente di:
 
 * Visualizzare/gestire l’ereditarietà in un sito:
 
-   * Visualizzare la struttura della blueprint e della Live Copy corrispondente, insieme al relativo stato di ereditarietà
-   * Modifica lo stato di ereditarietà; ad esempio, sospendi, riprendi
-   * Visualizzare le proprietà di blueprint e Live Copy
+  * Visualizzare la struttura della blueprint e della Live Copy corrispondente, insieme al relativo stato di ereditarietà
+  * Modifica lo stato di ereditarietà; ad esempio, sospendi, riprendi
+  * Visualizzare le proprietà di blueprint e Live Copy
 
 * Eseguire azioni di rollout
 
@@ -79,11 +81,11 @@ Quando selezioni una pagina blueprint, sono disponibili le seguenti azioni:
 
 * Modifica
 
-   * Apri la pagina blueprint per la modifica.
+  * Apri la pagina blueprint per la modifica.
 
 * [Rollout](/help/sites-administering/msm.md#rollout-and-synchronize)
 
-   * Esegui un rollout per inviare le modifiche dalla sorgente alla Live Copy.
+  * Esegui un rollout per inviare le modifiche dalla sorgente alla Live Copy.
 
 ### Azioni per una pagina Live Copy {#actions-for-a-live-copy-page}
 
@@ -93,31 +95,31 @@ Quando selezioni una pagina Live Copy, sono disponibili le seguenti azioni:
 
 * Modifica
 
-   * Apri la pagina Live Copy per la modifica.
+  * Apri la pagina Live Copy per la modifica.
 
 * [Stato di relazione](#relationship-status)
 
-   * Visualizza informazioni sullo stato e sull’ereditarietà.
+  * Visualizza informazioni sullo stato e sull’ereditarietà.
 
 * [Sincronizza](/help/sites-administering/msm.md#rollout-and-synchronize)
 
-   * Sincronizza una Live Copy per richiamare le modifiche dall’origine alla Live Copy.
+  * Sincronizza una Live Copy per richiamare le modifiche dall’origine alla Live Copy.
 
 * [Ripristina](/help/sites-administering/msm-livecopy.md#resetting-a-live-copy-page)
 
-   * Reimposta una pagina Live Copy per rimuovere tutte le cancellazioni di ereditarietà e ripristinare la pagina allo stesso stato della pagina sorgente.
+  * Reimposta una pagina Live Copy per rimuovere tutte le cancellazioni di ereditarietà e ripristinare la pagina allo stesso stato della pagina sorgente.
 
 * [Sospendi](/help/sites-administering/msm.md#suspending-and-cancelling-inheritance-and-synchronization)
 
-   * Disattiva temporaneamente la relazione live tra una Live Copy e la relativa pagina blueprint.
+  * Disattiva temporaneamente la relazione live tra una Live Copy e la relativa pagina blueprint.
 
 * [Riprendi](/help/sites-administering/msm-livecopy.md#resuming-inheritance-for-a-page)
 
-   * Riprendi consente di ripristinare una relazione sospesa.
+  * Riprendi consente di ripristinare una relazione sospesa.
 
 * [Stacca](/help/sites-administering/msm.md#detaching-a-live-copy)
 
-   * Rimuove definitivamente la relazione live tra una Live Copy e la relativa pagina blueprint.
+  * Rimuove definitivamente la relazione live tra una Live Copy e la relativa pagina blueprint.
 
 ## Stato di relazione {#relationship-status}
 

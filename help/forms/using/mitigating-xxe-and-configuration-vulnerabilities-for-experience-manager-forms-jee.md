@@ -8,14 +8,12 @@ geptopics: SG_AEMFORMS/categories/jee
 role: Admin
 exl-id: 9fade12f-a038-4fd6-8767-1c30966574c5
 solution: Experience Manager, Experience Manager Forms
-release-date: 2025-08-05T00:00:00Z
+release-date: 2025-08-05
 source-git-commit: 3f64cfa688ef1f0090b7ce0d821324593cbea693
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 5%
-
+source-wordcount: '699'
+ht-degree: 8%
 ---
-
 # Mitigazione di RCE (CVE-2025-49533), configurazione Struts Dev Mode (CVE-2025-54253), XXE (CVE-2025-54254) e vulnerabilità per AEM Forms su JEE {#mitigating-xxe-configuration-rce-vulnerabilities-aem-forms}
 
 ## Riferimento rapido
@@ -81,7 +79,7 @@ Questa precauzione ti consente di ripristinare lo stato originale nel caso in cu
 
 **Passaggio 1: scarica ed estrai il pacchetto Hotfix**
 
-- Scarica [hotfix per 6.5.18.0 - 6.5.22.](/help/release-notes/aem-forms-hotfix.md) dal portale di distribuzione software di Adobe
+- Scarica [hotfix per 6.5.18.0 - 6.5.22.](/help/release-notes/aem-forms-hotfix.md) dal portale di distribuzione software Adobe
 - Estrai localmente
 
 **Passaggio 2: passare alla cartella della versione corretta**
@@ -257,7 +255,7 @@ Se utilizzi Document Security (precedentemente Rights Management), imposta la se
 
 ## Riferimenti
 
-- [CWE-611: restrizione non corretta del riferimento all&#39;entità esterna XML](https://cwe.mitre.org/data/definitions/611.html)
-- [CWE-16: configurazione](https://cwe.mitre.org/data/definitions/16.html)
+- [CWE-611: restrizione non corretta del riferimento a entità esterne XML](https://cwe.mitre.org/data/definitions/611.html)
+- [CWE-16: Configurazione](https://cwe.mitre.org/data/definitions/16.html)
 - [Scheda di riferimento sulla prevenzione di OWASP XXE](https://owasp.org/www-community/vulnerabilities/XML_External_Entity_XXE_Processing)
-- [Best practice per la sicurezza di Adobe Experience Manager Forms](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=it)
+- [Best practice per la sicurezza Adobe Experience Manager Forms](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=it)

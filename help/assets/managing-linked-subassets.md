@@ -1,6 +1,6 @@
 ---
 title: Gestire le risorse composte con riferimenti e più pagine
-description: Scopri come creare riferimenti alle risorse digitali da  [!DNL Adobe InDesign], [!DNL Adobe Illustrator] e [!DNL Adobe Photoshop]. Utilizza la funzione Visualizzatore pagina per visualizzare singole pagine di risorse secondarie di file di più pagine come PDF, INDD, PPT, PPTX e AI.
+description: Scopri come creare riferimenti alle risorse digitali da [!DNL Adobe InDesign], [!DNL Adobe Illustrator] e [!DNL Adobe Photoshop]. Utilizza la funzione Visualizzatore pagina per visualizzare singole pagine di risorse secondarie di file di più pagine come PDF, INDD, PPT, PPTX e AI.
 contentOwner: AG
 role: User, Admin
 feature: Asset Management
@@ -8,11 +8,9 @@ exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1382'
+source-wordcount: '1473'
 ht-degree: 0%
-
 ---
-
 # Gestire le risorse composte e multipagina {#managing-compound-assets}
 
 [!DNL Adobe Experience Manager Assets] può identificare se un file caricato contiene riferimenti a risorse già esistenti nell&#39;archivio. Questa funzione è disponibile solo per i formati di file supportati. Se la risorsa caricata contiene riferimenti a [!DNL Experience Manager] risorse, viene creato un collegamento bidirezionale tra le risorse caricate e di riferimento.
@@ -54,7 +52,7 @@ Le risorse di riferimento esistono già in [!DNL Experience Manager Assets]. Puo
 
 >[!NOTE]
 >
->Se [!DNL InDesign Server] è proxy, l&#39;anteprima di [!DNL InDesign] file è incorporata nei metadati XMP. In questo caso, l’estrazione delle miniature non è esplicitamente richiesta. Tuttavia, se [!DNL InDesign Server] non è proxy, le miniature devono essere estratte in modo esplicito per i file [!DNL InDesign].
+>Se [!DNL InDesign Server] è proxy, l&#39;anteprima di [!DNL InDesign] file sarà incorporata nei metadati XMP. In questo caso, l’estrazione delle miniature non è esplicitamente richiesta. Tuttavia, se [!DNL InDesign Server] non è proxy, le miniature devono essere estratte in modo esplicito per i file [!DNL InDesign].
 
 Quando viene caricato un file INDD, i riferimenti vengono recuperati eseguendo una query sulle risorse con proprietà `xmpMM:InstanceID` e `xmpMM:DocumentID` nell&#39;archivio.
 
@@ -100,8 +98,8 @@ Per generare le risorse secondarie, effettuate una delle seguenti operazioni:
 * Nuove risorse: il flusso di lavoro [!UICONTROL DAM Update Assets] viene eseguito su qualsiasi nuova risorsa caricata in [!DNL Experience Manager]. Le risorse secondarie vengono generate automaticamente per le nuove risorse con più pagine.
 * Risorse a più pagine esistenti: esegui manualmente il flusso di lavoro [!UICONTROL DAM Update Assets] seguendo uno dei passaggi seguenti:
 
-   * Seleziona una risorsa e fai clic su [!UICONTROL Timeline] per aprire il pannello a sinistra. In alternativa, utilizzare la scelta rapida da tastiera `alt + 3`. Fai clic su [!UICONTROL Avvia flusso di lavoro], seleziona [!UICONTROL Risorsa di aggiornamento DAM], fai clic su [!UICONTROL Inizia] e fai clic su [!UICONTROL Procedi].
-   * Seleziona una risorsa e fai clic su [!UICONTROL Crea] > [!UICONTROL Flusso di lavoro] nella barra degli strumenti. Dalla finestra di dialogo a comparsa, seleziona il flusso di lavoro [!UICONTROL Risorsa di aggiornamento DAM], fai clic su [!UICONTROL Inizia] e fai clic su [!UICONTROL Procedi].
+  * Seleziona una risorsa e fai clic su [!UICONTROL Timeline] per aprire il pannello a sinistra. In alternativa, utilizzare la scelta rapida da tastiera `alt + 3`. Fai clic su [!UICONTROL Avvia flusso di lavoro], seleziona [!UICONTROL Risorsa di aggiornamento DAM], fai clic su [!UICONTROL Inizia] e fai clic su [!UICONTROL Procedi].
+  * Seleziona una risorsa e fai clic su [!UICONTROL Crea] > [!UICONTROL Flusso di lavoro] nella barra degli strumenti. Dalla finestra di dialogo a comparsa, seleziona il flusso di lavoro [!UICONTROL Risorsa di aggiornamento DAM], fai clic su [!UICONTROL Inizia] e fai clic su [!UICONTROL Procedi].
 
 Per i documenti di Microsoft Word, eseguire il flusso di lavoro **[!UICONTROL Analisi documenti Word DAM]**. Genera un componente `cq:Page` dal contenuto del documento di Microsoft Word. Il componente `cq:Page` fa riferimento alle immagini estratte dal documento. Queste immagini vengono estratte anche se la generazione di risorse secondarie è disabilitata.
 

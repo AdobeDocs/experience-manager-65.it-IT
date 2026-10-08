@@ -1,20 +1,18 @@
 ---
 title: Distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL
-description: Scopri come utilizzare i Frammenti di contenuto dell’AEM con GraphQL per la distribuzione di contenuti headless.
+description: Scopri come utilizzare Frammenti di contenuto di AEM con GraphQL per la distribuzione di contenuti headless.
 feature: Content Fragments,Headless,GraphQL
 role: User,Developer
 exl-id: 2debd678-2d73-41f2-b33c-c29d661f6a6b
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 74%
-
+source-wordcount: '697'
+ht-degree: 72%
 ---
-
 # Distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}
 
-Con Adobe Experience Manager (AEM), puoi utilizzare Frammenti di contenuto e l’API GraphQL AEM (un’implementazione personalizzata, basata su GraphQL standard) per fornire contenuti strutturati da utilizzare nelle applicazioni. La possibilità di personalizzare una singola query API consente di recuperare e fornire il contenuto specifico che desideri riprodurre (come risposta alla singola query API).
+Con Adobe Experience Manager (AEM), puoi utilizzare Frammenti di contenuto, insieme all’API GraphQL di AEM (un’implementazione personalizzata, basata su GraphQL standard), per fornire contenuti strutturati da utilizzare nelle applicazioni. La possibilità di personalizzare una singola query API consente di recuperare e fornire il contenuto specifico che desideri riprodurre (come risposta alla singola query API).
 
 <!--
 >[!NOTE]
@@ -39,7 +37,7 @@ Un sistema per la gestione dei contenuti (CMS) headless è:
 
 In termini di authoring di frammenti di contenuto in AEM, questo significa che:
 
-* È possibile utilizzare i frammenti di contenuto per l’authoring contenuti che non sono destinati principalmente alla pubblicazione diretta (1:1) su pagine formattate.
+* È possibile utilizzare Frammenti di contenuto per creare contenuti che non sono destinati principalmente alla pubblicazione diretta (1:1) su pagine formattate.
 
 * Il contenuto dei frammenti sarà strutturato in modo predeterminato in base ai modelli per frammenti di contenuto. Questo ne semplifica l’accesso da parte delle applicazioni che poi elaboreranno ulteriormente i contenuti.
 
@@ -51,11 +49,11 @@ GraphQL è:
 
   Vedi [GraphQL.org](https://graphql.org)
 
-L&#39;[API GraphQL per AEM](#aem-graphql-api) consente di eseguire query (complesse) sui [Frammenti di contenuto](/help/assets/content-fragments/content-fragments.md); ogni query è basata su un tipo di modello specifico. Il contenuto restituito può quindi essere utilizzato dalle applicazioni.
+L&#39;[API GraphQL di AEM](#aem-graphql-api) consente di eseguire query (complesse) sui [Frammenti di contenuto](/help/assets/content-fragments/content-fragments.md); ogni query è basata su un tipo di modello specifico. Il contenuto restituito può quindi essere utilizzato dalle applicazioni.
 
 ## API GraphQL di AEM {#aem-graphql-api}
 
-Ad Adobe, è stata sviluppata un’implementazione personalizzata dell’API GraphQL standard. Per informazioni, consulta [API GraphQL AEM per l’utilizzo con Frammenti di contenuto](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md).
+Per Adobe Experience, è stata sviluppata un’implementazione personalizzata dell’API GraphQL standard. Per informazioni, consulta [API GraphQL AEM per l’utilizzo con Frammenti di contenuto](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md).
 
 L’implementazione dell’API GraphQL per AEM si basa sulle [librerie Java GraphQL](https://graphql.org/code/#java).
 
@@ -99,7 +97,7 @@ Il **[Riferimento frammento](/help/assets/content-fragments/content-fragments-mo
 
 * Consente di recuperare i dati strutturati.
 
-   * Quando è definito come **multifeed**, è possibile fare riferimento a (recuperare) più frammenti secondari dal frammento principale.
+  * Quando è definito come **multifeed**, è possibile fare riferimento a (recuperare) più frammenti secondari dal frammento principale.
 
 ### Anteprima JSON {#json-preview}
 

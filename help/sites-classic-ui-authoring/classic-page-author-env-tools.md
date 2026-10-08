@@ -1,10 +1,12 @@
 ---
-title: 'Authoring: ambiente e strumenti'
+title: Authoring - Ambiente e strumenti
 description: La console Siti Web consente di gestire e navigare nel sito Web. Utilizzando due riquadri, puoi espandere la struttura del sito web e intraprendere azioni sugli elementi richiesti.
+
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
+
 docset: aem65
 exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
 solution: Experience Manager, Experience Manager Sites
@@ -12,14 +14,12 @@ feature: Authoring
 role: User
 source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 8%
-
+source-wordcount: '952'
+ht-degree: 6%
 ---
+# Authoring - Ambiente e strumenti {#authoring-the-environment-and-tools}
 
-# Authoring: ambiente e strumenti {#authoring-the-environment-and-tools}
-
-L’ambiente di authoring di AEM offre diversi metodi per organizzare e modificare i contenuti. Gli strumenti forniti sono accessibili dalle varie console ed editor di pagina.
+L’ambiente di authoring di AEM offre diversi meccanismi per organizzare e modificare i contenuti. Gli strumenti forniti sono accessibili dalle varie console ed editor di pagina.
 
 ## Amministrazione sito {#site-administration}
 
@@ -35,7 +35,7 @@ La console **Siti Web** consente di gestire e navigare nel sito Web. Utilizzando
 
 ![chlimage_1-109](assets/chlimage_1-109.png)
 
-## Accedere all’Aiuto   {#accessing-help}
+## Accedere all’Aiuto {#accessing-help}
 
 È possibile accedere direttamente a diverse risorse di **Aiuto** da AEM:
 
@@ -189,7 +189,7 @@ Altre [relazioni tra pagine sono visibili nella console Siti Web](/help/sites-cl
 
 La console del sito Web [fornisce inoltre informazioni sullo stato corrente della pagina](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console), ad esempio pubblicazione, modifica, blocco, Live Copy e così via.
 
-## Modalità pagina   {#page-modes}
+## Modalità pagina {#page-modes}
 
 Durante la modifica di una pagina con l’interfaccia utente classica, è possibile accedere a diverse modalità utilizzando le icone nella parte inferiore della barra laterale:
 
