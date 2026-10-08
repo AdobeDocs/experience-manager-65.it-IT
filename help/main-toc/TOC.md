@@ -6,13 +6,11 @@ solution-title: Experience Cloud
 user-guide-description: Utilizza la documentazione di Adobe Experience Manager 6.5 per scoprire come funziona e come può esserti utile il software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM 6.5
-source-git-commit: d4a8b41ee8136bb69845fdf65456e1407b2b5d19
+source-git-commit: b3d193fafabe3f04a98ac17b30a5c6506472faf3
 workflow-type: tm+mt
-source-wordcount: '8300'
+source-wordcount: '8305'
 ht-degree: 95%
-
 ---
-
 
 # Documentazione di Adobe Experience Manager 6.5 {#content}
 
@@ -601,6 +599,7 @@ ht-degree: 95%
     + [Importazione ed esportazione di risorse in AEM Forms](/help/forms/using/import-export-forms-templates.md)
     + [Supporto di nuove lingue per la localizzazione di moduli adattivi](/help/forms/using/supporting-new-language-localization.md)
     + Gestione dei dati utente {#handling-user-data}
+      + [Conservazione dei dati in AEM Forms](/help/forms/using/data-retention-aem-forms.md)
       + [Flussi di lavoro incentrati sui moduli su OSGi](/help/forms/using/forms-workflow-osgi-handling-user-data.md)
       + [Gestione degli utenti Forms](/help/forms/using/user-management-handling-user-data.md)
       + [Flussi di lavoro JEE di Forms](/help/forms/using/forms-workflow-jee-handling-user-data.md)
