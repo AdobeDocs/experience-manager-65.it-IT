@@ -77,7 +77,7 @@ Per accedere all’Assistente IA in AEM, i clienti devono disporre dei seguenti 
 
 **Per accedere all’Assistente IA in AEM:**
 
-1. I clienti devono disporre di un accordo aggiuntivo per poter accedere alla maggior parte delle funzionalità basate su intelligenza artificiale e agentiche in Adobe Experience Manager. Per ulteriori informazioni, contatta il rappresentante Adobe. Per informazioni sul funzionamento dell&#39;abilitazione di IA generativa, vedere [IA generativa nelle applicazioni CX Enterprise](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/generative-ai).
+1. I clienti devono disporre di un accordo aggiuntivo per poter accedere alla maggior parte delle funzionalità basate su intelligenza artificiale e agentiche in Adobe Experience Manager. Per ulteriori informazioni, contatta il rappresentante Adobe. Per informazioni sul funzionamento dell&#39;abilitazione di IA generativa, vedere [IA generativa nelle applicazioni CX Enterprise](https://experienceleague.adobe.com/it/docs/cx-enterprise-ai/experience-cloud-ai/overview/generative-ai).
 
 1. Una volta che la tua organizzazione dispone di questo contratto, tutti gli utenti possono utilizzare l’Assistente all’intelligenza artificiale per conoscere il prodotto per impostazione predefinita. Non è richiesta alcuna autorizzazione aggiuntiva per utente o per gruppo.
 
