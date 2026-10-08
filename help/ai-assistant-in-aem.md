@@ -113,7 +113,7 @@ La conoscenza del prodotto comprende concetti e argomenti presenti nella documen
 | Apprendimento mirato | <ul><li>Che cos’è l’editor universale?</li><li>Come posso creare un programma in Cloud Manager?</li></ul> |
 | Individuazione aperta | <ul><li>Come posso utilizzare l’editor universale?</li><li>Esiste un modo per copiare il contenuto da un ambiente all’altro?</li></ul> |
 | Risoluzione di problemi | <ul><li>Perché non riesco ad accedere all’editor universale?</li><li>Perché la mia pipeline non funziona?</li></ul> |
-| **Creazione ticket di supporto** | **Disponibile solo per gli amministratori del supporto **<br>**Esempi** |
+| **Creazione ticket di supporto** | **Disponibile solo per gli amministratori del supporto &#x200B;**<br>**Esempi** |
 | Creazione automatizzata di ticket di supporto per acquisire la cronologia e il contesto delle chat dell’Assistente IA | <ul><li>Crea un ticket di supporto per me.</li></ul> |
 | Recupero dello stato del ticket di supporto | <ul><li>Mostra tutti i ticket di supporto che ho aperto.</li><li>Mostra lo stato del ticket “E-----------”</li></ul> |
 
