@@ -10,12 +10,10 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
-workflow-type: ht
-source-wordcount: '260'
+workflow-type: tm+mt
+source-wordcount: '263'
 ht-degree: 100%
-
 ---
-
 # Panoramica sul servizio di output {#overview-of-output-service}
 
 L’output consente di unire i dati del modulo XML con una progettazione di modulo creata in Designer per creare un flusso di output di documenti in vari formati. Il flusso di output può essere inviato a una stampante di rete, a una stampante locale o a un file su disco

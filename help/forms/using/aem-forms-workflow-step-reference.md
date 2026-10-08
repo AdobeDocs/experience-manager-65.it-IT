@@ -12,9 +12,7 @@ source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '7786'
 ht-degree: 0%
-
 ---
-
 # Flusso di lavoro incentrato su Forms su OSGi - Riferimento passaggio {#forms-centric-workflow-on-osgi-step-reference}
 
 | Versione | Collegamento articolo |
@@ -89,7 +87,7 @@ Il passaggio Assegna attività crea un&#39;attività e la assegna a un utente o 
   * **Salva modello di layout utilizzando:** Salva il modello di layout utilizzando un percorso relativo al payload o memorizzalo in una variabile di tipo dati Documento. Il [modello di layout](../../forms/using/layout-design-details.md) fa riferimento a un file XDP creato con Forms Designer. Questa opzione è disponibile solo se dall’elenco a discesa Tipo selezioni Interfaccia utente agente di comunicazione interattiva.
 
 * **Assegnatario > Assegna opzioni:** Specificare il metodo per assegnare l&#39;attività a un utente. È possibile assegnare dinamicamente l&#39;attività a un utente o a un gruppo utilizzando lo script Selettore partecipanti oppure assegnare l&#39;attività a un utente o a un gruppo AEM specifico.
-* **Selettore partecipanti:** L&#39;opzione è disponibile quando l&#39;opzione **Assegna dinamicamente a un utente o a un gruppo** è selezionata nel campo Assegna opzioni. È possibile utilizzare un codice ECMAScript o un servizio per selezionare dinamicamente un utente o un gruppo. Per ulteriori informazioni, vedere [Assegnazione dinamica di un flusso di lavoro agli utenti](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) e [Creazione di un passaggio personalizzato Partecipante dinamico Adobe Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it&CID=RedirectAEMCommunityKautuk)
+* **Selettore partecipanti:** L&#39;opzione è disponibile quando l&#39;opzione **Assegna dinamicamente a un utente o a un gruppo** è selezionata nel campo Assegna opzioni. È possibile utilizzare un codice ECMAScript o un servizio per selezionare dinamicamente un utente o un gruppo. Per ulteriori informazioni, vedere [Assegnazione dinamica di un flusso di lavoro agli utenti](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) e [Creazione di un passaggio personalizzato Partecipante dinamico Adobe Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&CID=RedirectAEMCommunityKautuk)
 
 * **Partecipanti:** Il campo è disponibile quando l&#39;opzione **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** è selezionata nel campo **Selettore partecipanti**. Il campo consente di selezionare utenti o gruppi per l&#39;opzione RandomParticipantChooser.
 
@@ -140,7 +138,7 @@ Il passaggio Assegna attività crea un&#39;attività e la assegna a un utente o 
 
 Utilizza la fase e-mail per inviare un’e-mail, ad esempio un messaggio e-mail con un documento record, un collegamento di un modulo adattivo, un collegamento di una comunicazione interattiva o un documento PDF allegato. Il passaggio Invia e-mail supporta [e-mail HTML](https://en.wikipedia.org/wiki/HTML_email). Le e-mail di HTML sono dinamiche e si adattano alle dimensioni del client e-mail e dello schermo dei destinatari. Puoi utilizzare un modello e-mail di HTML per definire l’aspetto, la combinazione di colori e il comportamento dell’e-mail.
 
-Il passaggio e-mail utilizza Day CQ Mail Service per inviare le e-mail. Prima di utilizzare il passaggio e-mail, assicurati che il servizio e-mail [&#128279;](../../forms/using/aem-forms-workflow.md) sia configurato. Il passaggio e-mail presenta le seguenti proprietà:
+Il passaggio e-mail utilizza Day CQ Mail Service per inviare le e-mail. Prima di utilizzare il passaggio e-mail, assicurati che il servizio e-mail [](../../forms/using/aem-forms-workflow.md) sia configurato. Il passaggio e-mail presenta le seguenti proprietà:
 
 **Titolo:** Il titolo del passaggio consente di identificare il passaggio nell&#39;editor del flusso di lavoro.
 
@@ -309,7 +307,7 @@ Il passaggio Firma documento consente di utilizzare Adobe Sign per firmare i doc
 
 
 * **Script o servizio per selezionare i destinatari:** L&#39;opzione è disponibile solo se si seleziona Dinamicamente nel campo Seleziona destinatari. È possibile specificare un ECMAScript o un servizio per scegliere i destinatari e le opzioni di verifica per un documento.
-* **Dettagli destinatario:** L&#39;opzione è disponibile solo se l&#39;opzione Manualmente è selezionata nel campo Seleziona destinatari. Specifica l’indirizzo e-mail e scegli un meccanismo di verifica opzionale. Prima di selezionare un meccanismo di verifica in due fasi, accertati che l’opzione di verifica corrispondente sia abilitata per l’account Adobe Sign configurato. È possibile utilizzare una variabile di tipo String per definire i valori per i campi **[!UICONTROL Email]**, **[!UICONTROL Codice paese]** e **[!UICONTROL Numero telefono]**. I campi **[!UICONTROL Codice paese]** e **[!UICONTROL Numero di telefono]** vengono visualizzati solo se si seleziona **[!UICONTROL Verifica telefono]** dall&#39;elenco a discesa **in** 2 passaggi di verifica.
+* **Dettagli destinatario:** L&#39;opzione è disponibile solo se l&#39;opzione Manualmente è selezionata nel campo Seleziona destinatari. Specifica l’indirizzo e-mail e scegli un meccanismo di verifica opzionale. Prima di selezionare un meccanismo di verifica in due fasi, accertati che l’opzione di verifica corrispondente sia abilitata per l’account Adobe Sign configurato. È possibile utilizzare una variabile di tipo String per definire i valori per i campi **[!UICONTROL Email]**, **[!UICONTROL Codice paese]** e **[!UICONTROL Numero telefono]**. I campi **[!UICONTROL Codice paese]** e **[!UICONTROL Numero di telefono]** vengono visualizzati solo se si seleziona **[!UICONTROL Verifica telefono]** dall&#39;elenco a discesa ]**in**[!UICONTROL  2 passaggi di verifica.
 * **Variabile di stato:** un documento abilitato per Adobe Sign memorizza lo stato di firma del documento in una variabile di tipo dati String. Specifica il nome della variabile di stato (adobeSignStatus). Una variabile di stato di un’istanza è disponibile in CRXDE in /etc/workflow/instances/&lt;server>/&lt;data-ora>/&lt;istanza del modello di flusso di lavoro>/workItems/&lt;nodo>/metaData contiene lo stato di una variabile.
 * **[!UICONTROL Documento firmato]**: è possibile salvare lo stato del documento firmato in Variabile. Per aggiungere un audit trail della firma elettronica per una maggiore sicurezza e legalità al documento firmato, è possibile includere un rapporto di audit. È possibile salvare il documento firmato utilizzando la cartella Variabile o Payload.
   >[!NOTE]

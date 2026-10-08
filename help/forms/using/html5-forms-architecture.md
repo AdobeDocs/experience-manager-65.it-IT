@@ -1,22 +1,25 @@
 ---
 title: Architettura dei moduli HTML5
+
 description: HTML5 Forms viene distribuito come pacchetto all’interno dell’istanza AEM incorporata ed espone la funzionalità come endpoint REST su HTTP/S utilizzando l’architettura RESTful Apache Sling.
+
+
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
+
 docset: aem65
+
 feature: HTML5 Forms,Mobile Forms
 exl-id: ed8349a1-f761-483f-9186-bf435899df7d
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2002'
+source-wordcount: '2051'
 ht-degree: 2%
-
 ---
-
 # Architettura dei moduli HTML5{#architecture-of-html-forms}
 
 ## Architettura {#architecture}

@@ -13,9 +13,7 @@ source-git-commit: 2eac9acd8b92582424557222b673211b29a15185
 workflow-type: tm+mt
 source-wordcount: '2167'
 ht-degree: 6%
-
 ---
-
 # Utilizzo del servizio Assembler{#using-assembler-service}
 
 Il servizio Assembler consente di combinare, ridisporre e integrare i documenti PDF e XDP e di ottenere informazioni sui documenti PDF. Ogni job inviato al servizio Assembler include un documento DDX (Document Description XML), documenti di origine e risorse esterne (stringhe e elementi grafici). Per ulteriori informazioni sul servizio Assembler, vedere [Panoramica del servizio Assembler](../../forms/using/overview-aem-document-services.md#p-assembler-service-p).
@@ -321,9 +319,9 @@ L&#39;esempio seguente è un documento DDX che utilizza segnalibri per disassemb
 
 * Informazioni di testo.
 
-   * Parole in ogni pagina del documento
-   * Posizione di ciascuna parola in ogni pagina del documento
-   * Frasi in ogni paragrafo di ogni pagina del documento
+  * Parole in ogni pagina del documento
+  * Posizione di ciascuna parola in ogni pagina del documento
+  * Frasi in ogni paragrafo di ogni pagina del documento
 
 * Segnalibri, inclusi numero di pagina, titolo, destinazione e aspetto. Puoi esportare questo\
   dati da un documento PDF e importarli in un documento PDF.

@@ -15,9 +15,7 @@ source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
 workflow-type: tm+mt
 source-wordcount: '2879'
 ht-degree: 6%
-
 ---
-
 
 # Componenti di Adobe Campaign{#adobe-campaign-components}
 
@@ -108,7 +106,7 @@ Per mappare un&#39;immagine, selezionare Mappa. È possibile specificare la moda
 * **Ritaglio**
 Seleziona Ritaglia per ritagliare un’immagine. Utilizzare il mouse per ritagliare l&#39;immagine.
 
-* **Ruota**
+* **Rotazione**
 Per ruotare un&#39;immagine, selezionare Ruota. Usare ripetutamente fino a quando l&#39;immagine non viene ruotata nel modo desiderato.
 
 * **Cancella**
@@ -220,20 +218,20 @@ Trascina un&#39;immagine dal Finder dei contenuti o fai clic per passare a un&#3
 * **Proprietà immagine** (**Proprietà immagine avanzate**)
 Consente di specificare quanto segue:
 
-   * **Titolo**
-Titolo del blocco, visualizzato a comparsa.
+  * **Titolo**
+    Titolo del blocco, visualizzato a comparsa.
 
-   * **Testo alternativo**
-Testo alternativo da visualizzare se l’immagine non può essere visualizzata.
+  * **Testo alternativo**
+    Testo alternativo da visualizzare se l’immagine non può essere visualizzata.
 
-   * **Collega a**
-Crea un collegamento alle risorse o ad altre pagine del tuo sito web.
+  * **Collega a**
+    Crea un collegamento alle risorse o ad altre pagine del tuo sito web.
 
-   * **Descrizione**
-Descrizione dell&#39;immagine.
+  * **Descrizione**
+    Descrizione dell&#39;immagine.
 
-   * **Dimensioni**
-Imposta l&#39;altezza e la larghezza dell&#39;immagine.
+  * **Dimensioni**
+    Imposta l&#39;altezza e la larghezza dell&#39;immagine.
 
 >[!NOTE]
 >
@@ -326,7 +324,7 @@ La tabella seguente descrive i componenti disponibili per visualizzare e modific
   </tr>
   <tr>
    <td><p>Campo testo (Campaign)</p> </td>
-   <td><p>string</p> </td>
+   <td><p>stringa</p> </td>
    <td><p>E-mail</p> </td>
   </tr>
  </tbody>

@@ -13,9 +13,7 @@ source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
 source-wordcount: '10923'
 ht-degree: 97%
-
 ---
-
 # Configurare le impostazioni del servizio {#configure-service-settings}
 
 >[!NOTE]
@@ -74,11 +72,11 @@ Per il servizio moduli con codice a barre sono disponibili le seguenti impostazi
 
 Il servizio Central Migration Bridge (`CentralMigrationBridge`) richiama un sottoinsieme di funzionalità Adobe Central Pro Output Server (Central), che include i comandi JFMERGE, JFTRANS e XMLIMPORT. Le operazioni del servizio Central Migration Bridge consentono di riutilizzare le seguenti risorse Central nei moduli di AEM:
 
-* progettazione modello (&ast;.ifd)
-* modelli di output (&ast;.mdf)
-* file di dati (&ast;.dat files)
-* file preambolo (&ast;.pre files)
-* file di definizione dati (&ast;.tdf)
+* progettazione modello (&amp;ast;.ifd)
+* modelli di output (&amp;ast;.mdf)
+* file di dati (&amp;ast;.dat files)
+* file preambolo (&amp;ast;.pre files)
+* file di definizione dati (&amp;ast;.tdf)
 
 Per il servizio Central Migration Bridge è disponibile l’impostazione seguente.
 
@@ -420,7 +418,7 @@ A seconda del server LDAP, il nome utente potrebbe essere un nome utente semplic
 
 ## Impostazioni del servizio di configurazione di Microsoft SharePoint {#microsoft-sharepoint-configuration-service-settings}
 
-Il servizio di configurazione di Microsoft SharePoint `(MSSharePointConfigService)` consente di specificare le credenziali per l’utente di AEM Forms con autorizzazioni di rappresentazione. Per informazioni sulle autorizzazioni di rappresentazione, consulta [Configurazione del connettore per Microsoft SharePoint](https://help.adobe.com/it_IT/AEMForms/6.1/SharePointConfig/index.html).
+Il servizio di configurazione di Microsoft SharePoint `(MSSharePointConfigService)` consente di specificare le credenziali per l’utente di AEM Forms con autorizzazioni di rappresentazione. Per informazioni sulle autorizzazioni di rappresentazione, consulta [Configurazione del connettore per Microsoft SharePoint](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html).
 
 Per il servizio di configurazione di Microsoft SharePoint sono disponibili le impostazioni seguenti:
 

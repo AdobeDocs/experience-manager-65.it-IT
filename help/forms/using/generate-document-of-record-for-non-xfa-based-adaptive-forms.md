@@ -11,11 +11,9 @@ role: User, Developer
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
 source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
 workflow-type: tm+mt
-source-wordcount: '4312'
+source-wordcount: '4370'
 ht-degree: 3%
-
 ---
-
 # Genera documento di record per moduli adattivi o frammenti di moduli adattivi {#generate-document-of-record-for-adaptive-forms}
 
 <span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
@@ -51,8 +49,8 @@ Consente di selezionare un modello XFA per il modulo adattivo. Quando selezioni 
 * [Schema XML](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema)
 Consente di selezionare una definizione di schema XML per il modulo adattivo. Quando selezioni uno schema XML per il modulo adattivo, puoi:
 
-   * Associa un modello XFA per un documento record. Assicurati che il modello XFA associato utilizzi lo stesso schema XML del modulo adattivo
-   * Genera automaticamente documento record
+  * Associa un modello XFA per un documento record. Assicurati che il modello XFA associato utilizzi lo stesso schema XML del modulo adattivo
+  * Genera automaticamente documento record
 
 * Nessuno
 Consente di creare un modulo adattivo senza un modello di modulo. Il documento di record viene generato automaticamente per il modulo adattivo.
@@ -393,23 +391,23 @@ Le impostazioni del documento record di un componente sono disponibili nelle rel
 * **Escludi titolo da documento record:** L&#39;impostazione della proprietà esclude il titolo del pannello o della tabella dal documento record. Applicabile solo al pannello e alla tabella.
 * **Escludi descrizione da documento record:** L&#39;impostazione della proprietà esclude la descrizione del pannello o della tabella dal documento record. Applicabile solo al pannello e alla tabella.
 * **[!UICONTROL Paginazione]** > **[!UICONTROL Posizione]**: determina la posizione in cui si seleziona il pannello.
-   * **[!UICONTROL Inserisci]** > **[!UICONTROL Successivo]**: inserisce il pannello dopo l&#39;oggetto precedente nel pannello principale.
-   * **[!UICONTROL Inserisci]** > **[!UICONTROL Nell&#39;area contenuto]** > Nome area contenuto: inserisce il pannello nell&#39;area contenuto specificata.
-   * **[!UICONTROL Colloca]** > **[!UICONTROL Inizio area contenuti successiva]**: colloca il pannello nella parte superiore dell&#39;area contenuti successiva.
-   * **[!UICONTROL Posizione]** > **[!UICONTROL Inizio area contenuto]** > Nome area contenuto: posiziona il pannello nella parte superiore dell&#39;area contenuto specificata.
-   * **[!UICONTROL Inserisci]** > **[!UICONTROL A pagina]** > Nome della pagina master: inserisce il pannello nella pagina specificata. Se un&#39;interruzione di pagina non viene inserita automaticamente, [!DNL AEM Forms] aggiunge un&#39;interruzione di pagina.
-   * **[!UICONTROL Inserisci]** > **[!UICONTROL Inizio pagina successiva]**: inserisce il pannello nella parte superiore della pagina successiva. Se un&#39;interruzione di pagina non viene inserita automaticamente, [!DNL AEM Forms] aggiunge un&#39;interruzione di pagina.
-   * **[!UICONTROL Inserisci]** > **[!UICONTROL Inizio pagina]** > Nome della pagina master: inserisce il pannello nella parte superiore della pagina, quando viene eseguito il rendering della pagina specificata. Se un&#39;interruzione di pagina non viene inserita automaticamente, [!DNL AEM Forms] aggiunge un&#39;interruzione di pagina.
+  * **[!UICONTROL Inserisci]** > **[!UICONTROL Successivo]**: inserisce il pannello dopo l&#39;oggetto precedente nel pannello principale.
+  * **[!UICONTROL Inserisci]** > **[!UICONTROL Nell&#39;area contenuto]** > Nome area contenuto: inserisce il pannello nell&#39;area contenuto specificata.
+  * **[!UICONTROL Colloca]** > **[!UICONTROL Inizio area contenuti successiva]**: colloca il pannello nella parte superiore dell&#39;area contenuti successiva.
+  * **[!UICONTROL Posizione]** > **[!UICONTROL Inizio area contenuto]** > Nome area contenuto: posiziona il pannello nella parte superiore dell&#39;area contenuto specificata.
+  * **[!UICONTROL Inserisci]** > **[!UICONTROL A pagina]** > Nome della pagina master: inserisce il pannello nella pagina specificata. Se un&#39;interruzione di pagina non viene inserita automaticamente, [!DNL AEM Forms] aggiunge un&#39;interruzione di pagina.
+  * **[!UICONTROL Inserisci]** > **[!UICONTROL Inizio pagina successiva]**: inserisce il pannello nella parte superiore della pagina successiva. Se un&#39;interruzione di pagina non viene inserita automaticamente, [!DNL AEM Forms] aggiunge un&#39;interruzione di pagina.
+  * **[!UICONTROL Inserisci]** > **[!UICONTROL Inizio pagina]** > Nome della pagina master: inserisce il pannello nella parte superiore della pagina, quando viene eseguito il rendering della pagina specificata. Se un&#39;interruzione di pagina non viene inserita automaticamente, [!DNL AEM Forms] aggiunge un&#39;interruzione di pagina.
 * **[!UICONTROL Paginazione]** > **[!UICONTROL Dopo]**: determina l&#39;area da riempire dopo l&#39;inserimento di un pannello.I campi seguenti sono disponibili nella sezione **[!UICONTROL After]**:
-   * **[!UICONTROL Dopo]** > **[!UICONTROL Continua a riempire l&#39;elemento padre]**: continua l&#39;unione dei dati per tutti gli oggetti che devono ancora essere riempiti nel pannello padre.
-   * **[!UICONTROL Dopo]** > **[!UICONTROL Vai all&#39;area contenuto successiva]**: inizia a riempire l&#39;area contenuto successiva dopo l&#39;inserimento del pannello.
-   * **[!UICONTROL Dopo]** > **[!UICONTROL Vai all&#39;area dei contenuti]** > Nome dell&#39;area dei contenuti: inizia a riempire l&#39;area dei contenuti specificata dopo l&#39;inserimento del pannello.
-   * **[!UICONTROL Dopo]** > **[!UICONTROL Vai alla pagina successiva]**: inizia a riempire la pagina successiva dopo aver inserito il pannello.
-   * **[!UICONTROL Dopo]** > **[!UICONTROL Vai alla pagina]** > Nome della pagina: inizia a riempire la pagina specificata dopo aver inserito il pannello.
+  * **[!UICONTROL Dopo]** > **[!UICONTROL Continua a riempire l&#39;elemento padre]**: continua l&#39;unione dei dati per tutti gli oggetti che devono ancora essere riempiti nel pannello padre.
+  * **[!UICONTROL Dopo]** > **[!UICONTROL Vai all&#39;area contenuto successiva]**: inizia a riempire l&#39;area contenuto successiva dopo l&#39;inserimento del pannello.
+  * **[!UICONTROL Dopo]** > **[!UICONTROL Vai all&#39;area dei contenuti]** > Nome dell&#39;area dei contenuti: inizia a riempire l&#39;area dei contenuti specificata dopo l&#39;inserimento del pannello.
+  * **[!UICONTROL Dopo]** > **[!UICONTROL Vai alla pagina successiva]**: inizia a riempire la pagina successiva dopo aver inserito il pannello.
+  * **[!UICONTROL Dopo]** > **[!UICONTROL Vai alla pagina]** > Nome della pagina: inizia a riempire la pagina specificata dopo aver inserito il pannello.
 * **[!UICONTROL Paginazione]** > **[!UICONTROL Overflow]**: imposta un overflow per un pannello o una tabella che si estende su più pagine. I campi seguenti sono disponibili nella sezione **[!UICONTROL Overflow]**:
-   * **[!UICONTROL Overflow]** > **[!UICONTROL Nessuno]**: inizia a riempire la pagina successiva. Se un&#39;interruzione di pagina non viene inserita automaticamente, [!DNL AEM Forms] aggiunge un&#39;interruzione di pagina.
-   * **[!UICONTROL Overflow]** > **[!UICONTROL Vai all&#39;area dei contenuti]** > Nome dell&#39;area dei contenuti: inizia a riempire l&#39;area dei contenuti specificata.
-   * **[!UICONTROL Overflow]** > **[!UICONTROL Vai alla pagina]** > Nome della pagina: inizia a riempire la pagina specificata.
+  * **[!UICONTROL Overflow]** > **[!UICONTROL Nessuno]**: inizia a riempire la pagina successiva. Se un&#39;interruzione di pagina non viene inserita automaticamente, [!DNL AEM Forms] aggiunge un&#39;interruzione di pagina.
+  * **[!UICONTROL Overflow]** > **[!UICONTROL Vai all&#39;area dei contenuti]** > Nome dell&#39;area dei contenuti: inizia a riempire l&#39;area dei contenuti specificata.
+  * **[!UICONTROL Overflow]** > **[!UICONTROL Vai alla pagina]** > Nome della pagina: inizia a riempire la pagina specificata.
 
   >[!NOTE]
   >
@@ -420,21 +418,21 @@ Per informazioni su come applicare le interruzioni di pagina e applicare più pa
 **Impostazioni livello modulo**
 
 * **[!UICONTROL BASE]**
-   * **Modello:** Puoi selezionare il modello predefinito o personalizzato.
-     ![testo alternativo](image.png)
-   * **Colore accento:** È possibile predefinire il colore del modello del [!UICONTROL Documento di record].
-   * **Famiglia di caratteri:** Seleziona il tipo di carattere per il [!UICONTROL documento di record] testi.
-   * **Includi campi non associati nel DoR:** L&#39;impostazione della proprietà include campi non associati del modulo adattivo basato su schema in [!UICONTROL Documento di record]. Per impostazione predefinita è true.
-   * **Escludi campi dal DoR se nascosto:** Imposta la proprietà per escludere i campi nascosti dal [!UICONTROL Documento di record] all&#39;invio del modulo. Quando abiliti [Riconvalida sul server](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), il server ricalcola i campi nascosti prima di escluderli dal [!UICONTROL documento di record]
+  * **Modello:** Puoi selezionare il modello predefinito o personalizzato.
+    ![testo alternativo](image.png)
+  * **Colore accento:** È possibile predefinire il colore del modello del [!UICONTROL Documento di record].
+  * **Famiglia di caratteri:** Seleziona il tipo di carattere per il [!UICONTROL documento di record] testi.
+  * **Includi campi non associati nel DoR:** L&#39;impostazione della proprietà include campi non associati del modulo adattivo basato su schema in [!UICONTROL Documento di record]. Per impostazione predefinita è true.
+  * **Escludi campi dal DoR se nascosto:** Imposta la proprietà per escludere i campi nascosti dal [!UICONTROL Documento di record] all&#39;invio del modulo. Quando abiliti [Riconvalida sul server](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), il server ricalcola i campi nascosti prima di escluderli dal [!UICONTROL documento di record]
 * **[!UICONTROL PROPRIETÀ CAMPO MODULO]**
-   * Se si seleziona l&#39;opzione **Per il componente Casella di controllo e Pulsante di opzione, mostrare solo il valore selezionato**, verrà generato l&#39;output DoR con solo il valore selezionato.
-   * È possibile selezionare Separatore per più valori selezionati oppure scegliere qualsiasi altro tipo di separatore.
-   * Allineamento opzioni
-      * Verticale
-      * Orizzontale
-      * Come Modulo adattivo
-     >[!NOTE]
-     > L&#39;allineamento verticale e orizzontale è applicabile solo ai pulsanti di scelta e alle caselle di controllo
+  * Se si seleziona l&#39;opzione **Per il componente Casella di controllo e Pulsante di opzione, mostrare solo il valore selezionato**, verrà generato l&#39;output DoR con solo il valore selezionato.
+  * È possibile selezionare Separatore per più valori selezionati oppure scegliere qualsiasi altro tipo di separatore.
+  * Allineamento opzioni
+    * Verticale
+    * Orizzontale
+    * Come Modulo adattivo
+    >[!NOTE]
+    > L&#39;allineamento verticale e orizzontale è applicabile solo ai pulsanti di scelta e alle caselle di controllo
 * **[!UICONTROL PROPRIETÀ PAGINA MASTER]** Fare clic per ulteriori informazioni sulle [proprietà pagina master](#master-page-properties-master-page-properties)
 
 ## Applicare un’interruzione di pagina a un documento record {#apply-page-breaks-in-dor}

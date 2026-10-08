@@ -1,22 +1,25 @@
 ---
 title: Rendering di moduli HTML con barre degli strumenti personalizzate
+
 description: Utilizzare il servizio Forms per personalizzare una barra degli strumenti di cui è stato eseguito il rendering con un modulo HTML. È possibile eseguire il rendering di un HTML Form con una barra degli strumenti personalizzata utilizzando l’API Java e un’API di servizio web.
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: 0b992b1c-3878-447a-bccc-7034aa3e98bc
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '2358'
 ht-degree: 1%
-
 ---
-
 # Rendering di moduli HTML con barre degli strumenti personalizzate {#rendering-html-forms-with-customtoolbars}
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**

@@ -13,9 +13,7 @@ source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1447'
 ht-degree: 5%
-
 ---
-
 # Panoramica dei servizi basati su documenti di AEM{#overview-of-aem-document-services}
 
 | Versione | Collegamento articolo |
