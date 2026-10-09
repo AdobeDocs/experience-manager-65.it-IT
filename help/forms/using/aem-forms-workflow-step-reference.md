@@ -12,9 +12,7 @@ source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '7786'
 ht-degree: 0%
-
 ---
-
 # Flusso di lavoro incentrato su Forms su OSGi - Riferimento passaggio {#forms-centric-workflow-on-osgi-step-reference}
 
 | Versione | Collegamento articolo |

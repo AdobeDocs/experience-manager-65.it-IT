@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilizza la documentazione di Adobe Experience Manager 6.5 per scoprire come funziona e come può esserti utile il software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM 6.5
-source-git-commit: b3d193fafabe3f04a98ac17b30a5c6506472faf3
+source-git-commit: f46e653863a8724a5f50bed7a2f76079803b162e
 workflow-type: tm+mt
-source-wordcount: '8305'
+source-wordcount: '8300'
 ht-degree: 95%
 ---
 
@@ -1237,7 +1237,6 @@ ht-degree: 95%
 + IA in AEM {#ai-in-aem}
   + [Panoramica](/help/ai-in-aem/overview.md)
   + Assistente IA {#ai-assistant}
-    + [Configurare l’Assistente IA in AEM](/help/ai-assistant-in-aem-admin.md)
     + [Informazioni sull’Assistente IA in AEM](/help/ai-assistant-in-aem.md)
 + Content and Commerce {#commerce}
   + [Introduzione e panoramica](/help/commerce/cif/introduction.md)

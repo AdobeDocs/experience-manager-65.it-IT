@@ -10,9 +10,7 @@ source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 4%
-
 ---
-
 # Segnalazione delle transazioni API fatturabili per AEM Forms su JEE {#transaction-reports-billable-apis}
 
 AEM Forms su JEE fornisce diverse API per inviare, elaborare ed eseguire il rendering di documenti. Alcune API sono contabilizzate come transazioni e altre sono libere di utilizzare. Questo documento fornisce un elenco di tutte le API contabilizzate come transazioni. Di seguito sono riportati alcuni scenari comuni in cui viene utilizzata un’API fatturabile:
@@ -390,7 +388,7 @@ L’utilizzo dell’API di richiamo viene conteggiato come una transazione, quan
 
 -->
 
-### Moduli {#form-set}
+### Forms {#form-set}
 
 <table>
  <tbody>

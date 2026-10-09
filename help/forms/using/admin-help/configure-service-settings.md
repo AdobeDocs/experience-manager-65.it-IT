@@ -13,9 +13,7 @@ source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
 source-wordcount: '10923'
 ht-degree: 97%
-
 ---
-
 # Configurare le impostazioni del servizio {#configure-service-settings}
 
 >[!NOTE]

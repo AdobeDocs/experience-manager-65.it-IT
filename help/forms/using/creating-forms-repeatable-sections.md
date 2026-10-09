@@ -1,5 +1,5 @@
 ---
-title: Creazione di moduli con sezioni ripetibili
+title: Creare moduli con sezioni ripetibili
 description: Le sezioni ripetibili sono pannelli che possono essere aggiunti o rimossi in modo dinamico in un modulo.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
@@ -10,12 +10,10 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1139'
-ht-degree: 0%
-
+source-wordcount: '1181'
+ht-degree: 2%
 ---
-
-# Creazione di moduli con sezioni ripetibili {#creating-forms-with-repeatable-sections}
+# Creare moduli con sezioni ripetibili {#creating-forms-with-repeatable-sections}
 
 <span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
@@ -122,7 +120,7 @@ La sottomaschera ripetibile è simile ai pannelli ripetibili in Adaptive Forms. 
 
 Il file .zip allegato contiene un modulo secondario ripetibile di esempio.
 
-[Ottieni file](assets/samplerepeatablesubform.zip)
+[Ottieni il file](assets/samplerepeatablesubform.zip)
 
 ## Utilizzo delle impostazioni di ripetizione di uno schema XML (XSD) {#using-repeat-settings-of-an-xml-schema-xsd-br}
 

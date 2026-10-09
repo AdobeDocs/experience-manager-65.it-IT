@@ -1,21 +1,24 @@
 ---
 title: Precompilazione dei moduli con layout fluidi
+
 description: Precompila i moduli con layout fluibile per visualizzare i dati agli utenti all’interno di un modulo renderizzato utilizzando l’API Java e l’API del servizio Web.
+
+
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: ff087084-fb1c-43a4-ae54-cc77eb862493
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '3513'
 ht-degree: 1%
-
 ---
-
 # Precompilazione dei moduli con layout fluidi {#prepopulating-forms-with-flowable-layouts1}
 
 ## Precompilazione dei moduli con layout fluidi {#prepopulating-forms-with-flowable-layouts2}

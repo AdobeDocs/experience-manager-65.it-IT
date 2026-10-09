@@ -1,20 +1,23 @@
 ---
 title: Frammenti di documenti in AEM
+
 description: I frammenti di documento, ad esempio Testo, elenchi, condizioni e frammenti di layout, in Gestione corrispondenza consentono di formare i componenti statici, dinamici e ripetibili della corrispondenza con i clienti.
+
+
 topic-tags: correspondence-management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 docset: aem65
+
 feature: Correspondence Management
 exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '6847'
+source-wordcount: '6946'
 ht-degree: 0%
-
 ---
-
 # Frammenti del documento{#document-fragments}
 
 ## Frammenti del documento {#document-fragments-1}
@@ -202,10 +205,10 @@ La funzione Trova e sostituisci consente di cercare (e sostituire) qualsiasi str
 * Utilizza l’associazione appropriata del dizionario dati nei moduli di testo.
 * Quando si utilizza l’Editor di testo quando si modifica una risorsa di testo, si applicano le seguenti regole:
 
-   * **Aggiunta della variabile:** consentita
-   * **Rimozione della variabile:** consentita
-   * **Aggiornamento delle proprietà:** consentito
-   * **Modifica del dizionario dati:** consentita fino a quando l&#39;elemento del dizionario dati non viene utilizzato. Non è possibile modificare il dizionario dati durante l&#39;aggiornamento.
+  * **Aggiunta della variabile:** consentita
+  * **Rimozione della variabile:** consentita
+  * **Aggiornamento delle proprietà:** consentito
+  * **Modifica del dizionario dati:** consentita fino a quando l&#39;elemento del dizionario dati non viene utilizzato. Non è possibile modificare il dizionario dati durante l&#39;aggiornamento.
 
 ## Elenco {#list}
 
@@ -283,8 +286,8 @@ Per modificare l&#39;ordine delle risorse all&#39;interno dell&#39;elenco, selez
 * Utilizza associazione dizionario dati appropriata
 * Quando si utilizza l’Editor elenco per modificare un elenco, si applicano le seguenti regole:
 
-   * Aggiornamento delle proprietà: consentito
-   * **Modifica del dizionario dati:** Consentita fino a quando non viene associato alcun elemento che utilizza il dizionario dati. Non è possibile modificare il dizionario dati durante l&#39;aggiornamento.
+  * Aggiornamento delle proprietà: consentito
+  * **Modifica del dizionario dati:** Consentita fino a quando non viene associato alcun elemento che utilizza il dizionario dati. Non è possibile modificare il dizionario dati durante l&#39;aggiornamento.
 
 ## Condizioni {#conditions}
 
@@ -340,10 +343,10 @@ L’editor delle condizioni consente di specificare una condizione predefinita. 
 * Utilizza associazione dizionario dati appropriata
 * Quando si utilizza l’Editor condizioni per modificare una condizione, vengono applicate le seguenti regole:
 
-   * **Aggiunta della variabile:** consentita
-   * **Rimozione della variabile:** consentita
-   * **Aggiornamento delle proprietà:** consentito
-   * **Modifica del dizionario dati:** consentita fino a quando l&#39;elemento del dizionario dati non viene utilizzato.
+  * **Aggiunta della variabile:** consentita
+  * **Rimozione della variabile:** consentita
+  * **Aggiornamento delle proprietà:** consentito
+  * **Modifica del dizionario dati:** consentita fino a quando l&#39;elemento del dizionario dati non viene utilizzato.
 
 ## Frammenti di layout {#layoutfragments}
 
@@ -375,18 +378,18 @@ Durante la progettazione delle tabelle, tenere presenti le considerazioni riport
 
 * Per le tabelle segnaposto, è possibile personalizzare le seguenti proprietà al momento della creazione del frammento.
 
-   * conteggio righe
-   * numero colonne
-   * intestazione e piè di pagina per ogni colonna
-   * tipo (area/campo di destinazione) di ciascuna colonna
-   * rapporto larghezza per ogni colonna
+  * conteggio righe
+  * numero colonne
+  * intestazione e piè di pagina per ogni colonna
+  * tipo (area/campo di destinazione) di ciascuna colonna
+  * rapporto larghezza per ogni colonna
 
 * Per una tabella non segnaposto, è possibile personalizzare le proprietà seguenti:
 
-   * conteggio righe
-   * numero colonne
-   * intestazione e piè di pagina per colonna aggiuntiva
-   * rapporto larghezza per ogni colonna
+  * conteggio righe
+  * numero colonne
+  * intestazione e piè di pagina per colonna aggiuntiva
+  * rapporto larghezza per ogni colonna
 
 È possibile nidificare i frammenti in una lettera. Ciò implica che è possibile aggiungere un frammento all’interno di un frammento. La soluzione Gestione corrispondenza supporta fino a quattro livelli di nidificazione all&#39;interno di una lettera: **Lettera *>*Frammento *>*Frammento *>*Frammento *>*Frammento.**
 
@@ -509,7 +512,7 @@ In questo esempio viene illustrato come creare una tabella dinamica e una tabell
    In alternativa, utilizzare gli XDP statici e dinamici associati a questo passaggio.
 
    Per ulteriori informazioni sull&#39;utilizzo dei frammenti di layout, vedere [Frammenti di layout](#layoutfragments).
-Per ulteriori informazioni sulla progettazione dei layout, vedere la [Guida di Designer](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/).
+   Per ulteriori informazioni sulla progettazione dei layout, vedere la [Guida di Designer](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/).
 
    [Ottieni il file](assets/static.xdp.zip)
 

@@ -10,40 +10,38 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '687'
 ht-degree: 0%
-
 ---
-
 # Servizio Forms {#forms-service}
 
 ## Panoramica {#overview}
 
-Il servizio Forms consente di creare applicazioni client di acquisizione dati interattive per la convalida, l&#39;elaborazione, la trasformazione e la distribuzione di moduli generalmente creati in Designer. Il servizio Forms esegue il rendering come documenti PDF di qualsiasi struttura di modulo sviluppata dall’utente.
+Il servizio Forms consente di creare applicazioni client di acquisizione dati interattive per la convalida, l&#39;elaborazione, la trasformazione e la distribuzione di moduli generalmente creati in Designer. Il servizio Forms esegue il rendering come documenti di PDF di qualsiasi struttura di modulo sviluppata.
 
-Il servizio Forms consente inoltre alle organizzazioni di estendere i processi di acquisizione dati intelligente distribuendo moduli elettronici come PDF Adobi. Puoi anche utilizzare il servizio rispettivamente per importare ed esportare dati da e verso PDF forms esistenti.
+Il servizio Forms consente inoltre alle organizzazioni di estendere i processi di acquisizione dati intelligente distribuendo moduli elettronici come PDF di Adobe. Puoi anche utilizzare il servizio per importare ed esportare dati rispettivamente da e verso PDF forms esistenti.
 
 Utilizza il servizio Forms per effettuare le seguenti operazioni:
 
-* Esegui il rendering dei PDF forms in base a dati modello e XML.
-* Abilita l’integrazione dei dati del modulo per importare ed estrarre dati dai PDF forms.
+* Esegui il rendering di PDF forms in base a modelli e dati XML.
+* Abilita l’integrazione dei dati del modulo per importare ed estrarre dati da PDF forms.
 * Eseguire il rendering dei moduli basati su frammenti.
 
 ## Creazione di PDF forms  {#creating-pdf-forms-nbsp}
 
-Utilizza il servizio Form per creare PDF forms per l’acquisizione dei dati. In genere, si inizia con un modello Designer di AEM Forms. Utilizza l&#39;operazione `renderPDFForm` (collegamento a Javadoc) del servizio Forms per convertire questo modello in un modulo PDF.
+Utilizza il servizio Form per creare PDF forms per l’acquisizione dei dati. In genere, si inizia con un modello Designer di AEM Forms. Utilizzare l&#39;operazione `renderPDFForm` (collegamento a Javadoc) del servizio Forms per convertire il modello in un modulo PDF.
 
 Il primo parametro dell&#39;operazione `renderPDFForm` è il nome del file modello, ad esempio `ExpenseClaim.xdp`. È possibile memorizzare il file modello in un file system locale, in un repository CRX oppure in un percorso HTTP o FTP. È possibile specificare il percorso del file modello impostando la directory principale del contenuto nel parametro `PDFFormRenderOptions` dell&#39;operazione `renderPDFForm`. Per informazioni dettagliate sulle altre opzioni che è possibile specificare per il parametro `PDFFormRenderOptions`, vedere JavaScript.
 
-L&#39;operazione `renderPDFForm` può accettare anche dati XML. I dati XML vengono uniti al modello durante la creazione di un modulo PDF in modo che il modulo PDF generato contenga i dati specificati. Il secondo parametro per l&#39;operazione `renderPDFForm` può accettare un oggetto Document (Javadoc) contenente dati XML.
+L&#39;operazione `renderPDFForm` può accettare anche dati XML. I dati XML vengono uniti al modello durante la creazione di un PDF Form in modo che il modulo PDF generato contenga i dati specificati. Il secondo parametro per l&#39;operazione `renderPDFForm` può accettare un oggetto Document (Javadoc) contenente dati XML.
 
-## Estrazione di dati dai PDF forms  {#extracting-data-from-pdf-forms-nbsp}
+## Estrazione di dati da PDF forms  {#extracting-data-from-pdf-forms-nbsp}
 
-Utilizzare l&#39;operazione `exportData` (Javadoc) del servizio Forms per estrarre dati XML da un modulo PDF. Questa operazione accetta un documento come primo parametro. È possibile esportare i dati come documento XDP o come file XML. Se si esportano i dati come file XML, i dati esportati rimuovono l&#39;inviluppo XDP e restituiscono un file XML normale. Potete specificare questa disposizione utilizzando il secondo parametro.
+Utilizzare l&#39;operazione `exportData` (Javadoc) del servizio Forms per estrarre dati XML da un modulo di PDF. Questa operazione accetta un documento come primo parametro. È possibile esportare i dati come documento XDP o come file XML. Se si esportano i dati come file XML, i dati esportati rimuovono l&#39;inviluppo XDP e restituiscono un file XML normale. Potete specificare questa disposizione utilizzando il secondo parametro.
 
-## Importazione di dati nei PDF forms {#importing-data-into-pdf-forms}
+## Importazione di dati in PDF forms {#importing-data-into-pdf-forms}
 
-Il servizio Forms consente inoltre di unire un modulo PDF creato con AEM Forms Designer o l&#39;operazione `renderPDFForm` con dati XML. L&#39;operazione `importData` (Javadoc) del servizio Forms accetta il modulo PDF e i dati XML e restituisce un modulo PDF con XML dati.
+Il servizio Forms consente inoltre di unire un modulo PDF creato con AEM Forms Designer o l&#39;operazione `renderPDFForm` con dati XML. L&#39;operazione `importData` (Javadoc) del servizio Forms accetta il modulo PDF e i dati XML e restituisce un modulo PDF con dati XML.
 
 ## Rendering di moduli basati su frammenti {#rendering-forms-based-on-fragments}
 

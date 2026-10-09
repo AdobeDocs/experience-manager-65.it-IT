@@ -12,9 +12,7 @@ source-git-commit: acb023caf0a7e64fea9cf5d9198d672ee14c8d88
 workflow-type: tm+mt
 source-wordcount: '2350'
 ht-degree: 6%
-
 ---
-
 # Rapporti sulle transazioni API fatturabili per AEM Forms su OSGi {#transaction-reports-billable-apis}
 
 | Versione | Collegamento articolo |
