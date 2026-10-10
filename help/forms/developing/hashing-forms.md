@@ -1,18 +1,34 @@
 ---
-title: Come si generano e funzionano gli hash nei PDF forms dinamici?
-description: Generazione e utilizzo degli hash nei PDF forms dinamici.
+title: Come si generano e funzionano gli hash in Dynamic PDF forms?
+description: Generazione e utilizzo degli hash in Dynamic PDF forms.
 exl-id: 026f5686-39ea-4798-9d1f-031f15941060
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1234'
 ht-degree: 0%
-
 ---
-
-# Generazione e utilizzo degli hash nei PDF forms dinamici {#generate-work-with-hashes-dynamic-pdf-forms}
+# Generazione e utilizzo di hash in PDF forms dinamici {#generate-work-with-hashes-dynamic-pdf-forms}
 
 ## Conoscenze preliminari {#prerequisite-knowledge}
 
@@ -24,11 +40,11 @@ Inizio
 
 Quando si desidera nascondere una password nel modulo PDF senza inserirla in testo non crittografato nel codice sorgente o in qualsiasi altro punto del documento PDF, è fondamentale sapere come generare e utilizzare gli hash MD4, MD5, SHA-1 e SHA-256.
 
-L’idea è quella di oscurare la password generando un hash univoco e archiviarlo nel documento di PDF. Questo hash univoco può essere generato da diverse funzioni hash. In questo articolo viene illustrato come generarle all’interno del modulo PDF e come utilizzarle.
+L’idea è quella di oscurare la password generando un hash univoco e archiviarlo nel documento di PDF. Questo hash univoco può essere generato da diverse funzioni hash. In questo articolo viene illustrato come generarli all&#39;interno del modulo PDF e come utilizzarli.
 
 Una funzione hash accetta come input una stringa lunga (o messaggio) di qualsiasi lunghezza e produce come output una stringa a lunghezza fissa, a volte denominata message digest o impronta digitale.
 
-AEM Forms su JEE Designer consente di implementare le diverse funzioni hash negli oggetti script come JavaScript ed eseguirle all’interno di un documento Dynamic PDF. I PDF di esempio inclusi nei file di esempio per questo articolo utilizzano implementazioni open source delle seguenti funzioni hash:
+AEM Forms su JEE Designer consente di implementare le diverse funzioni hash negli oggetti script come JavaScript ed eseguirle all’interno di un documento PDF dinamico. I PDF di esempio inclusi nei file di esempio di questo articolo utilizzano implementazioni open source delle seguenti funzioni hash:
 
 * MD4 e MD5 - progettati da Ronald Rivest
 
@@ -70,7 +86,7 @@ A seconda della funzione di hash scelta, la lunghezza dell’hash varia:
 * SHA-1: 160 bit
 * SHA-256: 256 bit
 
-## Prova dei PDF forms di esempio {#try-sample-pdf-forms}
+## Prova del PDF forms di esempio {#try-sample-pdf-forms}
 
 I file di esempio per questo articolo includono due PDF forms. Il primo esempio consente di digitare una stringa e quindi generare i valori hash MD4, MD5, SHA-1 e SHA-256 per la stringa. Il secondo esempio è un modulo semplice che consente di sbloccare i campi di testo se viene immessa una password corretta.
 
@@ -121,6 +137,6 @@ Ti incoraggio a continuare a esplorare i due file PDF di esempio.  È possibile 
 * [Ronald Rivest](https://en.wikipedia.org/wiki/Ron_Rivest)
 * [NIST](https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines)
 * [Collisione hash](https://en.wikipedia.org/wiki/Hash_collision)
-* [Tabella arcobaleno](https://en.wikipedia.org/wiki/Rainbow_table)
+* [Tavolo arcobaleno](https://en.wikipedia.org/wiki/Rainbow_table)
 * [Home page del progetto JavaScript MD5](https://pajhome.org.uk/crypt/md5/)
-* Home page del progetto [jsSHA2](https://anmar.eu.org/projects/jssha2/)
+* [Home page del progetto jsSHA2](https://anmar.eu.org/projects/jssha2/)
