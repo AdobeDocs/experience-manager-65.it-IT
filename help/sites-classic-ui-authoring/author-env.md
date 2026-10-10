@@ -9,13 +9,22 @@ exl-id: 4486c503-21e6-493a-8994-b0f8cd34c85a
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '252'
-ht-degree: 3%
-
+source-wordcount: '256'
+ht-degree: 7%
 ---
-
 # Utilizzo dell’ambiente di authoring{#working-with-the-author-environment}
 
 >[!NOTE]
@@ -32,7 +41,7 @@ Per ottenere questo risultato, sono disponibili due interfacce utente grafiche, 
 
 1. Interfaccia classica
 
-   * Questa interfaccia utente è sempre stata disponibile in AEM per molti anni.
+   * Questa interfaccia utente è sempre disponibile in AEM da molti anni.
    * È prevalentemente verde.
    * È stato progettato per essere utilizzato su dispositivi desktop.
    * Non viene più mantenuto.
@@ -42,7 +51,7 @@ Per ottenere questo risultato, sono disponibili due interfacce utente grafiche, 
 
 1. Interfaccia touch
 
-   * Questa è la moderna interfaccia utente AEM standard.
+   * Si tratta dell’interfaccia utente moderna e standard di AEM.
    * È prevalentemente grigia, con un&#39;interfaccia pulita e piatta.
    * È progettato per essere utilizzato sia su dispositivi touch che desktop (ottimizzati per il touch). Il look and feel è lo stesso su tutti i dispositivi, anche se [la visualizzazione e la selezione delle risorse](/help/sites-authoring/basic-handling.md) differisce leggermente (tocchi e clic).
    * Per ulteriori dettagli su come eseguire l&#39;authoring utilizzando l&#39;interfaccia utente touch, consulta la [documentazione standard per l&#39;authoring](/help/sites-authoring/author.md). La documentazione seguente si concentra sull’interfaccia utente classica.

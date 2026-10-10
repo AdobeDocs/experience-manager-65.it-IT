@@ -1,5 +1,5 @@
 ---
-title: Componente Bozze e invii
+title: Componente bozze e invii
 description: Il componente Bozze e invii elenca i moduli che sono in stato Bozza e sono già stati inviati. Puoi personalizzare l’aspetto e lo stile del componente.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,14 +9,27 @@ exl-id: f3f013a7-a399-4178-a901-d4a8c65ddbd3
 solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: fa155e29-cba2-5e77-9efd-4824be5ce4c8
+    internal-label: Forms Portal
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '744'
-ht-degree: 0%
-
+source-wordcount: '747'
+ht-degree: 8%
 ---
-
-# Componente Bozze e invii{#drafts-and-submissions-component}
+# Componente bozze e invii{#drafts-and-submissions-component}
 
 Il componente Bozze e invii elenca tutti i moduli in stato di bozza e quelli già inviati. Il componente dispone di sezioni (schede) separate per le bozze e i moduli inviati. Gli utenti possono visualizzare solo le bozze e i moduli inviati.
 
@@ -40,7 +53,7 @@ Per aggiungere e configurare un componente Bozze e invii, effettua le seguenti o
 <table>
  <tbody>
   <tr>
-   <th>Linguetta</th>
+   <th>Scheda</th>
    <th>Configurazione</th>
    <th>Descrizione</th>
   </tr>
@@ -56,7 +69,7 @@ Per aggiungere e configurare un componente Bozze e invii, effettua le seguenti o
   </tr>
   <tr>
    <td> </td>
-   <td>Percorso stile personalizzato</td>
+   <td>Percorso stili personalizzati</td>
    <td>Se scegli l'opzione <strong>Stile personalizzato</strong> nel campo <strong>Tipo di stile</strong>, utilizza il campo <strong>Percorso di stile personalizzato</strong> per specificare il percorso del file CSS personalizzato. </td>
   </tr>
   <tr>
@@ -70,7 +83,7 @@ Per aggiungere e configurare un componente Bozze e invii, effettua le seguenti o
    <td>Specifica la scheda da visualizzare al caricamento della pagina del portale dei moduli. Puoi scegliere tra <strong>Scheda Bozza di Forms</strong> e <strong>Scheda Forms inviata</strong>.</td>
   </tr>
   <tr>
-   <td>Bozza configurazione scheda Forms</td>
+   <td>Configurazione scheda Moduli bozza</td>
    <td>Titolo personalizzato</td>
    <td>Specifica il titolo della scheda <strong>Bozza di Forms</strong>. Il valore predefinito è <strong>Bozza di Forms.</strong></td>
   </tr>
@@ -80,7 +93,7 @@ Per aggiungere e configurare un componente Bozze e invii, effettua le seguenti o
    <td>Specifica il layout da utilizzare per l'elenco Bozza di Forms.</td>
   </tr>
   <tr>
-   <td>Configurazione scheda Forms inviata</td>
+   <td>Configurazione scheda Moduli inviati</td>
    <td>Titolo personalizzato </td>
    <td>Specifica il titolo della scheda </strong> di Forms <strong>Inviato. Il valore predefinito è <strong>Forms inviato.</strong></td>
   </tr>
@@ -94,9 +107,9 @@ Per aggiungere e configurare un componente Bozze e invii, effettua le seguenti o
 
 ## Personalizzazione dello storage {#customizing-the-storage}
 
-Quando si utilizza l’azione di invio Forms Portal o si abilita l’opzione Memorizza dati nel portale dei moduli in un modulo adattivo, i dati del modulo vengono memorizzati nell’archivio AEM. In un ambiente di produzione, si consiglia di non memorizzare i dati delle bozze o dei moduli inviati nell’archivio AEM. Per memorizzare le bozze e i dati dei moduli inviati, è necessario integrare il componente bozze e invio con un archivio sicuro come il database aziendale.
+Quando si utilizza l’azione di invio Forms Portal o si abilita l’opzione Memorizza dati nel portale dei moduli in un modulo adattivo, i dati del modulo vengono memorizzati nell’archivio di AEM. In un ambiente di produzione, si consiglia di non memorizzare i dati delle bozze o dei moduli inviati nell’archivio di AEM. Per memorizzare le bozze e i dati dei moduli inviati, è necessario integrare il componente bozze e invio con un archivio sicuro come il database aziendale.
 
-Il portale Forms consente di archiviare i dati nell&#39;archivio AEM locale, nell&#39;archivio AEM remoto o in un database. AEM Forms consente di personalizzare l’implementazione della memorizzazione dei dati utente per le bozze e gli invii. È possibile sovrascrivere i metodi predefiniti per specificare in che modo i dati relativi a bozze e invii vengono memorizzati in un archivio scelto. Ad esempio, puoi archiviare i dati in un archivio dati attualmente implementato nella tua organizzazione.
+Il portale Forms consente di memorizzare i dati nell’archivio AEM locale, nell’archivio AEM remoto o in un database. AEM Forms consente di personalizzare l’implementazione della memorizzazione dei dati utente per le bozze e gli invii. È possibile sovrascrivere i metodi predefiniti per specificare in che modo i dati relativi a bozze e invii vengono memorizzati in un archivio scelto. Ad esempio, puoi archiviare i dati in un archivio dati attualmente implementato nella tua organizzazione.
 
 Forms portal fornisce servizi pronti all’uso (API) per memorizzare i dati sull’archivio crx delle istanze di pubblicazione AEM Forms locali e remote. È possibile sostituire le implementazioni predefinite, descritte nell&#39;articolo [Configurazione dei servizi di archiviazione per le bozze e gli invii](/help/forms/using/configuring-draft-submission-storage.md), con implementazioni personalizzate per sostituire le funzionalità predefinite. Per informazioni dettagliate sui metodi necessari in un&#39;implementazione personalizzata per archiviare il contenuto in una posizione protetta, vedere [Personalizzazione dei servizi dati per bozze e invii](/help/forms/using/custom-draft-submission-data-services.md) e [Archiviazione personalizzata per le bozze e i componenti per invii.](/help/forms/using/adding-custom-storage-provider-forms.md)
 
@@ -109,6 +122,6 @@ La documentazione di AEM Forms fornisce un [esempio per integrare il componente 
 * [Elencare moduli su una pagina web utilizzando API](/help/forms/using/listing-forms-webpage-using-apis.md)
 * [Utilizzare il componente Bozze e invii](/help/forms/using/draft-submission-component.md)
 * [Personalizzare l’archiviazione delle bozze e dei moduli inviati](/help/forms/using/draft-submission-component.md)
-* [Esempio per integrare il componente Bozze e invii con il database](/help/forms/using/integrate-draft-submission-database.md)
-* [Personalizzazione dei modelli per i componenti del portale Forms](/help/forms/using/customizing-templates-forms-portal-components.md)
+* [Esempio di integrazione del componente bozze e invii con il database](/help/forms/using/integrate-draft-submission-database.md)
+* [Personalizzazione dei modelli per i componenti del portale dei moduli](/help/forms/using/customizing-templates-forms-portal-components.md)
 * [Introduzione alla pubblicazione di moduli su un portale](/help/forms/using/introduction-publishing-forms.md)
