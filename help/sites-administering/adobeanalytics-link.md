@@ -1,6 +1,6 @@
 ---
 title: Configurazione del tracciamento dei collegamenti per Adobe Analytics
-description: Scopri come configurare il tracciamento dei collegamenti per il SiteCatalyst.
+description: Scopri come configurare il tracciamento dei collegamenti per SiteCatalyst.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
@@ -9,13 +9,22 @@ exl-id: 9fa3e531-11b3-4b8d-a87c-a08faf06f5b7
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1615'
-ht-degree: 0%
-
+source-wordcount: '1645'
+ht-degree: 1%
 ---
-
 
 # Configurazione del tracciamento dei collegamenti per Adobe Analytics{#configuring-link-tracking-for-adobe-analytics}
 
@@ -23,7 +32,7 @@ Quando gli utenti fanno clic sui collegamenti nelle pagine del sito web, è poss
 
 ## Configurazione del tracciamento dei collegamenti per un framework Adobe Analytics {#configuring-link-tracking-for-an-adobe-analytics-framework}
 
-1. Utilizzando **Navigazione**, vai tramite **Distribuzione**, **Cloud Service** alla sezione **Adobe Analytics**.
+1. Utilizzando **Navigazione**, vai tramite **Distribuzione**, **Servizi cloud** alla sezione **Adobe Analytics**.
 
 1. Utilizzando **Mostra configurazioni**, apri il framework Adobe Analytics richiesto.
 1. Espandi la sezione **Configurazione tracciamento collegamenti** e configura come richiesto (questa pagina fornisce ulteriori dettagli):
@@ -89,7 +98,7 @@ Definisce i filtri per la corrispondenza con gli URL dei collegamenti interni. Q
 
   Il valore predefinito è `'javascript:,'+window.location.hostname`
 
-* **Lascia Stringa Di Query**
+* **Lascia stringa di query**
 Include i parametri URL durante la valutazione delle corrispondenze con filtri interni ed esterni.
 
   Abilita questa opzione se desideri includere i parametri URL durante la valutazione degli URL di destinazione del collegamento rispetto ai filtri esterni e interni.
@@ -109,7 +118,7 @@ s.linkLeaveQueryString= false;
 
 ## Invio di dati variabili con clic sui collegamenti {#sending-variable-data-with-link-clicks}
 
-Puoi configurare l’AEM per inviare dati di eventi e variabili ad Adobe Analytics quando un utente fa clic su un collegamento. Le proprietà **Configurazione tracciamento collegamenti** consentono di specificare gli eventi Adobe Analytics e le variabili da monitorare quando si verificano i clic sui collegamenti.
+Puoi configurare AEM per l’invio di dati di eventi e variabili ad Adobe Analytics quando un utente fa clic su un collegamento. Le proprietà **Configurazione tracciamento collegamenti** consentono di specificare gli eventi Adobe Analytics e le variabili da monitorare quando si verificano i clic sui collegamenti.
 
 Le mappature framework determinano i valori di evento e variabile. Puoi mappare le variabili di Adobe Analytics alle variabili dei componenti di contenuto che memorizzano i dati che desideri tracciare quando fai clic sui collegamenti.
 
@@ -148,7 +157,7 @@ Per esplorare il comportamento di tracciamento dei collegamenti dell’integrazi
 Questo esempio illustra il funzionamento della mappatura nel contesto del tracciamento e del debugger:
 
 1. Apri il framework che è stato associato a una pagina web.
-1. Trascina il componente **Pagina** nell&#39;area dei mapping del framework. Il componente **Pagina** appartiene al Sidekick di componenti **Generale**.
+1. Trascina il componente **Pagina** nell&#39;area dei mapping del framework. Il componente **Pagina** appartiene al gruppo di componenti **Generale** in Sidekick.
 
    >[!NOTE]
    >
@@ -167,8 +176,8 @@ Questo esempio illustra il funzionamento della mappatura nel contesto del tracci
   </tr>
   <tr>
    <td>pagedata.title</td>
-   <td>EVar personalizzato 1 (eVar 1)</td>
-   <td>EVAR 1</td>
+   <td>EVar 1 personalizzato (eVar1)</td>
+   <td>EVAR1</td>
   </tr>
   <tr>
    <td>eventdata.events.pageView</td>
@@ -178,7 +187,7 @@ Questo esempio illustra il funzionamento della mappatura nel contesto del tracci
  </tbody>
 </table>
 
-1. Trascina il componente Ricerca nell’area delle mappature del framework. Il componente Ricerca appartiene al gruppo di componenti Generale nel Sidekick. Configura la mappatura in base alla tabella seguente, trascinando la variabile Analytics (SiteCatalyst) dal pannello laterale sinistro:
+1. Trascina il componente Ricerca nell’area delle mappature del framework. Il componente Ricerca appartiene al gruppo di componenti Generale in Sidekick. Configura la mappatura in base alla tabella seguente, trascinando la variabile Analytics (SiteCatalyst) dal pannello laterale sinistro:
 
 <table>
  <tbody>
@@ -189,13 +198,13 @@ Questo esempio illustra il funzionamento della mappatura nel contesto del tracci
   </tr>
   <tr>
    <td>eventdata.keyword</td>
-   <td>EVar personalizzato 2 (eVar 2)</td>
-   <td>EVAR 2</td>
+   <td>EVar 2 personalizzato (eVar2)</td>
+   <td>EVAR2</td>
   </tr>
   <tr>
    <td>eventdata.results</td>
-   <td>EVar personalizzato 3 (eVar 3)</td>
-   <td>EVAR 3</td>
+   <td>EVar 3 personalizzato (eVar3)</td>
+   <td>EVAR3</td>
   </tr>
   <tr>
    <td>eventdata.events.search</td>

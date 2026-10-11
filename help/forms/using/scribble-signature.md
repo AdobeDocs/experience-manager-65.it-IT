@@ -1,6 +1,6 @@
 ---
-title: Utilizzo della firma scarabocchio nei moduli di HTML5
-description: I moduli HTML5 vengono utilizzati sempre più spesso sui dispositivi touch e un requisito comune è il supporto delle firme. La firma di documenti su dispositivi mobili sta diventando una modalità accettata per firmare moduli su dispositivi mobili.
+title: Utilizzo della firma a meno nei moduli HTML5
+description: I moduli HTML5 sono sempre più utilizzati sui dispositivi touch e un requisito comune è il supporto delle firme. La firma di documenti su dispositivi mobili sta diventando una modalità accettata per firmare moduli su dispositivi mobili.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,14 +10,27 @@ feature: Forms Designer,Designer
 exl-id: 2025182f-195b-40d0-aee7-67669f55b964
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 1af3c3d4-88d7-5e0f-813c-eb70824bfcdd
+    internal-label: Forms Designer
+  - id: 794033c1-20ea-55a4-a8a6-b1107e12deb0
+    internal-label: Designer
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 0%
-
+source-wordcount: '657'
+ht-degree: 2%
 ---
-
-# Utilizzo della firma scarabocchio nei moduli di HTML5{#using-scribble-signature-in-html-forms}
+# Utilizzo della firma a meno nei moduli HTML5{#using-scribble-signature-in-html-forms}
 
 I moduli HTML5 vengono utilizzati sempre più spesso sui dispositivi touch e un requisito comune è il supporto delle firme. Scribing (scrittura con uno stilo o un dito) sta diventando un modo accettato di firmare moduli su dispositivi mobili. HTML5 Forms e Forms Designer ora consentono di avere un campo di firma scarabocchio sul modulo. Quando si esegue il rendering del modulo nel browser, è possibile firmare questi campi utilizzando uno stilo, un mouse o un tocco.
 
@@ -30,7 +43,7 @@ I moduli HTML5 vengono utilizzati sempre più spesso sui dispositivi touch e un 
 
    >[!NOTE]
    >
-   >I Dimension del campo selezionato in Forms Designer vengono visualizzati durante il rendering del campo. Tuttavia, la dimensione della casella della firma sottoposta a rendering viene calcolata in base alle proporzioni del campo e non alla dimensione specificata in Forms Designer.
+   >Le dimensioni del campo selezionato in Forms Designer si riflettono durante il rendering del campo. Tuttavia, la dimensione della casella della firma sottoposta a rendering viene calcolata in base alle proporzioni del campo e non alla dimensione specificata in Forms Designer.
 
 1. Configura il campo Disegno di firma.
 
