@@ -6,13 +6,25 @@ feature: Multi Site Manager
 exl-id: 3fedc1ba-64f5-4fbe-9ee5-9b96b75dda58
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e86b80f2-7cb0-4646-8fcd-51d3bf272fce
+    internal-label: Multi Site Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1624'
 ht-degree: 36%
-
 ---
-
 # Best practice MSM{#msm-best-practices}
 
 ## Generale {#general}
@@ -95,9 +107,9 @@ Di seguito sono riportate alcune considerazioni da tenere presenti durante la cr
 
   Consente di evitare:
 
-   * aggiunta manuale di lingue nella blueprint (sotto il primo livello)
-   * aggiungere manualmente il contenuto direttamente sotto la lingua root,
-   * non comporta il trasferimento automatico di questo nuovo contenuto alla live copy al momento del rollout.
+  * aggiunta manuale di lingue nella blueprint (sotto il primo livello)
+  * aggiungere manualmente il contenuto direttamente sotto la lingua root,
+  * non comporta il trasferimento automatico di questo nuovo contenuto alla live copy al momento del rollout.
 
 ## Siti Web MSM e multilingue {#msm-and-multilingual-websites}
 
@@ -105,18 +117,18 @@ MSM può contribuire alla creazione di siti Web multilingue in due modi:
 
 * Durante la creazione di lingue master.
 
-   * Sebbene MSM stesso **non fornisca la traduzione del contenuto**, può essere integrato con connettori di traduzione di terze parti che lo fanno. Tieni presente che:
+  * Sebbene MSM stesso **non fornisca la traduzione del contenuto**, può essere integrato con connettori di traduzione di terze parti che lo fanno. Tieni presente che:
 
-      * MSM consente di annullare l’ereditarietà a livello di pagina e/o di componente. Questo aiuta a evitare la sovrascrittura dei contenuti tradotti (da una Live Copy, con contenuti non ancora tradotti da una blueprint) al prossimo rollout.
-      * Alcuni connettori di traduzione di terze parti automatizzano questa gestione delle ereditarietà MSM.
+    * MSM consente di annullare l’ereditarietà a livello di pagina e/o di componente. Questo aiuta a evitare la sovrascrittura dei contenuti tradotti (da una Live Copy, con contenuti non ancora tradotti da una blueprint) al prossimo rollout.
+    * Alcuni connettori di traduzione di terze parti automatizzano questa gestione delle ereditarietà MSM.
 
-        Per ulteriori informazioni, rivolgiti al fornitore di servizi di traduzione.
+      Per ulteriori informazioni, rivolgiti al fornitore di servizi di traduzione.
 
-      * Un approccio alternativo per la creazione e la traduzione di lingue master consiste nell’utilizzare copie in lingua insieme al Translation Integration Framework di AEM preconfigurato.
+    * Un approccio alternativo per la creazione e la traduzione di lingue master consiste nell’utilizzare copie in lingua insieme al Translation Integration Framework di AEM preconfigurato.
 
 * Durante il rollout del contenuto dai master lingua.
 
-   * Ad esempio, dal master in lingua francese a siti specifici per paese, come Francia/francese, Canada/francese, Svizzera/francese.
+  * Ad esempio, dal master in lingua francese a siti specifici per paese, come Francia/francese, Canada/francese, Svizzera/francese.
 
 Per ulteriori informazioni consulta [Traduzione di contenuti per siti multilingue](/help/sites-administering/translation.md) e [Best practice per la traduzione](/help/sites-administering/tc-bp.md).
 
@@ -130,9 +142,9 @@ Le modifiche alla struttura del contenuto in una struttura blueprint/sorgente ve
 
 * **Lo spostamento di** pagine in una blueprint **non** determinerà lo spostamento delle pagine corrispondenti nelle Live Copy dopo il rollout con la configurazione di rollout standard:
 
-   * Questo comportamento si spiega con il fatto che lo spostamento di una pagina include implicitamente l’eliminazione di una pagina. Questo potrebbe causare un comportamento imprevisto al momento della pubblicazione, in quanto l’eliminazione delle pagine sull’autore disattiva automaticamente il contenuto corrispondente al momento della pubblicazione. Questo può anche avere un effetto a catena sugli elementi correlati come collegamenti, segnalibri e altri.
-   * L’ereditarietà dei contenuti nelle rispettive pagine Live Copy viene aggiornata per riflettere la nuova posizione delle loro sorgenti nella blueprint.
-   * Per realizzare completamente lo spostamento di una pagina da una blueprint a una Live Copy, considera le seguenti best practice:
+  * Questo comportamento si spiega con il fatto che lo spostamento di una pagina include implicitamente l’eliminazione di una pagina. Questo potrebbe causare un comportamento imprevisto al momento della pubblicazione, in quanto l’eliminazione delle pagine sull’autore disattiva automaticamente il contenuto corrispondente al momento della pubblicazione. Questo può anche avere un effetto a catena sugli elementi correlati come collegamenti, segnalibri e altri.
+  * L’ereditarietà dei contenuti nelle rispettive pagine Live Copy viene aggiornata per riflettere la nuova posizione delle loro sorgenti nella blueprint.
+  * Per realizzare completamente lo spostamento di una pagina da una blueprint a una Live Copy, considera le seguenti best practice:
 
 >[!NOTE]
 >
@@ -140,25 +152,25 @@ Le modifiche alla struttura del contenuto in una struttura blueprint/sorgente ve
 
 * Crea una configurazione di rollout personalizzata:
 
-   * Questa nuova configurazione deve includere l’azione:
+  * Questa nuova configurazione deve includere l’azione:
 
-     `PageMoveAction`
+    `PageMoveAction`
 
-     Non aggiungere altre azioni a questa configurazione.
+    Non aggiungere altre azioni a questa configurazione.
 
 * Posiziona la nuova configurazione:
 
-   * Per eseguire il rollout completo della pagina, spostala durante l’eliminazione delle rispettive pagine nella posizione precedente nella Live Copy:
+  * Per eseguire il rollout completo della pagina, spostala durante l’eliminazione delle rispettive pagine nella posizione precedente nella Live Copy:
 
-      * Posiziona la configurazione appena creata prima della configurazione di rollout standard.
+    * Posiziona la configurazione appena creata prima della configurazione di rollout standard.
 
-        La configurazione di rollout standard si occuperà di eliminare le pagine nella loro posizione precedente.
+      La configurazione di rollout standard si occuperà di eliminare le pagine nella loro posizione precedente.
 
-   * Per distribuire lo spostamento della pagina mantenendo le rispettive pagine nella vecchia posizione nelle Live Copy (essenzialmente duplicando il contenuto):
+  * Per distribuire lo spostamento della pagina mantenendo le rispettive pagine nella vecchia posizione nelle Live Copy (essenzialmente duplicando il contenuto):
 
-      * Posiziona la configurazione appena creata dopo la configurazione di rollout standard.
+    * Posiziona la configurazione appena creata dopo la configurazione di rollout standard.
 
-        In questo modo nessun contenuto verrà eliminato nella Live Copy o disattivato dalla pubblicazione.
+      In questo modo nessun contenuto verrà eliminato nella Live Copy o disattivato dalla pubblicazione.
 
 ## Personalizzazione dei rollout {#customizing-rollouts}
 
@@ -177,8 +189,8 @@ Quando utilizzi il [trigger di rollout](/help/sites-administering/msm-sync.md#ro
 
 * Il risultato del rollout può differire da quello previsto, ad esempio:
 
-   * Non puoi specificare l’ordine degli eventi di modifica risultanti.
-   * L&#39;architettura basata su eventi non può garantire la sequenza degli eventi passati al Rollout Manager.
+  * Non puoi specificare l’ordine degli eventi di modifica risultanti.
+  * L&#39;architettura basata su eventi non può garantire la sequenza degli eventi passati al Rollout Manager.
 
 * L’utilizzo di tale configurazione di rollout potrebbe causare conflitti se si verificano aggiornamenti simultanei della stessa risorsa.
 

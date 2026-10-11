@@ -1,6 +1,6 @@
 ---
-title: Filigrana personalizzata nell’anteprima di Letter PDF
-description: Scopri come creare una filigrana personalizzata nell’anteprima di Letter PDF.
+title: Filigrana personalizzata nell’anteprima PDF della lettera
+description: Scopri come creare una filigrana personalizzata nell’anteprima PDF della lettera.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
@@ -9,28 +9,41 @@ feature: Correspondence Management
 exl-id: 7d90fade-1ca4-41d8-bbf9-45490465784a
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 0%
-
+source-wordcount: '343'
+ht-degree: 3%
 ---
-
-# Filigrana personalizzata nell’anteprima di Letter PDF{#custom-watermark-in-letter-pdf-preview}
+# Filigrana personalizzata nell’anteprima PDF della lettera{#custom-watermark-in-letter-pdf-preview}
 
 ## Panoramica {#overview}
 
 Nell’interfaccia utente per la creazione di corrispondenza, gli utenti agente visualizzano in anteprima la corrispondenza nella forma finale in cui viene inviata alla post-elaborazione, ad esempio per la posta elettronica o la stampa.
 
-Per evitare l’uso non autorizzato di questi dati, le organizzazioni possono imporre una filigrana sul PDF di anteprima. La filigrana predefinita è &quot;PREVIEW&quot; (ANTEPRIMA), che viene visualizzata nel PDF.
+Per evitare l’uso non autorizzato di questi dati, le organizzazioni possono imporre una filigrana sul PDF di anteprima. La filigrana predefinita è &quot;PREVIEW&quot; (ANTEPRIMA), che viene visualizzata in PDF.
 
-Per abilitare la filigrana in preview PDF, seleziona l&#39;opzione **[!UICONTROL Applica filigrana]** durante l&#39;anteprima in **[!UICONTROL Configurazioni gestione corrispondenza]** all&#39;indirizzo https://&#39;[server]:[porta]&#39;/system/console/configMgr.
+Per abilitare la filigrana nell&#39;anteprima di PDF, seleziona l&#39;opzione **[!UICONTROL Applica filigrana]** durante l&#39;anteprima in **[!UICONTROL Configurazioni gestione corrispondenza]** all&#39;indirizzo https://&#39;[server]:[porta]&#39;/system/console/configMgr.
 
 ![filigrana predefinita](assets/default-watermark.png)
 
 Per personalizzare il testo e l&#39;aspetto della filigrana, attenersi alla procedura descritta di seguito.
 
-## Personalizzare la filigrana nell’anteprima PDF nell’interfaccia utente per la creazione di corrispondenza {#customizewatermark-}
+## Personalizzare la filigrana nell’anteprima di PDF nell’interfaccia utente per la creazione di corrispondenza {#customizewatermark-}
 
 1. Vai a `https://'[server]:[port]'/[ContextPath]/crx/de` e accedi come amministratore.
 1. Nella cartella delle app, crea una cartella denominata **[!UICONTROL filigrana di anteprima]** con percorso/struttura simile alla cartella filigrana di anteprima nella cartella libs:
@@ -79,7 +92,7 @@ Per personalizzare il testo e l&#39;aspetto della filigrana, attenersi alla proc
    </DDX>
    ```
 
-   Per informazioni sulla personalizzazione dell&#39;aspetto della filigrana, del testo e dell&#39;allineamento, vedere Aggiunta e rimozione di filigrane e sfondi nel documento [Servizio assemblatore e Riferimenti DDX](https://help.adobe.com/it_IT/livecycle/11.0/ddxRef.pdf).
+   Per informazioni sulla personalizzazione dell&#39;aspetto della filigrana, del testo e dell&#39;allineamento, vedere Aggiunta e rimozione di filigrane e sfondi nel documento [Servizio assemblatore e Riferimenti DDX](https://help.adobe.com/en_US/livecycle/11.0/ddxRef.pdf).
 
    >[!NOTE]
    >

@@ -10,13 +10,22 @@ exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3524'
 ht-degree: 1%
-
 ---
-
 # Estensione e configurazione di Importazione progettazione per le pagine di destinazione{#extending-and-configuring-the-design-importer-for-landing-pages}
 
 Questa sezione descrive come configurare e, se necessario, estendere l’importazione progettazione per le pagine di destinazione. L&#39;utilizzo delle pagine di destinazione dopo l&#39;importazione è trattato in [Pagine di destinazione.](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
@@ -470,7 +479,7 @@ L’utilizzo di selettori CSS simili a quelli seguenti non è consigliato con el
 Questo perché dopo l’importazione vengono aggiunti all’HTML generato elementi HTML aggiuntivi come il tag &lt;div>.
 
 * Anche gli script che si basano su una struttura simile a quella descritta sopra non sono consigliati per l’utilizzo con elementi contrassegnati per la conversione in componenti AEM.
-* L’utilizzo di stili sui tag di markup per la conversione dei componenti, ad esempio &lt;div data-cq-component=&quot;&ast;&quot;> non è consigliato.
+* L’utilizzo di stili sui tag di markup per la conversione dei componenti, ad esempio &lt;div data-cq-component=&quot;&amp;ast;&quot;> non è consigliato.
 * Il layout del design deve seguire le best practice di HTML5 Boilerplate. Ulteriori informazioni su: [https://html5boilerplate.com/](https://html5boilerplate.com/).
 
 ## Configurazione dei moduli OSGI {#configuring-osgi-modules}
@@ -531,7 +540,7 @@ La tabella seguente descrive brevemente le proprietà:
 >
 >Ad esempio, se la configurazione predefinita è
 >
->&#x200B;>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
+>>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
 >
 >E devi sostituire `CQ_DESIGN_PATH` con `VIPURL` nel modello di ricerca, il tuo modello di ricerca dovrebbe essere simile al seguente:
 >

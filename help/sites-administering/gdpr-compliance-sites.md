@@ -9,13 +9,31 @@ exl-id: 8c1ea483-7319-4e5c-be4c-d43a2b67d316
 solution: Experience Manager, Experience Manager Sites
 feature: Compliance
 role: Admin, Developer, Leader, User
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c42c36cf-eeed-484a-8b39-a33a68192a07
+    internal-label: Compliance
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '902'
 ht-degree: 55%
-
 ---
-
 # AEM Sites - Compatibilità GDPR{#aem-sites-gdpr-readiness}
 
 >[!IMPORTANT]
@@ -50,7 +68,7 @@ AEM dispone di un [servizio di rinuncia ai cookie](/help/sites-developing/cookie
 
 AEM Sites include un’integrazione opzionale con Enhanced Insights by Analytics che utilizza funzionalità interne al servizio Adobe Analytics On-demand.
 
-Per ulteriori informazioni sulla gestione delle richieste dei soggetti interessati ai sensi del RGPD in relazione ad Adobe Analytics, consulta [Adobe Analytics e RGPD](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html?lang=it).
+Per ulteriori informazioni sulla gestione delle richieste dei soggetti interessati ai sensi del RGPD in relazione ad Adobe Analytics, consulta [Adobe Analytics e RGPD](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html).
 
 ## Personalization ottimizzato per Target {#enhanced-personalization-by-target}
 
@@ -79,9 +97,9 @@ In queste linee guida il consenso è implementato per impostazione predefinita. 
 * Il componente di rinuncia deve essere incluso ogni volta che il componente ContextHub è incluso.
 * I termini e le condizioni relativi al RGPD per il sito web devono essere visualizzati al visitatore del sito web, consentendo loro di:
 
-   * accetta
-   * rifiuta
-   * cambia la scelta precedente
+  * accetta
+  * rifiuta
+  * cambia la scelta precedente
 
 * Se un visitatore del sito accetta i termini e le condizioni del sito, il cookie di rinuncia di ContextHub deve essere rimosso:
 
@@ -108,49 +126,49 @@ Per visualizzare in anteprima la persistenza utilizzata in ContextHub, un utente
 
 * Utilizzare la console del browser, ad esempio:
 
-   * Chrome:
+  * Chrome:
 
-      * Apri Strumenti per sviluppatori > Applicazione > Archiviazione:
+    * Apri Strumenti per sviluppatori > Applicazione > Archiviazione:
 
-         * Archiviazione locale > (sito Web) > ContextHubPersistence
-         * Archiviazione sessione > (sito Web) > ContextHubPersistence
-         * Cookie > (sito Web) > SessionPersistence
+      * Archiviazione locale > (sito Web) > ContextHubPersistence
+      * Archiviazione sessione > (sito Web) > ContextHubPersistence
+      * Cookie > (sito Web) > SessionPersistence
 
-   * Firefox:
+  * Firefox:
 
-      * Apri Strumenti di sviluppo web > Archiviazione:
+    * Apri Strumenti di sviluppo web > Archiviazione:
 
-         * Archiviazione locale > (sito Web) > ContextHubPersistence
-         * Archiviazione sessione > (sito Web) > ContextHubPersistence
-         * Cookie > (sito Web) > SessionPersistence
+      * Archiviazione locale > (sito Web) > ContextHubPersistence
+      * Archiviazione sessione > (sito Web) > ContextHubPersistence
+      * Cookie > (sito Web) > SessionPersistence
 
-   * Safari:
+  * Safari:
 
-      * Apri Preferenze > Avanzate > Mostra menu Sviluppo nella barra dei menu
-      * Apri Sviluppo > Mostra console JavaScript
+    * Apri Preferenze > Avanzate > Mostra menu Sviluppo nella barra dei menu
+    * Apri Sviluppo > Mostra console JavaScript
 
-         * Console > Archiviazione > Archiviazione locale > (sito Web) > ContextHubPersistence
-         * Console > Archiviazione > Archiviazione sessione > (sito Web) > ContextHubPersistence
-         * Console > Archiviazione > Cookie > (sito Web) > ContextHubPersistence
+      * Console > Archiviazione > Archiviazione locale > (sito Web) > ContextHubPersistence
+      * Console > Archiviazione > Archiviazione sessione > (sito Web) > ContextHubPersistence
+      * Console > Archiviazione > Cookie > (sito Web) > ContextHubPersistence
 
-   * Internet Explorer:
+  * Internet Explorer:
 
-      * Apri Strumenti di sviluppo > Console
+    * Apri Strumenti di sviluppo > Console
 
-         * localStorage.getItem(&#39;ContextHubPersistence&#39;)
-         * sessionStorage.getItem(&#39;ContextHubPersistence&#39;)
-         * document.cookie
+      * localStorage.getItem(&#39;ContextHubPersistence&#39;)
+      * sessionStorage.getItem(&#39;ContextHubPersistence&#39;)
+      * document.cookie
 
 * Utilizza l’API ContextHub nella console del browser:
 
-   * ContextHub fornisce i seguenti livelli di persistenza dei dati:
+  * ContextHub fornisce i seguenti livelli di persistenza dei dati:
 
-      * ContextHub.Utils.Persistence.Modes.LOCAL (impostazione predefinita)
-      * ContextHub.Utils.Persistence.Modes.SESSION
-      * ContextHub.Utils.Persistence.Modes.COOKIE
-      * ContextHub.Utils.Persistence.Modes.WINDOW
+    * ContextHub.Utils.Persistence.Modes.LOCAL (impostazione predefinita)
+    * ContextHub.Utils.Persistence.Modes.SESSION
+    * ContextHub.Utils.Persistence.Modes.COOKIE
+    * ContextHub.Utils.Persistence.Modes.WINDOW
 
-     L’archivio ContextHub definisce il livello di persistenza utilizzato, in modo da visualizzare lo stato attuale della persistenza in tutti i livelli che devono essere controllati.
+    L’archivio ContextHub definisce il livello di persistenza utilizzato, in modo da visualizzare lo stato attuale della persistenza in tutti i livelli che devono essere controllati.
 
 Ad esempio, per visualizzare i dati memorizzati in localStorage:
 
@@ -158,28 +176,28 @@ Per visualizzare in anteprima la persistenza utilizzata in ContextHub, un utente
 
 * Usa la console del browser:
 
-   * Chrome - apri Strumenti per sviluppatori > Applicazione > Archiviazione:
+  * Chrome - apri Strumenti per sviluppatori > Applicazione > Archiviazione:
 
-      * Archiviazione locale > (sito Web) > ContextHubPersistence
-      * Archiviazione sessione > (sito Web) > ContextHubPersistence
-      * Cookie > (sito Web) > SessionPersistence
+    * Archiviazione locale > (sito Web) > ContextHubPersistence
+    * Archiviazione sessione > (sito Web) > ContextHubPersistence
+    * Cookie > (sito Web) > SessionPersistence
 
-   * Firefox - apri Strumenti di sviluppo web > Archiviazione:
+  * Firefox - apri Strumenti di sviluppo web > Archiviazione:
 
-      * Archiviazione locale > (sito Web) > ContextHubPersistence
-      * Archiviazione sessione > (sito Web) > ContextHubPersistence
-      * Cookie > (sito Web) > SessionPersistence
+    * Archiviazione locale > (sito Web) > ContextHubPersistence
+    * Archiviazione sessione > (sito Web) > ContextHubPersistence
+    * Cookie > (sito Web) > SessionPersistence
 
 * Utilizza l’API ContextHub nella console del browser:
 
-   * ContextHub fornisce i seguenti livelli di persistenza dei dati:
+  * ContextHub fornisce i seguenti livelli di persistenza dei dati:
 
-      * ContextHub.Utils.Persistence.Modes.LOCAL (impostazione predefinita)
-      * ContextHub.Utils.Persistence.Modes.SESSION
-      * ContextHub.Utils.Persistence.Modes.COOKIE
-      * ContextHub.Utils.Persistence.Modes.WINDOW
+    * ContextHub.Utils.Persistence.Modes.LOCAL (impostazione predefinita)
+    * ContextHub.Utils.Persistence.Modes.SESSION
+    * ContextHub.Utils.Persistence.Modes.COOKIE
+    * ContextHub.Utils.Persistence.Modes.WINDOW
 
-     L’archivio ContextHub definisce il livello di persistenza utilizzato, in modo da visualizzare lo stato attuale della persistenza in tutti i livelli che devono essere controllati.
+    L’archivio ContextHub definisce il livello di persistenza utilizzato, in modo da visualizzare lo stato attuale della persistenza in tutti i livelli che devono essere controllati.
 
 Ad esempio, per visualizzare i dati memorizzati in localStorage:
 
@@ -218,7 +236,7 @@ Per cancellare la persistenza di ContextHub:
 
 * Per cancellare tutti i livelli di persistenza ContextHub, è necessario chiamare il codice appropriato per tutti i livelli:
 
-   * ContextHub.Utils.Persistence.Modes.LOCAL (impostazione predefinita)
-   * ContextHub.Utils.Persistence.Modes.SESSION
-   * ContextHub.Utils.Persistence.Modes.COOKIE
-   * ContextHub.Utils.Persistence.Modes.WINDOW
+  * ContextHub.Utils.Persistence.Modes.LOCAL (impostazione predefinita)
+  * ContextHub.Utils.Persistence.Modes.SESSION
+  * ContextHub.Utils.Persistence.Modes.COOKIE
+  * ContextHub.Utils.Persistence.Modes.WINDOW

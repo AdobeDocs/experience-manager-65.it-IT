@@ -10,13 +10,20 @@ exl-id: 4650ac36-5506-4efc-be35-fac9e5a58f3d
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1719'
 ht-degree: 1%
-
 ---
-
 # Funzione blog {#blog-feature}
 
 ## Introduzione {#introduction}
@@ -250,11 +257,11 @@ Nella scheda **Impostazioni barra laterale diario**, specificare il formato dell
 
   Formato utilizzato per visualizzare gli archivi dei post di blog. Il formato utilizza i segnaposto seguendo la convenzione Java™.
 
-   * aaaa : anno intero, come &#39;2015&#39;
-   * aa : anno breve, come &#39;15&#39;
-   * MMMM : mese intero, come giugno
-   * MMM : mese breve, come giugno
-   * MM: numero mese, ad esempio 06
+  * aaaa : anno intero, come &#39;2015&#39;
+  * aa : anno breve, come &#39;15&#39;
+  * MMMM : mese intero, come giugno
+  * MMM : mese breve, come giugno
+  * MM: numero mese, ad esempio 06
 
   Il valore predefinito è &quot;yyyy MMMM&quot;, che visualizzerebbe, ad esempio, &quot;Giugno 2015&quot;
 
@@ -262,15 +269,15 @@ Nella scheda **Impostazioni barra laterale diario**, specificare il formato dell
 
   Titolo e tipo di post di blog da visualizzare nella barra laterale. La scelta è tra
 
-   * Autori
-   * Categorie
-   * Archivi
+  * Autori
+  * Categorie
+  * Archivi
 
 * **Percorso componente blog**
 
   *(Facoltativo)* Posizione della risorsa blog da cui elencare gli articoli di blog. Se non specificato, viene utilizzato il componente di resourceType `social/journal/components/hbs/journal` visualizzato nella stessa pagina.
 
-   * Ad esempio `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
+  * Ad esempio `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
 
 * **Limite suggerimenti**
 

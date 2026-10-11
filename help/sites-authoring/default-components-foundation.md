@@ -5,20 +5,33 @@ exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '6873'
-ht-degree: 4%
-
+source-wordcount: '7475'
+ht-degree: 8%
 ---
-
 # Componenti di base {#foundation-components}
 
 >[!CAUTION]
 >
 >La maggior parte dei componenti di base è ora obsoleta con AEM 6.5. Per ulteriori informazioni, consulta le [note sulla versione](/help/release-notes/deprecated-removed-features.md).
 >
->Adobe consiglia di utilizzare i [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) più moderni ed estensibili nei progetti AEM. Questi componenti fanno parte del [contenuto di esempio We.Retail](/help/sites-developing/we-retail.md) e possono anche essere [installati separatamente e utilizzati per lo sviluppo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=it) dall&#39;amministratore.
+>Adobe consiglia di utilizzare i [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) più moderni ed estensibili nei progetti AEM. Questi componenti fanno parte del [contenuto di esempio We.Retail](/help/sites-developing/we-retail.md) e possono anche essere [installati separatamente e utilizzati per lo sviluppo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html) dall&#39;amministratore.
 >
 >Puoi utilizzare la [suite di strumenti di modernizzazione AEM](https://opensource.adobe.com/aem-modernize-tools/) per eseguire il refactoring del sito basato su Componenti di base in modo da utilizzare i Componenti core.
 
@@ -116,31 +129,31 @@ La finestra di dialogo consente di modificare le proprietà dell’istanza del c
 
 * **Immagine**
 
-   * **Immagine**
-Trascina un&#39;immagine dal Finder del contenuto o fai clic per aprire una finestra di navigazione in cui puoi caricare un&#39;immagine. Una volta caricata l&#39;immagine, è possibile ritagliarla, ruotarla o eliminarla. Per ingrandire e ridurre l&#39;immagine, utilizzare la barra di scorrimento sotto l&#39;immagine (sopra i pulsanti OK e Annulla)
+  * **Immagine**
+    Trascina un&#39;immagine dal Finder del contenuto o fai clic per aprire una finestra di navigazione in cui puoi caricare un&#39;immagine. Una volta caricata l&#39;immagine, è possibile ritagliarla, ruotarla o eliminarla. Per ingrandire e ridurre l&#39;immagine, utilizzare la barra di scorrimento sotto l&#39;immagine (sopra i pulsanti OK e Annulla)
 
-   * **Ritaglio**
-Ritaglia parte di un&#39;immagine. Trascinate il bordo per tagliare l&#39;immagine.
+  * **Ritaglio**
+    Ritaglia parte di un&#39;immagine. Trascinate il bordo per tagliare l&#39;immagine.
 
-   * **Ruota**
-Fare clic su Ruota ripetutamente fino a quando l&#39;immagine non viene ruotata come desiderato.
+  * **Rotazione**
+    Fare clic su Ruota ripetutamente fino a quando l&#39;immagine non viene ruotata come desiderato.
 
-   * **Cancella**
-Rimuove l&#39;immagine corrente.
+  * **Cancella**
+    Rimuove l&#39;immagine corrente.
 
 * **Avanzate**
 
-   * **Titolo**
-Il componente Immagine adattiva non utilizza questa proprietà.
+  * **Titolo**
+    Il componente Immagine adattiva non utilizza questa proprietà.
 
-   * **Testo alternativo**
-Testo alternativo da utilizzare per l&#39;immagine.
+  * **Testo alternativo**
+    Testo alternativo da utilizzare per l&#39;immagine.
 
-   * **Collegamento A**
-Il componente Immagine adattiva non utilizza questa proprietà.
+  * **Collega a**
+    Il componente Immagine adattiva non utilizza questa proprietà.
 
-   * **Descrizione**
-Il componente Immagine adattiva non utilizza questa proprietà.
+  * **Descrizione**
+    Il componente Immagine adattiva non utilizza questa proprietà.
 
 #### Estensione del componente Immagine adattiva {#extending-the-adaptive-image-component}
 
@@ -168,51 +181,51 @@ Queste proprietà sono disponibili in due schede:
 * **Carosello**
 Qui puoi specificare come funziona il carosello:
 
-   * Velocità di riproduzione
-Tempo in millisecondi prima della visualizzazione della diapositiva successiva.
-   * Tempo di transizione
-Tempo in millisecondi per la transizione tra due diapositive.
-   * Stile controlli
-Sono disponibili varie opzioni da un menu a discesa, ad esempio Pulsanti Prec/Successivo e Opzioni in alto a destra.
+  * Velocità di riproduzione
+    Tempo in millisecondi prima della visualizzazione della diapositiva successiva.
+  * Tempo di transizione
+    Tempo in millisecondi per la transizione tra due diapositive.
+  * Stile comandi
+    Sono disponibili varie opzioni da un menu a discesa, ad esempio Pulsanti Prec/Successivo e Opzioni in alto a destra.
 
 * **Elenco**
 
   Qui puoi specificare in che modo le pagine vengono incluse nel carosello:
 
-   * **Genera elenco con**
-Esistono diversi modi per creare un elenco di pagine: pagine figlie, elenco fisso, ricerca o ricerca avanzata (tutti descritti di seguito).
-Indipendentemente dal metodo scelto, le pagine incluse nell’elenco devono già avere un’immagine associata alla pagina. Questa immagine viene visualizzata nel carosello. Se non è presente alcuna immagine per una determinata pagina nelle Proprietà pagina di tale pagina, è necessario associare un’immagine alla pagina prima di iniziare. In caso contrario, nel carosello viene visualizzata una pagina vuota. Consulta [Modifica delle proprietà di pagina](/help/sites-authoring/editing-page-properties.md).
-A seconda dell’elemento scelto, viene visualizzato un nuovo pannello:
+  * **Genera elenco tramite**
+    Esistono diversi modi per creare un elenco di pagine: pagine figlie, elenco fisso, ricerca o ricerca avanzata (tutti descritti di seguito).
+    Indipendentemente dal metodo scelto, le pagine incluse nell’elenco devono già avere un’immagine associata alla pagina. Questa immagine viene visualizzata nel carosello. Se non è presente alcuna immagine per una determinata pagina nelle Proprietà pagina di tale pagina, è necessario associare un’immagine alla pagina prima di iniziare. In caso contrario, nel carosello viene visualizzata una pagina vuota. Consulta [Modifica delle proprietà di pagina](/help/sites-authoring/editing-page-properties.md).
+    A seconda dell’elemento scelto, viene visualizzato un nuovo pannello:
 
-      * **Opzioni per pagine figlie**
+    * **Opzioni per pagine figlie**
 
-         * **Pagina padre**
-Specifica un percorso manualmente o utilizzando il selettore. Lascia vuoto per usare la pagina corrente come pagina padre.
+      * **Pagina padre**
+        Specifica un percorso manualmente o utilizzando il selettore. Lascia vuoto per usare la pagina corrente come pagina padre.
 
-      * **Opzioni per elenco fisso**
+    * **Opzioni per elenco fisso**
 
-         * **Pagine**
-Seleziona un elenco di pagine. Utilizzare `+` per aggiungere altre voci e i pulsanti Su/Giù per regolare l&#39;ordine.
+      * **Pagine**
+        Seleziona un elenco di pagine. Utilizzare `+` per aggiungere altre voci e i pulsanti Su/Giù per regolare l&#39;ordine.
 
-      * **Opzioni per la ricerca**
+    * **Opzioni per la ricerca**
 
-         * **Inizia tra**
-Immetti un percorso iniziale, manualmente o utilizzando il selettore.
+      * **Inizia tra**
+        Immetti un percorso iniziale, manualmente o utilizzando il selettore.
 
-         * **Query di ricerca**
-È possibile immettere una query di ricerca in testo normale.
+      * **Query di ricerca**
+        È possibile immettere una query di ricerca in testo normale.
 
-      * **Opzioni per la ricerca avanzata**
+    * **Opzioni per la ricerca avanzata**
 
-         * **Notazione predicato Querybuilder**
-È possibile immettere una query di ricerca utilizzando la notazione del predicato Querybuilder. Ad esempio, puoi immettere &quot;fulltext=Marketing&quot; per far sì che tutte le pagine il cui contenuto contiene &quot;Marketing&quot; vengano visualizzate nel carosello.
-Consulta [API QueryBuilder](/help/sites-developing/querybuilder-api.md) per informazioni complete sulle espressioni di query e altri esempi.
+      * **Notazione predicato Querybuilder**
+        È possibile immettere una query di ricerca utilizzando la notazione del predicato Querybuilder. Ad esempio, puoi immettere &quot;fulltext=Marketing&quot; per far sì che tutte le pagine il cui contenuto contiene &quot;Marketing&quot; vengano visualizzate nel carosello.
+        Consulta [API QueryBuilder](/help/sites-developing/querybuilder-api.md) per informazioni complete sulle espressioni di query e altri esempi.
 
-   * **Ordina per**
-Selezionare `jcr:title`, `jcr:created`, `cq:lastModified` o `cq:template` dal menu a discesa.
+  * **Ordina per**
+    Selezionare `jcr:title`, `jcr:created`, `cq:lastModified` o `cq:template` dal menu a discesa.
 
-   * **Limite**
-Facoltativo. Il numero massimo di elementi da utilizzare nel carosello.
+  * Limite ****
+    Facoltativo. Il numero massimo di elementi da utilizzare nel carosello.
 
 >[!NOTE]
 >
@@ -228,22 +241,22 @@ Il componente Grafico consente di aggiungere un grafico a barre, a linee o a tor
 
 * **Dati**
 
-   * **Dati grafico**
-Immetti i dati del grafico utilizzando il formato CSV; il formato Valori separati da virgole utilizza le virgole (&quot;,&quot;) come separatore di campo.
+  * **Dati grafico**
+    Immetti i dati del grafico utilizzando il formato CSV; il formato Valori separati da virgole utilizza le virgole (&quot;,&quot;) come separatore di campo.
 
 * **Avanzate**
 
-   * **Tipo di grafico**
-Selezionare Grafico a torta, Grafico a linee e Grafico a barre.
+  * **Tipo di grafico**
+    Selezionare Grafico a torta, Grafico a linee e Grafico a barre.
 
-   * **Testo alternativo**
-Visualizza testo alternativo anziché il grafico.
+  * **Testo alternativo**
+    Visualizza testo alternativo anziché il grafico.
 
-   * **Larghezza**
-Larghezza del grafico in pixel.
+  * **Larghezza**
+    Larghezza del grafico in pixel.
 
-   * **Altezza**
-Altezza del grafico in pixel.
+  * **Altezza**
+    Altezza del grafico in pixel.
 
 Di seguito è riportato un esempio di dati del grafico seguito dal grafico a barre risultante:
 
@@ -265,7 +278,7 @@ I [frammenti di contenuto](/help/sites-authoring/content-fragments.md) vengono c
 
 >[!CAUTION]
 >
->Questo componente di base è obsoleto. Adobe consiglia di utilizzare invece [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it).
+>Questo componente di base è obsoleto. Adobe consiglia di utilizzare invece [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html).
 
 Questo componente consente di caricare un file zip contenente un pacchetto di progettazione.
 
@@ -273,17 +286,17 @@ Questo componente consente di caricare un file zip contenente un pacchetto di pr
 
 >[!CAUTION]
 >
->Questo componente di base è obsoleto. Adobe consiglia di utilizzare invece [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it).
+>Questo componente di base è obsoleto. Adobe consiglia di utilizzare invece [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html).
 
 Il componente Scarica crea un collegamento nella pagina web selezionata per scaricare un file specifico. Puoi trascinare una risorsa da Content Finder o caricare un file.
 
 * **Download**
 
-   * **Descrizione**
-Breve descrizione visualizzata con il collegamento per il download.
+  * **Descrizione**
+    Breve descrizione visualizzata con il collegamento per il download.
 
-   * **File**
-Il file è disponibile per il download nella pagina Web risultante. Trascina una risorsa dal Finder del contenuto o seleziona l’area in modo da poter caricare il file da scaricare.
+  * **File**
+    Il file è disponibile per il download nella pagina Web risultante. Trascina una risorsa dal Finder del contenuto o seleziona l’area in modo da poter caricare il file da scaricare.
 
 L’esempio seguente mostra il componente Scarica in Geometrixx:
 
@@ -293,24 +306,24 @@ L’esempio seguente mostra il componente Scarica in Geometrixx:
 
 >[!CAUTION]
 >
->Questo componente di base è obsoleto. Adobe consiglia di utilizzare invece [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it).
+>Questo componente di base è obsoleto. Adobe consiglia di utilizzare invece [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html).
 
 Il componente di integrazione dell&#39;applicazione esterna (**Esterno**) consente di incorporare applicazioni esterne nella pagina AEM utilizzando un iframe.
 
 * **Esterno**
 
-   * **Applicazione di destinazione**
-Specifica l’URL dell’applicazione web da integrare, ad esempio:
+  * **Applicazione di destinazione**
+    Specifica l’URL dell’applicazione web da integrare, ad esempio:
 
-     ```
-     https://en.wikipedia.org/wiki/Main_Page
-     ```
+    ```
+    https://en.wikipedia.org/wiki/Main_Page
+    ```
 
-   * **Parametri di passaggio**
-Seleziona la casella per i parametri da trasmettere all&#39;applicazione quando necessario.
+  * **Trasmetti parametri**
+    Seleziona la casella per i parametri da trasmettere all&#39;applicazione quando necessario.
 
-   * **Larghezza e altezza
-**Definire la dimensione dell’iframe
+  * **Larghezza e altezza
+    **Definire la dimensione dell’iframe
 
 L&#39;applicazione esterna è integrata nel sistema paragrafo della pagina AEM; ad esempio, quando si utilizza un&#39;applicazione Target di `https://en.wikipedia.org/wiki/Main_Page`:
 
@@ -324,7 +337,7 @@ L&#39;applicazione esterna è integrata nel sistema paragrafo della pagina AEM; 
 
 >[!CAUTION]
 >
->Questo componente di base è obsoleto. Adobe consiglia di utilizzare invece [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it).
+>Questo componente di base è obsoleto. Adobe consiglia di utilizzare invece [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html).
 
 >[!CAUTION]
 >
@@ -334,13 +347,13 @@ Il componente Flash consente di caricare un filmato Flash. Puoi trascinare una r
 
 * **Flash**
 
-   * **Filmato Flash**
+  * **Filmato Flash**
 
-     Il file del filmato flash. Trascina una risorsa da Content Finder oppure fai clic su per aprire una finestra.
+    Il file del filmato flash. Trascina una risorsa da Content Finder oppure fai clic su per aprire una finestra.
 
-   * **Dimensione**
+  * **Dimensione**
 
-     Dimensioni in pixel dell&#39;area di visualizzazione contenente il filmato.
+    Dimensioni in pixel dell&#39;area di visualizzazione contenente il filmato.
 
 * **Immagine alternativa**
 
@@ -348,25 +361,25 @@ Il componente Flash consente di caricare un filmato Flash. Puoi trascinare una r
 
 * **Avanzate**
 
-   * **Menu di scelta rapida**
+  * **Menu di scelta rapida**
 
-     Indica se visualizzare o nascondere il menu di scelta rapida.
+    Indica se visualizzare o nascondere il menu di scelta rapida.
 
-   * **Modalità finestra**
+  * **Modalità finestra**
 
-     Modalità di visualizzazione della finestra, ad esempio opaca, trasparente o come finestra distinta (solida).
+    Modalità di visualizzazione della finestra, ad esempio opaca, trasparente o come finestra distinta (solida).
 
-   * **Colore di sfondo**
+  * **Colore di sfondo**
 
-     Colore di sfondo selezionato dalla tabella colori fornita.
+    Colore di sfondo selezionato dalla tabella colori fornita.
 
-   * **Versione minima**
+  * **Versione minima**
 
-     La versione minima di Adobe Flash Player necessaria per eseguire il filmato. Il valore predefinito è 9.0.0.
+    La versione minima di Adobe Flash Player necessaria per eseguire il filmato. Il valore predefinito è 9.0.0.
 
-   * **Attributi**
+  * **Attributi**
 
-     Eventuali altri attributi richiesti.
+    Eventuali altri attributi richiesti.
 
 ### Immagine {#image}
 
@@ -464,71 +477,71 @@ Questo componente fornisce un sistema paragrafo griglia che consente di aggiunge
 
 >[!CAUTION]
 >
->Questo componente di base è obsoleto. Adobe consiglia di utilizzare il [componente core Elenco](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=it).
+>Questo componente di base è obsoleto. Adobe consiglia di utilizzare il [componente core Elenco](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html).
 
 Il componente Elenco consente di configurare i criteri di ricerca per la visualizzazione di un elenco:
 
 * **Elenco**
 
-   * **Genera elenco con**
+  * **Genera elenco con**
 
-     Qui si specifica dove l’elenco recupera il contenuto. Esistono diversi metodi:
+    Qui si specifica dove l’elenco recupera il contenuto. Esistono diversi metodi:
 
-   * A seconda dell’elemento scelto, viene visualizzato un nuovo pannello:
+  * A seconda dell’elemento scelto, viene visualizzato un nuovo pannello:
 
-      * **Opzioni per pagine figlie**
+    * **Opzioni per pagine figlie**
 
-         * **Elementi figlio di** (pagina padre)
+      * **Elementi figlio di** (pagina padre)
 
-           Specifica un percorso manualmente o utilizzando il selettore. Lascia vuoto per usare la pagina corrente come pagina padre.
+        Specifica un percorso manualmente o utilizzando il selettore. Lascia vuoto per usare la pagina corrente come pagina padre.
 
-      * **Opzioni per elenco fisso**
+    * **Opzioni per elenco fisso**
 
-         * **Pagine**
+      * **Pagine**
 
-           Seleziona un elenco di pagine. Utilizza + per aggiungere altre voci e i pulsanti Su/Giù per regolare l’ordine.
+        Seleziona un elenco di pagine. Utilizza + per aggiungere altre voci e i pulsanti Su/Giù per regolare l’ordine.
 
-      * **Opzioni per la ricerca**
+    * **Opzioni per la ricerca**
 
-         * Inizia in
+      * Inizia in
 
-           Immetti un percorso iniziale, manualmente o utilizzando il selettore.
+        Immetti un percorso iniziale, manualmente o utilizzando il selettore.
 
-         * Query di ricerca
+      * Query di ricerca
 
-           È possibile immettere una query di ricerca in testo normale.
+        È possibile immettere una query di ricerca in testo normale.
 
-      * **Opzioni per la ricerca avanzata**
+    * **Opzioni per la ricerca avanzata**
 
-         * **Notazione predicato Querybuilder**
+      * **Notazione predicato Querybuilder**
 
-           È possibile immettere una query di ricerca utilizzando la notazione del predicato Querybuilder. Ad esempio, puoi immettere &quot;fulltext=Marketing&quot; per far sì che tutte le pagine il cui contenuto contiene &quot;Marketing&quot; vengano visualizzate nel carosello.
+        È possibile immettere una query di ricerca utilizzando la notazione del predicato Querybuilder. Ad esempio, puoi immettere &quot;fulltext=Marketing&quot; per far sì che tutte le pagine il cui contenuto contiene &quot;Marketing&quot; vengano visualizzate nel carosello.
 
-           Consulta [API QueryBuilder](/help/sites-developing/querybuilder-api.md) per informazioni complete sulle espressioni di query e altri esempi.
+        Consulta [API QueryBuilder](/help/sites-developing/querybuilder-api.md) per informazioni complete sulle espressioni di query e altri esempi.
 
-      * **Tag**
+    * **Tag**
 
-        Specifica la **pagina padre**, **tag/parole chiave** e i criteri di corrispondenza richiesti.
+      Specifica la **pagina padre**, **tag/parole chiave** e i criteri di corrispondenza richiesti.
 
-   * **Visualizza come**
+  * **Visualizza come**
 
-     Come desideri che gli elementi vengano elencati; include collegamenti, teaser e notizie.
+    Come desideri che gli elementi vengano elencati; include collegamenti, teaser e notizie.
 
-   * **Ordina per**
+  * **Ordina per**
 
-     Indica se l’elenco deve essere ordinato e, in tal caso, i criteri da utilizzare per l’ordinamento. Puoi inserire un criterio o selezionarne uno dall’elenco a discesa fornito.
+    Indica se l’elenco deve essere ordinato e, in tal caso, i criteri da utilizzare per l’ordinamento. Puoi inserire un criterio o selezionarne uno dall’elenco a discesa fornito.
 
-   * **Limite**
+  * **Limite**
 
-     Specifica il numero massimo di elementi da visualizzare nell’elenco.
+    Specifica il numero massimo di elementi da visualizzare nell’elenco.
 
-   * **Abilita feed**
+  * **Abilita feed**
 
-     Indica se per l&#39;elenco deve essere attivato un feed RSS.
+    Indica se per l&#39;elenco deve essere attivato un feed RSS.
 
-   * **Pagina dopo**
+  * **Pagina dopo**
 
-     Qui puoi specificare il numero di voci di elenco da visualizzare contemporaneamente. Un elenco con un numero di elementi superiore a quello specificato utilizza la paginazione per visualizzare l’elenco in diverse parti.
+    Qui puoi specificare il numero di voci di elenco da visualizzare contemporaneamente. Un elenco con un numero di elementi superiore a quello specificato utilizza la paginazione per visualizzare l’elenco in diverse parti.
 
 L&#39;esempio seguente mostra un componente **List** nel modo in cui può visualizzare un elenco di pagine figlie (la progettazione è controllata dalle definizioni CSS personalizzate di una progettazione del sito).
 
@@ -552,31 +565,31 @@ Puoi configurare:
 
 * Accesso
 
-   * Etichetta sezione
+  * Etichetta sezione
 
-     Testo lead-in per i campi di input.
+    Testo lead-in per i campi di input.
 
-   * Etichetta nome utente
+  * Etichetta nome utente
 
-     Testo per etichettare il campo del nome utente.
+    Testo per etichettare il campo del nome utente.
 
-   * Etichetta password
+  * Etichetta password
 
-     Testo per etichettare il campo password.
+    Testo per etichettare il campo password.
 
-   * Etichetta pulsante Accesso
+  * Etichetta pulsante Accesso
 
-     Testo per il pulsante di accesso.
+    Testo per il pulsante di accesso.
 
-   * Reindirizza a
+  * Reindirizza a
 
-     Puoi specificare la pagina del tuo sito web che deve essere aperta una volta che l’utente ha effettuato l’accesso.
+    Puoi specificare la pagina del tuo sito web che deve essere aperta una volta che l’utente ha effettuato l’accesso.
 
 * Accesso già effettuato
 
-   * Etichetta pulsante Continua
+  * Etichetta pulsante Continua
 
-     Testo per indicare che l&#39;utente ha già eseguito l&#39;accesso.
+    Testo per indicare che l&#39;utente ha già eseguito l&#39;accesso.
 
 ### Stato ordine {#order-status}
 
@@ -586,17 +599,17 @@ Puoi configurare:
 
 * **Titolo**
 
-   * **Titolo**
+  * **Titolo**
 
-     Specificare il testo del titolo da visualizzare.
+    Specificare il testo del titolo da visualizzare.
 
-   * **Collegamento**
+  * **Collegamento**
 
-     Specifica la pagina (prodotto) per la quale visualizzare lo stato dell’ordine.
+    Specifica la pagina (prodotto) per la quale visualizzare lo stato dell’ordine.
 
-   * **Tipo/Dimensione**
+  * **Tipo/Dimensione**
 
-     Seleziona dalla selezione fornita.
+    Seleziona dalla selezione fornita.
 
 ![chlimage_1-95](assets/chlimage_1-95.png)
 
@@ -610,9 +623,9 @@ Il componente **Riferimento** consente di fare riferimento al testo da un&#39;al
 
 * **Riferimento paragrafo**
 
-   * **Riferimento**
+  * **Riferimento**
 
-     Specifica il percorso della pagina e del paragrafo a cui desideri fare riferimento (includi contenuto).
+    Specifica il percorso della pagina e del paragrafo a cui desideri fare riferimento (includi contenuto).
 
 Per specificare il percorso di un paragrafo, è necessario aggiungere al percorso (della pagina) il suffisso:
 
@@ -638,7 +651,7 @@ Dopo la configurazione, il contenuto viene visualizzato esattamente come nella p
 
 >[!CAUTION]
 >
->Questo componente di base è obsoleto. Adobe consiglia di utilizzare il [componente core Ricerca rapida](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/quick-search.html?lang=it).
+>Questo componente di base è obsoleto. Adobe consiglia di utilizzare il [componente core Ricerca rapida](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/quick-search.html).
 
 Il componente Ricerca aggiunge la funzionalità di ricerca alla pagina.
 
@@ -646,54 +659,54 @@ Puoi configurare:
 
 * Ricerca
 
-   * **Tipi di nodo**
+  * **Tipi di nodo**
 
-     Se la ricerca deve essere limitata a un tipo di nodo specifico, elencarli qui; ad esempio, `cq:Page`.
+    Se la ricerca deve essere limitata a un tipo di nodo specifico, elencarli qui; ad esempio, `cq:Page`.
 
-   * **Percorso di ricerca in**
+  * **Percorso di ricerca in**
 
-     Specifica la pagina principale del ramo in cui desideri eseguire la ricerca.
+    Specifica la pagina principale del ramo in cui desideri eseguire la ricerca.
 
-   * **Testo pulsante di ricerca**
+  * **Testo pulsante di ricerca**
 
-     Il nome visualizzato sul pulsante di ricerca effettivo.
+    Il nome visualizzato sul pulsante di ricerca effettivo.
 
-   * **Testo statistiche**
+  * **Testo statistiche**
 
-     Testo visualizzato sopra i risultati della ricerca.
+    Testo visualizzato sopra i risultati della ricerca.
 
-   * **Nessun testo risultati**
+  * **Nessun testo risultati**
 
-     Se non sono presenti risultati, viene visualizzato il testo immesso.
+    Se non sono presenti risultati, viene visualizzato il testo immesso.
 
-   * **Testo controllo ortografia**
+  * **Testo controllo ortografia**
 
-     Se qualcuno immette un termine simile, questo testo viene visualizzato prima del termine.
-Se ad esempio si digita `Geometrixxe`, verrà visualizzato il messaggio &quot;Si intende? Geometrixx&quot;.
+    Se qualcuno immette un termine simile, questo testo viene visualizzato prima del termine.
+    Se ad esempio si digita `Geometrixxe`, verrà visualizzato il messaggio &quot;Si intende? Geometrixx&quot;.
 
-   * **Testo pagine simili**
+  * **Testo pagine simili**
 
-     Testo visualizzato accanto a un risultato per pagine simili. Per visualizzare pagine con contenuto simile, fare clic su questo collegamento.
+    Testo visualizzato accanto a un risultato per pagine simili. Per visualizzare pagine con contenuto simile, fare clic su questo collegamento.
 
-   * **Testo ricerche correlate**
+  * **Testo ricerche correlate**
 
-     Testo visualizzato accanto alla ricerca di termini e argomenti correlati.
+    Testo visualizzato accanto alla ricerca di termini e argomenti correlati.
 
-   * **Testo tendenze ricerca**
+  * **Testo tendenze ricerca**
 
-     Il titolo sopra i termini di ricerca immessi da un utente.
+    Il titolo sopra i termini di ricerca immessi da un utente.
 
-   * **Etichetta pagine risultati**
+  * **Etichetta pagine risultati**
 
-     Testo visualizzato in fondo all&#39;elenco con collegamenti ad altre pagine dei risultati.
+    Testo visualizzato in fondo all&#39;elenco con collegamenti ad altre pagine dei risultati.
 
-   * **Etichetta precedente**
+  * **Etichetta precedente**
 
-     Il nome visualizzato sul collegamento alle pagine di ricerca precedenti.
+    Il nome visualizzato sul collegamento alle pagine di ricerca precedenti.
 
-   * **Etichetta successiva**
+  * **Etichetta successiva**
 
-     Nome visualizzato sul collegamento alle pagine di ricerca successive.
+    Nome visualizzato sul collegamento alle pagine di ricerca successive.
 
 Nell&#39;esempio seguente viene illustrato il componente Search dopo la ricerca della parola *`geometrixx`* dalla directory radice di un&#39;installazione standard. Illustra inoltre l’impaginazione dei risultati:
 
@@ -707,7 +720,7 @@ L’esempio seguente mostra un termine di ricerca errato e non disponibile:
 
 >[!CAUTION]
 >
->Questo componente di base è obsoleto. Adobe consiglia invece di utilizzare [Navigazione](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html?lang=it), [Navigazione lingua](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/language-navigation.html?lang=it) e [Componenti core Breadcrumb](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/breadcrumb.html?lang=it).
+>Questo componente di base è obsoleto. Adobe consiglia invece di utilizzare [Navigazione](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html), [Navigazione lingua](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/language-navigation.html) e [Componenti core Breadcrumb](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/breadcrumb.html).
 
 Un elenco automatico di sitemap, che (con le impostazioni predefinite) elenca tutte le pagine (come collegamenti attivi) nel sito web corrente. Ad esempio, un estratto mostra:
 
@@ -717,9 +730,9 @@ Se necessario, puoi configurare quanto segue:
 
 * **Mappa del sito**
 
-   * **Percorso principale**
+  * **Percorso principale**
 
-     Percorso da cui deve iniziare l’inserzione.
+    Percorso da cui deve iniziare l’inserzione.
 
 ### Presentazione {#slideshow}
 
@@ -737,19 +750,19 @@ Puoi configurare:
 
 * **Diapositive**
 
-   * **Nuova diapositiva**
+  * **Nuova diapositiva**
 
-     È possibile specificare una selezione di diapositive utilizzando i pulsanti **Aggiungi** (e **Rimuovi**).
+    È possibile specificare una selezione di diapositive utilizzando i pulsanti **Aggiungi** (e **Rimuovi**).
 
-   * **Titolo**
+  * **Titolo**
 
-     Se necessario, specifica un titolo. Il titolo viene sovrapposto sulla diapositiva appropriata.
+    Se necessario, specifica un titolo. Il titolo viene sovrapposto sulla diapositiva appropriata.
 
 * **Avanzate**
 
-   * **Dimensione**
+  * **Dimensione**
 
-     Specifica la larghezza e l&#39;altezza in pixel.
+    Specifica la larghezza e l&#39;altezza in pixel.
 
 Il componente Presentazione visualizza ripetutamente ogni diapositiva in sequenza, per un breve periodo di tempo, prima di passare alla diapositiva successiva:
 
@@ -763,7 +776,7 @@ Il componente Presentazione visualizza ripetutamente ogni diapositiva in sequenz
 
 >[!NOTE]
 >
->Il componente di base **Table** è basato sull&#39;editor Rich Text [3&rbrace;, così come il componente di base &#x200B;](/help/sites-authoring/rich-text-editor.md)Text **[.](#text)**
+>Il componente di base **Table** è basato sull&#39;editor Rich Text [3}, così come il componente di base **[Text](#text)**.](/help/sites-authoring/rich-text-editor.md)
 
 Il componente **Tabella** è preconfigurato per consentire la creazione, il riempimento e la formattazione di una tabella. La finestra di dialogo consente di configurare la tabella e crearne il contenuto in uno dei modi seguenti:
 
@@ -812,7 +825,7 @@ Per ulteriori informazioni sull&#39;applicazione dei tag, visitare [Utilizzo dei
 
 >[!NOTE]
 >
->Il componente di base **Testo** è basato sull&#39;editor Rich Text [3&rbrace;, così come il componente di base &#x200B;](/help/sites-authoring/rich-text-editor.md)Tabella **.**
+>Il componente di base **Testo** è basato sull&#39;editor Rich Text [3}, così come il componente di base **Tabella**.](/help/sites-authoring/rich-text-editor.md)
 
 Il componente Testo consente di immettere un blocco di testo utilizzando un editor di WYSIWYG, con le funzionalità fornite dall&#39;[editor Rich Text](/help/sites-authoring/rich-text-editor.md). Una selezione di icone consente di formattare il testo, incluse le caratteristiche dei caratteri, l&#39;allineamento, i collegamenti, gli elenchi e i rientri.
 
@@ -853,29 +866,29 @@ Puoi configurare:
 
   Consente di specificare quanto segue:
 
-   * **Risorsa immagine**
+  * **Risorsa immagine**
 
-     Carica l’immagine richiesta.
+    Carica l’immagine richiesta.
 
-   * **Titolo**
+  * **Titolo**
 
-     Titolo del blocco, visualizzato a comparsa.
+    Titolo del blocco, visualizzato a comparsa.
 
-   * **Testo alternativo**
+  * **Testo alternativo**
 
-     Testo alternativo da visualizzare se l’immagine non può essere visualizzata. Se lasciato vuoto, viene utilizzato il titolo.
+    Testo alternativo da visualizzare se l’immagine non può essere visualizzata. Se lasciato vuoto, viene utilizzato il titolo.
 
-   * **Collegamento a**
+  * **Collegamento a**
 
-     Specifica un percorso di destinazione.
+    Specifica un percorso di destinazione.
 
-   * **Descrizione**
+  * **Descrizione**
 
-     Descrizione dell&#39;immagine.
+    Descrizione dell&#39;immagine.
 
-   * **Dimensione**
+  * **Dimensione**
 
-     Imposta l&#39;altezza e la larghezza dell&#39;immagine.
+    Imposta l&#39;altezza e la larghezza dell&#39;immagine.
 
 L’esempio seguente mostra un componente Immagine di testo che mostra l’immagine allineata a sinistra:
 
@@ -885,7 +898,7 @@ L’esempio seguente mostra un componente Immagine di testo che mostra l’immag
 
 >[!CAUTION]
 >
->Questo componente di base è obsoleto. Adobe consiglia di utilizzare il [componente core Titolo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=it).
+>Questo componente di base è obsoleto. Adobe consiglia di utilizzare il [componente core Titolo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html).
 
 Il componente Titolo può effettuare le seguenti operazioni:
 
@@ -914,7 +927,7 @@ L&#39;esempio seguente mostra un componente **Title** visualizzato; la progettaz
 
 >[!CAUTION]
 >
->Questo componente di base è obsoleto. Adobe consiglia di utilizzare invece il [Componente core Incorpora](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html?lang=it).
+>Questo componente di base è obsoleto. Adobe consiglia di utilizzare invece il [Componente core Incorpora](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html).
 
 >[!CAUTION]
 >
@@ -928,13 +941,13 @@ Dopo aver inserito un’istanza del componente nella pagina, puoi configurare qu
 
 * Video
 
-   * **Risorsa video**
+  * **Risorsa video**
 
-     Carica o rilascia la risorsa video.
+    Carica o rilascia la risorsa video.
 
-   * **Dimensione**
+  * **Dimensione**
 
-     Le dimensioni native del video (larghezza x altezza in pixel) vengono visualizzate nelle caselle accanto a Dimensioni (vedi sopra). Immetti manualmente le dimensioni di larghezza e altezza qui se desideri ignorare le dimensioni native del video. Selezionando **OK** la finestra di dialogo viene chiusa.
+    Le dimensioni native del video (larghezza x altezza in pixel) vengono visualizzate nelle caselle accanto a Dimensioni (vedi sopra). Immetti manualmente le dimensioni di larghezza e altezza qui se desideri ignorare le dimensioni native del video. Selezionando **OK** la finestra di dialogo viene chiusa.
 
 >[!NOTE]
 >
@@ -966,9 +979,9 @@ Il componente Controllo colonna consente agli utenti di selezionare la modalità
 
 * **Controllo colonna**
 
-   * **Layout colonna**
+  * **Layout colonna**
 
-     Selezionare il numero di colonne di cui si desidera eseguire il rendering. Una volta creata, ogni colonna ha il proprio collegamento per trascinare componenti o risorse quando si aggiunge contenuto.
+    Selezionare il numero di colonne di cui si desidera eseguire il rendering. Una volta creata, ogni colonna ha il proprio collegamento per trascinare componenti o risorse quando si aggiunge contenuto.
 
 ## Modulo {#form}
 
@@ -1034,67 +1047,67 @@ Queste schede forniscono i parametri necessari. Le schede possono dipendere dal 
 
 * **Titolo e testo**
 
-   * **Nome elemento**
+  * **Nome elemento**
 
-     Nome dell’elemento modulo. Indica dove vengono memorizzati i dati nell’archivio.
-Questo campo è obbligatorio e deve contenere solo i seguenti caratteri:
+    Nome dell’elemento modulo. Indica dove vengono memorizzati i dati nell’archivio.
+    Questo campo è obbligatorio e deve contenere solo i seguenti caratteri:
 
-      * caratteri alfanumerici
-      * `_ . / : -`
+    * caratteri alfanumerici
+    * `_ . / : -`
 
-   * **Titolo**
+  * **Titolo**
 
-     Titolo visualizzato con il campo. Se questo campo viene lasciato vuoto, viene visualizzato il titolo predefinito.
+    Titolo visualizzato con il campo. Se questo campo viene lasciato vuoto, viene visualizzato il titolo predefinito.
 
-   * **Descrizione**
+  * **Descrizione**
 
-     Consente di fornire ulteriori informazioni all’utente, se necessario. Nel modulo viene visualizzato sotto il campo, con un carattere più piccolo del titolo.
+    Consente di fornire ulteriori informazioni all’utente, se necessario. Nel modulo viene visualizzato sotto il campo, con un carattere più piccolo del titolo.
 
-   * **Mostra/Nascondi**
+  * **Mostra/Nascondi**
 
-     Determina quando il campo è visibile.
+    Determina quando il campo è visibile.
 
 * **Valori iniziali**
 
-   * **Valore predefinito**
+  * **Valore predefinito**
 
-     Valore visualizzato nel campo all&#39;apertura del modulo. In altre parole, prima che l’utente abbia fornito qualsiasi input.
+    Valore visualizzato nel campo all&#39;apertura del modulo. In altre parole, prima che l’utente abbia fornito qualsiasi input.
 
 * **Vincoli**
 
-   * **Obbligatorio**
+  * **Obbligatorio**
 
-     I vincoli dipendono dal tipo di componente del modulo, ma fornisce una o più caselle di clic per indicare che questo campo è obbligatorio o che alcune parti di esso sono obbligatorie.
+    I vincoli dipendono dal tipo di componente del modulo, ma fornisce una o più caselle di clic per indicare che questo campo è obbligatorio o che alcune parti di esso sono obbligatorie.
 
-   * **Messaggio richiesto**
+  * **Messaggio richiesto**
 
-     Un messaggio per informare gli utenti che questo campo è obbligatorio. Anche un campo obbligatorio è contrassegnato da un asterisco.
+    Un messaggio per informare gli utenti che questo campo è obbligatorio. Anche un campo obbligatorio è contrassegnato da un asterisco.
 
-   * **Vincolo**
+  * **Vincolo**
 
-     I vincoli disponibili per la selezione dipendono dal tipo di componente modulo.
+    I vincoli disponibili per la selezione dipendono dal tipo di componente modulo.
 
-   * **Messaggio vincolo**
+  * **Messaggio vincolo**
 
-     Un messaggio per informare gli utenti di ciò che è necessario.
+    Un messaggio per informare gli utenti di ciò che è necessario.
 
 * **Definizione dello stile**
 
-   * **Dimensione**
+  * **Dimensione**
 
-     In righe e colonne.
+    In righe e colonne.
 
-   * **Larghezza**
+  * **Larghezza**
 
-     In pixel.
+    In pixel.
 
-   * **CSS**
+  * **CSS**
 
 ### Modulo (componente) {#form-component}
 
 >[!CAUTION]
 >
->Questo componente di base è obsoleto. Adobe consiglia di utilizzare il [componente core Contenitore modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html?lang=it).
+>Questo componente di base è obsoleto. Adobe consiglia di utilizzare il [componente core Contenitore modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html).
 
 Il componente Modulo definisce sia l&#39;inizio che la fine di un modulo utilizzando gli elementi **Inizio modulo** e **Fine modulo**. L’inizio e la fine vengono sempre associati per garantire che il modulo sia definito correttamente.
 
@@ -1112,181 +1125,181 @@ Questo componente definisce l’inizio di un nuovo modulo su una pagina. Puoi co
 
 * **Modulo**
 
-   * **Pagina di ringraziamento**
+  * **Pagina di ringraziamento**
 
-     La pagina a cui fare riferimento per ringraziare i visitatori che hanno fornito il loro contributo. Se non specificato, il modulo viene visualizzato nuovamente dopo l&#39;invio.
+    La pagina a cui fare riferimento per ringraziare i visitatori che hanno fornito il loro contributo. Se non specificato, il modulo viene visualizzato nuovamente dopo l&#39;invio.
 
-   * **Avvia flusso di lavoro**
+  * **Avvia flusso di lavoro**
 
-     Determina quale flusso di lavoro viene attivato dopo l&#39;invio di un modulo.
+    Determina quale flusso di lavoro viene attivato dopo l&#39;invio di un modulo.
 
 * **Avanzate**
 
-   * **Tipo azione**
+  * **Tipo azione**
 
-     Un modulo richiede un&#39;azione. L’azione definisce l’operazione attivata per l’esecuzione con i dati inviati dall’utente (in modo simile a action= in HTML). Alcune richiedono una **Configurazione azione** corrispondente.
-In un’installazione standard di AEM è inclusa una selezione di tipi di azione:
+    Un modulo richiede un&#39;azione. L’azione definisce l’operazione attivata per l’esecuzione con i dati inviati dall’utente (in modo simile a action= in HTML). Alcune richiedono una **Configurazione azione** corrispondente.
+    In un’installazione standard di AEM è inclusa una selezione di tipi di azione:
 
-      * **Richiesta account**
-      * **Crea contenuto**
-      * **Crea lead**
-      * **Crea e aggiorna account**
-      * **Servizio di posta elettronica: crea sottoscrittore e aggiungi all&#39;elenco**
-      * **Servizio di posta elettronica: invia messaggio di risposta automatica**
-      * **Servizio di posta elettronica: annullamento sottoscrizione utente da elenco**
-      * **Modifica community**
-      * **Modifica risorse**
-      * **Modifica risorse controllate dal flusso di lavoro**
-      * **Posta**
-      * **Dettagli ordine inoltrato**
-      * **Aggiornamento profilo**
-      * **Reimposta password**
-      * **Imposta password**
-      * **Contenuto store**
+    * **Richiesta account**
+    * **Crea contenuto**
+    * **Crea lead**
+    * **Crea e aggiorna account**
+    * **Servizio di posta elettronica: crea sottoscrittore e aggiungi all&#39;elenco**
+    * **Servizio di posta elettronica: invia messaggio di risposta automatica**
+    * **Servizio di posta elettronica: annullamento sottoscrizione utente da elenco**
+    * **Modifica community**
+    * **Modifica risorse**
+    * **Modifica risorse controllate dal flusso di lavoro**
+    * **Posta**
+    * **Dettagli ordine inoltrato**
+    * **Aggiornamento profilo**
+    * **Reimposta password**
+    * **Imposta password**
+    * **Contenuto store**
 
-        Tipo di azione predefinito.
+      Tipo di azione predefinito.
 
-      * **Archivia contenuto con caricamenti**
-      * **Invia ordine**
-      * **Annulla sottoscrizione**
-      * **Aggiorna ordine**
+    * **Archivia contenuto con caricamenti**
+    * **Invia ordine**
+    * **Annulla sottoscrizione**
+    * **Aggiorna ordine**
 
-   * **Identificatore modulo**
+  * **Identificatore modulo**
 
-     L’identificatore del modulo identifica il modulo in modo univoco. Utilizza l’identificatore del modulo se in una singola pagina sono presenti più moduli; assicurati che abbiano identificatori diversi.
+    L’identificatore del modulo identifica il modulo in modo univoco. Utilizza l’identificatore del modulo se in una singola pagina sono presenti più moduli; assicurati che abbiano identificatori diversi.
 
-   * **Percorso di caricamento**
+  * **Percorso di caricamento**
 
-     Percorso delle proprietà del nodo utilizzato per caricare valori predefiniti nei campi modulo.
+    Percorso delle proprietà del nodo utilizzato per caricare valori predefiniti nei campi modulo.
 
-     Campo facoltativo che specifica il percorso di un nodo nell&#39;archivio. Se le proprietà di questo nodo corrispondono ai nomi dei campi, i campi appropriati del modulo vengono precaricati con il valore di tali proprietà. Se non esiste alcuna corrispondenza, il campo contiene il valore predefinito.
+    Campo facoltativo che specifica il percorso di un nodo nell&#39;archivio. Se le proprietà di questo nodo corrispondono ai nomi dei campi, i campi appropriati del modulo vengono precaricati con il valore di tali proprietà. Se non esiste alcuna corrispondenza, il campo contiene il valore predefinito.
 
-     Utilizzando **Percorso di caricamento** è possibile precaricare il modulo con i valori presenti nei campi obbligatori. Vedere [Precaricamento valori modulo](/help/sites-developing/developing-forms.md#preloading-form-values).
+    Utilizzando **Percorso di caricamento** è possibile precaricare il modulo con i valori presenti nei campi obbligatori. Vedere [Precaricamento valori modulo](/help/sites-developing/developing-forms.md#preloading-form-values).
 
-   * **Convalida client**
+  * **Convalida client**
 
-     Indica se per questo modulo è necessaria la convalida del client (si verifica la convalida del server *always*). È possibile eseguire la convalida del client con il componente **Forms Captcha**.
+    Indica se per questo modulo è necessaria la convalida del client (si verifica la convalida del server *always*). È possibile eseguire la convalida del client con il componente **Forms Captcha**.
 
-   * **Tipo risorsa convalida**
+  * **Tipo risorsa convalida**
 
-     Definisce il tipo di risorsa di convalida del modulo se si desidera convalidare l&#39;intero modulo (anziché i singoli campi). Se si convalida il modulo completo, includere anche uno dei seguenti elementi:
+    Definisce il tipo di risorsa di convalida del modulo se si desidera convalidare l&#39;intero modulo (anziché i singoli campi). Se si convalida il modulo completo, includere anche uno dei seguenti elementi:
 
-      * Uno script per la convalida del client:
+    * Uno script per la convalida del client:
 
-        `/apps/<*myApp*>/form/<*myValidation*>/formclientvalidation.jsp`
+      `/apps/<*myApp*>/form/<*myValidation*>/formclientvalidation.jsp`
 
-      * Uno script per la convalida sul lato server:
+    * Uno script per la convalida sul lato server:
 
-        `/apps/<*myApp*>/form/<*myValidation*>/formservervalidation.jsp`
+      `/apps/<*myApp*>/form/<*myValidation*>/formservervalidation.jsp`
 
-   * **Configurazione azione**
+  * **Configurazione azione**
 
-     Le opzioni disponibili in **Configurazione azione** dipendono dal **Tipo azione** selezionato:
+    Le opzioni disponibili in **Configurazione azione** dipendono dal **Tipo azione** selezionato:
 
-      * **Richiesta account**
+    * **Richiesta account**
 
-         * **Crea pagina account**
+      * **Crea pagina account**
 
-           Pagina utilizzata per la creazione di un account.
+        Pagina utilizzata per la creazione di un account.
 
-      * **Crea contenuto**
+    * **Crea contenuto**
 
-         * Percorso contenuto
+      * Percorso contenuto
 
-           Percorso del contenuto per qualsiasi contenuto sottoposto a dump dal modulo. Immettere un percorso che termina con una barra `/`. La barra indica che per ogni porta del modulo viene creato un nuovo nodo nella posizione specificata, ad esempio:
+        Percorso del contenuto per qualsiasi contenuto sottoposto a dump dal modulo. Immettere un percorso che termina con una barra `/`. La barra indica che per ogni porta del modulo viene creato un nuovo nodo nella posizione specificata, ad esempio:
 
-           `/forms/feedback/`
+        `/forms/feedback/`
 
-         * **Tipo**
+      * **Tipo**
 
-           Seleziona il tipo richiesto.
+        Seleziona il tipo richiesto.
 
-         * **Modulo**
+      * **Modulo**
 
-           Specifica il modulo.
+        Specifica il modulo.
 
-         * **Rendering con**
+      * **Rendering con**
 
-           Seleziona l’opzione desiderata dall’elenco.
+        Seleziona l’opzione desiderata dall’elenco.
 
-         * **Tipo risorsa**
+      * **Tipo risorsa**
 
-           Se impostato, viene aggiunto a ogni commento come `sling:resourceType`
+        Se impostato, viene aggiunto a ogni commento come `sling:resourceType`
 
-         * **Selettore visualizzazione**
+      * **Selettore visualizzazione**
 
-      * **Crea lead**
+    * **Crea lead**
 
-         * **Lead aggiunto a questo elenco**
+      * **Lead aggiunto a questo elenco**
 
-           Specifica l’elenco di lead richiesto.
+        Specifica l’elenco di lead richiesto.
 
-      * **Crea e aggiorna account**
+    * **Crea e aggiorna account**
 
-         * **Gruppo iniziale**
+      * **Gruppo iniziale**
 
-           Gruppo a cui assegnare il nuovo utente.
+        Gruppo a cui assegnare il nuovo utente.
 
-         * **Home**
+      * **Home**
 
-           Pagina da visualizzare dopo l’accesso riuscito.
+        Pagina da visualizzare dopo l’accesso riuscito.
 
-         * **Percorso**
+      * **Percorso**
 
-           Percorso (relativo) in cui viene creato e memorizzato il nuovo account.
+        Percorso (relativo) in cui viene creato e memorizzato il nuovo account.
 
-         * **Visualizza dati...**
+      * **Visualizza dati...**
 
-           Selezionando questo pulsante si accede alle informazioni sui risultati del modulo nell’Editor collettivo. Da qui è possibile esportare le informazioni in un file `.tsv` (separato da tabulazioni) (per l&#39;utilizzo, ad esempio, in un foglio di calcolo Excel).
+        Selezionando questo pulsante si accede alle informazioni sui risultati del modulo nell’Editor collettivo. Da qui è possibile esportare le informazioni in un file `.tsv` (separato da tabulazioni) (per l&#39;utilizzo, ad esempio, in un foglio di calcolo Excel).
 
-      * **Posta**
+    * **Posta**
 
-         * **Da**
+      * **Da**
 
-           Immetti l’indirizzo e-mail da cui deve provenire l’e-mail.
+        Immetti l’indirizzo e-mail da cui deve provenire l’e-mail.
 
-         * **Invia a**
+      * **Invia a**
 
-           Immetti uno o più indirizzi e-mail a cui viene inviato il modulo.
+        Immetti uno o più indirizzi e-mail a cui viene inviato il modulo.
 
-         * **CC**
+      * **CC**
 
-           Immetti uno o più indirizzi e-mail CC.
+        Immetti uno o più indirizzi e-mail CC.
 
-         * **CCN**
+      * **CCN**
 
-           Immettere uno o più indirizzi e-mail Ccn.
+        Immettere uno o più indirizzi e-mail Ccn.
 
-         * **Oggetto**
+      * **Oggetto**
 
-           Immetti un oggetto per l’e-mail.
+        Immetti un oggetto per l’e-mail.
 
-      * **Reimposta password**
+    * **Reimposta password**
 
-         * **Pagina modifica password**
+      * **Pagina modifica password**
 
-           Pagina utilizzata per modificare la password.
+        Pagina utilizzata per modificare la password.
 
-      * **Contenuto store**
+    * **Contenuto store**
 
-         * **Percorso contenuto**
+      * **Percorso contenuto**
 
-           Percorso del contenuto per qualsiasi contenuto sottoposto a dump dal modulo. Immettere un percorso che termina con una barra `/`. La barra indica che per ogni porta del modulo viene creato un nuovo nodo nella posizione specificata, ad esempio:
-           `/forms/feedback/`
+        Percorso del contenuto per qualsiasi contenuto sottoposto a dump dal modulo. Immettere un percorso che termina con una barra `/`. La barra indica che per ogni porta del modulo viene creato un nuovo nodo nella posizione specificata, ad esempio:
+        `/forms/feedback/`
 
-         * **Visualizza dati...**
+      * **Visualizza dati...**
 
-           Fare clic su questo pulsante per accedere alle informazioni sui risultati del modulo nell&#39;Editor collettivo. Da qui è possibile esportare le informazioni in un file .tsv (separato da tabulazioni), ad esempio in un foglio di calcolo Excel.
+        Fare clic su questo pulsante per accedere alle informazioni sui risultati del modulo nell&#39;Editor collettivo. Da qui è possibile esportare le informazioni in un file .tsv (separato da tabulazioni), ad esempio in un foglio di calcolo Excel.
 
-      * **Archivia Contenuto Con Caricamenti**
+    * **Archivia Contenuto Con Caricamenti**
 
-        Ha le stesse opzioni di **Contenuto store**.
+      Ha le stesse opzioni di **Contenuto store**.
 
-      * **Annulla sottoscrizione**
+    * **Annulla sottoscrizione**
 
-         * **Lead eliminato da questo elenco**
+      * **Lead eliminato da questo elenco**
 
-           Specifica l’elenco di lead richiesto.
+        Specifica l’elenco di lead richiesto.
 
 #### Fine del modulo {#end-of-form}
 
@@ -1294,35 +1307,35 @@ Contrassegna la fine del modulo. Puoi configurare quanto segue:
 
 * **Fine modulo**
 
-   * **Mostra pulsante di invio**
+  * **Mostra pulsante di invio**
 
-     Indica se deve essere visualizzato o meno un pulsante Invia.
+    Indica se deve essere visualizzato o meno un pulsante Invia.
 
-   * **Invia nome**
+  * **Invia nome**
 
-     Un identificatore se in un modulo si utilizzano più pulsanti di invio.
+    Un identificatore se in un modulo si utilizzano più pulsanti di invio.
 
-   * **Invia titolo**
+  * **Invia titolo**
 
-     Nome visualizzato sul pulsante, ad esempio Invia o Invia.
+    Nome visualizzato sul pulsante, ad esempio Invia o Invia.
 
-   * **Mostra pulsante Ripristina**
+  * **Mostra pulsante Ripristina**
 
-     Selezionando la casella di controllo, il pulsante Reimposta diventa visibile.
+    Selezionando la casella di controllo, il pulsante Reimposta diventa visibile.
 
-   * **Reimposta titolo**
+  * **Reimposta titolo**
 
-     Il nome visualizzato sul pulsante Reimposta.
+    Il nome visualizzato sul pulsante Reimposta.
 
-   * **Descrizione**
+  * **Descrizione**
 
-     Informazioni visualizzate sotto il pulsante.
+    Informazioni visualizzate sotto il pulsante.
 
 ### Nome account {#account-name}
 
 >[!CAUTION]
 >
->Questo componente di base è obsoleto. Adobe consiglia di utilizzare il [componente core Testo modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-text.html?lang=it).
+>Questo componente di base è obsoleto. Adobe consiglia di utilizzare il [componente core Testo modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-text.html).
 
 Consente all&#39;utente di immettere un nome account:
 
@@ -1332,7 +1345,7 @@ Consente all&#39;utente di immettere un nome account:
 
 >[!CAUTION]
 >
->Questo componente di base è obsoleto. Adobe consiglia di utilizzare il [componente core Testo modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-text.html?lang=it).
+>Questo componente di base è obsoleto. Adobe consiglia di utilizzare il [componente core Testo modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-text.html).
 
 Consente di aggiungere un campo indirizzo internazionale con il seguente formato:
 
@@ -1360,7 +1373,7 @@ Puoi configurare vari parametri per questo componente, tra cui un messaggio da v
 
 >[!CAUTION]
 >
->Questo componente di base è obsoleto. Adobe consiglia di utilizzare invece il [componente core Opzioni modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-options.html?lang=it).
+>Questo componente di base è obsoleto. Adobe consiglia di utilizzare invece il [componente core Opzioni modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-options.html).
 
 Una casella di controllo consente di creare un elenco di una o più caselle di controllo, alcune delle quali possono essere selezionate contemporaneamente.
 
@@ -1388,7 +1401,7 @@ Consente di specificare i campi necessari per l&#39;immissione dei dettagli dell
 
 >[!CAUTION]
 >
->Questo componente di base è obsoleto. Adobe consiglia di utilizzare invece il [componente core Opzioni modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-options.html?lang=it).
+>Questo componente di base è obsoleto. Adobe consiglia di utilizzare invece il [componente core Opzioni modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-options.html).
 
 È possibile configurare un elenco a discesa per fornire all’utente un intervallo di valori da selezionare:
 
@@ -1414,13 +1427,13 @@ Il componente Caricamento file offre all’utente un meccanismo per selezionare 
 
 >[!NOTE]
 >
->Puoi creare un componente di caricamento personalizzato per caricare i file in un servlet Sling. Per informazioni, vedere [Caricamento di file in Adobe Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-cloud-service-create-asset-servlet-for-uploading-small-files/td-p/404276?profile.language=it).
+>Puoi creare un componente di caricamento personalizzato per caricare i file in un servlet Sling. Per informazioni, vedere [Caricamento di file in Adobe Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-cloud-service-create-asset-servlet-for-uploading-small-files/td-p/404276).
 
 ### Campo nascosto {#hidden-field}
 
 >[!CAUTION]
 >
->Questo componente di base è obsoleto. Adobe consiglia di utilizzare il [componente core Campo nascosto modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-hidden.html?lang=it).
+>Questo componente di base è obsoleto. Adobe consiglia di utilizzare il [componente core Campo nascosto modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-hidden.html).
 
 Consente di creare un campo nascosto. Questi campi nascosti possono essere utilizzati per vari scopi. Ad esempio, quando è necessario eseguire un&#39;azione dopo l&#39;invio del modulo o quando sono necessari dati nascosti nella fase di post-elaborazione.
 
@@ -1436,7 +1449,7 @@ Consente di creare un campo nascosto. Questi campi nascosti possono essere utili
 
 >[!CAUTION]
 >
->Questo componente di base è obsoleto. Adobe consiglia di utilizzare il [componente core Pulsante modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-button.html?lang=it).
+>Questo componente di base è obsoleto. Adobe consiglia di utilizzare il [componente core Pulsante modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-button.html).
 
 Un pulsante immagine consente di creare un pulsante con un&#39;immagine e un testo personalizzati:
 
@@ -1446,7 +1459,7 @@ Un pulsante immagine consente di creare un pulsante con un&#39;immagine e un tes
 
 >[!CAUTION]
 >
->Questo componente di base è obsoleto. Adobe consiglia di utilizzare invece [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it).
+>Questo componente di base è obsoleto. Adobe consiglia di utilizzare invece [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html).
 
 Il componente Caricamento immagine fornisce all’utente un meccanismo per selezionare e caricare un file di immagine.
 
@@ -1456,7 +1469,7 @@ Il componente Caricamento immagine fornisce all’utente un meccanismo per selez
 
 >[!CAUTION]
 >
->Questo componente di base è obsoleto. Adobe consiglia di utilizzare invece [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it).
+>Questo componente di base è obsoleto. Adobe consiglia di utilizzare invece [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html).
 
 Il campo del collegamento consente all’utente di specificare un URL:
 
@@ -1468,7 +1481,7 @@ Più comunemente utilizzato per il modulo evento calendario, in cui viene utiliz
 
 >[!CAUTION]
 >
->Questo componente di base è obsoleto. Adobe consiglia di utilizzare invece [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it).
+>Questo componente di base è obsoleto. Adobe consiglia di utilizzare invece [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html).
 
 Consente all&#39;utente di inserire la propria password:
 
@@ -1478,7 +1491,7 @@ Consente all&#39;utente di inserire la propria password:
 
 >[!CAUTION]
 >
->Questo componente di base è obsoleto. Adobe consiglia di utilizzare invece [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it).
+>Questo componente di base è obsoleto. Adobe consiglia di utilizzare invece [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html).
 
 Questo componente fornisce all’utente due campi per:
 
@@ -1493,7 +1506,7 @@ Con le impostazioni predefinite, il componente viene visualizzato come segue:
 
 >[!CAUTION]
 >
->Questo componente di base è obsoleto. Adobe consiglia di utilizzare invece il [componente core Opzioni modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-options.html?lang=it).
+>Questo componente di base è obsoleto. Adobe consiglia di utilizzare invece il [componente core Opzioni modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-options.html).
 
 Un gruppo di pulsanti di scelta fornisce un elenco di una o più caselle di controllo radio, di cui è possibile selezionare solo una alla volta.
 
@@ -1511,7 +1524,7 @@ Puoi specificare il nome dell’elemento con un titolo e una descrizione. Utiliz
 
 >[!CAUTION]
 >
->Questo componente di base è obsoleto. Adobe consiglia di utilizzare il [componente core Pulsante modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-button.html?lang=it).
+>Questo componente di base è obsoleto. Adobe consiglia di utilizzare il [componente core Pulsante modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-button.html).
 
 Questo componente consente di creare un pulsante di invio con il testo predefinito:
 
@@ -1535,24 +1548,24 @@ Puoi specificare vari parametri, tra cui gli spazi dei nomi, utilizzando la sche
 
 * **Campo tag**
 
-   * **Spazi dei nomi consentiti**
+  * **Spazi dei nomi consentiti**
 
-      * **Geometrixx Outdoors**
-      * **Flusso di lavoro**
-      * **Forum**
-      * **Foto d&#39;archivio**
-      * **Geometrixx Medie**
-      * **Tag standard**
-      * **Marketing**
-      * **Proprietà risorsa**
-      * **Larghezza in pixel**
-      * **Dimensione popup**
+    * **Geometrixx Outdoors**
+    * **Flusso di lavoro**
+    * **Forum**
+    * **Foto d&#39;archivio**
+    * **Geometrixx Medie**
+    * **Tag standard**
+    * **Marketing**
+    * **Proprietà risorsa**
+    * **Larghezza in pixel**
+    * **Dimensione popup**
 
 ### Campo testo {#text-field}
 
 >[!CAUTION]
 >
->Questo componente di base è obsoleto. Adobe consiglia di utilizzare il [componente core Testo modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-text.html?lang=it).
+>Questo componente di base è obsoleto. Adobe consiglia di utilizzare il [componente core Testo modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-text.html).
 
 Il campo di testo standard può essere configurato secondo le dimensioni richieste e con il tuo lead nel messaggio:
 
@@ -1562,7 +1575,7 @@ Il campo di testo standard può essere configurato secondo le dimensioni richies
 
 >[!CAUTION]
 >
->Questo componente di base è obsoleto. Adobe consiglia di utilizzare il [componente core Pulsante modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-button.html?lang=it).
+>Questo componente di base è obsoleto. Adobe consiglia di utilizzare il [componente core Pulsante modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-button.html).
 
 Consente di creare un pulsante Invia da utilizzare in un flusso di lavoro.
 

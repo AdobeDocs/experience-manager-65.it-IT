@@ -10,13 +10,24 @@ exl-id: 0e13112b-d9df-4ba6-bd73-431c87890b79
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 2%
-
+source-wordcount: '1204'
+ht-degree: 1%
 ---
-
 # Utilizzo di Marketing Campaign Manager{#working-with-the-marketing-campaign-manager}
 
 In AEM, Marketing Campaign Manager (MCM) è una console che consente di gestire le campagne multicanale. Con questo software di automazione marketing puoi gestire tutti i tuoi marchi, campagne ed esperienze insieme ai relativi segmenti, elenchi, lead e rapporti.
@@ -36,20 +47,20 @@ Da MCM è possibile accedere a:
 * **[Dashboard](#dashboard)**
 È diviso in quattro riquadri:
 
-   * [Elenchi](#lists)
-In questo riquadro vengono visualizzati gli elenchi già creati e il numero di lead presenti nell&#39;elenco. Da questo riquadro è possibile creare un elenco direttamente o importare lead per creare un elenco.
-Se selezioni un elenco specifico, accedi alla sezione [Elenchi](#lists) contenente i dettagli dell&#39;elenco.
+  * [Elenchi](#lists)
+    In questo riquadro vengono visualizzati gli elenchi già creati e il numero di lead presenti nell&#39;elenco. Da questo riquadro è possibile creare un elenco direttamente o importare lead per creare un elenco.
+    Se selezioni un elenco specifico, accedi alla sezione [Elenchi](#lists) contenente i dettagli dell&#39;elenco.
 
-   * [Segmenti](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#anoverviewofsegmentation)
-In questo riquadro sono visualizzati i segmenti definiti. I segmenti ti consentono di caratterizzare una raccolta di visitatori che condividono determinate caratteristiche.
-Selezionando un segmento specifico si apre la pagina di definizione del segmento.
+  * [Segmenti](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#anoverviewofsegmentation)
+    In questo riquadro sono visualizzati i segmenti definiti. I segmenti ti consentono di caratterizzare una raccolta di visitatori che condividono determinate caratteristiche.
+    Selezionando un segmento specifico si apre la pagina di definizione del segmento.
 
-   * [Rapporti](/help/sites-administering/reporting.md)
-AEM fornisce diversi rapporti per aiutarti ad analizzare e monitorare lo stato della tua istanza. In questo riquadro MCM sono elencati i report.
-Selezionando un rapporto si apre la relativa pagina.
+  * [Rapporti](/help/sites-administering/reporting.md)
+    AEM fornisce diversi rapporti per aiutarti ad analizzare e monitorare lo stato della tua istanza. In questo riquadro MCM sono elencati i report.
+    Selezionando un rapporto si apre la relativa pagina.
 
-   * [Campagne](#campaigns)
-In questo riquadro sono elencate le esperienze della campagna, ad esempio [newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) e [teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers).
+  * [Campagne](#campaigns)
+    In questo riquadro sono elencate le esperienze della campagna, ad esempio [newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) e [teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers).
 
 * **[Lead](#leads)**
 Qui puoi gestire i lead. Puoi creare o importare lead, modificare dettagli specifici per singoli lead o eliminarli quando non sono più necessari. È inoltre possibile inserire lead in gruppi diversi, denominati Elenchi. **Nota:** Adobe non prevede di migliorare ulteriormente questa funzionalità.
@@ -133,8 +144,8 @@ Da qui è possibile:
 
 * Seleziona una campagna (nel riquadro a destra) per:
 
-   * Modifica le **proprietà...**
-   * **Elimina** la campagna.
+  * Modifica le **proprietà...**
+  * **Elimina** la campagna.
 
 * Apri la panoramica della campagna (fai doppio clic su una campagna nel riquadro di destra o fai clic singolo nel riquadro di sinistra).
 
@@ -176,7 +187,7 @@ Per le singole campagne sono disponibili due visualizzazioni:
    * **Modifica** i dettagli di una pagina teaser o di una newsletter specifica (è inoltre possibile utilizzare un doppio clic).
    * Definisci le **proprietà...** per una pagina teaser o una newsletter specifica.
    * **Simula** l&#39;aspetto di un&#39;esperienza (pagina teaser o newsletter).
-Quando la pagina simulata è aperta, è possibile aprire la barra laterale per passare alla modalità di modifica per quella pagina.
+     Quando la pagina simulata è aperta, è possibile aprire la barra laterale per passare alla modalità di modifica per quella pagina.
 
    * **Analizzare...** le impression generate per una pagina.
 

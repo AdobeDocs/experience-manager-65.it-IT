@@ -10,13 +10,20 @@ role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2417'
-ht-degree: 1%
-
+source-wordcount: '2489'
+ht-degree: 2%
 ---
-
 # Sincronizzazione utenti community {#communities-user-synchronization}
 
 ## Introduzione {#introduction}
@@ -102,7 +109,7 @@ La sincronizzazione degli utenti si basa sull’ambiente di authoring per gestir
 
 Per abilitare la sincronizzazione degli utenti in AEM Communities sono necessarie le seguenti configurazioni. Assicurati che queste configurazioni siano corrette per evitare errori di distribuzione del contenuto Sling.
 
-### Agente di distribuzione Apache Sling - Factory agenti di sincronizzazione {#apache-sling-distribution-agent-sync-agents-factory}
+### Agente di distribuzione Apache Sling - Sync Agents Factory {#apache-sling-distribution-agent-sync-agents-factory}
 
 Questa configurazione recupera il contenuto da sincronizzare tra gli editori. La configurazione si trova nell’istanza di authoring. L’autore deve tenere traccia di tutti gli editori che sono presenti e dove sincronizzare tutte le informazioni.
 
@@ -130,7 +137,7 @@ Per configurare la configurazione degli agenti di sincronizzazione Apache Sling:
 
    ![sync-agent-fact](assets/sync-agent-fact.png)
 
-### Distribuzione Adobe Granite - Provider segreto di trasporto con password crittografata {#adobe-granite-distribution-encrypted-password-transport-secret-provider}
+### Distribuzione Adobe Granite - Provider di segreti di trasporto per password crittografata {#adobe-granite-distribution-encrypted-password-transport-secret-provider}
 
 Consente all’autore di identificare l’utente autorizzato come autorizzato a sincronizzare i dati utente dall’autore alla pubblicazione.
 

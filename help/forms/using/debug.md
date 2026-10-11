@@ -1,5 +1,5 @@
 ---
-title: Debug dei moduli di HTML5
+title: Debug di moduli HTML5
 description: Nell’elenco dei documenti vengono descritti i passaggi per la risoluzione di vari problemi noti.
 contentOwner: robhagat
 content-type: reference
@@ -10,16 +10,31 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 7330c03f-7102-43c0-aac6-825cce8a113d
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '811'
-ht-degree: 0%
-
+source-wordcount: '844'
+ht-degree: 1%
 ---
+# Debug di moduli HTML5 {#debugging-html-forms}
 
-# Debug dei moduli di HTML5 {#debugging-html-forms}
-
-Questo documento include diversi scenari di risoluzione dei problemi. Per ogni scenario, vengono forniti alcuni passaggi per risolvere il problema. Segui questi passaggi e, se il problema persiste, configura il Logger per ottenere e rivedere i registri per gli errori/avvisi. Per ulteriori dettagli sulla registrazione dei moduli HTML5, vedere [Generazione dei registri per i moduli HTML5](/help/forms/using/enable-logs.md).
+Questo documento include diversi scenari di risoluzione dei problemi. Per ogni scenario, vengono forniti alcuni passaggi per risolvere il problema. Segui questi passaggi e, se il problema persiste, configura il Logger per ottenere e rivedere i registri per gli errori/avvisi. Per ulteriori dettagli sulla registrazione dei moduli di HTML5, vedere [Generazione dei registri per i moduli HTML5](/help/forms/using/enable-logs.md).
 
 ## Problema: durante il rendering del modulo, viene visualizzata la pagina dell’eccezione org.apache.sling.api.SlingException {#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page}
 
@@ -45,7 +60,7 @@ Verifica i seguenti parametri:
   </tr>
   <tr>
    <td>dataRef</td>
-   <td>Percorso assoluto del file di dati unito al modello.<br /> Nota: il percorso assoluto del file di dati.</td>
+   <td>Percorso assoluto del file di dati unito al modello.<br /> Nota: il percorso definisce il percorso assoluto del file di dati.</td>
   </tr>
   <tr>
    <td>dati</td>
@@ -74,7 +89,7 @@ Verifica i seguenti parametri:
 
    (com.adobe.livecycle.adobe-lc-forms-core)
 
-   * Connettore LC Forms XFA Adobe
+   * Connettore LC Forms XFA di Adobe
 
    (com.adobe.livecycle.adobe-lc-forms-lc-connector)
 
@@ -107,7 +122,7 @@ Verifica i seguenti parametri:
 
 1. Nell’URL del modulo, aggiungi un parametro di query debugClientLibs e impostane il valore su true (ad esempio: https://&lt;server>:&lt;porta>/content/xfaforms/profiles/test.html?contentRoot=&lt;percorso>&amp;template=&lt;nome del file xdp>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true)
 1. Nel browser desktop come chrome, passa a Strumenti di sviluppo > Console.
-1. Apri i registri per identificare il tipo di errore. Per informazioni dettagliate sui registri, consulta [registri per moduli HTML5](/help/forms/using/enable-logs.md).
+1. Apri i registri per identificare il tipo di errore. Per informazioni dettagliate sui registri, vedere [registri per HTML5 forms](/help/forms/using/enable-logs.md).
 1. Vai a Strumenti di sviluppo > Console. Utilizza la traccia dello stack per individuare il codice che causa l’errore. Debug dell’errore per risolvere il problema.
 
    >[!NOTE]
@@ -116,10 +131,10 @@ Verifica i seguenti parametri:
 
 ## Problema: impossibile inviare il modulo {#problem-unable-to-submit-the-form}
 
-1. Verificare di disporre dei diritti di accesso al server AEM e di essere connessi al server.
+1. Assicurati di disporre dei diritti di accesso al server AEM e di essere connesso al server.
 1. Verifica che il parametro submitUrl sia corretto.
 1. Abilita i registri lato client come indicato in [Registri per i moduli HTML5](/help/forms/using/enable-logs.md) utilizzando l&#39;opzione di debug **1-a5-b5-c5**. Quindi esegui il rendering del modulo e fai clic su invia. Apri la console di debug del browser e verifica la presenza di un errore.
-1. Individua i registri del server come indicato in [Registri per i moduli HTML5](/help/forms/using/enable-logs.md). Controlla se si è verificato un errore nei registri del server durante l’invio.
+1. Individuare i registri del server come indicato in [Registri per i moduli HTML5](/help/forms/using/enable-logs.md). Controlla se si è verificato un errore nei registri del server durante l’invio.
 
 ## Problema: i messaggi di errore localizzati non vengono visualizzati {#problem-localized-error-messages-do-not-display}
 
@@ -154,7 +169,7 @@ Verifica i seguenti parametri:
    Il motivo probabile è che uno o più parametri nell’URL non sono corretti.
 
    Verifica i seguenti parametri:
-Testo del passaggio
+   Testo del passaggio
 
 <table>
  <tbody>
@@ -172,7 +187,7 @@ Testo del passaggio
   </tr>
   <tr>
    <td>dataRef</td>
-   <td>Percorso assoluto del file di dati unito al modello.<br /> Nota: il percorso assoluto del file di dati.</td>
+   <td>Percorso assoluto del file di dati unito al modello.<br /> Nota: il percorso definisce il percorso assoluto del file di dati.</td>
   </tr>
   <tr>
    <td>dati</td>

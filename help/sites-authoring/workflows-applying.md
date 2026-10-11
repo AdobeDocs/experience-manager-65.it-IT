@@ -10,13 +10,28 @@ exl-id: e00da2b3-046a-4d93-aed0-07dd8c66899f
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: f6a6f91a-8819-530a-8e7b-c50884a25aef
+    internal-label: Workflow
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '647'
-ht-degree: 82%
-
+source-wordcount: '649'
+ht-degree: 83%
 ---
-
 # Applicazione dei flussi di lavoro alle pagine{#applying-workflows-to-pages}
 
 Durante l’authoring, è possibile ricorrere ai flussi di lavoro per intraprendere azioni sulle pagine; è inoltre possibile applicare più di un flusso di lavoro.
@@ -95,14 +110,14 @@ Puoi specificare i dettagli:
    * **Modello flusso di lavoro**
    * **Titolo flusso di lavoro**
 
-      * Puoi specificare un titolo per questa istanza per facilitarne l’identificazione in una fase successiva.
+     * Puoi specificare un titolo per questa istanza per facilitarne l’identificazione in una fase successiva.
 
    A seconda del modello di flusso di lavoro, sono disponibili anche le seguenti opzioni. Queste consentono di mantenere il pacchetto creato come payload al termine del flusso di lavoro.
 
    * **Mantieni pacchetto flusso di lavoro**
    * **Titolo pacchetto**
 
-      * Puoi specificare un titolo per il pacchetto per facilitare l’identificazione.
+     * Puoi specificare un titolo per il pacchetto per facilitare l’identificazione.
 
    >[!NOTE]
    >
@@ -118,16 +133,16 @@ Puoi specificare i dettagli:
 
    * Una risorsa esistente per visualizzare le seguenti azioni:
 
-      * **Includi elementi secondari** per specificare gli elementi secondari di tale risorsa che verranno inclusi nel flusso di lavoro.
-Viene visualizzata una finestra di dialogo che consente di perfezionare la selezione in base a:
+     * **Includi elementi secondari** per specificare gli elementi secondari di tale risorsa che verranno inclusi nel flusso di lavoro.
+       Viene visualizzata una finestra di dialogo che consente di perfezionare la selezione in base a:
 
-         * Solo gli elementi secondari di primo livello.
-         * Solo pagine modificate.
-         * Solo pagine già pubblicate.
+       * Solo gli elementi secondari di primo livello.
+       * Solo pagine modificate.
+       * Solo pagine già pubblicate.
 
-        Eventuali elementi secondari specificati vengono aggiunti all’elenco delle risorse a cui verrà applicato il flusso di lavoro.
+       Eventuali elementi secondari specificati vengono aggiunti all’elenco delle risorse a cui verrà applicato il flusso di lavoro.
 
-      * **Rimuovi selezione** per rimuovere tale risorsa dal flusso di lavoro.
+     * **Rimuovi selezione** per rimuovere tale risorsa dal flusso di lavoro.
 
    ![wf-53](assets/wf-53.png)
 

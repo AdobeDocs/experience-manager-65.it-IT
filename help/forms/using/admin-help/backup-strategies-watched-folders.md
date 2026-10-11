@@ -9,13 +9,27 @@ exl-id: 0d36160a-29fa-4cc4-a0ff-fc681d3e040e
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
-workflow-type: ht
-source-wordcount: '1080'
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '1082'
 ht-degree: 100%
-
 ---
-
 # Strategie di backup per le cartelle controllate {#backup-strategies-for-watched-folders}
 
 In questo contenuto viene descritto il modo in cui le cartelle controllate vengono influenzate da diversi scenari di backup e ripristino, le limitazioni e i risultati di tali scenari e come ridurre al minimo la perdita di dati.
@@ -159,11 +173,11 @@ Le seguenti strategie possono ridurre al minimo la perdita di dati di cartelle d
 * Se il backup della cartella controllata disponibile è precedente al tempo necessario per elaborare il processo, è necessario consentire al sistema di creare una cartella controllata e inserire automaticamente i file nella cartella di input.
 * Se l’ultimo backup disponibile non è abbastanza recente, il tempo di backup è inferiore al tempo necessario per elaborare i file e la cartella controllata viene ripristinata, il file è stato manipolato in una delle seguenti fasi diverse:
 
-   * **Fase 1:** nella cartella di input
-   * **Fase 2:** copiato nella cartella di fase, ma il processo non è ancora stato richiamato
-   * **Fase 3:** copiato nella cartella di fase e il processo è stato richiamato
-   * **Fase 4:** manipolazione in corso
-   * **Fase 5:** risultati restituiti
+  * **Fase 1:** nella cartella di input
+  * **Fase 2:** copiato nella cartella di fase, ma il processo non è ancora stato richiamato
+  * **Fase 3:** copiato nella cartella di fase e il processo è stato richiamato
+  * **Fase 4:** manipolazione in corso
+  * **Fase 5:** risultati restituiti
 
   Se i file sono nella Fase 1, verranno manipolati. Se i file sono nella Fase 2 o 3, inseriscili nella cartella di input in modo che la manipolazione possa aver luogo nuovamente.
 

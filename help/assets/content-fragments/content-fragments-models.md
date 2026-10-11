@@ -5,13 +5,25 @@ feature: Content Fragments
 role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 73ec9a0420206ef2cc60a12d316073a443c1d20d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2326'
-ht-degree: 66%
-
+source-wordcount: '2348'
+ht-degree: 63%
 ---
-
 # Modelli per frammenti di contenuto {#content-fragment-models}
 
 I modelli per frammenti di contenuto in AEM definiscono la struttura del contenuto per i [frammenti di contenuto](/help/assets/content-fragments/content-fragments.md) che fungono da base per i contenuti headless.
@@ -76,14 +88,14 @@ Il modello per frammenti di contenuto definisce efficacemente la struttura dei f
 
    * Una volta aggiunto un campo al modello, il pannello di destra mostra le **Proprietà** che possono essere definite per quel particolare tipo di dati. Qui puoi definire ciò che è necessario per quel campo.
 
-      * Molte proprietà sono auto-esplicative, per ulteriori dettagli vedi [Proprietà](#properties).
-      * La digitazione di un **Etichetta campo** completa automaticamente il **Nome proprietà** - se vuoto, e può essere aggiornato manualmente in seguito.
+     * Molte proprietà sono auto-esplicative, per ulteriori dettagli vedi [Proprietà](#properties).
+     * La digitazione di un **Etichetta campo** completa automaticamente il **Nome proprietà** - se vuoto, e può essere aggiornato manualmente in seguito.
 
-        >[!CAUTION]
-        >
-        >Quando si aggiorna manualmente la proprietà **Nome proprietà** per un tipo di dati, i nomi devono contenere solo caratteri A-Z, a-z, 0-9 e il carattere speciale di sottolineatura &quot;_&quot;.
-        >
-        >Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
+       >[!CAUTION]
+       >
+       >Quando si aggiorna manualmente la proprietà **Nome proprietà** per un tipo di dati, i nomi devono contenere solo caratteri A-Z, a-z, 0-9 e il carattere speciale di sottolineatura &quot;_&quot;.
+       >
+       >Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
 
      Esempio:
 
@@ -106,40 +118,40 @@ Il modello per frammenti di contenuto definisce efficacemente la struttura dei f
 Per definire il modello è disponibile una selezione di tipi di dati:
 
 * **Testo su riga singola**
-   * Aggiungi uno o più campi di una singola riga di testo; la lunghezza massima può essere definita
+  * Aggiungi uno o più campi di una singola riga di testo; la lunghezza massima può essere definita
 * **Testo su più righe**
-   * Area di testo che può essere RTF, Testo normale o Markdown
+  * Area di testo che può essere RTF, Testo normale o Markdown
 * **Numero**
-   * Aggiungi uno o più campi numerici
+  * Aggiungi uno o più campi numerici
 * **Booleano**
-   * Aggiungi una casella di controllo booleana
+  * Aggiungi una casella di controllo booleana
 * **Data e ora**
-   * Aggiungi una data e/o un’ora
+  * Aggiungi una data e/o un’ora
 * **Enumerazione**
-   * Aggiungere un set di caselle di controllo, pulsanti di scelta o campi a discesa
+  * Aggiungere un set di caselle di controllo, pulsanti di scelta o campi a discesa
 * **Tag**
-   * Consente agli autori di frammenti di accedere alle aree dei tag e di selezionarle
+  * Consente agli autori di frammenti di accedere alle aree dei tag e di selezionarle
 * **Riferimento contenuto**
-   * I riferimenti ad altri contenuti di qualsiasi tipo possono essere utilizzati per [creare contenuto nidificato](#using-references-to-form-nested-content)
-   * Se si fa riferimento a un’immagine, è possibile scegliere di mostrare una miniatura
+  * I riferimenti ad altri contenuti di qualsiasi tipo possono essere utilizzati per [creare contenuto nidificato](#using-references-to-form-nested-content)
+  * Se si fa riferimento a un’immagine, è possibile scegliere di mostrare una miniatura
 * **Riferimento frammento**
-   * I riferimenti ad altri frammenti di contenuto possono essere utilizzati per [creare contenuto nidificato](#using-references-to-form-nested-content)
-   * Il tipo di dati può essere configurato in modo da consentire agli autori di frammenti di:
-      * Modificare direttamente il frammento a cui si fa riferimento.
-      * Creare un nuovo frammento di contenuto basato sul modello appropriato
+  * I riferimenti ad altri frammenti di contenuto possono essere utilizzati per [creare contenuto nidificato](#using-references-to-form-nested-content)
+  * Il tipo di dati può essere configurato in modo da consentire agli autori di frammenti di:
+    * Modificare direttamente il frammento a cui si fa riferimento.
+    * Creare un nuovo frammento di contenuto basato sul modello appropriato
 * **Oggetto JSON**
-   * Consente all’autore del frammento di contenuto di immettere la sintassi JSON negli elementi corrispondenti di un frammento.
-      * Per consentire ad AEM di memorizzare direttamente JSON copiato e incollato da un altro servizio.
-      * Il codice JSON viene trasmesso e riprodotto come codice JSON in GraphQL.
-      * Include le funzioni di evidenziazione della sintassi JSON, completamento automatico ed evidenziazione degli errori nell’editor dei frammenti di contenuto.
+  * Consente all’autore del frammento di contenuto di immettere la sintassi JSON negli elementi corrispondenti di un frammento.
+    * Per consentire ad AEM di memorizzare direttamente JSON copiato e incollato da un altro servizio.
+    * Il codice JSON viene trasmesso e riprodotto come codice JSON in GraphQL.
+    * Include le funzioni di evidenziazione della sintassi JSON, completamento automatico ed evidenziazione degli errori nell’editor dei frammenti di contenuto.
 * **Segnaposto scheda**
-   * Consente l’introduzione di schede da utilizzare per la modifica del contenuto dei frammenti di contenuto.
-Nell’editor modelli viene mostrato come divisore che separa le sezioni dell’elenco dei tipi di dati di contenuto. Ogni sua istanza rappresenta l’inizio di una nuova scheda.
-Nell’editor di frammenti, ogni istanza viene visualizzata come una scheda.
+  * Consente l’introduzione di schede da utilizzare per la modifica del contenuto dei frammenti di contenuto.
+    Nell’editor modelli viene mostrato come divisore che separa le sezioni dell’elenco dei tipi di dati di contenuto. Ogni sua istanza rappresenta l’inizio di una nuova scheda.
+    Nell’editor di frammenti, ogni istanza viene visualizzata come una scheda.
 
-     >[!NOTE]
-     >
-     >Questo tipo di dati viene utilizzato esclusivamente per la formattazione e viene ignorato dallo schema GraphQL AEM.
+    >[!NOTE]
+    >
+    >Questo tipo di dati viene utilizzato esclusivamente per la formattazione e viene ignorato dallo schema GraphQL AEM.
 
 ## Proprietà {#properties}
 
@@ -154,20 +166,20 @@ Molte proprietà sono auto-esplicative, qui sotto ulteriori dettagli per alcune 
   >
   >Se i modelli creati in versioni precedenti di AEM contengono caratteri non validi, rimuovi o aggiorna tali caratteri.
 
-* **Rendering come** 
-Sono disponibili varie opzioni per realizzare o riprodurre il campo in un frammento. Spesso questo consente di definire se l’autore può vedere una singola istanza del campo o se può crearne più istanze.
+* **Rendering come**
+Le varie opzioni per la realizzazione/il rendering del campo in un frammento. Spesso questo consente di definire se l’autore può vedere una singola istanza del campo o se può crearne più istanze.
 
-* **Etichetta campo**
+* Etichetta campo ****
 L&#39;immissione di un&#39;etichetta **Campo** genera automaticamente un **Nome proprietà**, che può essere aggiornato manualmente, se necessario.
 
 * **Convalida**
-La convalida di base è disponibile tramite meccanismi quali la proprietà **Obbligatorio**. Alcuni tipi di dati dispongono di campi di convalida aggiuntivi. Vedi [Convalida](#validation) per ulteriori dettagli.
+La convalida di base è disponibile tramite meccanismi quali la proprietà **Required**. Alcuni tipi di dati dispongono di campi di convalida aggiuntivi. Vedi [Convalida](#validation) per ulteriori dettagli.
 
 * Per il tipo di dati **Testo su più righe** è possibile definire il **Tipo predefinito** come:
 
-   * **Formato RTF**
-   * **Markdown**
-   * **Testo normale**
+  * **Formato RTF**
+  * **Markdown**
+  * **Testo normale**
 
   Se non viene specificato diversamente, per questo campo viene utilizzato il valore predefinito **Rich Text**.
 
@@ -205,32 +217,32 @@ Il contenuto (per il campo specifico) deve essere univoco in tutti i frammenti d
 Diversi tipi di dati includono ora la possibilità di definire requisiti di convalida per l’immissione di contenuto nel frammento risultante:
 
 * **Testo su riga singola**
-   * Confronta con un regex predefinito.
+  * Confronta con un regex predefinito.
 * **Numero**
-   * Verifica la presenza di valori specifici.
+  * Verifica la presenza di valori specifici.
 * **Riferimento contenuto**
-   * Controlla tipi specifici di contenuto.
-   * È possibile fare riferimento solo alle risorse di dimensioni file specificate o inferiori.
-   * È possibile fare riferimento solo alle immagini entro un intervallo di larghezza e/o altezza predefinito (in pixel).
+  * Controlla tipi specifici di contenuto.
+  * È possibile fare riferimento solo alle risorse di dimensioni file specificate o inferiori.
+  * È possibile fare riferimento solo alle immagini entro un intervallo di larghezza e/o altezza predefinito (in pixel).
 * **Riferimento frammento**
-   * Verifica un modello di frammento di contenuto specifico.
+  * Verifica un modello di frammento di contenuto specifico.
 
 ## Utilizzo di riferimenti per creare contenuti nidificati {#using-references-to-form-nested-content}
 
 I frammenti di contenuto possono formare contenuto nidificato utilizzando uno dei seguenti tipi di dati:
 
 * **[Riferimento contenuto](#content-reference)**
-   * Fornisce un semplice riferimento ad altri contenuti; di qualsiasi tipo.
-   * Può essere configurato per uno o più riferimenti (nel frammento risultante).
+  * Fornisce un semplice riferimento ad altri contenuti; di qualsiasi tipo.
+  * Può essere configurato per uno o più riferimenti (nel frammento risultante).
 
 * **[Riferimento frammento](#fragment-reference-nested-fragments)** (frammenti nidificati)
-   * Fa riferimento ad altri frammenti, a seconda dei modelli specifici indicati.
-   * Consente di includere/recuperare dati strutturati.
+  * Fa riferimento ad altri frammenti, a seconda dei modelli specifici indicati.
+  * Consente di includere/recuperare dati strutturati.
 
-     >[!NOTE]
-     >
-     >Questo metodo è particolarmente interessante con [Distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
-   * Può essere configurato per uno o più riferimenti (nel frammento risultante).
+    >[!NOTE]
+    >
+    >Questo metodo è particolarmente interessante con [Distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+  * Può essere configurato per uno o più riferimenti (nel frammento risultante).
 
 >[!NOTE]
 >
@@ -252,8 +264,8 @@ Oltre alle proprietà standard puoi specificare:
 * I tipi di contenuto a cui è possibile fare riferimento
 * Le limitazioni per le dimensioni dei file
 * Se si fa riferimento a un’immagine:
-   * Mostra miniatura
-   * Limiti di altezza e larghezza dell’immagine
+  * Mostra miniatura
+  * Limiti di altezza e larghezza dell’immagine
 
 ![Riferimento contenuto](assets/cfm-content-reference.png)
 
@@ -264,7 +276,7 @@ Il Riferimento frammento fa riferimento a uno o più frammenti di contenuto. Que
 Esempio:
 
 * Un modello che definisce i dettagli di un dipendente, tra cui:
-   * Un riferimento al modello che definisce il datore di lavoro (azienda)
+  * Un riferimento al modello che definisce il datore di lavoro (azienda)
 
 ```xml
 type EmployeeModel {
@@ -288,22 +300,21 @@ Oltre alle proprietà standard puoi definire:
 
 * **Rendering come**:
 
-   * **multifield**: l’autore del frammento può creare più riferimenti individuali
+  * **multifield**: l’autore del frammento può creare più riferimenti individuali
 
-   * **fragmentreference**: consente all’autore del frammento di selezionare un singolo riferimento a un frammento
+  * **fragmentreference**: consente all’autore del frammento di selezionare un singolo riferimento a un frammento
 
 * **Tipo di modello**
 È possibile selezionare più modelli. Durante l’authoring del frammento di contenuto, tutti i frammenti a cui si fa riferimento devono essere stati creati utilizzando questi modelli.
 
-* **Percorso radice**
-
-Specifica un percorso radice per tutti i frammenti a cui si fa riferimento.
+* **Percorso principale**
+Specifica un percorso di directory principale per tutti i frammenti a cui si fa riferimento.
 
 * **Consenti creazione di frammenti**
 
   Questo consente all’autore del frammento di creare un frammento basato sul modello appropriato.
 
-   * **fragmentreferencecomposite**: consente all’autore del frammento di creare un elemento composito selezionando più frammenti
+  * **fragmentreferencecomposite**: consente all’autore del frammento di creare un elemento composito selezionando più frammenti
 
   ![Riferimento frammento](assets/cfm-fragment-reference.png)
 
@@ -343,8 +354,8 @@ Un modello può anche essere disabilitato, con i seguenti risultati:
 
 * Il modello non sarà più disponibile come base per la creazione di *nuovi* frammenti di contenuto.
 * Tuttavia:
-   * Lo schema GraphQL continua a essere generato ed è ancora interrogabile (per evitare di influire sull’API JSON).
-   * È comunque possibile eseguire query su qualsiasi frammento di contenuto basato sul modello e restituirlo dall’endpoint GraphQL.
+  * Lo schema GraphQL continua a essere generato ed è ancora interrogabile (per evitare di influire sull’API JSON).
+  * È comunque possibile eseguire query su qualsiasi frammento di contenuto basato sul modello e restituirlo dall’endpoint GraphQL.
 * Non è più possibile fare riferimento al modello, ma i riferimenti esistenti vengono mantenuti intatti e possono ancora essere interrogati e restituiti dall’endpoint GraphQL.
 
 Per disabilitare un modello contrassegnato come **Abilitato**, utilizzare l&#39;opzione **Disabilita** da:
@@ -441,7 +452,7 @@ Lo stato di pubblicazione viene indicato nella console.
 Puoi modificare le **Proprietà** di un modello per frammenti di contenuto:
 
 * **Base**
-   * **Titolo modello**
-   * **Tag**
-   * **Descrizione**
-   * **Carica immagine**
+  * **Titolo modello**
+  * **Tag**
+  * **Descrizione**
+  * **Carica immagine**

@@ -5,13 +5,26 @@ exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2505'
+source-wordcount: '2506'
 ht-degree: 61%
-
 ---
-
 # Creazione e organizzazione delle pagine {#creating-and-organizing-pages}
 
 Questa sezione descrive come creare e gestire le pagine con Adobe Experience Manager (AEM) in modo da poter [creare contenuto](/help/sites-authoring/editing-content.md) su tali pagine.
@@ -85,13 +98,13 @@ Durante la creazione di una pagina, sono disponibili due campi chiave:
 
 * **[Titolo](#title)**:
 
-   * Viene mostrato all’utente nella console ed è disponibile sopra il contenuto della pagina durante la modifica.
-   * Questo campo è obbligatorio.
+  * Viene mostrato all’utente nella console ed è disponibile sopra il contenuto della pagina durante la modifica.
+  * Questo campo è obbligatorio.
 
 * **[Nome](#name)**:
 
-   * Viene utilizzato per generare l’URI.
-   * L’input dell’utente per questo campo è opzionale. Se non viene specificato, il nome viene derivato dal titolo. Per ulteriori dettagli, consulta la seguente sezione sulle [restrizioni e best practice per i nomi delle pagine](/help/sites-authoring/managing-pages.md#page-name-restrictions-and-best-practices).
+  * Viene utilizzato per generare l’URI.
+  * L’input dell’utente per questo campo è opzionale. Se non viene specificato, il nome viene derivato dal titolo. Per ulteriori dettagli, consulta la seguente sezione sulle [restrizioni e best practice per i nomi delle pagine](/help/sites-authoring/managing-pages.md#page-name-restrictions-and-best-practices).
 
 #### Restrizioni e best practice per i nomi delle pagine {#page-name-restrictions-and-best-practices}
 
@@ -103,7 +116,7 @@ Il **Titolo** e il **Nome** della pagina possono essere creati separatamente, ma
 
 >[!NOTE]
 >
->Quando si definisce un nome di una pagina, è buona norma mantenere il nome breve, che deve comunque essere espressivo e facile da ricordare, in modo che il lettore possa facilmente comprenderlo. Per ulteriori informazioni, consulta la [guida allo stile W3C &#x200B;](https://www.w3.org/Provider/Style/TITLE.html) per l’elemento `title`.
+>Quando si definisce un nome di una pagina, è buona norma mantenere il nome breve, che deve comunque essere espressivo e facile da ricordare, in modo che il lettore possa facilmente comprenderlo. Per ulteriori informazioni, consulta la [guida allo stile W3C ](https://www.w3.org/Provider/Style/TITLE.html) per l’elemento `title`.
 >
 >Tieni presente che alcuni browser (ad esempio le versioni precedenti di IE) possono accettare solo gli URL fino a una certa lunghezza; pertanto, esistono anche delle ragioni tecniche per cui è bene mantenere brevi i nomi di pagina.
 
@@ -211,14 +224,14 @@ A meno che non siano state create tutte le pagine in anticipo, prima di poter in
 
    * **Titolo**:
 
-      * Questo viene presentato all’utente ed è obbligatorio.
+     * Questo viene presentato all’utente ed è obbligatorio.
 
    * **Nome**:
 
-      * Viene utilizzato per generare l’URI. Se non viene specificato, il nome viene derivato dal titolo.
-      * Se durante la creazione di una pagina si specifica **Nome**, AEM [convalida il nome in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposte da AEM e JCR.
+     * Viene utilizzato per generare l’URI. Se non viene specificato, il nome viene derivato dal titolo.
+     * Se durante la creazione di una pagina si specifica **Nome**, AEM [convalida il nome in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposte da AEM e JCR.
 
-      * **Non è possibile utilizzare caratteri non validi** nel campo **Nome**. Quando AEM rileva caratteri non validi, il campo viene evidenziato e viene visualizzato un messaggio esplicativo per indicare i caratteri da rimuovere o sostituire.
+     * **Non è possibile utilizzare caratteri non validi** nel campo **Nome**. Quando AEM rileva caratteri non validi, il campo viene evidenziato e viene visualizzato un messaggio esplicativo per indicare i caratteri da rimuovere o sostituire.
 
    >[!NOTE]
    >
@@ -343,8 +356,8 @@ In AEM è disponibile una funzionalità che consente di aggiornare eventuali col
 
    * Utilizza la [vista a colonne](/help/sites-authoring/basic-handling.md#column-view) per accedere alla nuova posizione della pagina:
 
-      * Seleziona la destinazione facendo clic sulla miniatura della destinazione.
-      * Fai clic su **Avanti** per continuare.
+     * Seleziona la destinazione facendo clic sulla miniatura della destinazione.
+     * Fai clic su **Avanti** per continuare.
 
    * Utilizza **Indietro** per specificare di nuovo il nome della pagina.
 
@@ -384,8 +397,8 @@ In AEM è disponibile una funzionalità che consente di aggiornare eventuali col
 Le azioni di spostamento delle pagine vengono sempre elaborate in modo asincrono, consentendo all’utente di continuare a creare nell’interfaccia utente senza ostacoli.
 
 * È l’utente a definire quando deve essere eseguita l’operazione asincrona.
-   * **Ora** inizia subito l’esecuzione del processo asincrono.
-   * **In seguito** consente di definire quando verrà avviato il processo asincrono.
+  * **Ora** inizia subito l’esecuzione del processo asincrono.
+  * **In seguito** consente di definire quando verrà avviato il processo asincrono.
 
   ![Spostamento asincrono delle pagine](assets/asynchronous-page-move.png)
 
@@ -415,8 +428,8 @@ Lo stato dei processi asincroni può essere controllato nel dashboard [**Stato p
    * **Annulla** per interrompere l’azione
    * **Elimina** per confermare l’azione:
 
-      * Se la pagina non ha riferimenti, verrà eliminata.
-      * Se la pagina include riferimenti, verrà visualizzata una finestra di messaggio per informare che **Si fa riferimento a una o più pagine.** È possibile selezionare **Forza eliminazione** o **Annulla**.
+     * Se la pagina non ha riferimenti, verrà eliminata.
+     * Se la pagina include riferimenti, verrà visualizzata una finestra di messaggio per informare che **Si fa riferimento a una o più pagine.** È possibile selezionare **Forza eliminazione** o **Annulla**.
 
 >[!NOTE]
 >

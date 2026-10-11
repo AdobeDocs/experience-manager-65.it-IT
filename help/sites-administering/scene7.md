@@ -9,13 +9,22 @@ exl-id: f244cfb5-5550-4f20-92f0-bb296e2bf76e
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '5542'
+source-wordcount: '5545'
 ht-degree: 1%
-
 ---
-
 # Integrare Adobe Experience Manager con Dynamic Media Classic {#integrating-with-dynamic-media-classic-scene}
 
 Adobe Dynamic Media Classic è una soluzione in hosting per la gestione, l&#39;ottimizzazione, la pubblicazione e la distribuzione di risorse rich media per web, dispositivi mobili, e-mail, display e stampa connessi a Internet.
@@ -199,8 +208,8 @@ Puoi caricare le risorse utilizzando la funzionalità Assets (Digital Asset Mana
 * I tipi di risorse Dynamic Media Classic non ancora supportati da Experience Manager Assets devono essere aggiunti direttamente da Dynamic Media Classic a un sito web Experience Manager tramite il browser del contenuto di Dynamic Media Classic. Ad esempio, i modelli di immagine.
 * Per i tipi di risorse supportati sia da Experience Manager Assets che da Dynamic Media Classic, la decisione su come caricarle dipende da quanto segue:
 
-   * Dove si trovano oggi le risorse E
-   * Quanto è importante gestirli in un archivio comune
+  * Dove si trovano oggi le risorse E
+  * Quanto è importante gestirli in un archivio comune
 
 Supponiamo che le risorse siano già in Dynamic Media Classic e che la loro gestione in un archivio comune non sia importante. In questo caso, è inutile esportare le risorse in Experience Manager Assets solo per sincronizzarle nuovamente in Dynamic Media Classic e consegnarle. Adobe consiglia di mantenere le risorse in un unico archivio e sincronizzarle con Dynamic Media Classic solo per la distribuzione.
 
@@ -421,7 +430,7 @@ Tuttavia, se non desideri che le risorse inviate a Dynamic Media Classic vengano
 Prima di poter inviare risorse a Dynamic Media Classic senza pubblicarle, è necessario impostare quanto segue:
 
 1. [Utilizzare Admin Console per creare un caso di supporto](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Nel tuo caso di supporto, richiedi l’abilitazione dell’anteprima protetta per il tuo account Dynamic Media Classic.
-1. [Imposta l&#39;anteprima protetta per il tuo account Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=it).
+1. [Imposta l&#39;anteprima protetta per il tuo account Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html).
 
 Questi passaggi sono gli stessi che segui per creare una configurazione di test protetta in Dynamic Media Classic.
 
@@ -450,7 +459,7 @@ Se utilizzate questa funzione, tenete presente le seguenti limitazioni:
 1. Selezionare la scheda **[!UICONTROL Avanzate]**.
 1. Nel menu a discesa **[!UICONTROL Abilita visualizzazione protetta]**, seleziona **[!UICONTROL All&#39;attivazione della pubblicazione di AEM]** per inviare risorse a Dynamic Media Classic senza pubblicazione. Per impostazione predefinita, questo valore è impostato su **[!UICONTROL Immediatamente]**, in cui le risorse Dynamic Media Classic vengono pubblicate immediatamente.
 
-   Consulta la [documentazione di Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=it) per ulteriori informazioni sui test delle risorse prima di renderle pubbliche.
+   Consulta la [documentazione di Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html) per ulteriori informazioni sui test delle risorse prima di renderle pubbliche.
 
    ![chlimage_1-302](assets/chlimage_1-302.png)
 
@@ -565,7 +574,7 @@ In particolare, è possibile configurare il formato di file accettato per tipo M
 
    Ad esempio, `psprocess="rasterize"&psresolution=120` .
 
-   Consulta l&#39;[API del sistema di produzione delle immagini di Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html?lang=it) per ulteriori parametri del processo di caricamento utilizzabili.
+   Consulta l&#39;[API del sistema di produzione delle immagini di Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html) per ulteriori parametri del processo di caricamento utilizzabili.
 
    >[!NOTE]
    >
@@ -602,8 +611,8 @@ In caso di problemi durante l’integrazione di Experience Manager con Dynamic M
 * Assicurati di aver configurato la configurazione di Cloud Services per abilitare il caricamento automatico e di aver aggiornato e salvato il flusso di lavoro Risorsa DAM in modo da includere il caricamento di Dynamic Media Classic.
 * Quando carichi un’immagine in una sottocartella della cartella di destinazione di Dynamic Media Classic, accertati di effettuare una delle seguenti operazioni:
 
-   * Assicurati che i nomi di tutte le risorse, a prescindere dalla posizione, siano univoci. In caso contrario, la risorsa nella cartella di destinazione principale viene eliminata e rimane solo la risorsa nella sottocartella.
-   * Modifica il modo in cui Dynamic Media Classic sovrascrive le risorse nell’area Configura dell’account Dynamic Media Classic. Non impostare Dynamic Media Classic per la sovrascrittura delle risorse, a prescindere dalla posizione, se si utilizzano risorse con lo stesso nome in sottocartelle.
+  * Assicurati che i nomi di tutte le risorse, a prescindere dalla posizione, siano univoci. In caso contrario, la risorsa nella cartella di destinazione principale viene eliminata e rimane solo la risorsa nella sottocartella.
+  * Modifica il modo in cui Dynamic Media Classic sovrascrive le risorse nell’area Configura dell’account Dynamic Media Classic. Non impostare Dynamic Media Classic per la sovrascrittura delle risorse, a prescindere dalla posizione, se si utilizzano risorse con lo stesso nome in sottocartelle.
 
 **Se le risorse o le cartelle eliminate non sono sincronizzate tra Dynamic Media Classic e Experience Manager:**
 

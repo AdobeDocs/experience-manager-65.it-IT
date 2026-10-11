@@ -9,16 +9,29 @@ exl-id: f4ca5c11-e3ff-4da5-bc4a-fd7e0aefffb5
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '220'
-ht-degree: 60%
-
+ht-degree: 55%
 ---
-
 # Scelte rapide da tastiera durante la modifica di pagine{#keyboard-shortcuts-when-editing-pages}
 
-In AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabili quando si modifica una pagina, altre quando si [utilizzano le console](/help/sites-authoring/keyboard-shortcuts.md).
+AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, Alcune sono applicabili quando si modificano le pagine, altre quando si [utilizzano le console](/help/sites-authoring/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -42,7 +55,7 @@ In AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabil
 
 >[!NOTE]
 >
->&ast; Quando l&#39;utente inizia a interagire con la pagina in modalità Anteprima, il collegamento `Ctrl-Shift-m` non è più disponibile. Per rendere nuovamente disponibile il collegamento, l’utente deve fare clic sulla barra superiore dell’editor o tornare alla modalità Modifica.
+>&amp;ast Quando l&#39;utente inizia a interagire con la pagina in modalità Anteprima, il collegamento `Ctrl-Shift-m` non è più disponibile. Per rendere nuovamente disponibile il collegamento, l’utente deve fare clic sulla barra superiore dell’editor o tornare alla modalità Modifica.
 
 Sono disponibili varie scelte rapide da tastiera anche per gli utenti desktop che utilizzano le [console](/help/sites-authoring/keyboard-shortcuts.md).
 

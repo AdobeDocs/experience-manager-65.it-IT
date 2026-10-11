@@ -4,13 +4,23 @@ description: AEM Forms supporta funzioni personalizzate che consentono agli uten
 feature: Adaptive Forms, Foundation Components
 role: Admin, User, Developer
 exl-id: 14a52bc1-c1b4-4a12-b8e1-54523e5f30bd
-source-git-commit: a0ef9925d1bcb84ea5bf733221875d0322cc6df1
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1104'
 ht-degree: 0%
-
 ---
-
 # Funzioni personalizzate in Adaptive Forms
 
 ## Introduzione
@@ -79,10 +89,10 @@ In alternativa, è possibile utilizzare: `@argument` `{type} name <Parameter Des
 Mostra i parametri utilizzati dalla funzione. Una funzione può avere più tag di parametri, uno per ogni parametro in ordine di occorrenza.
   `{type}` rappresenta il tipo di parametro. I tipi di parametri consentiti sono:
 
-   1. stringa
-   2. numero
-   3. booleano
-   4. ambito
+  1. stringa
+  2. numero
+  3. booleano
+  4. ambito
 
   L’ambito viene utilizzato per fare riferimento ai campi di un modulo adattivo. Quando un modulo utilizza il caricamento lento, è possibile utilizzare `scope` per accedere ai relativi campi. È possibile accedere ai campi quando sono caricati o se sono contrassegnati come globali.
 
@@ -94,9 +104,9 @@ In alternativa, è possibile utilizzare `@returns {type}`.
 Aggiunge informazioni sulla funzione, ad esempio l&#39;obiettivo.
   {type} rappresenta il tipo restituito della funzione. I tipi restituiti consentiti sono:
 
-   1. stringa
-   1. numero
-   1. booleano
+  1. stringa
+  1. numero
+  1. booleano
 
   Tutti gli altri tipi di reso sono classificati in una delle categorie precedenti. Nessuno non è supportato. Accertati di selezionare uno dei tipi riportati sopra. I tipi restituiti non fanno distinzione tra maiuscole e minuscole.
 

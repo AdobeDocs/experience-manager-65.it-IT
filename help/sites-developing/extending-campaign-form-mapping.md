@@ -1,6 +1,6 @@
 ---
-title: Creazione di mapping di moduli personalizzati
-description: Quando crei una tabella personalizzata in Adobe Campaign, potrebbe essere utile creare un modulo in AEM mappato su tale tabella personalizzata
+title: Creazione di mappature di moduli personalizzati
+description: Quando crei una tabella personalizzata in Adobe Campaign, potrebbe essere utile creare in AEM un modulo mappato su tale tabella personalizzata
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
@@ -9,16 +9,25 @@ exl-id: bce6c586-9962-4217-82cb-c837e479abc0
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 3%
-
+source-wordcount: '538'
+ht-degree: 5%
 ---
+# Creazione di mappature di moduli personalizzati{#creating-custom-form-mappings}
 
-# Creazione di mapping di moduli personalizzati{#creating-custom-form-mappings}
-
-Quando crei una tabella personalizzata in Adobe Campaign, potrebbe essere utile creare un modulo in AEM mappato su tale tabella personalizzata.
+Quando crei una tabella personalizzata in Adobe Campaign, potrebbe essere utile creare in AEM un modulo mappato su tale tabella personalizzata.
 
 Questo documento descrive come creare mapping di moduli personalizzati. Dopo aver completato i passaggi descritti in questo documento, fornirai agli utenti una pagina evento in cui possono iscriversi per un evento in programma. Puoi quindi seguire questi utenti tramite Adobe Campaign.
 
@@ -29,9 +38,9 @@ Devi avere installato quanto segue:
 * Adobe Experience Manager
 * Adobe Campaign Classic
 
-Per ulteriori informazioni, vedere [Integrazione dell&#39;AEM con Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md).
+Per ulteriori informazioni, vedere [Integrazione di AEM con Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md).
 
-## Creazione di mapping di moduli personalizzati {#creating-custom-form-mappings-2}
+## Creazione di mappature di moduli personalizzati {#creating-custom-form-mappings-2}
 
 Per creare mappature di moduli personalizzate, è necessario seguire questi passaggi di alto livello, descritti in dettaglio nelle sezioni seguenti:
 
@@ -94,7 +103,7 @@ In **Risorse/Modelli**, passa al Modello di consegna e duplica la consegna AEM e
 
 ![chlimage_1-196](assets/chlimage_1-196.png)
 
-### Creazione del modulo nell’AEM {#building-the-form-in-aem}
+### Creazione di un modulo in AEM {#building-the-form-in-aem}
 
 In AEM, assicurati di aver configurato un Cloud Service in **Proprietà pagina**.
 
@@ -106,7 +115,7 @@ Durante la configurazione dei campi, accertati di specificare nomi di elementi u
 
 Dopo aver configurato i campi, devi modificare manualmente la mappatura.
 
-In CRXDE-lite, vai al nodo **jcr:content** (della pagina) e modifica il valore **acMapping** nel nome interno della mappatura **Target**.
+In CRXDE-lite, vai al nodo **jcr:content** (della pagina) e modifica il valore **acMapping** nel nome interno del mapping **Target**.
 
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
@@ -120,7 +129,7 @@ Ora puoi inviare il modulo e verificare sul lato Adobe Campaign se i valori veng
 
 ![chlimage_1-200](assets/chlimage_1-200.png)
 
-## Risoluzione dei problemi {#troubleshooting}
+## Risoluzione di problemi {#troubleshooting}
 
 **&quot;Tipo non valido per il valore &#39;02/02/2015&#39; dall&#39;elemento &#39;@eventdate&#39; (documento di tipo &#39;Event ([adb:event])&#39;)&quot;**
 

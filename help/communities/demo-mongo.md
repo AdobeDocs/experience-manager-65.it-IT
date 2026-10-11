@@ -9,13 +9,20 @@ role: Admin
 exl-id: 7e257b34-a0f5-47db-b1a9-e26333c287d9
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '802'
 ht-degree: 0%
-
 ---
-
 # Come impostare MongoDB per la demo {#how-to-setup-mongodb-for-demo}
 
 ## Introduzione {#introduction}
@@ -38,25 +45,25 @@ Questa configurazione è adatta per *ambienti non di produzione* come ad esempio
 
 * Scarica MongoDB da [https://www.mongodb.com/](https://www.mongodb.com/)
 
-   * Scelta del sistema operativo:
+  * Scelta del sistema operativo:
 
-      * Linux®
-      * Mac 10.8
-      * Windows 7
+    * Linux®
+    * Mac 10.8
+    * Windows 7
 
-   * Scelta versione:
+  * Scelta versione:
 
-      * Utilizza almeno la versione 2.6
+    * Utilizza almeno la versione 2.6
 
 * Configurazione di base
 
-   * Seguire le istruzioni di installazione di MongoDB.
-   * Configura per monGod:
+  * Seguire le istruzioni di installazione di MongoDB.
+  * Configura per monGod:
 
-      * Non è necessario configurare i monghi o la condivisione.
+    * Non è necessario configurare i monghi o la condivisione.
 
-   * La cartella MongoDB installata è denominata &lt;mongo-install>.
-   * Il percorso della directory dati definito è denominato &lt;mongo-dbpath>.
+  * La cartella MongoDB installata è denominata &lt;mongo-install>.
+  * Il percorso della directory dati definito è denominato &lt;mongo-dbpath>.
 
 * MongoDB può essere eseguito sullo stesso host di AEM o in remoto.
 
@@ -79,16 +86,16 @@ I seguenti comandi sono un esempio di configurazione di un set di repliche con 3
 * `bin/mongod --port 27017 --dbpath data --replSet rs0&`
 * `bin/mongo`
 
-   * `cfg = {"_id": "rs0","version": 1,"members": [{"_id": 0,"host": "127.0.0.1:27017"}]}`
-   * `rs.initiate(cfg)`
+  * `cfg = {"_id": "rs0","version": 1,"members": [{"_id": 0,"host": "127.0.0.1:27017"}]}`
+  * `rs.initiate(cfg)`
 
 * `bin/mongod --port 27018 --dbpath data1 --replSet rs0&`
 * `bin/mongod --port 27019 --dbpath data2 --replSet rs0&`
 * `bin/mongo`
 
-   * `rs.add("127.0.0.1:27018")`
-   * `rs.add("127.0.0.1:27019")`
-   * `rs.status()`
+  * `rs.add("127.0.0.1:27018")`
+  * `rs.add("127.0.0.1:27019")`
+  * `rs.status()`
 
 ## Solr {#solr}
 
@@ -96,15 +103,15 @@ I seguenti comandi sono un esempio di configurazione di un set di repliche con 3
 
 * Scarica Solr da [Apache Lucene](https://archive.apache.org/dist/lucene/solr/):
 
-   * Adatto a qualsiasi sistema operativo.
-   * Solr versione 7.0.
-   * Solr richiede Java™ 1.7 o versione successiva.
+  * Adatto a qualsiasi sistema operativo.
+  * Solr versione 7.0.
+  * Solr richiede Java™ 1.7 o versione successiva.
 
 * Configurazione di base
 
-   * Segui l’impostazione Solr di esempio.
-   * Nessun servizio richiesto.
-   * La cartella Solr installata è denominata &lt;solr-install>.
+  * Segui l’impostazione Solr di esempio.
+  * Nessun servizio richiesto.
+  * La cartella Solr installata è denominata &lt;solr-install>.
 
 ### Configurare Solr per AEM Communities {#configure-solr-for-aem-communities}
 

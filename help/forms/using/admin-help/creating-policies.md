@@ -9,13 +9,24 @@ feature: Document Security
 exl-id: 5e57451c-1a89-442c-8404-841e95d5ceff
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '4725'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '4769'
+ht-degree: 99%
 ---
-
 # Creare e gestire i criteri {#creating-and-managing-policies}
 
 >[!NOTE]
@@ -150,7 +161,7 @@ Nell’area Utenti e gruppi specifica gli utenti che hanno accesso ai documenti 
 
 Dopo la registrazione, gli utenti invitati possono utilizzare i documenti protetti tramite criteri per i quali dispongono dell’autorizzazione. A seconda delle funzionalità abilitate dall’amministratore, gli utenti esterni possono disporre dell’autorizzazione per applicare criteri ai documenti, creare, modificare ed eliminare criteri e aggiungere altri utenti esterni ai criteri.
 
-**Aggiungi utente anonimo:** per consentire l’accesso utente anonimo, fai clic su Aggiungi utente anonimo. Questa opzione è disponibile solo se l’amministratore ha abilitato l’accesso anonimo degli utenti per la protezione dei documenti. Consulta Configurare il server di protezione dei documenti. Questa opzione consente a tutti l’accesso ai documenti protetti da questo criteri, sia che dispongano o meno di un account di protezione dei documenti. Se selezioni questa opzione, non puoi aggiungere altri tipi di utenti al criterio.
+**Aggiungi utente anonimo:** per consentire l’accesso utente anonimo, fai clic su Aggiungi utente anonimo. Questa opzione è disponibile solo se l’amministratore ha abilitato l’accesso anonimo degli utenti per la protezione dei documenti. Consulta Configurare il server di Document Security. Questa opzione consente a tutti di accedere ai documenti protetti da questa policy, indipendentemente dal fatto che dispongano di un account di protezione dei documenti. Se selezioni questa opzione, non puoi aggiungere altri tipi di utenti al criterio.
 
 >[!NOTE]
 >

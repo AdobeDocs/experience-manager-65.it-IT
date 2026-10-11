@@ -9,13 +9,25 @@ exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 2%
-
+source-wordcount: '864'
+ht-degree: 1%
 ---
-
 # Gestore di autenticazione SAML 2.0{#saml-authentication-handler}
 
 AEM viene fornito con un gestore di autenticazione [SAML](https://saml.xml.org/saml-specifications). Questo gestore supporta il protocollo di richiesta di autenticazione [SAML](https://saml.xml.org/saml-specifications) 2.0 (profilo Web-SSO) utilizzando l&#39;associazione `HTTP POST`.
@@ -24,24 +36,24 @@ Supporta:
 
 * firma e crittografia dei messaggi
 * creazione automatica di utenti
-* sincronizzazione dei gruppi con quelli esistenti nell’AEM
+* sincronizzazione dei gruppi con quelli esistenti in AEM
 * Autenticazione avviata dal provider di servizi e dal provider di identità
 
 Questo gestore archivia il messaggio di risposta SAML crittografato nel nodo utente ( `usernode/samlResponse`) per facilitare la comunicazione con un provider di servizi di terze parti.
 
 >[!NOTE]
 >
->Vedere [una dimostrazione dell&#39;integrazione di AEM e SAML](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html?lang=it).
+>Vedi [una dimostrazione dell&#39;integrazione di AEM e SAML](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html).
 
 ## Configurazione del gestore di autenticazione SAML 2.0 {#configuring-the-saml-authentication-handler}
 
-La [console Web](/help/sites-deploying/configuring-osgi.md) fornisce l&#39;accesso alla configurazione del gestore di autenticazione [SAML](https://saml.xml.org/saml-specifications) 2.0 denominata **Gestore di autenticazione SAML 2.0 Adobe Granite**. È possibile impostare le seguenti proprietà.
+La [console Web](/help/sites-deploying/configuring-osgi.md) fornisce l&#39;accesso alla configurazione del gestore di autenticazione [SAML](https://saml.xml.org/saml-specifications) 2.0 denominata **Adobe Granite SAML 2.0 Authentication Handler**. È possibile impostare le seguenti proprietà.
 
 >[!NOTE]
 >
 >Il gestore di autenticazione SAML 2.0 è disabilitato per impostazione predefinita. Imposta almeno una delle seguenti proprietà per abilitare il gestore:
 >
->* L’URL del POST del provider di identità o URL IDP.
+>* URL POST del provider di identità o URL IDP.
 >* ID dell&#39;entità del provider di servizi.
 >
 
@@ -86,7 +98,7 @@ La [console Web](/help/sites-deploying/configuring-osgi.md) fornisce l&#39;acces
 
 **Aggiungi ai gruppi** Indica se un utente deve essere aggiunto automaticamente ai gruppi di CRX dopo l&#39;autenticazione riuscita.
 
-**Appartenenza al gruppo** Il nome dell&#39;attributo saml:Attribute contenente un elenco di gruppi CRX a cui deve essere aggiunto l&#39;utente.
+**Appartenenza al gruppo** Il nome del saml:Attribute contenente un elenco di gruppi CRX a cui deve essere aggiunto l&#39;utente.
 
 ## Aggiungi il certificato IdP al TrustStore AEM {#add-the-idp-certificate-to-the-aem-truststore}
 
@@ -101,7 +113,7 @@ Le asserzioni SAML sono firmate e possono essere facoltativamente crittografate.
 
    ![chlimage_1-372](assets/chlimage_1-372.png)
 
-## Aggiungere la chiave del provider di servizi e la catena di certificati al keystore AEM {#add-the-service-provider-key-and-certificate-chain-to-the-aem-keystore}
+## Aggiungi la chiave del provider di servizi e la catena di certificati al keystore di AEM {#add-the-service-provider-key-and-certificate-chain-to-the-aem-keystore}
 
 >[!NOTE]
 >
@@ -119,7 +131,7 @@ Le asserzioni SAML sono firmate e possono essere facoltativamente crittografate.
 
    `openssl req -newkey rsa:2048 -new -x509 -days 3652 -nodes -out certificate.crt -keyout key.pem`
 
-1. Converti la chiave nel formato PKCS#8 con codifica DER. Questo è il formato richiesto dal keystore AEM.
+1. Converti la chiave nel formato PKCS#8 con codifica DER. Questo è il formato richiesto dal keystore di AEM.
 
    `openssl pkcs8 -topk8 -inform PEM -outform DER -in key.pem -out key.der -nocrypt`
 

@@ -10,13 +10,31 @@ exl-id: d5dad844-80ca-4ace-a082-38d892d9ffe2
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Content Fragments
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1158'
 ht-degree: 64%
-
 ---
-
 # Authoring delle pagine con frammenti di contenuto{#page-authoring-with-content-fragments}
 
 I frammenti di contenuto di Adobe Experience Manager (AEM) vengono [creati e gestiti come risorse indipendenti dalla pagina](/help/assets/content-fragments/content-fragments.md).
@@ -42,27 +60,27 @@ I frammenti di contenuto consentono:
 
 * La **Strategia di marketing e campagne**
 
-   * La revisione dei contenuti tramite frammenti di contenuto gestiti a livello centrale.
+  * La revisione dei contenuti tramite frammenti di contenuto gestiti a livello centrale.
 
 * **Creative Pro**
 
-   * Il tracciamento delle risorse creative tramite raccolte associate a frammenti di contenuto.
+  * Il tracciamento delle risorse creative tramite raccolte associate a frammenti di contenuto.
 
 * **Copywriter**
 
-   * Creazione di contenuti nell’editor frammento di contenuto di AEM.
-   * Possono creare varianti del contenuto.
-   * Possono associare contenuti rilevanti ai frammenti di contenuto.
-   * Possono utilizzare il controllo delle versioni/flusso di lavoro.
-   * Possono condividere dei frammenti di contenuto.
-   * Possono gestire le traduzioni a livello centrale.
+  * Creazione di contenuti nell’editor frammento di contenuto di AEM.
+  * Possono creare varianti del contenuto.
+  * Possono associare contenuti rilevanti ai frammenti di contenuto.
+  * Possono utilizzare il controllo delle versioni/flusso di lavoro.
+  * Possono condividere dei frammenti di contenuto.
+  * Possono gestire le traduzioni a livello centrale.
 
 * **Produttori e responsabili dei percorsi**
 
-   * Scelta di frammenti e varianti predefiniti con l’authoring in AEM.
-   * Possono contare sul fatto che il frammento e il contenuto associato ad esso sono sempre aggiornati, poiché i copywriter e i creativi effettuano gli aggiornamenti su frammenti e risorse gestiti a livello centrale.
-   * Possono contare sul fatto che i contenuti multimediali associati sono sempre curati in base alla rilevanza.
-   * Possono creare all’istante varianti di contenuto ad hoc garantendo che queste restino comunque gestite a livello centrale nel frammento.
+  * Scelta di frammenti e varianti predefiniti con l’authoring in AEM.
+  * Possono contare sul fatto che il frammento e il contenuto associato ad esso sono sempre aggiornati, poiché i copywriter e i creativi effettuano gli aggiornamenti su frammenti e risorse gestiti a livello centrale.
+  * Possono contare sul fatto che i contenuti multimediali associati sono sempre curati in base alla rilevanza.
+  * Possono creare all’istante varianti di contenuto ad hoc garantendo che queste restino comunque gestite a livello centrale nel frammento.
 
 ## Aggiunta di un frammento di contenuto alla pagina {#adding-a-content-fragment-to-your-page}
 
@@ -107,14 +125,14 @@ Nella finestra di dialogo di configurazione appropriata potete selezionare i par
 
 * **Modalità di visualizzazione**:
 
-   * **Elemento di testo singolo**
+  * **Elemento di testo singolo**
 
-   * **Elemento multiplo**
+  * **Elemento multiplo**
 
 * **Elemento**
 
-   * Il valore predefinito **Principale** è sempre disponibile.
-   * Se il frammento è stato creato con un modello appropriato, è disponibile una selezione.
+  * Il valore predefinito **Principale** è sempre disponibile.
+  * Se il frammento è stato creato con un modello appropriato, è disponibile una selezione.
 
   >[!NOTE]
   >
@@ -122,15 +140,15 @@ Nella finestra di dialogo di configurazione appropriata potete selezionare i par
 
 * **Variazione**
 
-   * Il **Master** predefinito è sempre disponibile.
-   * Se per il frammento sono state create delle varianti, è disponibile una selezione.
+  * Il **Master** predefinito è sempre disponibile.
+  * Se per il frammento sono state create delle varianti, è disponibile una selezione.
 
 * **Paragrafi**: specificare l&#39;intervallo di paragrafi da includere:
 
-   * **Tutti**
-   * **Intervallo**: ad esempio, `1`, `3-5`, `9-*`
+  * **Tutti**
+  * **Intervallo**: ad esempio, `1`, `3-5`, `9-*`
 
-      * **Tratta le intestazioni come paragrafi propri**
+    * **Tratta le intestazioni come paragrafi propri**
 
 * **Tratta le intestazioni come paragrafi propri**
 

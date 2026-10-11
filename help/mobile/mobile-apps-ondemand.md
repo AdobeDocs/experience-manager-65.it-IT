@@ -9,7 +9,13 @@ exl-id: 357e75f8-2c98-4377-afef-016d58505b4d
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 4%
@@ -30,7 +36,7 @@ ht-degree: 4%
 
 ## Autore AEM Mobile {#aem-mobile-author}
 
-Un ***Autore di AEM* (o *Addetto marketing*)**&#x200B;utilizza modelli e componenti personalizzati o predefiniti per aggiungere e modificare pagine, trascinare e rilasciare componenti e aggiungere file multimediali di tutti i tipi da DAM, inclusi immagini, video e frammenti di testo (frammenti di contenuto). L&#39;editor di contenuti integrato di AEM viene quindi utilizzato da *autori di AEM* per creare esperienze avanzate e rilevanti all&#39;interno dell&#39;app, inclusa l&#39;integrazione con il resto di Adobe Experience Cloud.
+Un ***Autore di AEM* (o *Addetto marketing*)**utilizza modelli e componenti personalizzati o predefiniti per aggiungere e modificare pagine, trascinare e rilasciare componenti e aggiungere file multimediali di tutti i tipi da DAM, inclusi immagini, video e frammenti di testo (frammenti di contenuto). L&#39;editor di contenuti integrato di AEM viene quindi utilizzato da *autori di AEM* per creare esperienze avanzate e rilevanti all&#39;interno dell&#39;app, inclusa l&#39;integrazione con il resto di Adobe Experience Cloud.
 
 Un autore di AEM è responsabile delle seguenti attività durante la creazione di un’app tramite AEM Mobile On-demand Services.
 

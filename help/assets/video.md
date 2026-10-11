@@ -11,13 +11,24 @@ feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 0c3d9e95f2b1942392cd269891360dd8552e2715
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '10724'
+source-wordcount: '10732'
 ht-degree: 2%
-
 ---
-
 # Video in Dynamic Media {#video}
 
 Questa sezione descrive come lavorare con i video in Dynamic Media.
@@ -43,23 +54,23 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
 
    * Crea un tuo profilo di codifica video. In alternativa, puoi semplicemente utilizzare il profilo predefinito _Codifica video adattivo_ fornito con Dynamic Media.
 
-      * [Crea un profilo di codifica video](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
-      * La risoluzione massima di codifica video in uscita è 8.192 × 4.320 o 4.320 × 8.192.md.
-      * Ulteriori informazioni su [Best practice per la codifica video](#best-practices-for-encoding-videos).
+     * [Crea un profilo di codifica video](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
+     * La risoluzione massima di codifica video in uscita è 8.192 × 4.320 o 4.320 × 8.192.md.
+     * Ulteriori informazioni su [Best practice per la codifica video](#best-practices-for-encoding-videos).
 
    * Associa il profilo di elaborazione video a una o più cartelle in cui stai per caricare i video sorgente principali.
 
-      * [Applicare un profilo video alle cartelle](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
-      * Ulteriori informazioni su [Best practice per organizzare le risorse digitali per utilizzare i profili di elaborazione](/help/assets/organize-assets.md).
-      * Ulteriori informazioni su [Organizzare risorse digitali](/help/assets/organize-assets.md).
+     * [Applicare un profilo video alle cartelle](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
+     * Ulteriori informazioni su [Best practice per organizzare le risorse digitali per utilizzare i profili di elaborazione](/help/assets/organize-assets.md).
+     * Ulteriori informazioni su [Organizzare risorse digitali](/help/assets/organize-assets.md).
 
    * Carica i video sorgente principali nelle cartelle. Quando aggiungi video alla cartella, questi vengono codificati in base al profilo di elaborazione video assegnato alla cartella.
 
-      * Dynamic Media supporta principalmente video in formato breve con una lunghezza massima di 30 minuti e una risoluzione minima superiore a 25 × 25.
-      * La risoluzione video in ingresso massima supportata è 16.384 × 16.384.
-      * Puoi caricare file video con una capacità massima di 15 GB ciascuno.
-      * [Carica i tuoi video](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
-      * Ulteriori informazioni sui [Formati di file di input supportati](/help/assets/assets-formats.md#supported-multimedia-formats).
+     * Dynamic Media supporta principalmente video in formato breve con una lunghezza massima di 30 minuti e una risoluzione minima superiore a 25 × 25.
+     * La risoluzione video in ingresso massima supportata è 16.384 × 16.384.
+     * Puoi caricare file video con una capacità massima di 15 GB ciascuno.
+     * [Carica i tuoi video](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
+     * Ulteriori informazioni sui [Formati di file di input supportati](/help/assets/assets-formats.md#supported-multimedia-formats).
 
    * Monitora l&#39;avanzamento della codifica [video](#monitoring-video-encoding-and-youtube-publishing-progress) dalla visualizzazione della risorsa o del flusso di lavoro.
 
@@ -67,55 +78,55 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
 
    * Organizzare, sfogliare e cercare risorse video
 
-      * [Organizzare risorse digitali](/help/assets/organize-assets.md)
-Ulteriori informazioni su [Best practice per organizzare le risorse digitali per utilizzare i profili di elaborazione](organize-assets.md)
+     * [Organizzare risorse digitali](/help/assets/organize-assets.md)
+       Ulteriori informazioni su [Best practice per organizzare le risorse digitali per utilizzare i profili di elaborazione](organize-assets.md)
 
-      * [Cerca risorse video](search-assets.md#custompredicates) o [Cerca risorse](/help/assets/search-assets.md)
+     * [Cerca risorse video](search-assets.md#custompredicates) o [Cerca risorse](/help/assets/search-assets.md)
 
    * Visualizzare in anteprima e pubblicare le risorse video
 
-      * Visualizza il video sorgente e le relative rappresentazioni codificate, insieme alle miniature associate:
-        [Anteprima video](managing-video-assets.md#upload-and-preview-video-assets) o [Anteprima risorse](previewing-assets.md)
-        [Visualizza rappresentazioni video](video-renditions.md)
-        [Gestione rappresentazioni video](manage-assets.md#managing-renditions)
+     * Visualizza il video sorgente e le relative rappresentazioni codificate, insieme alle miniature associate:
+       [Anteprima video](managing-video-assets.md#upload-and-preview-video-assets) o [Anteprima risorse](previewing-assets.md)
+       [Visualizza rappresentazioni video](video-renditions.md)
+       [Gestione rappresentazioni video](manage-assets.md#managing-renditions)
 
-      * [Gestire i predefiniti visualizzatore](managing-viewer-presets.md)
-      * [Pubblicare le risorse](publishing-dynamicmedia-assets.md)
+     * [Gestire i predefiniti visualizzatore](managing-viewer-presets.md)
+     * [Pubblicare le risorse](publishing-dynamicmedia-assets.md)
 
    * Utilizzare i metadati video
 
-      * Visualizza le proprietà di un rendering video codificato come frame rate, bitrate audio e video e codec:
-        [Visualizza proprietà rappresentazione video](video-renditions.md)
+     * Visualizza le proprietà di un rendering video codificato come frame rate, bitrate audio e video e codec:
+       [Visualizza proprietà rappresentazione video](video-renditions.md)
 
-      * Modifica le proprietà del video come il titolo, la descrizione, i tag e i campi di metadati personalizzati:
-        [Modifica proprietà video](manage-assets.md#editing-properties)
+     * Modifica le proprietà del video come il titolo, la descrizione, i tag e i campi di metadati personalizzati:
+       [Modifica proprietà video](manage-assets.md#editing-properties)
 
-      * [Gestire i metadati per le risorse digitali](metadata.md)
-      * [Schemi di metadati](metadata-schemas.md)
+     * [Gestire i metadati per le risorse digitali](metadata.md)
+     * [Schemi di metadati](metadata-schemas.md)
 
    * Rivedi, approva e commenta video e mantieni il controllo completo della versione
 
-      * [Annota video](managing-video-assets.md#annotate-video-assets) o [Annota risorse](manage-assets.md#annotating)
+     * [Annota video](managing-video-assets.md#annotate-video-assets) o [Annota risorse](manage-assets.md#annotating)
 
-      * [Crea una versione](manage-assets.md#asset-versioning)
-      * [Applica flussi di lavoro alle risorse](assets-workflow.md) o vedi [Avvia un flusso di lavoro su una risorsa](manage-assets.md#starting-a-workflow-on-an-asset)
+     * [Crea una versione](manage-assets.md#asset-versioning)
+     * [Applica flussi di lavoro alle risorse](assets-workflow.md) o vedi [Avvia un flusso di lavoro su una risorsa](manage-assets.md#starting-a-workflow-on-an-asset)
 
-      * [Esaminare le risorse della cartella](bulk-approval.md)
-      * [Progetti](../sites-authoring/projects.md)
+     * [Esaminare le risorse della cartella](bulk-approval.md)
+     * [Progetti](../sites-authoring/projects.md)
 
 1. **Pubblica i tuoi video Dynamic Media** effettuando una delle seguenti operazioni:
 
    * Se utilizzi Adobe Experience Manager come sistema di gestione dei contenuti web, puoi aggiungere video direttamente alle pagine web.
 
-      * [Aggiungi video alle pagine Web](adding-dynamic-media-assets-to-pages.md).
+     * [Aggiungi video alle pagine Web](adding-dynamic-media-assets-to-pages.md).
 
    * Se utilizzi un sistema di gestione dei contenuti web di terze parti, puoi collegare o incorporare video nelle pagine web.
 
-      * Integra video tramite URL:
-        [Collega URL all&#39;applicazione Web](linking-urls-to-yourwebapplication.md).
+     * Integra video tramite URL:
+       [Collega URL all&#39;applicazione Web](linking-urls-to-yourwebapplication.md).
 
-      * Integra video utilizzando il codice di incorporamento in una pagina web:
-        [Incorpora il visualizzatore video in una pagina Web](embed-code.md).
+     * Integra video utilizzando il codice di incorporamento in una pagina web:
+       [Incorpora il visualizzatore video in una pagina Web](embed-code.md).
 
    * [Genera report video](#viewing-video-reports).
 
@@ -143,14 +154,14 @@ Per la gestione di un singolo video e di set di video adattivi, sono supportati 
 
 * Caricare video in vari formati supportati e codificarli in MP4 H.264 per la riproduzione su più schermi. È possibile utilizzare predefiniti per video adattivi, predefiniti per codifica video singola o personalizzare la propria codifica per controllare la qualità e le dimensioni del video.
 
-   * Quando viene generato un set video adattivo, questo include video MP4.
-   * **Nota**: i video principali/di origine non vengono aggiunti a un set di video adattivi.
+  * Quando viene generato un set video adattivo, questo include video MP4.
+  * **Nota**: i video principali/di origine non vengono aggiunti a un set di video adattivi.
 
 * Sottotitoli video in tutti i visualizzatori video HTML5.
 * Organizza, sfoglia e cerca video con supporto completo per i metadati, per una gestione efficiente delle risorse video.
 * Distribuisci set video adattivi sul Web e su desktop e dispositivi mobili, inclusi iPhone, iPad, Android™, BlackBerry® e Windows Phone.
 
-Lo streaming video adattivo è supportato su varie piattaforme iOS. Consulta la [Guida di riferimento per i visualizzatori Dynamic Media](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference#video).
+Lo streaming video adattivo è supportato su varie piattaforme iOS. Consulta la [Guida di riferimento per i visualizzatori Dynamic Media](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference#video).
 
 Dynamic Media supporta la riproduzione di video per dispositivi mobili per video MP4 H.264. <!-- LINK IS 404 WITH NO SUITABLE REPLACEMENT You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482). -->
 
@@ -158,15 +169,15 @@ Dynamic Media supporta la riproduzione di video per dispositivi mobili per video
 
 * Riproduci il video utilizzando i predefiniti visualizzatore video Dynamic Media, tra cui:
 
-   * Visualizzatori video singoli.
-   * Visualizzatori di file multimediali diversi che combinano contenuti sia video che immagini.
+  * Visualizzatori video singoli.
+  * Visualizzatori di file multimediali diversi che combinano contenuti sia video che immagini.
 
 * Configura i lettori video in base alle tue esigenze di branding.
 * Integra il video nel tuo sito web, sito mobile o app mobile con un semplice URL o codice da incorporare.
 
 <!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
-Consulta anche [Visualizzatori per Experience Manager Assets e Dynamic Media Classic](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) e [Visualizzatori per risorse di Experience Manager](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
+Consulta anche [Visualizzatori per Experience Manager Assets e Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) e [Visualizzatori per risorse di Experience Manager](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
 
 ## Best practice: utilizzo del visualizzatore video HTML5 {#best-practice-using-the-html-video-viewer}
 
@@ -184,7 +195,7 @@ Combinando in un singolo lettore quanto segue:
 
 È possibile estendere la portata dei contenuti rich media agli utenti desktop e mobili e garantire un&#39;esperienza video semplificata.
 
-Vedi anche [Informazioni sui visualizzatori HTML5](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
+Vedi anche [Informazioni sui visualizzatori HTML5](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
 
 ### Riproduzione di video su computer desktop e dispositivi mobili mediante il visualizzatore video HTML5 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -331,9 +342,9 @@ Nella tabella seguente viene descritto come i risultati della formula si traduco
 | Risultato formula | Proporzioni |
 |--- |--- |
 | 1,33 | 4:3 |
-| 0,75 | 3:4 |
-| 1,78 | 16:9 |
-| 0,56 | 9:16 |
+| 0.75 | 3:4 |
+| 1.78 | 16:9 |
+| 0.56 | 9:16 |
 
 Ad esempio, un video con larghezza 1440 × altezza 1080 ha proporzioni 1440/1080 o 1,33. In questo caso, scegliete un predefinito di codifica video con proporzioni 4:3 per codificare il file video.
 
@@ -463,10 +474,10 @@ Affinché i rapporti video funzionino correttamente, viene creato automaticament
 1. Nella pagina Rapporti video eseguire una delle operazioni seguenti:
 
    * Nell&#39;angolo superiore destro selezionare l&#39;icona **Aggiorna report video**.
-Utilizzare Aggiorna solo se la data di fine del rapporto è il giorno corrente. In questo modo potrai vedere il tracciamento video che si è verificato dall’ultima volta che hai eseguito il rapporto.
+     Utilizzare Aggiorna solo se la data di fine del rapporto è il giorno corrente. In questo modo potrai vedere il tracciamento video che si è verificato dall’ultima volta che hai eseguito il rapporto.
 
    * Nell&#39;angolo superiore destro, seleziona l&#39;icona **Selezione data**.
-Specificare l&#39;intervallo di date iniziale e finale per il quale si desidera visualizzare i dati video, quindi selezionare **[!UICONTROL Esegui report]**.
+     Specificare l&#39;intervallo di date iniziale e finale per il quale si desidera visualizzare i dati video, quindi selezionare **[!UICONTROL Esegui report]**.
 
    La casella di gruppo Metriche principali identifica varie misurazioni aggregate per tutti i video *published* nel sito.
 
@@ -476,7 +487,7 @@ Specificare l&#39;intervallo di date iniziale e finale per il quale si desidera 
 
 Se utilizzi un visualizzatore video predefinito fornito da Dynamic Media, o se hai creato un predefinito visualizzatore personalizzato basato su un visualizzatore video predefinito, non sono necessari passaggi aggiuntivi per visualizzare i rapporti video. Tuttavia, se hai creato un visualizzatore video personalizzato basato sull’API SDK del visualizzatore di HTML5, procedi come segue per assicurarti che il visualizzatore video invii eventi di tracciamento ai rapporti video Dynamic Media.
 
-Utilizza la [Guida di riferimento per i visualizzatori Dynamic Media di Adobe](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources) e l&#39;API [HTML5 Viewer SDK](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) per creare visualizzatori video personalizzati.
+Utilizza la [Guida di riferimento per i visualizzatori Dynamic Media di Adobe](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources) e l&#39;API [HTML5 Viewer SDK](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) per creare visualizzatori video personalizzati.
 
 **Per visualizzare i report video basati su un visualizzatore video creato con il visualizzatore Dynamic Media HTML5 SDK:**
 
@@ -534,7 +545,7 @@ Utilizza la [Guida di riferimento per i visualizzatori Dynamic Media di Adobe](h
 
    L&#39;oggetto appMeasurementBridge ha una funzione di tracciamento incorporata. Tuttavia, puoi fornire il tuo per supportare più sistemi di tracciamento o altre funzionalità.
 
-<!--    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/it_IT/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
+<!--    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
 
 
@@ -806,7 +817,7 @@ Vedi anche [Accessibilità in Dynamic Media](/help/assets/accessibility-dm.md).
 
 Dynamic Media converte i file di didascalia in formato JSON (JavaScript Object Notation). Questa conversione ti consente di incorporare il testo JSON in una pagina web come trascrizione nascosta ma completa del video. I motori di ricerca possono quindi scansionare e indicizzare il contenuto per rendere i video più facilmente individuabili e fornire ai clienti ulteriori dettagli sul contenuto video.
 
-Per ulteriori informazioni sull&#39;utilizzo della funzione JSON in un URL, vedere [Fornire contenuto statico (non immagine)](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api).
+Per ulteriori informazioni sull&#39;utilizzo della funzione JSON in un URL, vedere [Fornire contenuto statico (non immagine)](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api).
 
 **Per aggiungere sottotitoli codificati a un video:**
 
@@ -865,7 +876,7 @@ Per semplificare la visualizzazione e la navigazione dei video lunghi, aggiungi 
 
 Se lo desideri, puoi creare un visualizzatore video personalizzato con i capitoli e aggiungerlo al tuo marchio, invece di utilizzare un predefinito visualizzatore video. Per istruzioni sulla creazione di un visualizzatore HTML5 personalizzato con navigazione dei capitoli, nell&#39;API SDK del visualizzatore Adobe HTML5, fare riferimento all&#39;intestazione &quot;Personalizzazione del comportamento con i modificatori&quot; nelle classi `s7sdk.video.VideoPlayer` e `s7sdk.video.VideoScrubber`. Consulta la documentazione dell&#39;[API SDK del visualizzatore di HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html).
 
-<!-- If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading "Customizing Behavior Using Modifiers" under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/it_IT/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
+<!-- If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading "Customizing Behavior Using Modifiers" under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
 Per creare un elenco di capitoli per il video è necessario seguire le stesse procedure utilizzate per creare i sottotitoli. In altre parole, si crea un file WebVTT. Si noti, tuttavia, che questo file deve essere separato da qualsiasi file di sottotitoli WebVTT che si sta utilizzando anche; non è possibile combinare sottotitoli e capitoli in un unico file WebVTT.
 
@@ -970,15 +981,15 @@ Questi passaggi si applicano solo a Dynamic Media in esecuzione in modalità &qu
 
    * Per utilizzare un fotogramma del video come nuova miniatura:
 
-      * Sulla barra degli strumenti, selezionare **[!UICONTROL Seleziona fotogramma da video]**.
-      * Selezionare il pulsante Riproduci, quindi selezionare il pulsante Pausa sul fotogramma che si desidera catturare come nuova miniatura del video.
+     * Sulla barra degli strumenti, selezionare **[!UICONTROL Seleziona fotogramma da video]**.
+     * Selezionare il pulsante Riproduci, quindi selezionare il pulsante Pausa sul fotogramma che si desidera catturare come nuova miniatura del video.
 
    * Per utilizzare una risorsa immagine come nuova miniatura:
 
-      * Sulla barra degli strumenti, selezionare **[!UICONTROL Seleziona miniatura da Assets]**.
-      * Seleziona **[!UICONTROL Seleziona miniatura]**.
-      * Passa a una risorsa immagine caricata e pubblicata in precedenza che desideri utilizzare. La risorsa viene ridimensionata automaticamente in modo da fungere da immagine miniatura per il video.
-      * Seleziona la risorsa immagine, quindi seleziona **[!UICONTROL Seleziona]**.
+     * Sulla barra degli strumenti, selezionare **[!UICONTROL Seleziona miniatura da Assets]**.
+     * Seleziona **[!UICONTROL Seleziona miniatura]**.
+     * Passa a una risorsa immagine caricata e pubblicata in precedenza che desideri utilizzare. La risorsa viene ridimensionata automaticamente in modo da fungere da immagine miniatura per il video.
+     * Seleziona la risorsa immagine, quindi seleziona **[!UICONTROL Seleziona]**.
 
 1. Nella pagina Modifica miniatura, seleziona **[!UICONTROL Salva modifica]**.
 1. Nella pagina Proprietà del video, nell&#39;angolo superiore destro, seleziona **[!UICONTROL Salva e chiudi]**.
@@ -1113,11 +1124,11 @@ L’API restituisce null in caso di errori. Le eccezioni vengono registrate nei 
 
 * `IllegalArgumentException` viene registrato per uno dei seguenti elementi:
 
-   * Il parametro `resource` passato è nullo.
-   * Il parametro `resource` passato non è un video.
-   * Il parametro `manifestType` passato è nullo.
-   * Il parametro `onlyIfPublished` viene passato come true, ma il video non viene pubblicato.
-   * Il video non è stato acquisito utilizzando un set di video adattivi da Dynamic Media.
+  * Il parametro `resource` passato è nullo.
+  * Il parametro `resource` passato non è un video.
+  * Il parametro `manifestType` passato è nullo.
+  * Il parametro `onlyIfPublished` viene passato come true, ma il video non viene pubblicato.
+  * Il video non è stato acquisito utilizzando un set di video adattivi da Dynamic Media.
 
 * `IOException` viene registrato quando si verifica un problema di connessione a Dynamic Media.
 * `UnsupportedOperationException` viene registrato quando un parametro `manifestType` passato è `ManifestType.DASH`, mentre il video non è stato elaborato utilizzando il formato DASH.
@@ -1451,7 +1462,7 @@ When you create an Adobe Support case to enable DASH on your account, multiple c
 
 1. Select **[!UICONTROL Save]**.
 
-1. Now, use the Admin Console to start the [creation of a new support case](https://helpx.adobe.com/it/enterprise/using/support-for-experience-cloud.html).
+1. Now, use the Admin Console to start the [creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 1. To create a support case, follow the instructions while ensuring you provide the following information:
 
     * Primary contact name, email, phone.

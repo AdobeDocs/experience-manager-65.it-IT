@@ -1,6 +1,6 @@
 ---
-title: Come accedere a livello di programmazione al JCR per AEM
-description: Puoi modificare in modo programmatico nodi e proprietà che si trovano all’interno dell’archivio AEM, che fa parte di Adobe Experience Cloud
+title: Come accedere a livello di programmazione a AEM JCR
+description: Puoi modificare programmaticamente nodi e proprietà che si trovano all’interno dell’archivio AEM, che fa parte di Adobe Experience Cloud
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
@@ -9,14 +9,28 @@ exl-id: fe946b9a-b29e-4aa5-b973-e2a652417a55
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,JCR
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: cd14456d-a492-4b5c-8a82-1fbd4460dbd2
+    internal-label: Java Content Repository
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 0%
-
+source-wordcount: '603'
+ht-degree: 2%
 ---
-
-# Come accedere a livello di programmazione al JCR per AEM{#how-to-programmatically-access-the-aem-jcr}
+# Come accedere a livello di programmazione a AEM JCR{#how-to-programmatically-access-the-aem-jcr}
 
 Puoi modificare in modo programmatico i nodi e le proprietà che si trovano all’interno dell’archivio Adobe CQ, che fa parte di Adobe Experience Cloud. Per accedere all’archivio CQ, utilizza l’API Java™ Content Repository (JCR). Puoi utilizzare l’API Java™ JCR per creare, sostituire, aggiornare ed eliminare (CRUD) contenuti che si trovano all’interno dell’archivio Adobe CQ. Per ulteriori informazioni sull&#39;API Java™ JCR, vedi [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
@@ -34,7 +48,7 @@ Puoi modificare in modo programmatico i nodi e le proprietà che si trovano all�
 
 ## Creare un’istanza dell’archivio {#create-a-repository-instance}
 
-Sebbene esistano diversi modi per connettersi a un repository e stabilire una connessione, questo articolo di sviluppo utilizza un metodo statico che appartiene alla classe `org.apache.jackrabbit.commons.JcrUtils`. Il nome del metodo è `getRepository`. Questo metodo accetta un parametro stringa che rappresenta l’URL del server Adobe CQ. Esempio: `http://localhost:4503/crx/server`.
+Sebbene esistano diversi modi per connettersi a un repository e stabilire una connessione, questo articolo di sviluppo utilizza un metodo statico che appartiene alla classe `org.apache.jackrabbit.commons.JcrUtils`. Il nome del metodo è `getRepository`. Questo metodo accetta un parametro stringa che rappresenta l’URL del server Adobe CQ. Ad esempio, `http://localhost:4503/crx/server`.
 
 Il metodo `getRepository` restituisce un&#39;istanza `Repository`, come illustrato nell&#39;esempio di codice seguente.
 
@@ -87,9 +101,9 @@ System.out.println(node.getPath());
 System.out.println(node.getProperty("message").getString());
 ```
 
-## Creare nodi nel repository di Adobe CQ {#create-nodes-in-the-adobe-cq-repository}
+## Creare nodi nell’archivio Adobe CQ {#create-nodes-in-the-adobe-cq-repository}
 
-Il codice Java™ seguente rappresenta una classe Java™ che si connette ad Adobe CQ, crea un&#39;istanza `Session` e aggiunge nuovi nodi. A un nodo viene assegnato un valore di dati, quindi il valore del nodo e il relativo percorso vengono scritti nella console. Al termine della sessione, assicurati di disconnettersi.
+Il seguente esempio di codice Java™ rappresenta una classe Java™ che si connette ad Adobe CQ, crea un&#39;istanza `Session` e aggiunge nuovi nodi. A un nodo viene assegnato un valore di dati, quindi il valore del nodo e il relativo percorso vengono scritti nella console. Al termine della sessione, assicurati di disconnettersi.
 
 ```java
 /*
@@ -141,6 +155,6 @@ try {
 }
 ```
 
-Dopo aver eseguito l&#39;esempio di codice completo e aver creato i nodi, è possibile visualizzare i nuovi nodi in **[!UICONTROL CRXDE Liti]**, come illustrato nella figura seguente.
+Dopo aver eseguito l&#39;esempio di codice completo e aver creato i nodi, è possibile visualizzare i nuovi nodi in **[!UICONTROL CRXDE Lite]**, come illustrato nella figura seguente.
 
 ![chlimage_1-68](assets/chlimage_1-68a.png)

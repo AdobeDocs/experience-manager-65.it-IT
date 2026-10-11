@@ -8,13 +8,24 @@ feature: PDF Generator
 exl-id: 1a6640cc-22ef-41d5-a0c6-7a2c2dabcef1
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '6195'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: b26425d0-6fde-5e02-bfd6-e560e2fa86c9
+    internal-label: PDF Generator
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '6281'
+ht-degree: 97%
 ---
-
 # Configurare le impostazioni tipo di file {#configuring-file-type-settings}
 
 >[!NOTE]
@@ -52,41 +63,41 @@ Crea o modifica un’impostazione del tipo di file per specificare il modo in cu
 
 1. Compila le informazioni richieste nelle sezioni seguenti:
 
-[Importazione ed esportazione dei file di configurazione di PDF Generator](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
+   [Importazione ed esportazione dei file di configurazione di PDF Generator](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
 
-[Impostazioni di esportazione Adobe PDF (solo Windows)](#adobe-pdf-export-settings-windows-only)
+   [Impostazioni di esportazione Adobe PDF (solo Windows)](#adobe-pdf-export-settings-windows-only)
 
-[Impostazioni da HTML a PDF](#html-to-pdf-settings)
+   [Impostazioni da HTML a PDF](#html-to-pdf-settings)
 
-[Impostazioni di video Flash su PDF](#flash-videos-to-pdf-settings)
+   [Impostazioni di video Flash su PDF](#flash-videos-to-pdf-settings)
 
-[Impostazioni da XPS a PDF](#xps-to-pdf-settings)
+   [Impostazioni da XPS a PDF](#xps-to-pdf-settings)
 
-[Impostazioni di PDF Optimizer](/help/forms/using/admin-help/configuring-file-type-settings.md)
+   [Impostazioni di PDF Optimizer](/help/forms/using/admin-help/configuring-file-type-settings.md)
 
-[Impostazioni di Microsoft Excel (solo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-excel-settings-windows-only)
+   [Impostazioni di Microsoft Excel (solo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-excel-settings-windows-only)
 
-[Impostazioni di Microsoft PowerPoint (solo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-powerpoint-settings-windows-only)
+   [Impostazioni di Microsoft PowerPoint (solo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-powerpoint-settings-windows-only)
 
-[Impostazioni progetto Microsoft (solo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-project-settings-windows-only)
+   [Impostazioni progetto Microsoft (solo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-project-settings-windows-only)
 
-[Impostazioni di Microsoft Word (solo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-word-settings-windows-only)
+   [Impostazioni di Microsoft Word (solo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-word-settings-windows-only)
 
-[Impostazioni di Microsoft Visio (solo Windows)](#visio)
+   [Impostazioni di Microsoft Visio (solo Windows)](#visio)
 
-[Impostazioni di Microsoft Publisher (solo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-publisher-settings-windows-only)
+   [Impostazioni di Microsoft Publisher (solo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-publisher-settings-windows-only)
 
-[Impostazioni AutoCAD (solo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#autocad-settings-windows-only)
+   [Impostazioni AutoCAD (solo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#autocad-settings-windows-only)
 
-[Impostazioni di OpenOffice](/help/forms/using/admin-help/configuring-file-type-settings.md#openoffice-settings)
+   [Impostazioni di OpenOffice](/help/forms/using/admin-help/configuring-file-type-settings.md#openoffice-settings)
 
-[Impostazioni di altre applicazioni (solo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#other-applications-settings-windows-only)
+   [Impostazioni di altre applicazioni (solo Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#other-applications-settings-windows-only)
 
    Per passare a un’altra sezione, fai clic sul relativo collegamento nella pagina web oppure utilizza i pulsanti **[!UICONTROL Successivo]** o **[!UICONTROL Precedente]**.
 
 1. Dopo aver completato tutte le sezioni, fai clic su **[!UICONTROL Salva]** o **[!UICONTROL Salva con nome]** e specifica un nome per l’impostazione
 
-È possibile personalizzare il supporto per vari tipi di file. Consulta “[Aggiunta di supporto per formati aggiuntivi di file nativi](https://help.adobe.com/it_IT/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html)” in [Programmazione con AEM Forms](https://www.adobe.com/go/learn_lc_programming_11).
+È possibile personalizzare il supporto per vari tipi di file. Consulta “[Aggiunta di supporto per formati aggiuntivi di file nativi](https://help.adobe.com/en_US/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html)” in [Programmazione con AEM Forms](https://www.adobe.com/go/learn_lc_programming_11).
 
 ## Modificare le impostazioni predefinite {#change-the-default-settings}
 
@@ -317,7 +328,7 @@ Mantieni sovrastampa: fonde il colore della grafica trasparente con il colore di
 
 Nella tabella seguente sono illustrati i tipi di stampanti più comuni e la relativa risoluzione misurata in dpi, la rigatura predefinita dello schermo misurata in linee per pollice (lpi) e una risoluzione di ricampionamento per le immagini misurata in pixel per pollice (ppi). Se ad esempio stampi su una stampante laser a 600 dpi, immetti 170 per la risoluzione con cui ricampionare le immagini.
 
-**Immagini** seleziona Immagini per specificare le opzioni di compressione e ricampionamento per le immagini a colori, in scala di grigi e monocromatiche. Puoi sperimentare queste opzioni per trovare un giusto equilibrio tra le dimensioni del file e la qualità dell’immagine.L’impostazione della risoluzione per le immagini a colori e in scala di grigi deve essere da 1,5 a 2 volte la rigatura della retinatura a linee in corrispondenza della quale verrà stampato il file. La risoluzione per le immagini monocromatiche deve essere la stessa del dispositivo di output, ma il salvataggio di un’immagine monocromatica con una risoluzione superiore a 1500 dpi aumenta le dimensioni del file senza migliorare in modo significativo la qualità dell’immagine. Le immagini che verranno ingrandite, ad esempio le mappe, potrebbero richiedere risoluzioni più elevate.
+**Immagini** seleziona Immagini per specificare le opzioni di compressione e ricampionamento per le immagini a colori, in scala di grigi e monocromatiche. È possibile sperimentare queste opzioni per trovare un giusto equilibrio tra le dimensioni del file e la qualità dell&#39;immagine.L&#39;impostazione della risoluzione per le immagini a colori e in scala di grigi deve essere da 1,5 a 2 volte superiore alla risoluzione dello schermo a linee in corrispondenza della quale verrà stampato il file. La risoluzione per le immagini monocromatiche deve essere la stessa del dispositivo di output, ma il salvataggio di un’immagine monocromatica con una risoluzione superiore a 1500 dpi aumenta le dimensioni del file senza migliorare in modo significativo la qualità dell’immagine. Le immagini che verranno ingrandite, ad esempio le mappe, potrebbero richiedere risoluzioni più elevate.
 
 >[!NOTE]
 >
@@ -414,9 +425,9 @@ Queste opzioni determinano la modalità di conversione dei file di Microsoft Exc
 
 **Prova OpenOffice come convertitore di fallback**: quando questa opzione è selezionata e una conversione con Microsoft Excel non riesce o raggiunge il limite di timeout specificato, PDF Generator tenta la conversione utilizzando OpenOffice. Se la conversione tramite OpenOffice non riesce o raggiunge il limite di timeout specificato, nel file di log viene riportata un’eccezione.
 
-**Estensioni del nome file**: specifica le estensioni dei nomi dei file per i tipi di file, separate da virgole, che sono accettate per questa applicazione. Il valore predefinito è `xls,xlsx`. Non includere un punto prima o uno spazio tra le estensioni.
+**Estensioni del nome file**: specifica le estensioni del nome file per i tipi file, separati da virgole, accettati per l’applicazione. Il valore predefinito è `xls,xlsx`. Non includere un punto prima o uno spazio tra le estensioni.
 
-**Crea file conforme a PDF/A-1a**: impone l’utilizzo dell’impostazione di Adobe PDF PDF/A-1b:2005 RGB.
+**Crea file conforme a PDF/A-1a**: impone l&#39;utilizzo dell&#39;impostazione PDF/A-1b:2005 RGB Adobe PDF.
 
 **Aggiungi segnalibri ad Adobe PDF**: converte i nomi dei fogli di lavoro di Excel in segnalibri. Questa opzione è selezionata per impostazione predefinita.
 
@@ -470,7 +481,7 @@ Queste opzioni determinano la modalità di conversione dei file di Microsoft Pow
 
 **[!UICONTROL Converti diapositive nascoste in pagine PDF]**: converte le diapositive nascoste.
 
-**[!UICONTROL Crea file conforme a PDF/A-1a]**: impone l’utilizzo dell’impostazione di Adobe PDF PDF/A-1b:2005 RGB. Alcune funzionalità di PowerPoint non vengono convertite quando generi un file PDF. Se una transizione di PowerPoint non ha un’equivalente in Acrobat, viene sostituita una transizione simile. Se più effetti di animazione si trovano nella stessa diapositiva, viene utilizzato un unico effetto. Le transizioni di pagina e i punti elenco fly-in vengono convertiti.
+**[!UICONTROL Crea file conforme a PDF/A-1a]**: impone l&#39;utilizzo dell&#39;impostazione PDF/A-1b:2005 RGB Adobe PDF. Alcune funzionalità di PowerPoint non vengono convertite quando generi un file PDF. Se una transizione di PowerPoint non ha un’equivalente in Acrobat, viene sostituita una transizione simile. Se più effetti di animazione si trovano nella stessa diapositiva, viene utilizzato un unico effetto. Le transizioni di pagina e i punti elenco fly-in vengono convertiti.
 
 ## Impostazioni progetto Microsoft (solo Windows) {#microsoft-project-settings-windows-only}
 
@@ -478,9 +489,9 @@ Queste opzioni determinano la modalità di conversione dei file di progetto di M
 
 1. **[!UICONTROL Estensioni nome file:]** specifica le estensioni del nome file per i tipi di file, separati da virgole, accettati per l’applicazione. L’impostazione predefinita è `mpp`. Non includere un punto prima o uno spazio tra le estensioni.
 
-1. **[!UICONTROL Converti informazioni documento]**: aggiunge informazioni sul documento dalla finestra di dialogo Proprietà del file di origine, inclusi titolo, oggetto, autore, parole chiave, manager, azienda, categoria e commenti. Questa opzione è selezionata per impostazione predefinita.
+1. **[!UICONTROL Converti informazioni documento]**: aggiunge informazioni sul documento dalla finestra di dialogo Proprietà del file di origine, inclusi titolo, oggetto, autore, parole chiave, gestore, società, categoria e commenti. Questa opzione è selezionata per impostazione predefinita.
 1. **[!UICONTROL Allega file di origine ad Adobe PDF]**: aggiunge il file di origine al file PDF come allegato.
-1. **[!UICONTROL Crea file conforme a PDF/A-1a]**: forza l’utilizzo dell’impostazione PDF/A-1b:2005 RGB Adobe PDF.
+1. **[!UICONTROL Crea file conforme a PDF/A-1a]**: impone l&#39;utilizzo dell&#39;impostazione PDF/A-1b:2005 RGB Adobe PDF.
 1. **[!UICONTROL Esegui automaticamente macro]**: esegue le macro nel documento del progetto Microsoft (ad esempio una macro che inserisce l’ora corrente) prima di convertire il documento.
 
 ## Impostazioni di Microsoft Word (solo Windows) {#microsoft-word-settings-windows-only}
@@ -489,9 +500,9 @@ Queste opzioni determinano la modalità di conversione dei file di Microsoft Wor
 
 **[!UICONTROL Prova OpenOffice come convertitore fallback]**: quando selezioni questa opzione e una conversione con Microsoft Word non riesce o raggiunge il limite di timeout specificato, PDF Generator tenta la conversione utilizzando OpenOffice. Se la conversione tramite OpenOffice non riesce o raggiunge il limite di timeout specificato, nel file di log viene riportata un’eccezione.
 
-**[!UICONTROL Estensioni nome file]**: specifica le estensioni del nome file per i tipi di file, separati da virgole, accettati per l’applicazione. L’impostazione predefinita è `doc,docx,rtf,txt`. Non includere un punto prima o uno spazio tra le estensioni.
+**[!UICONTROL Estensioni del nome file]**: specifica le estensioni del nome file per i tipi file, separati da virgole, accettati per l’applicazione. Il valore predefinito è `doc,docx,rtf,txt`. Non includere un punto prima o uno spazio tra le estensioni.
 
-**[!UICONTROL Converti informazioni documento]**: aggiunge informazioni sul documento dalla finestra di dialogo Proprietà del file di origine, inclusi titolo, oggetto, autore, parole chiave, manager, azienda, categoria e commenti. Questa opzione è selezionata per impostazione predefinita.
+**[!UICONTROL Converti informazioni documento]**: aggiunge informazioni sul documento dalla finestra di dialogo Proprietà del file di origine, inclusi titolo, oggetto, autore, parole chiave, gestore, società, categoria e commenti. Questa opzione è selezionata per impostazione predefinita.
 
 **[!UICONTROL Aggiungi segnalibri ad Adobe PDF]**: converte le intestazioni in segnalibri. Questa opzione è selezionata per impostazione predefinita.
 
@@ -501,7 +512,7 @@ Queste opzioni determinano la modalità di conversione dei file di Microsoft Wor
 
 **[!UICONTROL Abilita accessibilità e ridisposizione con tag Adobe PDF]**: incorpora i tag nel file PDF. Questa opzione è selezionata per impostazione predefinita.
 
-**[!UICONTROL Crea file conforme a PDF/A-1a]**: se selezionata, forza l’utilizzo dell’impostazione PDF/A-1b:2005 RGB Adobe PDF.
+**[!UICONTROL Crea file conforme a PDF/A-1a]**: se selezionata, forza l&#39;utilizzo dell&#39;impostazione PDF/A-1b:2005 RGB Adobe PDF.
 
 **[!UICONTROL Esegui automaticamente macro]**: esegue tutte le macro nel documento Word (ad esempio una macro che inserisce l’ora corrente) prima di convertire il documento.
 
@@ -543,7 +554,7 @@ Se un nome di stile di Microsoft Word include una virgola (,) o un segno di ugua
 
 **Apri riquadro livelli quando visualizzato in Adobe Acrobat**: se i livelli di Visio non vengono appiattiti, apre una finestra in cui puoi specificare i livelli che vengono conservati nel file PDF quando vengono aperti con Acrobat. Questa opzione è selezionata per impostazione predefinita.
 
-**Crea file conforme a PDF/A-1b**: forza l’utilizzo dell’impostazione di Adobe PDF PDF/A-1b:2005 (RGB).
+**Crea file conforme a PDF/A-1b**: impone l&#39;utilizzo dell&#39;impostazione di Adobe PDF PDF/A-1b:2005 (RGB).
 
 **Converti commenti in commenti Adobe PDF**: converte le note di Visio in commenti PDF.
 
@@ -551,15 +562,15 @@ Se un nome di stile di Microsoft Word include una virgola (,) o un segno di ugua
 
 Queste opzioni determinano la modalità di conversione dei file di Microsoft Publisher. Per istruzioni sull’accesso a queste opzioni, consulta [Creare o modificare le impostazioni del tipo di file](#create-or-edit-file-type-settings).
 
-**[!UICONTROL Estensioni nome file]**: specifica le estensioni del nome file per i tipi di file, separati da virgole, accettati per l’applicazione. L’impostazione predefinita è `pub`. Non includere un punto prima o uno spazio tra le estensioni.
+**[!UICONTROL Estensioni del nome file]**: specifica le estensioni dei nomi dei file per i tipi di file, separate da virgole, che sono accettate per questa applicazione. Il valore predefinito è `pub`. Non includere un punto prima o uno spazio tra le estensioni.
 
 ## Impostazioni AutoCAD (solo Windows) {#autocad-settings-windows-only}
 
 Queste opzioni determinano la modalità di conversione dei file AutoCAD. Per istruzioni sull’accesso a queste opzioni, consulta [Creare o modificare le impostazioni del tipo di file](/help/forms/using/admin-help/configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
-**[!UICONTROL Estensioni nome file]**: specifica le estensioni del nome file per i tipi di file, separati da virgole, accettati per l’applicazione. L’impostazione predefinita è `dwg`. Non includere un punto prima o uno spazio tra le estensioni.
+**[!UICONTROL Estensioni del nome file]**: specifica le estensioni dei nomi dei file per i tipi di file, separate da virgole, che sono accettate per questa applicazione. Il valore predefinito è `dwg`. Non includere un punto prima o uno spazio tra le estensioni.
 
-**[!UICONTROL Converti informazioni documento]**: aggiunge informazioni sul documento dalla finestra di dialogo Proprietà del file di origine, inclusi titolo, oggetto, autore, parole chiave, manager, azienda, categoria e commenti. Questa opzione è selezionata per impostazione predefinita.
+**[!UICONTROL Converti informazioni documento]**: aggiunge informazioni sul documento dalla finestra di dialogo Proprietà del file di origine, inclusi titolo, oggetto, autore, parole chiave, gestore, società, categoria e commenti. Questa opzione è selezionata per impostazione predefinita.
 
 **[!UICONTROL Aggiungi segnalibri ad Adobe PDF]**: converte le intestazioni in segnalibri.
 
@@ -620,7 +631,7 @@ Puoi inoltre specificare la modalità di invio dei moduli. Le opzioni sono XML, 
 
 ## Altre impostazioni dell’applicazione (solo Windows) {#other-applications-settings-windows-only}
 
-Non puoi modificare le impostazioni per altre applicazioni tramite la console di amministrazione, poiché visualizzano le estensioni dei nomi di file per i tipi di file supportati. Per istruzioni sull’accesso a queste impostazioni, consulta [Creare o modificare le impostazioni del tipo di file](https://help.adobe.com/it_IT/AEMForms/6.1/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7e42.2.html).
+Non puoi modificare le impostazioni per altre applicazioni tramite la console di amministrazione, poiché visualizzano le estensioni dei nomi di file per i tipi di file supportati. Per istruzioni sull’accesso a queste impostazioni, consulta [Creare o modificare le impostazioni del tipo di file](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7e42.2.html).
 
 * Corel WordPerfect: `wpd`
 * Adobe PageMaker: `pmd, pm6, p65, pm`

@@ -9,27 +9,47 @@ exl-id: 46de0101-9607-4429-84c3-7c1f34d2da27
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 0%
-
+source-wordcount: '898'
+ht-degree: 1%
 ---
-
 # Nuovo servizio di rendering e invio{#new-render-and-submit-service}
 
 ## Introduzione {#introduction}
 
 In Workbench, quando si definisce un&#39;operazione `AssignTask`, specificare un modulo specifico (XDP o PDF). Inoltre, specifica un set di servizi di rendering e invio tramite il profilo di azione.
 
-È possibile eseguire il rendering di un XDP come modulo PDF o modulo HTML. Le nuove funzionalità includono la possibilità di:
+È possibile eseguire il rendering di un XDP come modulo PDF o HTML. Le nuove funzionalità includono la possibilità di:
 
 * Rendering e invio di un modulo XDP come HTML
 * Eseguire il rendering e inviare un modulo XDP come PDF su desktop e come HTML su dispositivi mobili (ad esempio, un iPad)
 
 ### Nuovo servizio HTML Forms {#new-html-forms-service}
 
-Il nuovo servizio HTML Forms utilizza la nuova funzione di Forms per supportare il rendering del modulo XDP come HTML. Il nuovo servizio HTML Forms espone i seguenti metodi:
+Il nuovo servizio Forms di HTML utilizza la nuova funzione di Forms per supportare il rendering del modulo XDP come HTML. Il nuovo servizio HTML Forms espone i seguenti metodi:
 
 ```java
 /*
@@ -56,9 +76,9 @@ public Map<String, Object> renderHTMLForm (TaskContext taskContext, String profi
 
 Ulteriori informazioni sui profili dei moduli mobili sono disponibili all&#39;indirizzo [Creazione di un profilo personalizzato](/help/forms/using/custom-profile.md).
 
-## Nuovi processi di rendering e invio di moduli HTML {#new-html-form-render-amp-submit-processes}
+## Nuovi processi di rendering e invio di HTML Form {#new-html-form-render-amp-submit-processes}
 
-Per ogni operazione &#39;AssignTask&#39;, specificare un processo di rendering e un processo di invio con il modulo. Questi processi vengono richiamati dalle API TaskManager `renderForm` e `submitForm` per consentire la gestione personalizzata. Semantica di questi processi per il nuovo modulo HTML:
+Per ogni operazione &#39;AssignTask&#39;, specificare un processo di rendering e un processo di invio con il modulo. Questi processi vengono richiamati dalle API TaskManager `renderForm` e `submitForm` per consentire la gestione personalizzata. Semantica di questi processi per il nuovo HTML Form:
 
 ### Rendering di un nuovo modulo HTML {#render-a-new-html-form}
 
@@ -90,7 +110,7 @@ Il processo imposta `outputDocument` su `inputDocument` recuperato da `taskConte
 
 ## Processi predefiniti di rendering o invio e profili di azione {#default-render-or-submit-processes-and-action-profiles}
 
-I servizi predefiniti di rendering e invio consentono di eseguire il rendering dei PDF su un desktop e di HTML su dispositivi mobili (iPad).
+I servizi predefiniti di rendering e invio consentono il supporto per il rendering di PDF su un desktop e di HTML su dispositivi mobili (iPad).
 
 ### Modulo di rendering predefinito {#default-render-form}
 
@@ -104,9 +124,9 @@ Questo processo invia senza problemi un modulo XDP su più piattaforme. Recupera
 
 ![modulo-invio-predefinito](assets/default-submit-form.png)
 
-## Passare dal rendering di moduli mobili da PDF a HTML {#switch-the-rendering-of-mobile-forms-from-pdf-to-html}
+## Passare dal rendering dei moduli mobili da PDF a HTML {#switch-the-rendering-of-mobile-forms-from-pdf-to-html}
 
-I browser stanno gradualmente ritirando il supporto per i plug-in basati su NPAPI, inclusi i plug-in per Adobe Acrobat e Adobe Acrobat Reader. Per cambiare il rendering dei moduli mobili da PDF a HTML, procedi come segue:
+I browser stanno gradualmente ritirando il supporto per i plug-in basati su NPAPI, inclusi i plug-in per Adobe Acrobat e Adobe Acrobat Reader. Per cambiare il rendering dei moduli mobili da PDF a HTML, segui la procedura riportata di seguito:
 
 1. Accedi a Workbench come utente valido.
 1. Selezionare **File** > **Ottieni applicazioni**.
@@ -118,7 +138,7 @@ I browser stanno gradualmente ritirando il supporto per i plug-in basati su NPAP
 1. Apri il punto d&#39;inizio/attività di destinazione, passa alla sezione Presentazione e dati e fai clic su **Gestisci profili azione**.
 
    Viene visualizzata la finestra di dialogo Gestisci profili azione.
-1. Modificare le configurazioni del profilo di rendering predefinito da PDF a HTML e fare clic su **OK**.
+1. Modificare le configurazioni predefinite del profilo di rendering da PDF a HTML e fare clic su **OK**.
 1. Archivia il processo.
 1. Ripeti i passaggi per modificare il rendering per altri processi.
 1. Distribuire l&#39;applicazione pertinente ai processi modificati.
@@ -146,19 +166,19 @@ Per XDP Forms:
 
 * Predefinito (rendering/invio con i nuovi processi di rendering/invio predefiniti)
 
-![gen_question_b_20](assets/gen_question_b_20.png) **Operazioni che devono essere eseguite dal designer del processo per consentire il rendering del modulo in HTML su un dispositivo e in PDF su un desktop?**
+![gen_question_b_20](assets/gen_question_b_20.png) **Cosa deve fare la finestra di progettazione per consentire il rendering del modulo in HTML su un dispositivo e in PDF su un desktop?**
 
 Niente. Il profilo di azione predefinito viene scelto automaticamente e viene gestita automaticamente anche la modalità di rendering.
 
-![gen_question_b_20](assets/gen_question_b_20.png) **Cosa è necessario fare per abilitare il rendering del modulo in HTML su un desktop?**
+![gen_question_b_20](assets/gen_question_b_20.png) **Come è necessario eseguire il rendering del modulo in HTML su un desktop?**
 
-L’utente deve selezionare il pulsante di opzione HTML per il profilo predefinito.
+L’utente deve selezionare il pulsante di scelta HTML per il profilo predefinito.
 
 ![gen_question_b_20](assets/gen_question_b_20.png) **L&#39;aggiornamento influirà sulla modifica del comportamento predefinito del profilo di azione?**
 
 Sì, poiché i precedenti servizi di rendering e invio associati al profilo di azione predefinito erano diversi, vengono trattati come una personalizzazione dei moduli esistenti. Facendo clic su **Ripristina impostazioni predefinite**, vengono impostati i servizi predefiniti di rendering e invio.
 
-Se hai modificato i servizi esistenti di Rendering o Invia modulo PDF o hai creato servizi personalizzati (ad esempio, personalizzato1) e ora desideri utilizzare la stessa funzionalità per il rendering HTML. È necessario replicare il nuovo servizio di rendering o invio (ad esempio, personalizzato2) e applicare personalizzazioni simili a tali servizi. Ora, modifica il profilo dell’azione per XDP in modo che inizi a utilizzare i servizi custom2, invece di custom1 per il rendering o l’invio.
+Se è stato modificato il servizio Rendering o Invio di PDF Form esistente o sono stati creati servizi personalizzati (ad esempio custom1), si desidera utilizzare la stessa funzionalità per il rendering di HTML. È necessario replicare il nuovo servizio di rendering o invio (ad esempio, personalizzato2) e applicare personalizzazioni simili a tali servizi. Ora, modifica il profilo dell’azione per XDP in modo che inizi a utilizzare i servizi custom2, invece di custom1 per il rendering o l’invio.
 
-Cosa deve fare il progettista per consentire il rendering del modulo in HTML su un dispositivo e in PDF su un desktop?
-Cosa deve fare il progettista per consentire il rendering del modulo in HTML su un dispositivo e in PDF su un desktop?
+Cosa deve fare il designer del processo per consentire il rendering del modulo in HTML su un dispositivo e in PDF su un desktop?
+Cosa deve fare il designer del processo per consentire il rendering del modulo in HTML su un dispositivo e in PDF su un desktop?

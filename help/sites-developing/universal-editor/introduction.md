@@ -4,13 +4,19 @@ description: Scopri la flessibilità dell’editor universale e come può aiutar
 feature: Developing
 role: Developer
 exl-id: 7bdf1fcc-02b9-40bc-8605-e6508a84d249
-source-git-commit: 28e44586c6a8596037a44fa10d21b3fdcdea1606
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1361'
 ht-degree: 96%
-
 ---
-
 
 # L’editor universale {#universal-editor}
 
@@ -40,15 +46,15 @@ L’editor universale è un servizio che funziona insieme ad AEM per creare cont
 L’editor universale è supportato da:
 
 * AEM 6.5
-   * Sono supportati sia l’hosting locale che AMS*.
+  * Sono supportati sia l’hosting locale che AMS*.
 * [AEM 6.5 LTS](https://experienceleague.adobe.com/it/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction)
-   * Sono supportati sia l’hosting locale che AMS*.
+  * Sono supportati sia l’hosting locale che AMS*.
 * [AEM as a Cloud Service](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)
 
 Questo documento è incentrato sul supporto di AEM 6.5 dell’editor universale. Per utilizzare l’editor universale con AEM 6.5, è necessario avere:
 
 * AEM 6.5 con service pack 23 o successivo
-   * I Service Pack 21 e 22 sono supportati anche da [un Feature Pack.](https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html?package=/content/software-distribution/it/details.html/content/dam/aem/public/cq-6.5.21-universal-editor-1.0.0.zip).
+  * I Service Pack 21 e 22 sono supportati anche da [un Feature Pack.](https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html?package=/content/software-distribution/it/details.html/content/dam/aem/public/cq-6.5.21-universal-editor-1.0.0.zip).
 * Dispatcher configurato correttamente
 
 >[!NOTE]
@@ -129,11 +135,11 @@ Per definire le mappature sono disponibili le seguenti variabili in `Universal E
 Esempi di mappature:
 
 * Apri tutte le pagine in `/content/foo` in AEM Author:
-   * `/content/foo:${author}${path}.html?login-token=${token}`
-   * Questo comporta l’apertura di `https://localhost:4502/content/foo/x.html?login-token=<token>`
+  * `/content/foo:${author}${path}.html?login-token=${token}`
+  * Questo comporta l’apertura di `https://localhost:4502/content/foo/x.html?login-token=<token>`
 * Apri tutte le pagine in `/content/bar` su un server NextJS remoto, fornendo come informazioni tutte le variabili
-   * `/content/bar:nextjs.server${path}?env=${env}&author=https://${author}&publish=https://${publish}&login-token=${token}`
-   * Questo comporta l’apertura di `https://nextjs.server/content/bar/x?env=prod&author=https://localhost:4502&publish=https://localhost:4503&login-token=<token>`
+  * `/content/bar:nextjs.server${path}?env=${env}&author=https://${author}&publish=https://${publish}&login-token=${token}`
+  * Questo comporta l’apertura di `https://nextjs.server/content/bar/x?env=prod&author=https://localhost:4502&publish=https://localhost:4503&login-token=<token>`
 
 ### Configurare il servizio editor universale {#set-up-ue}
 
@@ -148,7 +154,7 @@ Con AEM aggiornato e configurato, puoi impostare un servizio editor universale l
 
 ### Aggiornare Dispatcher {#update-dispatcher}
 
-Se AEM è configurato ed è in esecuzione un servizio editor universale locale, sarà necessario consentire un proxy inverso per il nuovo servizio [&#x200B; in Dispatcher.](https://experienceleague.adobe.com/it/docs/experience-manager-dispatcher/using/dispatcher)
+Se AEM è configurato ed è in esecuzione un servizio editor universale locale, sarà necessario consentire un proxy inverso per il nuovo servizio [ in Dispatcher.](https://experienceleague.adobe.com/it/docs/experience-manager-dispatcher/using/dispatcher)
 
 1. Modifica il file vhost dell’istanza di authoring in modo da includere un proxy inverso.
 

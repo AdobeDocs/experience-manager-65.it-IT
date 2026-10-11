@@ -9,18 +9,34 @@ feature: Adaptive Forms
 exl-id: 935b734c-6fb1-45e8-8515-e98c8b85286c
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3155'
+source-wordcount: '3202'
 ht-degree: 53%
-
 ---
-
 # Introduzione all’authoring di moduli adattivi {#introduction-to-authoring-adaptive-forms}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring.html) |
 | AEM 6.5 | Questo articolo |
 
 
@@ -85,12 +101,12 @@ La barra laterale comprende i seguenti browser:
 * **Browser contenuti**
 Nel browser del contenuto puoi visualizzare
 
-   * **Oggetti modulo**
-Mostra la gerarchia degli oggetti del modulo. L’autore può passare a un componente specifico del modulo toccando quell’elemento nella struttura degli oggetti modulo. L’autore può cercare gli oggetti e riorganizzarli da questa struttura.
+  * **Oggetti modulo**
+    Mostra la gerarchia degli oggetti del modulo. L’autore può passare a un componente specifico del modulo toccando quell’elemento nella struttura degli oggetti modulo. L’autore può cercare gli oggetti e riorganizzarli da questa struttura.
 
-   * **Oggetti modello dati**
-Consente di visualizzare la gerarchia del modello di modulo.
-Consente di trascinare e rilasciare gli elementi del modello di modulo sul modulo adattivo. Gli elementi aggiunti vengono automaticamente convertiti in componenti modulo mantenendo le proprietà originali. Puoi visualizzare gli oggetti modello dati quando il modulo utilizza uno schema XML, uno schema JSON o un modello XDP.
+  * **Oggetti modello dati**
+    Consente di visualizzare la gerarchia del modello di modulo.
+    Consente di trascinare e rilasciare gli elementi del modello di modulo sul modulo adattivo. Gli elementi aggiunti vengono automaticamente convertiti in componenti modulo mantenendo le proprietà originali. È possibile visualizzare gli oggetti modello dati quando il modulo utilizza lo schema XML, lo schema JSON o il modello XDP.
 
 * **Browser proprietà**
 
@@ -154,7 +170,7 @@ Consente di trascinare e rilasciare gli elementi del modello di modulo sul modul
   </tr>
   <tr>
    <td>E-mail</td>
-   <td><p>Aggiunge un campo per acquisire l’indirizzo e-mail. Il componente E-mail, per impostazione predefinita, convalida gli indirizzi e-mail utilizzando la seguente espressione regolare.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_&grave;{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>Aggiunge un campo per acquisire l’indirizzo e-mail. Il componente E-mail, per impostazione predefinita, convalida gli indirizzi e-mail utilizzando la seguente espressione regolare.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>Allegato file</td>
@@ -286,11 +302,11 @@ Di seguito sono riportate alcune best practice e punti chiave da tenere a mente 
 
 * Puoi modificare la proprietà Title di un componente modulo adattivo in linea nell’editor di moduli senza aprire il browser Properties (Proprietà), purché il titolo sia visibile nel modulo. Per eseguire questa operazione:
 
-   1. Selezionare per selezionare un componente con proprietà **[!UICONTROL Title]** e la cui proprietà **[!UICONTROL Hide title]** è disabilitata.
+  1. Selezionare per selezionare un componente con proprietà **[!UICONTROL Title]** e la cui proprietà **[!UICONTROL Hide title]** è disabilitata.
 
-   1. Seleziona ![aem_6_3_edit](assets/aem_6_3_edit.png) per rendere modificabile il titolo.
+  1. Seleziona ![aem_6_3_edit](assets/aem_6_3_edit.png) per rendere modificabile il titolo.
 
-   1. Modifica il titolo e seleziona il tasto Invio o seleziona un punto qualsiasi all’esterno del componente per salvare le modifiche. Selezionare la chiave Esc per ignorare le modifiche.
+  1. Modifica il titolo e seleziona il tasto Invio o seleziona un punto qualsiasi all’esterno del componente per salvare le modifiche. Selezionare la chiave Esc per ignorare le modifiche.
 
 * Alcuni componenti dei moduli adattivi come E-mail e Telefono includono modelli di convalida predefiniti. Tuttavia, è possibile specificare la convalida personalizzata aggiornando il campo **[!UICONTROL Pattern di convalida]** nel pannello a soffietto Patterns nelle proprietà del componente. Per ulteriori informazioni sulle convalide predefinite, consulta le descrizioni dei componenti nella tabella precedente.
 
@@ -303,9 +319,9 @@ Di seguito sono riportate alcune best practice e punti chiave da tenere a mente 
 * Specificare i valori per gli elementi Pulsante di opzione e Casella di controllo nel formato `{value}={text}` nelle proprietà del componente.
 * Per impostazione predefinita, il componente File allegato consente di allegare un solo file. Tuttavia, è possibile configurare le proprietà del componente per supportare più allegati. Inoltre, se un utente allega più file con lo stesso nome file, gli allegati possono causare alcuni problemi. Pertanto, si consiglia di associare un identificatore univoco per ogni allegato inviato al momento dell’invio del modulo. Per eseguire questa operazione:
 
-   1. Sul tuo server AEM Forms, passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console Web]**.
-   1. Trova e seleziona **[!UICONTROL Servizio di configurazione adattivo di Forms]**.
-   1. Nella finestra di dialogo Servizio configurazione Forms adattivo, abilita **[!UICONTROL Rendi univoci i nomi dei file]**. Per impostazione predefinita, è disabilitato.
+  1. Sul tuo server AEM Forms, passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console Web]**.
+  1. Trova e seleziona **[!UICONTROL Servizio di configurazione adattivo di Forms]**.
+  1. Nella finestra di dialogo Servizio configurazione Forms adattivo, abilita **[!UICONTROL Rendi univoci i nomi dei file]**. Per impostazione predefinita, è disabilitato.
 
 * Per consentire agli utenti di allegare un PDF utilizzando il browser Safari, accertarsi che **application/pdf** sia aggiunto alla proprietà Tipi di file supportati del componente File allegato. I moduli adattivi creati con la versione precedente di AEM Forms possono contenere **.pdf** invece di **application/pdf** nella proprietà Tipi di file supportati.
 
@@ -327,15 +343,15 @@ La barra degli strumenti della pagina in alto contiene opzioni che consentono di
 
 * **Modifica**: consente di selezionare altre modalità, ad esempio: **[!UICONTROL Modifica]**, **[!UICONTROL Stile]**, **[!UICONTROL Sviluppatore]** e **[!UICONTROL Progettazione]**.
 
-   * **Modifica**: consente di modificare le proprietà del modulo e dei suoi componenti. Ad esempio, aggiungere un componente, rilasciare un’immagine e specificare campi obbligatori.
-   * **Stile**: consente di definire lo stile dei componenti del modulo. Ad esempio, in modalità stile è possibile selezionare un pannello e specificarne il colore di sfondo.
+  * **Modifica**: consente di modificare le proprietà del modulo e dei suoi componenti. Ad esempio, aggiungere un componente, rilasciare un’immagine e specificare campi obbligatori.
+  * **Stile**: consente di definire lo stile dei componenti del modulo. Ad esempio, in modalità stile è possibile selezionare un pannello e specificarne il colore di sfondo.
 
-   * **Sviluppatore**: consente a uno sviluppatore di:
+  * **Sviluppatore**: consente a uno sviluppatore di:
 
-      * Scoprire di quali moduli sono composti.
-      * Eseguire il debug di ciò che sta accadendo dove e quando, che a sua volta aiuta a risolvere i problemi.
+    * Scoprire di quali moduli sono composti.
+    * Eseguire il debug di ciò che sta accadendo dove e quando, che a sua volta aiuta a risolvere i problemi.
 
-   * **Design**. Consente di abilitare o disabilitare i componenti personalizzati o i componenti predefiniti non elencati nella barra laterale.
+  * **Design**. Consente di abilitare o disabilitare i componenti personalizzati o i componenti predefiniti non elencati nella barra laterale.
 
 * **Anteprima**: consente di visualizzare un’anteprima dell’aspetto del modulo quando viene pubblicato.
 
@@ -388,10 +404,10 @@ La struttura del contenuto contiene in genere i seguenti componenti primari:
 
 * **guideContainer**: radice di un modulo adattivo, contrassegnato come **[!UICONTROL Inizio del modulo adattivo]** nell&#39;interfaccia utente del modulo adattivo. In questo componente puoi specificare:
 
-   * *Layout del modulo adattivo per dispositivi mobili*: definisce l&#39;aspetto del modulo sui dispositivi mobili.
-   * *Pagina di ringraziamento*: definisce la pagina in cui l’utente viene reindirizzato dopo l’invio del modulo.
-   * *Invia azione*: definisce la modalità di elaborazione del modulo sul server dopo l’invio del modulo da parte dell’utente.
-   * *Attribuzione stile*: specifica il percorso del file CSS utilizzato per personalizzare l’aspetto del modulo.
+  * *Layout del modulo adattivo per dispositivi mobili*: definisce l&#39;aspetto del modulo sui dispositivi mobili.
+  * *Pagina di ringraziamento*: definisce la pagina in cui l’utente viene reindirizzato dopo l’invio del modulo.
+  * *Invia azione*: definisce la modalità di elaborazione del modulo sul server dopo l’invio del modulo da parte dell’utente.
+  * *Attribuzione stile*: specifica il percorso del file CSS utilizzato per personalizzare l’aspetto del modulo.
 
 * **rootPanel:** il pannello principale di un modulo adattivo. Può contenere pannelli secondari sotto il nodo elementi. A ogni pannello, incluso il pannello principale, può essere associato un layout. Il layout del pannello determina il layout del modulo. Ad esempio, nel layout Pannello a soffietto, i relativi elementi vengono disposti come passaggi del Pannello a soffietto.
 

@@ -10,7 +10,18 @@ exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1817'
 ht-degree: 1%
@@ -137,7 +148,7 @@ Nella tabella seguente vengono descritte le variabili CQ predefinite fornite per
 
 1. Per mappare le variabili CQ alle proprietà di Adobe Analytics, trascina le proprietà di Adobe Analytics da ContentFinder accanto alla variabile CQ sul componente.
 
-   Per informazioni sull&#39;ottimizzazione delle mappature, vedere la [guida alla misurazione di video in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=it).
+   Per informazioni sull&#39;ottimizzazione delle mappature, vedere la [guida alla misurazione di video in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html).
 
 1. [Aggiungere il framework](/help/sites-administering/adobeanalytics.md) alla pagina.
 1. Per verificare l&#39;installazione in **Modalità anteprima**, riprodurre il video per attivare le chiamate di Adobe Analytics.
@@ -225,7 +236,7 @@ Le chiamate ad Adobe Analytics che utilizzano l&#39;esempio fornito dovrebbero e
 
 ![chlimage_1-128](assets/chlimage_1-128.png)
 
-*Questa è la **prima chiamata**&#x200B;effettuata ad Adobe Analytics contenente i seguenti valori:*
+*Questa è la **prima chiamata**effettuata ad Adobe Analytics contenente i seguenti valori:*
 
 * *prop1 e eVar1 per eventdata.a.media.name,*
 * *props2-4, insieme a eVar2 e eVar3 contenenti contentType (video) e segmento (1:O:1-4)*
@@ -233,7 +244,7 @@ Le chiamate ad Adobe Analytics che utilizzano l&#39;esempio fornito dovrebbero e
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 
-*Questa è la **terza chiamata**&#x200B;effettuata ad Adobe Analytics:*
+*Questa è la **terza chiamata**effettuata ad Adobe Analytics:*
 
 * *prop1 e eVar1 contengono a.media.name;*
 * *evento1 perché è stato visualizzato un segmento*
@@ -272,7 +283,7 @@ eventdata.events.milestoneXX
 
 1. Per mappare le variabili CQ alle proprietà di Adobe Analytics, trascina le proprietà di Adobe Analytics da ContentFinder accanto alla variabile CQ sul componente.
 
-   Per informazioni sull&#39;ottimizzazione delle mappature, vedere la [guida alla misurazione di video in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=it).
+   Per informazioni sull&#39;ottimizzazione delle mappature, vedere la [guida alla misurazione di video in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html).
 
 1. [Aggiungere il framework](/help/sites-administering/adobeanalytics.md) alla pagina.
 1. Per verificare l&#39;installazione in **Modalità anteprima**, riprodurre il video per attivare le chiamate di Adobe Analytics.
@@ -320,7 +331,7 @@ Questo metodo è simile al metodo Milestones, con la differenza che le milestone
 
    ![milestones1](assets/lmilestones1.png)
 
-   *La variabile **pev3**&#x200B;inviata nella chiamata contiene le seguenti informazioni:*
+   *La variabile **pev3**inviata nella chiamata contiene le seguenti informazioni:*
 
    * *Nome* - Nome del file video (*film.avi*)
 
@@ -336,7 +347,7 @@ Questo metodo è simile al metodo Milestones, con la differenza che le milestone
 
 ## Secondi legacy {#legacy-seconds}
 
-Quando si utilizza il metodo **&#x200B; secondi precedenti**, le chiamate di Adobe Analytics vengono attivate ogni N-esimo secondo, dove N è specificato nel campo Offset tracciamento.
+Quando si utilizza il metodo ** secondi precedenti**, le chiamate di Adobe Analytics vengono attivate ogni N-esimo secondo, dove N è specificato nel campo Offset tracciamento.
 
 1. Impostare lo scostamento del brano su un numero qualsiasi di secondi,
 
@@ -381,4 +392,4 @@ Quando si utilizza il metodo **&#x200B; secondi precedenti**, le chiamate di Ado
 
 **Riferimenti utilizzati in questa esercitazione:**
 
-[0] [https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=it](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=it)
+[0] [https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)

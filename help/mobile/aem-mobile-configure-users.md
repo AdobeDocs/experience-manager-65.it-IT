@@ -9,13 +9,17 @@ exl-id: 58b7d1b9-a851-442a-9d02-212cad8abbed
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '521'
 ht-degree: 1%
-
 ---
-
 # Configurare utenti e gruppi di utenti {#configure-your-users-and-user-groups}
 
 {{ue-over-mobile}}
@@ -26,7 +30,7 @@ Questo capitolo descrive i ruoli utente e le modalità di configurazione di uten
 
 ### Autori di contenuti di applicazioni AEM Mobile (gruppo app-author) {#aem-mobile-application-content-authors-app-author-group}
 
-I membri del gruppo di authoring delle app sono responsabili dell’authoring dei contenuti delle app mobili AEM, inclusi pagine, testo, immagini e video.
+I membri del gruppo autore dell’app sono responsabili dell’authoring dei contenuti delle app mobili AEM, tra cui pagine, testo, immagini e video.
 
 #### Configurazione del gruppo - autori-app {#group-configuration-app-authors}
 
@@ -36,17 +40,17 @@ I membri del gruppo di authoring delle app sono responsabili dell’authoring de
 
    Dalla console del gruppo di utenti, seleziona il pulsante &quot;+&quot; per creare un gruppo.
 
-   Imposta l’ID di questo gruppo su &quot;app-authors&quot; per indicare che si tratta di un tipo specifico di gruppo di utenti Author specifico per l’authoring di applicazioni mobili all’interno dell’AEM.
+   Imposta l’ID di questo gruppo su &quot;app-authors&quot; per indicare che si tratta di un tipo specifico di gruppo di utenti Author specifico per l’authoring di applicazioni mobili all’interno di AEM.
 
 1. Aggiungi membro al gruppo: Autori
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
-1. Dopo aver creato il gruppo utenti autori app, puoi aggiungere singoli membri del gruppo a questo nuovo gruppo tramite l&#39;[Admin Console utente](http://localhost:4502/libs/granite/security/content/useradmin.md).
+1. Dopo aver creato il gruppo utenti autori app, è possibile aggiungere singoli membri del gruppo a questo nuovo gruppo tramite l&#39;[Admin Console utente](http://localhost:4502/libs/granite/security/content/useradmin.md).
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
-1. Di seguito è riportata l’aggiunta al gruppo di autori di contenuti dell’AEM:
+1. Di seguito è riportata l’aggiunta al gruppo Autori di contenuti di AEM:
 
    (Lettura) il
 
@@ -63,7 +67,7 @@ I membri del gruppo app-admins possono creare contenuti dell&#39;applicazione co
 
 >[!NOTE]
 >
->Le autorizzazioni determinano la disponibilità di alcune azioni dell’utente nel Centro comandi app AEM.
+>Le autorizzazioni determinano la disponibilità di alcune azioni dell’utente nel Command Center di AEM App.
 >
 >Tieni presente che alcune opzioni non sono disponibili per gli autori di app che sono disponibili per gli amministratori di app.
 
@@ -112,4 +116,4 @@ I membri del gruppo app-admins possono creare contenuti dell&#39;applicazione co
 Per ulteriori informazioni sugli altri due ruoli e responsabilità per la creazione di un’app AEM Mobile On-demand Services, consulta le risorse seguenti:
 
 * [Sviluppo di contenuti AEM per AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
-* [Creazione di contenuti AEM per l’app AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md)
+* [Authoring di contenuti AEM per l’app AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md)

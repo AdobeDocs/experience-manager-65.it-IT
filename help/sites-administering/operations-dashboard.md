@@ -10,13 +10,22 @@ exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '6016'
+source-wordcount: '6022'
 ht-degree: 2%
-
 ---
-
 # Dashboard operazioni {#operations-dashboard}
 
 ## Introduzione {#introduction}
@@ -107,13 +116,13 @@ La creazione di un singolo controllo di integrità prevede due passaggi: l’imp
 
    * **Nome:** `sling:resourceType`
 
-      * **Tipo:** `String`
-      * **Valore:** `granite/operations/components/mbean`
+     * **Tipo:** `String`
+     * **Valore:** `granite/operations/components/mbean`
 
    * **Nome:** `resource`
 
-      * **Tipo:** `String`
-      * **Valore:** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/exampleHealthCheck`
+     * **Tipo:** `String`
+     * **Valore:** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/exampleHealthCheck`
 
    >[!NOTE]
    >
@@ -164,19 +173,19 @@ Il ruolo di una Verifica stato composita è quello di aggregare più verifiche d
 
    * **Nome:** `Composite Health Check`
 
-      * **Tipo:** `nt:unstructured`
+     * **Tipo:** `nt:unstructured`
 
    Con le seguenti proprietà:
 
    * **Nome:** `sling:resourceType`
 
-      * **Tipo:** `String`
-      * **Valore:** `granite/operations/components/mbean`
+     * **Tipo:** `String`
+     * **Valore:** `granite/operations/components/mbean`
 
    * **Nome:** `resource`
 
-      * **Tipo:** `String`
-      * **Valore:** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/diskusage`
+     * **Tipo:** `String`
+     * **Valore:** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/diskusage`
 
    >[!NOTE]
    >
@@ -495,7 +504,7 @@ Nel dashboard operazioni sono disponibili le seguenti attività:
 1. L&#39;attività di manutenzione **Rimozione progetto**, che si trova nel menu **Finestra manutenzione settimanale**, utilizza l&#39;opzione **Aggiungi**.
 1. **Eliminazione delle attività ad hoc** attività di manutenzione, disponibile nel menu **Finestra manutenzione settimanale**, utilizzando l&#39;opzione **Aggiungi**.
 
-La tempistica predefinita per la finestra di manutenzione giornaliera è compresa tra le 2:00 e le 5:00. Le attività configurate per l&#39;esecuzione nella finestra di manutenzione settimanale vengono eseguite tra le ore 1:00 e le ore 2:00 di sabato.
+L&#39;orario predefinito per la finestra di manutenzione giornaliera è dalle 2.00 alle 5.00. Le attività configurate per l’esecuzione nella finestra di manutenzione settimanale vengono eseguite tra le ore 1:00 e le ore 2:00 del sabato.
 
 Puoi anche configurare gli intervalli premendo l’icona ingranaggio su una qualsiasi delle due schede di manutenzione:
 
@@ -660,7 +669,7 @@ Il **Dashboard panoramica sistema** visualizza una panoramica di alto livello de
 
 >[!NOTE]
 >
->Puoi anche [guardare questo video](https://video.tv.adobe.com/v/327265?captions=ita) per un&#39;introduzione alla dashboard di panoramica del sistema.
+>Puoi anche [guardare questo video](https://video.tv.adobe.com/v/21340) per un&#39;introduzione alla dashboard di panoramica del sistema.
 
 ### Come Accedere {#how-to-access}
 
@@ -689,7 +698,7 @@ La tabella seguente descrive tutte le informazioni visualizzate nel dashboard Pa
      <li>un elenco di controlli che si trovano nello stato Critico</li>
      <li>un elenco di assegni in stato Avvertenza</li>
     </ul> </td>
-   <td>Indicato visivamente:<br />
+   <td>A vista:<br />
     <ul>
      <li>un tag rosso per i controlli critici</li>
      <li>un tag arancione per i controlli di avviso</li>

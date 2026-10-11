@@ -1,18 +1,32 @@
 ---
 title: Configurare l’assegnazione tag delle risorse tramite Smart Content Service
-description: Scopri come configurare l'assegnazione tag avanzati e l'assegnazione tag avanzati migliorati in [!DNL Adobe Experience Manager], utilizzando il Servizio di contenuti avanzati.
+description: Scopri come configurare l'assegnazione tag avanzati e l'assegnazione tag avanzati migliorati in [!DNL Adobe Experience Manager] tramite il Servizio di contenuti avanzati.
 role: Admin
 feature: Tagging,Smart Tags
 solution: Experience Manager, Experience Manager Assets
 exl-id: 9caee314-697b-4a7b-b991-10352da17f2c
-source-git-commit: ab9292c491cc9dfcd8f239ba279b1e0ae6d1560f
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 752f9248-f39f-5793-a7dd-5ddafcd403c7
+    internal-label: Tagging
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: f0e3b2ca-813f-4b7a-81df-52339e17ddcf
+    internal-label: Smart Tags
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1089'
-ht-degree: 16%
-
+source-wordcount: '1145'
+ht-degree: 18%
 ---
-
-# Risoluzione dei problemi di smart tag per le credenziali OAuth {#oauth-config}
+# Risoluzione dei problemi di tag avanzati per le credenziali OAuth {#oauth-config}
 
 È necessaria una configurazione di autorizzazione aperta per adottare il consenso all&#39;applicazione [!DNL Adobe Experience Manager] per interagire con Smart Content Services in modo protetto.
 
@@ -27,7 +41,7 @@ Per la configurazione dei servizi OAuth per un nuovo utente, consulta [configura
 
 >[!NOTE]
 >
->Se necessario, puoi inviare un ticket di supporto dopo il [processo di supporto](https://experienceleague.adobe.com/it?lang=it&support-tab=home#support).
+>Se necessario, puoi inviare un ticket di supporto dopo il [processo di supporto](https://experienceleague.adobe.com/?lang=it&support-tab=home#support).
 
 ## Configurazione OAuth per gli utenti AMS esistenti {#oauth-config-new-ams-users}
 
@@ -39,12 +53,12 @@ Una configurazione OAuth richiede i seguenti prerequisiti:
 
 * Crea una nuova integrazione OAuth in [Developer Console](https://developer.adobe.com/console/user/servicesandapis). Utilizza `ClientID`, `ClientSecret`, `OrgID` e altre proprietà nei passaggi seguenti:
 * I seguenti file si trovano in questo percorso `/apps/system/config in crx/de`:
-   * `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
-   * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
+  * `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
+  * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
 
 ### Configurazione OAuth per gli utenti AMS esistenti e On-Prem {#steps-config-oauth-onprem}
 
-I seguenti passaggi possono essere eseguiti dall&#39;amministratore di sistema in **CRXDE**. Il cliente AMS può contattare il rappresentante di Adobe o inviare un ticket di supporto dopo la [procedura di supporto](https://experienceleague.adobe.com/it?lang=it&support-tab=home#support).
+I seguenti passaggi possono essere eseguiti dall&#39;amministratore di sistema in **CRXDE**. Il cliente AMS può contattare il rappresentante Adobe o inviare un ticket di supporto dopo il [processo di supporto](https://experienceleague.adobe.com/?lang=it&support-tab=home#support).
 
 1. Aggiungi o aggiorna le seguenti proprietà in `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`:
 
@@ -52,7 +66,6 @@ I seguenti passaggi possono essere eseguiti dall&#39;amministratore di sistema i
    * `auth.token.provider.orgId="<OrgID>"`
    * `auth.token.provider.default.claims=("\"iss\"\ :\ \"<OrgID>\"")`
    * `auth.token.provider.scope="read_pc.dma_smart_content,\ openid,\ AdobeID,\ additional_info.projectedProductContext"`
-
      `auth.token.validator.type="adobe-ims-similaritysearch"`
    * Aggiorna `auth.token.provider.client.id` con l&#39;ID client della nuova configurazione OAuth.
    * Aggiorna `auth.access.token.request` a `"https://ims-na1.adobelogin.com/ims/token/v3"`
@@ -60,7 +73,7 @@ I seguenti passaggi possono essere eseguiti dall&#39;amministratore di sistema i
 
    >[!IMPORTANT]
    >
-   >Sostituire il punto (.) con il trattino (-) come prefisso di `<randomnumber>`.
+   >Sostituisci punto (.) con il trattino (-) come prefisso di `<randomnumber>`.
 
 1. Eseguire i passaggi seguenti in `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`:
    * Aggiorna la proprietà auth.ims.client.secret con il segreto client dalla nuova integrazione OAuth.
@@ -89,7 +102,7 @@ I risultati della convalida vengono visualizzati nella stessa finestra di dialog
 
 >[!NOTE]
 >
->Se si verifica l&#39;errore `unsupported_grant_type`, provare a installare l&#39;hotfix Granite. Consulta [migrazione da account di servizio (JWT) a credenziali server-to-server OAuth](https://experienceleague.adobe.com/it/docs/experience-cloud-kcs/kbarticles/ka-24660).
+>Se si verifica l&#39;errore `unsupported_grant_type`, provare a installare l&#39;hotfix Granite. Consulta [migrazione da account di servizio (JWT) a credenziali server-to-server OAuth](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-24660).
 
 ## Integrare con Adobe Developer Console {#integrate-adobe-io}
 
@@ -113,7 +126,7 @@ Un certificato pubblico ti consente di autenticare il profilo su Adobe Developer
 
 1. Nell’interfaccia di [!DNL Experience Manager], accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Servizi cloud precedenti]**.
 
-1. Nella pagina Cloud Service, fai clic su **[!UICONTROL Configura ora]** in **[!UICONTROL Tag avanzati di Assets]**.
+1. Nella pagina Servizi cloud, fai clic su **[!UICONTROL Configura ora]** in **[!UICONTROL Tag avanzati di Assets]**.
 
 1. Nella finestra di dialogo **[!UICONTROL Crea configurazione]**, specifica un titolo e un nome per la configurazione di tag avanzati. Fai clic su **[!UICONTROL Crea]**.
 
@@ -121,11 +134,11 @@ Un certificato pubblico ti consente di autenticare il profilo su Adobe Developer
 
    **[!UICONTROL URL servizio]**: `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`
 
-   Ad esempio, `https://smartcontent.adobe.io/apac`. È possibile specificare `na`, `emea` o `apac` come aree in cui è ospitata l&#39;istanza Autore Experience Manager.
+   Ad esempio, `https://smartcontent.adobe.io/apac`. È possibile specificare `na`, `emea` o `apac` come aree in cui è ospitata l&#39;istanza di authoring di Experience Manager.
 
    >[!NOTE]
    >
-   >Se il provisioning di Experience Manager Managed Service è stato eseguito prima del 1° settembre 2022, utilizza il seguente URL del servizio:
+   >Se il provisioning del servizio gestito di Experience Manager è stato eseguito prima del 1° settembre 2022, utilizza il seguente URL del servizio:
    >`https://mc.adobe.io/marketingcloud/smartcontent`
 
    **[!UICONTROL Server autorizzazioni]**: `https://ims-na1.adobelogin.com`
@@ -138,11 +151,11 @@ Un certificato pubblico ti consente di autenticare il profilo su Adobe Developer
 
    >[!NOTE]
    >
-   >L&#39;URL fornito come [!UICONTROL URL servizio] non è accessibile tramite il browser e genera un errore 404. La configurazione funziona correttamente con lo stesso valore del parametro [!UICONTROL URL servizio]. Per informazioni sullo stato generale del servizio e sulla pianificazione della manutenzione, vedere [https://status.adobe.com/it-it](https://status.adobe.com/it-it).
+   >L&#39;URL fornito come [!UICONTROL URL servizio] non è accessibile tramite il browser e genera un errore 404. La configurazione funziona correttamente con lo stesso valore del parametro [!UICONTROL URL servizio]. Per informazioni sullo stato generale del servizio e sulla pianificazione della manutenzione, vedere [https://status.adobe.com](https://status.adobe.com).
 
 1. Fai clic su **[!UICONTROL Scarica certificato pubblico per integrazione OAuth]** e scarica il file del certificato pubblico `AEM-SmartTags.crt`. Inoltre, non è più necessario caricare questo certificato nella console Adobe Developer.
 
-   ![Una rappresentazione delle impostazioni create per il servizio assegnazione tag avanzati](assets/smart-tags-download-public-cert1.png)
+   ![Una rappresentazione delle impostazioni create per il servizio di assegnazione di tag avanzati](assets/smart-tags-download-public-cert1.png)
 
    *Figura: impostazioni per il servizio di assegnazione tag avanzati.*
 
@@ -179,7 +192,7 @@ Per utilizzare le API del Servizio di contenuti avanzati, creare un&#39;integraz
 
 Per configurare l&#39;integrazione, utilizzare i valori dei campi [!UICONTROL ID ACCOUNT TECNICO], [!UICONTROL ID ORGANIZZAZIONE], [!UICONTROL SEGRETO CLIENT] e [!UICONTROL ID CLIENT] dell&#39;integrazione Adobe Developer Console. La creazione di una configurazione cloud di tag avanzati consente l&#39;autenticazione delle richieste API dalla distribuzione [!DNL Experience Manager].
 
-1. In [!DNL Experience Manager], passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Cloud Services precedenti]** per aprire la console [!UICONTROL Cloud Services].
+1. In [!DNL Experience Manager], passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Servizi cloud precedenti]** per aprire la console [!UICONTROL Servizi cloud].
 
 1. In **[!UICONTROL Tag avanzati risorse]**, apri la configurazione creata in precedenza. Nella pagina delle impostazioni del servizio, fai clic su **[!UICONTROL Modifica]**.
 
@@ -198,4 +211,4 @@ Per configurare l&#39;integrazione, utilizzare i valori dei campi [!UICONTROL ID
 >
 >* [Panoramica e formazione dei tag avanzati](enhanced-smart-tags.md)
 >* [Configura assegnazione tag avanzati](config-smart-tagging.md)
->* [Esercitazione video sugli smart tag](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=it)
+>* [Esercitazione video sugli smart tag](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)

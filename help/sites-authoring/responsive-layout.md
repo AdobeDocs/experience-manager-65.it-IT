@@ -9,13 +9,26 @@ exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1853'
-ht-degree: 58%
-
+source-wordcount: '1873'
+ht-degree: 55%
 ---
-
 
 # Layout dinamico{#responsive-layout}
 
@@ -36,7 +49,7 @@ Il contenitore layout:
 * Consente di eseguire l’aggancio orizzontale alla griglia, oltre alla possibilità di posizionare i componenti affiancati nella griglia e di definire quando devono essere compressi o ridisposti.
 * Utilizza punti di interruzione predefiniti (ad esempio, per telefono, tablet e così via) per consentirti di definire il comportamento richiesto dei contenuti per i dispositivi e l’orientamento correlati.
 
-   * Ad esempio, puoi personalizzare la dimensione del componente o specificare se può essere visualizzato su dispositivi specifici.
+  * Ad esempio, puoi personalizzare la dimensione del componente o specificare se può essere visualizzato su dispositivi specifici.
 
 * Può essere nidificato per consentire il controllo delle colonne.
 
@@ -86,10 +99,10 @@ AEM consente di definire layout dipendenti dalla larghezza del dispositivo:
 * L’emulatore consente di emulare questi layout su una serie di dispositivi. Oltre al tipo di dispositivo, anche l’orientamento impostato dall’opzione **Ruota dispositivo** può influenzare il punto di interruzione che viene selezionato quando cambia la larghezza.
 * I punti di interruzione sono i punti che separano le definizioni di layout.
 
-   * Essi definiscono a tutti gli effetti la larghezza massima (in pixel) di qualsiasi dispositivo che utilizza un layout specifico.
-   * I punti di interruzione sono normalmente applicabili a una gamma di dispositivi, in base alla larghezza del relativo schermo.
-   * La portata di un punto di interruzione si estende a sinistra fino al punto di interruzione successivo.
-   * Non è possibile selezionare specificatamente un punto di interruzione: la selezione di un dispositivo e di un orientamento comporterà la selezione automatica del punto di interruzione adeguato.
+  * Essi definiscono a tutti gli effetti la larghezza massima (in pixel) di qualsiasi dispositivo che utilizza un layout specifico.
+  * I punti di interruzione sono normalmente applicabili a una gamma di dispositivi, in base alla larghezza del relativo schermo.
+  * La portata di un punto di interruzione si estende a sinistra fino al punto di interruzione successivo.
+  * Non è possibile selezionare specificatamente un punto di interruzione: la selezione di un dispositivo e di un orientamento comporterà la selezione automatica del punto di interruzione adeguato.
 
 Il dispositivo **Desktop** è privo di una larghezza specifica e fa riferimento al punto di interruzione predefinito (ovvero tutto quanto si trova oltre l’ultimo punto di interruzione configurato).
 
@@ -105,7 +118,7 @@ Ad esempio, quando selezioni il dispositivo **iPhone 6 Plus** (definito con una 
 
 ## Selezione di un dispositivo da emulare {#selecting-a-device-to-emulate}
 
-1. Apri la pagina desiderata per la modifica. Ad esempio:
+1. Apri la pagina richiesta per la modifica. Ad esempio:
 
    `http://localhost:4502/editor.html/content/we-retail/us/en/experience.html`
 
@@ -162,7 +175,7 @@ Un **Contenitore di layout** è un sistema paragrafo che:
 >Se non è già disponibile, il **Contenitore di layout** deve essere [attivato in modo esplicito per un sistema paragrafo/pagina](/help/sites-administering/configuring-responsive-layout.md) (ad esempio, utilizzando la modalità [**Progettazione**](/help/sites-authoring/default-components-designmode.md)).
 
 1. Il **Contenitore di layout** è disponibile come componente standard nel [browser componenti](/help/sites-authoring/author-environment-tools.md#components-browser). Da qui è possibile trascinarlo nella posizione desiderata sulla pagina, dopodiché verrà visualizzato il segnaposto **Trascina qui i componenti**.
-1. È quindi possibile aggiungere componenti al Contenitore di layout. Questi componenti includeranno il contenuto vero e proprio:
+1. Puoi quindi aggiungere componenti al contenitore di layout. Questi componenti conterranno il contenuto effettivo:
 
    ![schermata_shot_2018-03-23at085500](assets/screen_shot_2018-03-23at085500.png)
 
@@ -208,13 +221,13 @@ La modalità **Layout** può essere avviata in due modi.
 
 * Utilizzando il menu [modalità nella barra degli strumenti](/help/sites-authoring/author-environment-tools.md#page-modes) e selezionando la modalità **Layout**
 
-   * Seleziona la modalità **Layout** esattamente come si fa per passare alla modalità **Modifica** o **Targeting**.
-   * La modalità **Layout** rimane persistente; si esce dalla modalità **Layout** solo quando si seleziona un’altra modalità mediante il selettore di modalità.
+  * Seleziona la modalità **Layout** esattamente come si fa per passare alla modalità **Modifica** o **Targeting**.
+  * La modalità **Layout** rimane persistente; si esce dalla modalità **Layout** solo quando si seleziona un’altra modalità mediante il selettore di modalità.
 
 * Quando [si modifica un singolo componente.](/help/sites-authoring/editing-content.md#edit-component-layout)
 
-   * Utilizzando l’opzione **Layout** nel menu azione rapida del componente, puoi passare alla modalità **Layout**.
-   * La modalità **Layout** persiste quando si modifica il componente e torna alla modalità **Modifica** quando è attivo un altro componente.
+  * Utilizzando l’opzione **Layout** nel menu azione rapida del componente, puoi passare alla modalità **Layout**.
+  * La modalità **Layout** persiste quando si modifica il componente e torna alla modalità **Modifica** quando è attivo un altro componente.
 
 In modalità layout è possibile eseguire varie azioni su una griglia:
 
@@ -228,17 +241,17 @@ In modalità layout è possibile eseguire varie azioni su una griglia:
 
 * Facendo clic su un componente di contenuto, la barra degli strumenti consente di:
 
-   * **Elemento padre**
+  * **Elemento padre**
 
-     Consente di selezionare l’intero componente Contenitore di layout per intervenire su di esso nel complesso.
+    Consente di selezionare l’intero componente Contenitore di layout per intervenire su di esso nel complesso.
 
-   * **Mobile in nuova riga**
+  * **Mobile in nuova riga**
 
-     Il componente verrà spostato su una nuova riga, a seconda dello spazio disponibile all’interno della griglia.
+    Il componente verrà spostato su una nuova riga, a seconda dello spazio disponibile all’interno della griglia.
 
-   * **Nascondi componente**
+  * **Nascondi componente**
 
-     Il componente verrà reso invisibile (può essere ripristinato dalla barra degli strumenti del Contenitore di layout).
+    Il componente verrà reso invisibile (può essere ripristinato dalla barra degli strumenti del Contenitore di layout).
 
   ![schermata_shot_2018-03-23at090246](assets/screen_shot_2018-03-23at090246.png)
 
@@ -246,34 +259,34 @@ In modalità layout è possibile eseguire varie azioni su una griglia:
 
   La barra degli strumenti presenta opzioni diverse a seconda dello stato del componente layout e dei componenti ad esso appartenenti. Esempio:
 
-   * **Elemento padre:** consente di selezionare il componente principale.
+  * **Elemento padre:** consente di selezionare il componente principale.
 
-     ![Elemento padre](do-not-localize/screen_shot_2018-03-23at090823.png)
+    ![Elemento padre](do-not-localize/screen_shot_2018-03-23at090823.png)
 
-   * **Mostra componenti nascosti** - Mostra tutti o singoli componenti. Il numero indica quanti componenti nascosti sono attualmente presenti. Il contatore indica quanti componenti sono nascosti.
+  * **Mostra componenti nascosti** - Mostra tutti o singoli componenti. Il numero indica quanti componenti nascosti sono attualmente presenti. Il contatore indica quanti componenti sono nascosti.
 
-     ![Mostra componenti nascosti](do-not-localize/screen_shot_2018-03-23at091007.png)
+    ![Mostra componenti nascosti](do-not-localize/screen_shot_2018-03-23at091007.png)
 
-   * **Ripristina layout punto di interruzione**: ripristina il layout predefinito. Ciò significa che non verrà imposto alcun layout personalizzato.
+  * **Ripristina layout punto di interruzione**: ripristina il layout predefinito. Ciò significa che non verrà imposto alcun layout personalizzato.
 
-     ![Layout punto di interruzione server](do-not-localize/screen_shot_2018-03-23at091013.png)
+    ![Layout punto di interruzione server](do-not-localize/screen_shot_2018-03-23at091013.png)
 
-   * **Mobile in nuova riga:** consente di alzare il componente di una posizione, se lo spazio è sufficiente.
+  * **Mobile in nuova riga:** consente di alzare il componente di una posizione, se lo spazio è sufficiente.
 
-     ![schermata_shot_2018-03-23at090829](assets/screen_shot_2018-03-23at090829.png)
+    ![schermata_shot_2018-03-23at090829](assets/screen_shot_2018-03-23at090829.png)
 
-   * **Nascondi componente:** consente di nascondere il componente corrente.
+  * **Nascondi componente:** consente di nascondere il componente corrente.
 
-     ![Nascondi componente](do-not-localize/screen_shot_2018-03-23at090834.png)
+    ![Nascondi componente](do-not-localize/screen_shot_2018-03-23at090834.png)
 
-     >[!NOTE]
-     >
-     >Nell’esempio in alto le azioni Mobile e Nascondi sono disponibili, perché questo Contenitore di layout è nidificato all’interno di un Contenitore di layout principale.
+    >[!NOTE]
+    >
+    >Nell’esempio in alto le azioni Mobile e Nascondi sono disponibili, perché questo Contenitore di layout è nidificato all’interno di un Contenitore di layout principale.
 
-   * **Mostra componenti**
-Seleziona i componenti principali per visualizzare la barra degli strumenti delle azioni con l’opzione **Mostra componenti nascosti**. In questo esempio, due componenti sono nascosti.
+  * **Scopri i componenti**
+    Selezionare i componenti padre per visualizzare la barra degli strumenti delle azioni con l&#39;opzione **Mostra componenti nascosti**. In questo esempio, due componenti sono nascosti.
 
-     ![schermata_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
+    ![schermata_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
 
   Selezionando l’opzione **Mostra componenti nascosti**, i componenti che sono attualmente nascosti nelle posizioni originali vengono visualizzati in blu.
 

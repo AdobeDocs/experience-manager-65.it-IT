@@ -5,13 +5,26 @@ exl-id: 4c356aa6-ebd4-40b9-89e3-bc4519e4a7c5
 solution: Experience Manager, Experience Manager Forms
 feature: Form Data Model
 role: Admin, User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 4876a742-a341-5402-aba7-e749c45e777c
+    internal-label: Form Data Model
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 8%
-
+source-wordcount: '467'
+ht-degree: 9%
 ---
-
 # Integrazione di Salesforce tramite il flusso di credenziali client OAuth 2.0  {#configure-salesforce-with-ouath-2.0-client-credential}
 
 | Versione | Collegamento articolo |
@@ -36,7 +49,7 @@ Prima di impostare la comunicazione tra un’applicazione Salesforce e un ambien
 
 * Crea un&#39;app connessa a [Salesforce con flusso di credenziali client OAuth 2.0](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&type=5) e un utente solo API per la tua organizzazione e ottieni la chiave consumer e il segreto consumer per l&#39;app.
 
-* Assicurati che il file Swagger sia configurato in modo appropriato per corrispondere alle API della tua organizzazione. In alternativa, puoi scegliere di [creare un file Swagger](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html?lang=it) da zero, adatto all&#39;utilizzo nell&#39;ambiente AEM.
+* Assicurati che il file Swagger sia configurato in modo appropriato per corrispondere alle API della tua organizzazione. In alternativa, puoi scegliere di [creare un file Swagger](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html) da zero, adatto all&#39;utilizzo nell&#39;ambiente AEM.
 
 >[!NOTE]
 >
@@ -69,4 +82,4 @@ Prima di impostare la comunicazione tra un’applicazione Salesforce e un ambien
 1. Fare clic su **[!UICONTROL Verifica connessione]**.
 1. Se la connessione riesce, fare clic sul pulsante **[!UICONTROL Crea]**.
 
-Ora puoi [creare il modello dati del modulo](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=it) per integrare l&#39;origine dati configurata con il Forms adattivo.
+Ora puoi [creare il modello dati del modulo](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=en) per integrare l&#39;origine dati configurata con il Forms adattivo.

@@ -10,7 +10,21 @@ exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '6781'
 ht-degree: 1%
@@ -815,7 +829,7 @@ Il modello di autorizzazione CUG consente di attivare singolarmente la gestione 
 * la gestione del controllo di accesso è abilitata se il modulo dispone di uno o più percorsi supportati in cui è possibile creare gruppi utenti chiusi (CUG)
 * la valutazione delle autorizzazioni è abilitata solo se è selezionata anche l&#39;opzione **Valutazione CUG abilitata**.
 
-Nella nuova valutazione predefinita dell’installazione di AEM dei criteri per gruppi utenti chiusi (CUG), è abilitata solo con la modalità di esecuzione &quot;pubblicazione&quot;. Per ulteriori dettagli, vedi i dettagli sulla configurazione predefinita [&#x200B; da AEM 6.3](#default-configuration-since-aem). Questo può essere verificato confrontando i criteri efficaci per un determinato percorso con i criteri memorizzati nel contenuto. I criteri effettivi verranno visualizzati solo se è abilitata la valutazione delle autorizzazioni per i gruppi di utenti chiusi (CUG).
+Nella nuova valutazione predefinita dell’installazione di AEM dei criteri per gruppi utenti chiusi (CUG), è abilitata solo con la modalità di esecuzione &quot;pubblicazione&quot;. Per ulteriori dettagli, vedi i dettagli sulla configurazione predefinita [ da AEM 6.3](#default-configuration-since-aem). Questo può essere verificato confrontando i criteri efficaci per un determinato percorso con i criteri memorizzati nel contenuto. I criteri effettivi verranno visualizzati solo se è abilitata la valutazione delle autorizzazioni per i gruppi di utenti chiusi (CUG).
 
 Come spiegato in precedenza, i criteri di controllo dell&#39;accesso ai gruppi utenti chiusi (CUG) ora sono sempre memorizzati nel contenuto, ma la valutazione delle autorizzazioni effettive risultanti da tali criteri verrà applicata solo se **Valutazione gruppi utenti chiusi (CUG) abilitata** è attivata nella console di sistema in Apache Jackrabbit Oak **Configurazione gruppi utenti chiusi (CUG).** Per impostazione predefinita, è abilitato solo con la modalità di esecuzione &quot;pubblicazione&quot;.
 

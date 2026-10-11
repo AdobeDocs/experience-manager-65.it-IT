@@ -9,13 +9,29 @@ feature: Interactive Communication
 exl-id: 3d15a723-df6c-4b4a-992e-a6636f4cf3dc
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1316'
 ht-degree: 11%
-
 ---
-
 # Introduzione all’interfaccia utente di creazione delle comunicazioni interattive{#introduction-to-interactive-communication-authoring-ui}
 
 L&#39;interfaccia utente per l&#39;authoring di [comunicazione interattiva](/help/forms/using/interactive-communications-overview.md) è intuitiva e fornisce le seguenti informazioni per l&#39;authoring di stampa e canale Web della comunicazione interattiva:
@@ -58,7 +74,7 @@ Nel browser del contenuto è possibile visualizzare la gerarchia degli oggetti d
 * **Browser proprietà**
 
   Consente di modificare le proprietà di un componente. Le proprietà cambiano in base al componente. Ad esempio, per visualizzare le proprietà del contenitore di documenti:
-Seleziona un componente, quindi seleziona ![livello campo](assets/field-level.png) > **Contenitore documenti**, quindi seleziona ![cmppr](assets/cmppr.png).
+  Seleziona un componente, quindi seleziona ![livello campo](assets/field-level.png) > **Contenitore documenti**, quindi seleziona ![cmppr](assets/cmppr.png).
 
 * **Browser Assets**
 Segrega diversi tipi di contenuto, ad esempio frammenti di layout, immagini, documenti, pagine e video. L’autore può trascinare le risorse nella comunicazione interattiva.
@@ -91,10 +107,10 @@ I punti chiave quando si lavora con i componenti di comunicazione interattiva so
 * Un componente è identificato dal relativo nome elemento. Quando si seleziona ![cmppr](assets/cmppr.png), è possibile modificare il nome del componente modificando il valore del campo Nome elemento nel browser delle proprietà. Il campo Nome elemento accetta solo lettere, numeri, trattini (-) e trattini bassi (_). Non sono consentiti altri caratteri speciali e il nome dell’elemento deve iniziare con una lettera.
 * Puoi modificare la proprietà Titolo di un componente Comunicazione interattiva in linea nell’editor senza aprire il browser Proprietà, purché il titolo sia visibile nella Comunicazione interattiva. Per eseguire questa operazione:
 
-   1. Seleziona per selezionare un componente con la proprietà Titolo e la cui proprietà Nascondi titolo è disabilitata.
-   1. Seleziona ![aem_6_3_edit](assets/aem_6_3_edit.png) per rendere modificabile il titolo.
+  1. Seleziona per selezionare un componente con la proprietà Titolo e la cui proprietà Nascondi titolo è disabilitata.
+  1. Seleziona ![aem_6_3_edit](assets/aem_6_3_edit.png) per rendere modificabile il titolo.
 
-   1. Modifica il titolo e seleziona il tasto Invio o seleziona un punto qualsiasi all’esterno del componente per salvare le modifiche. Selezionare la chiave Esc per ignorare le modifiche.
+  1. Modifica il titolo e seleziona il tasto Invio o seleziona un punto qualsiasi all’esterno del componente per salvare le modifiche. Selezionare la chiave Esc per ignorare le modifiche.
 
 ## Barra degli strumenti del componente {#component-toolbar}
 
@@ -139,13 +155,13 @@ La barra degli strumenti Pagina nella parte superiore fornisce opzioni che conse
 * Emulatore ![righello](assets/ruler.png): consente di emulare l&#39;aspetto della comunicazione interattiva per diverse dimensioni di visualizzazione, ad esempio tablet e telefoni.
 * Modifica: consente di selezionare altre modalità, ad esempio Modifica, Stile, Sviluppatore e Progettazione.
 
-   * Modifica: consente di modificare le proprietà della comunicazione interattiva e dei relativi componenti. Ad esempio, aggiungere un componente, rilasciare un’immagine e specificare campi obbligatori.
-   * Stile: consente di applicare uno stile all’aspetto dei componenti della comunicazione interattiva. Ad esempio, in modalità stile è possibile selezionare un pannello e specificarne il colore di sfondo.
-   * Sviluppatore: consente agli sviluppatori di:
+  * Modifica: consente di modificare le proprietà della comunicazione interattiva e dei relativi componenti. Ad esempio, aggiungere un componente, rilasciare un’immagine e specificare campi obbligatori.
+  * Stile: consente di applicare uno stile all’aspetto dei componenti della comunicazione interattiva. Ad esempio, in modalità stile è possibile selezionare un pannello e specificarne il colore di sfondo.
+  * Sviluppatore: consente agli sviluppatori di:
 
-      * Scopri di cosa è composta la comunicazione interattiva.
-      * Eseguire il debug di ciò che sta accadendo dove e quando, che a sua volta aiuta a risolvere i problemi.
+    * Scopri di cosa è composta la comunicazione interattiva.
+    * Eseguire il debug di ciò che sta accadendo dove e quando, che a sua volta aiuta a risolvere i problemi.
 
-   * Target: consente di abilitare o disabilitare i componenti personalizzati o i componenti predefiniti non elencati nella barra laterale.
+  * Target: consente di abilitare o disabilitare i componenti personalizzati o i componenti predefiniti non elencati nella barra laterale.
 
 * Anteprima: consente di visualizzare in anteprima come si presenterà la comunicazione interattiva quando verrà pubblicata.

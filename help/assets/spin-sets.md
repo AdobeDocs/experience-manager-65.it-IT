@@ -10,13 +10,29 @@ feature: Spin Sets,Asset Management
 role: User, Admin
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: cb008a68-9156-4b10-9c66-391409a53067
+    internal-label: Spin Sets
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2001'
+source-wordcount: '2038'
 ht-degree: 9%
-
 ---
-
 # Set 360 gradi{#spin-sets}
 
 Un set 360 gradi simula l&#39;atto reale di girare un oggetto per esaminarlo. I set 360 gradi consentono di visualizzare gli elementi da qualsiasi angolazione, ottenendo i dettagli visivi chiave da qualsiasi angolazione.
@@ -221,8 +237,8 @@ Puoi creare i set 360 gradi nell&#39;interfaccia utente o automaticamente utiliz
 
    * Per riordinare le immagini, trascinatele in una nuova posizione (selezionate l&#39;icona Riordina per spostare gli elementi).
    * Per ordinare gli elementi in ordine crescente o decrescente, selezionare l&#39;intestazione di colonna.
-   * Per aggiungere una risorsa o aggiornare una risorsa esistente, seleziona **[!UICONTROL Aggiungi risorsa]**. Passa a una risorsa, selezionala, quindi seleziona **[!UICONTROL Seleziona]** nell&#39;angolo in alto a destra.
-Se elimini l’immagine utilizzata da Experience Manager per la miniatura sostituendola con un’altra immagine, la risorsa originale viene comunque visualizzata.
+   * Per aggiungere una risorsa o aggiornare una risorsa esistente, seleziona **[!UICONTROL Aggiungi risorsa]**. Passa a una risorsa, selezionala, quindi seleziona **[!UICONTROL Seleziona]** nell&#39;angolo superiore destro.
+     Se elimini l’immagine utilizzata da Experience Manager per la miniatura sostituendola con un’altra immagine, la risorsa originale viene comunque visualizzata.
    * Per eliminare una risorsa, selezionala e seleziona **[!UICONTROL Elimina risorsa]**.
    * Per applicare un predefinito, fai clic sull’icona Predefinito e seleziona un predefinito.
    * Per eliminare un intero set 360 gradi, passare al set 360 gradi, selezionarlo e selezionare **[!UICONTROL Elimina]**

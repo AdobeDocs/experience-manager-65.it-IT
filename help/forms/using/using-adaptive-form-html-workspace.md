@@ -1,5 +1,5 @@
 ---
-title: Utilizzo di un modulo adattivo in HTML Workspace
+title: Utilizzo di un modulo adattivo nell’area di lavoro HTML
 description: Scopri come utilizzare un modulo adattivo in HTML Workspace che consente ai lavoratori dei campi di accedere al modulo sui loro dispositivi.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,14 +9,30 @@ exl-id: 15b9ae98-059f-4bf7-bfdd-9cfeb8eb30a4
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Workbench
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 36ac8e9c-5c7a-56d8-af5e-39399fd7b101
+    internal-label: Workbench
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '690'
-ht-degree: 0%
-
+source-wordcount: '706'
+ht-degree: 1%
 ---
-
-# Utilizzo di un modulo adattivo in HTML Workspace{#using-an-adaptive-form-in-html-workspace}
+# Utilizzo di un modulo adattivo nell’area di lavoro HTML{#using-an-adaptive-form-in-html-workspace}
 
 AEM Forms su JEE consente di utilizzare un modulo adattivo in HTML Workspace.
 
@@ -30,9 +46,9 @@ Per abilitare i moduli adattivi da utilizzare nella progettazione dei processi, 
 * Nel foglio delle proprietà Assegna attività/Punto iniziale del workbench è possibile nascondere la barra degli strumenti globale/di primo livello di un modulo adattivo.
 * Puoi utilizzare nuovi profili di azione per le azioni Rendering e Invio nei moduli adattivi.
 
-### Esportazione e importazione applicazioni di LiveCycle {#livecycle-application-export-and-import}
+### Esportazione e importazione di applicazioni LiveCycle {#livecycle-application-export-and-import}
 
-Poiché i moduli adattivi si trovano nell’archivio AEM, l’esportazione dell’applicazione di LiveCycle contiene solo i riferimenti per i moduli adattivi utilizzati. Pertanto, l&#39;esportazione e l&#39;importazione di applicazioni di LiveCycle è un processo in due fasi. L&#39;applicazione di LiveCycle include definizioni di processo e così via. Un pacchetto separato contenente moduli adattivi viene esportato come file ZIP dall’AEM. Durante l’importazione, l’applicazione di LiveCycle viene importata tramite Workbench e i moduli adattivi vengono importati tramite AEM.
+Poiché i moduli adattivi si trovano nell’archivio di AEM, l’esportazione dell’applicazione LiveCycle contiene solo i riferimenti per i moduli adattivi utilizzati. Pertanto, l&#39;esportazione e l&#39;importazione dell&#39;applicazione LiveCycle è un processo in due fasi. L&#39;applicazione LiveCycle include definizioni di processo e così via. Un pacchetto separato contenente moduli adattivi viene esportato da AEM come file ZIP. Durante l’importazione, l’applicazione LiveCycle viene importata tramite Workbench, mentre i moduli adattivi vengono importati tramite AEM.
 
 ## Esperienza utente del modulo adattivo in HTML Workspace {#user-experience-of-adaptive-form-in-html-workspace}
 
@@ -48,7 +64,7 @@ HTML Workspace fornisce alcuni controlli specifici per i moduli adattivi, oltre 
 
 1. **Controlli di navigazione di Workspace per Forms adattivo**: i pulsanti Avanti/Indietro sono disponibili insieme ai pulsanti Salva, Invia e Instrada azione per un modulo adattivo in HTML Workspace. Fai clic sui pulsanti Successivo/Precedente per passare ai pannelli dei moduli adattivi in HTML Workspace. I pulsanti Successivo/Precedente offrono una navigazione approfondita, simile ai controlli di navigazione nella visualizzazione Mobile dei moduli adattivi.
 
-1. **Servizi eSign e componente Riepilogo del modulo adattivo**: il componente Riepilogo non è operativo in HTML Workspace. In altre parole, un modulo adattivo con un componente Riepilogo non è visibile nell’area di lavoro. Invece di eseguire l’invio automatico nel componente E-sign, l’utente dell’area di lavoro fa clic sull’azione Invia o su un’azione di instradamento in HTML Workspace. Dopo la firma, un documento è visibile come documento con firma semplice. Fai clic su **Invia** o su un&#39;azione di instradamento per chiudere/completare l&#39;attività o il punto iniziale.\
+1. **Servizi eSign e componente di riepilogo del modulo adattivo**: il componente Riepilogo non è operativo in HTML Workspace. In altre parole, un modulo adattivo con un componente Riepilogo non è visibile nell’area di lavoro. Invece di eseguire l’invio automatico nel componente E-sign, l’utente dell’area di lavoro fa clic sull’azione Invia o su un’azione di instradamento in HTML Workspace. Dopo la firma, un documento è visibile come documento con firma semplice. Fai clic su **Invia** o su un&#39;azione di instradamento per chiudere/completare l&#39;attività o il punto iniziale.\
    Il documento firmato viene raccolto dal server eSign Services e il file XML dati viene inoltrato al passaggio successivo del processo.
 
 ## Passaggi per utilizzare i moduli adattivi nella progettazione dei processi {#steps-to-use-adaptive-forms-in-process-design}
@@ -85,4 +101,4 @@ HTML Workspace fornisce alcuni controlli specifici per i moduli adattivi, oltre 
    >Per informazioni dettagliate sulla creazione di un modulo adattivo, consulta [Creazione di un modulo adattivo](../../forms/using/creating-adaptive-form.md).
    >
    >
-   >Per informazioni dettagliate sulla creazione di un processo, vedere [Creazione e gestione dei processi](https://help.adobe.com/it_IT/AEMForms/6.1/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7ff7.2.html).
+   >Per informazioni dettagliate sulla creazione di un processo, vedere [Creazione e gestione dei processi](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7ff7.2.html).

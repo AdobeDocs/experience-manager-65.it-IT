@@ -9,16 +9,28 @@ role: Admin
 exl-id: 73b5aff2-1320-4d9a-8972-54c4fdd3a2c2
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '689'
 ht-degree: 1%
-
 ---
-
 # Mitigazione delle vulnerabilità Struts 2 per Experience Manager Forms {#mitigatin-struts2-rce-vulnerabilities-for-aem-forms}
 
-## Problema  
+## Problema
 
 Sono state segnalate vulnerabilità di sicurezza critiche per Struts 2, un framework di applicazioni web popolare e open-source per lo sviluppo di applicazioni web Java EE. Sono state analizzate le seguenti vulnerabilità:
 
@@ -32,13 +44,13 @@ La tabella seguente elenca la risoluzione per tutte le versioni interessate:
 
 | Versione | Versione corrente | Azione utente |
 |---|---|---|
-| Experience Manager 6.5 Forms su JEE | 6.5.19.0 | [Installa il service pack più recente](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=it) |
-| Experience Manager 6.5 Forms su JEE | 6.5.13.0 - 6.5.18.0 | Utilizza uno dei seguenti metodi: <ul><li>  <a href="https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=it"> Installare il service pack più recente </a> </li> <li> <a href ="#use-manual-mitigation-steps"> Utilizzare i passaggi di mitigazione manuali </a> |
-| Experience Manager 6.5 Forms su JEE | 6,5 - 6.5.12,0 | [Installa il service pack più recente](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=it) </br> </br> **NOTA:** AEM Forms supporta attualmente le versioni da 6.5.13.0 a 6.5.19.0. Se utilizzi una versione precedente, ti consigliamo di effettuare l’aggiornamento a 6.5.13.0 o a una versione successiva. Per istruzioni su come installare AEM 6.5.13.0 o versione successiva, consulta le note sulla versione. |
+| Experience Manager 6.5 Forms su JEE | 6.5.19.0 | [Installa il service pack più recente](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en) |
+| Experience Manager 6.5 Forms su JEE | 6.5.13.0 - 6.5.18.0 | Utilizza uno dei seguenti metodi: <ul><li>  <a href="https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en"> Installare il service pack più recente </a> </li> <li> <a href ="#use-manual-mitigation-steps"> Utilizzare i passaggi di mitigazione manuali </a> |
+| Experience Manager 6.5 Forms su JEE | 6.5 - 6.5.12.0 | [Installa il service pack più recente](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en) </br> </br> **NOTA:** AEM Forms supporta attualmente le versioni da 6.5.13.0 a 6.5.19.0. Se utilizzi una versione precedente, ti consigliamo di effettuare l&#39;aggiornamento a 6.5.13.0 o a una versione successiva. Per istruzioni su come installare AEM 6.5.13.0 o versione successiva, consulta le note sulla versione. |
 
 ### Utilizzare i passaggi di mitigazione manuali {#use-manual-mitigation-steps}
 
-È possibile utilizzare i passaggi di mitigazione manuali per risolvere il problema sul server di moduli AEM 6.5 con Service Pack 13 al server di moduli AEM 6.5 con Service Pack 18 (6.5.13.0 - 6.5.18.0):
+È possibile utilizzare i passaggi di mitigazione manuali per risolvere il problema nel server di moduli AEM 6.5 che esegue Service Pack 13 in AEM 6.5 che esegue Service Pack 18 (6.5.13.0 - 6.5.18.0):
 
 1. Scarica [struts-core 2.5.33 jar](https://repo1.maven.org/maven2/org/apache/struts/struts2-core/2.5.33/struts2-core-2.5.33.jar) in una cartella locale. Ad esempio, C:\Users\labuser\Desktop\struts2-core-2.5.33.jar.
 1. Scarica lo strumento di patch manuale AEM Forms su JEE da [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/patch_utility/archive-patcher-1.0.0.zip).

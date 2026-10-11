@@ -1,20 +1,27 @@
 ---
 title: Guida di riferimento per i passaggi dei flussi di lavoro
-
 description: Fai riferimento a questo riferimento di passaggio per i flussi di lavoro in Adobe Experience Manager.
-
-
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-
 docset: aem65
 exl-id: 8de78bde-2fcb-4221-873e-59e347ff2d74
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '3288'
 ht-degree: 2%
@@ -82,7 +89,7 @@ Le seguenti proprietà sono disponibili per molti componenti del passaggio del f
 
 ## Suddivisione E {#and-split}
 
-La &lbrack;0&rbrace;divisione AND **crea una [PROD143]e nel flusso di lavoro, dopo la quale entrambi i rami sono attivi.** Puoi aggiungere i passaggi del flusso di lavoro a ogni ramo in base alle esigenze. Questo passaggio ti consente di introdurre più percorsi di elaborazione nel flusso di lavoro. Ad esempio, puoi consentire che determinati passaggi di revisione si verifichino in parallelo, risparmiando tempo.
+La [0}divisione AND **crea una [PROD143]e nel flusso di lavoro, dopo la quale entrambi i rami sono attivi.** Puoi aggiungere i passaggi del flusso di lavoro a ogni ramo in base alle esigenze. Questo passaggio ti consente di introdurre più percorsi di elaborazione nel flusso di lavoro. Ad esempio, puoi consentire che determinati passaggi di revisione si verifichino in parallelo, risparmiando tempo.
 
 ![wf-26](assets/wf-26.png)
 
@@ -190,7 +197,7 @@ La divisione **OR** crea una divisione nel flusso di lavoro, dopo la quale è at
 
 >[!NOTE]
 >
->Vedi [O passaggio suddiviso](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html?lang=it#use-a-variable)
+>Vedi [O passaggio suddiviso](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html#use-a-variable)
 
 ![Diramazione tramite O Divisione](assets/variables_orsplit_new.png)
 
@@ -271,7 +278,7 @@ Per configurare il passaggio, modifica e utilizza le seguenti schede:
 * [Utente/Gruppo](#step-properties-user-group-tab)
 * **Finestra di dialogo**
 
-  * **Percorso finestra di dialogo**: percorso del nodo della finestra di dialogo [&#x200B; creata](#dialog-participant-step-creating-a-dialog).
+  * **Percorso finestra di dialogo**: percorso del nodo della finestra di dialogo [ creata](#dialog-participant-step-creating-a-dialog).
 
 #### Passaggio partecipante finestra di dialogo - Creazione di una finestra di dialogo {#dialog-participant-step-creating-a-dialog}
 
@@ -393,7 +400,7 @@ Per configurare il passaggio, modifica e utilizza le seguenti schede:
 
 * **Finestra di dialogo**
 
-  * **Percorso finestra di dialogo**: il percorso del nodo della finestra di dialogo [&#x200B; creata (come nel **Passaggio partecipante alla finestra di dialogo**)](#dialog-participant-step-creating-a-dialog).
+  * **Percorso finestra di dialogo**: il percorso del nodo della finestra di dialogo [ creata (come nel **Passaggio partecipante alla finestra di dialogo**)](#dialog-participant-step-creating-a-dialog).
 
 #### Passaggio partecipante dinamico: sviluppo del selettore partecipanti {#dynamic-participant-step-developing-the-participant-chooser}
 

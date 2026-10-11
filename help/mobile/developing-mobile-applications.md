@@ -9,24 +9,28 @@ exl-id: cf8ba05c-6dcd-4880-b8bf-72382118cd80
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '600'
 ht-degree: 1%
-
 ---
-
 # Sviluppo di applicazioni mobili in AEM {#developing-mobile-applications-in-aem}
 
 {{ue-over-mobile}}
 
-L’AEM utilizza Adobe PhoneGap e le soluzioni Adobe Publishing per creare e gestire applicazioni mobili multipiattaforma ricche di contenuti e basate su utility:
+AEM utilizza Adobe PhoneGap e le soluzioni Adobe Publishing per creare e gestire applicazioni mobili multipiattaforma ricche di contenuti e basate su utility:
 
 * Gestisci tutte le app mobili aziendali in un’unica posizione.
 * Esamina le app negli ambienti di sviluppo e staging senza la complessità dei profili di provisioning e l’impegno aggiuntivo per generare e caricare l’app per la condivisione.
 * Utilizza l’ambiente di authoring AEM per creare e gestire contenuti avanzati per le tue app.
 * Utilizza HTML5 con Adobe PhoneGap per creare esperienze avanzate con funzionalità native per i dispositivi.
-* Introduzione delle visualizzazioni Web di HTML5 alle applicazioni **native** nuove o preesistenti tramite Cordova WebViews.
+* Presenta le visualizzazioni Web di HTML5 alle applicazioni **native** nuove o preesistenti tramite Cordova WebViews.
 * Creazione, cura e condivisione di contenuti multimediali avanzati su tutti i canali di distribuzione, tra cui web, mobile-web, mobile-app e stampa.
 
 AEM si integra con il servizio Adobe PhoneGap Build (`https://build.phonegap.com/`) per semplificare il processo di compilazione e distribuzione dell&#39;applicazione.
@@ -37,14 +41,14 @@ AEM si integra con il servizio Adobe PhoneGap Build (`https://build.phonegap.com
 
 ## Creazione di app {#creating-apps}
 
-Gli sviluppatori possono utilizzare il [PhoneGap Starter Kit per AEM](https://github.com/Adobe-Marketing-Cloud/aem-phonegap-starter-kit) insieme alle risorse aggiuntive disponibili in [https://github.com/adobe-marketing-cloud-apps](https://github.com/adobe-marketing-cloud-apps) per avviare le app AEM con PhoneGap, inclusa un&#39;app nativa di riferimento che esegue Cordova Webviews.
+Gli sviluppatori possono utilizzare il [AEM PhoneGap Starter Kit](https://github.com/Adobe-Marketing-Cloud/aem-phonegap-starter-kit) insieme alle risorse aggiuntive disponibili in [https://github.com/adobe-marketing-cloud-apps](https://github.com/adobe-marketing-cloud-apps) per avviare le app AEM con PhoneGap, inclusa un&#39;app nativa di riferimento che esegue Cordova Webviews.
 
 Il file readme per l’archivio Git di Starter Kit include un’esercitazione per l’utilizzo del kit di avvio:
 
 * Personalizzare il branding
 * Esempi di destinazioni di build e distribuzione Maven
 * Configurazione dell’archivio di controllo Source
-* Installazione e distribuzione in istanze AEM locali o remote
+* Installare e distribuire in istanze AEM locali o remote
 * Disinstalla da AEM
 
 >[!NOTE]
@@ -74,7 +78,7 @@ Gli sviluppatori di IOS devono essere a conoscenza di un problema aperto relativ
 
 ## Sviluppo di applicazioni mobili in AEM {#developing-mobile-applications-in-aem-1}
 
-* [Avvio di PhoneGap AEM](/help/mobile/starting-aem-phonegap-app.md)
+* [Avvio di AEM PhoneGap](/help/mobile/starting-aem-phonegap-app.md)
 * [Creazione di applicazioni mobili](/help/mobile/building-app-mobile-phonegap.md)
 * [Strutturare un’app](/help/mobile/phonegap-structure-an-app.md)
 * [Creazione e modifica di app tramite la console App](/help/mobile/phonegap-apps-console.md)

@@ -8,13 +8,26 @@ exl-id: 51ca2844-91f0-453a-9b39-b876399ebecb
 solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: fa155e29-cba2-5e77-9efd-4824be5ce4c8
+    internal-label: Forms Portal
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 0%
-
+source-wordcount: '537'
+ht-degree: 3%
 ---
-
 # Configurazione dei servizi di archiviazione per le bozze e gli invii {#configuring-storage-services-for-drafts-and-submissions}
 
 ## Panoramica {#overview}
@@ -33,13 +46,13 @@ Oltre all’approccio predefinito sopra indicato, è disponibile un’implementa
 
 >[!NOTE]
 >
->Quando si utilizza l’azione di invio Forms Portal o si abilita l’opzione Memorizza dati nel portale dei moduli in un modulo adattivo, i dati del modulo vengono memorizzati nell’archivio AEM. In un ambiente di produzione, si consiglia di non memorizzare i dati delle bozze o dei moduli inviati nell’archivio AEM. Per memorizzare le bozze e i dati dei moduli inviati, è necessario integrare il componente bozze e invio con un archivio sicuro come il database aziendale.
+>Quando si utilizza l’azione di invio Forms Portal o si abilita l’opzione Memorizza dati nel portale dei moduli in un modulo adattivo, i dati del modulo vengono memorizzati nell’archivio di AEM. In un ambiente di produzione, si consiglia di non memorizzare i dati delle bozze o dei moduli inviati nell’archivio di AEM. Per memorizzare le bozze e i dati dei moduli inviati, è necessario integrare il componente bozze e invio con un archivio sicuro come il database aziendale.
 >
 >Per ulteriori informazioni, vedere [Esempio per l&#39;integrazione del componente Bozze e invii con il database](/help/forms/using/integrate-draft-submission-database.md).
 
 ## Configurazione delle bozze e dei servizi di invio di Forms Portal {#configuring-forms-portal-drafts-and-submissions-services}
 
-Nella configurazione della console Web AEM ( `https://[host]:'port'/system/console/configMgr`), fare clic per aprire **Configurazione bozza e invio portale Forms** in modalità di modifica.
+Nella configurazione della console Web di AEM ( `https://[host]:'port'/system/console/configMgr`), fare clic per aprire **Configurazione bozza e invio portale Forms** in modalità di modifica.
 
 Specifica i valori per le proprietà in base ai requisiti come descritto di seguito:
 
@@ -103,7 +116,7 @@ I dati vengono inviati direttamente all’istanza remota configurata
 
 Oltre alla configurazione specificata in precedenza, fornire informazioni sull’istanza di elaborazione remota configurata.
 
-Nella configurazione della console Web AEM ( `https://[host]:'port'/system/console/configMgr`), fare clic per aprire **Servizio impostazioni DS AEM** in modalità di modifica. Nella finestra di dialogo Servizio impostazioni DS AEM, fornire informazioni sull&#39;elaborazione dell&#39;URL del server, del nome utente del server di elaborazione e della password.
+Nella configurazione della console Web di AEM ( `https://[host]:'port'/system/console/configMgr`), fare clic per aprire **Servizio impostazioni di AEM DS** in modalità di modifica. Nella finestra di dialogo Servizio impostazioni di AEM DS fornire informazioni sull&#39;elaborazione dell&#39;URL del server, del nome utente del server di elaborazione e della password.
 
 >[!NOTE]
 >

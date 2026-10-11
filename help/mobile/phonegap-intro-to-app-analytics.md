@@ -9,13 +9,17 @@ exl-id: 7e358660-bc2f-4d8f-8d74-6cdb6c1ea7b5
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1043'
 ht-degree: 1%
-
 ---
-
 # Tracciare le prestazioni dell’app con Adobe Mobile Analytics{#track-app-performance-with-adobe-mobile-analytics}
 
 {{ue-over-mobile}}
@@ -30,7 +34,7 @@ Come mettere a punto le applicazioni mobili per fornire la migliore esperienza a
 
 Con Adobe Mobile Services, puoi acquisire insight sul modo in cui gli utenti utilizzano le tue app mobili monitorando l’utilizzo, gli arresti anomali dell’app, i dettagli del dispositivo e molte altre metriche critiche per le tue app mobili.
 
-Adobe Experience Manager Mobili fornisce un’occhiata ai dettagli della tua analisi mobile direttamente dal dashboard dell’applicazione AEM Mobile. Il riquadro **Metriche mobile** nel dashboard fornisce Real-Time Analytics per la tua app mobile, consentendo a sviluppatori, autori e amministratori di ottenere un rapido sguardo sullo stato della tua app mobile. Sotto le copertine, il motore dell&#39;analisi è il SDK [Adobe Mobile Analytics](https://business.adobe.com/it/products/analytics/mobile-marketing.html). Il SDK Adobe Mobile Analytics può essere collegato alle applicazioni in modo nativo o tramite un plug-in PhoneGap Bridge per le visualizzazioni Web. Le metriche vengono raccolte e memorizzate nella cache del dispositivo fino a quando il dispositivo non è connesso, e i dati vengono inviati al cloud di Adobe Mobile Services per scopi di reporting e analisi.
+Adobe Experience Manager Mobili fornisce un’occhiata ai dettagli della tua analisi mobile direttamente dal dashboard dell’applicazione AEM Mobile. Il riquadro **Metriche mobile** nel dashboard fornisce Real-Time Analytics per la tua app mobile, consentendo a sviluppatori, autori e amministratori di ottenere un rapido sguardo sullo stato della tua app mobile. Sotto le copertine, il motore dell&#39;analisi è il SDK [Adobe Mobile Analytics](https://business.adobe.com/products/analytics/mobile-marketing.html). Il SDK Adobe Mobile Analytics può essere collegato alle applicazioni in modo nativo o tramite un plug-in PhoneGap Bridge per le visualizzazioni Web. Le metriche vengono raccolte e memorizzate nella cache del dispositivo fino a quando il dispositivo non è connesso, e i dati vengono inviati al cloud di Adobe Mobile Services per scopi di reporting e analisi.
 
 Adobe Mobile Analytics SDK fornisce quanto segue:
 

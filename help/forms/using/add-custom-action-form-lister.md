@@ -1,5 +1,5 @@
 ---
-title: Aggiunta di azioni personalizzate agli elementi del lister del modulo
+title: Aggiunta di azioni personalizzate agli elementi dell’elenco del modulo
 description: Gli sviluppatori di moduli possono aggiungere ulteriori azioni all'elenco dei moduli nella pagina del portale moduli. Per impostazione predefinita, l’elenco dei moduli ti consente di accedere al modulo, compilarlo e inviarlo.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,14 +9,30 @@ exl-id: 7c2a91c8-9b68-4491-88e2-f7ea68f5a79f
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Foundation Components
-source-git-commit: 8a77756e8ba771c8de9950c2323bef8f23cc59b4
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 0%
-
+source-wordcount: '265'
+ht-degree: 5%
 ---
-
-# Aggiunta di azioni personalizzate agli elementi del lister del modulo{#adding-custom-action-on-form-lister-items}
+# Aggiunta di azioni personalizzate agli elementi dell’elenco del modulo{#adding-custom-action-on-form-lister-items}
 
 In AEM Forms puoi creare una pagina portale in cui sono elencati i moduli disponibili. Per impostazione predefinita, è possibile cercare ed elencare i moduli in una pagina del portale. È possibile aprire i moduli per la compilazione e l&#39;invio delle informazioni. Per i moduli elencati in una pagina del portale vengono fornite solo le azioni di rendering predefinite. Per ulteriori informazioni sulle azioni disponibili in una pagina del portale, vedere [Creazione di una pagina del portale moduli](../../forms/using/creating-form-portal-page.md).
 
@@ -45,7 +61,7 @@ Il codice necessario per aggiungere l’azione al modello è disponibile di segu
 </div>
 ```
 
-Puoi aggiungere azioni simili nel modello personalizzato. Per definire una funzione di JavaScript, aggiungi la funzione in uno script a livello di pagina e collegala all’elemento HTML richiesto. Nell&#39;esempio precedente, l&#39;espressione `onclick` è la funzione collegata.
+Puoi aggiungere azioni simili nel modello personalizzato. Per definire una funzione di JavaScript, aggiungi la funzione a uno script a livello di pagina e collegala all’elemento HTML richiesto. Nell&#39;esempio precedente, l&#39;espressione `onclick` è la funzione collegata.
 
 Dopo aver apportato le modifiche al modello, la pagina del portale di esempio contiene un pulsante per inviare il collegamento del modulo tramite e-mail, come illustrato di seguito.
 

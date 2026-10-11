@@ -9,13 +9,20 @@ exl-id: 7ac0056c-a742-49f4-8312-2cf90ab9f23a
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '600'
 ht-degree: 2%
-
 ---
-
 # Sviluppa applicazione sandbox  {#develop-sandbox-application}
 
 In questa sezione, ora che il modello è configurato nella sezione [applicazione iniziale](initial-app.md) e che le pagine iniziali sono state stabilite nella sezione [contenuto iniziale](initial-content.md), è possibile sviluppare l&#39;applicazione. A tale scopo, puoi utilizzare script di base che includono la possibilità di abilitare l’authoring con i componenti di Communities. Alla fine di questa sezione, il sito Web è completamente funzionante.
@@ -46,7 +53,7 @@ Utilizzo di CRXDE Lite:
 
 ### Script per la testa e il corpo {#head-and-body-scripts}
 
-1. Nel riquadro Esplora risorse **CRXDE Liti** passare a `/apps/an-scf-sandbox/components/playpage` e fare doppio clic sul file `playpage.jsp` per aprirlo nel riquadro di modifica.
+1. Nel riquadro di Esplora risorse **CRXDE Lite** passare a `/apps/an-scf-sandbox/components/playpage` e fare doppio clic sul file `playpage.jsp` per aprirlo nel riquadro di modifica.
 
    `/apps/an-scf-sandbox/components/playpage/playpage.jsp`
 
@@ -175,11 +182,11 @@ Cambia l&#39;URL del browser nella pagina principale: `http://localhost:4502/edi
 * Seleziona **[!UICONTROL Apri proprietà]**
 * Nella scheda AVANZATE
 
-   * Per la voce di reindirizzamento, passa a **[!UICONTROL Siti Web]** > **[!UICONTROL Sito Sandbox SCF]** > **[!UICONTROL Sandbox SCF]**
-   * Fai clic su **[!UICONTROL OK]**
+  * Per la voce di reindirizzamento, passa a **[!UICONTROL Siti Web]** > **[!UICONTROL Sito Sandbox SCF]** > **[!UICONTROL Sandbox SCF]**
+  * Fai clic su **[!UICONTROL OK]**
 
 * Fai clic su **[!UICONTROL OK]**
 
 Dopo la pubblicazione del sito, l’accesso alla pagina principale di un’istanza Publish viene reindirizzato alla pagina inglese.
 
-L’ultimo passaggio prima di riprodurlo con i componenti SCF di Communities è aggiungere una .... Cartella libreria client (clientlibs) [Aggiungi Clientlibs](add-clientlibs.md)
+L&#39;ultimo passaggio prima di eseguire la riproduzione con i componenti SCF di Communities è aggiungere una cartella della libreria client (clientlibs) .... [Aggiungi clientlibs](add-clientlibs.md)

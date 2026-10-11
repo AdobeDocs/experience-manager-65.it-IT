@@ -8,13 +8,27 @@ feature: Interactive Communication
 exl-id: 1f89c3bf-e67e-4d13-9285-3367be1ac8f8
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '6132'
+source-wordcount: '6227'
 ht-degree: 1%
-
 ---
-
 # Creare una comunicazione interattiva{#create-an-interactive-communication}
 
 ## Panoramica {#overview}
@@ -63,10 +77,10 @@ Di seguito sono riportati i prerequisiti per la creazione di una comunicazione i
    * **[!UICONTROL Tema]** e **[!UICONTROL Seleziona tema]**: sfoglia e seleziona il tema per assegnare uno stile al canale web della comunicazione interattiva. Per ulteriori informazioni, vedere [Temi in AEM Forms](/help/forms/using/themes.md).
 
    * **[!UICONTROL Utilizza Stampa come master per il canale Web]**: selezionare questa opzione per creare il canale Web sincronizzato con il canale di stampa. L&#39;utilizzo del canale di stampa come master per il canale Web garantisce che il contenuto e l&#39;associazione dati del canale Web siano derivati dal canale di stampa e che le modifiche apportate al canale di stampa vengano applicate al canale Web quando si seleziona Sincronizza. Tuttavia, agli autori è consentito interrompere l’ereditarietà di componenti specifici nel canale web, in base alle esigenze. Per ulteriori informazioni, vedere [Sincronizzare canale Web con canale di stampa](../../forms/using/create-interactive-communication.md#synchronize).
-Se si seleziona l&#39;opzione **[!UICONTROL Usa stampa come master per canale Web]**, è possibile selezionare una delle modalità seguenti per generare il canale Web:
+     Se si seleziona l&#39;opzione **[!UICONTROL Usa stampa come master per canale Web]**, è possibile selezionare una delle modalità seguenti per generare il canale Web:
 
-      * **[!UICONTROL Layout automatico]**: selezionare questa modalità per generare automaticamente segnaposto, contenuto e associazione dati per il canale Web dal canale di stampa.
-      * **[!UICONTROL Organizza manualmente]**: seleziona questa modalità per selezionare e aggiungere manualmente gli elementi del canale di stampa al canale Web utilizzando il contenuto principale disponibile nella scheda **[!UICONTROL Origini dati]**. Per ulteriori informazioni, vedere [Selezionare gli elementi del canale di stampa per creare il contenuto del canale Web](#selectprintchannelelements).
+     * **[!UICONTROL Layout automatico]**: selezionare questa modalità per generare automaticamente segnaposto, contenuto e associazione dati per il canale Web dal canale di stampa.
+     * **[!UICONTROL Organizza manualmente]**: seleziona questa modalità per selezionare e aggiungere manualmente gli elementi del canale di stampa al canale Web utilizzando il contenuto principale disponibile nella scheda **[!UICONTROL Origini dati]**. Per ulteriori informazioni, vedere [Selezionare gli elementi del canale di stampa per creare il contenuto del canale Web](#selectprintchannelelements).
 
    Per ulteriori informazioni sul canale di stampa e sul canale Web, vedere [Canale di stampa e canale Web](/help/forms/using/web-channel-print-channel.md).
 
@@ -170,10 +184,10 @@ Seleziona il frammento di documento, fai clic su ![configure_icon](assets/config
    * [Aggiunta e configurazione di grafici](/help/forms/using/chart-component-interactive-communications.md)
    * [Sincronizzazione del canale web con il canale di stampa](../../forms/using/create-interactive-communication.md#synchronize)
 
-      * Sincronizzazione automatica
-      * Annulla ereditarietà
-      * Riabilita ereditarietà
-      * Sincronizza
+     * Sincronizzazione automatica
+     * Annulla ereditarietà
+     * Riabilita ereditarietà
+     * Sincronizza
 
    * [Allegati e accesso alla libreria](../../forms/using/create-interactive-communication.md#attachmentslibrary)
    * [Proprietà campo XDP/Layout](../../forms/using/create-interactive-communication.md#xdplayoutfieldproperties)
@@ -242,8 +256,8 @@ Nel canale di stampa, puoi configurare gli allegati e l’accesso alla libreria 
    * **[!UICONTROL Numero massimo di allegati consentiti]**: specifica il numero massimo di allegati consentiti con la comunicazione interattiva.
    * **[!UICONTROL File da allegare]**: selezionare **[!UICONTROL Aggiungi]**, quindi selezionare i file da allegare e specificare quanto segue:
 
-      * **[!UICONTROL Allega il file al documento per impostazione predefinita]**: è possibile modificare questa opzione se solo l&#39;allegato non è obbligatorio.
-      * **[!UICONTROL Obbligatorio:]** l&#39;agente non sarà in grado di rimuovere l&#39;allegato nell&#39;interfaccia utente dell&#39;agente.
+     * **[!UICONTROL Allega il file al documento per impostazione predefinita]**: è possibile modificare questa opzione se solo l&#39;allegato non è obbligatorio.
+     * **[!UICONTROL Obbligatorio:]** l&#39;agente non sarà in grado di rimuovere l&#39;allegato nell&#39;interfaccia utente dell&#39;agente.
 
    ![file allegati](assets/attachfiles.png)
 
@@ -263,9 +277,9 @@ Nel canale di stampa, puoi configurare gli allegati e l’accesso alla libreria 
    * **[!UICONTROL Titolo]**: immetti un titolo che sarà visibile all&#39;agente nell&#39;interfaccia utente dell&#39;agente e nella struttura Contenitore documenti.
    * **[!UICONTROL Tipo di associazione]**: selezionare uno dei tipi di associazione seguenti per il campo.
 
-      * Nessuno: l&#39;agente immetterà il valore della proprietà.
-      * Frammento di testo: se selezionata, puoi sfogliare e selezionare un frammento di documento di testo il cui contenuto viene renderizzato nel campo. In alternativa, trascina il frammento del documento di testo sul nome del campo per impostare l’associazione tra di essi. Il frammento di documento di testo non deve contenere variabili.
-      * Oggetto modello dati: selezionare una proprietà del modello dati del modulo il cui valore viene popolato nel campo. In alternativa, selezionare la scheda **Origini dati** e trascinare la proprietà nel campo.
+     * Nessuno: l&#39;agente immetterà il valore della proprietà.
+     * Frammento di testo: se selezionata, puoi sfogliare e selezionare un frammento di documento di testo il cui contenuto viene renderizzato nel campo. In alternativa, trascina il frammento del documento di testo sul nome del campo per impostare l’associazione tra di essi. Il frammento di documento di testo non deve contenere variabili.
+     * Oggetto modello dati: selezionare una proprietà del modello dati del modulo il cui valore viene popolato nel campo. In alternativa, selezionare la scheda **Origini dati** e trascinare la proprietà nel campo.
 
    * **[!UICONTROL Valori predefiniti]**: il valore predefinito garantisce che il campo non sia vuoto se non è stato fornito alcun valore dall&#39;oggetto modello dati o dal frammento di testo specificato. Se il tipo di associazione dati è none, il valore predefinito viene precompilato nel campo.
    * **[!UICONTROL Pattern di visualizzazione]**: è inoltre possibile definire un formato di visualizzazione per un campo. Selezionare una delle opzioni predefinite dall&#39;elenco a discesa **Tipo** per applicare un formato di visualizzazione a un campo. Selezionare **Personalizzato** per definire un modello di visualizzazione non disponibile nell&#39;elenco. Per ulteriori informazioni, vedere [Modelli di visualizzazione dei dati](../../forms/using/create-interactive-communication.md#datadisplaypatterns)
@@ -300,7 +314,7 @@ Nella tabella seguente è riportato un esempio dei valori visualizzati in seguit
 | Codice fiscale | 1234567 | testo{999-99-9999} | 1-23-4567 | Il numero di cifre nel campo del valore predefinito è inferiore al numero di cifre nel campo Pattern. Il modello si applica alle 7 cifre disponibili. |
 | Codice fiscale | 1234567890 | testo{999-99-9999} | 1234567890 | Il numero di cifre nel campo del valore predefinito è maggiore del numero di cifre nel campo Pattern. Di conseguenza, il valore visualizzato non cambia. |
 
-Se non viene specificato un modello di visualizzazione per una variabile o un elemento del modello dati del modulo, per impostazione predefinita viene utilizzata la [configurazione globale del frammento di documento](https://helpx.adobe.com/it//experience-manager/6-5/forms/using/interactive-communication-configuration-properties.html).
+Se non viene specificato un modello di visualizzazione per una variabile o un elemento del modello dati del modulo, per impostazione predefinita viene utilizzata la [configurazione globale del frammento di documento](https://helpx.adobe.com//experience-manager/6-5/forms/using/interactive-communication-configuration-properties.html).
 
 Se non si applica un motivo di visualizzazione a una variabile di tipo numerico, nell&#39;anteprima di stampa il motivo viene visualizzato in base alla configurazione globale del frammento di documento. Se si applicano modifiche alla configurazione globale predefinita del frammento di documento, il modello viene comunque visualizzato nell’interfaccia utente dell’agente in base ai separatori predefiniti definiti per le impostazioni internazionali.
 
@@ -346,8 +360,8 @@ Per ulteriori informazioni, consulta:
       * **[!UICONTROL Titolo]**: immetti un titolo che sarà visibile nell&#39;editor di comunicazione interattiva.
       * **[!UICONTROL Tipo di associazione]**: selezionare uno dei tipi di associazione seguenti per il campo.
 
-         * **[!UICONTROL Nessuno]**
-         * **[!UICONTROL Oggetto modello dati]**: il valore di una proprietà modello dati modulo è popolato nel campo. In alternativa, selezionare la scheda **Origini dati** e trascinare la proprietà nel campo.
+        * **[!UICONTROL Nessuno]**
+        * **[!UICONTROL Oggetto modello dati]**: il valore di una proprietà modello dati modulo è popolato nel campo. In alternativa, selezionare la scheda **Origini dati** e trascinare la proprietà nel campo.
 
       * **[!UICONTROL Oggetto modello dati]**: proprietà del modello dati del modulo il cui valore è popolato nel campo.
       * **[!UICONTROL Valore predefinito]**: il valore predefinito garantisce che il campo non sia vuoto se non è stato fornito alcun valore dall&#39;oggetto modello dati specificato. Il valore predefinito viene inserito automaticamente nel campo.
@@ -618,7 +632,7 @@ PrintChannelRenderOptions renderOptions = new PrintChannelRenderOptions();
 PrintDocument printDocument = printChannel.render(renderOptions);
 ```
 
-Per generare l&#39;output in qualsiasi altro formato, specificate il tipo di formato di output. Per un elenco dei tipi di formato di output supportati, fare riferimento a [API PrintChannel](https://helpx.adobe.com/it/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/PrintConfig.html).
+Per generare l&#39;output in qualsiasi altro formato, specificate il tipo di formato di output. Per un elenco dei tipi di formato di output supportati, fare riferimento a [API PrintChannel](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/PrintConfig.html).
 
 Ad esempio, potete utilizzare l&#39;esempio seguente per definire PCL come formato di output per una comunicazione interattiva:
 

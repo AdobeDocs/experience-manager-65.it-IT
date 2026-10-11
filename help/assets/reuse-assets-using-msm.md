@@ -8,18 +8,31 @@ feature: Asset Management,Multi Site Manager
 exl-id: 4d0367c4-88aa-4aef-b23d-828609b0df09
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3312'
 ht-degree: 9%
-
 ---
-
 # Riutilizzare le risorse tramite MSM per [!DNL Assets] {#reuse-assets-using-msm-for-assets}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html?lang=en) |
 | AEM 6.5 | Questo articolo |
 
 La funzionalità Multi Site Manager (MSM) in [!DNL Adobe Experience Manager] consente agli utenti di riutilizzare i contenuti creati una sola volta e riutilizzati in più percorsi Web. Lo stesso è disponibile per le risorse digitali di MSM per la funzionalità [!DNL Assets]. Utilizzando MSM per [!DNL Assets], è possibile:
@@ -160,45 +173,45 @@ Per una risorsa o una cartella di origine, puoi visualizzare le seguenti informa
 * Aprire o visualizzare una Live Copy specifica nell&#39;interfaccia utente di [!DNL Experience Manager].
 * Sincronizza gli aggiornamenti a una Live Copy specifica.
 * Sospendi la relazione o modifica la configurazione di rollout per una Live Copy specifica.
-* Access the live copy overview console.
+* Accedi alla console Panoramica Live Copy.
 
-Select the source asset or folder, open the left rail, and click **[!UICONTROL References]**. Alternatively, select an asset or folder and use the keyboard shortcut `Alt + 4`.
+Seleziona la risorsa o la cartella di origine, apri la barra a sinistra e fai clic su **[!UICONTROL Riferimenti]**. In alternativa, seleziona una risorsa o una cartella e utilizza la scelta rapida da tastiera `Alt + 4`.
 
-![Actions and information available in the References rail for the selected source](assets/referencerail_source.png)
+![Azioni e informazioni disponibili nella barra Riferimenti per l&#39;origine selezionata](assets/referencerail_source.png)
 
-*Figure: Actions and information available in the References rail for the selected source.*
+*Figura: azioni e informazioni disponibili nella barra Riferimenti per l&#39;origine selezionata.*
 
-For a specific live copy, click **[!UICONTROL Edit Live Copy]** to suspend relationship or change rollout configuration.
+Per una Live Copy specifica, fai clic su **[!UICONTROL Modifica Live Copy]** per sospendere la relazione o modificare la configurazione di rollout.
 
-![For a specific live copy, the option to suspend relationship or change rollout configuration is accessible from References rail when source asset is selected](assets/referencerail_editlc_options.png)
+![Per una Live Copy specifica, l&#39;opzione per sospendere la relazione o modificare la configurazione di rollout è accessibile dalla barra Riferimenti quando la risorsa di origine è selezionata](assets/referencerail_editlc_options.png)
 
-*Figure: Suspend relationship or change rollout configuration of a specific live copy.*
+*Figura: sospendi la relazione o modifica la configurazione di rollout di una Live Copy specifica.*
 
-### Quick actions from References rail for live copy {#ref-rail-lc}
+### Azioni rapide dalla barra Riferimenti per Live Copy {#ref-rail-lc}
 
-For a live copy asset or folder, you can see the following information and take the following actions directly from the References rail:
+Per una risorsa o una cartella Live Copy, puoi visualizzare le seguenti informazioni ed eseguire le azioni seguenti direttamente dalla barra Riferimenti:
 
-* See the path of its source.
+* Visualizzare il percorso della relativa origine.
 * Aprire o visualizzare una Live Copy specifica nell&#39;interfaccia utente di [!DNL Experience Manager].
-* Roll out the updates.
+* Eseguire il rollout degli aggiornamenti.
 
-Seleziona una risorsa o una cartella Live Copy, apri la barra a sinistra e fai clic su **[!UICONTROL Riferimenti]**. Alternatively, select an asset or folder and use the keyboard shortcut `Alt + 4`.
+Seleziona una risorsa o una cartella Live Copy, apri la barra a sinistra e fai clic su **[!UICONTROL Riferimenti]**. In alternativa, seleziona una risorsa o una cartella e utilizza la scelta rapida da tastiera `Alt + 4`.
 
 ![Azioni disponibili nella barra laterale Riferimenti per la Live Copy selezionata](assets/referencerail_livecopy.png)
 
-*Figure: Actions available in the References rail for the selected live copy.*
+*Figura: azioni disponibili nella barra Riferimenti per la Live Copy selezionata.*
 
-## Propagate modifications from source to live copies {#rolloutsync}
+## Propagare le modifiche dall’origine alle Live Copy {#rolloutsync}
 
-After a source is modified, the changes can be propagated to the live copies using either a synchronize action or a rollout action. To understand the difference between both the actions, see [glossary](#glossary).
+Dopo la modifica di un’origine, le modifiche possono essere propagate alle Live Copy utilizzando un’azione di sincronizzazione o un’azione di rollout. Per comprendere la differenza tra le due azioni, vedere [glossario](#glossary).
 
-### Rollout action {#rollout}
+### Rollout, azione {#rollout}
 
-You can initiate a rollout action from the source asset and update all or a few select live copies.
+Puoi avviare un’azione di rollout dalla risorsa sorgente e aggiornare tutte o alcune Live Copy selezionate.
 
 1. Seleziona una risorsa Live Copy o una cartella. Fare clic su **[!UICONTROL Proprietà]** nella barra degli strumenti. In alternativa, utilizzare la scelta rapida da tastiera `p`.
-1. Fai clic su **[!UICONTROL Origine Live Copy]**. Click **[!UICONTROL Rollout]** from the toolbar.
-1. Select the live copies you want to update. Fai clic su **[!UICONTROL Rollout]**.
+1. Fai clic su **[!UICONTROL Origine Live Copy]**. Fai clic su **[!UICONTROL Rollout]** nella barra degli strumenti.
+1. Seleziona le Live Copy da aggiornare. Fai clic su **[!UICONTROL Rollout]**.
 1. Per eseguire il rollout degli aggiornamenti apportati alle risorse figlio, seleziona **[!UICONTROL Rollout Source e tutti gli elementi figlio]**.
 
    ![Esegui il rollout delle modifiche dell&#39;origine in alcune o tutte le Live Copy](assets/livecopy_rollout_page.png)

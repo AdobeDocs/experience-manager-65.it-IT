@@ -9,7 +9,18 @@ exl-id: e57a6971-6a6f-427b-a8cd-a2f2e8cdf9e2
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 1%
@@ -20,7 +31,7 @@ Adobe Experience Manager (AEM), e prima ancora CQ, ha a lungo utilizzato il prin
 
 Sovrapposizione è un termine utilizzato in molti contesti. In questo contesto (estensione di AEM), per sovrapposizione si intende l’accettazione delle funzionalità predefinite e l’imposizione di definizioni personalizzate (personalizzazione della funzionalità standard).
 
-In un&#39;istanza standard, la funzionalità predefinita si trova in `/libs` e si consiglia di definire la sovrapposizione (personalizzazioni) nel ramo `/apps`. AEM utilizza un percorso di ricerca per trovare una risorsa, eseguendo prima la ricerca nel ramo `/apps` e poi nel ramo `/libs` (è possibile configurare il percorso di ricerca [&#128279;](#configuring-the-search-paths)). Questo meccanismo indica che la sovrapposizione (e le personalizzazioni ivi definite) ha la priorità.
+In un&#39;istanza standard, la funzionalità predefinita si trova in `/libs` e si consiglia di definire la sovrapposizione (personalizzazioni) nel ramo `/apps`. AEM utilizza un percorso di ricerca per trovare una risorsa, eseguendo prima la ricerca nel ramo `/apps` e poi nel ramo `/libs` (è possibile configurare il percorso di ricerca [](#configuring-the-search-paths)). Questo meccanismo indica che la sovrapposizione (e le personalizzazioni ivi definite) ha la priorità.
 
 A partire da AEM 6.0, sono state apportate modifiche al modo in cui le sovrapposizioni vengono implementate e utilizzate:
 
@@ -61,7 +72,7 @@ A partire da AEM 6.0, sono state apportate modifiche al modo in cui le sovrappos
 
 Le sovrapposizioni sono il metodo consigliato per molte modifiche, ad esempio [configurazione delle console](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console) o [creazione della categoria di selezione nel browser risorse nel pannello laterale](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) (utilizzato durante la creazione delle pagine). Sono necessari in quanto:
 
-* ***Non* apportare modifiche nel ramo `/libs`**&#x200B;Qualsiasi modifica apportata potrebbe andare persa, poiché questo ramo potrebbe subire modifiche ogni volta che:
+* ***Non* apportare modifiche nel ramo `/libs`**Qualsiasi modifica apportata potrebbe andare persa, poiché questo ramo potrebbe subire modifiche ogni volta che:
 
   * aggiorna nell’istanza
   * applicare un hotfix

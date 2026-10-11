@@ -11,13 +11,27 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a9f7d31e-bbe1-4475-966a-5f213546fcd9
+    internal-label: SPA Editor
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2074'
 ht-degree: 6%
-
 ---
-
 
 # Sviluppo di SPA per AEM{#developing-spas-for-aem}
 
@@ -192,8 +206,8 @@ L’architettura generale di AEM, inclusi gli ambienti di sviluppo, authoring e 
 
   Qui è dove l&#39;origine dell&#39;applicazione SPA e l&#39;origine del componente sono estratte.
 
-   * Il generatore clientlib NPM crea una libreria client dal progetto SPA.
-   * Tale libreria viene presa da Maven e implementata dal plug-in Maven Build insieme al componente nell’istanza di authoring di AEM.
+  * Il generatore clientlib NPM crea una libreria client dal progetto SPA.
+  * Tale libreria viene presa da Maven e implementata dal plug-in Maven Build insieme al componente nell’istanza di authoring di AEM.
 
 * **Autore AEM**
 
@@ -201,11 +215,11 @@ L’architettura generale di AEM, inclusi gli ambienti di sviluppo, authoring e 
 
   Quando si modifica un’applicazione a pagina singola utilizzando l’Editor SPA nell’ambiente di authoring:
 
-   1. L’applicazione a pagina singola richiede il HTML esterno.
-   1. CSS caricato.
-   1. Il JavaScript dell’applicazione SPA è caricato.
-   1. Quando viene eseguita l&#39;applicazione SPA, viene richiesto il JSON, che consente all&#39;app di generare il DOM della pagina, inclusi gli attributi `cq-data`.
-   1. Questi attributi `cq-data` consentono all&#39;editor di caricare informazioni aggiuntive sulla pagina in modo da sapere quali configurazioni di modifica sono disponibili per i componenti.
+  1. L’applicazione a pagina singola richiede il HTML esterno.
+  1. CSS caricato.
+  1. Il JavaScript dell’applicazione SPA è caricato.
+  1. Quando viene eseguita l&#39;applicazione SPA, viene richiesto il JSON, che consente all&#39;app di generare il DOM della pagina, inclusi gli attributi `cq-data`.
+  1. Questi attributi `cq-data` consentono all&#39;editor di caricare informazioni aggiuntive sulla pagina in modo da sapere quali configurazioni di modifica sono disponibili per i componenti.
 
 * **Pubblicazione AEM**
 
@@ -215,8 +229,8 @@ L’architettura generale di AEM, inclusi gli ambienti di sviluppo, authoring e 
 
   Dispatcher funge da livello di caching di AEM per i visitatori del sito.
 
-   * Le richieste vengono elaborate in modo simile a come nell’istanza di authoring di AEM, tuttavia non vi è alcuna richiesta di informazioni sulla pagina, perché questa è necessaria solo per l’editor.
-   * JavaScript, CSS, JSON e HTML sono memorizzati nella cache, ottimizzando la pagina per una consegna rapida.
+  * Le richieste vengono elaborate in modo simile a come nell’istanza di authoring di AEM, tuttavia non vi è alcuna richiesta di informazioni sulla pagina, perché questa è necessaria solo per l’editor.
+  * JavaScript, CSS, JSON e HTML sono memorizzati nella cache, ottimizzando la pagina per una consegna rapida.
 
 >[!NOTE]
 >

@@ -1,6 +1,6 @@
 ---
-title: Sviluppo di componenti AEM - Esempi di codice
-description: In questa sezione vengono forniti alcuni esempi su come creare componenti personalizzati per l’AEM.
+title: 'Sviluppo di componenti AEM: esempi di codice'
+description: Questa sezione fornisce alcuni esempi su come creare componenti personalizzati per AEM.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
@@ -10,27 +10,36 @@ exl-id: 4059af12-49a7-489c-a2b8-d0481be57cc5
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 2%
-
+source-wordcount: '244'
+ht-degree: 8%
 ---
+# Sviluppo di componenti AEM: esempi di codice{#developing-aem-components-code-samples}
 
-# Sviluppo di componenti AEM - Esempi di codice{#developing-aem-components-code-samples}
-
-In questa sezione vengono forniti alcuni esempi su come creare componenti personalizzati per l’AEM.
+Questa sezione fornisce alcuni esempi su come creare componenti personalizzati per AEM.
 
 Per i concetti sottostanti, vedi:
 
-* [Componenti AEM - Nozioni di base](/help/sites-developing/components-basics.md)
-* [Sviluppo di componenti AEM](/help/sites-developing/developing-components.md)
+* [Componenti AEM: nozioni di base](/help/sites-developing/components-basics.md)
+* [Sviluppo di Componenti AEM](/help/sites-developing/developing-components.md)
 
 Per informazioni sull&#39;interfaccia classica, vedere [Componenti AEM per l&#39;interfaccia classica](/help/sites-developing/developing-components-classic.md).
 
 >[!NOTE]
 >
->Per facilitare l’analisi, il test e il debug dei componenti, AEM fornisce:
+>Per aiutarti ad analizzare, testare ed eseguire il debug dei componenti, AEM fornisce:
 >
 >* [Modalità sviluppatore](/help/sites-developing/developer-mode.md)
 >* un [framework per automatizzare i test, basato sulla libreria Hobbes.js](/help/sites-developing/hobbes.md)
@@ -42,12 +51,12 @@ CODICE SU GITHUB
 
 Puoi trovare il codice di questa pagina su GitHub
 
-* [Apri il progetto di personalizzazione dei campi nella finestra di dialogo per l&#39;authoring di AEM su GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization)
+* [Apri progetto di personalizzazione aem-authoring-fields-su GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization)
 * Scarica il progetto come [file ZIP](https://codeload.github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization/zip/refs/heads/master)
 
 >[!NOTE]
 >
->Questo esempio di codice è correlato alla sessione AEM Gems su [Personalizzazione dei campi della finestra di dialogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=it).
+>Questo esempio di codice è correlato alla sessione AEM Gems su [Personalizzazione dei campi delle finestre di dialogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
 
 ## Risorse correlate {#related-resources}
 

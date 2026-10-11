@@ -10,13 +10,31 @@ exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e2cac356-c071-4141-ad6f-827893261a16
+    internal-label: Launches
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1096'
-ht-degree: 78%
-
+source-wordcount: '1098'
+ht-degree: 77%
 ---
-
 # Crea lanci{#creating-launches}
 
 Crea un lancio per abilitare l’aggiornamento di una nuova versione delle pagine web esistenti per l’attivazione futura. Per creare un lancio, è necessario specificare un titolo e la pagina di origine:
@@ -41,12 +59,12 @@ Puoi creare un lancio dalla console Sites o Lanci:
 
    * **Lanci**:
 
-      1. Seleziona **Crea lancio** dalla barra degli strumenti per aprire la procedura guidata.
+     1. Seleziona **Crea lancio** dalla barra degli strumenti per aprire la procedura guidata.
 
    * **Sites**:
 
-      1. Seleziona **Crea** nella barra degli strumenti per aprire la casella di selezione.
-      1. Da questa seleziona **Crea lancio** per aprire la procedura guidata.
+     1. Seleziona **Crea** nella barra degli strumenti per aprire la casella di selezione.
+     1. Da questa seleziona **Crea lancio** per aprire la procedura guidata.
 
    >[!NOTE]
    >
@@ -59,7 +77,7 @@ Puoi creare un lancio dalla console Sites o Lanci:
    * Passa alla posizione desiderata.
    * Seleziona le pagine sorgente e conferma (segno di spunta).
 
-   Ripeti in base alle esigenze.  
+   Ripeti in base alle esigenze.
 
    ![Seleziona l&#39;origine e aggiungi le pagine](assets/chlimage_1-225.png)
 
@@ -75,7 +93,7 @@ Puoi creare un lancio dalla console Sites o Lanci:
 
    * **Includere le pagine secondarie**:
 
-      * Specifica se creare il lancio con o senza pagine secondarie. Per impostazione predefinita, le pagine secondarie sono incluse.
+     * Specifica se creare il lancio con o senza pagine secondarie.  Per impostazione predefinita, le pagine secondarie sono incluse.
 
    Procedi con **Successivo**.
 
@@ -164,8 +182,8 @@ Per creare un lancio nidificato dalla console **Sites**, basato su un lancio esi
 
 * Seleziona il lancio toccando o facendo clic sulla miniatura.
 * Viene visualizzata la barra degli strumenti. Seleziona Clona.
-   * Il clone verrà creato e visualizzato nella console.
-   * Il **Titolo lancio** indicherà che si tratta di un clone. È possibile aggiornare il titolo modificando la [Configurazione lancio](/help/sites-authoring/launches-editing.md#editing-a-launch-configuration) (**Proprietà**).
+  * Il clone verrà creato e visualizzato nella console.
+  * Il **Titolo lancio** indicherà che si tratta di un clone. È possibile aggiornare il titolo modificando la [Configurazione lancio](/help/sites-authoring/launches-editing.md#editing-a-launch-configuration) (**Proprietà**).
 
 ## Eliminazione di un lancio {#deleting-a-launch}
 

@@ -1,5 +1,5 @@
 ---
-title: Personalizzazione del tracciamento degli eventi dei moduli
+title: Personalizzazione del modulo di tracciamento degli eventi
 description: Se un utente trascorre più di 60 secondi su un campo, si attiva un evento fieldvisit e i dettagli del campo vengono inviati ad Adobe SiteCatalyst.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,14 +8,30 @@ exl-id: d0280a15-5d0d-49cf-bce9-ad1c40530eae
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Foundation Components
-source-git-commit: 8a77756e8ba771c8de9950c2323bef8f23cc59b4
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '449'
-ht-degree: 1%
-
+ht-degree: 2%
 ---
-
-# Personalizzazione del tracciamento degli eventi dei moduli {#customizing-form-event-tracking}
+# Personalizzazione del modulo di tracciamento degli eventi {#customizing-form-event-tracking}
 
 In un modulo adattivo abilitato per l’analisi vengono tracciati i seguenti eventi predefiniti:
 
@@ -62,7 +78,7 @@ In un modulo adattivo abilitato per l’analisi vengono tracciati i seguenti eve
 
 ## Personalizzazione del timeout dell’evento di visita in campo {#customizing-the-field-visit-event-timeout}
 
-Nella configurazione predefinita del modulo AEM, se un utente trascorre più di 60 secondi su un campo, si attiva un evento `fieldvisit` e i dettagli del campo vengono inviati ad Adobe Analytics. Puoi personalizzare la linea di base del tracciamento temporale dei campi in Configurazione di AEM Forms Analytics nella console di configurazione AEM (/system/console/configMgr) per aumentare o ridurre il limite di timeout.
+Nella configurazione predefinita del modulo di AEM, se un utente trascorre più di 60 secondi su un campo, si attiva un evento `fieldvisit` e i dettagli del campo vengono inviati ad Adobe Analytics. Puoi personalizzare la linea di base del tracciamento temporale dei campi in Configurazione di AEM Forms Analytics nella console di configurazione di AEM (/system/console/configMgr) per aumentare o ridurre il limite di timeout.
 
 ## Personalizzazione degli eventi di tracciamento {#customizing-the-tracking-events}
 

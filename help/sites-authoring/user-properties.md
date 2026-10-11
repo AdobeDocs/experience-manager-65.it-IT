@@ -10,13 +10,26 @@ exl-id: 6079431d-7d08-4973-8bb4-a8d10626a795
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 63%
-
 ---
-
 # Configurazione dell’ambiente dell’account{#configuring-your-account-environment}
 
 Con AEM è possibile configurare il proprio account e alcuni aspetti dell’ambiente di authoring.
@@ -31,15 +44,15 @@ Le impostazioni **Utente** consentono di accedere a:
 
 * Impersona
 
-   * Con la funzionalità [Impersona come](/help/sites-administering/security.md#impersonating-another-user) un utente può lavorare per conto di un altro utente.
+  * Con la funzionalità [Impersona come](/help/sites-administering/security.md#impersonating-another-user) un utente può lavorare per conto di un altro utente.
 
 * Profilo
 
-   * Offre un collegamento semplice alle [impostazioni utente](/help/sites-administering/security.md))
+  * Offre un collegamento semplice alle [impostazioni utente](/help/sites-administering/security.md))
 
 * [Preferenze](/help/sites-authoring/user-properties.md#my-preferences)
 
-   * Consente di specificare varie preferenze di impostazione specifiche dell’utente.
+  * Consente di specificare varie preferenze di impostazione specifiche dell’utente.
 
 ![schermata_shot_2018-03-20at103808](assets/screen_shot_2018-03-20at103808.png)
 
@@ -61,13 +74,13 @@ Ogni utente può impostare autonomamente determinate proprietà.
 
   Ciò definisce il comportamento o l’apertura delle finestre. Puoi selezionare:
 
-   * **Finestre multiple** (predefinito)
+  * **Finestre multiple** (predefinito)
 
-      * Le pagine vengono aperte in una nuova finestra.
+    * Le pagine vengono aperte in una nuova finestra.
 
-   * **Finestra singola**
+  * **Finestra singola**
 
-      * Le pagine vengono aperte nella finestra corrente.
+    * Le pagine vengono aperte nella finestra corrente.
 
 * **Mostra azioni desktop per Assets**
 
@@ -77,8 +90,8 @@ Ogni utente può impostare autonomamente determinate proprietà.
 
   Definisce il colore predefinito utilizzato per le annotazioni.
 
-   * Fai clic sul blocco di colori per aprire il selettore di campioni e selezionare un colore.
-   * In alternativa, immetti nel campo il codice esadecimale del colore desiderato.
+  * Fai clic sul blocco di colori per aprire il selettore di campioni e selezionare un colore.
+  * In alternativa, immetti nel campo il codice esadecimale del colore desiderato.
 
 * **Presentazione data relativa**
 
@@ -86,23 +99,23 @@ Ogni utente può impostare autonomamente determinate proprietà.
 
   Questa opzione definisce il modo in cui il sistema visualizza le date. Sono disponibili le seguenti opzioni:
 
-   * **Mostra sempre data esatta**: viene sempre visualizzata la data esatta e non una data relativa.
-   * **1 giorno**: viene visualizzata la data relativa per le date entro un giorno; in caso contrario viene visualizzata una data esatta.
+  * **Mostra sempre data esatta**: viene sempre visualizzata la data esatta e non una data relativa.
+  * **1 giorno**: viene visualizzata la data relativa per le date entro un giorno; in caso contrario viene visualizzata una data esatta.
 
-   * **7 giorni (impostazione predefinita)**: viene visualizzata la data relativa per date entro sette giorni; in caso contrario viene visualizzata una data esatta.
+  * **7 giorni (impostazione predefinita)**: viene visualizzata la data relativa per date entro sette giorni; in caso contrario viene visualizzata una data esatta.
 
-   * **1 mese**: viene visualizzata la data relativa per le date entro un mese; in caso contrario viene visualizzata una data esatta.
+  * **1 mese**: viene visualizzata la data relativa per le date entro un mese; in caso contrario viene visualizzata una data esatta.
 
-   * **1 anno**: viene visualizzata la data relativa per le date entro un anno; in caso contrario viene visualizzata una data esatta.
+  * **1 anno**: viene visualizzata la data relativa per le date entro un anno; in caso contrario viene visualizzata una data esatta.
 
-   * **Mostra sempre data relativa**: non vengono mai visualizzate date esatte, ma solo date relative.
+  * **Mostra sempre data relativa**: non vengono mai visualizzate date esatte, ma solo date relative.
 
 * **Abilita scelte rapide**
 
   AEM supporta diverse scelte rapide da tastiera per rendere più efficiente l’authoring.
 
-   * [Scelte rapide da tastiera per la modifica delle pagine](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
-   * [Scelte rapide da tastiera per le console](/help/sites-authoring/keyboard-shortcuts.md)
+  * [Scelte rapide da tastiera per la modifica delle pagine](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
+  * [Scelte rapide da tastiera per le console](/help/sites-authoring/keyboard-shortcuts.md)
 
   Questa opzione abilita le scelte rapide da tastiera. Per impostazione predefinita sono abilitate, ma possono essere disabilitate, ad esempio, se un utente ha determinati requisiti di accessibilità.
 

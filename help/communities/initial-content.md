@@ -9,22 +9,29 @@ exl-id: 068a0fff-ca48-4847-ba3f-d78416c97f6d
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 1%
-
 ---
-
 # Contenuto sandbox iniziale {#initial-sandbox-content}
 
 In questa sezione verranno create le pagine seguenti che utilizzano tutte il [modello di pagina](initial-app.md#createthepagetemplate):
 
 * Sito sandbox SCF, che reindirizza alla versione inglese della pagina principale.
 
-   * SCF Sandbox: la pagina principale per la versione inglese del sito.
+  * SCF Sandbox: la pagina principale per la versione inglese del sito.
 
-   * SCF Play: elemento secondario della pagina principale in cui eseguire la riproduzione.
+  * SCF Play: elemento secondario della pagina principale in cui eseguire la riproduzione.
 
 Questo tutorial non viene approfondito in [copie per lingua](../../help/sites-administering/tc-prep.md). È invece progettato in modo che la pagina principale possa implementare il rilevamento della lingua preferita per l’utente tramite l’intestazione HTML e reindirizzare alla pagina principale appropriata per la lingua. La convenzione prevede l’utilizzo del codice del paese di due lettere per il nome del nodo della pagina, ad esempio &quot;en&quot; per l’inglese e &quot;fr&quot; per il francese.
 
@@ -90,9 +97,9 @@ Quando ` [/etc/designs/an-scf-sandbox](setup-website.md#setupthedesigntreeetcdes
 * `% String favIcon = currentDesign.getPath() + "/favicon.ico"; %`
 
 
-   * Nome: `cq:designPath`
-   * Tipo: `String`
-   * Valore: `/etc/designs/an-scf-sandbox`
+  * Nome: `cq:designPath`
+  * Tipo: `String`
+  * Valore: `/etc/designs/an-scf-sandbox`
 
 * Fai clic sul `[+] Add` verde
 

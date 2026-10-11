@@ -1,18 +1,29 @@
 ---
 title: Considerazioni e requisiti di rete
-description: Vengono illustrate le considerazioni sulla rete durante la progettazione di una distribuzione  [!DNL Adobe Experience Manager Assets] .
+description: Vengono fornite considerazioni sulla rete durante la progettazione di una distribuzione di [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 role: Developer, Admin
 feature: Developer Tools
 exl-id: 1313842c-18b1-4727-ba63-b454d0f5a2cc
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1010'
+source-wordcount: '1018'
 ht-degree: 1%
-
 ---
-
 # Considerazioni sulla rete di [!DNL Assets] {#assets-network-considerations}
 
 Comprendere la rete è importante quanto comprendere [!DNL Adobe Experience Manager Assets]. La rete può influenzare le esperienze di caricamento, download e utilizzo. La creazione di diagrammi della topologia di rete consente di identificare i punti di interruzione e le aree sottoottimizzate della rete che è necessario correggere per migliorare le prestazioni della rete e l&#39;esperienza utente.

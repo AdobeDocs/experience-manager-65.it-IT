@@ -9,13 +9,17 @@ exl-id: c65a24e6-3041-4774-aeed-8e188ea19b78
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 1%
-
 ---
-
 # Gestione dei banner{#managing-banners}
 
 {{ue-over-mobile}}
@@ -78,7 +82,7 @@ Utilizza l’editor Trascina e rilascia integrato in AEM per aggiungere o modifi
 Flusso di lavoro per modificare un articolo:
 
 1. In Mobile, scegli la tua app Mobile On-Demand dal catalogo.
-1. Seleziona un banner originato da AEM dal riquadro **&#x200B; Gestisci banner**.
+1. Seleziona un banner originato da AEM dal riquadro** Gestisci banner**.
 1. Fai clic sul banner evidenziato nella vista a elenco per aprirlo nell’editor di contenuti.
 1. Utilizza l’editor di contenuti per trascinare il contenuto del banner (manoscritti, immagini, testo e così via).
 

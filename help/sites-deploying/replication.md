@@ -10,13 +10,22 @@ feature: Configuring
 exl-id: 09943de5-8d62-4354-a37f-0521a66b4c49
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: e4c42f989baf1a91e94944c612ee6b8de1dc331a
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3334'
+source-wordcount: '3471'
 ht-degree: 3%
-
 ---
-
 # Replica{#replication}
 
 Gli agenti di replica sono centrali per Adobe Experience Manager (AEM) in quanto il meccanismo utilizzato per:
@@ -108,7 +117,7 @@ I seguenti agenti sono disponibili in un’installazione standard di AEM:
 Utilizzato per replicare da Author a Publish.
 
 * Eliminazione dispatcher
-Viene utilizzato per la gestione della cache di Dispatcher. Per ulteriori informazioni, vedere [Annullamento della validità della cache di Dispatcher dall&#39;ambiente di authoring](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=it#invalidating-dispatcher-cache-from-the-authoring-environment) e [Annullamento della validità della cache di Dispatcher da un&#39;istanza di pubblicazione](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=it#invalidating-dispatcher-cache-from-a-publishing-instance).
+Viene utilizzato per la gestione della cache di Dispatcher. Per ulteriori informazioni, vedere [Annullamento della validità della cache di Dispatcher dall&#39;ambiente di authoring](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment) e [Annullamento della validità della cache di Dispatcher da un&#39;istanza di pubblicazione](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance).
 
 * [Replica inversa](#reverse-replication-publish-to-author)
 Utilizzato per replicare da Publish a Author. La replica inversa non viene utilizzata per le funzioni di Communities, ad esempio forum, blog e commenti. Viene effettivamente disattivata in quanto la casella in uscita non è abilitata. L’utilizzo della replica inversa richiederebbe una configurazione personalizzata.
@@ -138,16 +147,16 @@ Durante la configurazione di un agente di replica dalla console Strumenti, nella
 
   Quando l&#39;agente è **abilitato**, la coda viene visualizzata come:
 
-   * **Attivo** durante l&#39;elaborazione degli elementi.
-   * **Inattivo** quando la coda è vuota.
-   * **Bloccato** quando gli elementi sono in coda, ma non possono essere elaborati; ad esempio, quando la coda di ricezione è disabilitata.
+  * **Attivo** durante l&#39;elaborazione degli elementi.
+  * **Inattivo** quando la coda è vuota.
+  * **Bloccato** quando gli elementi sono in coda, ma non possono essere elaborati; ad esempio, quando la coda di ricezione è disabilitata.
 
 * **Tipo di serializzazione**
 
   Tipo di serializzazione:
 
-   * **Predefinito**: imposta se l&#39;agente deve essere selezionato automaticamente.
-   * **Svuotamento del Dispatcher**: selezionare questa opzione se l&#39;agente deve essere utilizzato per svuotare la cache di Dispatcher.
+  * **Predefinito**: imposta se l&#39;agente deve essere selezionato automaticamente.
+  * **Svuotamento del Dispatcher**: selezionare questa opzione se l&#39;agente deve essere utilizzato per svuotare la cache di Dispatcher.
 
 * **Ritardo per riprovare**
 
@@ -159,8 +168,8 @@ Durante la configurazione di un agente di replica dalla console Strumenti, nella
 
   A seconda dell’ambiente, l’agente utilizza questo account utente per:
 
-   * raccogliere e creare pacchetti di contenuti dall’ambiente di authoring;
-   * creare e scrivere contenuti nell’ambiente di pubblicazione
+  * raccogliere e creare pacchetti di contenuti dall’ambiente di authoring;
+  * creare e scrivere contenuti nell’ambiente di pubblicazione
 
   Lascia questo campo vuoto per utilizzare l’account utente di sistema (l’account definito in sling come utente amministratore; per impostazione predefinita è `admin`).
 
@@ -180,9 +189,9 @@ Durante la configurazione di un agente di replica dalla console Strumenti, nella
 
   Specifica il livello di dettaglio da utilizzare per i messaggi di registro.
 
-   * `Error`: vengono registrati solo gli errori
-   * `Info`: errori, avvisi e altri messaggi informativi registrati
-   * `Debug`: nei messaggi viene utilizzato un livello di dettaglio elevato, principalmente a scopo di debug
+  * `Error`: vengono registrati solo gli errori
+  * `Info`: errori, avvisi e altri messaggi informativi registrati
+  * `Debug`: nei messaggi viene utilizzato un livello di dettaglio elevato, principalmente a scopo di debug
 
   Predefinito: `Info`
 
@@ -202,8 +211,8 @@ Durante la configurazione di un agente di replica dalla console Strumenti, nella
 
   Ad esempio:
 
-   * Un agente predefinito può replicare in `https://localhost:4503/bin/receive`
-   * Un agente di Dispatcher Flush può replicarsi in `https://localhost:8000/dispatcher/invalidate.cache`
+  * Un agente predefinito può replicare in `https://localhost:4503/bin/receive`
+  * Un agente di Dispatcher Flush può replicarsi in `https://localhost:8000/dispatcher/invalidate.cache`
 
   Il protocollo qui specificato (HTTP o HTTPS) determina il metodo di trasporto.
 
@@ -281,15 +290,15 @@ Le seguenti impostazioni sono necessarie solo se è necessario un proxy:
 
   Per un agente di Dispatcher Flush, non è necessario modificare le tre voci standard:
 
-   * `CQ-Action:{action}`
-   * `CQ-Handle:{path}`
-   * `CQ-Path:{path}`
+  * `CQ-Action:{action}`
+  * `CQ-Handle:{path}`
+  * `CQ-Path:{path}`
 
   Questi vengono utilizzati, a seconda dei casi, per indicare l&#39;azione da eseguire durante lo scaricamento dell&#39;handle o del percorso. I sottoparametri sono dinamici:
 
-   * `{action}` indica un&#39;azione di replica
+  * `{action}` indica un&#39;azione di replica
 
-   * `{path}` indica un percorso
+  * `{path}` indica un percorso
 
   Sono sostituite dal percorso/azione pertinente alla richiesta e pertanto non devono essere &quot;hardcoded&quot;:
 
@@ -356,7 +365,7 @@ Dalla scheda Strumenti nell&#39;ambiente di authoring, è possibile configurare 
 
 >[!NOTE]
 >
->Quando un Dispatcher gestisce le richieste HTTP per le istanze Author o Publish, la richiesta HTTP dell’agente di replica deve includere l’intestazione PATH. Oltre alla procedura seguente, è necessario aggiungere l’intestazione PATH all’elenco delle intestazioni client di Dispatcher. Vedere [/clientheaders (Client Headers)](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#specifying-the-http-headers-to-pass-through-clientheaders).
+>Quando un Dispatcher gestisce le richieste HTTP per le istanze Author o Publish, la richiesta HTTP dell’agente di replica deve includere l’intestazione PATH. Oltre alla procedura seguente, è necessario aggiungere l’intestazione PATH all’elenco delle intestazioni client di Dispatcher. Vedere [/clientheaders (Client Headers)](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders).
 >
 
 1. Accedi alla scheda **Strumenti** in AEM.
@@ -424,19 +433,19 @@ Per configurare la replica dei contenuti per un’ulteriore istanza Publish, cre
 
    * Nella scheda **Impostazioni**:
 
-      * Attiva **Abilitato**.
-      * Immetti una **Descrizione**.
-      * Imposta **Ritardo per riprovare** su `60000`.
+     * Attiva **Abilitato**.
+     * Immetti una **Descrizione**.
+     * Imposta **Ritardo per riprovare** su `60000`.
 
-      * Lascia **Tipo di serializzazione** come `Default`.
+     * Lascia **Tipo di serializzazione** come `Default`.
 
    * Nella scheda **Trasporto**:
 
-      * Immetti l’URI richiesto per la nuova istanza Publish; ad esempio,
-        `https://localhost:4504/bin/receive`.
+     * Immetti l’URI richiesto per la nuova istanza Publish; ad esempio,
+       `https://localhost:4504/bin/receive`.
 
-      * Immettere l&#39;account utente specifico del sito utilizzato per la replica.
-      * Se necessario, puoi configurare altri parametri.
+     * Immettere l&#39;account utente specifico del sito utilizzato per la replica.
+     * Se necessario, puoi configurare altri parametri.
 
 1. Fai clic su **OK**.
 
@@ -467,19 +476,19 @@ Gli agenti predefiniti sono inclusi nell&#39;installazione. Tuttavia, è ancora 
 
    * Nella scheda **Impostazioni**:
 
-      * Attiva **Abilitato**.
-      * Immetti una **Descrizione**.
-      * Lasciare **Tipo di serializzazione** come `Dispatcher Flush` o impostarlo come tale se si crea un agente.
+     * Attiva **Abilitato**.
+     * Immetti una **Descrizione**.
+     * Lasciare **Tipo di serializzazione** come `Dispatcher Flush` o impostarlo come tale se si crea un agente.
 
-      * (facoltativo) Seleziona **Aggiornamento alias** per abilitare le richieste di annullamento della validità di un alias o di un percorso personalizzato in Dispatcher.
+     * (facoltativo) Seleziona **Aggiornamento alias** per abilitare le richieste di annullamento della validità di un alias o di un percorso personalizzato in Dispatcher.
 
    * Nella scheda **Trasporto**:
 
-      * Immetti l’URI richiesto per la nuova istanza Publish; ad esempio,
-        `https://localhost:80/dispatcher/invalidate.cache`.
+     * Immetti l’URI richiesto per la nuova istanza Publish; ad esempio,
+       `https://localhost:80/dispatcher/invalidate.cache`.
 
-      * Immettere l&#39;account utente specifico del sito utilizzato per la replica.
-      * Se necessario, puoi configurare altri parametri.
+     * Immettere l&#39;account utente specifico del sito utilizzato per la replica.
+     * Se necessario, puoi configurare altri parametri.
 
    Per gli agenti di Dispatcher Flush, la proprietà URI viene utilizzata solo se utilizzi voci virtualhost basate sul percorso per differenziare le farm. Utilizza questo campo per individuare la farm da invalidare. Ad esempio, la farm n. 1 ha l’host virtuale `www.mysite.com/path1/*` e la farm n. 2 ha l’host virtuale `www.mysite.com/path2/*`. Puoi utilizzare l’URL `/path1/invalidate.cache` per individuare la prima farm e `/path2/invalidate.cache` per individuare la seconda farm.
 

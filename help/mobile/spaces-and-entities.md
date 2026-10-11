@@ -8,7 +8,13 @@ exl-id: 44591900-b01b-4a33-9910-839564477e7d
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 4%
@@ -116,7 +122,7 @@ La funzione **Copia lingua** consente agli autori di copiare la copia master in 
    >
    >I nodi della copia lingua possono esistere solo come figlio diretto dello spazio.
 
-1. Scegli **Lingua pacchetto contenuti&ast;** e immetti **Titolo&ast;** nella finestra di dialogo **Crea copia lingua**.
+1. Scegli **Lingua pacchetto contenuti&amp;ast;** e immetti **Titolo&amp;ast;** nella finestra di dialogo **Crea copia lingua**.
 
    Fai clic su **Crea**.
 
@@ -235,7 +241,7 @@ Se per la modellazione dei dati vengono raccolti elementi secondari di entità, 
 
 È possibile scegliere **Pubblica struttura** o **Pubblicazione rapida** per pubblicare l&#39;entità.
 
-1. Selezionate un&#39;entità dall&#39;elenco della console dello spazio e fate clic su **Pubblica albero (Publish Tree) &#x200B;** per pubblicare l&#39;entità e i relativi elementi figlio.
+1. Selezionate un&#39;entità dall&#39;elenco della console dello spazio e fate clic su **Pubblica albero (Publish Tree) **per pubblicare l&#39;entità e i relativi elementi figlio.
 
    ![chlimage_1-105](assets/chlimage_1-105.png)
 

@@ -9,13 +9,27 @@ exl-id: 0c15677a-ee17-425e-a261-fb3ae8688eb2
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '1450'
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '1457'
 ht-degree: 100%
-
 ---
-
 # Importare e gestire gli archivi {#import-and-manage-archives}
 
 >[!NOTE]
@@ -58,7 +72,7 @@ Utilizza la scheda Archivi per importare e gestire gli LCA creati in Workbench.
 
    * **Richiedi ai chiamanti di autenticarsi:** questa impostazione indica se il servizio può essere richiamato con o senza credenziali.
 
-     Se viene visualizzato *Attualmente ai chiamanti è richiesto di autenticarsi*, il chiamante del servizio deve essere autenticato e l’entità principale dell’utente per tale chiamante deve essere autorizzata a richiamare il servizio; in caso contrario il tentativo di chiamata verrà rifiutato. Per rimuovere la necessità di autenticazione, fai clic su Consenti chiamanti non autenticati.
+     Se viene visualizzato *Attualmente ai chiamanti è richiesto di autenticarsi*, il chiamante del servizio deve essere autenticato e l’entità principale dell’utente di tale chiamante deve essere autorizzata a richiamare il servizio; in caso contrario, il tentativo di chiamata verrà rifiutato. Per rimuovere la necessità di autenticazione, fai clic su Consenti chiamanti non autenticati.
 
      Se viene visualizzato *Ai chiamanti non è richiesto di autenticarsi*, non è necessario che il chiamante del servizio sia autenticato. La chiamata del servizio avrà sempre esito positivo perché non è presente alcun controllo di autorizzazione. Per richiedere l’autenticazione, fai clic su Richiedi ai chiamanti di autenticarsi.
 
@@ -110,12 +124,12 @@ Utilizza la scheda Archivi per importare e gestire gli LCA creati in Workbench.
 1. Viene visualizzata la pagina Configura endpoint, in cui è possibile apportare le modifiche necessarie:
 
    * Per rinominare un endpoint o modificarne la descrizione, fai clic su di esso.
-   * Per aggiungere un endpoint di Gestione attività, fai clic su Aggiungi TaskManager. Per informazioni dettagliate sulle impostazioni di Gestione attività, consulta [Configurazione degli endpoint di Gestione attività](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints).
-   * Per aggiungere un endpoint di tipo Cartella controllata, fai clic su Aggiungi WatchedFolder. Per informazioni dettagliate sulle impostazioni della cartella controllata, consulta [Impostazioni endpoint della cartella controllata](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
-   * Per aggiungere un endpoint e-mail, fai clic su Aggiungi e-mail. Per i dettagli sulle impostazioni e-mail, consulta [Impostazioni endpoint e-mail](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
+   * Per aggiungere un endpoint di Gestione attività, fai clic su Aggiungi TaskManager. Per informazioni dettagliate sulle impostazioni di Gestione attività, consulta [Configurazione degli endpoint delle Gestione attività](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints).
+   * Per aggiungere un endpoint di tipo Cartella controllata, fai clic su Aggiungi WatchedFolder. Per informazioni dettagliate sulle impostazioni della cartella controllata, consulta [Impostazioni dell’endpoint della cartella controllata](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
+   * Per aggiungere un endpoint e-mail, fai clic su Aggiungi e-mail. Per informazioni dettagliate sulle impostazioni e-mail, consulta [Impostazioni dell’endpoint e-mail](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
    * Per aggiungere un endpoint EJB, fai clic su Aggiungi EJB e specifica un nome e una descrizione per l’endpoint.
    * Per aggiungere un endpoint SOAP, fai clic su Aggiungi SOAP e specifica un nome e una descrizione per l’endpoint.
-   * Per aggiungere un endpoint remoto, fai clic su Aggiungi remoto. Per dettagli sulle impostazioni di comunicazione remota, consulta [Impostazioni endpoint remoto](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
+   * Per aggiungere un endpoint remoto, fai clic su Aggiungi remoto. Per informazioni dettagliate sulle impostazioni remote, consulta [Impostazioni dell’endpoint remoto](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
    * Per aggiungere un endpoint REST, fai clic su Aggiungi REST e specifica un nome e una descrizione per l’endpoint. Osserva l’URL di chiamata REST visualizzato nella pagina Aggiungi endpoint REST.
    * Per rimuovere un endpoint, seleziona la casella di controllo accanto a esso e fai clic su Rimuovi.
 
@@ -123,7 +137,7 @@ Utilizza la scheda Archivi per importare e gestire gli LCA creati in Workbench.
 1. Se un processo o un servizio nella LCA dispone di parametri di configurazione, viene visualizzata la pagina Configura parametri, in cui è possibile configurare i parametri del servizio e fare clic su Avanti.
 1. Nella pagina Configura profilo di sicurezza è possibile apportare le modifiche necessarie:
 
-   * **Autenticazione obbligatoria per i chiamanti:** questa impostazione indica se il servizio può essere richiamato con o senza credenziali.
+   * **Richiedi ai chiamanti di autenticarsi:** questa impostazione indica se il servizio può essere richiamato con o senza credenziali.
 
      Se viene visualizzato *Attualmente ai chiamanti è richiesto di autenticarsi*, il chiamante del servizio deve essere autenticato e l’entità principale dell’utente di tale chiamante deve essere autorizzata a richiamare il servizio; in caso contrario, il tentativo di chiamata verrà rifiutato. Per rimuovere la necessità di autenticazione, fai clic su Consenti chiamanti non autenticati.
 

@@ -10,13 +10,20 @@ exl-id: d121dc05-7d15-44ba-8d2d-b59d6c6480c8
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '967'
 ht-degree: 0%
-
 ---
-
 # Funzione di messaggistica {#messaging-feature}
 
 Oltre alle interazioni pubblicamente visibili che si verificano nei forum e nei commenti, la funzione di messaggistica di AEM Communities consente ai membri della community di interagire tra loro in modo più privato.
@@ -63,7 +70,8 @@ Per modificare la configurazione dell&#39;elenco dei messaggi per **Posta in arr
 1. In modalità `Preview`, seleziona il collegamento **Messaggi** per aprire la pagina di messaggistica principale. Quindi seleziona **Posta in arrivo**, **Elementi inviati** o **Cestino** per configurare il componente per l&#39;elenco dei messaggi.
 
 1. In modalità `Edit`, selezionare il componente nella pagina.
-1. Per accedere alla finestra di dialogo di configurazione, annullare l&#39;ereditarietà selezionando l&#39;icona `link`.Una volta annullata l’ereditarietà, è possibile selezionare l’icona di configurazione per aprire la finestra di dialogo di configurazione.
+1. Per accedere alla finestra di dialogo di configurazione, annullare l&#39;ereditarietà selezionando l&#39;icona `link`.
+Una volta annullata l’ereditarietà, è possibile selezionare l’icona di configurazione per aprire la finestra di dialogo di configurazione.
 
 1. Una volta completata la configurazione, è necessario ripristinare l&#39;ereditarietà selezionando l&#39;icona `broken link`.
 
@@ -136,7 +144,8 @@ Per modificare la configurazione della pagina del messaggio di composizione, apr
 * In modalità `Preview`, seleziona il collegamento **Messaggi** per aprire la pagina di messaggistica principale. Quindi selezionare il pulsante Nuovo messaggio per aprire la pagina `Compose Message`.
 
 * In modalità `Edit`, selezionare il componente principale nella pagina contenente il corpo del messaggio.
-* Per accedere alla finestra di dialogo di configurazione, annullare l&#39;ereditarietà selezionando l&#39;icona `link`.Una volta annullata l’ereditarietà, è possibile selezionare l’icona di configurazione per aprire la finestra di dialogo di configurazione.
+* Per accedere alla finestra di dialogo di configurazione, annullare l&#39;ereditarietà selezionando l&#39;icona `link`.
+Una volta annullata l’ereditarietà, è possibile selezionare l’icona di configurazione per aprire la finestra di dialogo di configurazione.
 
 * Una volta completata la configurazione, è necessario ripristinare l&#39;ereditarietà selezionando l&#39;icona `broken link`.
 

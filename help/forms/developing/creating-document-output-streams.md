@@ -8,9 +8,26 @@ topic-tags: operations
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
 solution: Experience Manager, Experience Manager Forms
-
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '19156'
 ht-degree: 0%
@@ -241,7 +258,7 @@ Creare un documento PDF utilizzando l’API di output (Java):
 
    >[!NOTE]
    >
-   >Impossibile impostare l&#39;opzione PDF linearizzato utilizzando il metodo `setLinearizedPDF` dell&#39;oggetto `RenderOptionsSpec` se il documento PDF di input è certificato o firmato digitalmente. (Vedi [Firma digitale dei documenti di PDF &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
+   >Impossibile impostare l&#39;opzione PDF linearizzato utilizzando il metodo `setLinearizedPDF` dell&#39;oggetto `RenderOptionsSpec` se il documento PDF di input è certificato o firmato digitalmente. (Vedi [Firma digitale dei documenti di PDF ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
 
 1. Generare un documento PDF.
 
@@ -258,7 +275,7 @@ Creare un documento PDF utilizzando l’API di output (Java):
 
    >[!NOTE]
    >
-   >Quando si genera un documento PDF richiamando il metodo `generatePDFOutput`, non è possibile unire i dati con un modulo PDF XFA firmato o certificato. (Vedi [Documenti di firma digitale e certificazione &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
+   >Quando si genera un documento PDF richiamando il metodo `generatePDFOutput`, non è possibile unire i dati con un modulo PDF XFA firmato o certificato. (Vedi [Documenti di firma digitale e certificazione ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
 
    >[!NOTE]
    >
@@ -266,7 +283,7 @@ Creare un documento PDF utilizzando l’API di output (Java):
 
    >[!NOTE]
    >
-   >È inoltre possibile creare un documento PDF richiamando il metodo `generatePDFOutput2` dell&#39;oggetto `OutputClient`. (Vedi [Passaggio dei documenti in Content Services (obsoleto) al servizio di output &#x200B;](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
+   >È inoltre possibile creare un documento PDF richiamando il metodo `generatePDFOutput2` dell&#39;oggetto `OutputClient`. (Vedi [Passaggio dei documenti in Content Services (obsoleto) al servizio di output ](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
 
 1. Recuperate i risultati dell&#39;operazione.
 
@@ -337,7 +354,7 @@ Creare un documento PDF utilizzando l’API di output (servizio web):
 
    >[!NOTE]
    >
-   >Impossibile impostare l&#39;opzione PDF linearizzato utilizzando il membro `linearizedPDF` dell&#39;oggetto `RenderOptionsSpec` se il documento PDF di input è certificato o firmato digitalmente. (Vedi [Firma digitale dei documenti di PDF &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
+   >Impossibile impostare l&#39;opzione PDF linearizzato utilizzando il membro `linearizedPDF` dell&#39;oggetto `RenderOptionsSpec` se il documento PDF di input è certificato o firmato digitalmente. (Vedi [Firma digitale dei documenti di PDF ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
 
 1. Generare un documento PDF.
 
@@ -355,11 +372,11 @@ Creare un documento PDF utilizzando l’API di output (servizio web):
 
    >[!NOTE]
    >
-   >Quando si genera un documento PDF richiamando il metodo `generatePDFOutput`, non è possibile unire i dati con un modulo PDF XFA firmato o certificato. (Vedi [Documenti di firma digitale e certificazione &#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
+   >Quando si genera un documento PDF richiamando il metodo `generatePDFOutput`, non è possibile unire i dati con un modulo PDF XFA firmato o certificato. (Vedi [Documenti di firma digitale e certificazione ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
 
    >[!NOTE]
    >
-   >È inoltre possibile creare un documento PDF richiamando il metodo `generatePDFOutput2` dell&#39;oggetto `OutputClient`. (Vedi [Passaggio dei documenti in Content Services (obsoleto) al servizio di output &#x200B;](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
+   >È inoltre possibile creare un documento PDF richiamando il metodo `generatePDFOutput2` dell&#39;oggetto `OutputClient`. (Vedi [Passaggio dei documenti in Content Services (obsoleto) al servizio di output ](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
 
 1. Recuperate i risultati dell&#39;operazione.
 

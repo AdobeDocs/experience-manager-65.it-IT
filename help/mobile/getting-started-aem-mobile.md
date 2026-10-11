@@ -9,13 +9,17 @@ exl-id: a2bc9a50-6455-4703-8829-964fab313e96
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '194'
 ht-degree: 0%
-
 ---
-
 # Guida introduttiva a Adobe Experience Manager Mobili{#getting-started-with-aem-mobile}
 
 {{ue-over-mobile}}
@@ -29,9 +33,9 @@ AEM Mobile fa parte della piattaforma digitale multicanale Adobe Experience Mana
 AEM Mobile offre diversi metodi per la creazione di app. I tre modi diversi in cui puoi creare le app sono:
 
 * **[Utilizzo dei servizi on demand con AEM](/help/mobile/getting-started-aem-mobile-on-demand.md)**
-* **[Utilizzo di servizi on demand senza AEM](https://helpx.adobe.com/it/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)**
+* **[Utilizzo di servizi on demand senza AEM](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)**
 * **[Utilizzo di Adobe PhoneGap Enterprise con AEM](/help/mobile/getting-started-aem-mobile-phonegap.md)**
 
 >[!NOTE]
 >
->Se sei un nuovo utente di Adobe Experience Manager, potresti voler esplorare [Guida introduttiva all&#39;AEM](/help/sites-deploying/deploy.md).
+>Se sei un nuovo utente di Adobe Experience Manager, potresti voler esplorare [Guida introduttiva ad AEM](/help/sites-deploying/deploy.md).

@@ -8,13 +8,31 @@ feature: Document Services,Assembler
 exl-id: 50c7a385-b56d-4573-932f-1f44eec948f8
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 4aaecafe-7152-5c39-af9c-a42e297c87ff
+    internal-label: Assembler
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 5%
-
 ---
-
 # Servizio ConvertPDF {#convertpdf-service}
 
 ## Panoramica {#overview}
@@ -34,9 +52,9 @@ Con il servizio Convert PDF è possibile eseguire le operazioni seguenti:
 
 Il servizio ConvertPDF fornisce le due API seguenti:
 
-* **[toPS](https://helpx.adobe.com/it/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toPS)**: converte un documento PDF in un file PostScript.
+* **[toPS](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toPS)**: converte un documento PDF in un file PostScript.
 
-* **[toImage](https://helpx.adobe.com/it/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage)**: converte un documento di PDF in un file di immagine. I formati immagine supportati sono JPEG, JPEG2000, PNG e TIFF.
+* **[toImage](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage)**: converte un documento di PDF in un file di immagine. I formati immagine supportati sono JPEG, JPEG2000, PNG e TIFF.
 
 ### Utilizzo dell&#39;API toPS con JSP o Servlet {#using-tops-api-with-a-jsp-or-servlets}
 

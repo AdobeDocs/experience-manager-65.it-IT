@@ -1,24 +1,38 @@
 ---
 title: Scaricare le risorse
-description: Scopri come scaricare risorse da [!DNL Adobe Experience Manager]  e abilitare o disabilitare la funzionalità di download.
+description: Scopri come scaricare risorse da [!DNL Adobe Experience Manager] e abilitare o disabilitare la funzionalità di download.
 contentOwner: AG
 role: User
 feature: Asset Management,Asset Distribution
 exl-id: 6bda9e52-5a6e-446e-99c7-96793482c190
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: d2b070a9-76bf-4422-902f-be20e963fd42
+    internal-label: Asset distribution
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 3%
-
+source-wordcount: '968'
+ht-degree: 7%
 ---
-
 # Scarica risorse da [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/download-assets-from-aem.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/download-assets-from-aem.html?lang=en) |
 | AEM 6.5 | Questo articolo |
 
 Puoi scaricare risorse, incluse le rappresentazioni statiche e dinamiche. In alternativa, puoi inviare e-mail con collegamenti alle risorse direttamente da [!DNL Adobe Experience Manager Assets]. Le risorse scaricate sono incluse in un file ZIP. Il file ZIP compresso ha una dimensione massima di 1 GB per il processo di esportazione. È consentito un massimo di 500 risorse totali per processo di esportazione.
@@ -80,13 +94,13 @@ Per impostazione predefinita, per `GET` richieste di download di file, [!DNL Exp
 
 È possibile disabilitare `Asset Download Servlet` in un&#39;istanza Publish [!DNL Experience Manager] aggiornando la configurazione del dispatcher per bloccare eventuali richieste di download di risorse. Il servlet può anche essere disabilitato manualmente tramite la console OSGi direttamente.
 
-1. Per bloccare le richieste di download di risorse tramite una configurazione di Dispatcher, modifica la configurazione `dispatcher.any` e aggiungi una regola alla [sezione filtro](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#defining-a-filter). `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
+1. Per bloccare le richieste di download di risorse tramite una configurazione di Dispatcher, modifica la configurazione `dispatcher.any` e aggiungi una regola alla [sezione filtro](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter). `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
 1. Per disabilitare il componente OSGi in un&#39;istanza Publish, accedi alla console OSGi in `http://[aem_server]:[port]/system/console/components`. Individuare `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet` e fare clic su **[!UICONTROL Disattiva]**.
 
 >[!MORELIKETHIS]
 >
->* [Scarica risorse tramite Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html?lang=it)
+>* [Scarica risorse tramite Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)
 >* [Scarica risorse protette DRM](drm.md).
->* [Scarica le risorse tramite l&#39;app desktop Experience Manager sul desktop Windows o Mac](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=it#download-assets).
+>* [Scarica le risorse tramite l&#39;app desktop Experience Manager sul desktop Windows o Mac](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets).
 >* [Scarica le risorse tramite Adobe Assets Link dalle app Adobe Creative Cloud supportate](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html).

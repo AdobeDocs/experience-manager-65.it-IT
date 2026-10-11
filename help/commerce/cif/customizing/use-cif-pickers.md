@@ -10,7 +10,17 @@ feature: Commerce Integration Framework
 exl-id: 1e7c3748-92b5-45f1-8dd9-f1816e3e34aa
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: a45b09c52d780a954e606d4cae73a3a02a8a6aa4
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 0%
@@ -51,7 +61,7 @@ Sono inoltre supportate le proprietà dei campi di dialogo standard come `name`,
 >
 >A partire dalla versione 2.0.0 dei Componenti core CIF, il supporto per `id` è stato rimosso e sostituito con `uid`. Adobe consiglia di utilizzare `sku` o `slug` come identificatore del prodotto. Adobe continua a supportare `id` solo per i progetti che utilizzano i Componenti core CIF versione 1.x.
 
-Un esempio completo di funzionamento di `cifproductfield` è disponibile nel progetto [Componenti core CIF](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml). Consulta anche [Personalizzazione delle finestre di dialogo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=it#customizing-dialogs) nella documentazione dei Componenti core AEM.
+Un esempio completo di funzionamento di `cifproductfield` è disponibile nel progetto [Componenti core CIF](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml). Consulta anche [Personalizzazione delle finestre di dialogo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-dialogs) nella documentazione dei Componenti core AEM.
 
 ## Selettore categorie {#category-picker}
 
@@ -76,7 +86,7 @@ Sono inoltre supportate le proprietà dei campi di dialogo standard come `name`,
 
 >[!CAUTION]
 >
->Come il componente `cifproductfield`, anche il componente `cifcategoryfield` richiede clientlib `cif.shell.picker`. Per aggiungere una clientlib a una finestra di dialogo, è possibile utilizzare la proprietà `extraClientlibs`. Consulta [Personalizzazione delle finestre di dialogo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=it#customizing-dialogs) nella documentazione dei Componenti core di AEM.
+>Come il componente `cifproductfield`, anche il componente `cifcategoryfield` richiede clientlib `cif.shell.picker`. Per aggiungere una clientlib a una finestra di dialogo, è possibile utilizzare la proprietà `extraClientlibs`. Consulta [Personalizzazione delle finestre di dialogo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-dialogs) nella documentazione dei Componenti core di AEM.
 >[!CAUTION]
 >
 >A partire dalla versione 2.0.0 dei Componenti core CIF, il supporto per `id` è stato rimosso e sostituito con `uid`. Adobe consiglia di utilizzare `uid` o `urlPath` come identificatore di categoria. Adobe continua a supportare `id` e `idAndUrlPath` solo per i progetti che utilizzano i Componenti core CIF versione 1.x.

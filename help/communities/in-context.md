@@ -9,13 +9,20 @@ role: Admin
 exl-id: 47b3c19c-5228-4b72-b78c-7ed71b308921
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '830'
 ht-degree: 0%
-
 ---
-
 # Moderazione in contesto {#in-context-moderation}
 
 Per AEM Communities, la moderazione può essere eseguita dagli amministratori e dai membri della community attendibile direttamente sulla pagina pubblicata in cui è stato pubblicato il contenuto della community.
@@ -38,7 +45,7 @@ L&#39;interfaccia utente presentata al moderatore nell&#39;istanza di pubblicazi
 
 ## Esempio {#example}
 
-Utilizzando il sito [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) creato durante la [Guida introduttiva ad AEM Communities](getting-started.md), è possibile impostare un thread in un forum su cui eseguire varie attività di moderazione nell&#39;ambiente Publish. Vedi sotto.
+Utilizzando il sito [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) creato durante la [Guida introduttiva ad AEM Communities](getting-started.md), è possibile impostare un thread in un forum su cui eseguire varie attività di moderazione nell&#39;ambiente di pubblicazione. Vedi sotto.
 
 Aaron McDonald (`aaron.mcdonald@mailinator.com`) è stato identificato come membro attendibile della community aggiungendolo al gruppo community-engagement-moderators durante la creazione del sito.
 
@@ -50,40 +57,40 @@ Per ulteriori informazioni sui gruppi di utenti della community, visita [Gestion
 
 * Accedi come Rebekah Larsen (rebekah.larsen@trashymail.com)
 
-   * Seleziona forum
-   * Seleziona nuovo Post
-   * Inserisci l’oggetto
+  * Seleziona forum
+  * Seleziona nuovo post
+  * Inserisci l’oggetto
 
-     Quando cambiare il nettare in Alimentazione Uccelli Humming
+    Quando cambiare il nettare in Alimentazione Uccelli Humming
 
-   * Inserisci il corpo del testo
+  * Inserisci il corpo del testo
 
-     Non ho avuto molto successo quando appendo un mangiatore di colibrì ogni anno. Sembra che arrivino un giorno o due, allora è tutto. Lo cambio una volta alla settimana è troppo lungo? Devo cambiarla prima?
+    Non ho avuto molto successo quando appendo un mangiatore di colibrì ogni anno. Sembra che arrivino un giorno o due, allora è tutto. Lo cambio una volta alla settimana è troppo lungo? Devo cambiarla prima?
 
-   * Seleziona Post
-   * Seleziona disconnessione
+  * Seleziona post
+  * Seleziona disconnessione
 
 * Accedi come Aaron McDonald (aaron.mcdonald@mailinator.com)
 
-   * Seleziona forum
-   * Per l&#39;argomento Hummingbird, selezionare Ulteriori informazioni
-   * Inserisci il commento per la risposta Post
+  * Seleziona forum
+  * Per l&#39;argomento Hummingbird, selezionare Ulteriori informazioni
+  * Inserisci il commento per Pubblica risposta
 
-     Cambio il mio una volta alla settimana e lo prendo da maggio a ottobre.
+    Cambio il mio una volta alla settimana e lo prendo da maggio a ottobre.
 
-   * Seleziona risposta
-   * Seleziona disconnessione
+  * Seleziona risposta
+  * Seleziona disconnessione
 
 * Accedi come Andrew Schaeffer (andrew.schaeffer@trashymail.com)
 
-   * Seleziona forum
-   * Per l&#39;argomento Hummingbird, selezionare Ulteriori informazioni
-   * Inserisci il commento per la risposta Post
+  * Seleziona forum
+  * Per l&#39;argomento Hummingbird, selezionare Ulteriori informazioni
+  * Inserisci il commento per Pubblica risposta
 
-     Vendo nettare e alimentatori - visita https://my.viral.url/
+    Vendo nettare e alimentatori - visita https://my.viral.url/
 
-   * Seleziona risposta
-   * Seleziona disconnessione
+  * Seleziona risposta
+  * Seleziona disconnessione
 
 ### Visitatore sito anonimo (#5) {#anonymous-site-visitor}
 
@@ -122,9 +129,9 @@ Avviso:
 
 ![community-admin-forum](assets/community-admin-forum.png)
 
-Selezionare la voce di menu Amministrazione per accedere alla [console di moderazione](moderation.md) dall&#39;ambiente Publish.
+Selezionare la voce di menu Amministrazione per accedere alla [console di moderazione](moderation.md) dall&#39;ambiente di pubblicazione.
 
-Tieni presente che, per un amministratore, tutto il contenuto moderabile è visibile, non solo il contenuto del sito della community Geometrixx Engage.
+Per un amministratore, è visibile tutto il contenuto moderabile, non solo il contenuto del sito della community Geometrixx Engage.
 
 Il filtro di ricerca è un pannello laterale che consente di aprire o chiudere alternativamente.
 
@@ -145,11 +152,11 @@ Avviso:
 
 ![community-forum-moderator](assets/community-forum-moderator.png)
 
-Selezionare la voce di menu Amministrazione per accedere alla [console di moderazione](moderation.md) dall&#39;ambiente Publish.
+Selezionare la voce di menu Amministrazione per accedere alla [console di moderazione](moderation.md) dall&#39;ambiente di pubblicazione.
 
-Tieni presente che, per un moderatore della community, è visibile solo il contenuto moderabile del sito community di Geometrixx Engage.
+Tieni presente che, per un moderatore della community, è visibile solo il contenuto moderabile del sito della community Geometrixx Engage.
 
-Il moderatore della community dispone delle stesse opzioni dell’amministratore (l’immagine mostra la barra laterale di ricerca chiusa), ma non ha accesso ad altre console AEM.
+Tieni presente che il moderatore della community dispone delle stesse opzioni dell’amministratore (l’immagine presenta la barra laterale di ricerca attivata e chiusa), ma non ha accesso ad altre console AEM.
 
 Disconnetti.
 

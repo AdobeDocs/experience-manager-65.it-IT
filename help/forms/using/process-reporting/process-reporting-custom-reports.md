@@ -1,5 +1,5 @@
 ---
-title: Rapporti personalizzati in Report di processo
+title: Rapporti personalizzati in Rapporti sui processi
 description: Puoi creare rapporti personalizzati e aggiungerli all’interfaccia utente di AEM Forms per la generazione di rapporti sui processi JEE.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,14 +9,28 @@ exl-id: 30720061-d0e5-453b-a334-6a3aa9ca4c87
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 1%
-
+source-wordcount: '1053'
+ht-degree: 15%
 ---
-
-# Rapporti personalizzati in Report di processo{#custom-reports-in-process-reporting}
+# Rapporti personalizzati in Rapporti sui processi{#custom-reports-in-process-reporting}
 
 Puoi utilizzare l’interfaccia REST di QueryBuilder o creare un servizio OSGi utilizzando l’API QueryBuilder per creare un rapporto personalizzato.
 
@@ -25,13 +39,13 @@ Puoi utilizzare l’interfaccia REST di QueryBuilder o creare un servizio OSGi u
 Prima di aggiungere un rapporto personalizzato, attenersi alla procedura descritta di seguito.
 
 1. I dati utilizzati nei report personalizzati devono essere disponibili in Process Reporting. Per garantire la disponibilità dei dati, pianificare un processo cron o utilizzare l&#39;opzione **[Sincronizza](https://helpx.adobe.com/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)** nell&#39;interfaccia utente di Process Reporting.
-1. La richiesta URL (che racchiude la query desiderata) deve restituire un oggetto risultato della query appropriato. Per creare una query, è possibile utilizzare l&#39;interfaccia REST di [QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=it) per creare un servizio OSGi utilizzando l&#39;API QueryBuilder. Puoi creare query dinamiche o statiche.
+1. La richiesta URL (che racchiude la query desiderata) deve restituire un oggetto risultato della query appropriato. Per creare una query, è possibile utilizzare l&#39;interfaccia REST di [QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en) per creare un servizio OSGi utilizzando l&#39;API QueryBuilder. Puoi creare query dinamiche o statiche.
 
 1. Crea un’interfaccia utente personalizzata per visualizzare i risultati. Puoi creare un’interfaccia utente autonoma o integrare i risultati con l’interfaccia utente di Process Reporting esistente.
 
 ## Utilizzo dell&#39;interfaccia REST di QueryBuilder {#using-the-rest-interface-of-the-querybuilder}
 
-L’interfaccia REST di CRX QueryBuilder espone le funzionalità di Asset Share Query Builder tramite un’API Java e un’API REST. Scopri come utilizzare l&#39;interfaccia REST [CRX QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=it) prima di eseguire i passaggi seguenti:
+L’interfaccia REST di CRX QueryBuilder espone le funzionalità di Asset Share Query Builder tramite un’API Java e un’API REST. Scopri come utilizzare l&#39;interfaccia REST [CRX QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en) prima di eseguire i passaggi seguenti:
 
 1. Sfoglia l&#39;URL `https://'[server]:[port]'/lc/bin/querybuilder.json`
 1. Creare una query basata sulla struttura e sulle proprietà del nodo di archiviazione di Process Reporting.
@@ -48,7 +62,7 @@ L’interfaccia REST di CRX QueryBuilder espone le funzionalità di Asset Share 
 
 ## Creazione di un servizio tramite API Query Builder  {#creating-a-service-using-query-builder-api-nbsp}
 
-I prerequisiti per la creazione di un servizio utilizzando l&#39;API di Query Builder sono [la creazione e la distribuzione del bundle OSGI CQ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it) e [l&#39;utilizzo dell&#39;API di Query Builder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=it).
+I prerequisiti per la creazione di un servizio utilizzando l&#39;API di Query Builder sono [la creazione e la distribuzione del bundle OSGI CQ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it) e [l&#39;utilizzo dell&#39;API di Query Builder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en).
 
 1. Crea un servizio OSGi con le annotazioni appropriate. Per accedere a QueryBuilder utilizzare:
 
@@ -642,7 +656,7 @@ I prerequisiti per la creazione di un&#39;interfaccia utente separata per la vis
    * **descrizione**- Specifica la descrizione di una riga del report. Puoi lasciare vuoto il campo della descrizione.
    * **icona**- Specifica l&#39;immagine da rappresentare graficamente il report. Puoi lasciare vuoto il campo dell’icona.
 
-   ![Proprietà del nodo &#x200B;](assets/node_properties_new.png)
+   ![Proprietà del nodo ](assets/node_properties_new.png)
 
    Proprietà del nodo
 
@@ -660,4 +674,4 @@ I prerequisiti per la creazione di un&#39;interfaccia utente separata per la vis
 
 Importare il pacchetto `sample-report-pkg-1.zip` per integrare i report personalizzati e l&#39;interfaccia utente descritti nell&#39;articolo nell&#39;interfaccia utente di Gestione processi.
 
-[Ottieni file](assets/sample-report-pkg-1.zip)
+[Ottieni il file](assets/sample-report-pkg-1.zip)

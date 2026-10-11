@@ -9,13 +9,27 @@ exl-id: dd302cfb-eae1-4189-aa7b-9f2533ebd164
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '607'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '626'
+ht-degree: 95%
 ---
-
 # Configurare le impostazioni del provider di servizi SAML{#configure-saml-service-provider-settings}
 
 >[!NOTE]
@@ -27,7 +41,7 @@ Il linguaggio SAML (Security Assertion Markup Language) è una delle opzioni che
 Per una spiegazione di SAML, consulta [Panoramica tecnica di SAML (Security Assertion Markup Language) V2.0](https://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html).
 
 1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Configurazione > Impostazioni del provider di servizi SAML.
-1. Nella casella ID entità del provider di servizi digitare un ID univoco da utilizzare come identificatore per l’implementazione del provider di servizi AEM forms. Puoi specificare questo ID univoco anche durante la configurazione dell’IDP (ad esempio, `um.lc.com`). Puoi inoltre utilizzare l’URL che viene usato per accedere a AEM Forms (ad esempio, `https://AEMformsserver`).
+1. Nella casella ID entità del provider di servizi digitare un ID univoco da utilizzare come identificatore per l’implementazione del provider di servizi AEM forms. È inoltre possibile specificare questo ID univoco durante la configurazione dell&#39;IDP (ad esempio, `um.lc.com`). È inoltre possibile utilizzare l&#39;URL utilizzato per accedere ad AEM Forms, ad esempio `https://AEMformsserver`.
 1. Nella casella URL di base provider di servizi digita l’URL di base per il server Forms, ad esempio `https://AEMformsserver:8080`.
 1. (Facoltativo) Per consentire ad AEM Forms di inviare richieste di autenticazione firmate all’IDP, procedi come segue:
 

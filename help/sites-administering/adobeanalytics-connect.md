@@ -10,13 +10,22 @@ exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: f6f6552b10cbc84d9e39e46905c2fa68201d4d96
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1582'
 ht-degree: 8%
-
 ---
-
 # Connessione ad Adobe Analytics e creazione di framework {#connecting-to-adobe-analytics-and-creating-frameworks}
 
 Per tenere traccia dei dati web dalle pagine AEM in Adobe Analytics, crea una configurazione di Servizi Adobe Analytics Cloud e un framework Adobe Analytics:
@@ -51,7 +60,7 @@ Prima di procedere, assicurati di avere le credenziali per accedere ad Adobe Ana
 
 ### Configurazione di AEM per l’utilizzo dei centri dati di Adobe Analytics {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 
-I [data center](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html?lang=it) di Adobe Analytics raccolgono, elaborano e memorizzano i dati associati alla suite di rapporti di Adobe Analytics. Configura AEM per utilizzare il centro dati che ospita la tua suite di rapporti Adobe Analytics. Il centro dati è menzionato nel contratto. Per queste informazioni, contatta un amministratore della tua organizzazione.
+I [data center](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html) di Adobe Analytics raccolgono, elaborano e memorizzano i dati associati alla suite di rapporti di Adobe Analytics. Configura AEM per utilizzare il centro dati che ospita la tua suite di rapporti Adobe Analytics. Il centro dati è menzionato nel contratto. Per queste informazioni, contatta un amministratore della tua organizzazione.
 
 Se necessario, utilizzare quanto segue per essere instradato al data center corretto: `https://api.omniture.com/`.
 
@@ -178,7 +187,7 @@ I discendenti della pagina ereditano l’associazione con il framework. Ad esemp
 
 1. Dalla console **Sites**, seleziona la pagina che desideri impostare con il tracciamento.
 1. Apri **[Proprietà pagina](/help/sites-authoring/editing-page-properties.md)** direttamente dalla console o dall&#39;editor pagina.
-1. Apri la scheda **&#x200B; Cloud Services**.
+1. Apri la scheda** Cloud Services**.
 
 1. Utilizza il menu a discesa **Aggiungi configurazione** per selezionare **Adobe Analytics** dalle opzioni disponibili. Se è presente l’ereditarietà, disattivala prima che il selettore diventi disponibile.
 
@@ -187,7 +196,7 @@ I discendenti della pagina ereditano l’associazione con il framework. Ad esemp
 1. Seleziona **Salva e chiudi**.
 1. Per attivare la pagina e le configurazioni/i file collegati, **[Pubblica](/help/sites-authoring/publishing-pages.md)** la pagina.
 1. Il passaggio finale consiste nel visitare la pagina nell&#39;istanza di pubblicazione e cercare una parola chiave (ad esempio, melanzana) utilizzando il componente **Ricerca**.
-1. Puoi quindi controllare le chiamate effettuate ad Adobe Analytics utilizzando uno strumento appropriato, ad esempio [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=it).
+1. Puoi quindi controllare le chiamate effettuate ad Adobe Analytics utilizzando uno strumento appropriato, ad esempio [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html).
 1. Utilizzando l’esempio fornito, la chiamata deve contenere il valore immesso (ovvero, melanzana) in eVar7 e l’elenco degli eventi deve contenere event3.
 
 ### Visualizzazioni pagina {#page-views}

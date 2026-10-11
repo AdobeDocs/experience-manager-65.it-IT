@@ -9,13 +9,17 @@ exl-id: e10e1904-7016-4eb0-9408-36297285f378
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '979'
 ht-degree: 0%
-
 ---
-
 # Verifica delle app mobili{#testing-mobile-apps}
 
 {{ue-over-mobile}}
@@ -49,12 +53,12 @@ Oltre al test automatico, l’app deve essere sottoposta a un ciclo di test manu
 * effettuare prove su un ampio pool di dispositivi (idealmente dispositivi reali, ma simulatori/emulatori se non sono disponibili dispositivi reali),
 * fornire feedback informativo:
 
-   * rapporti sugli arresti anomali,
-   * analisi/tracciamento,
-   * usabilità,
-   * aree di attenzione,
-   * prestazioni,
-   * dati/consumo energetico e così via.
+  * rapporti sugli arresti anomali,
+  * analisi/tracciamento,
+  * usabilità,
+  * aree di attenzione,
+  * prestazioni,
+  * dati/consumo energetico e così via.
 
 ## Strumenti {#tools}
 

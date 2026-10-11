@@ -9,13 +9,20 @@ role: Admin
 exl-id: d00a8eb2-47ce-425a-a312-f043f82912be
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '436'
 ht-degree: 0%
-
 ---
-
 # Limiti contributi membri {#member-contribution-limits}
 
 ## Panoramica {#overview}
@@ -42,7 +49,7 @@ Per raggiungere questa configurazione OSGi:
 * Accedi con privilegi di amministratore.
 * Accedi alla [console Web](../../help/sites-deploying/configuring-osgi.md).
 
-   * Ad esempio, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+  * Ad esempio, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
 * Individuare `AEM Communities User Generated Content Contribution Limits Configuration`.
 * Seleziona l’icona Modifica.
@@ -51,7 +58,7 @@ Per raggiungere questa configurazione OSGi:
 
 * **[!UICONTROL Applica automaticamente limiti contributi UGC]**
 
-  Se questa opzione è selezionata, imposta automaticamente i limiti di contribuzione per gli utenti che si registrano come membri della community. Ciò si riflette nel profilo del membro della community e può essere abilitato/disabilitato dalla [console membri](members.md). I nuovi membri con un indirizzo e-mail da un inserisco nell&#39;elenco Consentiti di domini non sono mai vincolati.
+  Se questa opzione è selezionata, imposta automaticamente i limiti di contribuzione per gli utenti che si registrano come membri della community. Ciò si riflette nel profilo del membro della community e può essere abilitato/disabilitato dalla [console membri](members.md). I nuovi membri con un indirizzo e-mail da una inserisce nell&#39;elenco Consentiti di domini di un’organizzazione non sono mai vincolati.
 
   L&#39;impostazione predefinita è deselezionata.
 
@@ -69,11 +76,11 @@ Per raggiungere questa configurazione OSGi:
 
 * **[!UICONTROL Domini]**
 
-  Inserire nell&#39;elenco Consentiti Un elenco di e-mail di uno o più domini e-mail di. Seleziona l’icona + per inserire ulteriori voci.
+  Un elenco di e-mail di uno o più domini di e-mail di. Seleziona l’icona + per inserire ulteriori voci.
 
-  Gli utenti con indirizzi e-mail nel inserisco nell&#39;elenco Consentiti di domini del sistema di gestione delle relazioni con i clienti non vengono interessati dall’applicazione automatica dei limiti per i contributi UGC. Ad esempio, se il dominio `mycompany.com` viene aggiunto all&#39;elenco dei domini, a un membro con indirizzo e-mail `me@mycompany.com` non viene mai impedito di pubblicare.
+  Gli utenti con indirizzi e-mail nel inserito nell&#39;elenco Consentiti di domini di non vengono interessati quando i limiti di contributi UGC vengono applicati automaticamente. Ad esempio, se il dominio `mycompany.com` viene aggiunto all&#39;elenco dei domini, a un membro con indirizzo e-mail `me@mycompany.com` non viene mai impedito di pubblicare.
 
-  L&#39;impostazione predefinita è un inserisco nell&#39;elenco Consentiti vuoto di tipo.
+  Il valore predefinito è un elenco Consentiti di vuoto.
 
 * **[!UICONTROL Destinatari di messaggistica]**
 

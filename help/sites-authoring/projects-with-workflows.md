@@ -9,13 +9,28 @@ exl-id: 407fc164-291d-42f6-8c46-c1df9ba3d454
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: f6a6f91a-8819-530a-8e7b-c50884a25aef
+    internal-label: Workflow
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 40%
-
+source-wordcount: '787'
+ht-degree: 37%
 ---
-
 
 # Utilizzo dei flussi di lavoro per i progetti {#working-with-project-workflows}
 
@@ -39,12 +54,12 @@ A seconda del modello di progetto selezionato, sono disponibili alcuni flussi di
 | Richiedi lancio | x |  |  |  |
 | Richiedi pagina di destinazione | x |  |  |  |
 | Richiedi e-mail | x |  |  |  |
-| Crea copia per lingua DAM &ast; |  |  |  | x |
-| DAM - Crea e traduci copia per lingua &ast; |  |  |  | x |
+| Crea DAM copia in lingua &amp;ast; |  |  |  | x |
+| Creazione DAM e traduzione copia in lingua &amp;ast; |  |  |  | x |
 
 >[!NOTE]
 >
->&amp;ast Questi flussi di lavoro non si trovano nella sezione **Flusso di lavoro** in Progetti. Consulta [Creazione di copie per lingua per Assets.](/help/sites-administering/tc-manage.md)
+>&amp;ast Questi flussi di lavoro non sono avviati dalla sezione **Flusso di lavoro** in Progetti. Consulta [Creazione di copie per lingua per Assets.](/help/sites-administering/tc-manage.md)
 
 I passaggi per avviare e completare i flussi di lavoro sono gli stessi, indipendentemente dal flusso di lavoro scelto. Cambiano solo i passaggi.
 

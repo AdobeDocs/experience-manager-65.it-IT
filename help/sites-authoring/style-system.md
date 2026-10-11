@@ -8,20 +8,33 @@ exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1296'
+source-wordcount: '1314'
 ht-degree: 83%
-
 ---
-
 # Sistema di stili{#style-system}
 
 Il sistema di stili consente all’autore del modello di definire le classi di stile nel criterio del contenuto di un componente, in modo che un autore di contenuti possa sceglierli quando modifica un componente in una pagina. Gli stili possono essere varianti visive alternative di un componente, allo scopo di renderlo più flessibile.
 
 In questo modo si elimina la necessità di sviluppare un componente personalizzato per ogni stile o di personalizzare la finestra di dialogo del componente per abilitare tale funzionalità di stile. Il risultato sono componenti riutilizzabili che possono essere adattati in modo rapido e semplice alle esigenze degli autori di contenuti, senza necessità di alcuno sviluppo back-end di AEM.
 
-## Caso d’uso  {#use-case}
+## Caso d’uso {#use-case}
 
 Gli autori di modelli devono poter configurare non solo il funzionamento dei componenti per gli autori di contenuto, ma anche diverse varianti visive alternative di un componente.
 
@@ -72,7 +85,7 @@ Se desideri utilizzare il sistema di stili per i tuoi componenti, effettua le se
 1. Configura le classi CSS da rendere disponibili agli autori di contenuti, come descritto nella sezione [Autore di modelli](#as-a-template-author).
 1. Gli autori di contenuti possono quindi utilizzare gli stili come descritto nella sezione [Autore di contenuti](#as-a-content-author).
 
-### Autore di contenuti  {#as-a-content-author}
+### Autore di contenuti {#as-a-content-author}
 
 1. Dopo aver installato il progetto WKND, visita la pagina principale in lingua inglese di WKND all’indirizzo `http://<host>:<port>/sites.html/content/wknd/language-masters/en` e modifica la pagina.
 1. Seleziona un componente **Titolo** più in basso nella pagina.
@@ -87,7 +100,7 @@ Se desideri utilizzare il sistema di stili per i tuoi componenti, effettua le se
    >
    >In questo esempio, gli stili **Colori** (**Nero**, **Bianco** e **Grigio**) si escludono a vicenda, mentre le opzioni di **Stile** (**Sottolineato**, **Allinea a destra** e **Spaziatura minima**) possono essere combinate. Tutto questo può essere [configurato nel modello se si è l’autore del modello](#as-a-template-author).
 
-### Autore di modelli  {#as-a-template-author}
+### Autore di modelli {#as-a-template-author}
 
 1. Durante la modifica della pagina mastro in lingua inglese di WKND all&#39;indirizzo `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, modificare il modello della pagina tramite **Informazioni pagina > Modifica modello**.
 
@@ -140,7 +153,7 @@ La scheda della finestra di dialogo Modifica può essere inclusa in modo analogo
 >
 >Per impostazione predefinita, la scheda Stili nella finestra di dialogo Modifica non è abilitata.
 
-### Stili con nomi di elementi  {#styles-with-element-names}
+### Stili con nomi di elementi {#styles-with-element-names}
 
 Uno sviluppatore può anche configurare un elenco di nomi di elementi consentiti per gli stili sul componente con la proprietà string array `cq:styleElements`. Quindi, nella scheda Stili del criterio all’interno della finestra di dialogo per progettazione, l’autore del modello può anche scegliere un nome di elemento da impostare per ogni stile. In questo modo verrà impostato il nome dell’elemento wrapper.
 

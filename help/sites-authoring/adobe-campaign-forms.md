@@ -9,13 +9,30 @@ exl-id: 7d60673e-484a-4447-83cf-d62a0d7ad745
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1280'
+source-wordcount: '1295'
 ht-degree: 1%
-
 ---
-
 # Creazione di moduli di Adobe Campaign in AEM {#creating-adobe-campaign-forms-in-aem}
 
 AEM consente di creare e utilizzare moduli che interagiscono con Adobe Campaign sul sito web. Campi specifici possono essere inseriti nei moduli e mappati al database di Adobe Campaign.
@@ -48,7 +65,7 @@ A questo scopo, consulta la [documentazione dei modelli](/help/sites-developing/
 
 ## Creazione di un modulo {#creating-a-form}
 
-Adobe Campaign Prima di tutto, verifica che la connessione tra le istanze di authoring e pubblicazione funzioni correttamente. Vedere [Integrazione con Adobe Campaign Standard](/help/sites-administering/campaignstandard.md) o [Integrazione con Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md).
+Prima di tutto, verifica che la connessione tra le istanze di authoring e pubblicazione funzioni correttamente. Vedere [Integrazione con Adobe Campaign Standard](/help/sites-administering/campaignstandard.md) o [Integrazione con Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md).
 
 >[!NOTE]
 >
@@ -90,7 +107,7 @@ Questa sezione descrive solo collegamenti specifici ad Adobe Campaign. Per ulter
 
    ![chlimage_1-46](assets/chlimage_1-46a.png)
 
-1. Fare clic sulla scheda **Avanzate** e selezionare il tipo di modulo corrispondente - **Sottoscrivi, Annulla sottoscrizione,** o **Salva profilo**, quindi fare clic su **OK.** È possibile avere un solo tipo per modulo.
+1. Fare clic sulla scheda **Avanzate** e selezionare il tipo di modulo corrispondente - **Sottoscrivi, Annulla sottoscrizione,** o **Salva profilo**, quindi fare clic su **OK.** È possibile specificare un solo tipo per modulo.
 
    * **Adobe Campaign: Salva profilo**: consente di creare o aggiornare un destinatario in Adobe Campaign (valore predefinito).
    * **Adobe Campaign: Abbonati ai servizi**: consente di gestire gli abbonamenti di un destinatario in Adobe Campaign.

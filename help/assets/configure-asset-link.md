@@ -6,7 +6,18 @@ role: Admin
 feature: Asset Management
 exl-id: 3a9b44d4-1756-4ad5-91df-df8d53e82193
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 6ab943894398733d178f561430d3f391e8722195
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3255'
 ht-degree: 1%
@@ -23,7 +34,7 @@ Per configurare Experience Manager Assets per l’utilizzo con Asset Link, imple
 
 1. Per mappare gli utenti con licenza Creative Cloud con gli utenti Experience Manager, gestisci [il controllo dell&#39;accesso utente](#user-access).
 
-1. Crea [indice di query personalizzato](#create-custom-index), configura [rappresentazioni FPO](/help/assets/configure-fpo-renditions.md) per InDesign, configura [integrazione Adobe Stock](/help/assets/aem-assets-adobe-stock.md) e configura [ricerca visiva o per similarità](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html?lang=it#configvisualsearch).
+1. Crea [indice di query personalizzato](#create-custom-index), configura [rappresentazioni FPO](/help/assets/configure-fpo-renditions.md) per InDesign, configura [integrazione Adobe Stock](/help/assets/aem-assets-adobe-stock.md) e configura [ricerca visiva o per similarità](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html#configvisualsearch).
 
 ## Prerequisiti e supporto per varie funzionalità {#prerequisites}
 
@@ -52,7 +63,7 @@ Adobe consiglia di installare il pacchetto di configurazione [adobe-asset-link-c
    Imposta le seguenti proprietà e salva le modifiche.
 
    * [!UICONTROL Mappature gruppo]: lascia vuoto a meno che non lo desideri. Per ulteriori dettagli, vedere [Mappatura gruppo](#group-mapping).
-   * [!UICONTROL Organizzazione]: immetti l&#39;ID organizzazione in uso in Adobe Admin Console. Per ulteriori informazioni sugli ID organizzazione, vedere [Crea gruppo utenti](https://helpx.adobe.com/it/enterprise/using/create-aal-user-group.html).
+   * [!UICONTROL Organizzazione]: immetti l&#39;ID organizzazione in uso in Adobe Admin Console. Per ulteriori informazioni sugli ID organizzazione, vedere [Crea gruppo utenti](https://helpx.adobe.com/enterprise/using/create-aal-user-group.html).
 
 1. Individuare la configurazione **[!UICONTROL Adobe Granite Bearer Authentication Handler]** e fare clic per modificarla.
 
@@ -71,10 +82,10 @@ Per configurare manualmente Experience Manager:
 
    Imposta la seguente configurazione e fai clic su **[!UICONTROL Salva]**.
 
-   * [!UICONTROL Endpoint autorizzazione]&#x200B;: ` https://ims-na1.adobelogin.com/ims/authorize/v1`
-   * [!UICONTROL Endpoint token]&#x200B;: ` https://ims-na1.adobelogin.com/ims/token/v1`
-   * [!UICONTROL Endpoint profilo]&#x200B;: ` https://ims-na1.adobelogin.com/ims/profile/v1`
-   * [!UICONTROL URL di convalida]&#x200B;: ` https://ims-na1.adobelogin.com/ims/validate_token/v1`
+   * [!UICONTROL Endpoint autorizzazione]: ` https://ims-na1.adobelogin.com/ims/authorize/v1`
+   * [!UICONTROL Endpoint token]: ` https://ims-na1.adobelogin.com/ims/token/v1`
+   * [!UICONTROL Endpoint profilo]: ` https://ims-na1.adobelogin.com/ims/profile/v1`
+   * [!UICONTROL URL di convalida]: ` https://ims-na1.adobelogin.com/ims/validate_token/v1`
    * [!UICONTROL Organizzazione]: impostato sull&#39;ID organizzazione in [Adobe Admin Console](https://adminconsole.adobe.com/).
    * [!UICONTROL Mappature gruppo]: lascia vuoto a meno che tu non abbia un caso speciale. Per ulteriori dettagli, vedere [Mappatura gruppo](#group-mapping).
 
@@ -88,10 +99,10 @@ Per configurare manualmente Experience Manager:
 
    * [!UICONTROL ID client]: non modificare
    * [!UICONTROL Segreto client]: non modificare
-   * [!UICONTROL ID configurazione]&#x200B;: ` ims`
+   * [!UICONTROL ID configurazione]: ` ims`
    * [!UICONTROL Ambito]: `AdobeID, OpenID, read_organizations` (nella configurazione possono essere presenti anche altri valori)
-   * [!UICONTROL ID provider]&#x200B;: ` ims`
-   * [!UICONTROL Crea utenti]&#x200B;: ` Checked`
+   * [!UICONTROL ID provider]: ` ims`
+   * [!UICONTROL Crea utenti]: ` Checked`
    * [!UICONTROL Proprietà ID utente]: `Email` per la configurazione appena creata. In caso contrario, non modificare.
 
 1. Individua la configurazione del **[!UICONTROL gestore di sincronizzazione predefinito di Apache Jackrabbit Oak]** con il **[!UICONTROL nome gestore di sincronizzazione]** `ims` e fai clic per modificarla.
@@ -100,7 +111,7 @@ Per configurare manualmente Experience Manager:
 
    * [!UICONTROL Scadenza utente e scadenza appartenenza utente]: dopo &#39;m&#39; in minuti non è disponibile spazio. `15m` per 15 minuti. Per ulteriori dettagli, vedere [Mappatura gruppo](#group-mapping).
    * [!UICONTROL Iscrizione automatica utente]: non modificare
-   * [!UICONTROL Appartenenza dinamica utente]&#x200B;: ` Deslect`
+   * [!UICONTROL Appartenenza dinamica utente]: ` Deslect`
 
 1. Individua la configurazione **[!UICONTROL Adobe Granite OAuth Authentication Handler]** e fai clic per modificarla. Senza apportare modifiche, fai clic su **[!UICONTROL Salva]**.
 
@@ -241,7 +252,7 @@ In Experience Manager 6.4 e Experience Manager 6.5, gli amministratori possono c
 
 La configurazione è utile, ad esempio, per gli utenti e gli addetti al marketing della linea di business per creare un flusso di lavoro personalizzato in poche cartelle specifiche. Dì che tutte le risorse del servizio fotografico di un&#39;agenzia possono essere filigranate oppure tutte le risorse caricate da un freelance possono essere elaborate per creare rappresentazioni specifiche.
 
-Per ulteriori informazioni e per la configurazione di Experience Manager, consulta [flusso di lavoro di esecuzione automatica sulle risorse](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html?lang=it#auto-execute-workflow-on-some-assets).
+Per ulteriori informazioni e per la configurazione di Experience Manager, consulta [flusso di lavoro di esecuzione automatica sulle risorse](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html#auto-execute-workflow-on-some-assets).
 
 
 ## Creare un indice personalizzato nelle versioni Experience Manager 6.4.x {#create-custom-index}
@@ -259,7 +270,7 @@ Experience Manager contiene indici utilizzati per l’esecuzione di query. Crea 
 
 ## Configurare la ricerca visiva o per somiglianza {#configure-visual-similarity-search}
 
-La funzionalità di ricerca visiva consente di cercare risorse visivamente simili nell’archivio AEM Assets, utilizzando il pannello Adobe Asset Link. La funzionalità è disponibile nella versione 6.5.0 o successive e vengono cercate solo le risorse indicizzate. Per ulteriori informazioni, vedere [come configurare la ricerca visiva](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html?lang=it#configvisualsearch).
+La funzionalità di ricerca visiva consente di cercare risorse visivamente simili nell’archivio AEM Assets, utilizzando il pannello Adobe Asset Link. La funzionalità è disponibile nella versione 6.5.0 o successive e vengono cercate solo le risorse indicizzate. Per ulteriori informazioni, vedere [come configurare la ricerca visiva](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html#configvisualsearch).
 
 ## Genera solo rappresentazioni per posizionamento per Adobe InDesign {#fpo-renditions}
 
@@ -281,7 +292,7 @@ In caso di problemi durante la configurazione o l’utilizzo di Adobe Asset Link
 * Assicurati che l’implementazione soddisfi i prerequisiti. In particolare, assicurati che siano installati i pacchetti o i Feature Pack appropriati.
 * Contatta il partner o l’integratore di sistemi della tua organizzazione.
 * Se gli utenti di Creative Cloud non sono in grado di verificare le risorse estratte, verifica la presenza di maiuscole/minuscole nei nomi di dominio negli ID e-mail. Per risolvere il problema, vedere [configurazione manuale](#manual-configuration).
-* Per ulteriori informazioni, consulta [risolvere i problemi di Asset Link](https://helpx.adobe.com/it/enterprise/kb/asset-link-troubleshooting.html).
+* Per ulteriori informazioni, consulta [risolvere i problemi di Asset Link](https://helpx.adobe.com/enterprise/kb/asset-link-troubleshooting.html).
 
 
 >[!MORELIKETHIS]

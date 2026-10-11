@@ -1,5 +1,5 @@
 ---
-title: Proprietà di configurazione di Gestione corrispondenza
+title: Proprietà configurazione gestione della corrispondenza
 description: Questo argomento spiega come modificare Asset Composer con configurazioni specifiche per le soluzioni. Questo argomento descrive le proprietà che è possibile modificare, con la relativa descrizione, i valori predefiniti e i valori accettabili.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,14 +8,27 @@ feature: Correspondence Management
 exl-id: c9c007d0-c545-4738-b11b-4c50986342ee
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 3%
-
+source-wordcount: '854'
+ht-degree: 4%
 ---
-
-# Proprietà di configurazione di Gestione corrispondenza {#correspondence-management-configuration-properties}
+# Proprietà configurazione gestione della corrispondenza {#correspondence-management-configuration-properties}
 
 Per configurare queste proprietà, aprire il seguente URL in un browser: `https://<server>:<port>/<contextPath>/system/console/configMgr` e selezionare **Configurazioni gestione corrispondenza**.
 
@@ -51,11 +64,11 @@ Gestione corrispondenza dispone delle seguenti proprietà di configurazione:
    <td>Tipo di rappresentazione</td>
    <td>Tipo di rappresentazione utilizzato dall'applicazione Create Correspondence per eseguire il rendering dell'anteprima della lettera. </td>
    <td>Rappresentazione HTML</td>
-   <td>Rendering HTML/PDF</td>
+   <td>Rappresentazione HTML/Rappresentazione PDF</td>
   </tr>
   <tr>
    <td><p>Abilita evidenziazione CCR PDF</p> </td>
-   <td><p>Abilita l’evidenziazione su PDF nell’applicazione Create Correspondence</p> </td>
+   <td><p>Abilita l’evidenziazione in PDF nell’applicazione Create Correspondence</p> </td>
    <td><p>vero</p> </td>
    <td><p>true / false</p> </td>
   </tr>
@@ -127,7 +140,7 @@ Gestione corrispondenza dispone delle seguenti proprietà di configurazione:
   </tr>
   <tr>
    <td><p>Tipo di invio PDF</p> </td>
-   <td><p>Tipo di invio PDF (tipo di PDF generato al momento dell'invio dall'applicazione Create Correspondence)</p> </td>
+   <td><p>Tipo di invio PDF (tipo di PDF generato al momento dell’invio dall’applicazione Crea corrispondenza)</p> </td>
    <td><p>non interattivo</p> </td>
    <td><p>interattivo/non interattivo</p> </td>
   </tr>
@@ -152,18 +165,18 @@ Gestione corrispondenza dispone delle seguenti proprietà di configurazione:
   <tr>
    <td><p>Formati di visualizzazione dei dati</p> </td>
    <td><p>Specifica il formato di visualizzazione specifico per la lingua per i dati</p> </td>
-   <td><p>locale=en_US; dateFormat=gg-MM-aaaa; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=truelocale=de_DE; dateFormat=dd-MM-yyyy; numberDecimalSeparator=,; numberGroupSeparator=.; numberUseGroupSeparator=truelocale=fr_FR; dateFormat=gg-MM-aaaa; numberDecimalSeparator=,; numberGroupSeparator= ; numberUseGroupSeparator=truelocale=ja_JP; dateFormat=gg-MM-aaaa; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
-   <td><p>—</p> </td>
+   <td><p>locale=en_US; dateFormat=gg-MM-aaaa; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=truelocale=de_DE; dateFormat=gg-MM-aaaa; numberDecimalSeparator=,; numberGroupSeparator=.; numberUseGroupSeparator=truelocale=fr_FR; dateFormat=gg-MM-aaaa; numberDecimalSeparator=,; numberGroupSeparator= ; numberUseGroupSeparator=truelocale=ja_JP; dateFormat=gg-MM-aaaa; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
+   <td><p>--</p> </td>
   </tr>
   <tr>
    <td><p>Formato di modifica dati</p> </td>
    <td><p>Modifica il formato dei dati. Utilizzato per scrivere dati come stringa o analizzare dati da stringa</p> </td>
    <td><p>locale=en_US; dateFormat=gg-MM-aaaa; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
-   <td>—<p> </p> </td>
+   <td>--<p> </p> </td>
   </tr>
   <tr>
-   <td><p>Gestisci istanze lettere su Publish</p> </td>
-   <td><p>Attiva/disattiva la funzionalità Gestisci lettera (applicabile solo per Publish Server)</p> </td>
+   <td><p>Gestisci istanze lettere al momento della pubblicazione</p> </td>
+   <td><p>Attiva/disattiva la funzionalità Gestisci lettera (applicabile solo al server di pubblicazione)</p> </td>
    <td><p>false</p> </td>
    <td><p>true / false</p> </td>
   </tr>
@@ -198,7 +211,7 @@ Gestione corrispondenza dispone delle seguenti proprietà di configurazione:
    <td><p>true / false</p> </td>
   </tr>
   <tr>
-   <td><p>Abilita controllo Publish</p> </td>
+   <td><p>Abilita controllo pubblicazione</p> </td>
    <td><p>Attivare/disattivare la funzionalità di controllo per la pubblicazione delle risorse</p> </td>
    <td><p>false</p> </td>
    <td><p>true / false</p> </td>
@@ -242,7 +255,7 @@ Gestione corrispondenza dispone delle seguenti proprietà di configurazione:
   <tr>
    <td><p>Directory principale utente CM</p> </td>
    <td><p>URL della cartella contenente tutte le risorse utente di Gestione della corrispondenza</p> </td>
-   <td><p>—</p> </td>
+   <td><p>--</p> </td>
    <td><p>Percorso cartella valido</p> </td>
   </tr>
   <tr>

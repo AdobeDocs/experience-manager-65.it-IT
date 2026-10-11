@@ -10,7 +10,18 @@ exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2718'
 ht-degree: 1%
@@ -30,8 +41,8 @@ Questa pagina consente di estendere le funzionalità del gestore multisito:
 >Questa pagina deve essere letta insieme a [Riutilizzo del contenuto: Multi Site Manager](/help/sites-administering/msm.md).
 >
 >Anche le seguenti sezioni di Ristrutturazione dell’archivio Sites potrebbero essere di interesse:
->* [Configurazioni blueprint per Multi-Site Manager](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html?lang=it#multi-site-manager-blueprint-configurations)
->* [Configurazioni rollout gestore multisito](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html?lang=it#multi-site-manager-rollout-configurations)
+>* [Configurazioni blueprint per Multi-Site Manager](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-blueprint-configurations)
+>* [Configurazioni rollout gestore multisito](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-rollout-configurations)
 
 >[!CAUTION]
 >
@@ -647,7 +658,7 @@ Per modificare le lingue:
 1. Fare clic su **Strumenti**, **Operazioni** e quindi su **Console Web**. Da questa console fare clic su **OSGi**, quindi su **Configurazione**.
 1. Individua e fai clic su **Day CQ WCM Language Manager** e modifica il valore di **Language List** in `/apps/wcm/core/resources/languages`, quindi fai clic su **Save**.
 
-   ![&#x200B; giorno CQ WCM Language Manager](assets/chlimage_1-78.png)
+   ![ giorno CQ WCM Language Manager](assets/chlimage_1-78.png)
 
 ## Configurazione dei blocchi MSM nelle proprietà della pagina (interfaccia touch) {#configuring-msm-locks-on-page-properties-touch-enabled-ui}
 

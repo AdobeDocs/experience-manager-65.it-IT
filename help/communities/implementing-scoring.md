@@ -11,13 +11,20 @@ role: Admin
 exl-id: 4aa857f7-d111-4548-8f03-f6d6c27acf51
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2911'
+source-wordcount: '2919'
 ht-degree: 2%
-
 ---
-
 # Punteggio community e badge {#communities-scoring-and-badges}
 
 ## Panoramica {#overview}
@@ -68,7 +75,7 @@ Nella versione sono inclusi tre badge basati sui ruoli:
 * **manager gruppo**
   `/libs/settings/community/badging/images/group-manager/jcr:content/group-manager.png`
 
-* **membro privilegiato**
+* **membro con privilegi**
   `/libs/settings/community/badging/images/privileged-member/jcr:content/privileged-member.png`
 
   ![badge assegnati](assets/assigned-badges.png)
@@ -164,8 +171,8 @@ Le regole di punteggio vengono ereditate ma non aggiunte. Ad esempio:
 * Un’azione su un componente page2 richiama sia la regola1 che la regola2.
 * Se entrambe le regole contengono regole secondarie applicabili per lo stesso `topic/verb`:
 
-   * Solo la sottoregola di rule2 influisce sul punteggio.
-   * I punteggi di entrambe le sottoregole non vengono aggiunti.
+  * Solo la sottoregola di rule2 influisce sul punteggio.
+  * I punteggi di entrambe le sottoregole non vengono aggiunti.
 
 In presenza di più regole di punteggio, i punteggi vengono mantenuti separatamente per ciascuna regola.
 
@@ -181,7 +188,8 @@ I punteggi vengono memorizzati in SRP.
 >
 >Esempio di cosa *non* fare:
 >
->/libs/settings/community/scoring/rules/site1/forums-scoring>/libs/settings/community/scoring/rules/site2/forums-scoring
+>/libs/settings/community/scoring/rules/site1/forums-scoring
+>/libs/settings/community/scoring/rules/site2/forums-scoring
 
 ### Sottoregole punteggio {#scoring-sub-rules}
 
@@ -274,18 +282,18 @@ Nella versione sono incluse due regole di punteggio per la [funzione forum](/hel
 1. /libs/settings/community/scoring/rules/comments-scoring
 
    * subRules[] =
-/libs/settings/community/scoring/rules/sub-rules/member-comment-create
-/libs/settings/community/scoring/rules/sub-rules/member-receive-voting
-/libs/settings/community/scoring/rules/sub-rules/member-given-voting
-/libs/settings/community/scoring/rules/sub-rules/member-is-moderated
+     /libs/settings/community/scoring/rules/sub-rules/member-comment-create
+     /libs/settings/community/scoring/rules/sub-rules/member-receive-voting
+     /libs/settings/community/scoring/rules/sub-rules/member-given-voting
+     /libs/settings/community/scoring/rules/sub-rules/member-is-moderated
 
 1. /libs/settings/community/scoring/rules/forums-scoring
 
    * subRules[] =
-/libs/settings/community/scoring/rules/sub-rules/member-forum-create
-/libs/settings/community/scoring/rules/sub-rules/member-receive-voting
-/libs/settings/community/scoring/rules/sub-rules/member-given-voting
-/libs/settings/community/scoring/rules/sub-rules/member-is-moderated
+     /libs/settings/community/scoring/rules/sub-rules/member-forum-create
+     /libs/settings/community/scoring/rules/sub-rules/member-receive-voting
+     /libs/settings/community/scoring/rules/sub-rules/member-given-voting
+     /libs/settings/community/scoring/rules/sub-rules/member-is-moderated
 
 **Note:**
 
@@ -296,7 +304,7 @@ Nella versione sono incluse due regole di punteggio per la [funzione forum](/hel
 * `sub-rules` può essere condiviso tra varie regole di punteggio.
 * `rules` deve trovarsi in un percorso archivio con autorizzazione di lettura per tutti.
 
-   * I nomi delle regole devono essere univoci indipendentemente dalla posizione.
+  * I nomi delle regole devono essere univoci indipendentemente dalla posizione.
 
 ### Attivazione di regole di punteggio personalizzate {#activating-custom-scoring-rules}
 
@@ -315,15 +323,15 @@ Le regole per i badge sono costituite da una proprietà `thresholds` obbligatori
 
 * `1|/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
-   * Un distintivo di bronzo è assegnato per aver guadagnato un punto.
+  * Un distintivo di bronzo è assegnato per aver guadagnato un punto.
 
 * `60|/libs/settings/community/badging/images/silver-badge/jcr:content/silver.png`
 
-   * Un distintivo d&#39;argento viene assegnato quando sono stati accumulati 60 punti.
+  * Un distintivo d&#39;argento viene assegnato quando sono stati accumulati 60 punti.
 
 * `80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png`
 
-   * Un distintivo d&#39;oro viene assegnato quando sono stati accumulati 80 punti.
+  * Un distintivo d&#39;oro viene assegnato quando sono stati accumulati 80 punti.
 
 Le regole di assegnazione dei punteggi sono associate alle regole di assegnazione dei punteggi, che determinano l’accumulo dei punti. Vedere la sezione con titolo [Applica regole al contenuto](#apply-rules-to-content).
 
@@ -378,7 +386,7 @@ Nella versione sono incluse due regole di assegnazione dei punteggi che corrispo
 * `rules` nodi sono di tipo cq:Page.
 * `rules` deve trovarsi in un percorso archivio con autorizzazione di lettura per tutti.
 
-   * I nomi delle regole devono essere univoci indipendentemente dalla posizione.
+  * I nomi delle regole devono essere univoci indipendentemente dalla posizione.
 
 ### Attivazione di regole di assegnazione dei badge personalizzate {#activating-custom-badging-rules}
 
@@ -581,29 +589,29 @@ Se la funzione non funziona come previsto, assicurati che i dati siano stati imm
 * Accedi a CRXDE Lite durante la creazione.
 * Passa alla pagina base:
 
-   * /content/sites/engagement/en/jcr:content
+  * /content/sites/engagement/en/jcr:content
 
 * Aggiungi la proprietà badgingRules:
 
-   * **Nome**: `badgingRules`
-   * **Tipo**: `String`
-   * Seleziona **Più**
-   * Seleziona **Aggiungi**
-   * Immetti `/libs/settings/community/badging/rules/forums-badging`
-   * Seleziona **+**
-   * Immetti `/libs/settings/community/badging/rules/comments-badging`
-   * Seleziona **OK**
+  * **Nome**: `badgingRules`
+  * **Tipo**: `String`
+  * Seleziona **Più**
+  * Seleziona **Aggiungi**
+  * Immetti `/libs/settings/community/badging/rules/forums-badging`
+  * Seleziona **+**
+  * Immetti `/libs/settings/community/badging/rules/comments-badging`
+  * Seleziona **OK**
 
 * Aggiungere la proprietà scoringRules:
 
-   * **Nome**: `scoringRules`
-   * **Tipo**: `String`
-   * Seleziona **Più**
-   * Seleziona **Aggiungi**
-   * Immetti `/libs/settings/community/scoring/rules/forums-scoring`
-   * Seleziona **+**
-   * Immetti `/libs/settings/community/scoring/rules/comments-scoring`
-   * Seleziona **OK**
+  * **Nome**: `scoringRules`
+  * **Tipo**: `String`
+  * Seleziona **Più**
+  * Seleziona **Aggiungi**
+  * Immetti `/libs/settings/community/scoring/rules/forums-scoring`
+  * Seleziona **+**
+  * Immetti `/libs/settings/community/scoring/rules/comments-scoring`
+  * Seleziona **OK**
 
 * Seleziona **Salva tutto**.
 
@@ -614,13 +622,13 @@ Quindi, assicurati che i componenti forum e commenti consentano la visualizzazio
 * Di nuovo utilizzando CRXDE Lite.
 * Passa al componente forum
 
-   * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
+  * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
 
 * Aggiungi la proprietà booleana allowBadges, se necessario, e assicurati che sia true.
 
-   * **Nome**: `allowBadges`
-   * **Tipo**: `Boolean`
-   * **Valore**: `true`
+  * **Nome**: `allowBadges`
+  * **Tipo**: `Boolean`
+  * **Valore**: `true`
 
 ![test-forum-component](assets/test-forum-component.png)
 
@@ -633,7 +641,7 @@ Infine,
 * Pubblica un nuovo argomento forum.
 * Affinché il badge sia visibile, è necessario aggiornare la pagina.
 
-   * Esci e accedi come membro diverso della community (ad esempio: aaron.mcdonald@mailinator.com/password).
+  * Esci e accedi come membro diverso della community (ad esempio: aaron.mcdonald@mailinator.com/password).
 
 * Selezionare il forum.
 

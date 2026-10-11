@@ -1,5 +1,5 @@
 ---
-title: Utilizzo dell’area di lavoro AEM Forms
+title: Utilizzo dell’area di lavoro di AEM Forms
 description: Inizia a usare l’area di lavoro di AEM Forms con questa breve panoramica sui flussi di lavoro dei processi.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,26 +9,44 @@ exl-id: 0bedcbd9-2cf8-47da-9440-c773982e550c
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1019'
-ht-degree: 0%
-
+source-wordcount: '1056'
+ht-degree: 1%
 ---
-
-# Utilizzo dell’area di lavoro AEM Forms{#working-with-aem-forms-workspace}
+# Utilizzo dell’area di lavoro di AEM Forms{#working-with-aem-forms-workspace}
 
 ## Introduzione {#introduction}
 
-AEM Forms Workspace fa parte di AEM Forms. Workspace facilita il rendering di HTML Forms oltre ai PDF forms. Ora è possibile interagire con i processi aziendali dalle interfacce mobili e dalle applicazioni web.
+AEM Forms Workspace fa parte di AEM Forms. Workspace facilita il rendering di HTML Forms oltre a PDF forms. Ora è possibile interagire con i processi aziendali dalle interfacce mobili e dalle applicazioni web.
 
-Inoltre, lo spazio di lavoro AEM Forms è altamente personalizzabile utilizzando le metodologie di sviluppo standard HTML e JavaScript™. Si tratta di un software basato su componenti che si integra facilmente con le altre applicazioni web.
+Inoltre, lo spazio di lavoro AEM Forms è altamente personalizzabile utilizzando le metodologie di sviluppo standard di HTML e JavaScript™. Si tratta di un software basato su componenti che si integra facilmente con le altre applicazioni web.
 
 Per ulteriori informazioni, vedere [Introduzione all&#39;area di lavoro di AEM Forms](/help/forms/using/introduction-html-workspace.md).
 
 ## Acquisizione di familiarità {#getting-familiar}
 
-Per avere familiarità con il processo end-to-end di creazione di un&#39;applicazione Forms per automatizzare un processo aziendale, seguire la procedura dettagliata. Dopo aver seguito la procedura dettagliata, è possibile creare, gestire e testare un&#39;applicazione utilizzando l&#39;area di lavoro Workbench, Designer e AEM Forms. Per informazioni dettagliate sull&#39;implementazione, vedere [Creazione della prima applicazione AEM Forms](https://help.adobe.com/it_IT/livecycle/11.0/CreateFirstApp/index.html).
+Per avere familiarità con il processo end-to-end di creazione di un&#39;applicazione Forms per automatizzare un processo aziendale, seguire la procedura dettagliata. Dopo aver seguito la procedura dettagliata, è possibile creare, gestire e testare un&#39;applicazione utilizzando l&#39;area di lavoro Workbench, Designer e AEM Forms. Per informazioni dettagliate sull&#39;implementazione, vedere [Creazione della prima applicazione AEM Forms](https://help.adobe.com/en_US/livecycle/11.0/CreateFirstApp/index.html).
 
 ## Panoramica funzionale {#functional-overview}
 
@@ -131,9 +149,9 @@ Puoi personalizzare gran parte dell’interfaccia e delle funzionalità di base,
 
 ### Rendering HTML di XDP Forms {#html-rendering-of-xdp-forms}
 
-Per impostazione predefinita, per un nuovo processo viene eseguito il rendering di un modulo XDP in formato PDF su un desktop e in formato HTML su un tablet. È possibile eseguire sempre il rendering di un modulo XDP in formato HTML. Per informazioni dettagliate, vedere [Nuovi servizi di rendering e invio](/help/forms/using/new-render-submit-service.md).
+Per impostazione predefinita, per un nuovo processo viene eseguito il rendering di un modulo XDP in formato PDF su un desktop e in formato HTML su un tablet. È sempre possibile eseguire il rendering di un modulo XDP in formato HTML. Per informazioni dettagliate, vedere [Nuovi servizi di rendering e invio](/help/forms/using/new-render-submit-service.md).
 
-La funzionalità [Mobile Forms](https://helpx.adobe.com/livecycle/help/mobile-forms/introduction.html), che funziona con [profili](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html), abilita il rendering HTML dei moduli XDP. Per impostazione predefinita, il &#39;Modulo di rendering nuovo HTML&#39; utilizza il profilo `default.html`, che è possibile modificare. È inoltre possibile aggiungere modifiche personalizzate che si verificano prima del rendering di un modulo XDP in formato HTML.
+La funzionalità [Mobile Forms](https://helpx.adobe.com/livecycle/help/mobile-forms/introduction.html), che funziona con [profili](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html), abilita il rendering HTML dei moduli XDP. Per impostazione predefinita, il &#39;Rendering nuovo HTML Form&#39; utilizza il profilo `default.html` che è possibile modificare. Puoi anche aggiungere modifiche personalizzate che si verificano prima del rendering di un modulo XDP in formato HTML.
 
 ## app dell’area di lavoro AEM Forms {#aem-forms-workspace-app}
 

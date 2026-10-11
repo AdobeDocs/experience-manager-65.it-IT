@@ -9,13 +9,24 @@ feature: Forms Portal
 exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: fa155e29-cba2-5e77-9efd-4824be5ce4c8
+    internal-label: Forms Portal
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1257'
 ht-degree: 1%
-
 ---
-
 # Personalizzazione dei modelli per i componenti di Forms Portal{#customizing-templates-for-forms-portal-components}
 
 ## Prerequisiti {#prerequisites}
@@ -41,8 +52,8 @@ Effettua le seguenti operazioni per creare un modello personalizzato per vari co
    * Componente Ricerca ed elenco: &quot;/libs/fd/fp/formTemplate&quot;
    * Componente Bozze e invii:
 
-      * Sezione bozze: /libs/fd/fp/draftTemplate
-      * Sezione invii: /libs/fd/fp/submissionsTemplate
+     * Sezione bozze: /libs/fd/fp/draftTemplate
+     * Sezione invii: /libs/fd/fp/submissionsTemplate
 
    * Componente collegamento: /libs/fd/fp/linkTemplate
 
@@ -88,11 +99,11 @@ Forms Portal fornisce una sintassi per i segnaposto per visualizzare metadati pe
 
 Per includere una voce ripetibile, configurare il valore dell&#39;attributo **dati-ripetibili** su **true**.
 
-*Nell&#39;esempio discusso, due elementi Div sono presenti nella parte superiore del modello personalizzato. La prima, con classe CSS &quot;__FP_boxes-container&quot;, funziona come elemento contenitore per i moduli elencati. La seconda, con la classe CSS &quot;__FP_boxes&quot;, è un modello per le entità di base, in questo caso un modulo. L&#39;attributo **data-Repeable**&#x200B;presente nell&#39;elemento Div ha il valore **true**.*
+*Nell&#39;esempio discusso, due elementi Div sono presenti nella parte superiore del modello personalizzato. La prima, con classe CSS &quot;__FP_boxes-container&quot;, funziona come elemento contenitore per i moduli elencati. La seconda, con la classe CSS &quot;__FP_boxes&quot;, è un modello per le entità di base, in questo caso un modulo. L&#39;attributo **data-Repeable**presente nell&#39;elemento Div ha il valore **true**.*
 
 Ogni segnaposto dispone di un set di metadati predefinito esclusivo. Per visualizzare i metadati personalizzati in una posizione specifica del modulo, aggiungere la proprietà **${metadata_prop}** nella posizione desiderata.
 
-*Nell&#39;esempio, la proprietà dei metadati viene utilizzata in più istanze. Ad esempio, viene utilizzato in **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**&#x200B;e **path**&#x200B;nel modo prescritto.*
+*Nell&#39;esempio, la proprietà dei metadati viene utilizzata in più istanze. Ad esempio, viene utilizzato in **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**e **path**nel modo prescritto.*
 
 ## Metadati pronti all’uso {#out-of-the-box-metadata}
 

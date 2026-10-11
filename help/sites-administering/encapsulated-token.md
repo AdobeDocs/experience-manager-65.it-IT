@@ -1,6 +1,6 @@
 ---
 title: Supporto di token incapsulati
-description: Scopri il supporto per i token incapsulati nell’AEM.
+description: Scopri il supporto per i token incapsulati in AEM.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
@@ -9,18 +9,30 @@ exl-id: e24d815c-83e2-4639-8273-b4c0a6bb008a
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '794'
 ht-degree: 1%
-
 ---
-
 # Supporto di token incapsulati{#encapsulated-token-support}
 
 ## Introduzione {#introduction}
 
-Per impostazione predefinita, l’AEM utilizza il gestore di autenticazione token per autenticare ogni richiesta. Tuttavia, per gestire le richieste di autenticazione, il gestore dell’autenticazione token richiede l’accesso all’archivio per ogni richiesta. Questo accade perché i cookie vengono utilizzati per mantenere lo stato di autenticazione. Logicamente, lo stato deve essere mantenuto nell’archivio per convalidare le richieste successive. In effetti, ciò significa che il meccanismo di autenticazione è con conservazione dello stato.
+Per impostazione predefinita, AEM utilizza il gestore di autenticazione token per autenticare ogni richiesta. Tuttavia, per gestire le richieste di autenticazione, il gestore dell’autenticazione token richiede l’accesso all’archivio per ogni richiesta. Questo accade perché i cookie vengono utilizzati per mantenere lo stato di autenticazione. Logicamente, lo stato deve essere mantenuto nell’archivio per convalidare le richieste successive. In effetti, ciò significa che il meccanismo di autenticazione è con conservazione dello stato.
 
 Ciò è particolarmente importante per la scalabilità orizzontale. In una configurazione con più istanze come la farm di pubblicazione descritta di seguito, il bilanciamento del carico non può essere raggiunto in modo ottimale. Con l’autenticazione con conservazione dello stato, lo stato di autenticazione persistente sarà disponibile solo nell’istanza in cui l’utente è stato autenticato per la prima volta.
 
@@ -36,9 +48,9 @@ Se un’istanza Publish non è più disponibile, tutti gli utenti autenticati in
 
 ## Autenticazione senza stato con token incapsulato {#stateless-authentication-with-the-encapsulated-token}
 
-La soluzione per la scalabilità orizzontale è l’autenticazione senza stato con l’utilizzo del nuovo supporto per i token incapsulati nell’AEM.
+La soluzione per la scalabilità orizzontale è l’autenticazione senza stato con l’utilizzo del nuovo supporto per token incapsulati in AEM.
 
-Il token incapsulato è un elemento di crittografia che consente all’AEM di creare e convalidare in modo sicuro le informazioni di autenticazione offline, senza accedere all’archivio. In questo modo, una richiesta di autenticazione può verificarsi su tutte le istanze di pubblicazione e non è necessario utilizzare connessioni permanenti. Offre inoltre il vantaggio di migliorare le prestazioni di autenticazione, in quanto non è necessario accedere all’archivio per ogni richiesta di autenticazione.
+Il token incapsulato è una parte della crittografia che consente ad AEM di creare e convalidare in modo sicuro le informazioni di autenticazione offline, senza accedere all’archivio. In questo modo, una richiesta di autenticazione può verificarsi su tutte le istanze di pubblicazione e non è necessario utilizzare connessioni permanenti. Offre inoltre il vantaggio di migliorare le prestazioni di autenticazione, in quanto non è necessario accedere all’archivio per ogni richiesta di autenticazione.
 
 Di seguito puoi vedere come funziona in una distribuzione geograficamente distribuita con autori MongoMK e istanze di pubblicazione TarMK:
 
@@ -58,18 +70,18 @@ Di seguito puoi vedere come funziona in una distribuzione geograficamente distri
 >
 >* le sessioni permanenti sono abilitate, oppure
 >
->* Gli utenti vengono già creati in AEM all&#39;avvio della sincronizzazione. Ciò significa che i token incapsulati non saranno supportati nelle situazioni in cui gli utenti dei gestori **create** durante il processo di sincronizzazione.
+>* Gli utenti vengono già creati in AEM all’avvio della sincronizzazione. Ciò significa che i token incapsulati non saranno supportati nelle situazioni in cui gli utenti dei gestori **create** durante il processo di sincronizzazione.
 
 Ci sono alcuni aspetti da tenere in considerazione durante la configurazione del token incapsulato:
 
-1. A causa della crittografia richiesta, tutte le istanze devono avere la stessa chiave HMAC. A partire da AEM 6.3, il materiale essenziale non viene più conservato nel deposito, ma nel file system effettivo. In quest’ottica, il modo migliore per replicare le chiavi è copiarle dal file system dell’istanza sorgente a quello delle istanze target in cui desideri replicare le chiavi. Ulteriori informazioni sono disponibili in &quot;Replica della chiave HMAC&quot; di seguito.
+1. A causa della crittografia richiesta, tutte le istanze devono avere la stessa chiave HMAC. A partire da AEM 6.3, il materiale chiave non viene più memorizzato nell’archivio, ma nel file system effettivo. In quest’ottica, il modo migliore per replicare le chiavi è copiarle dal file system dell’istanza sorgente a quello delle istanze target in cui desideri replicare le chiavi. Ulteriori informazioni sono disponibili in &quot;Replica della chiave HMAC&quot; di seguito.
 1. Il token incapsulato deve essere abilitato. Puoi eseguire questa operazione tramite la console web.
 
 ### Replica della chiave HMAC {#replicating-the-hmac-key}
 
 Per replicare la chiave tra le istanze, è necessario:
 
-1. Accedere all’istanza AEM, in genere un’istanza Autore, che contiene il materiale chiave da copiare;
+1. Accedi all’istanza di AEM, in genere un’istanza di authoring, che contiene il materiale chiave da copiare;
 1. Individuare il bundle `com.adobe.granite.crypto.file` nel file system locale. Ad esempio, in questo percorso:
 
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25`

@@ -5,13 +5,25 @@ feature: Multi Site Manager
 exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: d5fb67933676c9ea5fdbeafe592960403e78af79
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e86b80f2-7cb0-4646-8fcd-51d3bf272fce
+    internal-label: Multi Site Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '4204'
 ht-degree: 40%
-
 ---
-
 # Creazione e sincronizzazione di Live Copy{#creating-and-synchronizing-live-copies}
 
 Puoi creare una Live Copy da una configurazione di pagina o blueprint, quindi gestire l’ereditarietà e la sincronizzazione.
@@ -181,9 +193,9 @@ Le proprietà di una pagina Live Copy mostrano le seguenti informazioni sulla Li
 * **Stato**: stato di sincronizzazione della Live Copy. Lo stato include se la Live Copy è aggiornata rispetto all’origine, quando si è verificata l’ultima sincronizzazione e chi l’ha eseguita.
 * **Configurazione**:
 
-   * Se la pagina è ancora soggetta all&#39;ereditarietà della Live Copy.
-   * Se la configurazione viene ereditata dalla pagina padre.
-   * Tutte le configurazioni di rollout utilizzate dalla Live Copy.
+  * Se la pagina è ancora soggetta all&#39;ereditarietà della Live Copy.
+  * Se la configurazione viene ereditata dalla pagina padre.
+  * Tutte le configurazioni di rollout utilizzate dalla Live Copy.
 
 Per visualizzare le proprietà:
 
@@ -426,20 +438,20 @@ Su una Live Copy esistente puoi modificare la profondità di una pagina, ovvero 
 
 * Passaggio a una Live Copy shallow:
 
-   * Avrà effetto immediato ed è non reversibile.
+  * Avrà effetto immediato ed è non reversibile.
 
-      * Le pagine figlie vengono esplicitamente staccate dalla Live Copy. Ulteriori modifiche sugli elementi secondari non potranno essere mantenute se annullate.
+    * Le pagine figlie vengono esplicitamente staccate dalla Live Copy. Ulteriori modifiche sugli elementi secondari non potranno essere mantenute se annullate.
 
-      * Rimuove eventuali discendenti `LiveRelationships` anche se sono nidificati `LiveCopies`.
+    * Rimuove eventuali discendenti `LiveRelationships` anche se sono nidificati `LiveCopies`.
 
 * Passaggio a una Live Copy profonda:
 
-   * Le pagine figlie rimangono intatte.
-   * Per vedere l’effetto del passaggio, puoi effettuare un rollout in cui tutte le modifiche di contenuto vengono applicate in base alla configurazione del rollout.
+  * Le pagine figlie rimangono intatte.
+  * Per vedere l’effetto del passaggio, puoi effettuare un rollout in cui tutte le modifiche di contenuto vengono applicate in base alla configurazione del rollout.
 
 * Passa a una Live Copy shallow e quindi torna a una deep:
 
-   * Tutti gli elementi figlio della Live Copy shallow (precedentemente) vengono trattati come se fossero stati creati manualmente e vengono quindi spostati utilizzando `[oldname]_msm_moved name`.
+  * Tutti gli elementi figlio della Live Copy shallow (precedentemente) vengono trattati come se fossero stati creati manualmente e vengono quindi spostati utilizzando `[oldname]_msm_moved name`.
 
 Per specificare o modificare la profondità:
 
@@ -613,16 +625,16 @@ Ci sono implicazioni relative a dove utilizzi **Scollega** all’interno dell’
 
   Quando questa operazione viene eseguita su una sottopagina (o ramo) all’interno di una Live Copy:
 
-   * la relazione live viene rimossa per quella sottopagina (o ramo)
-   * e le (sotto)pagine nel ramo live copy vengono trattate come se fossero state create manualmente.
+  * la relazione live viene rimossa per quella sottopagina (o ramo)
+  * e le (sotto)pagine nel ramo live copy vengono trattate come se fossero state create manualmente.
 
   *Tuttavia*, le sottopagine sono ancora soggette alla relazione live del ramo principale, pertanto un ulteriore rollout delle pagine blueprint consentirà a entrambi di:
 
-   1. Rinominare le pagine scollegate:
+  1. Rinominare le pagine scollegate:
 
-      * Questo perché MSM le considera come pagine create manualmente che causano un conflitto in quanto hanno lo stesso nome delle pagine Live Copy che sta tentando di creare.
+     * Questo perché MSM le considera come pagine create manualmente che causano un conflitto in quanto hanno lo stesso nome delle pagine Live Copy che sta tentando di creare.
 
-   1. Crea una pagina (Live Copy) con il nome originale, contenente le modifiche dal rollout.
+  1. Crea una pagina (Live Copy) con il nome originale, contenente le modifiche dal rollout.
 
   >[!NOTE]
   >

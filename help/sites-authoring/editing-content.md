@@ -10,13 +10,26 @@ exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: ed9b9f3835af2dc40ed4c5d3f9e3209dfc6bed90
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3030'
 ht-degree: 45%
-
 ---
-
 # Modifica del contenuto di una pagina{#editing-page-content}
 
 Dopo aver creato la pagina (nuova o come parte di un lancio o di una Live Copy), puoi modificare il contenuto per apportare gli aggiornamenti necessari.
@@ -269,9 +282,9 @@ Le azioni disponibili dipendono dal contesto; in questa sezione ne vengono descr
 
   Incolla il componente dagli Appunti alla pagina. Se l&#39;originale rimane o meno dipende dal fatto che sia stata utilizzata la copia o il taglio.
 
-   * È possibile utilizzare Incolla per collocare i componenti sulla stessa pagina o su una pagina diversa.
-   * L’elemento viene incollato sopra l’elemento in cui selezioni l’azione Incolla.
-   * L’azione Incolla viene visualizzata solo se negli Appunti è presente del contenuto.
+  * È possibile utilizzare Incolla per collocare i componenti sulla stessa pagina o su una pagina diversa.
+  * L’elemento viene incollato sopra l’elemento in cui selezioni l’azione Incolla.
+  * L’azione Incolla viene visualizzata solo se negli Appunti è presente del contenuto.
 
   ![Incolla](assets/screen_shot_2018-03-22at113553.png)
 
@@ -492,7 +505,7 @@ Esistono due opzioni per visualizzare in anteprima una pagina:
 
 ### Modalità Anteprima {#preview-mode}
 
-Durante la modifica del contenuto, puoi visualizzare in anteprima la pagina utilizzando la modalità di anteprima [1&rbrace;. &#x200B;](/help/sites-authoring/author-environment-tools.md#page-modes)Questa modalità consente di effettuare le seguenti operazioni:
+Durante la modifica del contenuto, puoi visualizzare in anteprima la pagina utilizzando la modalità di anteprima [1}. ](/help/sites-authoring/author-environment-tools.md#page-modes)Questa modalità consente di effettuare le seguenti operazioni:
 
 * Nascondi vari meccanismi di modifica per avere una visualizzazione rapida della pagina quando viene pubblicata.
 * Utilizza i collegamenti per navigare.
@@ -514,15 +527,15 @@ Per bloccare una pagina è possibile utilizzare:
 
 * La console **Sites**
 
-   1. Seleziona la pagina con [modalità di selezione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-   1. Seleziona l’icona del lucchetto.
+  1. Seleziona la pagina con [modalità di selezione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+  1. Seleziona l’icona del lucchetto.
 
   ![Icona Blocca](assets/screen_shot_2018-03-22at134928.png)
 
 * **Editor pagina**
 
-   1. Per aprire il menu, seleziona l&#39;icona **Informazioni pagina**.
-   1. Seleziona l’opzione **Blocca pagina**.
+  1. Per aprire il menu, seleziona l&#39;icona **Informazioni pagina**.
+  1. Seleziona l’opzione **Blocca pagina**.
 
 Una volta eseguito il blocco, le informazioni di visualizzazione della console vengono aggiornate e, durante la modifica, un simbolo di blocco viene visualizzato nella barra degli strumenti.
 

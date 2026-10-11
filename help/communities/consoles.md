@@ -9,7 +9,16 @@ role: Admin
 exl-id: 36f2e3d2-46c7-48a8-a1e9-213f581bd9f3
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 0%
@@ -24,7 +33,7 @@ Le console di AEM Communities, disponibili nell’ambiente di authoring dal pann
 * Gestione di [membri della community](members.md)
 * [Moderazione](moderate-ugc.md) del contenuto generato dall&#39;utente (UGC)
 * Crea [distintivi personalizzati](badges.md)
-* Configurazione dell&#39;archiviazione predefinita [&#x200B; per UGC](srp-config.md)
+* Configurazione dell&#39;archiviazione predefinita [ per UGC](srp-config.md)
 
 Quando l&#39;archiviazione [UGC](working-with-srp.md) è configurata come archivio comune condiviso dagli ambienti Author e Publish, la [console di moderazione](moderation.md), disponibile negli ambienti Author e Publish, funziona su un&#39;istanza solitaria di UGC.
 

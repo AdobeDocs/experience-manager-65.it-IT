@@ -10,13 +10,29 @@ exl-id: 46c1ca14-78f6-4b33-9fdf-1b90a9875f66
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer, Leader, User
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c42c36cf-eeed-484a-8b39-a33a68192a07
+    internal-label: Compliance
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '931'
 ht-degree: 99%
-
 ---
-
 # Compatibilità di Adobe Experience Manager per le normative sulla protezione dei dati e la privacy {#aem-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
@@ -65,19 +81,19 @@ Per Adobe Experience Manager:
 
 * Le istanze, e le applicazioni che le eseguono, sono di proprietà e gestite dalla clientela.
 
-   * La clientela gestisce i ruoli normativi, tra cui entità aziendali e fornitori di servizi, titolari e responsabili del trattamento dati, tra gli altri.
+  * La clientela gestisce i ruoli normativi, tra cui entità aziendali e fornitori di servizi, titolari e responsabili del trattamento dati, tra gli altri.
 
-   * Adobe Experience Platform Privacy Service non farà parte del flusso di lavoro per AEM, come illustrato nel diagramma seguente.
+  * Adobe Experience Platform Privacy Service non farà parte del flusso di lavoro per AEM, come illustrato nel diagramma seguente.
 
 * AEM include la documentazione e le procedure per l’amministratore della privacy del cliente e/o l’amministratore AEM per eseguire le richieste relative alla normativa sulla privacy, manualmente o tramite API, se disponibili.
 
 * Nessun nuovo servizio o interfaccia utente aggiunto.
 
-   * Le procedure e le API sono invece documentate per l’utilizzo da parte dell’interfaccia utente/dei portali dei clienti che gestiscono le richieste di normativa sulla privacy.
+  * Le procedure e le API sono invece documentate per l’utilizzo da parte dell’interfaccia utente/dei portali dei clienti che gestiscono le richieste di normativa sulla privacy.
 
 * AEM non includerà alcuno strumento predefinito per supportare il flusso di lavoro delle richieste di privacy.
 
-   * Adobe fornisce documentazione e procedure per l’amministratore della privacy della clientela e per l’amministratore di AEM, consentendo loro di eseguire manualmente le richieste relative alle normative sulla privacy.
+  * Adobe fornisce documentazione e procedure per l’amministratore della privacy della clientela e per l’amministratore di AEM, consentendo loro di eseguire manualmente le richieste relative alle normative sulla privacy.
 
 Adobe fornisce procedure per la gestione delle richieste di privacy relative ad accesso, eliminazione e rinuncia per Adobe Experience Manager. In alcuni casi, sono disponibili API che possono essere richiamate da un portale sviluppato dalla clientela o da script per facilitare l’automazione.
 

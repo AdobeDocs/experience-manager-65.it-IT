@@ -15,9 +15,16 @@ product_v2:
 feature_v2:
   - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
     internal-label: AI Tools
+subfeature_v2:
+  - id: bf7fca06-df97-4229-884f-76afcfade5ad
+    internal-label: AI Assistant
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
@@ -34,7 +41,7 @@ topic_v2:
     internal-label: Insights
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a6f7741fe575a194732abee7dfc9c531d1c58cc2
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1327'
 ht-degree: 78%
@@ -62,7 +69,7 @@ L’Assistente IA supporta AEM as a Cloud Service, incluse le seguenti soluzioni
 
 Il seguente video, della durata di 3 minuti e 25 secondi, offre una guida dettagliata all’Assistente IA in AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475366/?captions=ita&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475357/?learn=on&enablevpops)
 
 ## Accedere all’Assistente IA in AEM{#get-access}
 
@@ -77,7 +84,7 @@ Per accedere all’Assistente IA in AEM, i clienti devono disporre dei seguenti 
 
 **Per accedere all’Assistente IA in AEM:**
 
-1. I clienti devono disporre di un accordo aggiuntivo per poter accedere alla maggior parte delle funzionalità basate su intelligenza artificiale e agentiche in Adobe Experience Manager. Per ulteriori informazioni, contatta il rappresentante Adobe. Per informazioni sul funzionamento dell&#39;abilitazione di IA generativa, vedere [IA generativa nelle applicazioni CX Enterprise](https://experienceleague.adobe.com/it/docs/cx-enterprise-ai/experience-cloud-ai/overview/generative-ai).
+1. I clienti devono disporre di un accordo aggiuntivo per poter accedere alla maggior parte delle funzionalità basate su intelligenza artificiale e agentiche in Adobe Experience Manager. Per ulteriori informazioni, contatta il rappresentante Adobe. Per informazioni sul funzionamento dell&#39;abilitazione di IA generativa, vedere [IA generativa nelle applicazioni CX Enterprise](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/generative-ai).
 
 1. Una volta che la tua organizzazione dispone di questo contratto, tutti gli utenti possono utilizzare l’Assistente all’intelligenza artificiale per conoscere il prodotto per impostazione predefinita. Non è richiesta alcuna autorizzazione aggiuntiva per utente o per gruppo.
 
@@ -113,7 +120,7 @@ La conoscenza del prodotto comprende concetti e argomenti presenti nella documen
 | Apprendimento mirato | <ul><li>Che cos’è l’editor universale?</li><li>Come posso creare un programma in Cloud Manager?</li></ul> |
 | Individuazione aperta | <ul><li>Come posso utilizzare l’editor universale?</li><li>Esiste un modo per copiare il contenuto da un ambiente all’altro?</li></ul> |
 | Risoluzione di problemi | <ul><li>Perché non riesco ad accedere all’editor universale?</li><li>Perché la mia pipeline non funziona?</li></ul> |
-| **Creazione ticket di supporto** | **Disponibile solo per gli amministratori del supporto &#x200B;**<br>**Esempi** |
+| **Creazione ticket di supporto** | **Disponibile solo per gli amministratori del supporto **<br>**Esempi** |
 | Creazione automatizzata di ticket di supporto per acquisire la cronologia e il contesto delle chat dell’Assistente IA | <ul><li>Crea un ticket di supporto per me.</li></ul> |
 | Recupero dello stato del ticket di supporto | <ul><li>Mostra tutti i ticket di supporto che ho aperto.</li><li>Mostra lo stato del ticket “E-----------”</li></ul> |
 

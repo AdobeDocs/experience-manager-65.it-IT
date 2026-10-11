@@ -10,18 +10,31 @@ exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '4886'
+source-wordcount: '4887'
 ht-degree: 74%
-
 ---
-
 # Creazione di modelli di pagina{#creating-page-templates}
 
 Quando crei una pagina, è necessario selezionare un modello, il quale verrà utilizzato come base per la creazione della nuova pagina. Il modello definisce la struttura della pagina risultante, tutto il contenuto iniziale e i componenti che possono essere utilizzati.
 
-Con l’**Editor modelli**, la creazione e la manutenzione dei modelli non è più un’attività che riguarda solo gli sviluppatori. Può essere coinvolto anche un tipo di “power user”, detto **autore dimodelli**. Gli sviluppatori devono comunque occuparsi di configurare l’ambiente, creare le librerie client e i componenti da utilizzare, ma una volta che questi elementi di base sono implementati, l’**autore del modello** avrà la flessibilità di creare e configurare i modelli senza un progetto di sviluppo.
+Con l’**Editor modelli**, la creazione e la manutenzione dei modelli non è più un’attività che riguarda solo gli sviluppatori. Può essere coinvolto anche un tipo di “power user”, detto **autore di modelli**. Gli sviluppatori devono comunque occuparsi di configurare l’ambiente, creare le librerie client e i componenti da utilizzare, ma una volta che questi elementi di base sono implementati, l’**autore del modello** avrà la flessibilità di creare e configurare i modelli senza un progetto di sviluppo.
 
 La **Console modelli** consente agli autori di modelli di:
 
@@ -64,29 +77,29 @@ La creazione di un modello tramite **Templates Console** e **Template Editor** r
 
 * **Amministratore**:
 
-   * Crea una nuova cartella per i modelli che richiede i diritti di `admin`.
+  * Crea una nuova cartella per i modelli che richiede i diritti di `admin`.
 
-   * Spesso tali attività possono essere eseguite anche da uno sviluppatore
+  * Spesso tali attività possono essere eseguite anche da uno sviluppatore
 
 * **Sviluppatore**:
 
-   * Si concentra sui dettagli tecnici/interni
-   * Deve avere esperienza con l’ambiente di sviluppo.
-   * Fornisce all’autore del modello le informazioni necessarie.
+  * Si concentra sui dettagli tecnici/interni
+  * Deve avere esperienza con l’ambiente di sviluppo.
+  * Fornisce all’autore del modello le informazioni necessarie.
 
 * **Autore del modello**:
 
-   * Questo è un autore specifico che è membro del gruppo `template-authors`
+  * Questo è un autore specifico che è membro del gruppo `template-authors`
 
-      * In questo modo vengono assegnati i privilegi e le autorizzazioni necessarie.
+    * In questo modo vengono assegnati i privilegi e le autorizzazioni necessarie.
 
-   * Può configurare l’utilizzo di componenti e di altri dettagli di alto livello che richiedono:
+  * Può configurare l’utilizzo di componenti e di altri dettagli di alto livello che richiedono:
 
-      * Alcune conoscenze tecniche
+    * Alcune conoscenze tecniche
 
-         * Ad esempio, l’utilizzo di pattern durante la definizione dei percorsi.
+      * Ad esempio, l’utilizzo di pattern durante la definizione dei percorsi.
 
-      * Informazioni tecniche fornite dallo sviluppatore.
+    * Informazioni tecniche fornite dallo sviluppatore.
 
 A causa della natura di alcune attività, come la creazione di una cartella, è necessario un ambiente di sviluppo che richiede conoscenza/esperienza.
 
@@ -98,18 +111,18 @@ AEM ora offre due tipi di modelli di base:
 
 * [Modelli modificabili](/help/sites-authoring/templates.md#creatingandmanagingnewtemplates)
 
-   * Può essere [creato](#creatinganewtemplate) e [modificato](#editingatemplate) dagli autori di modelli utilizzando la console e l&#39;editor **Modello**. La console **Template** è accessibile nella sezione **General** della console **Tools**.
+  * Può essere [creato](#creatinganewtemplate) e [modificato](#editingatemplate) dagli autori di modelli utilizzando la console e l&#39;editor **Modello**. La console **Template** è accessibile nella sezione **General** della console **Tools**.
 
-   * Dopo la creazione della nuova pagina, viene mantenuta una connessione dinamica tra la pagina e il modello. Ciò significa che le modifiche alla struttura del modello e/o al contenuto bloccato verranno applicate a tutte le pagine create con tale modello. Le modifiche al contenuto sbloccato (ovvero iniziale) non verranno applicate.
-   * Utilizza i criteri per contenuto, che puoi definire dall’editor modelli, per mantenere le proprietà di progettazione. La modalità Progettazione nell’editor pagina non viene più utilizzata per i modelli modificabili.
+  * Dopo la creazione della nuova pagina, viene mantenuta una connessione dinamica tra la pagina e il modello. Ciò significa che le modifiche alla struttura del modello e/o al contenuto bloccato verranno applicate a tutte le pagine create con tale modello. Le modifiche al contenuto sbloccato (ovvero iniziale) non verranno applicate.
+  * Utilizza i criteri per contenuto, che puoi definire dall’editor modelli, per mantenere le proprietà di progettazione. La modalità Progettazione nell’editor pagina non viene più utilizzata per i modelli modificabili.
 
 * Modelli statici
 
-   * I modelli statici sono disponibili per diverse versioni di AEM.
-   * Sono [fornite dagli sviluppatori](/help/sites-developing/page-templates-static.md), pertanto non possono essere create o modificate dagli autori.
-   * Vengono copiate per creare la nuova pagina, ma non esiste alcuna connessione dinamica successiva (anche se il nome del modello è registrato per informazione).
-   * Utilizza [Modalità progettazione](/help/sites-authoring/default-components-designmode.md) per rendere persistenti le proprietà di progettazione.
-   * Poiché la modifica dei modelli statici è un&#39;attività esclusiva di uno sviluppatore, per ulteriori informazioni vedere il documento per sviluppatori [Modelli di pagina - Statici](/help/sites-developing/page-templates-static.md).
+  * I modelli statici sono disponibili per diverse versioni di AEM.
+  * Sono [fornite dagli sviluppatori](/help/sites-developing/page-templates-static.md), pertanto non possono essere create o modificate dagli autori.
+  * Vengono copiate per creare la nuova pagina, ma non esiste alcuna connessione dinamica successiva (anche se il nome del modello è registrato per informazione).
+  * Utilizza [Modalità progettazione](/help/sites-authoring/default-components-designmode.md) per rendere persistenti le proprietà di progettazione.
+  * Poiché la modifica dei modelli statici è un&#39;attività esclusiva di uno sviluppatore, per ulteriori informazioni vedere il documento per sviluppatori [Modelli di pagina - Statici](/help/sites-developing/page-templates-static.md).
 
 Per definizione, la console dei modelli e l’editor dei modelli consentono solo la creazione e la modifica di modelli modificabili. Pertanto, questo documento si concentra esclusivamente sui modelli modificabili.
 
@@ -123,7 +136,7 @@ Quando crei un modello modificabile:
 
 * Utilizza la console dei **Modelli**. Questa funzione è disponibile nella sezione **Generale** della console degli **Strumenti**.
 
-   * Oppure direttamente da: [https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
+  * Oppure direttamente da: [https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
 * Se necessario, puoi [creare una cartella per i modelli](#creating-a-template-folder-admin).
 * [Crea un modello](#creatinganewtemplateauthor), inizialmente vuoto
@@ -131,10 +144,10 @@ Quando crei un modello modificabile:
 * [Definisci proprietà aggiuntive](#definingtemplatepropertiesauthor) per il modello, se necessario
 * [Modifica il modello](#editingtemplates) per definire:
 
-   * [Struttura](#editingatemplatestructureauthor): contenuto predefinito che non può essere modificato nelle pagine create con il modello.
-   * [Contenuto iniziale](#editing-a-template-initial-content-author): contenuto predefinito che potrà essere modificato nelle pagine create con il modello.
-   * [Layout](#editingatemplatelayoutauthor): per una vasta gamma di dispositivi.
-   * [Stili](/help/sites-authoring/style-system.md): definisci gli stili da utilizzare con il modello e i suoi componenti.
+  * [Struttura](#editingatemplatestructureauthor): contenuto predefinito che non può essere modificato nelle pagine create con il modello.
+  * [Contenuto iniziale](#editing-a-template-initial-content-author): contenuto predefinito che potrà essere modificato nelle pagine create con il modello.
+  * [Layout](#editingatemplatelayoutauthor): per una vasta gamma di dispositivi.
+  * [Stili](/help/sites-authoring/style-system.md): definisci gli stili da utilizzare con il modello e i suoi componenti.
 
 * [Abilita il modello](#enablingatemplateauthor) da utilizzare durante la creazione di una pagina
 * [Consenti il modello](#allowing-a-template-author) per la pagina o la sezione richiesta del sito web
@@ -188,18 +201,18 @@ Un modello può avere le seguenti proprietà:
 
 * Immagine
 
-   * Immagine da utilizzare come [miniatura del modello](/help/sites-authoring/templates.md#template-thumbnail-image) per facilitare la selezione, ad esempio nella procedura guidata Crea pagina.
+  * Immagine da utilizzare come [miniatura del modello](/help/sites-authoring/templates.md#template-thumbnail-image) per facilitare la selezione, ad esempio nella procedura guidata Crea pagina.
 
-      * Può essere caricata
-      * Può essere generata in base al contenuto del modello
+    * Può essere caricata
+    * Può essere generata in base al contenuto del modello
 
 * Titolo
 
-   * Titolo utilizzato per identificare il modello, ad esempio nella procedura guidata **Crea pagina**.
+  * Titolo utilizzato per identificare il modello, ad esempio nella procedura guidata **Crea pagina**.
 
 * Descrizione
 
-   * Descrizione facoltativa per fornire ulteriori informazioni sul modello e sul relativo utilizzo, ad esempio nella procedura guidata **Crea pagina**.
+  * Descrizione facoltativa per fornire ulteriori informazioni sul modello e sul relativo utilizzo, ad esempio nella procedura guidata **Crea pagina**.
 
 Per visualizzare e/o modificare le proprietà:
 
@@ -367,16 +380,16 @@ In modalità **Struttura** dell&#39;editor modelli:
 
   Per aggiungere componenti al modello, esistono diversi meccanismi:
 
-   * Dal browser **Componenti** nel pannello laterale.
-   * Utilizzando l&#39;opzione **Inserisci componente** (icona **+**) disponibile nella barra degli strumenti dei componenti già presenti nel modello o nella casella **Trascina qui i componenti**.
+  * Dal browser **Componenti** nel pannello laterale.
+  * Utilizzando l&#39;opzione **Inserisci componente** (icona **+**) disponibile nella barra degli strumenti dei componenti già presenti nel modello o nella casella **Trascina qui i componenti**.
 
-   * Trascinando una risorsa (dal browser **Risorse** nel pannello laterale) direttamente sul modello per generare il componente appropriato in situ.
+  * Trascinando una risorsa (dal browser **Risorse** nel pannello laterale) direttamente sul modello per generare il componente appropriato in situ.
 
   Una volta aggiunto, ogni componente viene contrassegnato con:
 
-   * Un bordo
-   * Un marcatore per mostrare il tipo di componente
-   * Un marcatore che indica se il componente è stato sbloccato
+  * Un bordo
+  * Un marcatore per mostrare il tipo di componente
+  * Un marcatore che indica se il componente è stato sbloccato
 
   >[!NOTE]
   >
@@ -422,8 +435,8 @@ In modalità **Struttura** dell&#39;editor modelli:
 
   La finestra di configurazione è divisa in due parti.
 
-   * Nella parte sinistra, in **Criteri**, è possibile selezionare un criterio esistente.
-   * Nella parte destra, in **Proprietà** è possibile impostare le proprietà specifiche del tipo di componente.
+  * Nella parte sinistra, in **Criteri**, è possibile selezionare un criterio esistente.
+  * Nella parte destra, in **Proprietà** è possibile impostare le proprietà specifiche del tipo di componente.
 
   Le proprietà disponibili dipendono dal componente selezionato. Ad esempio, per un componente testo le proprietà definiscono le opzioni di copia e incolla, le opzioni di formattazione e lo stile di paragrafo, insieme ad altre opzioni.
 
@@ -457,8 +470,8 @@ In modalità **Struttura** dell&#39;editor modelli:
 
   Nell’intestazione **Proprietà** puoi definire le impostazioni del componente. L’intestazione presenta due schede:
 
-   * Principale
-   * Funzioni
+  * Principale
+  * Funzioni
 
   *Principale*
 
@@ -472,7 +485,7 @@ In modalità **Struttura** dell&#39;editor modelli:
 
   Per rimuovere una configurazione, fare clic sul pulsante **Elimina** situato a destra della configurazione.
 
-  Per rimuovere una configurazione, fai clic sul pulsante **&#x200B; Elimina**.
+  Per rimuovere una configurazione, fai clic sul pulsante** Elimina**.
 
   ![chlimage_1-142](assets/chlimage_1-142.png)
 
@@ -490,7 +503,7 @@ In modalità **Struttura** dell&#39;editor modelli:
 
   >[!NOTE]
   >
-  >[I criteri dei contenuti per i componenti che si avvalgono dell&#39;editor Rich Text](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) possono essere definiti solo per le opzioni disponibili mediante tale editor tramite le impostazioni dell&#39;interfaccia utente. [&#128279;](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [&#128279;](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
+  >[I criteri dei contenuti per i componenti che si avvalgono dell&#39;editor Rich Text](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) possono essere definiti solo per le opzioni disponibili mediante tale editor tramite le impostazioni dell&#39;interfaccia utente. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
 
 * **Criteri e proprietà (contenitore di layout)**
 
@@ -512,19 +525,19 @@ In modalità **Struttura** dell&#39;editor modelli:
 
   Nell’intestazione **Proprietà** è possibile scegliere quali componenti sono disponibili per il contenitore di layout e definirne le impostazioni. L’intestazione presenta tre schede:
 
-   * Componenti consentiti
-   * Componenti standard
-   * Impostazioni reattive
+  * Componenti consentiti
+  * Componenti standard
+  * Impostazioni reattive
 
   *Componenti consentiti*
 
   Nella scheda **Componenti consentiti**, puoi definire quali componenti sono disponibili per il contenitore di layout.
 
-   * I componenti sono raggruppati in base ai rispettivi gruppi di componenti, che possono essere espansi e compressi.
-   * È possibile selezionare un intero gruppo selezionando il nome del gruppo e deselezionando tutti gli elementi.
-   * Il segno meno significa che è stato selezionato almeno un elemento del gruppo, ma non tutti.
-   * È disponibile una ricerca per filtrare un componente in base al nome.
-   * I numeri elencati a destra del nome del gruppo di componenti rappresentano il numero totale di componenti selezionati in tale gruppo indipendentemente dal filtro.
+  * I componenti sono raggruppati in base ai rispettivi gruppi di componenti, che possono essere espansi e compressi.
+  * È possibile selezionare un intero gruppo selezionando il nome del gruppo e deselezionando tutti gli elementi.
+  * Il segno meno significa che è stato selezionato almeno un elemento del gruppo, ma non tutti.
+  * È disponibile una ricerca per filtrare un componente in base al nome.
+  * I numeri elencati a destra del nome del gruppo di componenti rappresentano il numero totale di componenti selezionati in tale gruppo indipendentemente dal filtro.
 
   ![chlimage_1-144](assets/chlimage_1-144.png)
 
@@ -548,13 +561,13 @@ In modalità **Struttura** dell&#39;editor modelli:
 
   Quando un componente è stato sbloccato:
 
-   * Nel bordo viene visualizzato un lucchetto aperto.
-   * La barra degli strumenti del componente verrà regolata di conseguenza.
-   * Tutti i contenuti già inseriti non saranno più visualizzati in modalità **Struttura**.
+  * Nel bordo viene visualizzato un lucchetto aperto.
+  * La barra degli strumenti del componente verrà regolata di conseguenza.
+  * Tutti i contenuti già inseriti non saranno più visualizzati in modalità **Struttura**.
 
-      * Il contenuto già inserito è considerato contenuto iniziale ed è visibile solo nella modalità **Contenuto iniziale**.
+    * Il contenuto già inserito è considerato contenuto iniziale ed è visibile solo nella modalità **Contenuto iniziale**.
 
-   * L’elemento padre di un componente sbloccato non può essere spostato, tagliato o cancellato.
+  * L’elemento padre di un componente sbloccato non può essere spostato, tagliato o cancellato.
 
   ![chlimage_1-146](assets/chlimage_1-146.png)
 
@@ -705,30 +718,30 @@ Quando crei dei modelli, prendi in considerazione quanto segue:
 
    * Modifiche alla struttura:
 
-      * Vengono applicate immediatamente alle pagine risultanti.
-      * È comunque necessario pubblicare il modello modificato affinché i visitatori possano vedere le modifiche.
+     * Vengono applicate immediatamente alle pagine risultanti.
+     * È comunque necessario pubblicare il modello modificato affinché i visitatori possano vedere le modifiche.
 
    * Modifiche ai criteri dei contenuti e alle configurazioni di progettazione:
 
-      * Vengono applicate immediatamente alle pagine risultanti.
-      * È necessario pubblicare le modifiche affinché i visitatori possano vederle.
+     * Vengono applicate immediatamente alle pagine risultanti.
+     * È necessario pubblicare le modifiche affinché i visitatori possano vederle.
 
    * Modifiche al contenuto iniziale:
 
-      * Vengono applicate solo alle pagine create dopo la modifica del modello.
+     * Vengono applicate solo alle pagine create dopo la modifica del modello.
 
    * Le modifiche al layout dipendono dal ruolo del componente modificato:
 
-      * Solo struttura: vengono applicate immediatamente
-      * Con contenuto iniziale: vengono applicate immediatamente solo alle pagine create dopo la modifica
+     * Solo struttura: vengono applicate immediatamente
+     * Con contenuto iniziale: vengono applicate immediatamente solo alle pagine create dopo la modifica
 
    Presta particolare attenzione nei seguenti casi:
 
    * Blocco o sblocco di componenti su modelli abilitati.
    * Questo può avere effetti secondari, in quanto le pagine esistenti possono già utilizzarlo. In genere:
 
-      * Lo sblocco dei componenti (che erano bloccati) risulterà mancante nelle pagine esistenti.
-      * I componenti bloccati (che erano modificabili) nascondono la visualizzazione di tale contenuto sulle pagine.
+     * Lo sblocco dei componenti (che erano bloccati) risulterà mancante nelle pagine esistenti.
+     * I componenti bloccati (che erano modificabili) nascondono la visualizzazione di tale contenuto sulle pagine.
 
    >[!NOTE]
    >

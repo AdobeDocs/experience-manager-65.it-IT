@@ -6,13 +6,27 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a9f7d31e-bbe1-4475-966a-5f213546fcd9
+    internal-label: SPA Editor
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '786'
 ht-degree: 1%
-
 ---
-
 
 # Componenti compositi negli SPA {#composite-components-in-spas}
 
@@ -137,7 +151,7 @@ In questo caso, il componente scheda è già stato creato nel progetto AEM conte
 
 Puoi quindi aggiungerlo all’applicazione a pagina singola e recuperarne il contenuto.
 
-1. Crea un componente corrispondente nell’applicazione a pagina singola per questo. Assicurati che i componenti secondari siano mappati sui corrispondenti tipi di risorse AEM all’interno del progetto SPA. In questo esempio vengono utilizzati gli stessi componenti `AEMText` e `AEMImage` descritti [&#x200B; nel caso precedente.](#component-does-not-exist)
+1. Crea un componente corrispondente nell’applicazione a pagina singola per questo. Assicurati che i componenti secondari siano mappati sui corrispondenti tipi di risorse AEM all’interno del progetto SPA. In questo esempio vengono utilizzati gli stessi componenti `AEMText` e `AEMImage` descritti [ nel caso precedente.](#component-does-not-exist)
 
    ```javascript
    import React from 'react';
@@ -163,7 +177,7 @@ Puoi quindi aggiungerlo all’applicazione a pagina singola e recuperarne il con
     itemPath='root/responsivegrid' />
    ```
 
-1. Aggiungi il componente `wknd-spa/components/imagecard` creato ai componenti consentiti per il componente contenitore [&#x200B; nel modello di pagina.](/help/sites-authoring/templates.md)
+1. Aggiungi il componente `wknd-spa/components/imagecard` creato ai componenti consentiti per il componente contenitore [ nel modello di pagina.](/help/sites-authoring/templates.md)
 
 Ora il componente `imagecard` può essere aggiunto direttamente al contenitore nell&#39;editor di AEM.
 
@@ -181,4 +195,4 @@ Se il contenuto esiste in AEM, può essere incluso direttamente nell’applicazi
 
 ![Percorso composito nella struttura del nodo](assets/composite-path.png)
 
-Il componente `AEMCard` corrisponde al componente definito [&#x200B; nel caso d&#39;uso precedente.](#content-does-not-exist) In questo caso, il contenuto definito nella posizione precedente nel progetto AEM è incluso nell’applicazione a pagina singola.
+Il componente `AEMCard` corrisponde al componente definito [ nel caso d&#39;uso precedente.](#content-does-not-exist) In questo caso, il contenuto definito nella posizione precedente nel progetto AEM è incluso nell’applicazione a pagina singola.

@@ -5,13 +5,29 @@ exl-id: a53fef09-6495-4bb7-8df1-ba3c113d88f6
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
 role: Admin, Developer
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 94%
-
+source-wordcount: '904'
+ht-degree: 89%
 ---
-
 # Scopri le nozioni di base sulla modellazione dei contenuti per Headless con AEM {#content-modeling-headless-basics}
 
 ## Percorso affrontato finora {#story-so-far}
@@ -100,15 +116,15 @@ AEM fornisce i seguenti tipi di dati per modellare il contenuto:
 Due tipi di dati forniscono riferimenti a contenuti esterni a uno specifico frammento:
 
 * **Riferimento contenuto**
-Fornisce un semplice riferimento ad altri contenuti di qualsiasi tipo.
+Questo fornisce un semplice riferimento ad altri contenuti di qualsiasi tipo.
 Ad esempio, è possibile fare riferimento a un’immagine in una posizione specifica.
 
 * **Riferimento frammento**
-Fornisce riferimenti ad altri frammenti di contenuto.
+Questo fornisce riferimenti ad altri frammenti di contenuto.
 Questo tipo di riferimento viene utilizzato per creare contenuti nidificati, introducendo le relazioni necessarie per modellare il contenuto.
 Il tipo di dati può essere configurato in modo da consentire agli autori di frammenti di:
-   * Modificare direttamente il frammento a cui si fa riferimento.
-   * Creare un nuovo frammento di contenuto basato sul modello appropriato
+  * Modificare direttamente il frammento a cui si fa riferimento.
+  * Creare un nuovo frammento di contenuto basato sul modello appropriato
 
 >[!NOTE]
 >
@@ -133,14 +149,14 @@ Ad esempio, è possibile che siano definiti i seguenti modelli di frammento di c
 * Persona
 * Premi
 
-Sembra abbastanza semplice, ma un’Azienda ha sia un amministratore delegato che dei dipendenti...e queste sono tutte persone, ognuna definita come Persona.
+Sembra abbastanza semplice, ma un&#39;azienda ha sia un amministratore delegato che un dipendente.... e queste sono tutte persone, ognuna definita come una persona.
 
 E una Persona può ricevere un Premio (o forse due).
 
 * La mia azienda - Azienda
-   * Amministratore delegato - Persona
-   * Dipendente/i - Persona
-      * Premio(i) personale(i) - Premio
+  * Amministratore delegato - Persona
+  * Dipendente/i - Persona
+    * Premio(i) personale(i) - Premio
 
 E siamo solo all’inizio. A seconda della complessità, un premio potrebbe essere specifico per l’Azienda o un’Azienda potrebbe avere la sua sede principale in una città specifica.
 
@@ -154,7 +170,7 @@ Ora che hai imparato le nozioni di base, il passo successivo è quello di [scopr
 
 * [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md)
 
-   * [Modelli per frammenti di contenuto - Tipi di dati](/help/assets/content-fragments/content-fragments-models.md#data-types)
+  * [Modelli per frammenti di contenuto - Tipi di dati](/help/assets/content-fragments/content-fragments-models.md#data-types)
 
 * [Concetti relativi all’authoring](/help/sites-authoring/author.md)
 

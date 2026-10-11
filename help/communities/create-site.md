@@ -10,13 +10,20 @@ exl-id: d4c1895f-421c-4146-b94a-8d11065ef9e3
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1624'
+source-wordcount: '1631'
 ht-degree: 1%
-
 ---
-
 # Creare un sito community{#author-a-new-community-site}
 
 ## Creare un sito community {#create-a-community-site}
@@ -48,10 +55,10 @@ Nel [passaggio Modello sito](/help/communities/sites-console.md#step2013asitetem
 
 * **Nome sito community**: Coinvolgi
 
-   * Ricontrolla il nome poiché non è più facile modificarlo dopo la creazione del sito
-   * L&#39;URL iniziale viene visualizzato sotto il nome del sito community
-   * Per un URL valido, aggiungi un codice della lingua di base + &quot;.html&quot;
-   * *Ad esempio*, https://localhost:4502/content/sites/ `engage/en.html`
+  * Ricontrolla il nome poiché non è più facile modificarlo dopo la creazione del sito
+  * L&#39;URL iniziale viene visualizzato sotto il nome del sito community
+  * Per un URL valido, aggiungi un codice della lingua di base + &quot;.html&quot;
+  * *Ad esempio*, https://localhost:4502/content/sites/ `engage/en.html`
 
 * **Modello**: trascinare verso il basso per scegliere `Reference Site`
 
@@ -119,7 +126,7 @@ Ad esempio,
 
 >[!NOTE]
 >
->[Il servizio tunnel](https://helpx.adobe.com/it/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author) consente la selezione di membri e gruppi esistenti solo nell&#39;ambiente di pubblicazione.
+>[Il servizio tunnel](https://helpx.adobe.com/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author) consente la selezione di membri e gruppi esistenti solo nell&#39;ambiente di pubblicazione.
 
 ![ruoli utente nel nuovo sito](assets/site-admin-1.png)
 
@@ -184,7 +191,7 @@ Da sinistra a destra:
 
 * **Pubblica sito**
 
-  Se si seleziona l&#39;icona mondo, il sito community verrà pubblicato (ad esempio, se il server di pubblicazione è in esecuzione nel computer locale, su localhost:4503 per impostazione predefinita).
+  Se si seleziona l&#39;icona mondo, il sito community verrà pubblicato (ad esempio, se il server di pubblicazione è in esecuzione sul computer locale, su localhost:4503 per impostazione predefinita).
 
 * **Esporta sito**
 
@@ -269,29 +276,29 @@ Per iniziare:
 
    * Seleziona **Crea nodo:**
 
-      * **Nome** localhost.4503
-(*not* utilizza &#39;:&#39;)
+     * **Nome** localhost.4503
+       (*not* utilizza &#39;:&#39;)
 
-      * **Tipo** [sling:Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
+     * **Tipo** [sling:Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
 
 1. Con il nodo `localhost.4503` appena creato selezionato:
 
    * Aggiungi proprietà:
 
    * **Nome** sling:match
-      * **Tipo** Stringa
-      * **Valore** localhost.4503/$
-(deve terminare con il carattere &#39;$&#39;)
+     * **Tipo** Stringa
+     * **Valore** localhost.4503/$
+       (deve terminare con il carattere &#39;$&#39;)
 
    * Aggiungi proprietà:
 
-      * **Nome** sling:internalRedirect
-      * **Tipo** Stringa
-      * **Valore** /content/sites/engage/en.html
+     * **Nome** sling:internalRedirect
+     * **Tipo** Stringa
+     * **Valore** /content/sites/engage/en.html
 
 1. Seleziona **Salva tutto.**
 1. (Facoltativo) Elimina la cronologia esplorazioni.
-1. Passare a https://localhost:4503/.
+1. Passa a https://localhost:4503/.
 
    * Arrivare a https://localhost:4503/content/sites/engage/en.html
 

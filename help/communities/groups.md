@@ -11,18 +11,25 @@ role: Admin
 exl-id: ef371ff8-6b4f-4e5a-98fb-d7c274927c46
 solution: Experience Manager
 feature: Communities
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1691'
+source-wordcount: '1739'
 ht-degree: 1%
-
 ---
-
 # Console Gruppi per community {#community-groups-console}
 
 La console Gruppi consente di creare gruppi community quando la [struttura modello](/help/communities/sites-console.md#step1) di un sito community include la funzione [gruppi](/help/communities/functions.md#groups-function).
 
-* AEM Communities supporta la nidificazione di gruppi all’interno di altri gruppi. La nidificazione dei gruppi è possibile quando la struttura [&#x200B; del nuovo gruppo](/help/communities/tools-groups.md) contiene la funzione dei gruppi.
+* AEM Communities supporta la nidificazione di gruppi all’interno di altri gruppi. La nidificazione dei gruppi è possibile quando la struttura [ del nuovo gruppo](/help/communities/tools-groups.md) contiene la funzione dei gruppi.
 * Solo per l’ambiente di authoring, è disponibile una procedura guidata per la creazione di gruppi simile alla procedura guidata per la creazione di siti.
 * Se i membri possono o meno creare gruppi nell&#39;ambiente di pubblicazione, è possibile configurarlo quando si aggiunge una funzione Gruppi a una struttura del sito o del gruppo di community.
 
@@ -56,8 +63,8 @@ Per accedere alla console Gruppi:
 * Selezionare una cartella del sito community esistente per aprirla.
 * Selezionare un&#39;istanza di un sito community all&#39;interno della cartella.
 
-   * La struttura del sito community deve includere una funzione di gruppo.
-   * Queste schermate provengono dall&#39;esercitazione introduttiva dopo [la creazione di gruppi durante la pubblicazione](/help/communities/published-site.md).
+  * La struttura del sito community deve includere una funzione di gruppo.
+  * Queste schermate provengono dall&#39;esercitazione introduttiva dopo [la creazione di gruppi durante la pubblicazione](/help/communities/published-site.md).
 
   ![crea-gruppo](assets/create-group.png)
 
@@ -78,7 +85,7 @@ Per accedere alla console Gruppi:
 * **Titolo gruppo community**
 
   Titolo da visualizzare per il gruppo.
-Il titolo del gruppo viene visualizzato nel sito pubblicato.
+  Il titolo del gruppo viene visualizzato nel sito pubblicato.
 
 * **Descrizione gruppo community**
 
@@ -87,7 +94,7 @@ Il titolo del gruppo viene visualizzato nel sito pubblicato.
 * **Directory principale gruppo community**
 
   Percorso della directory principale del gruppo.
-La directory principale predefinita è il sito padre, ma la directory principale può essere spostata in qualsiasi posizione all’interno del sito web. Non è consigliabile modificarlo.
+  La directory principale predefinita è il sito padre, ma la directory principale può essere spostata in qualsiasi posizione all’interno del sito web. Non è consigliabile modificarlo.
 
 * **Menu Lingue aggiuntive gruppo community disponibili**
 
@@ -97,10 +104,10 @@ La directory principale predefinita è il sito padre, ma la directory principale
 
   Il nome della pagina principale del gruppo che viene visualizzata nell&#39;URL. Evita di usare caratteri di sottolineatura (_) e parole chiave come risorse e configurazione nel nome del gruppo.
 
-   * Ricontrollare il nome in quanto non può essere modificato facilmente dopo la creazione del gruppo.
-   * L&#39;URL di base viene visualizzato sotto `Community Group Name`.
-   * Per un URL valido, aggiungi &quot;.html&quot;
-     *ad esempio*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
+  * Ricontrollare il nome in quanto non può essere modificato facilmente dopo la creazione del gruppo.
+  * L&#39;URL di base viene visualizzato sotto `Community Group Name`.
+  * Per un URL valido, aggiungi &quot;.html&quot;
+    *ad esempio*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
 
 * Menu **Modello per gruppo community**
 
@@ -134,8 +141,8 @@ Quando crei o selezioni un’immagine, tieni presente quanto segue:
 * L&#39;immagine è bloccata sul bordo sinistro della finestra del browser
 * Non esiste alcun ridimensionamento dell’immagine, tale che quando la larghezza dell’immagine è:
 
-   * Inferiore alla larghezza del browser, l’immagine viene ripetuta orizzontalmente.
-   * Maggiore della larghezza del browser, l&#39;immagine appare ritagliata.
+  * Inferiore alla larghezza del browser, l’immagine viene ripetuta orizzontalmente.
+  * Maggiore della larghezza del browser, l&#39;immagine appare ritagliata.
 
 ### Passaggio 3: Impostazioni {#step-settings}
 
@@ -239,14 +246,14 @@ Il pannello STRUTTURA consente di modificare la struttura inizialmente creata da
 * Trascinare altre [funzioni community](/help/communities/functions.md) nella struttura del sito.
 * In un’istanza di una funzione community nella struttura del sito:
 
-   * **`Gear icon`**
-Modificare le impostazioni, inclusi il titolo di visualizzazione, l&#39;URL e [i gruppi di membri con privilegi](/help/communities/users.md#privilegedmembersgroups).
+  * **`Gear icon`**
+    Modificare le impostazioni, inclusi il titolo di visualizzazione, l&#39;URL e [i gruppi di membri con privilegi](/help/communities/users.md#privilegedmembersgroups).
 
-   * **`Trashcan icon`**
-Rimuovere (eliminare) le funzioni dalla struttura del sito.
+  * **`Trashcan icon`**
+    Rimuovere (eliminare) le funzioni dalla struttura del sito.
 
-   * **`Grid icon`**
-Consente di modificare l&#39;ordine delle funzioni visualizzato nella barra di spostamento di primo livello del sito.
+  * **`Grid icon`**
+    Consente di modificare l&#39;ordine delle funzioni visualizzato nella barra di spostamento di primo livello del sito.
 
 >[!CAUTION]
 >
@@ -271,7 +278,7 @@ Il pannello DESIGN consente di modificare il tema:
 * [Tema gruppo community](#community-group-theme)
 * [Marchio gruppo community](#community-group-branding)
 
-   * Scorri fino alla parte inferiore del pannello per modificare l’immagine del brand.
+  * Scorri fino alla parte inferiore del pannello per modificare l’immagine del brand.
 
 ### Modifica impostazioni {#modify-settings}
 

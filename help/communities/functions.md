@@ -10,7 +10,16 @@ role: Admin
 exl-id: 2395c895-c611-43ac-abb6-c2bc4b4a41f4
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2253'
 ht-degree: 2%
@@ -19,7 +28,7 @@ ht-degree: 2%
 
 Il tipo di funzioni previste da un’esperienza della community sono ben note. Le funzioni della community sono disponibili come funzioni della community. In sostanza, si tratta di una o più pagine collegate per implementare una funzione per la community che richiede molto di più della semplice aggiunta di un componente a una pagina in modalità di authoring. Si tratta dei blocchi predefiniti utilizzati per definire la struttura di un [modello di sito community](/help/communities/sites.md) da cui vengono creati [siti community](/help/communities/sites-console.md).
 
-Dopo la creazione di un sito della community, è possibile aggiungere contenuto alle pagine risultanti utilizzando la [modalità di creazione AEM &#x200B;](/help/sites-authoring/editing-content.md) standard. Sono disponibili diverse funzioni per la community, come illustrato nella console delle funzioni per la community.
+Dopo la creazione di un sito della community, è possibile aggiungere contenuto alle pagine risultanti utilizzando la [modalità di creazione AEM ](/help/sites-authoring/editing-content.md) standard. Sono disponibili diverse funzioni per la community, come illustrato nella console delle funzioni per la community.
 
 >[!NOTE]
 >

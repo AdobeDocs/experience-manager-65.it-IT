@@ -6,14 +6,32 @@ exl-id: 030fe9f2-cd41-4290-b8a6-2f9ade6b5789
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 feature: Adaptive Forms
-source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1920'
 ht-degree: 0%
 ---
 # Analisi con [!DNL Adobe Launch] {#analyticsusingadobelaunch}
 
-AEM Forms si integra con [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=it) per acquisire e tenere traccia delle metriche delle prestazioni per i moduli pubblicati. L’obiettivo dell’analisi di queste metriche è consentire agli utenti aziendali di ottenere informazioni sul comportamento degli utenti finali e ottimizzare l’esperienza di acquisizione dei dati. Puoi acquisire e tenere traccia del comportamento degli utenti connessi e non connessi (anonimi) tramite Adobe Analytics for Adaptive Forms.
+AEM Forms si integra con [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=en) per acquisire e tenere traccia delle metriche delle prestazioni per i moduli pubblicati. L’obiettivo dell’analisi di queste metriche è consentire agli utenti aziendali di ottenere informazioni sul comportamento degli utenti finali e ottimizzare l’esperienza di acquisizione dei dati. Puoi acquisire e tenere traccia del comportamento degli utenti connessi e non connessi (anonimi) tramite Adobe Analytics for Adaptive Forms.
 
 È inoltre possibile eseguire analisi utilizzando Cloud Service Framework. Per ulteriori informazioni su come integrare AEM Forms con Cloud Service Framework, vedere [Analytics utilizzando Cloud Service Framework](/help/forms/using/configure-analytics-forms-documents.md). Il vantaggio principale dell’utilizzo di Adobe Launch rispetto ad Analytics utilizzando Cloud Service Framework è che puoi anche definire eventi personalizzati, oltre a questi eventi predefiniti. Gli eventi personalizzati vengono definiti mediante l&#39;editor di regole o clientlibs e sono mappati agli eventi in [!DNL Adobe Analytics].
 
@@ -53,7 +71,7 @@ Prima di configurare [!DNL Adobe Analytics], creare:
 
 ### Installa le estensioni AEM Forms e [!DNL Adobe Analytics] {#install-extensions}
 
-Per configurare le estensioni AEM Forms e [Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=it), effettua le seguenti operazioni:
+Per configurare le estensioni AEM Forms e [Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html), effettua le seguenti operazioni:
 
 1. Accedi ad Adobe Experience Cloud e seleziona un nome appropriato per l’azienda.
 
@@ -197,7 +215,7 @@ Per pubblicare la configurazione, effettua le seguenti operazioni:
 
 ## &#x200B;2. Configurare i moduli AEM {#configure-aem-forms}
 
-Prima di creare la configurazione di Adobe Launch, crea una [configurazione Adobe IMS utilizzando Adobe Launch come soluzione cloud](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html?lang=it).
+Prima di creare la configurazione di Adobe Launch, crea una [configurazione Adobe IMS utilizzando Adobe Launch come soluzione cloud](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html).
 
 ### Crea configurazione di Adobe Launch {#create-adobe-launch-configuration}
 
@@ -209,7 +227,7 @@ Per creare una configurazione di Adobe Launch, effettua le seguenti operazioni:
 
 1. Specifica un titolo per la configurazione nel campo **[!UICONTROL Titolo]**.
 
-1. Seleziona la [configurazione Adobe IMS associata](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html?lang=it).
+1. Seleziona la [configurazione Adobe IMS associata](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html).
 
 1. Selezionare il nome dell&#39;azienda utilizzata durante [la configurazione di Adobe Analytics](#Configure-adobe-analytics).
 
@@ -221,7 +239,7 @@ Per creare una configurazione di Adobe Launch, effettua le seguenti operazioni:
 
 >[!NOTE]
 >
-> Quando [incorpori AEM Forms in una pagina di AEM Sites](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites), le configurazioni di Adobe Launch non sono supportate in un iFrame per moduli adattivi. Per risolvere questo problema, configura le regole di Adobe Launch direttamente nella pagina Sites oppure esegui la migrazione delle configurazioni di Adobe Launch esistenti da AEM Forms alla pagina Sites.
+> Quando [incorpori AEM Forms in una pagina di AEM Sites](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites), le configurazioni di Adobe Launch non sono supportate in un iFrame per moduli adattivi. Per risolvere questo problema, configura le regole di Adobe Launch direttamente nella pagina Sites oppure esegui la migrazione delle configurazioni di Adobe Launch esistenti da AEM Forms alla pagina Sites.
 
 
 ### Abilita [!DNL Adobe Analytics] per un modulo adattivo {#enable-analytics-adaptive-form}
@@ -234,7 +252,7 @@ Per utilizzare la configurazione [!DNL Adobe Launch] in un modulo adattivo esist
 1. Seleziona **[!UICONTROL Salva e chiudi]**. Modulo adattivo abilitato per [!DNL Adobe Analytics].
 1. Pubblica il modulo.
 
-Dopo aver abilitato [!DNL Adobe Analytics] per un modulo adattivo, puoi [convalidare](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=it#validate-the-page-view-beacon) se esiste un flusso di eventi dati appropriato tra AEM Forms e [!DNL Adobe Analytics]. L’integrazione di AEM Forms con Adobe Analytics è completa. Ora puoi [configurare e visualizzare i rapporti in Adobe Analytics](#view-reports-adobe-analytics).
+Dopo aver abilitato [!DNL Adobe Analytics] per un modulo adattivo, puoi [convalidare](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=en#validate-the-page-view-beacon) se esiste un flusso di eventi dati appropriato tra AEM Forms e [!DNL Adobe Analytics]. L’integrazione di AEM Forms con Adobe Analytics è completa. Ora puoi [configurare e visualizzare i rapporti in Adobe Analytics](#view-reports-adobe-analytics).
 
 >[!NOTE]
 >

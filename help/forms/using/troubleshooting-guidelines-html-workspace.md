@@ -1,5 +1,5 @@
 ---
-title: Linee guida per la risoluzione dei problemi per AEM Forms Workspace
+title: Linee guida per la risoluzione dei problemi per l’area di lavoro di AEM Forms
 description: Abilita i registri e utilizza il debugger nel browser per la risoluzione dei problemi di AEM Forms Workspace.
 contentOwner: robhagat
 content-type: reference
@@ -9,14 +9,30 @@ exl-id: a054b60a-5e89-4c98-87bc-35669988d160
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '738'
-ht-degree: 0%
-
+source-wordcount: '788'
+ht-degree: 7%
 ---
-
-# Linee guida per la risoluzione dei problemi per AEM Forms Workspace {#troubleshooting-guidelines-for-aem-forms-workspace}
+# Linee guida per la risoluzione dei problemi per l’area di lavoro di AEM Forms {#troubleshooting-guidelines-for-aem-forms-workspace}
 
 Questo articolo illustra come eseguire il debug dell’area di lavoro di AEM Forms abilitando la registrazione e utilizzando il debugger in un browser. Vengono inoltre illustrati alcuni problemi comuni che è possibile incontrare durante l’utilizzo di AEM Forms Workspace e delle relative soluzioni.
 
@@ -33,11 +49,11 @@ Se durante l&#39;installazione del pacchetto si verifica un errore `javax.jcr.no
 
 1. Passa a Gestione pacchetti. URL predefinito: `https://[localhost]:'port'/lc/crx/packmgr/index.jsp.`
 1. Cerca e installa il pacchetto `adobe-lc-workspace-pkg-[version].zip`.
-1. Riavviare il server applicazioni.
+1. Riavvia il server applicazioni.
 
 >[!NOTE]
 >
-> Per riavviare l&#39;SDK, si consiglia di utilizzare il comando &#39;Ctrl + C&#39;. Il riavvio dell’SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java, può causare incongruenze nell’ambiente di sviluppo dell’AEM.
+> Si consiglia di utilizzare il comando “Ctrl + C” per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.
 
 ## Registrazione nell’area di lavoro di AEM Forms {#aem-forms-workspace-nbsp-logging}
 
@@ -147,7 +163,7 @@ Nell’area di lavoro AEM Forms:
 ### Livelli di registro disponibili nell’area di lavoro di AEM Forms {#log-levels-available-in-nbsp-aem-forms-workspace}
 
 * FATALE
-* ERRORE 
+* ERRORE
 * AVVISO
 * INFO
 * DEBUG
@@ -166,17 +182,17 @@ Nell’area di lavoro AEM Forms:
 
 ## Domande frequenti {#faqs}
 
-1. Il modulo PDF non viene sottoposto a rendering o inviato in Google Chrome.
+1. PDF Form non viene sottoposto a rendering o inviato in Google Chrome.
 
    1. Installare il plug-in Adobe® Reader®.
    1. In Chrome, apri chrome://plugins per visualizzare i plug-in disponibili.
-   1. Disattiva il plug-in Chrome PDF Viewer e abilita il plug-in Adobe Reader.
+   1. Disattivare il plug-in Chrome PDF Viewer e attivare il plug-in Adobe Reader.
 
-1. Il rendering del modulo o della Guida SWF non viene eseguito in Google Chrome.
+1. SWF form o Guida non è in fase di rendering in Google Chrome.
 
    1. In Chrome, apri chrome://plugins per visualizzare i plug-in disponibili.
-   1. Vedi i dettagli per Adobe plug-in Flash® Player.
-   1. Disattivare PepperFlash sotto il plug-in Flash Player Adobe.
+   1. Vedere i dettagli del plug-in Adobe Flash® Player.
+   1. Disattivare PepperFlash sotto il plug-in Adobe Flash Player.
 
 1. Ho personalizzato l’area di lavoro di AEM Forms, ma non riesco a vedere le modifiche.
 
@@ -184,7 +200,7 @@ Nell’area di lavoro AEM Forms:
 
 1. Cosa deve fare l’utente per abilitare il rendering del modulo in HTML quando viene aperto sul desktop?
 
-   Selezionare il pulsante di scelta HTML per il profilo predefinito nel passaggio Assegna attività quando si utilizza Workbench.
+   Selezionare il pulsante di opzione HTML per il profilo predefinito nel passaggio Assegna attività quando si utilizza Workbench.
 
 1. L&#39;allegato non viene visualizzato quando si fa clic su di esso.
 
@@ -196,4 +212,4 @@ Nell’area di lavoro AEM Forms:
 
 1. I moduli HTML, utilizzando le Proprietà processo nella progettazione, quando vengono sottoposti a rendering nell’area di lavoro di AEM Forms, visualizzano il pulsante Invia all’interno del modulo.
 
-   Durante la progettazione dei moduli, quando si utilizzano le proprietà del processo, viene aggiunto un pulsante Invia all&#39;interno del modulo. Quando viene eseguito il rendering come PDF nell’area di lavoro di AEM Forms, il pulsante Invia non è visibile all’utente finale. Tuttavia, quando si esegue il rendering come modulo HTML nell’area di lavoro di AEM Forms, il pulsante Invia è visibile all’utente finale. Se si fa clic sul pulsante Invia all&#39;interno del modulo, non viene avviata alcuna azione. Per completare l’attività, fai clic sul pulsante Invia nella parte inferiore dell’area di lavoro di AEM Forms, all’esterno del modulo.
+   Durante la progettazione dei moduli, quando si utilizzano le proprietà del processo, viene aggiunto un pulsante Invia all&#39;interno del modulo. Quando viene eseguito il rendering come PDF nell’area di lavoro di AEM Forms, il pulsante Invia non è visibile all’utente finale. Tuttavia, quando si esegue il rendering come modulo di HTML nell’area di lavoro di AEM Forms, il pulsante Invia è visibile all’utente finale. Se si fa clic sul pulsante Invia all&#39;interno del modulo, non viene avviata alcuna azione. Per completare l’attività, fai clic sul pulsante Invia nella parte inferiore dell’area di lavoro di AEM Forms, all’esterno del modulo.

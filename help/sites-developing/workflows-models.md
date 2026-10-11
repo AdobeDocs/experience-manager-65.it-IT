@@ -10,18 +10,27 @@ exl-id: 6790202f-0542-4779-b3ce-d394cdba77b4
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '2462'
+source-wordcount: '2503'
 ht-degree: 3%
-
 ---
-
 # Creazione di modelli di flussi di lavoro{#creating-workflow-models}
 
 >[!CAUTION]
 >
->Per informazioni sull&#39;utilizzo dell&#39;interfaccia classica, consultare la [documentazione di AEM 6.3](https://helpx.adobe.com/it/experience-manager/6-3/help/sites-developing/workflows-models.html).
+>Per informazioni sull&#39;utilizzo dell&#39;interfaccia classica, consultare la [documentazione di AEM 6.3](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/workflows-models.html).
 
 È possibile creare un [modello di flusso di lavoro](/help/sites-developing/workflows.md#model) per definire la serie di passaggi eseguiti all&#39;avvio del flusso di lavoro da parte di un utente. Puoi anche definire le proprietà del modello, ad esempio se il flusso di lavoro è transitorio o utilizza più risorse.
 
@@ -85,9 +94,9 @@ Quando apri un [modello predefinito e/o legacy](/help/sites-developing/workflows
 * Il browser Passaggi non è disponibile (lato sinistro).
 * Nella barra degli strumenti (lato destro) è disponibile un&#39;azione **Modifica**.
 * Inizialmente il modello e le relative proprietà vengono presentati in modalità di sola lettura come:
-   * I flussi di lavoro predefiniti si trovano in `/libs`
-   * I flussi di lavoro legacy si trovano in `/etc`
-Se selezioni **Modifica**:
+  * I flussi di lavoro predefiniti si trovano in `/libs`
+  * I flussi di lavoro legacy sono in `/etc`
+    Se selezioni **Modifica**:
 * copia del flusso di lavoro in `/conf`
 * rendere disponibile il browser Passaggi
 * consente di apportare modifiche
@@ -100,7 +109,7 @@ Se selezioni **Modifica**:
 
 ### Aggiunta di un passaggio a un modello {#adding-a-step-to-a-model}
 
-Aggiungi i passaggi al modello per rappresentare l’attività da eseguire: ogni passaggio esegue un’attività specifica. Una selezione di componenti step è disponibile in un’istanza AEM standard.
+Aggiungi i passaggi al modello per rappresentare l’attività da eseguire: ogni passaggio esegue un’attività specifica. In un’istanza standard di AEM è disponibile una selezione di componenti del passaggio.
 
 Quando modifichi un modello, i passaggi disponibili vengono visualizzati nei vari gruppi del browser **Passaggi**. Ad esempio:
 
@@ -108,7 +117,7 @@ Quando modifichi un modello, i passaggi disponibili vengono visualizzati nei var
 
 >[!NOTE]
 >
->Per informazioni sui componenti del passaggio principale installati con AEM, vedere [Riferimento passaggi flusso di lavoro](/help/sites-developing/workflows-step-ref.md).
+>Per informazioni sui componenti del passaggio principale installati con AEM, consulta [Riferimento dei passaggi del flusso di lavoro](/help/sites-developing/workflows-step-ref.md).
 
 Per aggiungere passaggi al modello di flusso di lavoro:
 
@@ -153,7 +162,7 @@ Puoi **Configurare** e personalizzare il comportamento di un passaggio del fluss
 
    >[!NOTE]
    >
-   >Per informazioni sui componenti del passaggio principale installati con AEM, vedere [Riferimento passaggi flusso di lavoro](/help/sites-developing/workflows-step-ref.md).
+   >Per informazioni sui componenti del passaggio principale installati con AEM, consulta [Riferimento dei passaggi del flusso di lavoro](/help/sites-developing/workflows-step-ref.md).
 
 1. Configura il **passaggio Proprietà** come richiesto; le proprietà disponibili dipendono dal tipo di passaggio; potrebbero anche essere disponibili diverse schede. Ad esempio, il **Passaggio partecipante** predefinito, presente in un nuovo flusso di lavoro come `Step 1`:
 
@@ -180,7 +189,7 @@ Puoi creare un modello di flusso di lavoro [Transitorio](/help/sites-developing/
 
 >[!NOTE]
 >
->AEM Quando si esegue un flusso di lavoro in modalità [transitoria](/help/sites-developing/workflows.md#transient-workflows), la cronologia del flusso di lavoro non viene memorizzata. Pertanto, [Timeline](/help/sites-authoring/basic-handling.md#timeline) non visualizza alcuna informazione relativa a tale flusso di lavoro.
+>Quando si esegue un flusso di lavoro in modalità [transitoria](/help/sites-developing/workflows.md#transient-workflows), AEM non memorizza alcuna cronologia del flusso di lavoro. Pertanto, [Timeline](/help/sites-authoring/basic-handling.md#timeline) non visualizza alcuna informazione relativa a tale flusso di lavoro.
 
 ## Rendere disponibili i modelli di flusso di lavoro nell’interfaccia utente touch {#classic2touchui}
 
@@ -250,9 +259,9 @@ Per definire **Stadi** per il flusso di lavoro:
    |---|---|
    | Passaggio 1 | Creare |
    | Passaggio 2 | Creare |
-   | Passaggio 3 | Rivedi |
-   | Passaggio 4 | Approva |
-   | Passaggio 5 | Approva |
+   | Passaggio 3 | Rivedere |
+   | Passaggio 4 | Approvazione |
+   | Passaggio 5 | Approvazione |
    | Passaggio 6 | Completato |
 
 1. Conferma le modifiche con **Sync** (barra degli strumenti dell&#39;editor) per generare il modello di runtime.
@@ -391,7 +400,7 @@ Per illustrare alcune delle possibilità di creazione di un flusso di lavoro, ne
 
    ![wf-13](assets/wf-13.png)
 
-1. Applica questo flusso di lavoro alla pagina, in modo che quando l&#39;utente passa a **Completa** il passaggio **Convalida contenuto**, possa scegliere se desidera **Publish Page come richiesto** o **Rifiuta richiesta Publish**.
+1. Applica questo flusso di lavoro alla pagina, in modo che quando l&#39;utente passa a **Completa** il passaggio **Convalida contenuto**, possa scegliere se **Pubblica pagina come richiesto** o **Rifiuta richiesta di pubblicazione**.
 
    ![chlimage_1-72](assets/chlimage_1-72.png)
 
@@ -407,7 +416,7 @@ Per definire una regola OR, procedere come segue:
 
    >[!NOTE]
    >
-   >Gli script devono avere una funzione [&#x200B; `check()`](#function-check) che restituisce un valore booleano.
+   >Gli script devono avere una funzione [ `check()`](#function-check) che restituisce un valore booleano.
 
 1. Modifica il flusso di lavoro e aggiungi **OR Split** al modello.
 1. Modifica le proprietà del **ramo 1** della **divisione OR**:
@@ -415,7 +424,6 @@ Per definire una regola OR, procedere come segue:
    * Definisci come **Route predefinita** impostando **Valore** su `true`.
 
    * Imposta il percorso dello script come **Regola**. Ad esempio:
-
      `/apps/myapp/workflow/scripts/myscript1.ecma`
 
    >[!NOTE]
@@ -425,7 +433,6 @@ Per definire una regola OR, procedere come segue:
 1. Modifica le proprietà del **ramo 2** della **divisione OR**.
 
    * Imposta il percorso dell&#39;altro script come **Regola**. Ad esempio:
-
      `/apps/myapp/workflow/scripts/myscript2.ecma`
 
 1. Imposta le proprietà dei singoli passaggi in ciascun ramo. Verificare che l&#39;**utente/gruppo** sia impostato.

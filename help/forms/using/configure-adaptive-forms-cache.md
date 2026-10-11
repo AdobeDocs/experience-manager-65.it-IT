@@ -9,13 +9,29 @@ role: Admin,User
 exl-id: 153986f0-b6ff-4278-8bb6-70c320a4e539
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 3%
-
 ---
-
 # Configurare la cache dei moduli adattivi {#configure-adaptive-forms-cache}
 
 La cache è un meccanismo che consente di ridurre i tempi di accesso ai dati, ridurre la latenza e migliorare le velocità di input/output (I/O). La cache dei moduli adattivi memorizza solo il contenuto HTML e la struttura JSON di un modulo adattivo senza salvare dati precompilati. Consente di ridurre il tempo necessario per il rendering di un modulo adattivo sul client. È progettato appositamente per i moduli adattivi.
@@ -51,19 +67,19 @@ Puoi anche configurare il caching dei moduli adattivi in Dispatcher per un ulter
 * Durante lo sviluppo di componenti personalizzati, nel server utilizzato per lo sviluppo, mantieni disabilitata la cache dei moduli adattivi.
 * Gli URL senza estensione non vengono memorizzati in cache. Ad esempio, gli URL con pattern `/content/forms/[folder-structure]/[form-name].html` vengono memorizzati nella cache e la memorizzazione nella cache ignora gli URL con pattern `/content/dam/formsanddocument/[folder-name]/<form-name>/jcr:content`. Pertanto, utilizza gli URL con estensioni per sfruttare i vantaggi del caching.
 * Considerazioni per i moduli adattivi localizzati:
-   * Utilizza il formato URL `http://host:port/content/forms/af/<afName>.<locale>.html` per richiedere una versione localizzata di un modulo adattivo invece di `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`
-   * [Disattivare utilizzando le impostazioni locali del browser](supporting-new-language-localization.md#how-localization-of-adaptive-form-works) per gli URL con formato `http://host:port/content/forms/af/<adaptivefName>.html`.
-   * Quando si utilizza il formato URL `http://host:port/content/forms/af/<adaptivefName>.html` e **[!UICONTROL Usa impostazioni locali del browser]** in Gestione configurazione è disabilitato, viene distribuita la versione non localizzata del modulo adattivo. La lingua non localizzata è la lingua utilizzata durante lo sviluppo del modulo adattivo. Le impostazioni locali configurate per il browser (impostazioni locali del browser) non vengono considerate e viene distribuita una versione non localizzata del modulo adattivo.
-   * Quando si utilizza il formato URL `http://host:port/content/forms/af/<adaptivefName>.html` e si attiva **[!UICONTROL Usa impostazioni locali browser]** in Gestione configurazione, viene distribuita una versione localizzata del modulo adattivo, se disponibile. La lingua del modulo adattivo localizzato si basa sulla lingua configurata per il browser (lingua del browser). Può causare il caching di [solo della prima istanza di un modulo adattivo]. Per evitare che il problema si verifichi nell&#39;istanza, vedere [risoluzione dei problemi](#only-first-insatnce-of-adptive-forms-is-cached).
+  * Utilizza il formato URL `http://host:port/content/forms/af/<afName>.<locale>.html` per richiedere una versione localizzata di un modulo adattivo invece di `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`
+  * [Disattivare utilizzando le impostazioni locali del browser](supporting-new-language-localization.md#how-localization-of-adaptive-form-works) per gli URL con formato `http://host:port/content/forms/af/<adaptivefName>.html`.
+  * Quando si utilizza il formato URL `http://host:port/content/forms/af/<adaptivefName>.html` e **[!UICONTROL Usa impostazioni locali del browser]** in Gestione configurazione è disabilitato, viene distribuita la versione non localizzata del modulo adattivo. La lingua non localizzata è la lingua utilizzata durante lo sviluppo del modulo adattivo. Le impostazioni locali configurate per il browser (impostazioni locali del browser) non vengono considerate e viene distribuita una versione non localizzata del modulo adattivo.
+  * Quando si utilizza il formato URL `http://host:port/content/forms/af/<adaptivefName>.html` e si attiva **[!UICONTROL Usa impostazioni locali browser]** in Gestione configurazione, viene distribuita una versione localizzata del modulo adattivo, se disponibile. La lingua del modulo adattivo localizzato si basa sulla lingua configurata per il browser (lingua del browser). Può causare il caching di [solo della prima istanza di un modulo adattivo]. Per evitare che il problema si verifichi nell&#39;istanza, vedere [risoluzione dei problemi](#only-first-insatnce-of-adptive-forms-is-cached).
 
 ### Abilita caching in Dispatcher
 
 Per abilitare e configurare la memorizzazione in cache dei moduli adattivi su Dispatcher, effettua le seguenti operazioni:
 
-1. Apri il seguente URL per ogni istanza di pubblicazione dell&#39;ambiente e [abilita l&#39;agente di svuotamento per le istanze di pubblicazione dell&#39;ambiente](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=it#invalidating-dispatcher-cache-from-a-publishing-instance):
+1. Apri il seguente URL per ogni istanza di pubblicazione dell&#39;ambiente e [abilita l&#39;agente di svuotamento per le istanze di pubblicazione dell&#39;ambiente](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance):
    `http://[server]:[port]]/etc/replication/agents.publish/flush.html`
 
-1. [Aggiungi quanto segue al file dispatcher.any](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#automatically-invalidating-cached-files):
+1. [Aggiungi quanto segue al file dispatcher.any](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#automatically-invalidating-cached-files):
 
    ```JSON
       /invalidate
@@ -92,7 +108,7 @@ Per abilitare e configurare la memorizzazione in cache dei moduli adattivi su Di
    * Un modulo adattivo rimane nella cache fino a quando non viene pubblicata una versione aggiornata del modulo.
 
    * Quando viene pubblicata una versione più recente di una risorsa a cui si fa riferimento in un modulo adattivo, i moduli adattivi interessati vengono automaticamente invalidati. Esistono alcune eccezioni all’annullamento automatico della validità delle risorse di riferimento. Per informazioni sulle eccezioni, vedere la sezione [risoluzione dei problemi](#troubleshooting).
-1. [Aggiungi il seguente file di regole dispatcher.any o personalizzato](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#specifying-the-documents-to-cache). Sono esclusi gli URL che non supportano il caching. Ad esempio, la comunicazione interattiva.
+1. [Aggiungi il seguente file di regole dispatcher.any o personalizzato](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-documents-to-cache). Sono esclusi gli URL che non supportano il caching. Ad esempio, la comunicazione interattiva.
 
    ```JSON
       /0000 {
@@ -116,7 +132,7 @@ Per abilitare e configurare la memorizzazione in cache dei moduli adattivi su Di
       }
    ```
 
-1. [Aggiungere i seguenti parametri all&#39;elenco dei parametri URL da ignorare](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#ignoring-url-parameters):
+1. [Aggiungere i seguenti parametri all&#39;elenco dei parametri URL da ignorare](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters):
 
    ```JSON
       /ignoreUrlParams {

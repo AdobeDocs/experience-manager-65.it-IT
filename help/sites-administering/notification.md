@@ -9,13 +9,22 @@ exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: efaff4557aba3557a355ed385a5358cf1108c159
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2182'
 ht-degree: 9%
-
 ---
-
 
 # Configurazione delle notifiche e-mail{#configuring-email-notification}
 
@@ -45,7 +54,7 @@ Si applicano i seguenti vincoli:
 
 * La **porta del server SMTP** deve essere 25 o superiore.
 
-* Il nome host del server SMTP **&#x200B;**&#x200B;non può essere vuoto.
+* Il nome host del server SMTP **** non può essere vuoto.
 * L&#39;indirizzo **&quot;Da&quot;** non può essere vuoto ed è necessario modificare il valore predefinito &quot;<noreply@day.com>&quot;.
 
 Per aiutarti a eseguire il debug di un problema relativo al servizio di posta **Day CQ**, puoi visualizzare i registri del servizio:
@@ -404,11 +413,11 @@ Quindi, integra le impostazioni OAuth2 con AEM:
    * Compila l&#39;URL di autorizzazione, l&#39;URL del token e l&#39;URL del token di aggiornamento costruendoli come descritto in [fine della procedura](#microsoft-outlook)
    * ID client e Segreto client: configura questi campi con i valori recuperati come descritto in precedenza.
    * Aggiungi i seguenti ambiti alla configurazione:
-      * openid
-      * offline_access
-      * `https://outlook.office365.com/Mail.Send`
-      * `https://outlook.office365.com/Mail.Read`
-      * `https://outlook.office365.com/SMTP.Send`
+     * openid
+     * offline_access
+     * `https://outlook.office365.com/Mail.Send`
+     * `https://outlook.office365.com/Mail.Read`
+     * `https://outlook.office365.com/SMTP.Send`
    * URL reindirizzamento codice di autenticazione: `http://localhost:4503/services/mailer/oauth2/token`
    * Aggiorna URL token: deve avere lo stesso valore dell’URL token indicato sopra
 1. Fai clic su **Salva**.

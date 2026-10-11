@@ -7,18 +7,29 @@ feature: Asset Management,Search
 exl-id: d6f815b5-e4fc-4f8c-a6c1-9e50035ab9f2
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: 74ec00bc-0862-520e-86dc-e377aeccc141
+    internal-label: Search
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 2%
-
 ---
-
 # Organizzazione delle risorse digitali {#organize-digital-assets}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| Adobe Experience Manager (AEM) as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/organize-assets.html?lang=it) |
+| Adobe Experience Manager (AEM) as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/organize-assets.html?lang=en) |
 | AEM 6.5 | Questo articolo |
 
 Tutte le risorse digitali, i metadati e il contenuto dei documenti di Microsoft® Office e PDF vengono estratti e resi ricercabili. La ricerca consente di applicare filtri sofisticati alle risorse e rispetta appieno le autorizzazioni appropriate. I metadati sono descritti in dettaglio in Metadati in Gestione delle risorse digitali.
@@ -32,15 +43,15 @@ Il modo più semplice per organizzare le risorse è salvarle nelle cartelle. È 
 * Di solito, l’archivio delle risorse digitali è sempre in crescita. Pertanto, è importante formalizzare l’uso dei metadati, la struttura delle cartelle e la denominazione dei file nelle prime fasi del ciclo di creazione dei contenuti.
 * Utilizza le cartelle solo per imporre una struttura di archiviazione coerente per le risorse digitali. Questa coerenza aiuta il processo e gestisce meglio le risorse. Ad esempio, le risorse inserite nei seguenti tipi di cartelle possono aiutarti a utilizzare i [profili appropriati per l&#39;elaborazione delle risorse](processing-profiles.md):
 
-   * **Cartelle di sviluppo**: contiene risorse digitali su cui si sta lavorando.
-   * **Cartelle client**: contiene risorse digitali basate sui client o sui nomi dei progetti.
-   * **Cartelle primarie**: contiene risorse digitali originali di origine.
-   * **Cartelle di rendering**: contiene copie trasformate e copie delle risorse digitali originali di origine.
-   * **Cartelle dimensioni file**: contiene risorse digitali basate su file di dimensioni piccole, medie o grandi.
-   * **Cartelle di gestione temporanea**: contiene risorse digitali pronte per la pubblicazione live sul sito Web.
-   * **Cartelle di tipo MIME**: contiene risorse digitali specifiche per i tipi MIME, ad esempio immagini, documenti e file multimediali.
-   * **Archivia cartelle**: contiene risorse digitali ritirate.
-   * **Cartelle basate sulla data**: contiene risorse digitali basate su una data di creazione o su una data dell&#39;ultima modifica.
+  * **Cartelle di sviluppo**: contiene risorse digitali su cui si sta lavorando.
+  * **Cartelle client**: contiene risorse digitali basate sui client o sui nomi dei progetti.
+  * **Cartelle primarie**: contiene risorse digitali originali di origine.
+  * **Cartelle di rendering**: contiene copie trasformate e copie delle risorse digitali originali di origine.
+  * **Cartelle dimensioni file**: contiene risorse digitali basate su file di dimensioni piccole, medie o grandi.
+  * **Cartelle di gestione temporanea**: contiene risorse digitali pronte per la pubblicazione live sul sito Web.
+  * **Cartelle di tipo MIME**: contiene risorse digitali specifiche per i tipi MIME, ad esempio immagini, documenti e file multimediali.
+  * **Archivia cartelle**: contiene risorse digitali ritirate.
+  * **Cartelle basate sulla data**: contiene risorse digitali basate su una data di creazione o su una data dell&#39;ultima modifica.
 
 * Crea una directory di cartelle che non dovrebbero essere modificate in modo che qualsiasi personalizzazione o automazione continui a funzionare. Ad esempio, i profili di elaborazione assegnati continuano a funzionare.
 * Se una risorsa è già pubblicata, puoi utilizzare [!DNL Experience Manager] per spostarla in un&#39;altra cartella e ripubblicarla dal nuovo percorso; il percorso originale della risorsa pubblicata rimane comunque disponibile insieme alla risorsa appena ripubblicata. La risorsa pubblicata originale, tuttavia, è *perduta* in [!DNL Experience Manager] e non può essere annullata. Pertanto, come best practice, devi prima annullare la pubblicazione di una risorsa e quindi spostarla in un’altra cartella.

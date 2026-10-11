@@ -9,16 +9,25 @@ exl-id: 01c6bb29-1d2d-4a45-b291-0e8d97c01a08
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '320'
 ht-degree: 2%
-
 ---
-
 # Convenzioni di denominazione {#naming-conventions}
 
-I nodi dell&#39;archivio sono soggetti alle convenzioni di denominazione dell&#39;[archivio dei contenuti Java](/help/sites-developing/the-basics.md#java-content-repository). Tuttavia, l’AEM impone ulteriori convenzioni per il nome dei nodi della pagina.
+I nodi dell&#39;archivio sono soggetti alle convenzioni di denominazione dell&#39;[archivio dei contenuti Java](/help/sites-developing/the-basics.md#java-content-repository). Tuttavia, AEM impone ulteriori convenzioni per il nome dei nodi della pagina.
 
 ## Convenzioni di denominazione delle pagine {#naming-conventions-for-pages}
 
@@ -28,8 +37,8 @@ Queste convenzioni di denominazione vengono implementate a vari livelli:
 * PageManager: [Page Manager](#page-manager) fornisce metodi per le operazioni a livello di pagina.
 * In base all’interfaccia utente in uso:
 
-   * [Interfaccia utente touch standard](#standard-ui)
-   * [Interfaccia classica](#classic-ui)
+  * [Interfaccia utente touch standard](#standard-ui)
+  * [Interfaccia classica](#classic-ui)
 
 ### Utilità JCR {#jcr-utilities}
 
@@ -37,13 +46,13 @@ Queste convenzioni di denominazione vengono implementate a vari livelli:
 
 * `isValidName`
 
-   * Controlla se il nome non è vuoto e contiene solo caratteri validi.
-   * Può essere utilizzato per verificare se un nome proposto è valido.
+  * Controlla se il nome non è vuoto e contiene solo caratteri validi.
+  * Può essere utilizzato per verificare se un nome proposto è valido.
 
 * `createValidName`
 
-   * In questo modo viene creata un&#39;etichetta valida da una stringa arbitraria.
-   * Può essere utilizzato per creare un nome da un titolo.
+  * In questo modo viene creata un&#39;etichetta valida da una stringa arbitraria.
+  * Può essere utilizzato per creare un nome da un titolo.
 
 ### Gestione pagine {#page-manager}
 
@@ -55,8 +64,8 @@ L’interfaccia utente standard touch:
 
 * Convalida il nome in base alle restrizioni imposte da PageManager quando:
 
-   * viene fornito il titolo della pagina da convertire nel nome del nodo
-   * viene fornito un nome di nodo esplicito
+  * viene fornito il titolo della pagina da convertire nel nome del nodo
+  * viene fornito un nome di nodo esplicito
 
 ### Interfaccia classica {#classic-ui}
 
@@ -64,13 +73,13 @@ L’interfaccia utente classica impone restrizioni più severe:
 
 * Convalida il nome quando un nome di nodo esplicito:
 
-   * viene fornito il titolo della pagina da convertire nel nome del nodo
-   * viene fornito un nome di nodo esplicito
+  * viene fornito il titolo della pagina da convertire nel nome del nodo
+  * viene fornito un nome di nodo esplicito
 
 * Caratteri validi (solo questi caratteri sono effettivamente validi quando una pagina viene creata dall&#39;interfaccia utente classica, anche se `PageManagerImpl` consentirebbe caratteri aggiuntivi):
 
-   * Da &#39;a&#39; a &#39;z&#39;
-   * Da &#39;A&#39; a &#39;Z&#39;
-   * Da &#39;0&#39; a &#39;9&#39;
-   * _ (trattino basso)
-   * `-` (trattino/segno meno)
+  * Da &#39;a&#39; a &#39;z&#39;
+  * Da &#39;A&#39; a &#39;Z&#39;
+  * Da &#39;0&#39; a &#39;9&#39;
+  * _ (trattino basso)
+  * `-` (trattino/segno meno)

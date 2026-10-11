@@ -1,5 +1,5 @@
 ---
-title: Assegnazione dei tag
+title: Assegnazione tag
 description: L’assegnazione tag consente di categorizzare e organizzare i contenuti
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,25 @@ feature: Developing,Tagging
 exl-id: 6db75405-d957-4714-b75a-9b71c17c89d6
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: 752f9248-f39f-5793-a7dd-5ddafcd403c7
+    internal-label: Tagging
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 2%
-
 ---
-
-# Assegnazione dei tag{#tagging}
+# Assegnazione tag{#tagging}
 
 L’assegnazione tag consente di categorizzare e organizzare i contenuti. I tag possono essere classificati in base a uno spazio dei nomi e a una tassonomia.
 
@@ -25,6 +36,6 @@ L’assegnazione tag consente di categorizzare e organizzare i contenuti. I tag 
 
 Le seguenti informazioni sono disponibili per gli sviluppatori:
 
-* [Framework di assegnazione tag AEM](/help/sites-developing/framework.md): descrizione dei nodi e delle proprietà utilizzati per l&#39;assegnazione tag
+* [AEM Tagging Framework](/help/sites-developing/framework.md) - Descrizione dei nodi e delle proprietà utilizzati per l&#39;assegnazione di tag
 
 * [Creazione di tag in un&#39;applicazione AEM](/help/sites-developing/building.md): descrizione delle API che funzionano con il framework di tag dal codice lato client e lato server

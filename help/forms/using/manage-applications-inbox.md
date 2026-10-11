@@ -9,13 +9,29 @@ exl-id: 8d17194b-8baf-4878-b3ae-d351a056aebf
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1125'
 ht-degree: 4%
-
 ---
-
 # Gestione delle applicazioni e delle attività di Forms nella casella in entrata AEM{#manage-forms-applications-and-tasks-in-aem-inbox}
 
 Uno dei modi per avviare o attivare un flusso di lavoro incentrato su Forms è tramite le applicazioni nella casella in entrata di AEM. Per rendere un flusso di lavoro Forms disponibile come applicazione nella Casella in entrata, creare un&#39;applicazione flusso di lavoro. Per ulteriori informazioni sull&#39;applicazione del flusso di lavoro e su altri modi per avviare i flussi di lavoro di Forms, vedere [Avviare un flusso di lavoro incentrato su Forms in OSGi](../../forms/using/aem-forms-workflow.md#launch).
@@ -80,7 +96,7 @@ La vista dettagliata delle attività comprende le sezioni riportate di seguito.
 
 #### Dettagli attività {#task-details}
 
-Nella sezione Dettagli attività vengono visualizzate informazioni sull&#39;attività. Le informazioni visualizzate dipendono dalle impostazioni di configurazione del [Passaggio attività &#x200B;](/help/sites-developing/workflows-step-ref.md) nel flusso di lavoro. Nell&#39;esempio precedente vengono visualizzati la descrizione, lo stato, la data di inizio e il flusso di lavoro utilizzati per l&#39;attività. Consente inoltre di allegare un file all&#39;operazione.
+Nella sezione Dettagli attività vengono visualizzate informazioni sull&#39;attività. Le informazioni visualizzate dipendono dalle impostazioni di configurazione del [Passaggio attività ](/help/sites-developing/workflows-step-ref.md) nel flusso di lavoro. Nell&#39;esempio precedente vengono visualizzati la descrizione, lo stato, la data di inizio e il flusso di lavoro utilizzati per l&#39;attività. Consente inoltre di allegare un file all&#39;operazione.
 
 #### Modulo {#form}
 
@@ -140,7 +156,7 @@ Il proprietario di un modello di flusso di lavoro non è in grado di visualizzar
      | allowExplicitSharing | allowExplicitSharing | BOOLEANO |
 
 
-   * Distribuisci gli indici tramite un pacchetto AEM. È possibile utilizzare un progetto [Archetipo di AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=it) per creare un pacchetto AEM distribuibile. Utilizza il seguente codice di esempio per aggiungere indici a un progetto di Archetipo AEM:
+   * Distribuisci gli indici tramite un pacchetto AEM. È possibile utilizzare un progetto [Archetipo di AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en) per creare un pacchetto AEM distribuibile. Utilizza il seguente codice di esempio per aggiungere indici a un progetto di Archetipo AEM:
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()
@@ -150,7 +166,7 @@ Il proprietario di un modello di flusso di lavoro non è in grado di visualizzar
       .property("allowExplicitSharing", "allowExplicitSharing").type(TYPENAME_BOOLEAN).propertyIndex()
    ```
 
-1. [Creare un indice delle proprietà e impostarlo su true](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html?lang=it#the-property-index).
+1. [Creare un indice delle proprietà e impostarlo su true](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html#the-property-index).
 
 1. Dopo la configurazione degli indici in CRX DE o la distribuzione tramite un pacchetto, [reindicizza l&#39;archivio](https://helpx.adobe.com/in/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex).
 

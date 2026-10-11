@@ -1,6 +1,6 @@
 ---
 title: Tutorial
-description: Esempi per aiutare ad apprendere e lavorare con il framework per la componente sociale delle community Adobe Experience Manager (AEM)
+description: Esempi per imparare e lavorare con il framework per componenti sociali (SCF) delle community Adobe Experience Manager (AEM)
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -9,13 +9,20 @@ exl-id: 061d3b1b-7ceb-4e57-8183-2062a76173f1
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '296'
 ht-degree: 1%
-
 ---
-
 # Tutorial {#tutorials}
 
 Questi sono esempi per imparare e lavorare con Adobe Experience Manager (AEM) 6.1 Communities [Social Component Framework (SCF)](scf.md).
@@ -38,11 +45,11 @@ Vedi anche [Personalizzazione lato server di SCF](server-customize.md).
 
 Il codice di esempio è disponibile nell&#39;archivio [Adobe Experience Cloud GitHub](https://github.com/Adobe-Marketing-Cloud):
 
-* [Personalizza campione componente SCF](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-customize)
+* [Esempio di personalizzazione del componente SCF](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-customize)
 
-* [Sovrapponi campione componente SCF](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-overlay)
+* [Esempio di componente SCF per sovrapposizione](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-overlay)
 
-* [Estendi campione componente SCF](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-extension)
+* [Esempio di estensione del componente SCF](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-extension)
 
 ## Istruzioni per l’uso {#how-to-instructions}
 
@@ -60,7 +67,7 @@ Il codice di esempio è disponibile nell&#39;archivio [Adobe Experience Cloud Gi
 
 ## Utenti demo {#demo-users}
 
-Il pacchetto di esempi per Geometrixx include utenti demo. Spesso esiste una differenza nell’esperienza tra essere un visitatore (non connesso) o un membro (connesso). Geometrixx Inoltre, finché i pacchetti di esempi rimangono installati, è possibile utilizzare questi utenti per simulare uno stato di accesso durante l&#39;esplorazione con la [guida ai componenti della community](components-guide.md).
+Il pacchetto di esempi di Geometrixx include gli utenti demo. Spesso esiste una differenza nell’esperienza tra essere un visitatore (non connesso) o un membro (connesso). Inoltre, finché i pacchetti di esempi di Geometrixx rimangono installati, è possibile utilizzare questi utenti per simulare uno stato di accesso durante l&#39;esplorazione con la [guida ai componenti della community](components-guide.md).
 
 Per un elenco completo degli utenti demo, passa tramite la barra a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Sicurezza > Utenti]**. In alternativa, utilizzare la [console di sicurezza](http://localhost:4502/useradmin) dell&#39;interfaccia classica per la gestione di utenti e gruppi.
 

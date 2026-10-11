@@ -9,13 +9,22 @@ exl-id: d2ebfca5-19f9-4fa5-b142-b978f46a912f
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1708'
 ht-degree: 2%
-
 ---
-
 # Aggiunta di risorse Dynamic Media alle pagine{#adding-dynamic-media-assets-to-pages}
 
 Per aggiungere la funzionalità Dynamic Media alle risorse utilizzate nei siti Web, puoi aggiungere il componente **[!UICONTROL Dynamic Media]** o **[!UICONTROL Interactive Media]** direttamente nella pagina. Attiva la modalità **[!UICONTROL Progettazione]** e abilita i componenti Dynamic Media. Quindi, potrai aggiungere questi componenti alla pagina e fornire così risorse al componente. I componenti Dynamic Media e gli elementi multimediali interattivi sono intelligenti: rilevano l’aggiunta di un’immagine o di un video e le opzioni disponibili cambiano di conseguenza.
@@ -93,7 +102,7 @@ Questa opzione è disponibile solo se vengono visualizzati set di immagini, set 
 
 Questa opzione non è disponibile se visualizzi set di immagini, set 360 gradi o set di file multimediali diversi.
 
-**[!UICONTROL Modificatori immagine]** - È possibile modificare gli effetti immagine fornendo ulteriori comandi immagine. Questi comandi sono descritti in [Gestione dei predefiniti immagine](/help/assets/managing-viewer-presets.md) e nel [Riferimento comando](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=it).
+**[!UICONTROL Modificatori immagine]** - È possibile modificare gli effetti immagine fornendo ulteriori comandi immagine. Questi comandi sono descritti in [Gestione dei predefiniti immagine](/help/assets/managing-viewer-presets.md) e nel [Riferimento comando](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
 
 Questa opzione non è disponibile se visualizzi set di immagini, set 360 gradi o set di file multimediali diversi.
 
@@ -139,7 +148,7 @@ Puoi modificare le seguenti impostazioni di [!UICONTROL Avanzate] facendo clic s
 
 In Experience Manager 6.2, quando installi [FP-13480](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq620/featurepack/cq-6.2.0-featurepack-13480), puoi controllare se un video viene distribuito tramite una connessione SSL protetta (HTTPS) o una connessione non sicura (HTTP). Per impostazione predefinita, il protocollo di consegna video viene ereditato automaticamente dal protocollo della pagina web in cui è incorporato. Se la pagina web viene caricata su HTTPS, anche il video viene distribuito su HTTPS. Al contrario, se la pagina web è su HTTP, il video viene distribuito su HTTP. In genere, questo comportamento predefinito va bene e non è necessario apportare modifiche alla configurazione. Tuttavia, puoi ignorare questo comportamento predefinito. Aggiungi `VideoPlayer.ssl=on` alla fine di un percorso URL o all&#39;elenco di altri parametri di configurazione del visualizzatore in un frammento di codice da incorporare. Entrambe le azioni impongono la distribuzione sicura dei video.
 
-Per ulteriori informazioni sulla distribuzione video protetta e sull&#39;utilizzo dell&#39;attributo di configurazione `VideoPlayer.ssl` nel percorso URL, vedere [Distribuzione video protetta](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-viewer-20-securevideodelivery.html?lang=it) nella Guida di riferimento visualizzatori. Oltre al visualizzatore video, per il visualizzatore di file multimediali diversi e per il visualizzatore di video interattivi è disponibile una distribuzione video protetta.
+Per ulteriori informazioni sulla distribuzione video protetta e sull&#39;utilizzo dell&#39;attributo di configurazione `VideoPlayer.ssl` nel percorso URL, vedere [Distribuzione video protetta](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-viewer-20-securevideodelivery.html) nella Guida di riferimento visualizzatori. Oltre al visualizzatore video, per il visualizzatore di file multimediali diversi e per il visualizzatore di video interattivi è disponibile una distribuzione video protetta.
 
 ### Componente per contenuti multimediali interattivi {#interactive-media-component}
 

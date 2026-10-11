@@ -9,13 +9,27 @@ role: Developer
 exl-id: b94dcca2-136b-4b7d-b5ce-544804575876
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '10799'
+source-wordcount: '10888'
 ht-degree: 2%
-
 ---
-
 # Gestione a livello di programmazione degli endpoint {#programmatically-managing-endpoints}
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
@@ -132,15 +146,15 @@ Aggiungi un endpoint EJB utilizzando l’API Java:
 1. Imposta attributi endpoint EJB.
 
    * Creare un oggetto `CreateEndpointInfo` utilizzando il relativo costruttore.
-   * Specificare il valore dell&#39;identificatore del connettore richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto `setConnectorId` e passando il valore stringa `EJB`.
-   * Specificare la descrizione dell&#39;endpoint richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto `setDescription` e passando un valore stringa che descrive l&#39;endpoint.
-   * Specificare il nome dell&#39;endpoint richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto `setName` e passando un valore stringa che specifichi il nome.
-   * Specificare il servizio a cui appartiene l&#39;endpoint richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto `setServiceId` e passando un valore stringa che specifica il nome del servizio.
-   * Specificare l&#39;operazione richiamata richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto `setOperationName` e passare un valore stringa che specifichi il nome dell&#39;operazione. Per gli endpoint SOAP ed EJB, specificare un carattere jolly ( `*`), che implica tutte le operazioni.
+   * Specificare il valore dell&#39;identificatore del connettore richiamando il metodo `setConnectorId` dell&#39;oggetto `CreateEndpointInfo` e passando il valore stringa `EJB`.
+   * Specificare la descrizione dell&#39;endpoint richiamando il metodo `setDescription` dell&#39;oggetto `CreateEndpointInfo` e passando un valore stringa che descrive l&#39;endpoint.
+   * Specificare il nome dell&#39;endpoint richiamando il metodo `setName` dell&#39;oggetto `CreateEndpointInfo` e passando un valore stringa che specifichi il nome.
+   * Specificare il servizio a cui appartiene l&#39;endpoint richiamando il metodo `setServiceId` dell&#39;oggetto `CreateEndpointInfo` e passando un valore stringa che specifica il nome del servizio.
+   * Specificare l&#39;operazione richiamata richiamando il metodo `setOperationName` dell&#39;oggetto `CreateEndpointInfo` e passare un valore stringa che specifichi il nome dell&#39;operazione. Per gli endpoint SOAP ed EJB, specificare un carattere jolly ( `*`), che implica tutte le operazioni.
 
 1. Creare un endpoint EJB.
 
-   Creare l&#39;endpoint richiamando il metodo `EndpointRegistryClient` dell&#39;oggetto `createEndpoint` e passando l&#39;oggetto `CreateEndpointInfo`. Questo metodo restituisce un oggetto `Endpoint` che rappresenta il nuovo endpoint EJB.
+   Creare l&#39;endpoint richiamando il metodo `createEndpoint` dell&#39;oggetto `EndpointRegistryClient` e passando l&#39;oggetto `CreateEndpointInfo`. Questo metodo restituisce un oggetto `Endpoint` che rappresenta il nuovo endpoint EJB.
 
 1. Abilita l’endpoint.
 
@@ -237,15 +251,15 @@ Aggiungi un endpoint SOAP a un servizio utilizzando l’API Java:
 1. Imposta gli attributi dell’endpoint SOAP.
 
    * Creare un oggetto `CreateEndpointInfo` utilizzando il relativo costruttore.
-   * Specificare il valore dell&#39;identificatore del connettore richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto `setConnectorId` e passando il valore stringa `SOAP`.
-   * Specificare la descrizione dell&#39;endpoint richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto `setDescription` e passando un valore stringa che descrive l&#39;endpoint.
-   * Specificare il nome dell&#39;endpoint richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto `setName` e passando un valore stringa che specifichi il nome.
-   * Specificare il servizio a cui appartiene l&#39;endpoint richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto `setServiceId` e passando un valore stringa che specifica il nome del servizio.
-   * Specificare l&#39;operazione richiamata richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto `setOperationName` e passando un valore stringa che specifica il nome dell&#39;operazione. Per gli endpoint SOAP ed EJB, specificare un carattere jolly ( `*`), che implica tutte le operazioni.
+   * Specificare il valore dell&#39;identificatore del connettore richiamando il metodo `setConnectorId` dell&#39;oggetto `CreateEndpointInfo` e passando il valore stringa `SOAP`.
+   * Specificare la descrizione dell&#39;endpoint richiamando il metodo `setDescription` dell&#39;oggetto `CreateEndpointInfo` e passando un valore stringa che descrive l&#39;endpoint.
+   * Specificare il nome dell&#39;endpoint richiamando il metodo `setName` dell&#39;oggetto `CreateEndpointInfo` e passando un valore stringa che specifichi il nome.
+   * Specificare il servizio a cui appartiene l&#39;endpoint richiamando il metodo `setServiceId` dell&#39;oggetto `CreateEndpointInfo` e passando un valore stringa che specifica il nome del servizio.
+   * Specificare l&#39;operazione richiamata richiamando il metodo `setOperationName` dell&#39;oggetto `CreateEndpointInfo` e passando un valore stringa che specifica il nome dell&#39;operazione. Per gli endpoint SOAP ed EJB, specificare un carattere jolly ( `*`), che implica tutte le operazioni.
 
 1. Crea un endpoint SOAP.
 
-   Creare l&#39;endpoint richiamando il metodo `EndpointRegistryClient` dell&#39;oggetto `createEndpoint` e passando l&#39;oggetto `CreateEndpointInfo`. Questo metodo restituisce un oggetto `Endpoint` che rappresenta il nuovo endpoint SOAP.
+   Creare l&#39;endpoint richiamando il metodo `createEndpoint` dell&#39;oggetto `EndpointRegistryClient` e passando l&#39;oggetto `CreateEndpointInfo`. Questo metodo restituisce un oggetto `Endpoint` che rappresenta il nuovo endpoint SOAP.
 
 1. Abilita l’endpoint.
 
@@ -263,7 +277,7 @@ Aggiungi un endpoint SOAP a un servizio utilizzando l’API Java:
 
 ## Aggiunta di endpoint per cartelle controllate {#adding-watched-folder-endpoints}
 
-Puoi aggiungere in modo programmatico un endpoint di cartella controllata a un servizio utilizzando l’API Java di AEM Forms. Aggiungendo un endpoint di cartella controllata, si consente agli utenti di inserire un file, ad esempio un file PDF, in una cartella. Quando il file viene inserito nella cartella, il servizio configurato viene richiamato e modifica il file. Dopo aver eseguito l&#39;operazione specificata, il servizio salva il file modificato in una cartella di output specificata. Una cartella controllata è configurata per essere analizzata a un intervallo di velocità fisso o con una pianificazione cron, ad esempio ogni lunedì, mercoledì e venerdì a mezzogiorno.
+Puoi aggiungere in modo programmatico un endpoint di cartella controllata a un servizio utilizzando l’API Java di AEM Forms. Aggiungendo un endpoint di cartella controllata, si consente agli utenti di inserire un file, ad esempio un file PDF, in una cartella. Quando il file viene inserito nella cartella, il servizio configurato viene richiamato e modifica il file. Dopo che il servizio ha eseguito l’operazione specificata, salva il file modificato in una cartella di output specificata. Una cartella controllata è configurata per essere analizzata a un intervallo di velocità fisso o con una pianificazione cron, ad esempio ogni lunedì, mercoledì e venerdì a mezzogiorno.
 
 Ai fini dell&#39;aggiunta a livello di programmazione di un endpoint di cartella controllata a un servizio, considerare il seguente processo di breve durata denominato *EncryptDocument*. (Vedi [Informazioni sui processi di AEM Forms](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes).)
 
@@ -322,7 +336,7 @@ Specifica i valori di configurazione per un endpoint di cartella controllata qua
 L&#39;elenco seguente specifica i valori di configurazione impostati quando si aggiunge a livello di programmazione un endpoint di cartella controllata a un servizio:
 
 * **url**: specifica il percorso della cartella controllata. In un ambiente cluster, questo valore deve puntare a una cartella di rete condivisa accessibile da tutti i computer del cluster.
-* **asincrono**: identifica il tipo di chiamata come asincrono o sincrono. I processi transitori e sincroni possono essere richiamati solo in modo sincrono. Il valore predefinito è true. Si consiglia l’asincronia.
+* **asincrono**: identifica il tipo di chiamata come asincrono o sincrono. I processi transitori e sincroni possono essere richiamati solo in modo sincrono. Il valore predefinito è vero. Si consiglia l’asincronia.
 * **cronExpression**: utilizzato dal quarzo per pianificare il polling della directory di input.
 * **purgeDuration**: attributo obbligatorio. I file e le cartelle nella cartella dei risultati vengono eliminati quando sono più vecchi di questo valore. Questo valore è misurato in giorni. Questo attributo è utile per garantire che la cartella dei risultati non sia piena. Un valore pari a -1 giorni indica di non eliminare mai la cartella dei risultati. Il valore predefinito è -1.
 * **repeatInterval**: l&#39;intervallo, in secondi, per l&#39;analisi della cartella controllata per l&#39;input. A meno che la limitazione non sia abilitata, questo valore deve essere più lungo del tempo necessario per elaborare un processo medio; in caso contrario, il sistema potrebbe sovraccaricare. Il valore predefinito è 5.
@@ -331,7 +345,7 @@ L&#39;elenco seguente specifica i valori di configurazione impostati quando si a
 * **userName**: nome utente utilizzato per richiamare un servizio di destinazione dalla cartella controllata. Questo valore è obbligatorio. Il valore predefinito è SuperAdmin.
 * **domainName**: dominio dell&#39;utente. Questo valore è obbligatorio. Il valore predefinito è DefaultDom.
 * **batchSize**: numero di file o cartelle da raccogliere per analisi. Utilizzare questo valore per evitare un sovraccarico del sistema; la scansione di troppi file contemporaneamente può causare un arresto anomalo. Il valore predefinito è 2.
-* **waitTime**: tempo, in millisecondi, di attesa prima dell&#39;analisi di una cartella o di un file dopo la creazione. Ad esempio, se il tempo di attesa è di 36.000.000 di millisecondi (un’ora) e il file è stato creato un minuto fa, il file viene acquisito dopo 59 o più minuti. Questo attributo è utile per garantire che un file o una cartella sia completamente copiato nella cartella di input. Ad esempio, se si dispone di un file di grandi dimensioni da elaborare e il download richiede dieci minuti, imposta il tempo di attesa su 10&ast;60 &ast;1000 millisecondi. Questa impostazione impedisce alla cartella controllata di eseguire la scansione del file se non è rimasto in attesa per dieci minuti. Il valore predefinito è 0.
+* **waitTime**: tempo, in millisecondi, di attesa prima dell&#39;analisi di una cartella o di un file dopo la creazione. Ad esempio, se il tempo di attesa è di 36.000.000 di millisecondi (un’ora) e il file è stato creato un minuto fa, il file viene acquisito dopo 59 o più minuti. Questo attributo è utile per garantire che un file o una cartella sia completamente copiato nella cartella di input. Ad esempio, se si dispone di un file di grandi dimensioni da elaborare e il download richiede dieci minuti, impostare il tempo di attesa su 10&amp;ast;60 &amp;ast;1000 millisecondi. Questa impostazione impedisce alla cartella controllata di eseguire la scansione del file se non è rimasto in attesa per dieci minuti. Il valore predefinito è 0.
 * **excludeFilePattern**: modello utilizzato da una cartella controllata per determinare quali file e cartelle analizzare e raccogliere. Qualsiasi file o cartella con questo modello non verrà analizzato per l&#39;elaborazione. Questa impostazione è utile quando l&#39;input è una cartella contenente più file. Il contenuto della cartella può essere copiato in una cartella il cui nome verrà scelto dalla cartella controllata. Questo passaggio impedisce alla cartella controllata di selezionare una cartella da elaborare prima che venga completamente copiata nella cartella di input. Ad esempio, se il valore excludeFilePattern è `data*`, tutti i file e le cartelle che corrispondono a `data*` non vengono prelevati. Sono inclusi file e cartelle denominati `data1`, `data2` e così via. Inoltre, è possibile aggiungere al modello pattern dei caratteri jolly per specificare i pattern dei file. La cartella controllata modifica l&#39;espressione regolare per supportare i pattern con caratteri jolly come `*.*` e `*.pdf`. Questi pattern di caratteri jolly non sono supportati dalle espressioni regolari.
 * **includeFilePattern**: il modello utilizzato dalla cartella controllata per determinare quali cartelle e file analizzare e raccogliere. Ad esempio, se il valore è `*`, verranno selezionati tutti i file e le cartelle corrispondenti a `input*`. Sono inclusi file e cartelle denominati `input1`, `input2` e così via. Il valore predefinito è `*`. Questo valore indica tutti i file e le cartelle. Inoltre, è possibile aggiungere al modello pattern dei caratteri jolly per specificare i pattern dei file. La cartella controllata modifica l&#39;espressione regolare per supportare i pattern con caratteri jolly come `*.*` e `*.pdf`. Questi pattern di caratteri jolly non sono supportati dalle espressioni regolari. Questo valore è obbligatorio.
 * **resultFolderName**: cartella in cui sono archiviati i risultati salvati. Questa posizione può essere un percorso di directory assoluto o relativo. Se i risultati non vengono visualizzati in questa cartella, seleziona la cartella errori. I file di sola lettura non vengono elaborati e verranno salvati nella cartella degli errori. Il valore predefinito è `result/%Y/%M/%D/`. Questa è la cartella dei risultati all’interno della cartella controllata.
@@ -405,15 +419,15 @@ Aggiungi un endpoint Watched Folder utilizzando l’API Java di AEM Forms:
 1. Imposta gli attributi dell’endpoint della cartella controllata.
 
    * Creare un oggetto `CreateEndpointInfo` utilizzando il relativo costruttore.
-   * Specificare il valore dell&#39;identificatore del connettore richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto `setConnectorId` e passando il valore stringa `WatchedFolder`.
-   * Specificare la descrizione dell&#39;endpoint richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto `setDescription` e passando un valore stringa che descrive l&#39;endpoint.
-   * Specificare il nome dell&#39;endpoint richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto `setName` e passando un valore stringa che specifichi il nome.
-   * Specificare il servizio a cui appartiene l&#39;endpoint richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto `setServiceId` e passando un valore stringa che specifica il nome del servizio.
-   * Specificare l&#39;operazione richiamata richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto `setOperationName` e passando un valore stringa che specifica il nome dell&#39;operazione. In genere, durante la creazione di un endpoint di cartella controllata per un servizio che ha avuto origine da un processo creato in Workbench, viene richiamato il nome dell’operazione.
+   * Specificare il valore dell&#39;identificatore del connettore richiamando il metodo `setConnectorId` dell&#39;oggetto `CreateEndpointInfo` e passando il valore stringa `WatchedFolder`.
+   * Specificare la descrizione dell&#39;endpoint richiamando il metodo `setDescription` dell&#39;oggetto `CreateEndpointInfo` e passando un valore stringa che descrive l&#39;endpoint.
+   * Specificare il nome dell&#39;endpoint richiamando il metodo `setName` dell&#39;oggetto `CreateEndpointInfo` e passando un valore stringa che specifichi il nome.
+   * Specificare il servizio a cui appartiene l&#39;endpoint richiamando il metodo `setServiceId` dell&#39;oggetto `CreateEndpointInfo` e passando un valore stringa che specifica il nome del servizio.
+   * Specificare l&#39;operazione richiamata richiamando il metodo `setOperationName` dell&#39;oggetto `CreateEndpointInfo` e passando un valore stringa che specifica il nome dell&#39;operazione. In genere, durante la creazione di un endpoint di cartella controllata per un servizio che ha avuto origine da un processo creato in Workbench, viene richiamato il nome dell’operazione.
 
 1. Specifica i valori di configurazione.
 
-   Per ogni valore di configurazione da impostare per l&#39;endpoint della cartella controllata, è necessario richiamare il metodo `CreateEndpointInfo` dell&#39;oggetto `setConfigParameterAsText`. Ad esempio, per impostare il valore di configurazione `url`, richiamare il metodo `CreateEndpointInfo` dell&#39;oggetto `setConfigParameterAsText` e passare i seguenti valori stringa:
+   Per ogni valore di configurazione da impostare per l&#39;endpoint della cartella controllata, è necessario richiamare il metodo `setConfigParameterAsText` dell&#39;oggetto `CreateEndpointInfo`. Ad esempio, per impostare il valore di configurazione `url`, richiamare il metodo `setConfigParameterAsText` dell&#39;oggetto `CreateEndpointInfo` e passare i seguenti valori stringa:
 
    * Valore stringa che specifica il nome del valore di configurazione. Quando si imposta il valore di configurazione `url`, specificare `url`.
    * Valore stringa che specifica il valore della configurazione. Quando si imposta il valore di configurazione `url`, specificare il percorso della cartella controllata.
@@ -424,12 +438,12 @@ Aggiungi un endpoint Watched Folder utilizzando l’API Java di AEM Forms:
 
 1. Definite i valori dei parametri di input.
 
-   Definire un valore di parametro di input richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto `setInputParameterMapping` e passare i valori seguenti:
+   Definire un valore di parametro di input richiamando il metodo `setInputParameterMapping` dell&#39;oggetto `CreateEndpointInfo` e passare i valori seguenti:
 
    * Valore stringa che specifica il nome del parametro di input. Il nome del parametro di input per il servizio EncryptDocument, ad esempio, è `InDoc`.
    * Valore stringa che specifica il tipo di dati del parametro di input. Ad esempio, il tipo di dati del parametro di input `InDoc` è `com.adobe.idp.Document`.
    * Valore stringa che specifica il tipo di mappatura. Ad esempio, è possibile specificare `variable`.
-   * Valore stringa che specifica il valore del tipo di mapping. Ad esempio, è possibile specificare &ast;.pdf come modello di file.
+   * Valore stringa che specifica il valore del tipo di mapping. Ad esempio, è possibile specificare &amp;ast;.pdf come modello di file.
 
    >[!NOTE]
    >
@@ -437,7 +451,7 @@ Aggiungi un endpoint Watched Folder utilizzando l’API Java di AEM Forms:
 
 1. Definite un valore per il parametro di output.
 
-   Definire un valore di parametro di output richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto `setOutputParameterMapping` e passare i valori seguenti:
+   Definire un valore di parametro di output richiamando il metodo `setOutputParameterMapping` dell&#39;oggetto `CreateEndpointInfo` e passare i valori seguenti:
 
    * Valore stringa che specifica il nome del parametro di output. Il nome del parametro di output per il servizio EncryptDocument, ad esempio, è `SecuredDoc`.
    * Valore stringa che specifica il tipo di dati del parametro di output. Ad esempio, il tipo di dati del parametro di output `SecuredDoc` è `com.adobe.idp.Document`.
@@ -445,11 +459,11 @@ Aggiungi un endpoint Watched Folder utilizzando l’API Java di AEM Forms:
 
 1. Crea un endpoint per la cartella controllata.
 
-   Creare l&#39;endpoint richiamando il metodo `EndpointRegistryClient` dell&#39;oggetto `createEndpoint` e passando l&#39;oggetto `CreateEndpointInfo`. Questo metodo restituisce un oggetto `Endpoint` che rappresenta l&#39;endpoint della cartella controllata.
+   Creare l&#39;endpoint richiamando il metodo `createEndpoint` dell&#39;oggetto `EndpointRegistryClient` e passando l&#39;oggetto `CreateEndpointInfo`. Questo metodo restituisce un oggetto `Endpoint` che rappresenta l&#39;endpoint della cartella controllata.
 
 1. Abilita l’endpoint.
 
-   Abilitare l&#39;endpoint richiamando il metodo `EndpointRegistryClient` dell&#39;oggetto `enable` e passando l&#39;oggetto `Endpoint` restituito dal metodo `createEndpoint`.
+   Abilitare l&#39;endpoint richiamando il metodo `enable` dell&#39;oggetto `EndpointRegistryClient` e passando l&#39;oggetto `Endpoint` restituito dal metodo `createEndpoint`.
 
 **Consulta anche**
 
@@ -566,7 +580,7 @@ I seguenti valori di configurazione vengono impostati quando si aggiunge a livel
 * **userName**: nome utente utilizzato per richiamare un servizio di destinazione da un indirizzo e-mail. Il valore predefinito è `SuperAdmin`.
 * **nomeDominio**: valore di configurazione obbligatorio. Il valore predefinito è `DefaultDom`.
 * **domainPattern**: specifica i pattern di dominio dei messaggi e-mail in arrivo accettati dal provider. Ad esempio, se si utilizza `adobe.com`, viene elaborata solo l&#39;e-mail da adobe.com, l&#39;e-mail da altri domini viene ignorata.
-* **filePattern**: specifica i modelli di file allegati in ingresso accettati dal provider. Ciò include i file con estensioni di file specifiche (&ast;.dat, &ast;.xml), i file con nomi specifici (dati) e i file con espressioni composite nel nome e nell&#39;estensione (&ast;).``[dD][aA]``&#39;porta&#39;). Il valore predefinito è `*`.
+* **filePattern**: specifica i modelli di file allegati in ingresso accettati dal provider. Sono inclusi i file con estensioni di file specifiche (&amp;ast;.dat, &amp;ast;.xml), i file con nomi specifici (dati) e i file con espressioni composite nel nome e nell&#39;estensione (&amp;ast;.``[dD][aA]``&#39;port&#39;). Il valore predefinito è `*`.
 * **recipientSuccessfulJob**: indirizzo e-mail a cui vengono inviati i messaggi per indicare i processi riusciti. Per impostazione predefinita, un messaggio di processo riuscito viene sempre inviato al mittente. Se si digita `sender`, i risultati e-mail vengono inviati al mittente. Sono supportati fino a 100 destinatari. Specifica destinatari aggiuntivi con indirizzi e-mail, ciascuno separato da una virgola. Per disattivare questa opzione, lasciare vuoto questo valore. In alcuni casi, potrebbe essere utile attivare un processo e non inviare una notifica e-mail del risultato. Il valore predefinito è `sender`.
 * **recipientFailedJob**: indirizzo e-mail a cui vengono inviati i messaggi per indicare i processi non riusciti. Per impostazione predefinita, un messaggio di processo non riuscito viene sempre inviato al mittente. Se si digita `sender`, i risultati e-mail vengono inviati al mittente. Sono supportati fino a 100 destinatari. Specifica destinatari aggiuntivi con indirizzi e-mail, ciascuno separato da una virgola. Per disattivare questa opzione, lasciare vuoto questo valore. Il valore predefinito è `sender`.
 * **inboxHost**: nome host casella in entrata o indirizzo IP per il provider di posta elettronica da analizzare.
@@ -650,15 +664,15 @@ Aggiungi un endpoint e-mail utilizzando l’API Java:
 1. Imposta gli attributi dell’endpoint e-mail.
 
    * Creare un oggetto `CreateEndpointInfo` utilizzando il relativo costruttore.
-   * Specificare il valore dell&#39;identificatore del connettore richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto `setConnectorId` e passando il valore stringa `Email`.
-   * Specificare la descrizione dell&#39;endpoint richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto `setDescription` e passando un valore stringa che descrive l&#39;endpoint.
-   * Specificare il nome dell&#39;endpoint richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto `setName` e passando un valore stringa che specifichi il nome.
-   * Specificare il servizio a cui appartiene l&#39;endpoint richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto `setServiceId` e passando un valore stringa che specifica il nome del servizio.
-   * Specificare l&#39;operazione richiamata richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto `setOperationName` e passando un valore stringa che specifica il nome dell&#39;operazione. In genere, durante la creazione di un endpoint e-mail per un servizio che ha avuto origine da un processo creato in Workbench, viene richiamato il nome dell’operazione.
+   * Specificare il valore dell&#39;identificatore del connettore richiamando il metodo `setConnectorId` dell&#39;oggetto `CreateEndpointInfo` e passando il valore stringa `Email`.
+   * Specificare la descrizione dell&#39;endpoint richiamando il metodo `setDescription` dell&#39;oggetto `CreateEndpointInfo` e passando un valore stringa che descrive l&#39;endpoint.
+   * Specificare il nome dell&#39;endpoint richiamando il metodo `setName` dell&#39;oggetto `CreateEndpointInfo` e passando un valore stringa che specifichi il nome.
+   * Specificare il servizio a cui appartiene l&#39;endpoint richiamando il metodo `setServiceId` dell&#39;oggetto `CreateEndpointInfo` e passando un valore stringa che specifica il nome del servizio.
+   * Specificare l&#39;operazione richiamata richiamando il metodo `setOperationName` dell&#39;oggetto `CreateEndpointInfo` e passando un valore stringa che specifica il nome dell&#39;operazione. In genere, durante la creazione di un endpoint e-mail per un servizio che ha avuto origine da un processo creato in Workbench, viene richiamato il nome dell’operazione.
 
 1. Specifica i valori di configurazione.
 
-   Per ogni valore di configurazione da impostare per l&#39;endpoint e-mail, è necessario richiamare il metodo `CreateEndpointInfo` dell&#39;oggetto `setConfigParameterAsText`. Ad esempio, per impostare il valore di configurazione `smtpHost`, richiamare il metodo `CreateEndpointInfo` dell&#39;oggetto `setConfigParameterAsText` e passare i valori seguenti:
+   Per ogni valore di configurazione da impostare per l&#39;endpoint e-mail, è necessario richiamare il metodo `setConfigParameterAsText` dell&#39;oggetto `CreateEndpointInfo`. Ad esempio, per impostare il valore di configurazione `smtpHost`, richiamare il metodo `setConfigParameterAsText` dell&#39;oggetto `CreateEndpointInfo` e passare i valori seguenti:
 
    * Valore stringa che specifica il nome del valore di configurazione. Quando si imposta il valore di configurazione `smtpHost`, specificare `smtpHost`.
    * Valore stringa che specifica il valore della configurazione. Quando si imposta il valore di configurazione `smtpHost`, specificare un valore stringa che specifichi il nome del server SMTP.
@@ -669,12 +683,12 @@ Aggiungi un endpoint e-mail utilizzando l’API Java:
 
 1. Definite i valori dei parametri di input.
 
-   Definire un valore di parametro di input richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto `setInputParameterMapping` e passare i valori seguenti:
+   Definire un valore di parametro di input richiamando il metodo `setInputParameterMapping` dell&#39;oggetto `CreateEndpointInfo` e passare i valori seguenti:
 
    * Valore stringa che specifica il nome del parametro di input. Il nome del parametro di input per il servizio EncryptDocument, ad esempio, è `InDoc`.
    * Valore stringa che specifica il tipo di dati del parametro di input. Ad esempio, il tipo di dati del parametro di input `InDoc` è `com.adobe.idp.Document`.
    * Valore stringa che specifica il tipo di mappatura. Ad esempio, è possibile specificare `variable`.
-   * Valore stringa che specifica il valore del tipo di mapping. Ad esempio, è possibile specificare &ast;.pdf come modello di file.
+   * Valore stringa che specifica il valore del tipo di mapping. Ad esempio, è possibile specificare &amp;ast;.pdf come modello di file.
 
    >[!NOTE]
    >
@@ -682,7 +696,7 @@ Aggiungi un endpoint e-mail utilizzando l’API Java:
 
 1. Definite un valore per il parametro di output.
 
-   Definire un valore di parametro di output richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto `setOutputParameterMapping` e passando i valori seguenti:
+   Definire un valore di parametro di output richiamando il metodo `setOutputParameterMapping` dell&#39;oggetto `CreateEndpointInfo` e passando i valori seguenti:
 
    * Valore stringa che specifica il nome del parametro di output. Il nome del parametro di output per il servizio EncryptDocument, ad esempio, è `SecuredDoc`.
    * Valore stringa che specifica il tipo di dati del parametro di output. Ad esempio, il tipo di dati del parametro di output `SecuredDoc` è `com.adobe.idp.Document`.
@@ -690,11 +704,11 @@ Aggiungi un endpoint e-mail utilizzando l’API Java:
 
 1. Crea l’endpoint e-mail.
 
-   Creare l&#39;endpoint richiamando il metodo `EndpointRegistryClient` dell&#39;oggetto `createEndpoint` e passando l&#39;oggetto `CreateEndpointInfo`. Questo metodo restituisce un oggetto `Endpoint` che rappresenta l&#39;endpoint e-mail.
+   Creare l&#39;endpoint richiamando il metodo `createEndpoint` dell&#39;oggetto `EndpointRegistryClient` e passando l&#39;oggetto `CreateEndpointInfo`. Questo metodo restituisce un oggetto `Endpoint` che rappresenta l&#39;endpoint e-mail.
 
 1. Abilita l’endpoint.
 
-   Abilitare l&#39;endpoint richiamando il metodo `EndpointRegistryClient` dell&#39;oggetto `enable` e passando l&#39;oggetto `Endpoint` restituito dal metodo `createEndpoint`.
+   Abilitare l&#39;endpoint richiamando il metodo `enable` dell&#39;oggetto `EndpointRegistryClient` e passando l&#39;oggetto `Endpoint` restituito dal metodo `createEndpoint`.
 
 **Consulta anche**
 
@@ -801,7 +815,7 @@ Per creare un endpoint remoto per un servizio, specificare i valori seguenti:
 * **Descrizione**: specifica la descrizione dell&#39;endpoint.
 * **Nome**: specifica il nome dell&#39;endpoint.
 * **Valore dell&#39;identificatore del servizio**: specifica il servizio a cui appartiene l&#39;endpoint. Ad esempio, per aggiungere un endpoint remoto al processo introdotto in questa sezione (un processo diventa un servizio quando viene attivato in Workbench), specificare `EncryptDocument`.
-* **Nome operazione**: specifica il nome dell&#39;operazione richiamata tramite l&#39;endpoint. Durante la creazione di un endpoint remoto, specificare un carattere jolly (&ast;).
+* **Nome operazione**: specifica il nome dell&#39;operazione richiamata tramite l&#39;endpoint. Durante la creazione di un endpoint remoto, specificare un carattere jolly (&amp;ast;).
 
 **Creare un endpoint remoto**
 
@@ -835,19 +849,19 @@ Aggiungi un endpoint remoto utilizzando l’API Java:
 1. Impostare gli attributi dell&#39;endpoint remoto.
 
    * Creare un oggetto `CreateEndpointInfo` utilizzando il relativo costruttore.
-   * Specificare il valore dell&#39;identificatore del connettore richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto `setConnectorId` e passando il valore stringa `Remoting`.
-   * Specificare la descrizione dell&#39;endpoint richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto `setDescription` e passando un valore stringa che descrive l&#39;endpoint.
-   * Specificare il nome dell&#39;endpoint richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto `setName` e passando un valore stringa che specifichi il nome.
-   * Specificare il servizio a cui appartiene l&#39;endpoint richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto `setServiceId` e passando un valore stringa che specifica il nome del servizio.
-   * Specificare l&#39;operazione richiamata dal metodo `CreateEndpointInfo` dell&#39;oggetto `setOperationName` e passare un valore stringa che specifichi il nome dell&#39;operazione. Per un endpoint remoto, specificare un carattere jolly (&ast;).
+   * Specificare il valore dell&#39;identificatore del connettore richiamando il metodo `setConnectorId` dell&#39;oggetto `CreateEndpointInfo` e passando il valore stringa `Remoting`.
+   * Specificare la descrizione dell&#39;endpoint richiamando il metodo `setDescription` dell&#39;oggetto `CreateEndpointInfo` e passando un valore stringa che descrive l&#39;endpoint.
+   * Specificare il nome dell&#39;endpoint richiamando il metodo `setName` dell&#39;oggetto `CreateEndpointInfo` e passando un valore stringa che specifichi il nome.
+   * Specificare il servizio a cui appartiene l&#39;endpoint richiamando il metodo `setServiceId` dell&#39;oggetto `CreateEndpointInfo` e passando un valore stringa che specifica il nome del servizio.
+   * Specificare l&#39;operazione richiamata dal metodo `setOperationName` dell&#39;oggetto `CreateEndpointInfo` e passare un valore stringa che specifichi il nome dell&#39;operazione. Per un endpoint remoto, specifica un carattere jolly (&amp;ast;).
 
 1. Crea un endpoint remoto.
 
-   Creare l&#39;endpoint richiamando il metodo `EndpointRegistryClient` dell&#39;oggetto `createEndpoint` e passando l&#39;oggetto `CreateEndpointInfo`. Questo metodo restituisce un oggetto `Endpoint` che rappresenta il nuovo endpoint di comunicazione remota.
+   Creare l&#39;endpoint richiamando il metodo `createEndpoint` dell&#39;oggetto `EndpointRegistryClient` e passando l&#39;oggetto `CreateEndpointInfo`. Questo metodo restituisce un oggetto `Endpoint` che rappresenta il nuovo endpoint di comunicazione remota.
 
 1. Abilita l’endpoint.
 
-   Abilitare l&#39;endpoint richiamando il metodo `EndpointRegistryClient` dell&#39;oggetto `enable` e passando l&#39;oggetto `Endpoint` restituito dal metodo `createEndpoint`.
+   Abilitare l&#39;endpoint richiamando il metodo `enable` dell&#39;oggetto `EndpointRegistryClient` e passando l&#39;oggetto `Endpoint` restituito dal metodo `createEndpoint`.
 
 **Consulta anche**
 
@@ -947,28 +961,28 @@ Aggiungi un endpoint TaskManager utilizzando l’API Java:
 
    * Creare un oggetto `CreateEndpointCategoryInfo` utilizzando il relativo costruttore e passando i seguenti valori:
 
-      * Valore stringa che specifica il valore identificatore della categoria
-      * Valore stringa che specifica la descrizione della categoria
+     * Valore stringa che specifica il valore identificatore della categoria
+     * Valore stringa che specifica la descrizione della categoria
 
-   * Creare la categoria richiamando il metodo `EndpointRegistryClient` dell&#39;oggetto `createEndpointCategory` e passando l&#39;oggetto `CreateEndpointCategoryInfo`. Questo metodo restituisce un oggetto `EndpointCategory` che rappresenta la nuova categoria.
+   * Creare la categoria richiamando il metodo `createEndpointCategory` dell&#39;oggetto `EndpointRegistryClient` e passando l&#39;oggetto `CreateEndpointCategoryInfo`. Questo metodo restituisce un oggetto `EndpointCategory` che rappresenta la nuova categoria.
 
 1. Impostare gli attributi dell&#39;endpoint TaskManager.
 
    * Creare un oggetto `CreateEndpointInfo` utilizzando il relativo costruttore.
-   * Specificare il valore dell&#39;identificatore del connettore richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto `setConnectorId` e passando il valore stringa `TaskManagerConnector`.
-   * Specificare la descrizione dell&#39;endpoint richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto `setDescription` e passando un valore stringa che descrive l&#39;endpoint.
-   * Specificare il nome dell&#39;endpoint richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto `setName` e passando un valore stringa che specifichi il nome.
-   * Specificare il servizio a cui appartiene l&#39;endpoint richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto `setServiceId` e passando un valore stringa che specifica il nome del servizio.
-   * Specificare la categoria a cui appartiene l&#39;endpoint richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto `setCategoryId` e passando un valore stringa che specifica il valore dell&#39;identificatore di categoria. È possibile richiamare il metodo `EndpointCategory` dell&#39;oggetto `getId` per ottenere il valore di identificazione di questa categoria.
-   * Specificare l&#39;operazione richiamata richiamando il metodo `CreateEndpointInfo` dell&#39;oggetto `setOperationName` e passando un valore stringa che specifica il nome dell&#39;operazione. In genere, durante la creazione di un endpoint `TaskManager` per un servizio che ha avuto origine da un processo creato in Workbench, il nome dell&#39;operazione è `invoke`.
+   * Specificare il valore dell&#39;identificatore del connettore richiamando il metodo `setConnectorId` dell&#39;oggetto `CreateEndpointInfo` e passando il valore stringa `TaskManagerConnector`.
+   * Specificare la descrizione dell&#39;endpoint richiamando il metodo `setDescription` dell&#39;oggetto `CreateEndpointInfo` e passando un valore stringa che descrive l&#39;endpoint.
+   * Specificare il nome dell&#39;endpoint richiamando il metodo `setName` dell&#39;oggetto `CreateEndpointInfo` e passando un valore stringa che specifichi il nome.
+   * Specificare il servizio a cui appartiene l&#39;endpoint richiamando il metodo `setServiceId` dell&#39;oggetto `CreateEndpointInfo` e passando un valore stringa che specifica il nome del servizio.
+   * Specificare la categoria a cui appartiene l&#39;endpoint richiamando il metodo `setCategoryId` dell&#39;oggetto `CreateEndpointInfo` e passando un valore stringa che specifica il valore dell&#39;identificatore di categoria. È possibile richiamare il metodo `getId` dell&#39;oggetto `EndpointCategory` per ottenere il valore di identificazione di questa categoria.
+   * Specificare l&#39;operazione richiamata richiamando il metodo `setOperationName` dell&#39;oggetto `CreateEndpointInfo` e passando un valore stringa che specifica il nome dell&#39;operazione. In genere, durante la creazione di un endpoint `TaskManager` per un servizio che ha avuto origine da un processo creato in Workbench, il nome dell&#39;operazione è `invoke`.
 
 1. Creare un endpoint TaskManager.
 
-   Creare l&#39;endpoint richiamando il metodo `EndpointRegistryClient` dell&#39;oggetto `createEndpoint` e passando l&#39;oggetto `CreateEndpointInfo`. Questo metodo restituisce un oggetto `Endpoint` che rappresenta il nuovo endpoint TaskManager.
+   Creare l&#39;endpoint richiamando il metodo `createEndpoint` dell&#39;oggetto `EndpointRegistryClient` e passando l&#39;oggetto `CreateEndpointInfo`. Questo metodo restituisce un oggetto `Endpoint` che rappresenta il nuovo endpoint TaskManager.
 
 1. Abilita l’endpoint.
 
-   Abilitare l&#39;endpoint richiamando il metodo `EndpointRegistryClient` dell&#39;oggetto `enable` e passando l&#39;oggetto `Endpoint` restituito dal metodo `createEndpoint`.
+   Abilitare l&#39;endpoint richiamando il metodo `enable` dell&#39;oggetto `EndpointRegistryClient` e passando l&#39;oggetto `Endpoint` restituito dal metodo `createEndpoint`.
 
 **Consulta anche**
 
@@ -1057,20 +1071,20 @@ Modifica un endpoint utilizzando l’API Java:
 
 1. Recuperate il punto finale da modificare.
 
-   * Recuperare un elenco di tutti gli endpoint a cui l&#39;utente corrente (specificati nelle proprietà della connessione) può accedere richiamando il metodo `EndpointRegistryClient` dell&#39;oggetto `getEndpoints` e passando un oggetto `PagingFilter` che funge da filtro. È possibile passare un valore `(PagingFilter)null` per restituire tutti gli endpoint. Questo metodo restituisce un oggetto `java.util.List` in cui ogni elemento è un oggetto `Endpoint`. Per informazioni su un oggetto `PagingFilter`, vedere [Riferimento API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Recuperare un elenco di tutti gli endpoint a cui l&#39;utente corrente (specificati nelle proprietà della connessione) può accedere richiamando il metodo `getEndpoints` dell&#39;oggetto `EndpointRegistryClient` e passando un oggetto `PagingFilter` che funge da filtro. È possibile passare un valore `(PagingFilter)null` per restituire tutti gli endpoint. Questo metodo restituisce un oggetto `java.util.List` in cui ogni elemento è un oggetto `Endpoint`. Per informazioni su un oggetto `PagingFilter`, vedere [Riferimento API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * Scorrere l&#39;oggetto `java.util.List` per determinare se dispone di endpoint. Se esistono endpoint, ogni elemento è un&#39;istanza `EndPoint`.
-   * Determinare il servizio corrispondente a un endpoint richiamando il metodo `EndPoint` dell&#39;oggetto `getServiceId`. Questo metodo restituisce un valore stringa che specifica il nome del servizio.
-   * Determinare il tipo di endpoint richiamando il metodo `EndPoint` dell&#39;oggetto `getConnectorId`. Questo metodo restituisce un valore stringa che specifica il tipo di endpoint. Ad esempio, se l&#39;endpoint è un endpoint di cartella controllata, questo metodo restituisce `WatchedFolder`.
+   * Determinare il servizio corrispondente a un endpoint richiamando il metodo `getServiceId` dell&#39;oggetto `EndPoint`. Questo metodo restituisce un valore stringa che specifica il nome del servizio.
+   * Determinare il tipo di endpoint richiamando il metodo `getConnectorId` dell&#39;oggetto `EndPoint`. Questo metodo restituisce un valore stringa che specifica il tipo di endpoint. Ad esempio, se l&#39;endpoint è un endpoint di cartella controllata, questo metodo restituisce `WatchedFolder`.
 
 1. Specificare nuovi valori di configurazione.
 
    * Creare un oggetto `ModifyEndpointInfo` richiamando il relativo costruttore.
-   * Per ogni valore di configurazione da impostare, richiamare il metodo `ModifyEndpointInfo` dell&#39;oggetto `setConfigParameterAsText`. Ad esempio, per impostare il valore di configurazione dell&#39;URL, richiamare il metodo `ModifyEndpointInfo` dell&#39;oggetto `setConfigParameterAsText` e passare i valori seguenti:
+   * Per ogni valore di configurazione da impostare, richiamare il metodo `setConfigParameterAsText` dell&#39;oggetto `ModifyEndpointInfo`. Ad esempio, per impostare il valore di configurazione dell&#39;URL, richiamare il metodo `setConfigParameterAsText` dell&#39;oggetto `ModifyEndpointInfo` e passare i valori seguenti:
 
-      * Valore stringa che specifica il nome del valore di configurazione. Ad esempio, per impostare il valore di configurazione `url`, specificare `url`.
-      * Valore stringa che specifica il valore della configurazione. Per definire un valore per il valore di configurazione `url`, specificare il percorso della cartella controllata.
+     * Valore stringa che specifica il nome del valore di configurazione. Ad esempio, per impostare il valore di configurazione `url`, specificare `url`.
+     * Valore stringa che specifica il valore della configurazione. Per definire un valore per il valore di configurazione `url`, specificare il percorso della cartella controllata.
 
-   * Richiama il metodo `EndpointRegistryClient` dell&#39;oggetto `modifyEndpoint` e passa l&#39;oggetto `ModifyEndpointInfo`.
+   * Richiama il metodo `modifyEndpoint` dell&#39;oggetto `EndpointRegistryClient` e passa l&#39;oggetto `ModifyEndpointInfo`.
 
 **Consulta anche**
 
@@ -1151,14 +1165,14 @@ Rimuovi un endpoint utilizzando l’API Java:
 
 1. Recuperate l&#39;endpoint da rimuovere.
 
-   * Recuperare un elenco di tutti gli endpoint a cui l&#39;utente corrente (specificati nelle proprietà della connessione) ha accesso richiamando il metodo `EndpointRegistryClient` dell&#39;oggetto `getEndpoints` e passando un oggetto `PagingFilter` che funge da filtro. È possibile passare `(PagingFilter)null` per restituire tutti gli endpoint. Questo metodo restituisce un oggetto `java.util.List` in cui ogni elemento è un oggetto `Endpoint`.
+   * Recuperare un elenco di tutti gli endpoint a cui l&#39;utente corrente (specificati nelle proprietà della connessione) ha accesso richiamando il metodo `getEndpoints` dell&#39;oggetto `EndpointRegistryClient` e passando un oggetto `PagingFilter` che funge da filtro. È possibile passare `(PagingFilter)null` per restituire tutti gli endpoint. Questo metodo restituisce un oggetto `java.util.List` in cui ogni elemento è un oggetto `Endpoint`.
    * Scorrere l&#39;oggetto `java.util.List` per determinare se dispone di endpoint. Se esistono endpoint, ogni elemento è un&#39;istanza `EndPoint`.
-   * Determinare il servizio corrispondente a un endpoint richiamando il metodo `EndPoint` dell&#39;oggetto `getServiceId`. Questo metodo restituisce un valore stringa che specifica il nome del servizio.
-   * Determinare il tipo di endpoint richiamando il metodo `EndPoint` dell&#39;oggetto `getConnectorId`. Questo metodo restituisce un valore stringa che specifica il tipo di endpoint. Ad esempio, se l&#39;endpoint è un endpoint EJB, questo metodo restituisce `EJB`.
+   * Determinare il servizio corrispondente a un endpoint richiamando il metodo `getServiceId` dell&#39;oggetto `EndPoint`. Questo metodo restituisce un valore stringa che specifica il nome del servizio.
+   * Determinare il tipo di endpoint richiamando il metodo `getConnectorId` dell&#39;oggetto `EndPoint`. Questo metodo restituisce un valore stringa che specifica il tipo di endpoint. Ad esempio, se l&#39;endpoint è un endpoint EJB, questo metodo restituisce `EJB`.
 
 1. Rimuovi l’endpoint.
 
-   Rimuovere l&#39;endpoint richiamando il metodo `EndpointRegistryClient` dell&#39;oggetto `remove` e passando l&#39;oggetto `EndPoint` che rappresenta l&#39;endpoint da rimuovere.
+   Rimuovere l&#39;endpoint richiamando il metodo `remove` dell&#39;oggetto `EndpointRegistryClient` e passando l&#39;oggetto `EndPoint` che rappresenta l&#39;endpoint da rimuovere.
 
 **Consulta anche**
 
@@ -1248,12 +1262,12 @@ Recupera le informazioni sul connettore dell’endpoint utilizzando l’API Java
 
 1. Specifica il tipo di connettore.
 
-   Specificare il tipo di connettore richiamando il metodo `ConnectorRegistryClient` dell&#39;oggetto `getEndpointDefinition` e passando un valore stringa che specifica il tipo di connettore. Ad esempio, per specificare il tipo di connettore della cartella controllata, passa il valore stringa `WatchedFolder`. Questo metodo restituisce un oggetto `Endpoint` che corrisponde al tipo di connettore.
+   Specificare il tipo di connettore richiamando il metodo `getEndpointDefinition` dell&#39;oggetto `ConnectorRegistryClient` e passando un valore stringa che specifica il tipo di connettore. Ad esempio, per specificare il tipo di connettore della cartella controllata, passa il valore stringa `WatchedFolder`. Questo metodo restituisce un oggetto `Endpoint` che corrisponde al tipo di connettore.
 
 1. Recupera i valori di configurazione.
 
-   * Recuperare i valori di configurazione associati all&#39;interno di questo endpoint richiamando il metodo `Endpoint` dell&#39;oggetto `getConfigParameters`. Questo metodo restituisce una matrice di `ConfigParameter` oggetti.
-   * Recupera le informazioni su ciascun valore di configurazione recuperando ogni elemento all’interno dell’array. Ogni elemento è un oggetto `ConfigParameter`. È possibile, ad esempio, determinare se il valore di configurazione è obbligatorio o facoltativo richiamando il metodo `ConfigParameter` dell&#39;oggetto `isRequired`. Se il valore di configurazione è obbligatorio, questo metodo restituisce `true`.
+   * Recuperare i valori di configurazione associati all&#39;interno di questo endpoint richiamando il metodo `getConfigParameters` dell&#39;oggetto `Endpoint`. Questo metodo restituisce una matrice di `ConfigParameter` oggetti.
+   * Recupera le informazioni su ciascun valore di configurazione recuperando ogni elemento all’interno dell’array. Ogni elemento è un oggetto `ConfigParameter`. È possibile, ad esempio, determinare se il valore di configurazione è obbligatorio o facoltativo richiamando il metodo `isRequired` dell&#39;oggetto `ConfigParameter`. Se il valore di configurazione è obbligatorio, questo metodo restituisce `true`.
 
 **Consulta anche**
 

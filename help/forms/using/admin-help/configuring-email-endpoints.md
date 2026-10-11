@@ -9,13 +9,27 @@ exl-id: 33583a12-4f20-4146-baa4-c9854e454bbf
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3811'
 ht-degree: 5%
-
 ---
-
 # Configurazione degli endpoint e-mail {#configuring-email-endpoints}
 
 >[!NOTE]
@@ -89,7 +103,7 @@ Affinché il flusso di lavoro dei moduli riceva e gestisca i messaggi e-mail in 
 
 **Pattern di dominio:** il modello di nome di dominio utilizzato per filtrare le e-mail in arrivo. Ad esempio, se utilizzi adobe.com, verranno elaborate solo le e-mail da adobe.com; le e-mail da altri domini verranno ignorate.
 
-**Pattern file:** i pattern di file allegati in ingresso accettati dal provider. Ciò include i file con estensioni specifiche (&ast;.dat, &ast;.xml), nomi specifici (dati) ed espressioni composite nel nome e nell&#39;estensione (.``[dD][aA]``&#39;port&#39;). Il valore predefinito è &ast;.&ast;.
+**Pattern file:** i pattern di file allegati in ingresso accettati dal provider. Ciò include i file con estensioni specifiche (&amp;ast;.dat, &amp;ast;.xml), nomi specifici (dati) ed espressioni composite nel nome e nell&#39;estensione (.``[dD][aA]``&#39;port&#39;). Il valore predefinito è &amp;ast;.&amp;ast;.
 
 **Destinatari processo riuscito:** Uno o più indirizzi di posta elettronica utilizzati per inviare e-mail per indicare processi riusciti. Per impostazione predefinita, un messaggio di processo riuscito viene sempre inviato al mittente del processo iniziale. Sono supportati fino a 100 destinatari. Per disattivare questa impostazione, lasciare vuoto il campo.
 
@@ -167,7 +181,7 @@ Utilizza le seguenti impostazioni per configurare un endpoint e-mail.
 
 **Pattern dominio:** specifica i pattern di dominio delle e-mail in arrivo accettate dal provider. Ad esempio, se utilizzi adobe.com, vengono elaborate solo le e-mail da adobe.com; le e-mail da altri domini vengono ignorate.
 
-**Modello file:** Specifica i modelli di file allegati in ingresso accettati dal provider. Ciò include i file con estensioni specifiche (&ast;.dat, &ast;.xml), nomi specifici (dati) o espressioni composite nel nome e nell&#39;estensione (&ast;.`[dD][aA]`&#39;port&#39;).
+**Modello file:** Specifica i modelli di file allegati in ingresso accettati dal provider. Ciò include i file con estensioni specifiche (&amp;ast;.dat, &amp;ast;.xml), nomi specifici (dati) o espressioni composite nel nome e nell&#39;estensione (&amp;ast;.`[dD][aA]`&#39;port&#39;).
 
 **Destinatari del processo riuscito:** un indirizzo e-mail a cui vengono inviati messaggi per indicare i processi riusciti. Per impostazione predefinita, un messaggio di processo riuscito viene sempre inviato al mittente. Se si digita mittente, i risultati e-mail vengono inviati al mittente. Sono supportati fino a 100 destinatari. Specifica destinatari aggiuntivi con indirizzi e-mail, separati da virgole (,).
 
@@ -235,7 +249,7 @@ Il valore predefinito è asincrono.
 
 **Letterale:** L&#39;e-mail utilizza il valore immesso nel campo così come viene visualizzato.
 
-**Variabile:** è possibile mappare una stringa dall&#39;oggetto, dal corpo, dall&#39;intestazione o dall&#39;indirizzo di posta elettronica del mittente. A tale scopo, utilizzare una delle seguenti parole chiave: %SUBJECT%, %BODY%, %HEADER% o %SENDER%. Se ad esempio si utilizza %SUBJECT%, il contenuto dell&#39;oggetto dell&#39;e-mail verrà utilizzato come parametro di input. Per prelevare gli allegati, immettere un modello di file che l&#39;endpoint e-mail può utilizzare per selezionare i documenti allegati. Se ad esempio si immette &ast;.pdf, verranno selezionati tutti i documenti allegati con estensione pdf. Se si immette &ast;, viene selezionato qualsiasi documento allegato. L&#39;immissione di example.pdf consente di selezionare qualsiasi documento allegato denominato example.pdf.
+**Variabile:** è possibile mappare una stringa dall&#39;oggetto, dal corpo, dall&#39;intestazione o dall&#39;indirizzo di posta elettronica del mittente. A tale scopo, utilizzare una delle seguenti parole chiave: %SUBJECT%, %BODY%, %HEADER% o %SENDER%. Se ad esempio si utilizza %SUBJECT%, il contenuto dell&#39;oggetto dell&#39;e-mail verrà utilizzato come parametro di input. Per prelevare gli allegati, immettere un modello di file che l&#39;endpoint e-mail può utilizzare per selezionare i documenti allegati. Se ad esempio si immette &amp;ast;.pdf, verranno selezionati tutti i documenti allegati con estensione pdf. Se si immette &amp;ast;, viene selezionato qualsiasi documento allegato. L&#39;immissione di example.pdf consente di selezionare qualsiasi documento allegato denominato example.pdf.
 
 **Mapping parametri di output:** utilizzato per configurare l&#39;output del servizio e dell&#39;operazione. I seguenti caratteri nei valori di mappatura dei parametri di output vengono espansi nel nome file allegato:
 
@@ -245,7 +259,7 @@ Il valore predefinito è asincrono.
 
 Qualsiasi occorrenza della barra rovesciata (\) viene sostituita con %%.
 
-***nota &#x200B;**: se il messaggio di richiesta del servizio include più file allegati, non è possibile utilizzare i parametri %F e %E per la proprietà Output Parameter Mappints dell&#39;endpoint. Se la risposta dei servizi restituisce più allegati, non è possibile specificare lo stesso nome per più allegati. Se non si seguono queste raccomandazioni, il servizio richiamato crea i nomi per i file restituiti e i nomi non sono prevedibili.*
+***nota **: se il messaggio di richiesta del servizio include più file allegati, non è possibile utilizzare i parametri %F e %E per la proprietà Output Parameter Mappints dell&#39;endpoint. Se la risposta dei servizi restituisce più allegati, non è possibile specificare lo stesso nome per più allegati. Se non si seguono queste raccomandazioni, il servizio richiamato crea i nomi per i file restituiti e i nomi non sono prevedibili.*
 
 Sono disponibili i seguenti valori:
 

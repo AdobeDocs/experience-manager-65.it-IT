@@ -9,13 +9,22 @@ feature: Administering
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '5878'
+source-wordcount: '5879'
 ht-degree: 1%
-
 ---
-
 # Pulizia revisioni{#revision-cleanup}
 
 ## Introduzione {#introduction}
@@ -24,7 +33,7 @@ Ogni aggiornamento del repository crea una revisione del contenuto. Di conseguen
 
 Con AEM 6.3 e versioni successive, è stata introdotta una versione online di questa funzionalità denominata Pulizia revisioni online. Rispetto alla funzione di pulizia delle revisioni offline, in cui l’istanza di AEM deve essere chiusa, la funzione di pulizia delle revisioni online può essere eseguita mentre l’istanza di AEM è online. La funzione Pulizia revisioni online è attivata per impostazione predefinita ed è la modalità consigliata per eseguire la pulizia delle revisioni.
 
-**Nota**: [Guarda il video](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html?lang=it) per un&#39;introduzione e per scoprire come utilizzare la funzione di pulizia delle revisioni in linea.
+**Nota**: [Guarda il video](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html) per un&#39;introduzione e per scoprire come utilizzare la funzione di pulizia delle revisioni in linea.
 
 Il processo di pulizia delle revisioni è costituito da tre fasi: **stima**, **compattazione** e **pulizia**. La stima determina se eseguire la fase successiva (compattazione) o meno in base alla quantità di rifiuti raccolti. Durante la fase di compattazione, i segmenti e i file tar vengono riscritti lasciando fuori il contenuto inutilizzato. La fase di pulizia rimuove quindi i vecchi segmenti, inclusi eventuali rifiuti in essi contenuti. La modalità offline può in genere recuperare più spazio, perché la modalità online deve tenere conto del working set di AEM, che impedisce la raccolta di segmenti aggiuntivi.
 
@@ -465,7 +474,7 @@ A volte, l&#39;alternanza tra la modalità di coda e la modalità di compattazio
   </tr>
   <tr>
    <td><strong>In base alla verifica dello stato e alle voci del registro, la pulizia delle revisioni in linea non è stata completata tre volte di seguito. Cosa è necessario per completare correttamente la pulizia delle revisioni online?</strong></td>
-   <td>Puoi eseguire diversi passaggi per trovare e risolvere il problema:<br />
+   <td>Puoi intraprendere diversi passaggi per trovare e risolvere il problema:<br />
     <ul>
      <li>Controllare innanzitutto le voci del registro<br /> </li>
      <li>A seconda delle informazioni contenute nei registri, adotta le misure appropriate:
@@ -494,7 +503,7 @@ A volte, l&#39;alternanza tra la modalità di coda e la modalità di compattazio
     <ol>
      <li>Applicazione che aggira i meccanismi di accesso consigliati (come Sling e API JCR) e utilizza un’API/SPI di livello inferiore per accedere all’archivio e quindi supera il tempo di conservazione di un segmento. In altre parole, mantiene un riferimento a un’entità oltre il tempo di conservazione consentito dalla funzione di pulizia delle revisioni online (24 ore per impostazione predefinita). Questo caso è transitorio e non causa il danneggiamento dei dati. Per il ripristino, è necessario utilizzare lo strumento oak-run per confermare la natura transitoria dell’eccezione (il controllo oak-run non deve segnalare errori). A questo scopo, l’istanza deve essere messa offline e riavviata in seguito.</li>
      <li>Un evento esterno ha causato il danneggiamento dei dati sul disco. Può trattarsi di un errore del disco, di spazio insufficiente o di una modifica accidentale dei file di dati richiesti. In questo caso, l’istanza deve essere messa offline e ripristinata utilizzando il controllo oak-run. Per ulteriori dettagli su come eseguire il controllo oak-run, leggi la seguente <a href="https://github.com/apache/jackrabbit-oak/blob/trunk/oak-doc/src/site/markdown/nodestore/segment/overview.md#check" target="_blank">documentazione di Apache</a>.</li>
-     <li>Risolvi tutte le altre occorrenze tramite <a href="https://experienceleague.adobe.com/it?support-solution=General&support-tab=homehome?lang=it#support" target="_blank">Assistenza clienti Adobe</a>.</li>
+     <li>Risolvi tutte le altre occorrenze tramite <a href="https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=homehome?lang=it#support" target="_blank">Assistenza clienti Adobe</a>.</li>
     </ol> </td>
    <td> </td>
   </tr>

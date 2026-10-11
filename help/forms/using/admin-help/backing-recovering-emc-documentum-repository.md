@@ -9,13 +9,27 @@ exl-id: bc21659f-88d6-4dff-8baf-12746e1b3ed9
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
-workflow-type: ht
-source-wordcount: '790'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '792'
+ht-degree: 98%
 ---
-
 # Backup e ripristino dell’archivio Documentum di EMC {#backing-up-and-recovering-the-emc-documentum-repository}
 
 In questa sezione vengono descritte le attività necessarie per eseguire il backup e il ripristino dell’archivio Documentum di EMC configurato per l’ambiente AEM Forms.
@@ -193,7 +207,7 @@ Questa sezione descrive l’installazione e la configurazione del software EMC N
    * Apri un prompt dei comandi e passa a `[NetWorker_root]\Legato\nsr\bin`.
    * Esegui il comando seguente: `-nsrnmdsv.exe -f`*&lt;path_to_cfg_file> -P &lt;password>*
 
-1. Crea i file batch eseguibili (.bat) utilizzati per eseguire il backup del database. Consulta la documentazione di NetWorker. Imposta i dettagli nei file batch in base all’installazione.
+1. Crea i file batch eseguibili (.bat) utilizzati per eseguire il backup del database. Consultare la documentazione di NetWorker. Impostare i dettagli nei file batch in base all&#39;installazione.
 
    * Backup completo del database (nsrnmddbf.bat):
 

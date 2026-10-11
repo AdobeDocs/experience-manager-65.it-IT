@@ -9,13 +9,24 @@ exl-id: b0786b52-879e-4a24-9cc9-bd9dcb2473cc
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
-workflow-type: ht
-source-wordcount: '1220'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '1237'
+ht-degree: 99%
 ---
-
 # Configurare SSL per il server applicazioni WebSphere {#configuring-ssl-for-websphere-application-server}
 
 In questa sezione sono descritti i passaggi per configurare SSL con il server applicazioni WebSphere di IBM.
@@ -71,7 +82,7 @@ Per abilitare SSL, WebSphere deve accedere a un account utente nel registro uten
 1. In Sicurezza amministrativa, seleziona **Ruoli utente amministrativi**.
 1. Fai clic su Aggiungi e procedi come segue:
 
-   1. Digita **&amp;ast;** nella casella di ricerca e fai clic su Cerca.
+   1. Digitare **&amp;ast;** nella casella di ricerca e fare clic su Cerca.
    1. Alla voce Ruoli, fai clic su **Amministratore**.
    1. Aggiungi l’utente appena creato al ruolo Mappato a e mappalo come Amministratore.
 

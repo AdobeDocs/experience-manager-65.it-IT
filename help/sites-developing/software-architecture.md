@@ -1,5 +1,5 @@
 ---
-title: Architettura software
+title: Architettura del software
 description: Scopri alcune best practice per l’architettura del software per Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,18 +9,27 @@ exl-id: cd4f3b4c-5488-4ca7-9c1e-b4c819fda8e8
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '623'
 ht-degree: 0%
-
 ---
-
-# Architettura software{#software-architecture}
+# Architettura del software{#software-architecture}
 
 ## Progettazione per aggiornamenti {#design-for-upgrades}
 
-Quando si estendono comportamenti preconfigurati, è importante tenere presente gli aggiornamenti. Applica sempre le personalizzazioni nella directory /apps e sovrapponi sopra i nodi corrispondenti nella directory /libs oppure utilizza sling:resourceSuperType per estendere il comportamento predefinito. Anche se potrebbero essere necessarie alcune modifiche per supportare una nuova versione dell’AEM, la nuova versione non deve sovrascrivere le personalizzazioni se si segue questa pratica.
+Quando si estendono comportamenti preconfigurati, è importante tenere presente gli aggiornamenti. Applica sempre le personalizzazioni nella directory /apps e sovrapponi sopra i nodi corrispondenti nella directory /libs oppure utilizza sling:resourceSuperType per estendere il comportamento predefinito. Anche se potrebbero essere necessarie alcune modifiche per supportare una nuova versione di AEM, la nuova versione non deve sovrascrivere le personalizzazioni se si segue questa procedura.
 
 ### Riutilizzare modelli e componenti quando possibile {#reuse-template-and-components-when-possible}
 

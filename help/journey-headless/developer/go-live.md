@@ -5,13 +5,39 @@ exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d429a63e-ade4-4117-b04e-9b996d1c94ef
+    internal-label: Integrations
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: a02b73a7-bdfc-4225-bdfd-69f7891ab55e
+    internal-label: GraphQL
+  - id: d781bc8f-52af-43f6-84d0-b73e59a130d5
+    internal-label: Persisted queries
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1930'
 ht-degree: 51%
-
 ---
-
 # Come pubblicare con la tua applicazione headless {#go-live}
 
 In questa sezione del [Percorso di sviluppatori AEM Headless](overview.md), scopri come distribuire un&#39;applicazione headless live.
@@ -97,7 +123,7 @@ L&#39;ambiente di sviluppo locale è costituito da tre aree principali:
 
 Dopo aver configurato l’ambiente di sviluppo locale, puoi simulare il contenuto da distribuire all’app React distribuendo localmente un server Nodo statico.
 
-Per informazioni più approfondite sulla configurazione di un ambiente di sviluppo locale e su tutte le dipendenze necessarie per l&#39;anteprima del contenuto, consulta [Documentazione sulla distribuzione di produzione](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/overview.html?lang=it).
+Per informazioni più approfondite sulla configurazione di un ambiente di sviluppo locale e su tutte le dipendenze necessarie per l&#39;anteprima del contenuto, consulta [Documentazione sulla distribuzione di produzione](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/overview.html).
 
 ## Prepara la tua applicazione AEM headless per il lancio {#prepare-your-aem-headless-application-for-golive}
 
@@ -118,9 +144,9 @@ Ora è il momento di preparare la tua applicazione headless AEM per il lancio, s
 ### Massimizza il rapporto Hit-cache CDN {#maximize-cdn}
 
 * Non utilizzare query GraphQL dirette, a meno che stia richiedendo contenuto in tempo reale dalla superficie.
-   * Utilizza le query persistenti quando possibile.
-   * Fornisci valori TTL CDN superiori a 600 secondi in modo che la CDN possa memorizzarli nella cache.
-   * AEM può calcolare l’impatto di una modifica del modello sulle query esistenti.
+  * Utilizza le query persistenti quando possibile.
+  * Fornisci valori TTL CDN superiori a 600 secondi in modo che la CDN possa memorizzarli nella cache.
+  * AEM può calcolare l’impatto di una modifica del modello sulle query esistenti.
 * Suddividi le query JSON su file/GraphQL tra il tasso di modifica dei contenuti basso e alto per ridurre il traffico client su CDN e assegna un TTL più alto. In questo modo la rete CDN che riconvalida il JSON con il server di origine viene ridotta a icona.
 * Per annullare attivamente la validità del contenuto dalla rete CDN, utilizza Soft Purge. In questo modo la rete CDN può scaricare nuovamente il contenuto senza causare un errore nella cache.
 
@@ -144,13 +170,13 @@ La distribuzione in Produzione può dipendere dal fatto che tu disponga di un&#3
 
 ## Implementare in produzione utilizzando Maven {#deploy-to-production-maven}
 
-Per una distribuzione *tradizionale* (non AMS) tramite Maven, consulta l&#39;[esercitazione WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=it#build) per una panoramica.
+Per una distribuzione *tradizionale* (non AMS) tramite Maven, consulta l&#39;[esercitazione WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html#build) per una panoramica.
 
 ## Implementare in produzione utilizzando Cloud Manager {#deploy-to-production-cloud-manager}
 
-Se sei un cliente AMS che utilizza Cloud Manager, dopo aver verificato che tutto sia stato testato e funzioni correttamente, puoi inviare gli aggiornamenti del codice a un [archivio Git centralizzato in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/git-integration.html?lang=it).
+Se sei un cliente AMS che utilizza Cloud Manager, dopo aver verificato che tutto sia stato testato e funzioni correttamente, puoi inviare gli aggiornamenti del codice a un [archivio Git centralizzato in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/git-integration.html).
 
-Dopo aver caricato gli aggiornamenti in Cloud Manager, distribuiscili in AEM utilizzando [la pipeline CI/CD di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=it).
+Dopo aver caricato gli aggiornamenti in Cloud Manager, distribuiscili in AEM utilizzando [la pipeline CI/CD di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html).
 
 <!-- Cannot find a parallel link -->
 <!--
@@ -164,15 +190,15 @@ Per garantire agli utenti la migliore esperienza possibile quando utilizzano l�
 * Convalida delle versioni di anteprima e di produzione dell’app
 * Verifica delle pagine di stato di AEM per lo stato di disponibilità del servizio corrente
 * Accesso ai rapporti sulle prestazioni
-   * Prestazioni della distribuzione
-      * Server di origine - numero di chiamate, tassi di errore, carichi della CPU, traffico del payload
-   * Prestazioni dell’authoring
-      * Verifica il numero di utenti, richieste e caricamento
+  * Prestazioni della distribuzione
+    * Server di origine - numero di chiamate, tassi di errore, carichi della CPU, traffico del payload
+  * Prestazioni dell’authoring
+    * Verifica il numero di utenti, richieste e caricamento
 * Accedere ai rapporti sulle prestazioni specifici per app e spazio
-   * Una volta che il server è attivo, controllare se le metriche generali sono verde/arancione/rosso, quindi identificare problemi specifici dell’app
-   * Aprire i rapporti di cui sopra, filtrati per app o spazio (ad esempio Photoshop per desktop, paywall)
-   * Utilizzare le API del registro Splunk per accedere alle prestazioni del servizio e dell’applicazione
-   * Contattare l’Assistenza clienti in caso di altri problemi.
+  * Una volta che il server è attivo, controllare se le metriche generali sono verde/arancione/rosso, quindi identificare problemi specifici dell’app
+  * Aprire i rapporti di cui sopra, filtrati per app o spazio (ad esempio Photoshop per desktop, paywall)
+  * Utilizzare le API del registro Splunk per accedere alle prestazioni del servizio e dell’applicazione
+  * Contattare l’Assistenza clienti in caso di altri problemi.
 
 ## Risoluzione dei problemi {#troubleshooting}
 
@@ -217,17 +243,17 @@ Se questo tipo di flessibilità è necessario per il progetto, passare alla sezi
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Guida allo sviluppo di AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/the-basics.html?lang=it)
+* [Guida allo sviluppo di AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/the-basics.html)
 
-* [Esercitazione WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it)
+* [Esercitazione WKND](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview)
 
 * [Cloud Manager per AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=it)
 
 * Cache CDN
 
-   * [Controllo di una cache CDN](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it#controlling-a-cdn-cache)
+  * [Controllo di una cache CDN](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#controlling-a-cdn-cache)
 
-   * Configurazione del [rewriter CDN](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html?lang=it) (*cerca rewriter CDN*)
+  * Configurazione del [rewriter CDN](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html) (*cerca rewriter CDN*)
 
 * [Introduzione ad AEM come CMS headless](/help/sites-developing/headless/introduction.md)
 * [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)

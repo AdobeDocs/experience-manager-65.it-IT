@@ -6,13 +6,25 @@ feature: Language Copy
 exl-id: 8ca7bbcc-413a-49a8-a836-7083a9cadda1
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: ffa4c2522bfe98d99693e3c17666b728377337f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '1154'
 ht-degree: 62%
-
 ---
-
 # Identificazione del contenuto da tradurre{#identifying-content-to-translate}
 
 Le regole di traduzione identificano il contenuto da tradurre per le pagine, i componenti e le risorse inclusi o esclusi nei progetti di traduzione. Quando una pagina o una risorsa viene tradotta, AEM estrae questo contenuto in modo che possa essere inviato al servizio di traduzione.
@@ -64,13 +76,13 @@ Ognuno di questi elementi `node` presentano le seguenti caratteristiche:
 * L’attributo `path` contiene il percorso del nodo principale del ramo a cui si applicano le regole.
 * Gli elementi secondari `property` identificano le proprietà del nodo da tradurre per tutti i tipi di risorse:
 
-   * L’attributo `name` contiene il nome della proprietà.
-   * L’attributo opzionale `translate` è uguale a `false` se la proprietà non è tradotta. Il valore predefinito è `true`. Questo attributo è utile quando si ignorano le regole precedenti.
+  * L’attributo `name` contiene il nome della proprietà.
+  * L’attributo opzionale `translate` è uguale a `false` se la proprietà non è tradotta. Il valore predefinito è `true`. Questo attributo è utile quando si ignorano le regole precedenti.
 
 * Gli elementi secondari `node` identificano le proprietà del nodo da tradurre per tipi di risorsa specifici:
 
-   * L’attributo `resourceType` contiene il percorso che viene risolto nel componente che implementa il tipo di risorsa.
-   * Gli elementi secondari `property` identificano la proprietà nodo da tradurre. Usa questo nodo nello stesso modo degli elementi secondari `property` per le regole dei nodi.
+  * L’attributo `resourceType` contiene il percorso che viene risolto nel componente che implementa il tipo di risorsa.
+  * Gli elementi secondari `property` identificano la proprietà nodo da tradurre. Usa questo nodo nello stesso modo degli elementi secondari `property` per le regole dei nodi.
 
 La regola di esempio seguente causa il contenuto di tutte le proprietà `text` da tradurre per tutte le pagine al di sotto del nodo `/content`. La regola è valida per qualsiasi componente che memorizza il contenuto in una proprietà `text`, ad esempio il componente Testo di base e il componente Immagine di base.
 

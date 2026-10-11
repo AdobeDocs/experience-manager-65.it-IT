@@ -7,7 +7,27 @@ role: Admin, User, Developer
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
 solution: Experience Manager, Experience Manager Forms
 feature: Workbench,Adaptive Forms
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 36ac8e9c-5c7a-56d8-af5e-39399fd7b101
+    internal-label: Workbench
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2298'
 ht-degree: 1%
@@ -35,11 +55,11 @@ Le risorse presenti in questa tabella possono essere utili per ulteriori informa
   </tr>
   <tr>
    <td><p>Informazioni generali su AEM Forms e su come si integra con altri prodotti Adobe</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=it">Panoramica di AEM Forms</a><br /> <br /> </p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=en">Panoramica di AEM Forms</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Tutta la documentazione disponibile per AEM Forms</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=it">Documentazione di AEM Forms</a><br /> <br /> </p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=en">Documentazione di AEM Forms</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Aggiornamenti patch, note tecniche e informazioni aggiuntive su questa versione del prodotto</p> </td>
@@ -98,7 +118,7 @@ Spazio su disco per installazione:
 
 ### Piattaforme supportate {#supported-platforms}
 
-Consulta l&#39;elenco completo delle piattaforme supportate per Workbench in [Piattaforme supportate da AEM Forms](https://www.adobe.com/go/learn_aemforms_supportedplatforms_65_it).
+Consulta l&#39;elenco completo delle piattaforme supportate per Workbench in [Piattaforme supportate da AEM Forms](https://www.adobe.com/go/learn_aemforms_supportedplatforms_65).
 
 ## Considerazioni sull’installazione di Designer {#designer-installation-considerations}
 
@@ -189,7 +209,7 @@ Per utilizzare Workbench, è necessario disporre di un&#39;istanza di AEM Forms 
 
 ### Configurazione delle impostazioni di timeout {#configuring-timeout-settings}
 
-Per impostazione predefinita, Workbench riceve un timeout dopo due ore, indipendentemente dall’attività o dall’inattività. Per modificare l&#39;impostazione di timeout, vedere la sezione relativa alla configurazione della gestione utente e degli attributi di sistema avanzati nella <a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html?lang=it">Guida della console di amministrazione</a>.
+Per impostazione predefinita, Workbench riceve un timeout dopo due ore, indipendentemente dall’attività o dall’inattività. Per modificare l&#39;impostazione di timeout, vedere la sezione relativa alla configurazione della gestione utente e degli attributi di sistema avanzati nella <a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">Guida della console di amministrazione</a>.
 
 ### Configurazione di Workbench per la connessione tramite HTTPS {#configuring-workbench-to-connect-over-HTTPS}
 

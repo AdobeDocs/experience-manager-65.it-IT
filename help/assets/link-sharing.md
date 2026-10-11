@@ -7,18 +7,32 @@ feature: Link Sharing,Asset Management
 exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: cda65036-5305-4f01-89da-9b3506ae8c50
+    internal-label: Administration
+subfeature_v2:
+  - id: b03f468b-ba84-4dc3-a306-cb2c69e43324
+    internal-label: Link sharing
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1043'
 ht-degree: 7%
-
 ---
-
 # Condividere la risorsa come collegamento {#asset-link-sharing}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/share-assets.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/share-assets.html?lang=en) |
 | AEM 6.5 | Questo articolo |
 
 [!DNL Adobe Experience Manager Assets] consente di condividere risorse, cartelle e raccolte come URL con i membri dell&#39;organizzazione ed entità esterne, inclusi partner e fornitori. La condivisione delle risorse tramite un collegamento è un modo pratico per rendere le risorse disponibili alle parti esterne senza dover prima accedere a [!DNL Assets].
@@ -114,8 +128,8 @@ Quando si scaricano risorse dal collegamento condiviso utilizzando la funzione C
 
 * Se si desidera condividere collegamenti dalla distribuzione Autore [!DNL Experience Manager] ad entità esterne, assicurarsi di esporre solo i seguenti URL utilizzati per la condivisione dei collegamenti, solo per le richieste `GET`. Blocca altri URL per motivi di sicurezza.
 
-   * `http://[aem_server]:[port]/linkshare.html`
-   * `http://[aem_server]:[port]/linksharepreview.html`
-   * `http://[aem_server]:[port]/linkexpired.html`
+  * `http://[aem_server]:[port]/linkshare.html`
+  * `http://[aem_server]:[port]/linksharepreview.html`
+  * `http://[aem_server]:[port]/linkexpired.html`
 
   Nell&#39;interfaccia [!DNL Experience Manager], accedere a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console Web]**. Apri la configurazione di **[!UICONTROL Day CQ Link Externalizer]** e modifica le seguenti proprietà nel campo **[!UICONTROL Domains]** con i valori indicati rispetto a `local`, `author` e `publish`. Per le proprietà `local` e `author`, fornisci l&#39;URL rispettivamente per le istanze Local e Author. Se si esegue una singola istanza Autore [!DNL Experience Manager], utilizzare lo stesso valore per le proprietà `local` e `author`. Per le istanze Publish, fornire l&#39;URL dell&#39;istanza Publish [!DNL Experience Manager].

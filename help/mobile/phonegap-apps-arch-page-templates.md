@@ -9,13 +9,17 @@ exl-id: 7f00d426-4d28-41ee-8c54-636349e48669
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2649'
 ht-degree: 0%
-
 ---
-
 # Modelli di pagina per le app mobili {#page-templates-for-mobile-apps}
 
 {{ue-over-mobile}}
@@ -192,7 +196,7 @@ Si noti il GUID &#39;24BA22ED-7D06-4330-B7EB-F6FC73251CA3&#39; nel percorso.
 
 In qualità di sviluppatore di PhoneGap, il contenuto che ti interessa si trova sotto la directory www. Per accedere alle risorse dell’app, usa i percorsi relativi.
 
-Per risolvere il problema, l&#39;applicazione PhoneGap utilizza il pattern SPA (Single Page App) in modo che l&#39;URI di base (escluso l&#39;hash) non cambi mai. Pertanto, ogni risorsa, modello o script a cui fai riferimento **deve essere relativo alla pagina di livello principale. &#x200B;** La pagina di primo livello inizializza il routing e i controller di Angular in virtù di `<name>.angular-app-module.js` e `<name>.angular-app-controllers.js`. Questa pagina deve essere la più vicina alla radice dell&#39;archivio che *non *estende un sling:redirect.
+Per risolvere il problema, l&#39;applicazione PhoneGap utilizza il pattern SPA (Single Page App) in modo che l&#39;URI di base (escluso l&#39;hash) non cambi mai. Pertanto, ogni risorsa, modello o script a cui fai riferimento **deve essere relativo alla pagina di livello principale. **La pagina di primo livello inizializza il routing e i controller di Angular in virtù di `<name>.angular-app-module.js` e `<name>.angular-app-controllers.js`. Questa pagina deve essere la più vicina alla radice dell&#39;archivio che *non *estende un sling:redirect.
 
 Sono disponibili diversi metodi di supporto per gestire i percorsi relativi:
 

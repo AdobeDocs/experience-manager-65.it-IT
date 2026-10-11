@@ -9,13 +9,17 @@ exl-id: 576b4567-c7b6-4196-84e7-47e980637540
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '293'
 ht-degree: 0%
-
 ---
-
 # Creazione configurazione esportazione risorse condivise{#creating-shared-resources-export-configuration}
 
 {{ue-over-mobile}}
@@ -26,13 +30,13 @@ ht-degree: 0%
 >
 >Prima di scoprire come creare e modificare le risorse condivise, consulta [Sincronizzazione contenuti](/help/mobile/mobile-ondemand-contentsync.md) per comprendere i concetti di base.
 
-Gli utenti di dispositivi mobili Adobe Experience Manager (AEM) utilizzano la sincronizzazione dei contenuti per esportare contenuti live in contenuti statici da utilizzare nelle app mobili. Questa esportazione si verifica quando i contenuti vengono caricati in Mobile On-Demand Services da AEM Mobile.
+Gli utenti di Adobe Experience Manager (AEM) Mobile utilizzano la sincronizzazione dei contenuti per esportare contenuti live in contenuti statici da utilizzare nelle app mobili. Questa esportazione si verifica quando i contenuti vengono caricati in Mobile On-Demand Services da AEM Mobile.
 
 La proprietà ***dps-exportTemplate*** indicata nella tabella precedente definisce il percorso delle configurazioni di esportazione dell&#39;app. Impostare questa proprietà per creare e modificare le risorse condivise.
 
 Le risorse seguenti descrivono l’esportazione di risorse condivise da AEM per il caricamento in AEM Mobile.
 
-Le risorse HTML condivise consentono agli articoli di condividere risorse HTML che altrimenti verrebbero duplicate per tutti gli articoli e che possono includere icone, font, JavaScript e CSS.
+Le risorse condivise di HTML consentono agli articoli di condividere risorse HTML che altrimenti verrebbero duplicate per tutti gli articoli e che possono includere icone, font, JavaScript e CSS.
 
 La configurazione di sincronizzazione contenuti trovata in **&lt;dps-exportTemplate>/dps-HTMLResources>** deve essere configurata in modo da esportare tutto il contenuto richiesto da un articolo per il rendering statico delle proprietà sul dispositivo.
 

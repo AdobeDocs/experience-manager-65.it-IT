@@ -1,5 +1,5 @@
 ---
-title: Visualizzare e comprendere i rapporti di AEM Forms Analytics
+title: Visualizzare e comprendere i rapporti di analisi di AEM Forms
 description: AEM Forms si integra con Adobe Analytics e fornisce analisi di riepilogo e dettagliate sui moduli adattivi pubblicati.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,16 +9,32 @@ exl-id: c5a4e6f6-f331-41e9-a0a9-51a30df6e2cd
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 0%
-
+source-wordcount: '1082'
+ht-degree: 3%
 ---
+# Visualizzare e comprendere i rapporti di analisi di AEM Forms {#view-and-understand-aem-forms-analytics-reports}
 
-# Visualizzare e comprendere i rapporti di AEM Forms Analytics {#view-and-understand-aem-forms-analytics-reports}
-
-Adobe Experience Manager Forms si integra con Adobe Analytics per acquisire e tenere traccia delle metriche delle prestazioni per i moduli e i documenti pubblicati. L’obiettivo dell’analisi di queste metriche è quello di prendere decisioni informate in base ai dati sulle modifiche necessarie per rendere i moduli o i documenti più utilizzabili.
+Adobe Experience Manager Forms si integra con Adobe Analytics per acquisire e tenere traccia delle metriche delle prestazioni per i moduli e i documenti pubblicati. L’obiettivo dell’analisi di queste metriche è quello di prendere decisioni informate basate sui dati in merito alle modifiche necessarie a rendere i moduli o i documenti più utilizzabili.
 
 ## Configurazione di Analytics {#setting-up-analytics}
 
@@ -50,7 +66,7 @@ Quando un utente interagisce con il modulo, le interazioni vengono registrate e 
 
 Per visualizzare i rapporti di analisi, effettua le seguenti operazioni:
 
-1. Accedere al portale AEM all&#39;indirizzo `https://[hostname]:'port'`
+1. Accedi al portale AEM all&#39;indirizzo `https://[hostname]:'port'`
 1. Fare clic su **Forms > Forms &amp; Documents**.
 1. Selezionare la maschera per la quale si desidera visualizzare i rapporti di analisi.
 1. Selezionare **Altro > Rapporti di Analytics**.
@@ -73,9 +89,9 @@ Per impostazione predefinita, viene visualizzato il rapporto di analisi relativo
 
 ![intervallo di date](assets/date-range.png)
 
-### Grafo delle conversioni per moduli adattivi e HTML5 {#conversions-graph-for-adaptive-and-html-forms}
+### Grafico delle conversioni per moduli adattivi e HTML5 {#conversions-graph-for-adaptive-and-html-forms}
 
-Il grafico delle conversioni a livello di modulo fornisce informazioni approfondite sulle prestazioni del modulo per i seguenti indicatori prestazioni chiave (KPI, Key Performance Indicators):
+Il grafico delle conversioni a livello di modulo fornisce un’insight delle prestazioni del modulo sui seguenti indicatori prestazioni chiave (KPI, Key Performance Indicators):
 
 * **Rappresentazioni**: il numero di volte in cui un modulo viene aperto
 * **Visitatori**: numero di visitatori del modulo
@@ -85,14 +101,14 @@ Il grafico delle conversioni a livello di modulo fornisce informazioni approfond
 
 ### Rapporto di Analytics per moduli adattivi e HTML5 {#analytics-report-for-adaptive-and-html-forms}
 
-La sezione Riepilogo a livello di modulo fornisce informazioni approfondite sulle prestazioni del modulo per i seguenti indicatori prestazioni chiave (KPI, Key Performance Indicators):
+La sezione di riepilogo a livello di modulo fornisce un’insight delle prestazioni del modulo sui seguenti indicatori prestazioni chiave (KPI, Key Performance Indicators):
 
 * **Tempo medio di compilazione**: tempo medio impiegato per la compilazione del modulo. Quando gli utenti trascorrono del tempo sul modulo ma non inviano, tale tempo non viene incluso in questo calcolo.
 * **Rappresentazioni**: numero di volte in cui il modulo è stato sottoposto a rendering o aperto
 * **Bozze**: numero di volte in cui il modulo è stato salvato come bozza
 * **Invii**: numero di volte in cui il modulo è stato inviato
 * **Interrompi**: numero di volte in cui gli utenti hanno iniziato a compilare il modulo e poi hanno lasciato il modulo senza completarlo
-* **Visitatori univoci**: il numero di volte in cui il modulo &quot;viene renderizzato da visitatori univoci. Per ulteriori informazioni sui visitatori univoci, vedi [Visitatori univoci, visite e comportamento del cliente](https://helpx.adobe.com/it/analytics/kb/unique-visitors-visitor-behavior.html).
+* **Visitatori univoci**: il numero di volte in cui il modulo &quot;viene renderizzato da visitatori univoci. Per ulteriori informazioni sui visitatori univoci, vedi [Visitatori univoci, visite e comportamento del cliente](https://helpx.adobe.com/analytics/kb/unique-visitors-visitor-behavior.html).
 
 ![Report analisi riepilogo a livello di modulo espanso](assets/analytics-report.png)
 
@@ -126,7 +142,7 @@ Le tabelle Distribuzione browser, Distribuzione sistema operativo e Distribuzion
 
 Per filtrare ulteriormente i dati di analisi, puoi fare clic su una voce in una qualsiasi delle tabelle. Ad esempio, se fai clic su Google Chrome nella tabella Distribuzione browser, il rapporto viene nuovamente sottoposto a rendering con i dati relativi al browser Google Chrome come segue:
 
-![Filtro applicato al report di Analytics - Google Chrome &#x200B;](assets/filter-1.png)
+![Filtro applicato al report di Analytics - Google Chrome ](assets/filter-1.png)
 
 Se visualizzi il rapporto del pannello dopo l’applicazione di un filtro, vengono visualizzati anche i dati del rapporto del pannello in base al filtro applicato.
 

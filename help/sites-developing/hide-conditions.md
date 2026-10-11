@@ -9,14 +9,25 @@ exl-id: 65f5d5e1-ac11-4a3c-8a51-ce06a741c264
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 3%
 ---
 # Utilizzo di Nascondi condizioni {#using-hide-conditions}
 
-È possibile utilizzare le condizioni Nascondi per determinare se una risorsa componente è sottoposta o meno a rendering. Un esempio potrebbe essere quando un autore di modelli configura il componente core [list](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=it) nell&#39;[editor modelli](/help/sites-authoring/templates.md) e decide di disabilitare le opzioni per creare l&#39;elenco in base alle pagine figlie. La disattivazione di questa opzione nella finestra di dialogo per progettazione imposta una proprietà in modo che, quando viene eseguito il rendering del componente elenco, venga valutata la condizione Nascondi e non venga visualizzata l’opzione per visualizzare le pagine figlie.
+È possibile utilizzare le condizioni Nascondi per determinare se una risorsa componente è sottoposta o meno a rendering. Un esempio potrebbe essere quando un autore di modelli configura il componente core [list](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html) nell&#39;[editor modelli](/help/sites-authoring/templates.md) e decide di disabilitare le opzioni per creare l&#39;elenco in base alle pagine figlie. La disattivazione di questa opzione nella finestra di dialogo per progettazione imposta una proprietà in modo che, quando viene eseguito il rendering del componente elenco, venga valutata la condizione Nascondi e non venga visualizzata l’opzione per visualizzare le pagine figlie.
 
 ## Panoramica {#overview}
 
@@ -54,7 +65,7 @@ Quando definisci l’espressione Nascondi, tieni presente quanto segue:
 
 ## Esempio {#example}
 
-Alcuni esempi di condizioni di Nascondi sono disponibili in AEM e in particolare nei [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it). Consideriamo ad esempio il componente di base [list](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=it).
+Alcuni esempi di condizioni di Nascondi sono disponibili in AEM e in particolare nei [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it). Consideriamo ad esempio il componente di base [list](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html).
 
 [Utilizzando l&#39;editor modelli](/help/sites-authoring/templates.md), l&#39;autore del modello può definire nella finestra di dialogo per progettazione le opzioni del componente Elenco disponibili per l&#39;autore della pagina. È possibile abilitare o disabilitare opzioni quali l’abilitazione o meno dell’elenco come elenco statico, elenco di pagine figlie, elenco di pagine con tag e così via.
 

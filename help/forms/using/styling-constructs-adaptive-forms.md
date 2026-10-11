@@ -8,13 +8,29 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 691608a6-be82-4d81-b876-427de997e5be
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2378'
 ht-degree: 4%
-
 ---
-
 # Costrutti di stile per moduli adattivi{#styling-constructs-for-adaptive-forms}
 
 <span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
@@ -25,7 +41,7 @@ Conoscenza del CSS e del framework LESS.
 
 ## Cosa può essere personalizzato {#what-can-be-customized}
 
-Nell’articolo sono elencate le classi css di moduli adattivi disponibili al pubblico. È possibile utilizzare queste classi per assegnare stili a vari componenti di un modulo adattivo. Lo stile dei componenti di authoring, come le finestre di dialogo e le barre di stato che visualizzano gli avvisi, esula dall’ambito di questo articolo. Utilizzare questi costrutti di stile per creare stili (utilizzando CSS o meno) solo quando non è possibile assegnare uno stile ai componenti utilizzando [editor tema](https://helpx.adobe.com/it/experience-manager/6-3/forms/using/themes.html).
+Nell’articolo sono elencate le classi css di moduli adattivi disponibili al pubblico. È possibile utilizzare queste classi per assegnare stili a vari componenti di un modulo adattivo. Lo stile dei componenti di authoring, come le finestre di dialogo e le barre di stato che visualizzano gli avvisi, esula dall’ambito di questo articolo. Utilizzare questi costrutti di stile per creare stili (utilizzando CSS o meno) solo quando non è possibile assegnare uno stile ai componenti utilizzando [editor tema](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
 
 ## Personalizzazione degli stili nei moduli adattivi {#customizing-styles-in-adaptive-forms}
 

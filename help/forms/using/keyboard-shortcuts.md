@@ -8,7 +8,25 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 01f4fdd3-fd2a-4e90-9c91-c1b05bbc2c6a
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1208'
 ht-degree: 3%
@@ -27,22 +45,22 @@ Questo articolo elenca le scelte rapide da tastiera che possono essere utilizzat
 | Chiude il browser Proprietà per il componente modulo adattivo selezionato | Ctrl+Alt+W | Comando+Alt+W |
 | Salva le modifiche nel browser Proprietà per il componente modulo adattivo selezionato | Ctrl+S | Comando+S |
 | Modifica regola per il componente modulo adattivo selezionato | CTRL+ALT+INVIO | Comando+Alt+Invio |
-| Consente di passare da Anteprima alla modalità attualmente selezionata, ad esempio Modifica e scaffolding. | Ctrl+Maiusc+M | Ctrl+Maiusc+M&ast; |
-| Annulla ultima modifica | Ctrl+Z | CTRL+Z&ast; |
-| Ripristina ultima modifica | CTRL+Y | Ctrl+S&ast; |
+| Consente di passare da Anteprima alla modalità attualmente selezionata, ad esempio Modifica e scaffolding. | Ctrl+Maiusc+M | Ctrl+Maiusc+M&amp;ast; |
+| Annulla ultima modifica | Ctrl+Z | CTRL+Z&amp;ast; |
+| Ripristina ultima modifica | CTRL+Y | Ctrl+S&amp;ast; |
 | Selezione di più componenti | Maiusc+clic | Maiusc+clic |
-| Copia componente selezionato | Ctrl-C | Ctrl&ast; |
-| Taglia i componenti selezionati. Il componente Taglia non scompare finché non viene incollato nella nuova posizione. | Ctrl-X | Ctrl+X&ast; |
+| Copia componente selezionato | Ctrl-C | Ctrl&amp;ast; |
+| Taglia i componenti selezionati. Il componente Taglia non scompare finché non viene incollato nella nuova posizione. | Ctrl-X | Ctrl+X&amp;ast; |
 | Incolla componenti | Ctrl+V | Ctrl+V |
-| Elimina componenti selezionati | Ctrl+Canc | CTRL+CANC&O; |
-| Elimina componenti selezionati | CTRL+BACKSPACE | Ctrl+Backspace&ast; |
-| Applicare il grassetto al testo quando si utilizza il componente Editor Rich Text in modalità Anteprima | Ctrl+B | Ctrl+B&ast; |
-| Formattare in corsivo il testo quando si utilizza il componente Editor Rich Text in modalità Anteprima | CTRL+I | CTRL+I&ast; |
-| Applicare il grassetto al testo quando si utilizza il componente Editor Rich Text in modalità Anteprima | Ctrl+U | CTRL+U&ST; |
+| Elimina componenti selezionati | Ctrl+Canc | CTRL+CANC&amp;O; |
+| Elimina componenti selezionati | CTRL+BACKSPACE | Ctrl+Backspace&amp;ast; |
+| Applicare il grassetto al testo quando si utilizza il componente Editor Rich Text in modalità Anteprima | Ctrl+B | Ctrl+B&amp;ast; |
+| Formattare in corsivo il testo quando si utilizza il componente Editor Rich Text in modalità Anteprima | CTRL+I | CTRL+I&amp;ast; |
+| Applicare il grassetto al testo quando si utilizza il componente Editor Rich Text in modalità Anteprima | Ctrl+U | CTRL+U&amp;ST; |
 
 >[!NOTE]
 >
->I tasti di scelta rapida contrassegnati con &#39;&ast;&#39; funzionano sia con i tasti Ctrl che Comando su macOS.
+>I tasti di scelta rapida contrassegnati con &#39;&amp;ast;&#39; funzionano sia con i tasti Ctrl che Comando su macOS.
 
 >[!NOTE]
 >
@@ -58,13 +76,13 @@ Questo articolo elenca le scelte rapide da tastiera che possono essere utilizzat
 |---|---|---|
 | Apri il browser Proprietà per il componente selezionato in un tema | ALT+INVIO | ALT+INVIO |
 | Chiude il browser Proprietà per il componente selezionato in un tema | Ctrl+Alt+W | Comando+Alt+W |
-| Annulla ultima modifica | Ctrl+Z | CTRL+Z&ast; |
-| Ripristina ultima modifica | CTRL+Y | Ctrl+S&ast; |
-| Salva le modifiche nel browser Proprietà per il componente selezionato in un tema | Ctrl+S | CTRL+S&ast; |
+| Annulla ultima modifica | Ctrl+Z | CTRL+Z&amp;ast; |
+| Ripristina ultima modifica | CTRL+Y | Ctrl+S&amp;ast; |
+| Salva le modifiche nel browser Proprietà per il componente selezionato in un tema | Ctrl+S | CTRL+S&amp;ast; |
 
 >[!NOTE]
 >
->I tasti di scelta rapida contrassegnati con &#39;&ast;&#39; funzionano sia con i tasti Ctrl che Comando su macOS.
+>I tasti di scelta rapida contrassegnati con &#39;&amp;ast;&#39; funzionano sia con i tasti Ctrl che Comando su macOS.
 
 ## Browser contenuti  {#contentbrowser}
 

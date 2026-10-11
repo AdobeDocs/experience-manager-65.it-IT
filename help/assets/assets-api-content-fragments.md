@@ -6,13 +6,29 @@ role: Developer
 exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+  - id: c7140a77-10cf-4213-a7e9-f0d69c9fb56c
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+  - id: e5184d7e-fd36-480c-b5e5-d8161f2210ca
+    internal-label: Assets HTTP API
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2016'
 ht-degree: 23%
-
 ---
-
 # Supporto dei frammenti di contenuto nell’API HTTP di AEM Assets {#content-fragments-support-in-aem-assets-http-api}
 
 | Versione | Collegamento articolo |
@@ -67,9 +83,9 @@ L&#39;API REST di Assets offre l&#39;accesso in stile [REST](https://en.wikipedi
 Utilizza l&#39;endpoint `/api/assets` e richiede il percorso della risorsa per accedervi (senza `/content/dam` iniziale).
 
 * Ciò significa che per accedere alla risorsa in:
-   * `/content/dam/path/to/asset`
+  * `/content/dam/path/to/asset`
 * è necessario richiedere:
-   * `/api/assets/path/to/asset`
+  * `/api/assets/path/to/asset`
 
 Ad esempio, per accedere a `/content/dam/wknd/en/adventures/cycling-tuscany`, richiedi `/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
@@ -153,8 +169,8 @@ Se l’API REST di Assets viene utilizzata in un ambiente senza requisiti di aut
 >
 >Per ulteriori informazioni, consulta:
 >
->* [Spiegazione di CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=it)
->* [Video: sviluppo per CORS con AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=it)
+>* [Spiegazione di CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
+>* [Video: sviluppo per CORS con AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html)
 >
 
 Negli ambienti con requisiti di autenticazione specifici, si consiglia OAuth.
@@ -251,9 +267,9 @@ L’utilizzo può variare a seconda che utilizzi un ambiente di authoring o pubb
 * Si consiglia vivamente di associare la creazione a un&#39;istanza di authoring ([e attualmente non è possibile replicare un frammento da pubblicare utilizzando questa API](/help/assets/assets-api-content-fragments.md#limitations)).
 * La distribuzione è possibile da entrambi, in quanto AEM fornisce il contenuto richiesto solo in formato JSON.
 
-   * L’archiviazione e la consegna da un’istanza di authoring AEM dovrebbero essere sufficienti per le applicazioni di librerie multimediali dietro il firewall.
+  * L’archiviazione e la consegna da un’istanza di authoring AEM dovrebbero essere sufficienti per le applicazioni di librerie multimediali dietro il firewall.
 
-   * Per la distribuzione web live, si consiglia un’istanza di pubblicazione AEM.
+  * Per la distribuzione web live, si consiglia un’istanza di pubblicazione AEM.
 
 >[!CAUTION]
 >
@@ -319,18 +335,18 @@ I seguenti codici di stato possono essere visualizzati nelle circostanze pertine
 * **200** (OK)
 Restituito quando:
 
-   * richiesta di un frammento di contenuto tramite `GET`
-   * aggiornamento di un frammento di contenuto tramite `PUT` completato
+  * richiesta di un frammento di contenuto tramite `GET`
+  * aggiornamento di un frammento di contenuto tramite `PUT` completato
 
 * **201** (creato)
 Restituito quando:
 
-   * creazione di un frammento di contenuto tramite `POST` completata
+  * creazione di un frammento di contenuto tramite `POST` completata
 
 * **404** (non trovato)
 Restituito quando:
 
-   * il frammento di contenuto richiesto non esiste
+  * il frammento di contenuto richiesto non esiste
 
 * **500** (errore interno del server)
 
@@ -343,28 +359,28 @@ Restituito quando:
 
   Di seguito sono elencati gli scenari comuni in cui viene restituito questo stato di errore, insieme al messaggio di errore (monospazio) generato:
 
-   * La cartella principale non esiste (quando si crea un frammento di contenuto tramite `POST`)
-   * Non è stato fornito alcun modello per frammenti di contenuto (cq:model mancante), non può essere letto (a causa di un percorso non valido o di un problema di autorizzazione) o non è disponibile un modello per frammenti valido:
+  * La cartella principale non esiste (quando si crea un frammento di contenuto tramite `POST`)
+  * Non è stato fornito alcun modello per frammenti di contenuto (cq:model mancante), non può essere letto (a causa di un percorso non valido o di un problema di autorizzazione) o non è disponibile un modello per frammenti valido:
 
-      * `No content fragment model specified`
-      * `Cannot create a resource of given model '/foo/bar/qux'`
+    * `No content fragment model specified`
+    * `Cannot create a resource of given model '/foo/bar/qux'`
 
-   * Impossibile creare il frammento di contenuto (potrebbe trattarsi di un problema di autorizzazione):
+  * Impossibile creare il frammento di contenuto (potrebbe trattarsi di un problema di autorizzazione):
 
-      * `Could not create content fragment`
+    * `Could not create content fragment`
 
-   * Impossibile aggiornare il titolo e/o la descrizione:
+  * Impossibile aggiornare il titolo e/o la descrizione:
 
-      * `Could not set value on content fragment`
+    * `Could not set value on content fragment`
 
-   * Impossibile impostare i metadati:
+  * Impossibile impostare i metadati:
 
-      * `Could not set metadata on content fragment`
+    * `Could not set metadata on content fragment`
 
-   * Impossibile trovare o aggiornare l’elemento di contenuto
+  * Impossibile trovare o aggiornare l’elemento di contenuto
 
-      * `Could not update content element`
-      * `Could not update fragment data of element`
+    * `Could not update content element`
+    * `Could not update fragment data of element`
 
   I messaggi di errore dettagliati vengono in genere restituiti nel modo seguente:
 
@@ -388,11 +404,11 @@ Consulta qui per riferimenti API dettagliati:
 * [API Adobe Experience Manager Assets - Frammenti di contenuto](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
 * [API HTTP di Assets](/help/assets/mac-api-assets.md)
 
-   * [Funzioni disponibili](/help/assets/mac-api-assets.md#assets)
+  * [Funzioni disponibili](/help/assets/mac-api-assets.md#assets)
 
 ## Risorse aggiuntive {#additional-resources}
 
 Per ulteriori informazioni, consulta:
 
 * [Documentazione API HTTP di Assets](/help/assets/mac-api-assets.md)
-* [Sessione AEM Gem: OAuth](https://helpx.adobe.com/it/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
+* [Sessione AEM Gem: OAuth](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)

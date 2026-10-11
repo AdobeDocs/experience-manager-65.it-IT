@@ -5,13 +5,25 @@ feature: Content Fragments
 role: User
 exl-id: 0ee883c5-0cea-46b7-a759-600b8ea3bc3e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: e71050fe23cc4c436859776918637158098864ef
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2373'
 ht-degree: 59%
-
 ---
-
 # Utilizzo di frammenti di contenuto {#working-with-content-fragments}
 
 Con Adobe Experience Manager (AEM), i frammenti di contenuto ti consentono di progettare, creare, curare e [pubblicare contenuti indipendenti dalla pagina](/help/sites-authoring/content-fragments.md). Consentono di preparare contenuti pronti per l&#39;uso in più posizioni e su più canali, ideali per la distribuzione headless.
@@ -22,15 +34,15 @@ I frammenti di contenuto contengono contenuti strutturati:
 
 * La struttura può essere di tre tipi:
 
-   * Base
-      * Ad esempio, un singolo campo di testo su più righe.
-      * Utilizzato per preparare contenuti semplici da utilizzare nell’authoring delle pagine.
-   * Complessa
-      * Combinazione di molti campi di tipi di dati diversi, tra cui testo, numeri, dati booleani, dati e ora.
-      * Utilizzato per preparare contenuti più strutturati per l’authoring delle pagine o per la distribuzione all’applicazione.
-   * Nidificata
-      * I tipi di dati di riferimento disponibili consentono di nidificare il contenuto.
-      * Questa struttura è spesso utilizzata per la consegna a un’applicazione.
+  * Base
+    * Ad esempio, un singolo campo di testo su più righe.
+    * Utilizzato per preparare contenuti semplici da utilizzare nell’authoring delle pagine.
+  * Complessa
+    * Combinazione di molti campi di tipi di dati diversi, tra cui testo, numeri, dati booleani, dati e ora.
+    * Utilizzato per preparare contenuti più strutturati per l’authoring delle pagine o per la distribuzione all’applicazione.
+  * Nidificata
+    * I tipi di dati di riferimento disponibili consentono di nidificare il contenuto.
+    * Questa struttura è spesso utilizzata per la consegna a un’applicazione.
 
 I frammenti di contenuto possono essere consegnati anche in formato JSON, utilizzando le funzionalità di esportazione Sling Model (JSON) dei componenti core di AEM. Questo tipo di consegna:
 
@@ -130,12 +142,12 @@ I frammenti di contenuto sono:
 
 * Memorizzati come **Risorse**:
 
-   * I frammenti di contenuto (e le relative varianti) possono essere creati e gestiti dalla console **Assets**.
-   * Vengono creati e modificati nell’Editor frammenti di contenuto.
+  * I frammenti di contenuto (e le relative varianti) possono essere creati e gestiti dalla console **Assets**.
+  * Vengono creati e modificati nell’Editor frammenti di contenuto.
 
-* Utilizzato nell&#39;editor di pagine [&#x200B; con il componente Frammento di contenuto](/help/sites-authoring/content-fragments.md) (componente di riferimento):
+* Utilizzato nell&#39;editor di pagine [ con il componente Frammento di contenuto](/help/sites-authoring/content-fragments.md) (componente di riferimento):
 
-   * Il componente **Frammento di contenuto** è disponibile per gli autori delle pagine. Consente loro di fare riferimento e distribuire il frammento di contenuto richiesto in formato HTML o JSON.
+  * Il componente **Frammento di contenuto** è disponibile per gli autori delle pagine. Consente loro di fare riferimento e distribuire il frammento di contenuto richiesto in formato HTML o JSON.
 
 * Accessibili tramite l’[API GraphQL di AEM](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md).
 
@@ -155,9 +167,9 @@ Assets può essere utilizzato con un frammento di contenuto in diversi modi, cia
 
 * Tramite **Inserisci risorsa** per inserire una risorsa in un frammento (frammenti con elementi multimediali diversi)
 
-   * Fa parte del frammento (vedi [Parti costitutive di un frammento di contenuto](#constituent-parts-of-a-content-fragment)).
-   * Viene definita la posizione della risorsa.
-   * Per ulteriori informazioni consulta [Inserimento di risorse nel frammento](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) nell’editor di frammenti.
+  * Fa parte del frammento (vedi [Parti costitutive di un frammento di contenuto](#constituent-parts-of-a-content-fragment)).
+  * Viene definita la posizione della risorsa.
+  * Per ulteriori informazioni consulta [Inserimento di risorse nel frammento](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) nell’editor di frammenti.
 
   >[!NOTE]
   >
@@ -165,16 +177,16 @@ Assets può essere utilizzato con un frammento di contenuto in diversi modi, cia
 
 * Come **Contenuto associato**
 
-   * È collegato a un frammento, ma non è una parte fissa del frammento (vedi [Parti costitutive di un frammento di contenuto](#constituent-parts-of-a-content-fragment)).
-   * Offre una certa flessibilità di posizionamento.
-   * È facilmente disponibile per l’uso (come contenuto intermedio) quando si utilizza il frammento su una pagina.
-   * Per ulteriori informazioni vedi [Contenuto associato](/help/assets/content-fragments/content-fragments-assoc-content.md).
+  * È collegato a un frammento, ma non è una parte fissa del frammento (vedi [Parti costitutive di un frammento di contenuto](#constituent-parts-of-a-content-fragment)).
+  * Offre una certa flessibilità di posizionamento.
+  * È facilmente disponibile per l’uso (come contenuto intermedio) quando si utilizza il frammento su una pagina.
+  * Per ulteriori informazioni vedi [Contenuto associato](/help/assets/content-fragments/content-fragments-assoc-content.md).
 
 * Risorse disponibili nel **browser Risorse** dell’editor pagina
 
-   * Offrono massima flessibilità nella selezione di una risorsa.
-   * Offre una certa flessibilità di posizionamento.
-   * Non supportano il concetto di approvazione per un frammento specifico.
+  * Offrono massima flessibilità nella selezione di una risorsa.
+  * Offre una certa flessibilità di posizionamento.
+  * Non supportano il concetto di approvazione per un frammento specifico.
 
 <!--
   * See [Assets Browser](/help/sites-authoring/environment-tools.md#assets-browser) for more information.
@@ -186,55 +198,55 @@ Le risorse dei frammenti di contenuto sono composte dalle seguenti parti (dirett
 
 * **Elementi del frammento**
 
-   * Gli elementi sono correlati ai campi di dati che contengono il contenuto.
-   * Per creare il frammento di contenuto, puoi utilizzare un modello di contenuto. Gli elementi (campi) specificati nel modello definiscono la struttura del frammento. Questi elementi (campi) possono essere di vari tipi di dati.
+  * Gli elementi sono correlati ai campi di dati che contengono il contenuto.
+  * Per creare il frammento di contenuto, puoi utilizzare un modello di contenuto. Gli elementi (campi) specificati nel modello definiscono la struttura del frammento. Questi elementi (campi) possono essere di vari tipi di dati.
 
 * **Paragrafi del frammento**
 
-   * Blocchi di testo, spesso con più righe, delimitati come singole entità.
+  * Blocchi di testo, spesso con più righe, delimitati come singole entità.
 
-   * Nelle modalità [Testo formattato](/help/assets/content-fragments/content-fragments-variations.md#rich-text) e [Markdown](/help/assets/content-fragments/content-fragments-variations.md#markdown), un paragrafo può essere formattato come intestazione, in tal caso appartiene a un’unica unità insieme al paragrafo seguente.
+  * Nelle modalità [Testo formattato](/help/assets/content-fragments/content-fragments-variations.md#rich-text) e [Markdown](/help/assets/content-fragments/content-fragments-variations.md#markdown), un paragrafo può essere formattato come intestazione, in tal caso appartiene a un’unica unità insieme al paragrafo seguente.
 
-   * Consentono di controllare i contenuti durante l’authoring delle pagine.
+  * Consentono di controllare i contenuti durante l’authoring delle pagine.
 
 * **Risorse inserite in un frammento (frammenti con elementi multimediali diversi)**
 
-   * Risorse (immagini) inserite nel frammento effettivo e utilizzate come contenuto interno di un frammento.
-   * Sono incorporate nel sistema paragrafo del frammento.
-   * Possono essere formattate quando il [frammento viene utilizzato o inserito come riferimento in una pagina](/help/sites-authoring/content-fragments.md).
-   * Possono solo essere aggiunte, eliminate o spostate all’interno di un frammento utilizzando l’editor di frammenti. Queste azioni non possono essere eseguite nell’editor pagina.
-   * Possono essere aggiunte, eliminate o spostate all&#39;interno di un frammento solo utilizzando il formato [Rich Text nell&#39;editor frammenti](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
-   * Possono essere aggiunte solo a elementi di testo su più righe (qualsiasi tipo di frammento).
-   * Sono associate al testo che precede (paragrafo).
+  * Risorse (immagini) inserite nel frammento effettivo e utilizzate come contenuto interno di un frammento.
+  * Sono incorporate nel sistema paragrafo del frammento.
+  * Possono essere formattate quando il [frammento viene utilizzato o inserito come riferimento in una pagina](/help/sites-authoring/content-fragments.md).
+  * Possono solo essere aggiunte, eliminate o spostate all’interno di un frammento utilizzando l’editor di frammenti. Queste azioni non possono essere eseguite nell’editor pagina.
+  * Possono essere aggiunte, eliminate o spostate all&#39;interno di un frammento solo utilizzando il formato [Rich Text nell&#39;editor frammenti](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
+  * Possono essere aggiunte solo a elementi di testo su più righe (qualsiasi tipo di frammento).
+  * Sono associate al testo che precede (paragrafo).
 
-     >[!CAUTION]
-     >
-     >Le risorse possono essere rimosse (inavvertitamente) da un frammento se si passa al formato Testo normale.
+    >[!CAUTION]
+    >
+    >Le risorse possono essere rimosse (inavvertitamente) da un frammento se si passa al formato Testo normale.
 
-     >[!NOTE]
-     >
-     >È inoltre possibile aggiungere le risorse come [contenuto aggiuntivo (intermedio)](/help/sites-authoring/content-fragments.md#using-associated-content) quando si utilizza un frammento su una pagina, utilizzando Contenuto associato o risorse dal Browser risorse.
+    >[!NOTE]
+    >
+    >È inoltre possibile aggiungere le risorse come [contenuto aggiuntivo (intermedio)](/help/sites-authoring/content-fragments.md#using-associated-content) quando si utilizza un frammento su una pagina, utilizzando Contenuto associato o risorse dal Browser risorse.
 
 * **Contenuto associato**
 
-   * Contenuti esterni a un frammento, ma con rilevanza editoriale per esso. In genere si tratta di immagini, video o altri frammenti.
-   * Le singole risorse all’interno di una raccolta sono disponibili per essere utilizzate con il frammento nell’editor pagina quando questo viene aggiunto a una pagina. Sono quindi elementi opzionali, a seconda dei requisiti del canale specifico.
-   * Le risorse sono [associate a frammenti tramite raccolte](/help/assets/content-fragments/content-fragments-assoc-content.md); le raccolte associate consentono all’autore di decidere quali risorse utilizzare durante l’authoring della pagina.
+  * Contenuti esterni a un frammento, ma con rilevanza editoriale per esso. In genere si tratta di immagini, video o altri frammenti.
+  * Le singole risorse all’interno di una raccolta sono disponibili per essere utilizzate con il frammento nell’editor pagina quando questo viene aggiunto a una pagina. Sono quindi elementi opzionali, a seconda dei requisiti del canale specifico.
+  * Le risorse sono [associate a frammenti tramite raccolte](/help/assets/content-fragments/content-fragments-assoc-content.md); le raccolte associate consentono all’autore di decidere quali risorse utilizzare durante l’authoring della pagina.
 
-      * Le raccolte possono essere associate ai frammenti come contenuto predefinito, oppure possono essere associate dagli autori durante la creazione dei frammenti.
-      * Le [raccolte di risorse (DAM)](/help/assets/manage-collections.md) sono la base del contenuto associato dei frammenti.
-   * Volendo, puoi anche aggiungere il frammento stesso a una raccolta per facilitare il tracciamento.
+    * Le raccolte possono essere associate ai frammenti come contenuto predefinito, oppure possono essere associate dagli autori durante la creazione dei frammenti.
+    * Le [raccolte di risorse (DAM)](/help/assets/manage-collections.md) sono la base del contenuto associato dei frammenti.
+  * Volendo, puoi anche aggiungere il frammento stesso a una raccolta per facilitare il tracciamento.
 
 * **Metadati del frammento**
 
-   * Utilizzano gli [schemi di metadati delle risorse](/help/assets/metadata-schemas.md).
-   * È possibile creare i tag quando:
+  * Utilizzano gli [schemi di metadati delle risorse](/help/assets/metadata-schemas.md).
+  * È possibile creare i tag quando:
 
-      * si crea e si effettua l’authoring del frammento;
-      * oppure in un secondo tempo:
+    * si crea e si effettua l’authoring del frammento;
+    * oppure in un secondo tempo:
 
-         * visualizzando e modificando le **Proprietà** del frammento dalla console;
-         * modificando i **Metadati** nell’editor di frammenti
+      * visualizzando e modificando le **Proprietà** del frammento dalla console;
+      * modificando i **Metadati** nell’editor di frammenti
 
   >[!CAUTION]
   >
@@ -242,23 +254,23 @@ Le risorse dei frammenti di contenuto sono composte dalle seguenti parti (dirett
 
 * **Principale**
 
-   * Parte del frammento
+  * Parte del frammento
 
-      * Ogni frammento di contenuto dispone di un’istanza Principale.
-      * L’elemento Principale non può essere eliminato.
+    * Ogni frammento di contenuto dispone di un’istanza Principale.
+    * L’elemento Principale non può essere eliminato.
 
-   * L’elemento Principale è accessibile nella sezione **[Varianti](/help/assets/content-fragments/content-fragments-variations.md)** dell’editor di frammenti.
-   * l’elemento Principale non è una variante in sé, ma è la base di tutte le varianti.
+  * L’elemento Principale è accessibile nella sezione **[Varianti](/help/assets/content-fragments/content-fragments-variations.md)** dell’editor di frammenti.
+  * l’elemento Principale non è una variante in sé, ma è la base di tutte le varianti.
 
 * **Varianti**
 
-   * Sono rappresentazioni di testo di frammenti specifiche a scopo editoriale; possono essere relative a un canale ma non sono obbligatorie; possono anche essere utilizzate per modifiche locali ad hoc.
-   * Sono create come copie di **Master**, ma possono essere modificate in base alle esigenze; vi è una sovrapposizione di contenuto tra le varianti stesse.
-   * Possono essere definite durante l’authoring del frammento.
-   * Sono memorizzate nel frammento, per evitare la dispersione delle copie del contenuto.
-   * Le varianti possono essere [sincronizzate](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) con l’elemento principale se il suo contenuto viene aggiornato.
-   * Il testo può essere [riepilogato](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text) per ridurlo rapidamente a una lunghezza predefinita.
-   * Sono disponibili nella scheda [Varianti](/help/assets/content-fragments/content-fragments-variations.md) dell’editor di frammenti.
+  * Sono rappresentazioni di testo di frammenti specifiche a scopo editoriale; possono essere relative a un canale ma non sono obbligatorie; possono anche essere utilizzate per modifiche locali ad hoc.
+  * Sono create come copie di **Master**, ma possono essere modificate in base alle esigenze; vi è una sovrapposizione di contenuto tra le varianti stesse.
+  * Possono essere definite durante l’authoring del frammento.
+  * Sono memorizzate nel frammento, per evitare la dispersione delle copie del contenuto.
+  * Le varianti possono essere [sincronizzate](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) con l’elemento principale se il suo contenuto viene aggiornato.
+  * Il testo può essere [riepilogato](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text) per ridurlo rapidamente a una lunghezza predefinita.
+  * Sono disponibili nella scheda [Varianti](/help/assets/content-fragments/content-fragments-variations.md) dell’editor di frammenti.
 
 ### Contenuto intermedio nell’authoring di pagine con frammenti di contenuto {#in-between-content-when-page-authoring-with-content-fragments}
 
@@ -280,24 +292,24 @@ Per creare frammenti di contenuto, considera quanto segue:
 
 * **Modello di contenuto**
 
-   * Viene [abilitato tramite il Browser configurazioni](/help/assets/content-fragments/content-fragments-configuration-browser.md).
-   * Viene [creato utilizzando gli strumenti](/help/assets/content-fragments/content-fragments-models.md).
-   * È necessario per [creare un frammento](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments).
-   * Definisce la struttura di un frammento (titolo, elementi di contenuto, definizioni tag).
-   * La definizione di un modello di contenuto richiede un titolo e un elemento dati; tutto il resto è facoltativo.
-   * Il modello può definire eventuale contenuto predefinito.
-   * Durante l’authoring del contenuto di un frammento, gli autori non possono modificare la struttura definita.
-   * Le modifiche apportate a un modello dopo la creazione dei frammenti di contenuto dipendenti possono influire su tali frammenti di contenuto.
+  * Viene [abilitato tramite il Browser configurazioni](/help/assets/content-fragments/content-fragments-configuration-browser.md).
+  * Viene [creato utilizzando gli strumenti](/help/assets/content-fragments/content-fragments-models.md).
+  * È necessario per [creare un frammento](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments).
+  * Definisce la struttura di un frammento (titolo, elementi di contenuto, definizioni tag).
+  * La definizione di un modello di contenuto richiede un titolo e un elemento dati; tutto il resto è facoltativo.
+  * Il modello può definire eventuale contenuto predefinito.
+  * Durante l’authoring del contenuto di un frammento, gli autori non possono modificare la struttura definita.
+  * Le modifiche apportate a un modello dopo la creazione dei frammenti di contenuto dipendenti possono influire su tali frammenti di contenuto.
 
 Per utilizzare i frammenti di contenuto per l’authoring delle pagine, è inoltre necessario:
 
 * **Componente Frammento di contenuto**
 
-   * Essenziale per la distribuzione del frammento in formato HTML e/o JSON.
-   * Obbligatorio per [fare riferimento al frammento in una pagina](/help/sites-authoring/content-fragments.md).
-   * Responsabile del layout e della distribuzione di un frammento, ovvero i canali.
-   * I frammenti devono disporre di uno o più componenti dedicati per definire il layout e fornire alcuni o tutti gli elementi/varianti e i contenuti associati.
-   * Quando si trascina un frammento su una pagina durante l’authoring, il componente richiesto viene associato automaticamente.
+  * Essenziale per la distribuzione del frammento in formato HTML e/o JSON.
+  * Obbligatorio per [fare riferimento al frammento in una pagina](/help/sites-authoring/content-fragments.md).
+  * Responsabile del layout e della distribuzione di un frammento, ovvero i canali.
+  * I frammenti devono disporre di uno o più componenti dedicati per definire il layout e fornire alcuni o tutti gli elementi/varianti e i contenuti associati.
+  * Quando si trascina un frammento su una pagina durante l’authoring, il componente richiesto viene associato automaticamente.
 
 ## Esempio di utilizzo {#example-usage}
 

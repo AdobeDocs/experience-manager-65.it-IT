@@ -1,5 +1,5 @@
 ---
-title: Integrazione di Form Bridge con portale personalizzato per HTML5 Forms
+title: Integrazione di Form Bridge con il portale personalizzato per i moduli HTML5
 description: È possibile utilizzare l’API FormBridge per ottenere o impostare i valori dei campi modulo dalla pagina HTML e inviare il modulo.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,16 +9,31 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 89118bb8-6ec8-4048-b3d6-5c73a9eea33e
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 0%
-
+source-wordcount: '394'
+ht-degree: 4%
 ---
+# Integrazione di Form Bridge con il portale personalizzato per i moduli HTML5{#integrating-form-bridge-with-custom-portal-for-html-forms}
 
-# Integrazione di Form Bridge con portale personalizzato per HTML5 Forms{#integrating-form-bridge-with-custom-portal-for-html-forms}
-
-FormBridge è un’API bridge di HTML5 forms che consente di interagire con un modulo. Per il riferimento all&#39;API FormBridge, vedere [Riferimento all&#39;API FormBridge](/help/forms/using/form-bridge-apis.md).
+FormBridge è un&#39;API bridge per HTML5 Forms che consente di interagire con un modulo. Per il riferimento all&#39;API FormBridge, vedere [Riferimento all&#39;API FormBridge](/help/forms/using/form-bridge-apis.md).
 
 È possibile utilizzare l’API FormBridge per ottenere o impostare i valori dei campi modulo dalla pagina HTML e inviare il modulo. Ad esempio, puoi utilizzare l’API per creare un’esperienza simile a una procedura guidata.
 
@@ -36,7 +51,7 @@ Un’applicazione HTML esistente può utilizzare l’API FormBridge per interagi
 
 1. **Modifica il profilo HTML**
 
-   Include il runtime XFA, la libreria locale XFA e lo snippet di HTML del modulo XFA nel modulo di rendering dei profili, progetta la pagina web e inserisce il modulo all’interno della pagina web.
+   Includi il runtime XFA, la libreria locale XFA e lo snippet HTML del modulo XFA nel modulo di rendering dei profili, progetta la pagina web e inserisci il modulo all’interno della pagina web.
 
    Ad esempio, utilizza il seguente frammento di codice, per creare un’app con due campi di input e un modulo per dimostrare l’interazione tra il modulo e un’app esterna.
 

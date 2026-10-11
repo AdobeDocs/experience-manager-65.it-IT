@@ -9,13 +9,27 @@ role: Admin,User
 exl-id: 22926757-9cdb-4f8a-9bd9-16ddbc3f954a
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '912'
+source-wordcount: '921'
 ht-degree: 0%
-
 ---
-
 # Ottimizzazione delle prestazioni del server AEM Forms{#performance-tuning-of-aem-forms-server}
 
 Questo articolo illustra strategie e best practice da implementare per ridurre i colli di bottiglia e ottimizzare le prestazioni dell’implementazione di AEM Forms.
@@ -146,26 +160,26 @@ Per migliorare le prestazioni, è possibile indirizzare il software antivirus pe
 
 * Directory di installazione di AEM. Se non è possibile escludere la directory completa, escludere quanto segue:
 
-   * [Directory di installazione di AEM]\crx-repository\temp
-   * [Directory di installazione di AEM]\crx-repository\repository
-   * [Directory di installazione di AEM]\crx-repository\launchpad
+  * [Directory di installazione di AEM]\crx-repository\temp
+  * [Directory di installazione di AEM]\crx-repository\repository
+  * [Directory di installazione di AEM]\crx-repository\launchpad
 
 * Directory temporanea del server applicazioni. La posizione predefinita è:
 
-   * (JBoss®) [Directory di installazione di AEM]\jboss\standalone\tmp
-   * (WebLogic) \Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
-   * (WebSphere®) \Programma Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
+  * (JBoss®) [Directory di installazione di AEM]\jboss\standalone\tmp
+  * (WebLogic) \Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
+  * (WebSphere®) \Programma Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
 
 * **(solo AEM Forms su JEE)** directory Global Document Storage (GDS). La posizione predefinita è:
 
-   * (JBoss®) [radice server applicazioni]/server/&#39;server&#39;/svcnative/DocumentStorage
-   * (WebLogic) [appserverdomain]/&#39;server&#39;/adobe/LiveCycleServer/DocumentStorage
-   * (WebSphere®) [radice del server applicazioni]/installApps/adobe/&#39;server&#39;/DocumentStorage
+  * (JBoss®) [radice server applicazioni]/server/&#39;server&#39;/svcnative/DocumentStorage
+  * (WebLogic) [appserverdomain]/&#39;server&#39;/adobe/LiveCycleServer/DocumentStorage
+  * (WebSphere®) [radice del server applicazioni]/installApps/adobe/&#39;server&#39;/DocumentStorage
 
 * **(solo AEM Forms su JEE)** registri di AEM Forms Server e directory temporanea. La posizione predefinita è:
 
-   * Registri del server - [Directory di installazione di AEM Forms]\Adobe\AEM forms\[app-server]\server\all\logs
-   * Directory temporanea - [Directory di installazione di AEM Forms]\temp
+  * Registri del server - [Directory di installazione di AEM Forms]\Adobe\AEM forms\[app-server]\server\all\logs
+  * Directory temporanea - [Directory di installazione di AEM Forms]\temp
 
 >[!NOTE]
 >

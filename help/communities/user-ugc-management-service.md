@@ -10,13 +10,20 @@ role: Admin
 exl-id: 526ef0fa-3f20-4de4-8bc5-f435c60df0d0
 solution: Experience Manager
 feature: Communities
-source-git-commit: f4fc3b788d4128135ff77ebb87f1369059b1d2ec
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 1%
-
+source-wordcount: '628'
+ht-degree: 3%
 ---
-
 # Servizio di gestione utenti e contenuti generati dagli utenti in AEM Communities {#user-and-ugc-management-service-in-aem-communities}
 
 >[!IMPORTANT]
@@ -29,7 +36,7 @@ Per ulteriori informazioni, visita la pagina [RGPD all&#39;Adobe Privacy Center.
 
 >[!NOTE]
 >
->Se hai configurato [Adobe Analytics nel sito AEM Communities](/help/communities/analytics.md), i dati utente acquisiti vengono inviati ai server Adobe Analytics. Adobe Analytics fornisce API che ti consentono di accedere, esportare ed eliminare dati utente in conformità con il RGPD. Per ulteriori informazioni, vedere [Invia richieste di accesso ed eliminazione](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html?lang=it).
+>Se hai configurato [Adobe Analytics nel sito AEM Communities](/help/communities/analytics.md), i dati utente acquisiti vengono inviati ai server Adobe Analytics. Adobe Analytics fornisce API che ti consentono di accedere, esportare ed eliminare dati utente in conformità con il RGPD. Per ulteriori informazioni, vedere [Invia richieste di accesso ed eliminazione](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html).
 
 Per utilizzare queste API, è necessario abilitare l&#39;endpoint `/services/social/ugcmanagement` attivando il servizio UserUgcManagement. Per attivare questo servizio, installa il [servlet di esempio](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet) disponibile in [GitHub.com](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet). Quindi, premi l’endpoint sull’istanza di pubblicazione del sito community con i parametri appropriati utilizzando una richiesta http simile alla seguente:
 

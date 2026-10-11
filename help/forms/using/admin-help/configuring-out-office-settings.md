@@ -9,13 +9,27 @@ exl-id: 1c8ad09b-d44a-4d90-86d5-d4c66cf5c57c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 100%
-
 ---
-
 # Configurazione delle impostazioni Fuori sede {#configuring-out-of-office-settings}
 
 La funzione Fuori sede consente agli utenti o agli amministratori di specificare quando un utente sarà fuori sede e non potrà completare le attività assegnate da AEM Forms. Quando un utente è impostato su Fuori sede, le relative attività vengono assegnate a uno o più utenti designati. Gli utenti possono modificare le impostazioni Fuori sede nell’area di lavoro, oppure gli amministratori possono modificare le impostazioni per conto di un utente in Forms Workflow.
@@ -65,11 +79,11 @@ Quando un utente è fuori sede, puoi assegnare uno o più utenti per eseguire nu
 * Assegna un utente predefinito che riceverà la maggior parte delle attività dell’utente, ma specifica che le attività di alcuni processi vengono riassegnate ad altri utenti o rimangono assegnate all’utente fuori sede.
 * Non assegnare un utente predefinito, ma assegna determinate attività da determinati processi a utenti specifici.
 
-   1. Trova l’utente come descritto in [Visualizzare le informazioni Fuori sede dell’utente](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
-   1. Fai clic sul nome dell’utente da modificare.
-   1. Nell’elenco Utente predefinito per attività fuori sede, seleziona un utente dall’elenco. Se non desideri designare un utente predefinito per la ricezione di elementi riassegnati, seleziona Non assegnare.
+  1. Trova l’utente come descritto in [Visualizzare le informazioni Fuori sede dell’utente](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
+  1. Fai clic sul nome dell’utente da modificare.
+  1. Nell’elenco Utente predefinito per attività fuori sede, seleziona un utente dall’elenco. Se non desideri designare un utente predefinito per la ricezione di elementi riassegnati, seleziona Non assegnare.
 
-      Se il nome utente appropriato non viene visualizzato nell’elenco, fai clic su Trova utente e utilizza la finestra di dialogo Trova utente per ricercare l’utente. Seleziona l’utente appropriato dall’elenco e fai clic su Seleziona utente. Puoi inoltre fare clic su Visualizza pianificazione utente nella finestra di dialogo Trova utente per visualizzare la pianificazione fuori sede dell’utente selezionato.
+     Se il nome utente appropriato non viene visualizzato nell’elenco, fai clic su Trova utente e utilizza la finestra di dialogo Trova utente per ricercare l’utente. Seleziona l’utente appropriato dall’elenco e fai clic su Seleziona utente. Puoi inoltre fare clic su Visualizza pianificazione utente nella finestra di dialogo Trova utente per visualizzare la pianificazione fuori sede dell’utente selezionato.
 
-   1. Se esistono processi che non devono essere inviati all’utente predefinito, fai clic su Aggiungi un’eccezione, quindi seleziona il processo e seleziona un altro utente dall’elenco. Puoi inoltre selezionare Non assegnare per fare in modo che l’attività rimanga assegnata all’utente fuori sede.
-   1. Fai clic su Salva.
+  1. Se esistono processi che non devono essere inviati all’utente predefinito, fai clic su Aggiungi un’eccezione, quindi seleziona il processo e seleziona un altro utente dall’elenco. Puoi inoltre selezionare Non assegnare per fare in modo che l’attività rimanga assegnata all’utente fuori sede.
+  1. Fai clic su Salva.

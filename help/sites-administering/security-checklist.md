@@ -10,13 +10,27 @@ exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin,Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3025'
+source-wordcount: '3049'
 ht-degree: 3%
-
 ---
-
 # Elenco di controllo della sicurezza {#security-checklist}
 
 Questa sezione descrive vari passaggi da seguire per garantire la sicurezza dell’installazione di AEM al momento dell’implementazione. L’elenco di controllo deve essere applicato dall’alto verso il basso.
@@ -110,11 +124,11 @@ Adobe consiglia di definire pagine personalizzate del gestore degli errori, in p
 
 >[!NOTE]
 >
->Per ulteriori dettagli, vedere [Come creare script personalizzati o gestori di errori](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html?lang=it).
+>Per ulteriori dettagli, vedere [Come creare script personalizzati o gestori di errori](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html).
 
 ### Completa elenco di controllo della sicurezza di Dispatcher {#complete-dispatcher-security-checklist}
 
-AEM Dispatcher è un componente fondamentale dell&#39;infrastruttura aziendale. Adobe consiglia di completare l&#39;[elenco di controllo della sicurezza di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=it).
+AEM Dispatcher è un componente fondamentale dell&#39;infrastruttura aziendale. Adobe consiglia di completare l&#39;[elenco di controllo della sicurezza di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html).
 
 >[!CAUTION]
 >
@@ -225,27 +239,27 @@ Alcune impostazioni OSGI sono impostate per impostazione predefinita per consent
 
 * [Gestione libreria HTML Adobe Granite](/help/sites-deploying/osgi-configuration-settings.md#day-cq-html-library-manager):
 
-   * abilita **Minify** (per rimuovere i caratteri CRLF e gli spazi vuoti).
-   * abilita **Gzip** (per consentire l&#39;accesso e la visualizzazione dei file con una richiesta).
-   * disabilita **Debug**
-   * disabilita **Intervallo**
+  * abilita **Minify** (per rimuovere i caratteri CRLF e gli spazi vuoti).
+  * abilita **Gzip** (per consentire l&#39;accesso e la visualizzazione dei file con una richiesta).
+  * disabilita **Debug**
+  * disabilita **Intervallo**
 
 * [Filtro di debug WCM Day CQ](/help/sites-deploying/osgi-configuration-settings.md#day-cq-wcm-debug-filter):
 
-   * deseleziona **Abilita**
+  * deseleziona **Abilita**
 
 * [Filtro WCM Day CQ](/help/sites-deploying/osgi-configuration-settings.md):
 
-   * solo per pubblicazione, impostare **Modalità WCM** su &quot;disabilitato&quot;
+  * solo per pubblicazione, impostare **Modalità WCM** su &quot;disabilitato&quot;
 
 * [Gestore JavaScript Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-javascript-handler):
 
-   * disabilita **Genera informazioni debug**
+  * disabilita **Genera informazioni debug**
 
 * [Gestore script JSP Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-jsp-script-handler):
 
-   * disabilita **Genera informazioni debug**
-   * disabilita **Contenuto mappato**
+  * disabilita **Genera informazioni debug**
+  * disabilita **Contenuto mappato**
 
 Consulta [Impostazioni configurazione OSGi](/help/sites-deploying/osgi-configuration-settings.md).
 
@@ -266,9 +280,9 @@ Un attacco Denial of Service (DoS) è un tentativo di rendere la risorsa di un c
 
   Ad esempio, `.../en.html` può anche essere richiesto come:
 
-   * `.../en.ExtensionDosAttack`
-   * `.../en.SelectorDosAttack.html`
-   * `.../en.html/SuffixDosAttack`
+  * `.../en.ExtensionDosAttack`
+  * `.../en.SelectorDosAttack.html`
+  * `.../en.html/SuffixDosAttack`
 
   Tutte le varianti valide (ad esempio, restituiscono una risposta `200` e sono configurate per essere memorizzate nella cache) vengono memorizzate nella cache da Dispatcher, portando a un file system completo e a nessun servizio per ulteriori richieste.
 
@@ -324,7 +338,7 @@ Per evitare l&#39;uso improprio del DoS, è possibile effettuare le seguenti ope
 >
 >Questa mitigazione deve essere eseguita solo sugli ambienti AEM che non utilizzano Forms.
 
-Poiché AEM non fornisce indici predefiniti per `FormChooserServlet`, l&#39;utilizzo di selettori di moduli nelle query può attivare un costoso attraversamento dell&#39;archivio, in genere bloccando l&#39;istanza di AEM. I selettori di moduli possono essere rilevati dalla presenza della stringa **&ast;.form.&ast;** nelle query.
+Poiché AEM non fornisce indici predefiniti per `FormChooserServlet`, l&#39;utilizzo di selettori di moduli nelle query può attivare un costoso attraversamento dell&#39;archivio, in genere bloccando l&#39;istanza di AEM. I selettori di moduli possono essere rilevati dalla presenza della stringa **&amp;ast;.form.&amp;ast;** nelle query.
 
 Per attenuare questo problema, puoi effettuare le seguenti operazioni:
 

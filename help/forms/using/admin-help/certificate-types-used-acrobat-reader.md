@@ -9,13 +9,27 @@ exl-id: 800bffd5-0cdc-4251-bba4-e350f226f019
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
-workflow-type: ht
-source-wordcount: '944'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '947'
+ht-degree: 96%
 ---
-
 # Tipi di certificati utilizzati dalle estensioni di Adobe Reader DC {#certificate-types-used-by-acrobat-reader-dc-extensions}
 
 Il Visualizzatore di certificati fornisce le seguenti informazioni sul certificato:
@@ -37,7 +51,7 @@ La stringa contiene i seguenti elementi:
 
 **Tipo di distribuzione:** indica l’uso previsto del certificato, ad esempio Produzione. Il valore può essere Valutazione o Produzione. Per un elenco dei tipi di distribuzione associati a ciascun tipo di certificato, consulta la colonna Tipo di distribuzione nella tabella della sezione Profili di certificato.
 
-**Versione diritti di utilizzo:** descrive la versione dell’algoritmo dei diritti di utilizzo per cui è possibile utilizzare il certificato, ad esempio V6.1. Questa versione non indica la versione di Acrobat o le estensioni di Adobe Reader DC.
+**Versione diritti di utilizzo:** Viene descritta la versione dell&#39;algoritmo dei diritti di utilizzo per cui è possibile utilizzare il certificato, ad esempio V6.1. Questa versione non indica la versione delle estensioni Acrobat o Acrobat Reader DC.
 
 **Codice profilo:** il codice profilo è una descrizione abbreviata delle proprietà complete del certificato, ad esempio P8. Per un elenco dei codici di profilo associati a ciascun tipo di file, consultare la colonna Codice profilo nella tabella della sezione Profili certificato.
 

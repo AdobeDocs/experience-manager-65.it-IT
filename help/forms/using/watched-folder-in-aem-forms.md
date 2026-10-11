@@ -9,13 +9,29 @@ exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '7066'
+source-wordcount: '7272'
 ht-degree: 19%
-
 ---
-
 # Cartella controllata in AEM Forms{#watched-folder-in-aem-forms}
 
 Un amministratore può configurare una cartella di rete, nota come cartella controllata, in modo che, quando un utente inserisce un file (ad esempio un file PDF) nella cartella controllata, venga avviato un flusso di lavoro, un servizio o un’operazione di script preconfigurati per elaborare il file aggiunto. Dopo aver eseguito l&#39;operazione specificata, il servizio salva il file dei risultati in una cartella di output specificata. Per ulteriori informazioni su workflow, servizio e script, vedere [Vari metodi per l&#39;elaborazione dei file](#variousmethodsforprocessingfiles).
@@ -66,19 +82,19 @@ Puoi configurare le seguenti proprietà per una cartella controllata.
 * **inputProcessorType (String)**: tipo di processo da avviare. Puoi specificare flusso di lavoro, script o servizio. È una proprietà obbligatoria.
 * **inputProcessorId (stringa)**: il comportamento della proprietà inputProcessorId si basa sul valore specificato per la proprietà inputProcessorType. È una proprietà obbligatoria. Nell&#39;elenco seguente vengono illustrati tutti i valori possibili della proprietà inputProcessorType e i requisiti corrispondenti per la proprietà inputProcessorType:
 
-   * Per workflow, specifica il modello di workflow da eseguire. Ad esempio, /etc/workflow/models/&lt;nome_flusso di lavoro>/jcr:content/model
-   * Per lo script, specifica il percorso JCR dello script da eseguire. Ad esempio, /etc/fd/watchfolder/test/testScript.ecma
-   * Per il servizio, specifica il filtro utilizzato per individuare un servizio OSGi. Il servizio è registrato come implementazione dell’interfaccia com.adobe.aemfd.watchfolder.service.api.ContentProcessor.
+  * Per workflow, specifica il modello di workflow da eseguire. Ad esempio, /etc/workflow/models/&lt;nome_flusso di lavoro>/jcr:content/model
+  * Per lo script, specifica il percorso JCR dello script da eseguire. Ad esempio, /etc/fd/watchfolder/test/testScript.ecma
+  * Per il servizio, specifica il filtro utilizzato per individuare un servizio OSGi. Il servizio è registrato come implementazione dell’interfaccia com.adobe.aemfd.watchfolder.service.api.ContentProcessor.
 
 * **runModes (String)**: elenco separato da virgole delle modalità di esecuzione consentite per l&#39;esecuzione del flusso di lavoro. Alcuni esempi sono:
 
-   * author
+  * author
 
-   * pubblicazione
+  * pubblicazione
 
-   * authoring, pubblicazione
+  * authoring, pubblicazione
 
-   * pubblicazione, authoring
+  * pubblicazione, authoring
 
 >[!NOTE]
 >
@@ -95,30 +111,30 @@ Puoi configurare le seguenti proprietà per una cartella controllata.
 * **deleteExpiredStageFileOnlyWhenThrottled (booleano, valore predefinito true):** Indica se il meccanismo di scadenza deve essere attivato solo quando la cartella di controllo è limitata. Il meccanismo è più pertinente per le cartelle di controllo limitate, poiché un numero limitato di file che rimangono in attesa in uno stato non elaborato (a causa di errori di processo/flusso di lavoro intermittenti) può bloccare l’elaborazione per l’intero batch quando la limitazione è abilitata. Se questa proprietà viene mantenuta come true (valore predefinito), il meccanismo di scadenza non viene attivato per le cartelle di controllo che non sono limitate. Se la proprietà viene mantenuta come false, il meccanismo viene sempre attivato purché la proprietà stageFileExpirationDuration sia un numero positivo.
 
 * **pollInterval (Long)**: intervallo in secondi per la ricerca di input nella cartella controllata. Se l&#39;impostazione Limitazione non è abilitata, l&#39;intervallo di polling deve essere più lungo del tempo necessario per elaborare un processo medio. In caso contrario, il sistema potrebbe sovraccaricare. Il valore predefinito è 5. Per ulteriori informazioni, consulta la descrizione relativa a Dimensione batch. Il valore dell&#39;intervallo di polling deve essere maggiore o uguale a uno.
-* **excludeFilePattern (String)**: elenco delimitato da punti e virgola (;) dei pattern utilizzati da una cartella controllata per determinare quali file e cartelle analizzare e selezionare. Qualsiasi file o cartella con questo modello non viene analizzato per l&#39;elaborazione. Questa impostazione è utile quando l&#39;input è una cartella con più file. Il contenuto della cartella può essere copiato in una cartella con un nome scelto dalla cartella controllata. Questo impedisce alla cartella controllata di selezionare una cartella da elaborare prima che la cartella venga completamente copiata nella cartella di input. Il valore predefinito è null.
-Puoi utilizzare [modelli di file](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) per escludere:
+* **excludeFilePattern (String)**: elenco delimitato da punti e virgola (;) dei pattern utilizzati da una cartella controllata per determinare quali file e cartelle analizzare e selezionare. Qualsiasi file o cartella con questo modello non viene analizzato per l&#39;elaborazione. Questa impostazione è utile quando l’input è una cartella con più file. Il contenuto della cartella può essere copiato in una cartella con un nome scelto dalla cartella controllata. Questo impedisce alla cartella controllata di selezionare una cartella da elaborare prima che la cartella venga completamente copiata nella cartella di input. Il valore predefinito è null.
+È possibile utilizzare [modelli di file](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) per escludere:
 
-   * File con estensioni di file specifiche; ad esempio, &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
-   * File con nomi specifici; ad esempio, dati&#42; escluderebbe file e cartelle denominati dati1, dati2 e così via.
-   * File con espressioni composite nel nome e nell’estensione, come negli esempi seguenti:
+  * File con estensioni di file specifiche; ad esempio, &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
+  * File con nomi specifici; ad esempio, dati&#42; escluderebbe file e cartelle denominati dati1, dati2 e così via.
+  * File con espressioni composite nel nome e nell’estensione, come negli esempi seguenti:
 
-      * Dati`[0-9][0-9][0-9]`.`[dD][aA]`&#39;porta&#39;
-      * &#42;.`[dD][aA]`&#39;porta&#39;
-      * &#42;.`[Xx][Mm][Ll]`
+    * Dati`[0-9][0-9][0-9]`.`[dD][aA]`&#39;porta&#39;
+    * &#42;.`[dD][aA]`&#39;porta&#39;
+    * &#42;.`[Xx][Mm][Ll]`
 
 Per ulteriori informazioni sui modelli di file, consulta [Informazioni sui pattern di file](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
 
 * **includeFilePattern (stringa)**: elenco delimitato da punti e virgola (;) dei pattern utilizzati dalla cartella controllata per determinare quali cartelle e file analizzare e raccogliere. Ad esempio, se IncludeFilePattern è input&#42;, verranno selezionati tutti i file e le cartelle che corrispondono all&#39;input&#42;. Questo include file e cartelle denominati input1, input2 e così via. Il valore predefinito è &#42; e indica tutti i file e le cartelle. Puoi utilizzare i pattern di file per includere:
 
-   * File con estensioni di file specifiche; ad esempio, &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
-   * File con nomi specifici, ad esempio dati.&#42; includerebbe file e cartelle denominati data1, data2 e così via.
+  * File con estensioni di file specifiche; ad esempio, &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
+  * File con nomi specifici, ad esempio dati.&#42; includerebbe file e cartelle denominati data1, data2 e così via.
 
 * File con espressioni composite nel nome e nell’estensione, come negli esempi seguenti:
 
-   * Dati`[0-9][0-9][0-9]`.`[dD][aA]`&#39;porta&#39;
+  * Dati`[0-9][0-9][0-9]`.`[dD][aA]`&#39;porta&#39;
 
-      * &#42;.`[dD][aA]`&#39;porta&#39;
-      * &#42;.`[Xx][Mm][Ll]`
+    * &#42;.`[dD][aA]`&#39;porta&#39;
+    * &#42;.`[Xx][Mm][Ll]`
 
 Per ulteriori informazioni sui modelli di file, vedere [Informazioni sui modelli di file](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)
 
@@ -126,20 +142,20 @@ Per ulteriori informazioni sui modelli di file, vedere [Informazioni sui modelli
 * **purgeDuration (Long)**: i file e le cartelle nella cartella dei risultati vengono eliminati quando sono più vecchi di questo valore. Questo valore è misurato in giorni. Questa impostazione è utile per garantire che la cartella dei risultati non si riempia. Un valore pari a -1 giorni indica di non eliminare mai la cartella dei risultati. Il valore predefinito è -1.
 * **resultFolderName (String)**: cartella in cui sono archiviati i risultati salvati. Se i risultati non vengono visualizzati in questa cartella, seleziona la cartella errori. I file di sola lettura non vengono elaborati e vengono salvati nella cartella degli errori. Questo valore può essere un percorso assoluto o relativo con i seguenti pattern di file:
 
-   * %F = prefisso del nome file
-   * %E = estensione del nome file
-   * %Y = anno (completo)
-   * %y = anno (ultime due cifre)
-   * %M = mese
-   * %D = giorno del mese
-   * %d = giorno dell’anno
-   * %H = ora (24 ore)
-   * %h = ora (12 ore)
-   * %m = minuto
-   * %s = secondo
-   * %l = millisecondo
-   * %R = numero casuale (tra 0 e 9)
-   * %P = ID processo
+  * %F = prefisso del nome file
+  * %E = estensione del nome file
+  * %Y = anno (completo)
+  * %y = anno (ultime due cifre)
+  * %M = mese
+  * %D = giorno del mese
+  * %d = giorno dell’anno
+  * %H = ora (24 ore)
+  * %h = ora (12 ore)
+  * %m = minuto
+  * %s = secondo
+  * %l = millisecondo
+  * %R = numero casuale (tra 0 e 9)
+  * %P = ID processo
 
   Ad esempio, se sono le 20:00 del 17 luglio 2009 e si specifica C:/Test/WF0/failure/%Y/%M/%D/%H/, la cartella dei risultati sarà C:/Test/WF0/failure/2009/07/17/20
 
@@ -173,9 +189,9 @@ Per ulteriori informazioni sui modelli di file, vedere [Informazioni sui modelli
 * **enabled (booleano)**: disattiva e attiva la ricerca di una cartella controllata. Imposta abilitato su true per avviare la scansione della cartella controllata. Il valore predefinito è vero.
 * **payloadMapperFilter:** Quando una cartella è configurata come cartella controllata, viene creata una struttura di cartelle all&#39;interno della cartella controllata. La struttura dispone di cartelle per fornire input, ricevere output (risultati), salvare dati per errori, conservare dati per processi a lunga durata e salvare dati per varie fasi. La struttura di cartelle di una cartella controllata può fungere da payload di flussi di lavoro incentrati su Forms. Un mapper di payload consente di definire la struttura di un payload che utilizza una cartella controllata per l’input, l’output e l’elaborazione. Ad esempio, se utilizzi il mapper predefinito, il contenuto della cartella controllata viene mappato con [payload]\input e [payload]\cartella output. Sono disponibili due implementazioni predefinite per la mappatura del payload. Se non disponi di [un&#39;implementazione personalizzata](../../forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter), utilizza un&#39;implementazione preconfigurata:
 
-   * **Mapper predefinito:** Utilizza il mapper del payload predefinito per mantenere i contenuti di input e output delle cartelle controllate in cartelle di input e output separate nel payload. Inoltre, nel percorso payload di un flusso di lavoro, utilizza [payload]/input/ e [payload]/percorsi di output per recuperare e salvare il contenuto.
+  * **Mapper predefinito:** Utilizza il mapper del payload predefinito per mantenere i contenuti di input e output delle cartelle controllate in cartelle di input e output separate nel payload. Inoltre, nel percorso payload di un flusso di lavoro, utilizza [payload]/input/ e [payload]/percorsi di output per recuperare e salvare il contenuto.
 
-   * **Mappatore payload semplice basato su file:** Utilizzare il mapper payload semplice basato su file per mantenere i contenuti di input e output direttamente nella cartella del payload. Non crea alcuna gerarchia aggiuntiva, come l’mappatore predefinito.
+  * **Mappatore payload semplice basato su file:** Utilizzare il mapper payload semplice basato su file per mantenere i contenuti di input e output direttamente nella cartella del payload. Non crea alcuna gerarchia aggiuntiva, come l’mappatore predefinito.
 
 ### Parametri di configurazione personalizzati {#custom-configuration-parameters}
 
@@ -528,8 +544,8 @@ Una volta spostati i file nella cartella di staging, vengono create richieste di
 
 * Se la cartella controllata ha creato correttamente la richiesta di chiamata per ciascuno dei file presenti nella cartella di staging e il server si blocca, esistono due comportamenti in base al tipo di chiamata:
 
-   * **Sincrono**: se la cartella controllata è configurata per richiamare il servizio in modo sincrono, tutti i file nella cartella di staging non vengono elaborati nella cartella di staging.
-   * **Asincrono**: in questo caso, la cartella controllata si basa sul servizio Gestione processi. Se il servizio Gestione processi richiama la cartella controllata, i file nella cartella di staging vengono spostati nella cartella di conservazione o di errore in base ai risultati della chiamata. Se il servizio Gestione processi non richiama la cartella controllata, i file rimarranno non elaborati nella cartella di fase. Questa situazione si verifica quando la cartella controllata non è in esecuzione al momento in cui Gestione processi richiama.
+  * **Sincrono**: se la cartella controllata è configurata per richiamare il servizio in modo sincrono, tutti i file nella cartella di staging non vengono elaborati nella cartella di staging.
+  * **Asincrono**: in questo caso, la cartella controllata si basa sul servizio Gestione processi. Se il servizio Gestione processi richiama la cartella controllata, i file nella cartella di staging vengono spostati nella cartella di conservazione o di errore in base ai risultati della chiamata. Se il servizio Gestione processi non richiama la cartella controllata, i file rimarranno non elaborati nella cartella di fase. Questa situazione si verifica quando la cartella controllata non è in esecuzione al momento in cui Gestione processi richiama.
 
 #### Recuperare i file di origine non elaborati nella cartella dell&#39;area di visualizzazione {#recover-unprocessed-source-files-in-the-stage-folder}
 
@@ -568,9 +584,9 @@ Gli amministratori possono specificare il tipo di file che può richiamare un se
 * File con nomi specifici, ad esempio dati.&#42;
 * File con espressioni composite nel nome e nell’estensione, come negli esempi seguenti:
 
-   * Dati`[0-9][0-9][0-9]`.`[dD][aA]`&#39;porta&#39;
-   * &#42;.`[dD][aA]`&#39;porta&#39;
-   * &#42;.`[Xx][Mm][Ll]`
+  * Dati`[0-9][0-9][0-9]`.`[dD][aA]`&#39;porta&#39;
+  * &#42;.`[dD][aA]`&#39;porta&#39;
+  * &#42;.`[Xx][Mm][Ll]`
 
 * L’amministratore può definire il modello di file della cartella di output in cui memorizzare i risultati. Per le cartelle di output (risultati, conservazione ed errori), l’amministratore può specificare uno dei seguenti modelli di file:
 * %Y = anno (completo)
@@ -670,7 +686,7 @@ ECMAScript utilizzerà l&#39;API createPDF di PDF Generator per convertire i doc
 1. Aggiungi le seguenti proprietà al nodo:
 
    * folderPath (String): percorso della cartella da analizzare a intervalli di tempo definiti. La cartella deve trovarsi in una posizione condivisa con tutti i server che hanno accesso completo al server.
-inputProcessorType (String): tipo di processo da avviare. In questa esercitazione, specifica il flusso di lavoro.
+     inputProcessorType (String): tipo di processo da avviare. In questa esercitazione, specifica il flusso di lavoro.
 
    * inputProcessorId (stringa): il comportamento della proprietà inputProcessorId si basa sul valore specificato per la proprietà inputProcessorType. In questo esempio, il valore della proprietà inputProcessorType è workflow. Quindi, per la proprietà inputProcessorId, specifica il seguente percorso del flusso di lavoro PDFG: /etc/workflow/models/pdfg/jcr:content/model
 

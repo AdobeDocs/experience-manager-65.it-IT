@@ -9,13 +9,20 @@ exl-id: 3d72cbdf-5eb4-477d-aa61-035a846f7dcb
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 0%
-
+source-wordcount: '301'
+ht-degree: 1%
 ---
-
 # Crea nodi {#create-nodes}
 
 Sovrapponi il sistema di commenti con una versione personalizzata copiando il numero minimo di file necessari da `/libs` in `/apps` e modificandoli in `/apps`.
@@ -24,7 +31,7 @@ Sovrapponi il sistema di commenti con una versione personalizzata copiando il nu
 >
 >Il contenuto della cartella /libs non viene mai modificato perché eventuali reinstallazioni o aggiornamenti potrebbero eliminare o sostituire la cartella /libs mentre il contenuto della cartella /apps viene lasciato invariato.
 
-Se si utilizza [CRXDE Liti](../../help/sites-developing/developing-with-crxde-lite.md) in un&#39;istanza Autore, iniziare creando un percorso nella cartella /apps identico al percorso dei componenti sovrapposti nella cartella /libs.
+Se si utilizza [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) in un&#39;istanza Autore, iniziare creando un percorso nella cartella /apps identico al percorso dei componenti sovrapposti nella cartella /libs.
 
 Il percorso da duplicare è:
 
@@ -36,34 +43,34 @@ Alcuni nodi nel percorso sono cartelle e altri componenti.
 1. Crea `/apps/social` (se non esiste già)
    * Seleziona nodo `/apps`
    * **[!UICONTROL Crea > Cartella]**
-      * Immettere il nome: `social`
+     * Immettere il nome: `social`
 1. Seleziona nodo `social`
    * **[!UICONTROL Crea]** > **[!UICONTROL Cartella]**
-      * Immettere il nome: `commons`
+     * Immettere il nome: `commons`
 1. Seleziona nodo `commons`
    * **[!UICONTROL Crea > Cartella]**
-      * Immettere il nome: `components`
+     * Immettere il nome: `components`
 1. Seleziona nodo `components`
    * **[!UICONTROL Crea > Cartella]**.
-      * Immettere il nome: `hbs`
+     * Immettere il nome: `hbs`
 1. Seleziona nodo `hbs`
    * **[!UICONTROL Crea]** > **[!UICONTROL Crea componente]**
-      * Immetti etichetta: `comments`
-      * Immetti titolo: `Comments`
-      * Immetti la descrizione: `List of comments without showing avatars`
-      * Super Type: `social/commons/components/comments`
-      * Immetti gruppo: `Communities`
-      * Fai clic su **[!UICONTROL Avanti]** fino a **[!UICONTROL OK]**
+     * Immetti etichetta: `comments`
+     * Immetti titolo: `Comments`
+     * Immetti la descrizione: `List of comments without showing avatars`
+     * Super Type: `social/commons/components/comments`
+     * Immetti gruppo: `Communities`
+     * Fai clic su **[!UICONTROL Avanti]** fino a **[!UICONTROL OK]**
 1. Seleziona nodo `comments`
 
    * **[!UICONTROL Crea]** > **[!UICONTROL Crea componente]**
 
-      * Immetti etichetta: `comment`
-      * Immetti titolo: `Comment`
-      * Immetti la descrizione: `A comment instance without avatars`
-      * Super Type: `social/commons/components/comments/comment`
-      * Immetti gruppo: `.hidden`
-      * Fai clic su **[!UICONTROL Avanti]** fino a **[!UICONTROL OK]**
+     * Immetti etichetta: `comment`
+     * Immetti titolo: `Comment`
+     * Immetti la descrizione: `A comment instance without avatars`
+     * Super Type: `social/commons/components/comments/comment`
+     * Immetti gruppo: `.hidden`
+     * Fai clic su **[!UICONTROL Avanti]** fino a **[!UICONTROL OK]**
    * Seleziona **[!UICONTROL Salva tutto]**
 1. Elimina `comments.jsp` predefinito
    * Seleziona nodo `/apps/social/commons/components/hbs/comments/comments.jsp`

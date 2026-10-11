@@ -6,13 +6,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 06cdf1211a48838d1e578d1d804aad00cd01eb79
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '3853'
 ht-degree: 5%
-
 ---
-
 # Requisiti tecnici{#technical-requirements}
 
 Adobe supporta (AEM) Adobe Experience Manager sulle piattaforme come descritto nelle informazioni seguenti in questo documento.
@@ -101,7 +113,8 @@ Adobe Experience Manager funziona con le seguenti versioni di Java™ Virtual Ma
 | Azul Zulu OpenJDK 11 - 64 bit | R: Supportato `[3]` | |
 | Azul Zulu OpenJDK 8 a 64 bit | R: Supportato `[3]` | |
 
-1. Oracle è passato a un modello di &quot;supporto a lungo termine&quot; (LTS) per i prodotti Oracle Java™ SE. Java™ 9, Java™ 10 e Java™ 12 sono versioni non LTS di Oracle (consulta [Roadmap del supporto Java™ SE per Oracle](https://www.oracle.com/technetwork/java/eol-135779.html)). Per distribuire AEM in un ambiente di produzione, Adobe fornisce supporto solo per le versioni LTS di Java™. Il supporto e la distribuzione del JDK Java™ SE di Oracle, inclusi tutti gli aggiornamenti di manutenzione delle versioni LTS, sono supportati direttamente da Adobe per tutti i clienti AEM che utilizzano la tecnologia Oracle Java™ SE. Vedere i criteri di supporto [Java™ per Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).   **Importante: Oracle Java™ 17 e 21 sono supportati in [AEM 6.5 LTS](https://experienceleague.adobe.com/it/docs/experience-manager-65-lts/content/implementing/deploying/introduction/technical-requirements).**
+1. Oracle è passato a un modello di &quot;supporto a lungo termine&quot; (LTS) per i prodotti Oracle Java™ SE. Java™ 9, Java™ 10 e Java™ 12 sono versioni non LTS di Oracle (consulta [Roadmap del supporto Java™ SE per Oracle](https://www.oracle.com/technetwork/java/eol-135779.html)). Per distribuire AEM in un ambiente di produzione, Adobe fornisce supporto solo per le versioni LTS di Java™. Il supporto e la distribuzione del JDK Java™ SE di Oracle, inclusi tutti gli aggiornamenti di manutenzione delle versioni LTS, sono supportati direttamente da Adobe per tutti i clienti AEM che utilizzano la tecnologia Oracle Java™ SE. Vedere i criteri di supporto [Java™ per Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
+   **Importante: Oracle Java™ 17 e 21 sono supportati in [AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/implementing/deploying/introduction/technical-requirements).**
 
 1. IBM® JRE è supportato solo insieme all&#39;Application Server WebSphere®.
 
@@ -253,7 +266,7 @@ Adobe Experience Manager è supportato in esecuzione in una macchina virtuale in
 
 Per un ambiente nativo per il cloud, consulta l’offerta più recente della linea di prodotti AEM: Adobe Experience Manager as a Cloud Service. Per informazioni dettagliate, consulta la [documentazione di Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=it).
 
-Adobe offre anche Adobe Managed Services per distribuire AEM su Azure o AWS. Adobe Managed Services offre agli esperti l’esperienza e le competenze necessarie per implementare e utilizzare AEM in questi ambienti di cloud computing. Consulta la [documentazione aggiuntiva su Adobe Managed Services](https://business.adobe.com/it/products/experience-manager/managed-services.html?aemClk=t).
+Adobe offre anche Adobe Managed Services per distribuire AEM su Azure o AWS. Adobe Managed Services offre agli esperti l’esperienza e le competenze necessarie per implementare e utilizzare AEM in questi ambienti di cloud computing. Consulta la [documentazione aggiuntiva su Adobe Managed Services](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 
 In tutti gli altri casi di implementazione di AEM su Azure, AWS o qualsiasi altro ambiente di cloud computing, il supporto di Adobe è contenuto nell’ambiente di elaborazione virtuale. L’ambiente virtuale deve essere eseguito in conformità alle specifiche tecniche elencate in questa pagina. Qualsiasi problema relativo ad AEM in esecuzione in uno di questi ambienti cloud deve essere riproducibile indipendentemente da qualsiasi servizio cloud specifico per l’ambiente di cloud computing. Questo a meno che il servizio cloud non sia supportato come parte dei requisiti tecnici elencati in questa pagina, ad esempio archiviazione Azure Blob o AWS S3.
 
@@ -261,7 +274,7 @@ Per consigli su come implementare AEM su Azure o AWS, al di fuori di Adobe Manag
 
 ### Piattaforme Dispatcher (server web) {#dispatcher-platforms-web-servers}
 
-Dispatcher è il componente di caching e bilanciamento del carico. [Scarica la versione più recente di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=it). Experience Manager 6.5 richiede Dispatcher versione 4.3.2 o successiva.
+Dispatcher è il componente di caching e bilanciamento del carico. [Scarica la versione più recente di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Experience Manager 6.5 richiede Dispatcher versione 4.3.2 o successiva.
 
 Con Dispatcher versione 4.3.2 sono supportati i seguenti server web:
 
@@ -471,7 +484,7 @@ Per Windows x86:
    <th><p><strong>Formati supportati per la conversione in PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/it/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> (Traccia continua, versione più recente)</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> (Traccia continua, versione più recente)</td>
    <td>XPS, formati immagine (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML e HTM</td>
   </tr>
 
@@ -525,10 +538,10 @@ La funzione di write-back di XMP è supportata e abilitata per le piattaforme e 
 
 * **Sistemi operativi:**
 
-   * Linux® (supporto di applicazioni a 32 bit e 32 bit su sistemi a 64 bit).
+  * Linux® (supporto di applicazioni a 32 bit e 32 bit su sistemi a 64 bit).
 
-   * Windows Server
-   * macOS X (64 bit)
+  * Windows Server
+  * macOS X (64 bit)
 
 * **Formati file**: JPEG, PNG, TIFF, PDF, INDD, AI e EPS.
 

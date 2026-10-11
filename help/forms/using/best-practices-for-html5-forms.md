@@ -10,13 +10,28 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 62ff6306-9989-43b0-abaf-b0a811f0a6a4
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1468'
 ht-degree: 1%
-
 ---
-
 # Best practice per moduli HTML5{#best-practices-for-html-forms}
 
 ## Panoramica {#overview}
@@ -44,13 +59,13 @@ Pertanto, ridurre le dimensioni delle risorse esterne e utilizzare solo le risor
 
 * Usa [immagini compresse](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md). Riduce l&#39;attività di rete e la quantità di memoria necessaria per il rendering di un modulo. Pertanto, il tempo di caricamento della maschera diminuisce notevolmente.
 * Utilizza l’opzione minimizza in AEM Configuration Manager (Day CQ HTML Library Manager) per comprimere i file JavaScript e CSS. Per ulteriori dettagli, vedere [Impostazioni di configurazione OSGi](/help/sites-deploying/osgi-configuration-settings.md).
-* Attiva la compressione Web. Riduce la dimensione delle richieste e delle risposte generate da un modulo. Per ulteriori dettagli, vedere [Ottimizzazione delle prestazioni di AEM Forms Server](https://helpx.adobe.com/it/aem-forms/6-3/performance-tuning-aem-forms.html).
+* Attiva la compressione Web. Riduce la dimensione delle richieste e delle risposte generate da un modulo. Per ulteriori dettagli, vedere [Ottimizzazione delle prestazioni di AEM Forms Server](https://helpx.adobe.com/aem-forms/6-3/performance-tuning-aem-forms.html).
 
 ## Mantieni vivo l’interesse, mostra solo i campi obbligatori  {#keep-the-interest-alive-show-only-required-fields}
 
 Un modulo HTML5 può contenere centinaia di pagine. Il caricamento di un modulo con un numero elevato di campi nel browser è lento. È possibile eseguire le seguenti ottimizzazioni su un modulo XFA per ottimizzare i moduli con un numero elevato di campi e pagine:
 
-* Valutare la suddivisione dei moduli di grandi dimensioni in più moduli. È inoltre possibile utilizzare un set di moduli per raggruppare tutti i moduli più piccoli e presentarli come un&#39;unica unità. Un set di moduli carica solo i moduli richiesti. Inoltre, in un set di moduli è possibile configurare campi comuni in moduli diversi per condividere associazioni di dati. Le associazioni di dati consentono agli utenti di compilare le informazioni comuni una sola volta; le informazioni vengono compilate automaticamente nei moduli successivi, determinando miglioramenti sostanziali delle prestazioni. Per ulteriori dettagli sui set di moduli, vedere [Set di moduli in AEM Forms](https://helpx.adobe.com/it/aem-forms/6-3/formset-in-aem-forms.html).
+* Valutare la suddivisione dei moduli di grandi dimensioni in più moduli. È inoltre possibile utilizzare un set di moduli per raggruppare tutti i moduli più piccoli e presentarli come un&#39;unica unità. Un set di moduli carica solo i moduli richiesti. Inoltre, in un set di moduli è possibile configurare campi comuni in moduli diversi per condividere associazioni di dati. Le associazioni di dati consentono agli utenti di compilare le informazioni comuni una sola volta; le informazioni vengono compilate automaticamente nei moduli successivi, determinando miglioramenti sostanziali delle prestazioni. Per ulteriori dettagli sui set di moduli, vedere [Set di moduli in AEM Forms](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html).
 * È consigliabile suddividere le sezioni e spostare ogni sezione in una pagina diversa. I moduli HTML5 caricano dinamicamente ogni pagina nella richiesta di scorrimento delle pagine. Nella memoria vengono memorizzate solo le pagine scorrevoli (la pagina visualizzata e le pagine precedenti); le altre pagine vengono caricate su richiesta. La suddivisione e lo spostamento di una sezione in una pagina specifica riduce il tempo necessario per caricare un modulo. È inoltre possibile utilizzare la prima pagina del modulo come pagina di destinazione. È simile al sommario di un libro. Una pagina di destinazione del modulo contiene solo collegamenti alle altre sezioni del modulo. Migliora in modo significativo il tempo di caricamento della prima pagina del modulo e consente di migliorare l’esperienza utente.
 * Per impostazione predefinita, le sezioni condizionali vengono nascoste. Rendi visibili queste sezioni solo quando viene soddisfatta una determinata condizione. Consente di ridurre al minimo le dimensioni del DOM. È inoltre possibile utilizzare la navigazione a schede per visualizzare una sola sezione alla volta.
 
@@ -61,7 +76,7 @@ I moduli HTML5 possono contenere campi basati su dati (tabelle e sottomoduli). Q
 * Utilizza gli script XFA per ottenere una navigazione impaginata per visualizzare campi basati su dati (tabelle e sottomaschere). Nella navigazione impaginata, in una pagina vengono visualizzati solo dati specifici. Limita l’operazione di disegno del browser ai campi visualizzati in una sola volta e semplifica la navigazione in un modulo. Inoltre, gli utenti dei dispositivi mobili sono interessati solo a un sottoinsieme di dati. Consente di fornire un’esperienza utente ottimale e di ridurre il tempo necessario per caricare i dati richiesti. Si ottengono due soluzioni al prezzo di una.  Inoltre, la navigazione impaginata non è disponibile come funzionalità integrata. Puoi utilizzare gli script XFA per sviluppare la navigazione a pagina.
 
 * Valuta l’unione di più colonne di sola lettura in una singola colonna. Riduce la memoria necessaria per visualizzare il modulo. Inoltre, evita di visualizzare le colonne che non richiedono alcun input da parte degli utenti.
-* Valuta la suddivisione del modulo basato su dati in un [set di moduli](https://helpx.adobe.com/it/aem-forms/6-3/formset-in-aem-forms.html), se i suggerimenti di cui sopra non producono molti miglioramenti. Se ad esempio una tabella contiene più di 1000 righe, spostare ogni 100 righe in una maschera diversa. Ciò contribuirebbe a migliorare il tempo di caricamento e le prestazioni dei moduli.  Si noti inoltre che un set di moduli genera un XML di invio consolidato per tutti i moduli. Per differenziare i dati di ogni modulo, utilizzare radici di dati diverse. Per ulteriori informazioni, vedere [Set di moduli in AEM Forms](https://helpx.adobe.com/it/aem-forms/6-3/formset-in-aem-forms.html).
+* Valuta la suddivisione del modulo basato su dati in un [set di moduli](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html), se i suggerimenti di cui sopra non producono molti miglioramenti. Se ad esempio una tabella contiene più di 1000 righe, spostare ogni 100 righe in una maschera diversa. Ciò contribuirebbe a migliorare il tempo di caricamento e le prestazioni dei moduli.  Si noti inoltre che un set di moduli genera un XML di invio consolidato per tutti i moduli. Per differenziare i dati di ogni modulo, utilizzare radici di dati diverse. Per ulteriori informazioni, vedere [Set di moduli in AEM Forms](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html).
 
 ## Potenza di due per documento record (DOR) {#power-of-two-for-document-of-record-dor}
 

@@ -5,13 +5,39 @@ exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin,Developer
-source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d429a63e-ade4-4117-b04e-9b996d1c94ef
+    internal-label: Integrations
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: a02b73a7-bdfc-4225-bdfd-69f7891ab55e
+    internal-label: GraphQL
+  - id: d781bc8f-52af-43f6-84d0-b73e59a130d5
+    internal-label: Persisted queries
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1915'
-ht-degree: 57%
-
+source-wordcount: '1995'
+ht-degree: 58%
 ---
-
 # Ottimizzazione delle query GraphQL {#optimizing-graphql-queries}
 
 >[!NOTE]
@@ -84,7 +110,7 @@ Le query GraphQL e le relative risposte JSON possono essere memorizzate nella ca
 
 Consulta:
 
-* [Utilizzo della rete CDN in AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it#using-dispatcher-with-a-cdn)
+* [Utilizzo della rete CDN in AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn)
 
 #### Impostare le intestazioni di controllo cache HTTP {#set-http-cache-control-headers}
 
@@ -146,7 +172,7 @@ AEM consente due approcci per ottimizzare le query GraphQL:
 * [Filtro ibrido](#use-aem-graphql-hybrid-filtering)
 * [Paging](#use-aem-graphql-pagination) (o impaginazione)
 
-   * [Ordinamento](#use-graphql-sorting) non è direttamente correlato all’ottimizzazione, ma è correlato al paging
+  * [Ordinamento](#use-graphql-sorting) non è direttamente correlato all’ottimizzazione, ma è correlato al paging
 
 Ogni approccio ha i propri casi d’uso e limitazioni. Questa sezione fornisce informazioni su Filtro e paginazione ibridi, insieme ad alcune delle [best practice](#best-practices) per l&#39;ottimizzazione delle query GraphQL.
 
@@ -183,13 +209,13 @@ Il tempo di risposta di query complesse, con set di risultati di grandi dimensio
 
 GraphQL in AEM supporta due tipi di impaginazione:
 
-* [paginazione basata su limite/offset](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#list-offset-limit)
+* [paginazione basata su limite/scostamento](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#list-offset-limit)
 Utilizzato per le query elenco; terminano con `List`; ad esempio, `articleList`.
-Per utilizzarlo, devi fornire la posizione del primo elemento da restituire (il `offset`) e il numero di elementi da restituire (il `limit`, o la dimensione della pagina).
+Per utilizzarlo, devi fornire la posizione del primo elemento da restituire (il `offset`) e il numero di elementi da restituire (il `limit`, o dimensioni della pagina).
 
 * [paginazione basata su cursore](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#paginated-first-after) (rappresentata da `first`e `after`)
 In questo modo viene fornito un ID univoco per ogni elemento, noto anche come cursore.
-Nella query, si specifica il cursore dell&#39;ultimo elemento della pagina precedente, più le dimensioni della pagina (il numero massimo di elementi da restituire).
+Nella query, si specifica il cursore dell’ultimo elemento della pagina precedente, più le dimensioni della pagina (il numero massimo di elementi da restituire).
 
   Poiché l’impaginazione basata su cursore non si adatta alle strutture di dati delle query basate su elenco, AEM ha introdotto il tipo di query `Paginated`; ad esempio, `articlePaginated`. Le strutture di dati e i parametri utilizzati seguono i [Specifica di connessione cursore GraphQL](https://relay.dev/graphql/connections.htm).
 

@@ -9,13 +9,22 @@ exl-id: 2428914c-5fb0-439e-a1ef-8ee30b890f58
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 2%
-
 ---
-
 # Domande frequenti sulla distribuzione dei contenuti HTTP2{#http-delivery-of-content-faq}
 
 Adobe è entusiasta di annunciare la disponibilità della distribuzione HTTP/2 dei contenuti. Quando si utilizza HTTP/2, si nota un aumento complessivo delle prestazioni.
@@ -49,7 +58,7 @@ Per utilizzare HTTP/2, è necessario soddisfare i seguenti requisiti:
 * Utilizza la rete CDN (Content Delivery Network) inclusa in Adobe come parte della licenza Dynamic Media.
 * Utilizza un dominio dedicato (ovvero `images.company.com` o `mycompany.scene7.com`), non un dominio Dynamic Media generico (ovvero `s7d1.scene7.com`, `s7d2.scene7.com` o `s7d13.scene7.com`).
 
-  Per trovare i domini, apri l&#39;[applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=it#getting-started), quindi accedi al tuo account aziendale o ai tuoi account aziendali. Passare quindi a **[!UICONTROL Configurazione]** > **[!UICONTROL Configurazione applicazione]** > **[!UICONTROL Impostazioni generali]**. Cercare il campo con etichetta **Nome server pubblicato**. Se attualmente utilizzi un dominio Dynamic Media generico, puoi richiedere di passare al dominio personalizzato come parte di questa transizione.
+  Per trovare i domini, apri l&#39;[applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account aziendale o ai tuoi account aziendali. Passare quindi a **[!UICONTROL Configurazione]** > **[!UICONTROL Configurazione applicazione]** > **[!UICONTROL Impostazioni generali]**. Cercare il campo con etichetta **Nome server pubblicato**. Se attualmente utilizzi un dominio Dynamic Media generico, puoi richiedere di passare al dominio personalizzato come parte di questa transizione.
 
 ## Qual è il processo per abilitare HTTP/2 per il mio account Dynamic Media? {#what-is-the-process-for-enabling-http-for-my-scene-account}
 
@@ -59,13 +68,13 @@ Per utilizzare HTTP/2, è necessario soddisfare i seguenti requisiti:
    * Nome del contatto principale, e-mail e numero di telefono.
    * Tutti i domini da trasferire su HTTP2. ovvero `images.company.com` o `mycompany.scene7.com`.
 
-     Per trovare i domini, apri l&#39;[applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=it#getting-started), quindi accedi al tuo account aziendale o ai tuoi account aziendali. Passare quindi a **[!UICONTROL Configurazione]** > **[!UICONTROL Configurazione applicazione]** > **[!UICONTROL Impostazioni generali]**. Cercare il campo con etichetta **[!UICONTROL Nome server pubblicato]**.
+     Per trovare i domini, apri l&#39;[applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account aziendale o ai tuoi account aziendali. Passare quindi a **[!UICONTROL Configurazione]** > **[!UICONTROL Configurazione applicazione]** > **[!UICONTROL Impostazioni generali]**. Cercare il campo con etichetta **[!UICONTROL Nome server pubblicato]**.
 
    * Verifica di utilizzare HTTPS sicuro per le richieste rich media.
    * Verifica di utilizzare la rete CDN tramite Adobe e non gestita con una relazione diretta.
    * Verifica di utilizzare un dominio dedicato. `images.company.com` o `mycompany.scene7.com`, non è un dominio Dynamic Media generico come `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
-     Per trovare i domini, apri l&#39;[applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=it#getting-started), quindi accedi al tuo account aziendale o ai tuoi account aziendali. Passare quindi a **[!UICONTROL Configurazione]** > **[!UICONTROL Configurazione applicazione]** > **[!UICONTROL Impostazioni generali]**. Cercare il campo con etichetta **[!UICONTROL Nome server pubblicato]**. Se attualmente utilizzi un dominio Dynamic Media generico, puoi richiedere di passare al dominio personalizzato come parte di questa transizione.
+     Per trovare i domini, apri l&#39;[applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account aziendale o ai tuoi account aziendali. Passare quindi a **[!UICONTROL Configurazione]** > **[!UICONTROL Configurazione applicazione]** > **[!UICONTROL Impostazioni generali]**. Cercare il campo con etichetta **[!UICONTROL Nome server pubblicato]**. Se attualmente utilizzi un dominio Dynamic Media generico, puoi richiedere di passare al dominio personalizzato come parte di questa transizione.
 
 1. L’Assistenza clienti Adobe ti aggiunge alla lista di attesa dei clienti HTTP/2 in base all’ordine in cui sono state inviate le richieste.
 1. Quando Adobe è pronto a gestire la richiesta, il Supporto ti contatta per coordinare la transizione e impostare una data di scadenza.

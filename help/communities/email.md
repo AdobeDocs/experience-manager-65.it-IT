@@ -10,13 +10,20 @@ role: Admin
 exl-id: bf97d388-f8ca-4e37-88e2-0c536834311e
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '849'
 ht-degree: 0%
-
 ---
-
 # Configurazione dell’e-mail {#configuring-email}
 
 AEM Communities utilizza le e-mail per:
@@ -36,7 +43,7 @@ Il servizio di posta predefinito è richiesto sia per le notifiche che per gli a
 
 * Accedi all&#39;editore principale con privilegi di amministratore e accedi alla [console Web](../../help/sites-deploying/configuring-osgi.md):
 
-   * Ad esempio, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+  * Ad esempio, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
 * Individuare `Day CQ Mail Service`.
 * Seleziona l’icona Modifica.
@@ -91,7 +98,7 @@ Per raggiungere le istanze di configurazione e-mail Communities:
 
 * Accedi all&#39;editore principale con privilegi di amministratore e accedi alla [console Web](../../help/sites-deploying/configuring-osgi.md)
 
-   * Ad esempio, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+  * Ad esempio, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
 * Individuare `AEM Communities Email Reply Configuration`.
 
@@ -184,10 +191,10 @@ Affinché l’e-mail possa essere introdotta nell’archivio, è necessario conf
 
   *(Obbligatorio)* Il server della posta in uscita. Ad esempio, `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`.
 
-* **[!UICONTROL Importa nel percorso]**&ast;
+* **[!UICONTROL Importa nel percorso]**&amp;ast;
 
   *(Obbligatorio)* impostato su `/content/usergenerated/mailFolder/postEmails`
-sfogliando la cartella `postEmails`e selezionando **OK**.
+  sfogliando la cartella `postEmails`e selezionando **OK**.
 
 * **[!UICONTROL Intervallo di aggiornamento in secondi]**
 
@@ -212,8 +219,8 @@ Utilizzo di [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.
 * Accedi all&#39;editore principale con privilegi di amministratore e passa a [https://&lt;server>:&lt;port>/crx/de/index.jsp#/etc/importer/polling](http://localhost:4503/crx/de/index.jsp#/etc/importers/polling).
 * Seleziona la configurazione appena creata e modifica le seguenti proprietà:
 
-   * **feedType**: sostituisci `pop3s` con **`emailreply`**
-   * **source**: sostituire il protocollo di origine `pop3s://` con **`emailreply://`**
+  * **feedType**: sostituisci `pop3s` con **`emailreply`**
+  * **source**: sostituire il protocollo di origine `pop3s://` con **`emailreply://`**
 
 ![protocollo di polling](assets/polling-protocol.png)
 

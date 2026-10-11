@@ -5,20 +5,46 @@ exl-id: 64a87b6b-67ff-4d88-9dfb-c3e5de65bbe6
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d429a63e-ade4-4117-b04e-9b996d1c94ef
+    internal-label: Integrations
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: a02b73a7-bdfc-4225-bdfd-69f7891ab55e
+    internal-label: GraphQL
+  - id: d781bc8f-52af-43f6-84d0-b73e59a130d5
+    internal-label: Persisted queries
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1951'
-ht-degree: 91%
-
+source-wordcount: '2023'
+ht-degree: 92%
 ---
-
 # Percorso della tua prima esperienza con AEM Headless {#path-to-first-experience}
 
 In questa parte del [Percorso per sviluppatori headless AEM,](overview.md) comprenderai i passaggi per implementare la tua prima esperienza headless in AEM incluse considerazioni sulla pianificazione e apprenderai le best practice per rendere il percorso il più semplice possibile.
 
 ## Percorso affrontato finora {#story-so-far}
 
-Nel documento precedente del percorso AEM headless, [Guida introduttiva a AEM headless](getting-started.md) hai imparato la teoria di base di un CMS headless e ora dovresti:
+Nel documento precedente del percorso AEM headless, [Guida introduttiva di AEM Headless](getting-started.md) hai imparato la teoria di base di un CMS headless e ora dovresti:
 
 * Comprendere le nozioni di base delle funzioni headless di AEM.
 * Conoscere i prerequisiti per l’utilizzo delle funzionalità headless di AEM.
@@ -38,7 +64,7 @@ Questo documento illustra i passaggi necessari per implementare il primo progett
 
 ## Requisiti {#requirements}
 
-Prima di continuare con questo documento, assicurati di aver rivisto il documento precedente nel Percorso per sviluppatori AEM Headless, [Guida introduttiva a AEM Headless](getting-started.md) assicurandoti di:
+Prima di continuare con questo documento, assicurati di aver rivisto il documento precedente nel Percorso di sviluppatori AEM Headless, [Guida introduttiva ad AEM Headless](getting-started.md) assicurandoti di:
 
 * Soddisfare i requisiti elencati.
 * Aver preso in considerazione la definizione del tuo progetto, compresi ambito, ruoli e prestazioni.
@@ -47,7 +73,7 @@ Prima di continuare con questo documento, assicurati di aver rivisto il document
 
 Per avviare il tuo primo progetto AEM headless devi disporre di un modello di contenuto che supporti la personalizzazione e gli aggiornamenti che desideri eseguire su tutti i tuoi canali.
 
-Oltre all’AEM, se stai creando un’applicazione lato client, vuoi anche assicurarti di disporre di un ambiente di sviluppo appropriato, in modo da poter testare il client in base alle chiamate API all’AEM.
+Separatamente da AEM, se crei un’applicazione lato client, assicurati anche di disporre di un ambiente di sviluppo appropriato, in modo da poter testare il client in base alle chiamate API ad AEM.
 
 ### Definizione di modelli di contenuto e API {#defining-models}
 
@@ -55,7 +81,7 @@ Vuoi creare un’esperienza coerente e gestire campagne personalizzate tra i can
 
 È invece necessario considerare il modo in cui il contenuto su superfici diverse è correlato in base a principi di organizzazione quali gerarchie di marchi e prodotti, categorie di beni o superfici o passaggi nel percorso del cliente. Ad esempio, se disponi di un insieme di superfici che supportano un marchio specifico di auto prodotte, potresti voler iniziare con un modello di contenuto per informazioni generali che sarebbe vero per l’intera auto e poi avere elementi più specifici come il contenuto necessario da quando l’auto si avvia a quando ci sono problemi di servizio. Un modello di questo tipo applicherà l’ereditarietà del contenuto generale del marchio automobilistico, consentendo al tempo stesso turni in base al contesto specifico necessario. Aiuta anche nella gestione futura degli aggiornamenti di questo contenuto in quanto puoi applicare il controllo in base a ruoli come l’addetto marketing o il responsabile prodotto per l’intero marchio automobilistico rispetto a un autore responsabile dell’esperienza di “avvio automobile”.
 
-Una volta ottenuto il modello di contenuto e una visualizzazione chiara dei vari client su cui deve essere mostrato il contenuto, è necessario assicurarsi che le API/GraphQL associate all’accesso a vari modelli di contenuto siano pubblicate per tutti i client che necessitano di tale contenuto. Esistono diverse opzioni per accedere a determinati contenuti. Puoi richiedere un contenuto specifico statico che consenta la memorizzazione in cache del contenuto e prestazioni migliori. Puoi anche richiedere contenuti generati dinamicamente che richiederanno un’elaborazione maggiore. Assicurati che i client sfruttino le API più efficienti per le esigenze aziendali.
+Una volta ottenuto il modello di contenuto e una visualizzazione chiara dei vari client su cui deve essere mostrato il contenuto, è necessario assicurarsi che le API/GraphQL associate all’accesso a vari modelli di contenuto siano pubblicate per tutti i client che necessitano di tale contenuto. Esistono diverse opzioni per accedere a determinati contenuti. Puoi richiedere un contenuto specifico statico che consenta la memorizzazione in cache del contenuto e prestazioni migliori. Puoi anche richiedere contenuti generati dinamicamente che richiederanno un’elaborazione maggiore. Assicurati che i client sfruttino le API più efficienti per le esigenze di business.
 
 ## Informazioni sugli ambienti {#understanding-environments}
 
@@ -95,7 +121,7 @@ Questa è una panoramica di ciò che è necessario per implementare la prima app
 1. Creare frammenti di contenuto
 1. Query del contenuto con GraphQL
 
-## Best practice   {#best-practices}
+## Best practice {#best-practices}
 
 Un progetto headless non solo ha successo grazie alla tecnologia implementata, ma anche grazie alla buona pianificazione e alla governance dei progetti. Di seguito sono riportate alcune best practice che sviluppatori e autori di contenuti devono tenere a mente durante la pianificazione del progetto.
 
@@ -107,8 +133,8 @@ Un progetto headless non solo ha successo grazie alla tecnologia implementata, m
 * Se disponi di restrizioni di accesso, prova ad allineare il modello di contenuto ai requisiti di accesso.
 * Quando si dispone dei requisiti di accesso, questi devono guidare la gerarchia dei contenuti. Raggruppare i contenuti che vengono modificati dallo stesso gruppo di persone.
 * Raggruppare contenuti simili in una cartella.
-   * È più probabile che un autore di contenuti copia e incolla il contenuto esistente per crearne uno nuovo. Pertanto, farlo fare nella stessa cartella rende tutto più efficiente.
-   * AEM consente di impostare i modelli per cartella in modo che il pulsante **Crea nuovo** mostrerà solo i modelli supportati in tale posizione.
+  * È più probabile che un autore di contenuti copia e incolla il contenuto esistente per crearne uno nuovo. Pertanto, farlo fare nella stessa cartella rende tutto più efficiente.
+  * AEM consente di impostare i modelli per cartella in modo che il pulsante **Crea nuovo** mostrerà solo i modelli supportati in tale posizione.
 * La creazione di nuovi frammenti di contenuto nell’editor frammenti di contenuto in linea può essere semplificata se la cartella principale è impostata nel modello. Quindi il professionista o la professionista non deve scegliere una posizione, ma deve solo fornire un nome e può iniziare a modificare il nuovo riferimento.
 
 ### Creazione di contenuti {#authoring}
@@ -146,11 +172,11 @@ Indipendentemente dal tuo stile di apprendimento, Adobe vuole che tu abbia succe
 Sebbene sia consigliabile passare alla parte successiva del percorso di sviluppo headless consultando il documento [Come modellare i contenuti come Modelli di contenuto AEM](model-your-content.md) le seguenti sono alcune risorse aggiuntive e opzionali che approfondiscono alcuni concetti menzionati in questo documento, ma non sono indispensabili per continuare il percorso headless.
 
 * [Percorso di traduzione AEM headless](/help/journey-headless/translation/overview.md): questo percorso di documentazione ti offre un’ampia comprensione della tecnologia headless, dell’utilizzo di AEM dei contenuti headless e di come tradurli.
-* [Sviluppo headless per AEM Sites](/help/sites-developing/headless/introduction.md) - Breve introduzione per orientare lo sviluppatore headless AEM con le funzioni necessarie
+* [Sviluppo headless per AEM Sites](/help/sites-developing/headless/introduction.md) - Breve introduzione per orientare lo sviluppatore AEM Headless con le funzioni necessarie
 * [Esercitazioni di AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it) - Segui queste esercitazioni pratiche per scoprire come utilizzare le varie opzioni per distribuire contenuti agli endpoint headless con AEM e scegliere quello adatto a te.
-* [Gestione dei contenuti headless tramite le API GraphQL](https://experienceleague.adobe.com/it?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless&lang=it#courses) - Segui questo corso per una panoramica dell’API GraphQL implementata in AEM. È necessaria l’autenticazione tramite AdobeID.
+* [Gestione dei contenuti headless tramite le API GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless&lang=it#courses) - Segui questo corso per una panoramica dell’API GraphQL implementata in AEM. È necessaria l’autenticazione tramite AdobeID.
 * [Guida AEM WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - Questo progetto GitHub include applicazioni di esempio che mettono in evidenza le API GraphQL di AEM.
-* [Guida introduttiva headless](/help/sites-developing/headless/introduction.md#getting-started): breve introduzione alle funzionalità headless dell&#39;AEM per gli utenti che conoscono già l&#39;AEM.
+* [Guida introduttiva headless](/help/sites-developing/headless/introduction.md#getting-started): breve introduzione alle funzioni headless di AEM per gli utenti che conoscono già AEM.
 * [Creare modelli di frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md): documentazione tecnica sui modelli per frammenti di contenuto
 * [Creare frammenti di contenuto](/help/assets/content-fragments/content-fragments.md): documentazione tecnica sui frammenti di contenuto
 * [Query del contenuto con GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md): documentazione tecnica sull’API GraphQL

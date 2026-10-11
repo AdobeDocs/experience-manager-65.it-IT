@@ -10,13 +10,20 @@ exl-id: d6243dff-a067-455c-a326-5f451f225efd
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1331'
+source-wordcount: '1332'
 ht-degree: 1%
-
 ---
-
 # Panoramica di AEM Communities {#aem-communities-overview}
 
 Le community Adobe Experience Manager (AEM) consentono di creare rapidamente un sito community on-premise con prestazioni migliori, una migliore gestione del sito e la promozione della conversione dei visitatori del sito in membri di valore della community.
@@ -46,34 +53,34 @@ La [procedura guidata per la creazione del sito](/help/communities/sites-console
 
 * Assembla le funzionalità del sito in base al [modello di sito community](/help/communities/sites.md) selezionato:
 
-   * creato da [funzioni community](#community-functions)
-   * funzionalità facoltativa [gruppi community](#communitygroups)
+  * creato da [funzioni community](#community-functions)
+  * funzionalità facoltativa [gruppi community](#communitygroups)
 
 * Utilizza le impostazioni per configurare:
 
-   * moderazione
-   * accesso
-   * traduzione
+  * moderazione
+  * accesso
+  * traduzione
 
 * Offre funzioni essenziali:
 
-   * Progettazione reattiva: utilizza [i temi Bootstrap di Twitter](https://getbootstrap.com)
+  * Progettazione reattiva: utilizza [i temi Bootstrap di Twitter](https://getbootstrap.com)
 
-   * Accesso: registrazione autonoma, [accesso social](/help/communities/social-login.md), profili utente
+  * Accesso: registrazione autonoma, [accesso social](/help/communities/social-login.md), profili utente
 
-      * Notifiche:
-i membri visualizzano eventi rilevanti per loro e contenuti generati dall&#39;utente in cui sono [@mentioned](/help/communities/overview.md#mentionssupport).
+    * Notifiche:
+      i membri visualizzano eventi rilevanti per loro e contenuti generati dall&#39;utente in cui sono [@mentioned](/help/communities/overview.md#mentionssupport).
 
-      * Messaggistica: i membri possono inviare o ricevere messaggi all&#39;interno del sito community.
-      * Ricerca: possibilità di eseguire ricerche all’interno del sito community.
-      * Cambio di lingua: possibilità di selezionare una lingua per un [sito multilingue](/help/sites-administering/translation.md).
+    * Messaggistica: i membri possono inviare o ricevere messaggi all&#39;interno del sito community.
+    * Ricerca: possibilità di eseguire ricerche all’interno del sito community.
+    * Cambio di lingua: possibilità di selezionare una lingua per un [sito multilingue](/help/sites-administering/translation.md).
 
-      * Amministrazione: consente ai membri autorizzati di moderare e gestire gli utenti all&#39;interno del sito community.
+    * Amministrazione: consente ai membri autorizzati di moderare e gestire gli utenti all&#39;interno del sito community.
 
 * Elimina molti passaggi di authoring a livello di pagina:
 
-   * Branding: caricamento opzionale di un&#39;immagine del banner da visualizzare su tutte le pagine del sito community
-   * Menu di navigazione: i collegamenti di navigazione sono disponibili per le funzioni incluse nel modello di sito community.
+  * Branding: caricamento opzionale di un&#39;immagine del banner da visualizzare su tutte le pagine del sito community
+  * Menu di navigazione: i collegamenti di navigazione sono disponibili per le funzioni incluse nel modello di sito community.
 
 Per provare la semplicità della creazione rapida di un sito community, visita [Guida introduttiva ad AEM Communities](/help/communities/getting-started.md).
 
@@ -95,47 +102,47 @@ Nell&#39;ambiente di authoring, la console di navigazione globale fornisce l&#39
 
 * La console [Sites](/help/communities/sites-console.md)
 
-   * Creazione di siti
-   * Modifica del sito
-   * Gestione del sito
-   * Console [Gruppi community](/help/communities/groups.md)
+  * Creazione di siti
+  * Modifica del sito
+  * Gestione del sito
+  * Console [Gruppi community](/help/communities/groups.md)
 
 * Console [Moderazione](/help/communities/moderation.md)
 
-   * Interfaccia utente comune per la moderazione in blocco per gli ambienti di authoring e pubblicazione.
-   * Nuovi criteri di filtro.
+  * Interfaccia utente comune per la moderazione in blocco per gli ambienti di authoring e pubblicazione.
+  * Nuovi criteri di filtro.
 
 * [Membri e gruppi](/help/communities/members.md) console di gestione
 
-   * Consente di creare e gestire utenti lato pubblicazione (membri) dall’ambiente di authoring.
-   * Consente di vietare i membri.
-   * Consente di creare e gestire gruppi di utenti lato pubblicazione (gruppi di membri) dall’ambiente di authoring.
+  * Consente di creare e gestire utenti lato pubblicazione (membri) dall’ambiente di authoring.
+  * Consente di vietare i membri.
+  * Consente di creare e gestire gruppi di utenti lato pubblicazione (gruppi di membri) dall’ambiente di authoring.
 
 * Console [Rapporti](/help/communities/reports.md)
 
-   * Consente di generare rapporti su assegnazioni, post e visualizzazioni.
+  * Consente di generare rapporti su assegnazioni, post e visualizzazioni.
 
 La console Strumenti globale consente di accedere ai seguenti strumenti di Communities:
 
 * [Modelli del sito](/help/communities/tools.md#sitetemplatesconsole) console
 
-   * Creazione e gestione di modelli di sito community.
+  * Creazione e gestione di modelli di sito community.
 
 * Console [Modelli di gruppo](/help/communities/tools.md#grouptemplatesconsole)
 
-   * Creare e gestire modelli per gruppi community.
+  * Creare e gestire modelli per gruppi community.
 
 * Console [Funzioni community](/help/communities/tools.md#communityfunctionsconsole)
 
-   * Creare e gestire funzioni community.
+  * Creare e gestire funzioni community.
 
 * [Configurazione archiviazione](/help/communities/tools.md#storageconfiguratonconsole) console
 
-   * Seleziona e configura l&#39;[archivio comune](/help/communities/working-with-srp.md) per il sito.
+  * Seleziona e configura l&#39;[archivio comune](/help/communities/working-with-srp.md) per il sito.
 
 * [Guida dei componenti](/help/communities/components-guide.md)
 
-   * In un sito di esempio, [Componenti community](https://localhost:4502/editor.html/content/community-components/en.html) è incluso un esempio di tutti i componenti community con la relativa configurazione predefinita e la possibilità di utilizzarli in modo sperimentale.
+  * In un sito di esempio, [Componenti community](https://localhost:4502/editor.html/content/community-components/en.html) è incluso un esempio di tutti i componenti community con la relativa configurazione predefinita e la possibilità di utilizzarli in modo sperimentale.
 
 ## Modelli per siti community {#community-site-templates}
 

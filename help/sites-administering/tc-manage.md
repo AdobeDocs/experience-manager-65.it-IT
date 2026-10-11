@@ -5,13 +5,25 @@ exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
 solution: Experience Manager, Experience Manager Sites
 feature: Language Copy
 role: Admin
-source-git-commit: f6e1e28d6fbfc240a46c2c69f02c9c5fda1d0d0d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '3546'
 ht-degree: 42%
-
 ---
-
 # Gestione dei progetti di traduzione{#managing-translation-projects}
 
 Dopo aver preparato il contenuto per la traduzione, devi completare la struttura della lingua creando copie per lingua mancanti e creare progetti di traduzione.
@@ -43,8 +55,8 @@ AEM rileva se viene creato un progetto per la traduzione iniziale del contenuto 
 * **La copia per lingua non include la pagina:** AEM tratta questa situazione come traduzione iniziale. La pagina viene immediatamente copiata nella copia per lingua e inclusa nel progetto. Quando la pagina tradotta viene importata in AEM, AEM la inserisce direttamente nella copia per lingua.
 * **La copia per lingua include già la pagina:** AEM tratta questa situazione come traduzione aggiornata. Viene creato un lancio a cui viene aggiunta una copia della pagina inclusa nel progetto. I lanci consentono di rivedere le traduzioni aggiornate prima di inviarle alla copia per lingua:
 
-   * Quando la pagina tradotta viene importata in AEM, sovrascrive la pagina nel lancio.
-   * La pagina tradotta sovrascrive la copia per lingua solo quando il lancio viene promosso.
+  * Quando la pagina tradotta viene importata in AEM, sovrascrive la pagina nel lancio.
+  * La pagina tradotta sovrascrive la copia per lingua solo quando il lancio viene promosso.
 
 Ad esempio, viene creata la directory principale della lingua /content/geometrixx/fr per la traduzione francese della lingua master /content/geometrixx/en. Non ci sono altre pagine nella copia per lingua francese.
 
@@ -377,7 +389,7 @@ Per confrontare le copie per lingua con la lingua master:
 1. Nella console **Sites**, passa alla copia per lingua che desideri confrontare.
 1. Apri il pannello **[Riferimenti](/help/sites-authoring/basic-handling.md#references)**.
 1. Sotto l’intestazione **Copie** seleziona **Copie per lingua.**
-1. Seleziona la specifica copia per lingua e fai clic su **Confronta con &#x200B;** principaleo **Confronta con precedente &#x200B;** se applicabile.
+1. Seleziona la specifica copia per lingua e fai clic su **Confronta con ** principaleo **Confronta con precedente **se applicabile.
 
    ![chlimage_1-37](assets/chlimage_1-37.jpeg)
 

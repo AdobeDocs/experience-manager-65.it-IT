@@ -9,13 +9,27 @@ exl-id: 809af2c0-6f5c-4dd4-af48-dbf476c9ea45
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
-workflow-type: ht
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 100%
-
 ---
-
 # Configurare attributi di sistema avanzati {#configure-advanced-system-attributes}
 
 Utilizza la pagina Configura attributi di sistema avanzati per modificare alcune impostazioni nel file di configurazione senza dover esportare, modificare e importare il file. (Consulta [Importazione ed esportazione del file di configurazione](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
@@ -23,7 +37,7 @@ Utilizza la pagina Configura attributi di sistema avanzati per modificare alcune
 1. Nella console di amministrazione, fare clic su **[!UICONTROL Impostazioni > Gestione utente > Configurazione > Configura attributi di sistema avanzati]**.
 1. (Facoltativo) Modifica uno dei seguenti attributi di sessione:
 
-   **Limite timeout sessione (minuti):** il tempo, in minuti, trascorso il quale un utente viene automaticamente disconnesso dal sistema. Per impostazione predefinita, i componenti di AEM Forms come Workbench si interrompono dopo due ore, indipendentemente dall’attività o dall’inattività, e l’utente deve effettuare di nuovo l’accesso. I valori validi sono compresi tra `1` e `1440`. Il valore predefinito è `120` (2 ore). Questa impostazione aggiorna la chiave di ingresso `SAML/Producer/assertionValidityInMinutes` nel file di configurazione.
+   **Limite timeout sessione (minuti):** il tempo, in minuti, trascorso il quale un utente viene automaticamente disconnesso dal sistema. Per impostazione predefinita, i componenti di AEM Forms come Workbench si interrompono per timeout dopo due ore, indipendentemente dall’attività o dall’inattività, e l’utente deve effettuare di nuovo l’accesso. I valori validi sono compresi tra `1` e `1440`. Il valore predefinito è `120` (2 ore). Questa impostazione aggiorna la chiave di ingresso `SAML/Producer/assertionValidityInMinutes` nel file di configurazione.
 
    >[!NOTE]
    >

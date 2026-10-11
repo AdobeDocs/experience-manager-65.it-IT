@@ -9,13 +9,20 @@ exl-id: 8279684f-23dd-4234-bf01-fd2ce74bcb4e
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '693'
 ht-degree: 0%
-
 ---
-
 # Nozioni di base su SRP e UGC {#srp-and-ugc-essentials}
 
 ## Introduzione {#introduction}
@@ -100,11 +107,11 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 
 ## Posizioni di archiviazione relative a UGC {#ugc-related-storage-locations}
 
-Le seguenti descrizioni della posizione di archiviazione possono essere utili per lo sviluppo con JSRP o eventualmente MSRP. Attualmente non è disponibile alcuna interfaccia utente per accedere a contenuti generati dagli utenti archiviati in ASRP, in quanto sono disponibili strumenti JSRP ([CRXDE Liti](../../help/sites-developing/developing-with-crxde-lite.md)) e MSRP (MongoDB).
+Le seguenti descrizioni della posizione di archiviazione possono essere utili per lo sviluppo con JSRP o eventualmente MSRP. Attualmente non è disponibile alcuna interfaccia utente per l&#39;accesso a UGC archiviati in ASRP, in quanto sono disponibili strumenti JSRP ([CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)) e MSRP (MongoDB).
 
 **Percorso componente**
 
-Quando un membro immette contenuti generati dagli utenti (UGC) nell’ambiente di pubblicazione, interagisce con un componente come parte di un sito AEM.
+Quando un membro accede a UGC nell’ambiente di pubblicazione, interagisce con un componente come parte di un sito AEM.
 
 Un esempio di tale componente è il componente [comments](http://localhost:4502/content/community-components/en/comments.html) presente nel sito [Guida ai componenti della community](components-guide.md). Il percorso del nodo del commento nell’archivio locale è:
 

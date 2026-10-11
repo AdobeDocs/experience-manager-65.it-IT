@@ -10,7 +10,20 @@ exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
-source-git-commit: f965c449da06a1b7e60428e0734c621f004d318c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2898'
 ht-degree: 2%
@@ -64,7 +77,7 @@ Poiché HTL è la tecnologia preferita per lo sviluppo di siti AEM, deve essere 
 
 ### Utilizzo di HTL {#using-htl}
 
-In HTL, le librerie client vengono caricate tramite un modello helper fornito da AEM, a cui è possibile accedere tramite [`data-sly-use`](https://helpx.adobe.com/it/experience-manager/htl/using/block-statements.html#use). In questo file sono disponibili tre modelli, che possono essere richiamati tramite [`data-sly-call`](https://helpx.adobe.com/it/experience-manager/htl/using/block-statements.html#template-call):
+In HTL, le librerie client vengono caricate tramite un modello helper fornito da AEM, a cui è possibile accedere tramite [`data-sly-use`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#use). In questo file sono disponibili tre modelli, che possono essere richiamati tramite [`data-sly-call`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#template-call):
 
 * **css** - Carica solo i file CSS delle librerie client di riferimento.
 * **js** - Carica solo i file JavaScript delle librerie client di riferimento.
@@ -72,7 +85,7 @@ In HTL, le librerie client vengono caricate tramite un modello helper fornito da
 
 Ogni modello helper richiede un’opzione `categories` per fare riferimento alle librerie client desiderate. Tale opzione può essere un array di valori stringa o una stringa contenente un elenco di valori separati da virgola.
 
-Per ulteriori dettagli ed esempi di utilizzo, vedere il documento [Guida introduttiva a HTML Template Language](https://helpx.adobe.com/it/experience-manager/htl/using/getting-started.html#loading-client-libraries).
+Per ulteriori dettagli ed esempi di utilizzo, vedere il documento [Guida introduttiva a HTML Template Language](https://helpx.adobe.com/experience-manager/htl/using/getting-started.html#loading-client-libraries).
 
 ### Utilizzo di JSP {#using-jsp}
 

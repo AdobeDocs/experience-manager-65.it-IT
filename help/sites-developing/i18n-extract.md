@@ -1,19 +1,26 @@
 ---
 title: Estrazione delle stringhe per la traduzione
-
 description: Utilizza xgettext-maven-plugin per estrarre le stringhe dal codice sorgente che richiedono la traduzione
-
-
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
-
 exl-id: 4acc5f7f-0bcb-4b5a-8531-52e146cffeae
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 2%
@@ -68,10 +75,10 @@ La parte pattern di una regola viene utilizzata per far corrispondere i nomi dei
 | Prefisso | Effetto |
 |---|---|
 | / | Indica un percorso JCR. Pertanto, questo prefisso corrisponde ai file sotto la directory jcr_root. |
-| &ast; | Indica un file normale nel file system. |
+| &amp;ast; | Indica un file normale nel file system. |
 | nessuno | Nessun prefisso o pattern che inizia con una cartella o un nome di file indica un file normale nel file system. |
 
-Se utilizzato all’interno di un pattern, il carattere / indica una sottodirectory e il carattere &ast; corrisponde a tutto. Nella tabella seguente sono elencati diversi esempi di regole.
+Se utilizzato all’interno di un pattern, il carattere / indica una sottodirectory e il carattere &amp;ast; corrisponde a tutto. Nella tabella seguente sono elencati diversi esempi di regole.
 
 <table>
  <tbody>

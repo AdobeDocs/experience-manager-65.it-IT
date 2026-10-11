@@ -10,13 +10,20 @@ exl-id: 569f2052-b4fe-4f7f-aec9-657217cba091
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '735'
 ht-degree: 0%
-
 ---
-
 # Aggiungi Clientlibs {#add-clientlibs}
 
 ## Aggiungere una ClientLibraryFolder (clientlibs) {#add-a-clientlibraryfolder-clientlibs}
@@ -25,7 +32,7 @@ Creare una ClientLibraryFolder denominata `clientlibs` contenente JavaScript (JS
 
 Il valore della proprietà `categories` assegnato a questa libreria client è l&#39;identificatore utilizzato per includere direttamente la libreria client da una pagina di contenuto o per incorporarla in altre librerie client.
 
-1. Utilizzando **CRXDE Liti**, espandere `/etc/designs`
+1. Utilizzando **CRXDE Lite**, espandere `/etc/designs`
 
 1. Fare clic con il pulsante destro del mouse su `an-scf-sandbox` e selezionare `Create Node`
 
@@ -44,7 +51,7 @@ Nella scheda **Proprietà** per il nuovo nodo `clientlibs`, immetti la propriet�
 * Fai clic su **Aggiungi**
 * Fai clic su **Salva tutto**
 
-Nota: anteprima del valore delle categorie con &quot;apps&quot;. è una convenzione per identificare l’applicazione proprietaria come presente nella cartella /apps, non in /libs. IMPORTANTE: aggiungere il segnaposto `js.tx` e **`css.txt`** file. (Non è ufficialmente un cq:ClientLibraryFolder senza di loro).
+Nota: anteporre al valore delle categorie &quot;apps&quot;. è una convenzione che identifica l&#39;applicazione proprietaria come se si trovasse nella cartella /apps, non in /libs. IMPORTANTE: aggiungere il segnaposto `js.tx` e **`css.txt`** file. (Non è ufficialmente un cq:ClientLibraryFolder senza di loro.)
 
 1. Fare clic con il pulsante destro del mouse su **`/etc/designs/an-scf-sandbox/clientlibs`**
 1. Seleziona **Crea file...**
@@ -89,16 +96,16 @@ In questo caso, includendoli tutti e quindi si preferiscono le clientlibs SCF di
 * Fai clic su **`Multi`**
 * Valore: **`cq.social.scf`**
 
-   * Apparirà una finestra di dialogo,
-fare clic su **`+`** dopo ogni voce per aggiungere le seguenti categorie clientlib:
+  * Apparirà una finestra di dialogo,
+    fare clic su **`+`** dopo ogni voce per aggiungere le seguenti categorie clientlib:
 
-      * **`cq.ckeditor`**
-      * **`cq.social.author.hbs.comments`**
-      * **`cq.social.author.hbs.forum`**
-      * **`cq.social.author.hbs.rating`**
-      * **`cq.social.author.hbs.reviews`**
-      * **`cq.social.author.hbs.voting`**
-      * Fai clic su **OK**
+    * **`cq.ckeditor`**
+    * **`cq.social.author.hbs.comments`**
+    * **`cq.social.author.hbs.forum`**
+    * **`cq.social.author.hbs.rating`**
+    * **`cq.social.author.hbs.reviews`**
+    * **`cq.social.author.hbs.voting`**
+    * Fai clic su **OK**
 
 * Fai clic su **Salva tutto**
 
@@ -124,7 +131,7 @@ L&#39;istruzione include appartiene alla sezione `head` dello script `html`. Il 
 
 **Copia headlibs.jsp e includi clientlibs:**
 
-1. Utilizzando **CRXDE Liti**, seleziona **`/libs/foundation/components/page/headlibs.jsp`**
+1. Utilizzando **CRXDE Lite**, seleziona **`/libs/foundation/components/page/headlibs.jsp`**
 
 1. Fai clic con il pulsante destro del mouse e seleziona **Copia** (oppure seleziona Copia dalla barra degli strumenti)
 1. Seleziona **`/apps/an-scf-sandbox/components/playpage`**
@@ -159,29 +166,29 @@ Questo pacchetto esiste nell&#39;esercitazione [Creare una pagina di esempio](/h
 
 Per creare un pacchetto:
 
-* Da CRXDE Lite, fai clic sull&#39;icona [Pacchetto](https://localhost:4502/crx/packmgr/)
+* Da CRXDE Lite, fare clic sull&#39;icona [Pacchetto](https://localhost:4502/crx/packmgr/)
 * Fai clic su **Crea pacchetto**
 
-   * Nome pacchetto: an-scf-sandbox-minimal-pkg
-   * Versione: 0.1
-   * Gruppo: `leave as default`
-   * Fai clic su **OK**
+  * Nome pacchetto: an-scf-sandbox-minimal-pkg
+  * Versione: 0.1
+  * Gruppo: `leave as default`
+  * Fai clic su **OK**
 
 * Fai clic su **Modifica**
 
-   * Seleziona la scheda **Filtri**
+  * Seleziona la scheda **Filtri**
 
-      * Fai clic su **Aggiungi filtro**
-      * Percorso principale: passa a `/apps/an-scf-sandbox`
-      * Fai clic su **Fine**
-      * Fai clic su **Aggiungi filtro**
-      * Percorso principale: passa a `/etc/designs/an-scf-sandbox`
-      * Fai clic su **Fine**
-      * Fai clic su **Aggiungi filtro**
-      * Percorso principale: passa a `/content/an-scf-sandbox**`
-      * Fai clic su **Fine**
+    * Fai clic su **Aggiungi filtro**
+    * Percorso principale: passa a `/apps/an-scf-sandbox`
+    * Fai clic su **Fine**
+    * Fai clic su **Aggiungi filtro**
+    * Percorso principale: passa a `/etc/designs/an-scf-sandbox`
+    * Fai clic su **Fine**
+    * Fai clic su **Aggiungi filtro**
+    * Percorso principale: passa a `/content/an-scf-sandbox**`
+    * Fai clic su **Fine**
 
-   * Fai clic su **Salva**
+  * Fai clic su **Salva**
 
 * Fai clic su **Genera**
 

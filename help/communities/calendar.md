@@ -10,13 +10,20 @@ exl-id: c9b34b00-525d-4ca3-bd18-11bb7ce66787
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1158'
+source-wordcount: '1169'
 ht-degree: 0%
-
 ---
-
 # Funzione calendario {#calendar-feature}
 
 ## Introduzione {#introduction}
@@ -92,7 +99,7 @@ Nella scheda **Impostazioni** specificare se consentire l&#39;applicazione di ta
 
 * **Dimensione massima file immagine allegato**
 
-  Rilevante solo se è selezionata l’opzione Consenti caricamenti file. Numero massimo di byte consentito per un file di immagine caricato. Il valore predefinito è 2097152 **&#x200B; &#x200B;**(2 Mb).
+  Rilevante solo se è selezionata l’opzione Consenti caricamenti file. Numero massimo di byte consentito per un file di immagine caricato. Il valore predefinito è 2097152** **(2 Mb).
 
 * **Tipi di immagine di copertina consentiti**
 
@@ -164,7 +171,7 @@ Nella scheda **Campo tag**, i tag che possono essere applicati, se consentiti ne
 
 * **Limite suggerimenti**
 
-  Immettere il numero di tag da visualizzare come suggerimento per la pubblicazione del membro nel forum. Il valore predefinito è **-**&#x200B;1 (nessun limite).
+  Immettere il numero di tag da visualizzare come suggerimento per la pubblicazione del membro nel forum. Il valore predefinito è **-**1 (nessun limite).
 
 >[!NOTE]
 >
@@ -199,7 +206,7 @@ Quando l&#39;utente connesso è un membro della community o [membro privilegiato
 In particolare, essi possono:
 
 * Creare un evento calendario
-* Post un commento a un evento calendario
+* Pubblicare un commento in un evento calendario
 * Modifica il proprio evento calendario o commento
 * Eliminare il proprio evento calendario o commento
 * Contrassegna eventi o commenti del calendario di altri utenti

@@ -1,5 +1,5 @@
 ---
-title: Applicare predefiniti per le immagini Dynamic Media
+title: Applicare predefiniti per immagini Dynamic Media
 description: Scopri come abilitare le risorse per distribuire dinamicamente immagini di dimensioni diverse, in formati diversi o con altre proprietà dell’immagine generate dinamicamente.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -9,14 +9,28 @@ feature: Image Presets
 role: User,Admin
 exl-id: 98d88b59-eb8f-42db-abb8-04506a5b8c30
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: a16e03b7-8456-4383-8860-31ab5ab00e9e
+    internal-label: Image presets
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '346'
 ht-degree: 4%
-
 ---
-
-# Applicare predefiniti immagine Dynamic Medie {#applying-image-presets}
+# Applicare i predefiniti per le immagini Dynamic Media {#applying-image-presets}
 
 I predefiniti per immagini consentono alle risorse di distribuire dinamicamente immagini di diverse dimensioni, in formati diversi o con altre proprietà dell’immagine generate dinamicamente. Potete scegliere un predefinito quando esportate le immagini. Il predefinito riformerà le immagini in base alle specifiche specificate dall&#39;amministratore.
 
@@ -32,9 +46,9 @@ Potete applicare un predefinito immagine a un&#39;immagine in qualsiasi momento.
 
 >[!NOTE]
 >
->In modalità Dynamic Medie - Scene7, i predefiniti per immagini sono supportati solo per le risorse immagini.
+>In modalità Dynamic Media - Scene7, i predefiniti per immagini sono supportati solo per le risorse immagini.
 
-**Per applicare i predefiniti immagine di Dynamic Medie:**
+**Per applicare i predefiniti immagine Dynamic Media:**
 
 1. Apri la risorsa e, nella barra a sinistra, seleziona il menu a discesa, quindi seleziona **[!UICONTROL Rappresentazioni]**.
 
@@ -55,4 +69,4 @@ Potete applicare un predefinito immagine a un&#39;immagine in qualsiasi momento.
    >
    >Se la risorsa *e* il predefinito immagine non è ancora stato pubblicato, il pulsante **[!UICONTROL URL]** (o **[!UICONTROL URL]** e **[!UICONTROL RESS]**, se applicabile) non è disponibile.
    >
-   >Inoltre, i predefiniti immagine vengono pubblicati automaticamente su un server Dynamic Medie.
+   >Inoltre, i predefiniti immagine vengono pubblicati automaticamente su un server Dynamic Media.

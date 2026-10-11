@@ -10,13 +10,20 @@ exl-id: d4295a77-b931-4bc8-b3b4-eec42fdcfc56
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '400'
 ht-degree: 0%
-
 ---
-
 # Aggiungi commento alla pagina di esempio  {#add-comment-to-sample-page}
 
 Ora che i componenti per il sistema di commenti personalizzato sono presenti nella directory dell’applicazione (/apps), è possibile utilizzare il componente esteso. L’istanza del sistema di commenti in un sito web interessato deve impostare resourceType come sistema di commenti personalizzato e includere tutte le librerie client necessarie.
@@ -55,11 +62,11 @@ Affinché il commento venga visualizzato e funzioni correttamente, le librerie c
 
 ![verify-comment-crxde](assets/verify-comment-crxde.png)
 
-#### Pagina di esempio Publish {#publish-sample-page}
+#### Pubblica pagina di esempio {#publish-sample-page}
 
 Dopo aver aggiunto il componente personalizzato alla pagina, è necessario (ri) [pubblicare la pagina](/help/communities/sites-console.md#publishing-the-site).
 
-#### Publish: commento Alt sulla pagina di esempio {#publish-alt-comment-on-sample-page}
+#### Pubblicazione: commento alternativo nella pagina di esempio {#publish-alt-comment-on-sample-page}
 
 Dopo aver pubblicato sia l’applicazione personalizzata che la pagina di esempio, è possibile immettere un commento. Una volta effettuato l&#39;accesso, con un [utente demo](/help/communities/tutorials.md#demo-users) o amministratore, è possibile pubblicare un commento.
 

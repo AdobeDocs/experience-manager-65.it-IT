@@ -1,19 +1,30 @@
 ---
 title: Ottimizzazione delle prestazioni [!DNL Assets]
-description: Suggerimenti e indicazioni sulla configurazione di  [!DNL Experience Manager] e sulle modifiche a componenti hardware, software e di rete per rimuovere i colli di bottiglia e ottimizzare le prestazioni di [!DNL Experience Manager Assets].
+description: Suggerimenti e indicazioni sulla configurazione di [!DNL Experience Manager] e sulle modifiche a componenti hardware, software e di rete per rimuovere i colli di bottiglia e ottimizzare le prestazioni di [!DNL Experience Manager Assets].
 contentOwner: AG
 mini-toc-levels: 1
 role: Developer, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2794'
+source-wordcount: '2795'
 ht-degree: 0%
-
 ---
-
 <!-- TBD: Get reviewed by engineering. -->
 
 # Guida all’ottimizzazione delle prestazioni di [!DNL Adobe Experience Manager Assets] {#assets-performance-tuning-guide}
@@ -243,7 +254,7 @@ Quando replichi le risorse in un numero elevato di istanze di pubblicazione, ad 
 
 ## Cerca indici {#search-indexes}
 
-Installa [i Service Pack più recenti](/help/release-notes/release-notes.md) e gli hotfix relativi alle prestazioni, in quanto spesso includono aggiornamenti agli indici di sistema. Consulta [suggerimenti per l&#39;ottimizzazione delle prestazioni](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines) per alcune ottimizzazioni dell&#39;indice.
+Installa [i Service Pack più recenti](/help/release-notes/release-notes.md) e gli hotfix relativi alle prestazioni, in quanto spesso includono aggiornamenti agli indici di sistema. Consulta [suggerimenti per l&#39;ottimizzazione delle prestazioni](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines) per alcune ottimizzazioni dell&#39;indice.
 
 Creare indici personalizzati per le query eseguite spesso. Per informazioni dettagliate, consulta la [metodologia per l&#39;analisi delle query lente](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) e [creazione di indici personalizzati](/help/sites-deploying/queries-and-indexing.md). Per ulteriori informazioni sulle best practice per query e indici, consulta [Best practice per query e indicizzazione](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 

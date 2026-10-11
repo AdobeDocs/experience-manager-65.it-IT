@@ -9,18 +9,25 @@ role: Admin
 exl-id: 67de7e26-3f93-4034-9e3a-5c127f7447bc
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '213'
 ht-degree: 4%
-
 ---
-
 # Configurazione di archiviazione {#storage-configuration}
 
 La configurazione dello storage è il mezzo per identificare lo storage scelto per il contenuto della community, noto anche come UGC (User-generated Content).
 
-Questa impostazione informa il codice AEM Communities sull’implementazione del provider di risorse di archiviazione (SRP) utilizzata durante l’accesso a UGC. Deve riflettere la topologia stabilita quando è stato distribuito Adobe Experience Manager (AEM).
+Questa impostazione informa il codice AEM Communities sull’implementazione del provider di risorse di archiviazione (SRP) utilizzata durante l’accesso a UGC. Deve riflettere la topologia stabilita al momento della distribuzione di Adobe Experience Manager (AEM).
 
 Per informazioni sulle opzioni di storage e sulle topologie di distribuzione, visitare il sito Web all&#39;indirizzo:
 
@@ -40,9 +47,9 @@ Per selezionare un&#39;opzione di archiviazione diversa da JCR predefinita:
 * Seleziona un’opzione
 * Configurare in modo appropriato
 
-   * Visualizza dettagli per [selezione di MSRP](msrp.md#select-msrp)
-   * Vedi dettagli per [selezione DSRP](dsrp.md#select-dsrp)
-   * Vedi i dettagli per [selezionare ASRP](asrp.md#select-asrp)
+  * Visualizza dettagli per [selezione di MSRP](msrp.md#select-msrp)
+  * Vedi dettagli per [selezione DSRP](dsrp.md#select-dsrp)
+  * Vedi i dettagli per [selezionare ASRP](asrp.md#select-asrp)
 
 * Seleziona **[!UICONTROL Invia]**.
 
@@ -50,7 +57,7 @@ Per selezionare un&#39;opzione di archiviazione diversa da JCR predefinita:
 
 Se non viene effettuata alcuna selezione, l’impostazione predefinita è l’archivio AEM, JCR.
 
-JCR è *non* un archivio comune condiviso dagli ambienti Author e Publish. Il contenuto della community è visibile solo dall’ambiente di authoring o Publish in cui è stato creato.
+JCR è *not* un archivio comune condiviso dagli ambienti Author e Publish. Il contenuto della community è visibile solo dall’ambiente di authoring o pubblicazione in cui è stato creato.
 
 Visita [Archivio JCR](jsrp.md) per ulteriori informazioni.
 
