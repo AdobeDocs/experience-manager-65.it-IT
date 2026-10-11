@@ -9,16 +9,25 @@ exl-id: 1c761aa7-a72f-46f0-8717-0b6e0d1cff55
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 17%
-
+source-wordcount: '308'
+ht-degree: 15%
 ---
+# Scelte rapide da tastiera durante la modifica di pagine{#keyboard-shortcuts-when-editing-pages}
 
-# Scelte rapide da tastiera durante la modifica delle pagine{#keyboard-shortcuts-when-editing-pages}
-
-In AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabili quando si modifica una pagina, altre quando si [utilizzano le console](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md).
+AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, Alcune sono applicabili quando si modificano le pagine, altre quando si [utilizzano le console](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -69,7 +78,7 @@ In AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabil
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-X</code></strong></td>
-   <td>Taglia i paragrafi selezionati.<strong><br /> Nota:</strong> Il paragrafo tagliato non scompare finché non viene incollato nella nuova posizione.</td>
+   <td>Taglia paragrafi selezionati.<strong><br /> Nota:</strong> Il paragrafo tagliato non scompare finché non viene incollato nella nuova posizione.</td>
   </tr>
   <tr>
    <td> </td>
@@ -94,7 +103,7 @@ In AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabil
   <tr>
    <td> </td>
    <td><strong><code>Alt-right-click</code></strong></td>
-   <td>Forza menu di scelta rapida predefinito (browser).<br /> <strong>Nota:</strong> i menu di scelta rapida AEM si trovano solo nell'interfaccia classica.</td>
+   <td>Forza menu di scelta rapida predefinito (browser).<br /> <strong>Nota:</strong> i menu di scelta rapida di AEM sono disponibili solo nell'interfaccia classica.</td>
   </tr>
   <tr>
    <td> </td>

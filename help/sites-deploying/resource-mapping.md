@@ -10,13 +10,22 @@ feature: Configuring
 exl-id: 3eebdd38-da5b-4c38-868a-22c3c7a97b66
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '507'
-ht-degree: 0%
-
+source-wordcount: '542'
+ht-degree: 2%
 ---
-
 # Mappatura delle risorse{#resource-mapping}
 
 La mappatura delle risorse viene utilizzata per definire reindirizzamenti, URL personalizzati e host virtuali per Adobe Experience Manager (AEM).
@@ -59,7 +68,7 @@ Questo ti consente di immettere un URL o un percorso di risorsa. Fai clic su **R
 * **Voci mappa risolutore**
 Elenco di voci utilizzate dai metodi ResourceResolver.resolve per mappare gli URL alle risorse.
 
-* **Mappatura delle voci di mapping**
+* **Voci mapping**
 Elenco di voci utilizzate dai metodi ResourceResolver.map per mappare i percorsi delle risorse agli URL.
 
 I due elenchi mostrano varie voci, comprese quelle definite come predefinite dalle applicazioni. Queste servono spesso a semplificare gli URL dell’utente.
@@ -105,7 +114,7 @@ Per creare il mapping con il prefisso `/content` per qualsiasi richiesta a https
 1. Crea un nodo:
 
    * **Tipo** `sling:Mapping`
-Questo tipo di nodo è destinato a tali mappature, anche se il suo utilizzo non è obbligatorio.
+     Questo tipo di nodo è destinato a tali mappature, anche se il suo utilizzo non è obbligatorio.
 
    * **Nome** `localhost_any`
 
@@ -114,15 +123,15 @@ Questo tipo di nodo è destinato a tali mappature, anche se il suo utilizzo non 
 
    * **Nome** `sling:match`
 
-      * **Tipo** `String`
+     * **Tipo** `String`
 
-      * **Valore** `localhost.4503/`
+     * **Valore** `localhost.4503/`
 
    * **Nome** `sling:internalRedirect`
 
-      * **Tipo** `String[]`
+     * **Tipo** `String[]`
 
-      * **Valore** `/content/`
+     * **Valore** `/content/`
 
 1. Fare clic su **Salva tutto**.
 
