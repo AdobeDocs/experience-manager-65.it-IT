@@ -28,7 +28,7 @@ role_v2:
     internal-label: Developer
 source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '444'
 ht-degree: 2%
 ---
 # Personalizzazione del modulo di tracciamento degli eventi {#customizing-form-event-tracking}

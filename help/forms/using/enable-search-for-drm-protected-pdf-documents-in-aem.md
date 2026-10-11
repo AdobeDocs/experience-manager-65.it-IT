@@ -41,7 +41,7 @@ La funzione di ricerca di AEM consente di cercare e individuare le risorse di AE
 
 * Se utilizzi AEM Forms su OSGi:
 
-  * Installa il pacchetto [Indicizzatore di Document Security di AEM Forms](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) nel server AEM Forms.
+  * Installa il pacchetto [Indicizzatore di Document Security di AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) nel server AEM Forms.
 
   * Assicurati che un AEM Forms sul server JEE sia in esecuzione e che la sicurezza dei documenti sia installata nel corrispondente AEM Forms sul server JEE. Per indicizzare il documento protetto è necessario AEM Form sul server JEE.
 
