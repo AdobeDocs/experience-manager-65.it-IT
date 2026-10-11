@@ -169,7 +169,7 @@ Molte proprietà sono auto-esplicative, qui sotto ulteriori dettagli per alcune 
 * **Rendering come**
 Le varie opzioni per la realizzazione/il rendering del campo in un frammento. Spesso questo consente di definire se l’autore può vedere una singola istanza del campo o se può crearne più istanze.
 
-* Etichetta campo ****
+* Etichetta campo **&#x200B;**
 L&#39;immissione di un&#39;etichetta **Campo** genera automaticamente un **Nome proprietà**, che può essere aggiornato manualmente, se necessario.
 
 * **Convalida**

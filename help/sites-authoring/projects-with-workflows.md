@@ -54,8 +54,8 @@ A seconda del modello di progetto selezionato, sono disponibili alcuni flussi di
 | Richiedi lancio | x |  |  |  |
 | Richiedi pagina di destinazione | x |  |  |  |
 | Richiedi e-mail | x |  |  |  |
-| Crea DAM copia in lingua &amp;ast; |  |  |  | x |
-| Creazione DAM e traduzione copia in lingua &amp;ast; |  |  |  | x |
+| Crea DAM copia in lingua &ast; |  |  |  | x |
+| Creazione DAM e traduzione copia in lingua &ast; |  |  |  | x |
 
 >[!NOTE]
 >

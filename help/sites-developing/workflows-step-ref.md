@@ -89,7 +89,7 @@ Le seguenti proprietà sono disponibili per molti componenti del passaggio del f
 
 ## Suddivisione E {#and-split}
 
-La [0}divisione AND **crea una [PROD143]e nel flusso di lavoro, dopo la quale entrambi i rami sono attivi.** Puoi aggiungere i passaggi del flusso di lavoro a ogni ramo in base alle esigenze. Questo passaggio ti consente di introdurre più percorsi di elaborazione nel flusso di lavoro. Ad esempio, puoi consentire che determinati passaggi di revisione si verifichino in parallelo, risparmiando tempo.
+La &lbrack;0&rbrace;divisione AND **crea una [PROD143]e nel flusso di lavoro, dopo la quale entrambi i rami sono attivi.** Puoi aggiungere i passaggi del flusso di lavoro a ogni ramo in base alle esigenze. Questo passaggio ti consente di introdurre più percorsi di elaborazione nel flusso di lavoro. Ad esempio, puoi consentire che determinati passaggi di revisione si verifichino in parallelo, risparmiando tempo.
 
 ![wf-26](assets/wf-26.png)
 
@@ -278,7 +278,7 @@ Per configurare il passaggio, modifica e utilizza le seguenti schede:
 * [Utente/Gruppo](#step-properties-user-group-tab)
 * **Finestra di dialogo**
 
-  * **Percorso finestra di dialogo**: percorso del nodo della finestra di dialogo [ creata](#dialog-participant-step-creating-a-dialog).
+  * **Percorso finestra di dialogo**: percorso del nodo della finestra di dialogo [&#x200B; creata](#dialog-participant-step-creating-a-dialog).
 
 #### Passaggio partecipante finestra di dialogo - Creazione di una finestra di dialogo {#dialog-participant-step-creating-a-dialog}
 
@@ -400,7 +400,7 @@ Per configurare il passaggio, modifica e utilizza le seguenti schede:
 
 * **Finestra di dialogo**
 
-  * **Percorso finestra di dialogo**: il percorso del nodo della finestra di dialogo [ creata (come nel **Passaggio partecipante alla finestra di dialogo**)](#dialog-participant-step-creating-a-dialog).
+  * **Percorso finestra di dialogo**: il percorso del nodo della finestra di dialogo [&#x200B; creata (come nel **Passaggio partecipante alla finestra di dialogo**)](#dialog-participant-step-creating-a-dialog).
 
 #### Passaggio partecipante dinamico: sviluppo del selettore partecipanti {#dynamic-participant-step-developing-the-participant-chooser}
 

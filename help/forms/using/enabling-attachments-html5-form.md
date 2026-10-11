@@ -42,7 +42,7 @@ Con i moduli HTML5 è possibile caricare, visualizzare in anteprima e inviare al
    | multiSelect | true o false (true per impostazione predefinita) |
    | fileSizeLimit | Numero in MB (2 MB per impostazione predefinita). Ad esempio, 5. |
    | buttonText | Testo pulsante per finestra popup (&quot;Allega&quot; per impostazione predefinita) |
-   | accetta | elenco separato da virgole dei tipi di file da accettare (&quot;audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf&quot; per impostazione predefinita) |
+   | accetta | elenco separato da virgole dei tipi di file da accettare (&quot;audio/&ast;, video/&ast;, image/&ast;, text/&ast;, .pdf&quot; per impostazione predefinita) |
 
    Ad esempio:
 

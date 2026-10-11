@@ -147,7 +147,7 @@ Nel caso in cui l&#39;intero cluster non riesca a causa di errori quali l&#39;ar
    1. Elimina il file clusterNode/revision.log sul nodo.
    1. Elimina il file .lock sul nodo, se esistente.
    1. Elimina l’eventuale repository/system.id sul nodo.
-   1. Eliminare i file &amp;ast;&amp;ast;/listener.properties sul nodo, se presenti.
+   1. Eliminare i file &ast;&ast;/listener.properties sul nodo, se presenti.
    1. Ripristina repository/cluster_node.id per i singoli nodi cluster.
 
 >[!NOTE]
@@ -177,7 +177,7 @@ Nel caso in cui l&#39;intero cluster non riesca a causa di errori quali l&#39;ar
    1. Eliminare il file clusterNode/revision.log in tutti i nodi del cluster.
    1. Eliminare il blocco in tutti i nodi del cluster, se esistente.
    1. Eliminare tutti i nodi del cluster repository/system.id, se esiste.
-   1. Eliminare i file &amp;ast;&amp;ast;/listener.properties su tutti i nodi del cluster, se esistenti.
+   1. Eliminare i file &ast;&ast;/listener.properties su tutti i nodi del cluster, se esistenti.
    1. Ripristina repository/cluster_node.id per i singoli nodi cluster.
 
 >[!NOTE]

@@ -39,7 +39,7 @@ La funzione Rapporti sulle transazioni è disponibile come parte del pacchetto d
 * Abilita replica inversa su tutte le istanze di pubblicazione
 * Abilita rapporti sulle transazioni
 * Fornire i diritti per visualizzare un report sulle transazioni
-* (Facoltativo) Configurare il periodo di svuotamento delle transazioni e le caselle in uscita [](/help/forms/using/installing-configuring-aem-forms-osgi.md)
+* (Facoltativo) Configurare il periodo di svuotamento delle transazioni e le caselle in uscita [&#128279;](/help/forms/using/installing-configuring-aem-forms-osgi.md)
 
 >[!NOTE]
 >

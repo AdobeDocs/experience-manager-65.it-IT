@@ -82,7 +82,7 @@ Per abilitare SSL, WebSphere deve accedere a un account utente nel registro uten
 1. In Sicurezza amministrativa, seleziona **Ruoli utente amministrativi**.
 1. Fai clic su Aggiungi e procedi come segue:
 
-   1. Digitare **&amp;ast;** nella casella di ricerca e fare clic su Cerca.
+   1. Digitare **&ast;** nella casella di ricerca e fare clic su Cerca.
    1. Alla voce Ruoli, fai clic su **Amministratore**.
    1. Aggiungi l’utente appena creato al ruolo Mappato a e mappalo come Amministratore.
 

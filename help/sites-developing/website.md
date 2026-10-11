@@ -1539,6 +1539,6 @@ Per questo componente, puoi impostare diversi parametri sia in modalità di modi
    ```
 
 1. Salva le modifiche.
-1. Nel browser, ricarica la pagina** Products**. L’aspetto dell’intera pagina è il seguente:
+1. Nel browser, ricarica la pagina **&#x200B; Products**. L’aspetto dell’intera pagina è il seguente:
 
    ![chlimage_1-5](assets/chlimage_1-5.jpeg)

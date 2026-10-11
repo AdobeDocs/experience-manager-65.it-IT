@@ -87,7 +87,7 @@ Puoi configurare gestione utenti per verificare periodicamente la presenza di ev
 1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utenti > Configurazione > Configura attributi di sistema avanzati.
 1. In Configura l’espressione Cron del completamento della sincronizzazione, immetti un’espressione Cron che rappresenta l’intervallo di tempo in cui gestione utenti ritenta le sincronizzazione non riuscite. L’utilizzo dell’espressione Cron si basa sul sistema di pianificazione dei processi open source Quartz, versione 1.4.0.
 
-   Il valore predefinito è 0 0/13 &amp;ast; ? &amp;ast; , il che significa che il controllo viene eseguito ogni 13 minuti.
+   Il valore predefinito è 0 0/13 &ast; ? &ast; , il che significa che il controllo viene eseguito ogni 13 minuti.
 
 ## Sincronizzazione manuale delle directory {#manually-synchronize-directories}
 

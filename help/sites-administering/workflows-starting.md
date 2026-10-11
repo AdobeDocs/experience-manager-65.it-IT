@@ -183,7 +183,7 @@ Un pacchetto di flusso di lavoro:
      Questa proprietà di avvio è un elenco di elementi separato da virgole: &quot;
 
      * `property-name` ignora qualsiasi evento `jcr` attivato sul nome della proprietà specificato. &quot;
-     * `event-user-data:<*someValue*>` ignora qualsiasi evento che contiene `*<someValue*`> `user-data` impostato tramite l&#39;API [`ObservationManager`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
+     * `event-user-data:<*someValue*>` ignora qualsiasi evento che contiene `*<someValue*`> `user-data` impostato tramite l&#39;API [`ObservationManager`] (https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
 
      Ad esempio:
 

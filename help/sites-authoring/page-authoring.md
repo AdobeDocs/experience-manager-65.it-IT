@@ -50,13 +50,13 @@ Una volta posizionata sulla pagina, è possibile aprire una finestra di dialogo 
 * **Modifica diretta**
 I componenti Testo e Immagine possono essere modificati direttamente nella pagina web senza aprire una finestra di dialogo o eseguire un’azione di salvataggio esplicita.
 
-* Browser componenti **[](/help/sites-authoring/author-environment-tools.md#componentsbrowsertouchoptimizedui)**
+* Browser componenti **[&#128279;](/help/sites-authoring/author-environment-tools.md#componentsbrowsertouchoptimizedui)**
 Sul lato sinistro di una pagina modificabile è possibile aprire un browser scorrevole; da qui i componenti possono essere trascinati sulla pagina e quindi modificati.
 
-* Browser risorse **[](/help/sites-authoring/author-environment-tools.md#assetsbrowsertouchoptimizedui)**
+* Browser risorse **[&#128279;](/help/sites-authoring/author-environment-tools.md#assetsbrowsertouchoptimizedui)**
 Sul lato sinistro di una pagina modificabile è possibile aprire un browser scorrevole; da qui le risorse possono essere trascinate sulla pagina; ad esempio, per posizionare le risorse o creare collegamenti ad altre pagine.
 
-* Barra degli strumenti del componente ****
+* Barra degli strumenti del componente **&#x200B;**
 Facendo doppio clic o facendo doppio clic lentamente, viene visualizzata la barra degli strumenti appropriata (singola per la barra degli strumenti di modifica locale e doppia lenta per la barra degli strumenti completa).
 
 * **[Layout reattivo](/help/sites-authoring/responsive-layout.md)**

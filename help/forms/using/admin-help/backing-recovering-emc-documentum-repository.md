@@ -211,15 +211,15 @@ Questa sezione descrive l’installazione e la configurazione del software EMC N
 
    * Backup completo del database (nsrnmddbf.bat):
 
-     `NetWorker_database_module_root` `-s`*&lt;NetWorker_Server_Name>* `-U``[username]` `-P`*[password ]*`-l full`*&lt;database_name>*
+     `NetWorker_database_module_root` `-s`*&lt;NetWorker_Server_Name>* `-U`&#x200B;`[username]` `-P`*[password ]*`-l full`*&lt;database_name>*
 
    * Backup incrementale del database (nsrnmddbi.bat):
 
-     `[NetWorker_database_module_root]` `-s`*&lt;NetWorker_Server_Name>* `-U``[username]` `-P``[password]` `-l 1 -R`*&lt;database_name>*
+     `[NetWorker_database_module_root]` `-s`*&lt;NetWorker_Server_Name>* `-U`&#x200B;`[username]` `-P`&#x200B;`[password]` `-l 1 -R`*&lt;database_name>*
 
    * Backup del registro del database (nsrnmddbl.bat):
 
-     `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]` `-l incr -R`*&lt;database_name>*
+     `[NetWorker_database_module_root]` `-s`&#x200B;`<NetWorker_Server_Name>` `-U`&#x200B;`[username]` `-P`&#x200B;`[password]` `-l incr -R`*&lt;database_name>*
 
      Dove:
 

@@ -173,7 +173,7 @@ Senza il provisioning just-in-time, quando un utente viene autenticato correttam
 1. Per creare un dominio, fai clic su Nuovo dominio enterprise o Nuovo dominio ibrido. Per modificare un dominio esistente, fai clic sul nome del dominio.
 1. Seleziona Abilita provisioning Just In Time.
 
-   ***nota **: se la casella di controllo Abilita provisioning Just In Time non è presente, fai clic su Home > Impostazioni > Gestione utente> Configurazione > Attributi di sistema avanzati, quindi fai clic su Ricarica.*
+   ***nota &#x200B;**: se la casella di controllo Abilita provisioning Just In Time non è presente, fai clic su Home > Impostazioni > Gestione utente> Configurazione > Attributi di sistema avanzati, quindi fai clic su Ricarica.*
 
 1. Aggiungi provider di autenticazione. Durante l’aggiunta dei provider di autenticazione, nella schermata Nuova autenticazione, seleziona un creatore di identità e un provider di assegnazione registrati. Consulta [Configurazione dei provider di autenticazione](configuring-authentication-providers.md#configuring-authentication-providers).
 1. Salva il dominio.

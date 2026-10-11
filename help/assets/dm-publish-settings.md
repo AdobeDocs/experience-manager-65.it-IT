@@ -83,7 +83,7 @@ Vedi anche [Facoltativo - Impostazione e configurazione di Dynamic Media - Impos
    * Scheda [Attributi gestione colore](#color-management-attributes-tab)
 
    ![Pagina Impostazione pubblicazione Dynamic Media](/help/assets/assets-dm/dm-publish-setup.png)
-   *Pagina Impostazione pubblicazione Dynamic Media, con la scheda **[!UICONTROL Attributi richiesta]**selezionata.*<br><br>
+   *Pagina Impostazione pubblicazione Dynamic Media, con la scheda **[!UICONTROL Attributi richiesta]**&#x200B;selezionata.*<br><br>
 
 1. Al termine, nell&#39;angolo superiore destro della pagina, fare clic su **[!UICONTROL Salva]**.
 
@@ -97,7 +97,7 @@ Se *Test Image Server* è impostato come contesto di pubblicazione, è possibile
 
 **[!UICONTROL Indirizzo client]** - Consente di specificare uno o più indirizzi IP o intervalli di indirizzi IP. Se specificato, le richieste a questo catalogo immagini generate da un client non presente nell&#39;elenco degli indirizzi IP vengono rifiutate. Questa regola si applica sia alla consegna di immagini che a quelle di cui è stato eseguito il rendering.
 
-![Scheda Sicurezza ](/help/assets/assets-dm/dm-ipallowlist.png)<br>*Scheda Sicurezza che mostra il campo &quot;Consenti&quot; dell&#39;IP.*
+![Scheda Sicurezza &#x200B;](/help/assets/assets-dm/dm-ipallowlist.png)<br>*Scheda Sicurezza che mostra il campo &quot;Consenti&quot; dell&#39;IP.*
 
 ## Scheda Gestione catalogo {#catalog-management-tab}
 
