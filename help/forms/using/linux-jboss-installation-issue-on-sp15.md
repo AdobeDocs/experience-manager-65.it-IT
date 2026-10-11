@@ -52,4 +52,4 @@ Per risolvere il problema di installazione del service pack AEM Forms JEE 6.5.15
 1. Copiare il file `Resource1.zip` in una posizione diversa all&#39;esterno della cartella estratta e decomprimere il file `Resource1.zip`.
 1. Passare a `/C_/builds/dev_releng/branches/rrt/aem6.5.0_rollup/tier1/install/patch/fileset_dir/xml` e copiare il file `RUP_BOM.xml`.
 1. Incollare il file RUP_BOM.xml in `[aem_forms_jee_installation_dir]/patch/AEMForms-6.5.0-0057/xml`.
-1. Reinstalla il [Service Pack &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) di AEM Forms JEE 6.5.15.0.
+1. Reinstalla il [Service Pack &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it) di AEM Forms JEE 6.5.15.0.

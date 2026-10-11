@@ -389,9 +389,9 @@ L&#39;integrazione è semplice come rimuovere il tag `IMG` e sostituirlo con il 
 
 Per applicare un ritaglio a un&#39;immagine interattiva acquistabile per un ambiente reattivo, è possibile includere nel percorso l&#39;attributo di configurazione dell&#39;immagine interattiva `ZoomView.iscommand`. Il componente `ZoomView` è chiamato e `iscommand` è il comando di server immagini &quot;ritaglio&quot; applicato.
 
-Vedere l&#39;attributo di configurazione [ZoomView.iscommand](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand).
+Vedere l&#39;attributo di configurazione [ZoomView.iscommand](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand).
 
-Vedere il comando [crop](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop) image serving.
+Vedere il comando [crop](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop) image serving.
 
 Ora puoi integrare l’immagine interattiva con un Quickview esistente sul tuo sito web.
 

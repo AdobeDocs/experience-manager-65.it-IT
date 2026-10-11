@@ -31,7 +31,7 @@ ht-degree: 3%
 
 Il collegamento rapido si verifica quando un sito web di terze parti utilizza il codice HTML per visualizzare un’immagine dal sito web. Utilizzano la larghezza di banda ogni volta che l&#39;immagine viene richiesta, perché il browser del visitatore vi accede direttamente dal server. Hotlink *protezione* è un metodo per impedire ad altri siti Web di collegarsi direttamente a immagini, CSS o JavaScript nelle pagine Web. Questo tipo di schermatura consente di ridurre l’utilizzo di larghezza di banda non necessaria nell’account Dynamic Media.
 
-[L&#39;Assistenza clienti Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager&lang=it#support) può configurare un filtro referente a livello CDN (Content Delivery Network) in modo che il contenuto di Dynamic Media venga distribuito solo ai siti Web inclusi nell&#39;elenco dei siti Web consentiti per il dominio.
+[L&#39;Assistenza clienti Experience Manager](https://experienceleague.adobe.com/it?support-solution=Experience+Manager&lang=it#support) può configurare un filtro referente a livello CDN (Content Delivery Network) in modo che il contenuto di Dynamic Media venga distribuito solo ai siti Web inclusi nell&#39;elenco dei siti Web consentiti per il dominio.
 
 >[!NOTE]
 >

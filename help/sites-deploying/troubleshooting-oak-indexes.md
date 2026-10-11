@@ -137,7 +137,7 @@ Per identificare e correggere un processo di reindicizzazione bloccato, effettua
 1. Dopo aver raccolto tutte le informazioni descritte nel passaggio 1, riavvia AEM.
 
    * Il riavvio di AEM può risolvere il problema in caso di carico simultaneo elevato (overflow della coda di osservazione o simile).
-   * Se il riavvio non risolve il problema, apri un problema con [Assistenza clienti Adobe](https://experienceleague.adobe.com/?support-solution=General&support-tab=homehome?lang=it#support) e fornisci tutte le informazioni raccolte al passaggio 1.
+   * Se il riavvio non risolve il problema, apri un problema con [Assistenza clienti Adobe](https://experienceleague.adobe.com/it?support-solution=General&support-tab=homehome?lang=it#support) e fornisci tutte le informazioni raccolte al passaggio 1.
 
 ## Interruzione sicura della reindicizzazione asincrona {#safely-aborting-asynchronous-re-indexing}
 
