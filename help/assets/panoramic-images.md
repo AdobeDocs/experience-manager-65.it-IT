@@ -59,7 +59,7 @@ Per caricare le risorse da utilizzare con il visualizzatore immagini panoramiche
 
 Affinché il visualizzatore Immagine panoramica funzioni correttamente in Adobe Experience Manager, sincronizza i predefiniti del visualizzatore Immagine panoramica con i metadati specifici di Dynamic Media Classic e Dynamic Media Classic in modo che i predefiniti del visualizzatore vengano aggiornati in JCR. Per eseguire questa sincronizzazione, configura Dynamic Media Classic come segue:
 
-1. Apri l&#39;[applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account.
+1. Apri l&#39;[applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=it#getting-started), quindi accedi al tuo account.
 
 1. Nell&#39;angolo superiore destro della pagina, selezionare **[!UICONTROL Configurazione]** > **[!UICONTROL Configurazione applicazione]** > **[!UICONTROL Impostazione pubblicazione]** > **[!UICONTROL Server immagini]**.
 1. Nella pagina Pubblicazione su Image Server, dal menu a discesa **[!UICONTROL Contesto di pubblicazione]** nella parte superiore, seleziona **[!UICONTROL Image Server]**.
