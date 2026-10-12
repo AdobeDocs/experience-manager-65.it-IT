@@ -289,9 +289,9 @@ Durante la risoluzione dei problemi, imposta i seguenti logger su `DEBUG` nella 
 
 >[!MORELIKETHIS]
 >
->* [Metadati C2PA nella visualizzazione Assets di [!DNL Experience Manager as a Cloud Service]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/c2pa-metadata-assets-view)
->* [Metadati C2PA in [!DNL Experience Manager Assets Essentials]](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/content-credentials)
->* [Metadati C2PA in [!DNL Dynamic Media]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/c2pa-metadata)
+>* [Metadati C2PA nella visualizzazione Assets di [!DNL Experience Manager as a Cloud Service]](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/assets-view/c2pa-metadata-assets-view)
+>* [Metadati C2PA in [!DNL Experience Manager Assets Essentials]](https://experienceleague.adobe.com/it/docs/experience-manager-assets-essentials/help/content-credentials)
+>* [Metadati C2PA in [!DNL Dynamic Media]](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/c2pa-metadata)
 >* [Writeback di XMP alle rappresentazioni](/help/assets/xmp-writeback.md)
 >* [Filigrana le risorse](/help/assets/watermarking.md)
 >* [Content Authenticity Initiative](https://contentauthenticity.org/)
