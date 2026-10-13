@@ -1,6 +1,6 @@
 ---
 title: Integrazione con le best practice di Adobe Creative Cloud
-description: Best practice per l'integrazione di  [!DNL Adobe Experience Manager] con [!DNL Adobe Creative Cloud] per semplificare i flussi di lavoro di trasferimento delle risorse e velocizzare la realizzazione dei contenuti.
+description: Best practice per integrare [!DNL Adobe Experience Manager] con [!DNL Adobe Creative Cloud] per semplificare i flussi di lavoro di trasferimento delle risorse e velocizzare la realizzazione dei contenuti.
 contentOwner: AG
 mini-toc-levels: 1
 role: User, Admin
@@ -8,13 +8,35 @@ feature: Collaboration,Adobe Asset Link,Desktop App
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+  - id: e17747bc-9b7b-44e6-a443-f54229a02620
+    internal-label: Integrations
+  - id: da0dfbce-df02-4f8b-b32d-a4e3b1d05085
+    internal-label: Configuration
+subfeature_v2:
+  - id: f7212149-7f65-4e43-89c2-1f075f45be16
+    internal-label: Collaboration
+  - id: f14a07fd-abc1-452c-8a48-fbcbc24a66ef
+    internal-label: Adobe Asset Link
+  - id: d18d21f5-ea10-400d-a1f0-a2071ad38419
+    internal-label: Desktop App
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3263'
+source-wordcount: '3390'
 ht-degree: 14%
-
 ---
-
 # Best practice per l&#39;integrazione di [!DNL Adobe Experience Manager] e [!DNL Creative Cloud] {#aem-and-creative-cloud-integration-best-practices}
 
 | Versione | Collegamento articolo |
@@ -120,8 +142,8 @@ Alcuni punti importanti su questa integrazione:
 * La risorsa salvata in [!DNL Experience Manager] è una copia, non un collegamento in [!DNL Adobe Stock].
 
 **Utilizzo delle risorse salvate da [!DNL Adobe Stock] in [!DNL Experience Manager] in[!DNL Creative Cloud]**. Questa integrazione è indipendente da [!DNL Adobe Asset Link], ma [!DNL Adobe Asset Link] riconosce queste risorse salvate da [!DNL Stock] in questo modo e visualizza metadati aggiuntivi e un logo [!DNL Adobe Stock] su queste risorse nell&#39;interfaccia utente dell&#39;estensione [!DNL Adobe Asset Link] in [!DNL Photoshop], [!DNL Illustrator] o [!DNL InDesign]. I file sono disponibili per l&#39;esplorazione, l&#39;apertura e così via, in quanto si tratta di risorse normali quando vengono salvate in [!DNL Experience Manager].
-Gli utenti di Creative che lavorano in app [!DNL Creative Cloud] con estensione [!DNL Adobe Asset Link] presenti, oltre ad avere accesso a risorse con licenza già da [!DNL Adobe Stock] in [!DNL Experience Manager], possono utilizzare anche il pannello Librerie [!DNL Creative Cloud] per cercare, visualizzare in anteprima e concedere in licenza [!DNL Adobe Stock] risorse.
-[!DNL Assets] di [!DNL Adobe Stock] concesso in licenza e salvato in [!DNL Experience Manager] diventa disponibile per i team più grandi che accedono alla distribuzione di [!DNL Experience Manager Assets], mentre le risorse con licenza Creative di [!DNL Adobe Stock] tramite il pannello Librerie di [!DNL Creative Cloud] le rendono disponibili a se stesse solo per impostazione predefinita nel loro account di [!DNL Creative Cloud].
+Gli utenti di Creative che lavorano in app [!DNL Creative Cloud] con estensione [!DNL Adobe Asset Link] presenti, oltre ad avere accesso a risorse con licenza da [!DNL Adobe Stock] in [!DNL Experience Manager], possono anche utilizzare il pannello Librerie [!DNL Creative Cloud] per cercare, visualizzare in anteprima e concedere in licenza [!DNL Adobe Stock] risorse.
+[!DNL Assets] da [!DNL Adobe Stock] concesso in licenza e salvato in [!DNL Experience Manager] diventa disponibile ai team più grandi che accedono alla distribuzione di [!DNL Experience Manager Assets], mentre le risorse create con licenza da [!DNL Adobe Stock] tramite il pannello Librerie [!DNL Creative Cloud] le rendono disponibili solo per impostazione predefinita nel loro account [!DNL Creative Cloud].
 
 <!-- 
 TBD: A condensed version of the below content is better placed in the Adobe DAM introduction article.

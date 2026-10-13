@@ -7,13 +7,29 @@ exl-id: d4035c91-ee8d-4f12-bdac-e3912be732d7
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 1%
-
+source-wordcount: '518'
+ht-degree: 5%
 ---
-
 # Utilizzare modelli e-mail personalizzati in un passaggio Assegna attività{#use-custom-email-templates-in-an-assign-task-step}
 
 È possibile utilizzare il passaggio Assegna attività per creare e assegnare attività a un utente o a un gruppo. Quando un’attività viene assegnata a un utente o a un gruppo, viene inviata una notifica e-mail all’utente definito o a ciascun membro del gruppo definito. Una tipica notifica e-mail contiene il collegamento dell’attività assegnata e le informazioni relative all’attività. L’immagine seguente mostra un esempio di notifica e-mail:
@@ -40,7 +56,7 @@ AEM Forms fornisce automaticamente un modello per le notifiche e-mail. Il modell
 
 1. Sostituisci il contenuto del file htmlEmailTemplate.txt con contenuto personalizzato.
 
-   Un modello di notifica e-mail è un [e-mail HTML](https://en.wikipedia.org/wiki/HTML_email). Per modificare l’aspetto del modello, puoi sostituire il codice html esistente con il codice personalizzato.
+   Un modello di notifica e-mail è un [messaggio e-mail di HTML](https://en.wikipedia.org/wiki/HTML_email). Per modificare l’aspetto del modello, puoi sostituire il codice html esistente con il codice personalizzato.
 
 1. Salva il file. Ora il modello personalizzato è pronto per l’uso.
 
@@ -54,9 +70,9 @@ AEM Forms fornisce automaticamente un modello per le notifiche e-mail. Il modell
 
 1. Crea un file .txt. Ad esempio, EmailOnTaskAssign.txt.
 
-1. Aggiungi al file un codice HTML personalizzato.
+1. Aggiungi al file il codice HTML personalizzato.
 
-   Un modello di notifica e-mail è un [e-mail HTML](https://en.wikipedia.org/wiki/HTML_email). Puoi aggiungere al file un codice HTML personalizzato per creare un modello.
+   Un modello di notifica e-mail è un [messaggio e-mail di HTML](https://en.wikipedia.org/wiki/HTML_email). Puoi aggiungere al file un codice HTML personalizzato per creare un modello.
 
 1. Salva il file. Il modello è pronto per essere utilizzato nel passaggio Assegna attività.
 
@@ -68,8 +84,8 @@ Il passaggio Assegna attività è configurato per l’utilizzo del modello prede
 
 1. Passa a Assegnatario > Modello e-mail HTML.
 
-1. Seleziona il modello e-mail di HTML appena creato.
+1. Seleziona il modello e-mail HTML appena creato.
 
-1. Fare clic su OK. Il modello viene modificato.
+1. Fai clic su OK. Il modello viene modificato.
 
 Una notifica e-mail utilizza anche [metadati](../../forms/using/use-metadata-in-email-notifications.md). Ad esempio, data di scadenza, priorità, nome del flusso di lavoro e altro ancora. Puoi anche configurare il modello per l&#39;utilizzo di [metadati personalizzati](../../forms/using/use-metadata-in-email-notifications.md#using-custom-metadata-in-an-email-notification).

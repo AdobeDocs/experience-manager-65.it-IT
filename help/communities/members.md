@@ -9,13 +9,20 @@ role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '903'
-ht-degree: 2%
-
+source-wordcount: '969'
+ht-degree: 1%
 ---
-
 
 # Console di gestione membri e gruppi {#members-groups-management-consoles}
 
@@ -118,19 +125,19 @@ Se l&#39;ID viene impostato automaticamente sull&#39;indirizzo e-mail, l&#39;ID 
 In Impostazioni account un amministratore della community può effettuare le seguenti operazioni:
 
 * **[!UICONTROL Stato]**
-   * Vietato
-Un membro non è in grado di accedere, impedendo loro di visualizzare le pagine o di partecipare ad attività che richiedono l&#39;accesso. Possono ancora visitare in forma anonima un sito della community aperto.
+  * Vietato
+    Un membro non è in grado di accedere, impedendo loro di visualizzare le pagine o di partecipare ad attività che richiedono l&#39;accesso. Possono ancora visitare in forma anonima un sito della community aperto.
 
-   * Non vietato
-Un membro ha accesso completo al sito community.
+  * Non vietato
+    Un membro ha accesso completo al sito community.
 
   Il valore predefinito è `Not Banned`.
 
 * **[!UICONTROL Limiti contributi]**
 
   Se questa opzione è selezionata, la capacità del membro di pubblicare contenuti è limitata.
-Il valore predefinito dipende dalla configurazione dei limiti dei contributi.
-Vedere [Limiti contributi membri](limits.md).
+  Il valore predefinito dipende dalla configurazione dei limiti dei contributi.
+  Vedere [Limiti contributi membri](limits.md).
 
 * **[!UICONTROL Cambia password]**
 
@@ -157,10 +164,10 @@ Vedi anche [Punteggio e distintivi](implementing-scoring.md).
 ![Finestra Modifica impostazioni appartenenza](assets/create-member2.png)
 
 * **[!UICONTROL Aggiungi badge]**
-   * Inizia a digitare per selezionare tra [distintivi disponibili](badges.md). Una volta selezionato un badge, scegli ogni sito, o tutti i siti, in cui il badge deve essere visualizzato insieme all’avatar del membro.
-   * È possibile scegliere più badge e siti.
+  * Inizia a digitare per selezionare tra [distintivi disponibili](badges.md). Una volta selezionato un badge, scegli ogni sito, o tutti i siti, in cui il badge deve essere visualizzato insieme all’avatar del membro.
+  * È possibile scegliere più badge e siti.
 * **[!UICONTROL Rimuovi distintivi]**
-   * Seleziona l’icona cestino accanto a un badge per rimuoverlo.
+  * Seleziona l’icona cestino accanto a un badge per rimuoverlo.
 
 ## Console Gruppi {#groups-console}
 

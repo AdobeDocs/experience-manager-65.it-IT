@@ -1,6 +1,6 @@
 ---
 title: Servizio di output
-description: Descrive il servizio di output, che fa parte di Servizi documentali AEM
+description: Descrive il servizio di output, parte di AEM Document Services
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
@@ -9,18 +9,36 @@ feature: Document Services,Output Service
 exl-id: 82b0293a-711f-4769-9b11-b4cff4fec021
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 9cc5e18e-2002-58a1-befa-285122cf6653
+    internal-label: Output Service
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '511'
-ht-degree: 5%
-
+source-wordcount: '519'
+ht-degree: 6%
 ---
-
 # Servizio di output{#output-service}
 
 ## Panoramica {#overview}
 
-Il servizio di output è un servizio OSGi che fa parte di AEM Document Services. Il servizio di output supporta vari formati di output e funzioni di progettazione dell’output di AEM Forms Designer. Il servizio di output può convertire modelli XFA e dati XML per generare documenti di stampa in vari formati.
+Il servizio di output è un servizio OSGi incluso in AEM Document Services. Il servizio di output supporta vari formati di output e funzioni di progettazione dell’output di AEM Forms Designer. Il servizio di output può convertire modelli XFA e dati XML per generare documenti di stampa in vari formati.
 
 Il servizio di output consente di creare applicazioni che permettono di:
 
@@ -37,13 +55,13 @@ Il servizio di output consente di creare applicazioni che permettono di:
 
 ![usingoutput_modified](assets/usingoutput_modified.png)
 
-In genere, si creano modelli utilizzando AEM Forms Designer. Le API `generatePDFOutput` e `generatePrintedOutput` del servizio di output consentono di convertire direttamente questi modelli in vari formati, tra cui PDF, PostScript, ZPL e PCL.
+In genere, si creano modelli utilizzando AEM Forms Designer. Le API `generatePDFOutput` e `generatePrintedOutput` del servizio di output consentono di convertire direttamente questi modelli in vari formati, inclusi PDF, PostScript, ZPL e PCL.
 
 L&#39;operazione `generatePDFOutput` genera PDF, mentre l&#39;operazione `generatePrintedOutput` genera formati PostScript, ZPL e PCL. Il primo parametro di entrambe le operazioni accetta il nome del file modello (ad esempio, `ExpenseClaim.xdp`) o un oggetto Document contenente il modello. Quando si specifica il nome del file modello, specificare anche la directory principale del contenuto come percorso della cartella che contiene il modello. È possibile specificare la directory principale del contenuto utilizzando il parametro `PDFOutputOptions` o `PrintedOutputOptions`. Consulta JavaScript per informazioni dettagliate su altre opzioni che puoi specificare utilizzando questi parametri.
 
 Il secondo parametro accetta un documento XML che viene unito al modello durante la generazione del documento di output.
 
-L&#39;operazione `generatePDFOutput` può anche accettare un modulo PDF basato su XFA come input e restituire una versione non interattiva del modulo PDF come output.
+L&#39;operazione `generatePDFOutput` può inoltre accettare un modulo PDF basato su XFA come input e restituire una versione non interattiva del modulo PDF come output.
 
 ## Generazione di documenti modulo non interattivi {#generating-non-interactive-form-documents}
 

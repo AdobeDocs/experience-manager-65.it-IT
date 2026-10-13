@@ -9,13 +9,33 @@ role: Admin,User
 exl-id: 1e39455e-f588-42a2-91f5-daefcfed82a0
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on OSGi, AEM Forms Upgrade
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 8c4fb903-572c-5473-ad45-8ebb0d5d8134
+    internal-label: AEM Forms on OSGi
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+  - id: d49d6117-dd89-469c-a774-cc96b7eee433
+    internal-label: Administration
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: b9cdd520-e7a7-4af9-a95f-296f28882b69
+    internal-label: AEM Forms upgrade
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 5%
-
 ---
-
 # Aggiornamento ad AEM 6.5 Forms su OSGi {#upgrade-to-aem-forms-osgi}
 
 Puoi eseguire un aggiornamento diretto da AEM 6.3 Forms o AEM 6.4 Forms a AEM 6.5 Forms.
@@ -92,8 +112,8 @@ Per effettuare l’aggiornamento da AEM 6.3 Forms o AEM 6.4 Forms a AEM 6.5 Form
 
      In AEM 6.5 Forms, la versione di jQuery è aggiornata alla 3.2.1 e la versione dell’interfaccia utente jQuery è aggiornata alla 1.12.1. AEM Form utilizza JQuery in modalità **noConflict**. Pertanto, se utilizzi un’altra versione di jQuery, non vengono visualizzati problemi durante l’esecuzione di un aggiornamento. Tuttavia, quando esegui l’aggiornamento a AEM 6.5 Forms:
 
-      * Assicurati che gli eventuali componenti personalizzati siano compatibili con le versioni di jQuery supportate.
-      * Rimuovi le API non supportate dai componenti personalizzati. Per l&#39;elenco delle API rimosse, consulta la [guida all&#39;aggiornamento](https://jquery.com/upgrade-guide/3.0/). Ad esempio, viene rimosso il supporto per le API load(), .unload() ed .error(). Utilizza il metodo .on() al posto delle API di cui sopra. Ad esempio, modificare $(&quot;img&quot;).load(fn) in $(&quot;img&quot;).on(&quot;load&quot;, fn).
+     * Assicurati che gli eventuali componenti personalizzati siano compatibili con le versioni di jQuery supportate.
+     * Rimuovi le API non supportate dai componenti personalizzati. Per l&#39;elenco delle API rimosse, consulta la [guida all&#39;aggiornamento](https://jquery.com/upgrade-guide/3.0/). Ad esempio, viene rimosso il supporto per le API load(), .unload() ed .error(). Utilizza il metodo .on() al posto delle API di cui sopra. Ad esempio, modificare $(&quot;img&quot;).load(fn) in $(&quot;img&quot;).on(&quot;load&quot;, fn).
 
    * **(Se si esegue l&#39;aggiornamento da AEM 6.2 Forms o solo da versioni precedenti) Riconfigura analisi e report**
 
@@ -105,9 +125,9 @@ Per effettuare l’aggiornamento da AEM 6.3 Forms o AEM 6.4 Forms a AEM 6.5 Form
    * **Verifica replica e replica inversa:** Pubblicare, compilare e inviare alcuni moduli migrati. Verifica anche i dati inviati.
    * **Verificare l&#39;accesso alle interfacce utente amministratore e sviluppatore:** Accedere all&#39;istanza di AEM da un account amministratore e verificare di disporre dell&#39;accesso ai seguenti URL:
 
-      * `https://'[server]:[port]'/crx/packmgr`
-      * `https://'[server]:[port]'/crx/de`
-      * `https://'[server]:[port]'/aem/forms.html/content/dam/formsanddocuments`
+     * `https://'[server]:[port]'/crx/packmgr`
+     * `https://'[server]:[port]'/crx/de`
+     * `https://'[server]:[port]'/aem/forms.html/content/dam/formsanddocuments`
 
    >[!NOTE]
    >

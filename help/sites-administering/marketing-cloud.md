@@ -9,13 +9,22 @@ exl-id: ba518290-dd82-44dc-ae7c-c8152df89179
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '868'
 ht-degree: 2%
-
 ---
-
 # Integrazione con Adobe Experience Cloud{#integrating-with-the-adobe-marketing-cloud}
 
 [Adobe Experience Cloud](https://business.adobe.com/it/products/marketing-cloud/main.html) include potenti prodotti di analisi web e ottimizzazione dei siti web che forniscono dati e informazioni fruibili e in tempo reale per promuovere iniziative online di successo. Offre una piattaforma integrata e aperta per l&#39;ottimizzazione del business online. Il cloud è costituito da applicazioni integrate per raccogliere e sfruttare la potenza di insight dei clienti al fine di ottimizzare le attività di acquisizione, conversione e conservazione dei clienti, nonché la creazione e la distribuzione dei contenuti.

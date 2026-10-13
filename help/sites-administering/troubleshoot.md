@@ -10,13 +10,22 @@ exl-id: d2d351e7-87a5-4895-b4ec-391fb0b66798
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 2%
-
+source-wordcount: '553'
+ht-degree: 1%
 ---
-
 # Risoluzione dei problemi di Adobe Experience Manager {#troubleshooting-aem}
 
 Nella sezione seguente vengono descritti alcuni problemi che possono verificarsi durante l’utilizzo di AEM (Adobe Experience Manager) e vengono proposte possibili soluzioni.
@@ -108,7 +117,7 @@ Per ulteriori informazioni, consulta la [documentazione su come estrarre immagin
 Quando viene sviluppata la funzionalità per AEM WCM, è possibile aprire le sessioni JCR (operazione paragonabile all’apertura di una connessione a un database). Se le sessioni aperte non vengono mai chiuse, il sistema potrebbe presentare i seguenti sintomi:
 
 * Il sistema diventa più lento.
-* È possibile visualizzare gran parte di CacheManager: resizeAll voci nel file di registro; il seguente numero (size=&lt;x>) mostra il numero di cache, ogni sessione apre diverse cache.
+* È possibile visualizzare gran parte di CacheManager: resizeAll voci nel file di log; il seguente numero (dimensione=&lt;x>) shows the number of caches, each session opens several caches.
 * Di tanto in tanto il sistema esaurisce la memoria (dopo alcune ore, giorni o settimane, a seconda della gravità).
 
 Per avviare l&#39;analisi delle sessioni non chiuse, vedere l&#39;articolo della Knowledge Base [Risolutore risorse non chiuso](https://experienceleague.adobe.com/it/docs/experience-cloud-kcs/kbarticles/ka-23761).

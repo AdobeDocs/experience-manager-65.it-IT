@@ -1,6 +1,6 @@
 ---
-title: Tracciamento delle e-mail non recapitate
-description: Quando invii una newsletter a molti utenti, solitamente sono presenti alcuni indirizzi e-mail non validi nell’elenco. L'invio di newsletter a tali indirizzi viene reindirizzato. L’AEM può gestire tali mancati recapiti e interrompere l’invio di newsletter a tali indirizzi dopo il superamento del contatore dei mancati recapiti configurato.
+title: Tracciamento dei messaggi e-mail non pervenuti a destinazione
+description: Quando invii una newsletter a molti utenti, solitamente sono presenti alcuni indirizzi e-mail non validi nell’elenco. L'invio di newsletter a tali indirizzi viene reindirizzato. AEM può gestire tali mancati recapiti e interrompere l’invio di newsletter a tali indirizzi dopo il superamento del contatore di mancato recapito configurato.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
@@ -9,28 +9,39 @@ exl-id: 6cda0a68-0df9-44e7-ae4f-9951411af6dd
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '678'
-ht-degree: 0%
-
+source-wordcount: '714'
+ht-degree: 1%
 ---
-
-# Tracciamento delle e-mail non recapitate{#tracking-bounced-emails}
+# Tracciamento dei messaggi e-mail non pervenuti a destinazione{#tracking-bounced-emails}
 
 >[!NOTE]
 >
->L’Adobe non prevede di migliorare ulteriormente il tracciamento delle e-mail aperte/non recapitate inviate dal servizio SMTP dell’AEM.
+>Adobe non prevede di migliorare ulteriormente il tracciamento delle e-mail aperte/non recapitate inviate dal servizio SMTP di AEM.
 >
->Si consiglia di [utilizzare Adobe Campaign e la relativa integrazione AEM](/help/sites-administering/campaign.md).
+>Si consiglia di [utilizzare Adobe Campaign e la relativa integrazione con AEM](/help/sites-administering/campaign.md).
 
-Quando invii una newsletter a molti utenti, solitamente sono presenti alcuni indirizzi e-mail non validi nell’elenco. L&#39;invio di newsletter a tali indirizzi viene reindirizzato. L’AEM può gestire tali mancati recapiti e interrompere l’invio di newsletter a tali indirizzi dopo il superamento del contatore dei mancati recapiti configurato. Per impostazione predefinita, la frequenza di mancato recapito è impostata su 3 ma è configurabile.
+Quando invii una newsletter a molti utenti, solitamente sono presenti alcuni indirizzi e-mail non validi nell’elenco. L&#39;invio di newsletter a tali indirizzi viene reindirizzato. AEM può gestire tali mancati recapiti e interrompere l’invio di newsletter a tali indirizzi dopo il superamento del contatore di mancato recapito configurato. Per impostazione predefinita, la frequenza di mancato recapito è impostata su 3 ma è configurabile.
 
-Per impostare l’AEM in modo da tenere traccia delle e-mail non consegnate, imposta l’AEM per eseguire il polling di una cassetta postale esistente in cui vengono ricevute le e-mail non consegnate. Di solito, questa posizione è l’indirizzo e-mail &quot;da&quot; che specifichi dove invii la newsletter. L’AEM esegue il polling di questa casella in entrata e importa tutte le e-mail al di sotto del percorso specificato nella configurazione di polling. Viene quindi attivato un flusso di lavoro per cercare gli indirizzi e-mail non recapitati all’interno degli utenti e aggiorna di conseguenza il valore della proprietà bounceCounter dell’utente. Una volta superato il numero massimo configurato di mancati recapiti, l’utente viene rimosso dall’elenco delle newsletter.
+Per configurare AEM per il tracciamento delle e-mail non consegnate, imposta AEM per eseguire il polling di una cassetta postale esistente in cui vengono ricevute le e-mail non consegnate. Di solito, questa posizione è l’indirizzo e-mail &quot;da&quot; che specifichi dove invii la newsletter. AEM esegue il polling di questa casella in entrata e importa tutte le e-mail al di sotto del percorso specificato nella configurazione di polling. Viene quindi attivato un flusso di lavoro per cercare gli indirizzi e-mail non recapitati all’interno degli utenti e aggiorna di conseguenza il valore della proprietà bounceCounter dell’utente. Una volta superato il numero massimo configurato di mancati recapiti, l’utente viene rimosso dall’elenco delle newsletter.
 
 ## Configurazione di Importazione feed {#configuring-the-feed-importer}
 
-L’importazione dei feed consente di importare ripetutamente contenuti da origini esterne nell’archivio. Con questa configurazione dell’importazione feed, l’AEM controlla se nella cassetta postale del mittente sono presenti e-mail non consegnate.
+L’importazione dei feed consente di importare ripetutamente contenuti da origini esterne nell’archivio. Con questa configurazione del modulo di importazione feed, AEM verifica la presenza di e-mail non consegnate nella cassetta postale del mittente.
 
 Per configurare l’importazione feed per il tracciamento delle e-mail non recapitate, effettua le seguenti operazioni:
 
@@ -64,7 +75,7 @@ Per configurare l’importazione feed per il tracciamento delle e-mail non recap
 
    Consente di impostare i flag per la ricerca.
 
-   `imap.flag.SEEN`:Impostare false per i messaggi nuovi o non visualizzati, true per i messaggi già letti
+   `imap.flag.SEEN`:Set false per messaggi nuovi/non visualizzati, true per messaggi già letti
 
    Per l&#39;elenco completo dei flag, vedere [https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html](https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html).
 

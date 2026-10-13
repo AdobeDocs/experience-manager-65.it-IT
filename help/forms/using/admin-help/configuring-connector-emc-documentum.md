@@ -9,13 +9,27 @@ exl-id: a31a496f-87b9-43c0-a98c-5f6ca5d11690
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '1032'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '1043'
+ht-degree: 98%
 ---
-
 # Configurazione del connettore per EMC Documentum {#configuring-connector-for-emc-documentum}
 
 >[!NOTE]
@@ -68,11 +82,11 @@ Puoi configurare il provider di servizi di archivio da utilizzare con Documentum
 
 **Provider di archivio ECM Documentum:** imposta il provider dell’archivio Documentum come provider di archivio. Questa opzione è stata dichiarata obsoleta
 
-**Provider di archivio:** imposta il provider dell’archivio nativo come provider di archivio
+**Provider dell’archivio:** imposta il provider dell’archivio nativo come provider dell’archivio
 
 >[!NOTE]
 >
->Per selezionare un provider di servizi di archivio diverso da quelli elencati, configura RepositoryService in Applicazioni e servizi > Gestione servizi. <!-- Fix broken link (See Managing Services) -->.
+>Per selezionare un provider di servizi del repository diverso da quelli elencati, configurare RepositoryService in Applicazioni e servizi > Gestione servizi. <!-- Fix broken link (See Managing Services) -->.
 
 1. Nella console di amministrazione, fai clic su Servizi > Connettore per EMC Documentum > Impostazioni di configurazione.
 1. Nell’area Informazioni provider di servizi di archivio seleziona il provider di servizi di archivio alternativo.

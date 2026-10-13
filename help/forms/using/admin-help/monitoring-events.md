@@ -9,13 +9,24 @@ feature: Document Security
 exl-id: 078b9ad1-16e2-40f4-92dc-e4093c0bb6ac
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
-workflow-type: ht
-source-wordcount: '958'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '968'
+ht-degree: 94%
 ---
-
 # Monitoraggio degli eventi {#monitoring-events}
 
 Quando la funzionalità di auditing è abilitata, la protezione dei documenti consente di monitorare determinati tipi di eventi. Gli eventi visualizzati dipendono dal ruolo:
@@ -59,14 +70,14 @@ Affinché l’auditing degli eventi si verifichi, è necessario soddisfare i seg
 **Utenti:** possono visualizzare eventi controllati per i documenti protetti tramite criteri e per tutti i documenti protetti ricevuti e utilizzati. Sono disponibili le seguenti opzioni di ricerca:
 
 **Eventi correlati
-a me:** gli utenti possono trovare eventi per qualsiasi documento protetto tramite criteri che hanno creato o ricevuto. Ad esempio, se un utente apre, visualizza o stampa un documento protetto da un’altra persona, visualizzerà solo questi eventi per quel documento.
+per me:** Gli utenti possono trovare eventi per qualsiasi documento protetto tramite policy che hanno creato o ricevuto. Ad esempio, se un utente apre, visualizza o stampa un documento protetto da un’altra persona, visualizzerà solo questi eventi per quel documento.
 
 **Eventi correlati ai miei documenti:** gli utenti possono trovare tutti gli eventi correlati ai propri documenti protetti tramite citeri. Gli utenti visualizzano gli eventi generati da ogni persona che ha gestito i propri documenti.
 
 **Coordinatori set di criteri:** possono visualizzare eventi controllati, inclusi eventi relativi a documenti e criteri, per i documenti protetti da criteri dai relativi set di criteri. Sono disponibili le seguenti opzioni:
 
 **Eventi documento in cui
-Sono un coordinatore di set di criteri:** i coordinatori di set di criteri che dispongono dell’autorizzazione Visualizza evento possono trovare eventi correlati a documenti protetti dai propri set di criteri.
+Sono un coordinatore di set di criteri:** I coordinatori di set di criteri che dispongono dell&#39;autorizzazione Visualizza evento possono trovare eventi correlati ai documenti protetti dai propri set di criteri.
 
 **Eventi dei criteri per i quali sono un coordinatore di set di criteri:** i coordinatori di set di criteri che dispongono dell’autorizzazione di visualizzazione eventi possono trovare eventi correlati ai criteri dai propri set di criteri.
 

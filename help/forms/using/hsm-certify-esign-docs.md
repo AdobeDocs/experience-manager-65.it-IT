@@ -1,6 +1,6 @@
 ---
 title: Utilizzare HSM per firmare o certificare digitalmente i documenti
-description: Utilizza il server HSM o il dispositivo eToken per firmare/certificare i documenti di PDF.
+description: Utilizza il server HSM o il dispositivo eToken per firmare/certificare i documenti PDF.
 contentOwner: vishgupt
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,13 +9,29 @@ feature: Document Services
 exl-id: 62adca19-8ed0-48b3-b7eb-9dbc3d8f96c6
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '684'
-ht-degree: 0%
-
+source-wordcount: '699'
+ht-degree: 10%
 ---
-
 # Utilizzare HSM per firmare o certificare digitalmente i documenti {#use-hsm-to-digitally-sign-or-certify-documents}
 
 I moduli HSM (Hardware Security Module) e i token sono dispositivi di elaborazione dedicati, resistenti alle manomissioni e progettati per gestire, elaborare e archiviare in modo sicuro le chiavi digitali. Queste periferiche sono collegate direttamente a un computer o a un server di rete.
@@ -23,7 +39,7 @@ I moduli HSM (Hardware Security Module) e i token sono dispositivi di elaborazio
 Adobe Experience Manager Forms può utilizzare le credenziali memorizzate su un HSM o etoken per eSign o applicare firme digitali lato server a un documento. Per utilizzare un dispositivo HSM o etoken con AEM Forms:
 
 1. [Abilitare il servizio DocAssurance](#configuredocassurance).
-1. [Creare un alias per il dispositivo HSM o etoken nella console Web AEM](#configuredeviceinaemconsole).
+1. [Creare un alias per il dispositivo HSM o etoken nella console Web di AEM](#configuredeviceinaemconsole).
 1. [Utilizzare le API del servizio DocAssurance per firmare o certificare i documenti con le chiavi digitali archiviate nel dispositivo](#programatically).
 
 ## Prima di configurare i dispositivi HSM o etoken con AEM Forms {#configurehsmetoken}
@@ -41,7 +57,7 @@ Per impostazione predefinita, il servizio DocAssurance non è abilitato. Per abi
 
    >[!NOTE]
    >
-   >Se hai utilizzato il file [AEM_root]\crx-quickstart\bin\start.bat per avviare l&#39;istanza dell&#39;AEM, apri il file [AEM_root]\crx-quickstart\sling.properties per la modifica.
+   >Se hai utilizzato il file [AEM_root]\crx-quickstart\bin\start.bat per avviare l&#39;istanza di AEM, apri il file [AEM_root]\crx-quickstart\sling.properties per la modifica.
 
 1. Aggiungi o sostituisci le seguenti proprietà al file sling.properties:
 
@@ -52,11 +68,11 @@ Per impostazione predefinita, il servizio DocAssurance non è abilitato. Per abi
    ```
 
 1. Salva e chiudi il file sling.properties.
-1. Riavvia l’istanza AEM.
+1. Riavvia l’istanza di AEM.
 
 >[!NOTE]
 >
-> Per riavviare l&#39;SDK, si consiglia di utilizzare il comando &#39;Ctrl + C&#39;. Il riavvio dell’SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java, può causare incongruenze nell’ambiente di sviluppo dell’AEM.
+> Si consiglia di utilizzare il comando “Ctrl + C” per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.
 
 <!--
 
@@ -99,19 +115,19 @@ Perform the following steps to setup certificates:
 
 L’alias contiene tutti i parametri richiesti da un HSM o etoken. Eseguire le istruzioni elencate di seguito per creare un alias per ogni credenziale HSM o etoken utilizzata da eSign o Digital Signatures:
 
-1. Apri la console AEM. L’URL predefinito della console AEM è https://&lt;host>:&lt;port>/system/console/configMgr
+1. Apri la console AEM. L’URL predefinito della console AEM è https://&lt;host>:&lt;porta>/system/console/configMgr
 1. Apri il servizio di configurazione **Credenziali HSM** e specifica i valori per i campi seguenti:
 
    * **Alias credenziali**: specificare una stringa utilizzata per identificare l&#39;alias. Questo valore viene utilizzato come proprietà per alcune operazioni di firma digitale, ad esempio l&#39;operazione Firma campo.
    * **Percorso DLL**: specificare il percorso della libreria client HSM o etoken sul server. Ad esempio, `C:\Program Files\LunaSA\cryptoki.dll`. In un ambiente cluster è necessario assicurarsi che tutti i server del cluster utilizzino un percorso identico.
    * **Pin HSM**: specificare la password necessaria per accedere alla chiave del dispositivo.
-   * **ID slot HSM**: specificare un identificatore di slot di tipo integer. L&#39;ID dello slot viene impostato client per client. Viene utilizzato per identificare lo slot su HSM che contiene la chiave privata per il segno/certificazione.
+   * **ID slot HSM**: specificare un identificatore di slot di tipo integer. L’ID dello slot viene impostato su una base client per client. Viene utilizzato per identificare lo slot su HSM che contiene la chiave privata per il segno/certificazione.
 
    >[!NOTE]
    >
    >Durante la configurazione di Etoken, specifica un valore numerico per il campo ID slot HSM. Per il corretto funzionamento delle operazioni di firma è necessario un valore numerico.
 
-   * **Certificato SHA1**: specificare il valore SHA1 (identificazione personale) del file della chiave pubblica (.cer) per le credenziali in uso. Verificare che nel valore SHA1 non siano presenti spazi.
+   * **Certificato SHA1**: specificare il valore SHA1 (identificazione personale) del file della chiave pubblica (.cer) per le credenziali in uso. Verifica che nel valore SHA1 non siano presenti spazi.
    * **Tipo di dispositivo HSM**: selezionare il produttore del dispositivo HSM (Luna o altro) o eToken.
 
    Fai clic su **Salva**. Il modulo di sicurezza hardware è configurato per AEM Forms. Ora puoi utilizzare il modulo di sicurezza hardware con AEM Forms per firmare o certificare i documenti.
@@ -399,7 +415,7 @@ public class Sign{
 }
 ```
 
-Se hai effettuato l’aggiornamento da AEM 6.0 Form o AEM 6.1 Forms e stavi utilizzando il servizio DocAssurance nella versione precedente:
+Se hai effettuato l’aggiornamento da AEM 6.0 Form o AEM 6.1 Forms e stavi utilizzando il servizio DocAssurance nella versione precedente, allora:
 
 * Per utilizzare il servizio DocAssurance senza un dispositivo HSM o etoken, continuare a utilizzare il codice esistente.
 * Per utilizzare il servizio DocAssurance con un dispositivo HSM o etoken, sostituire il codice oggetto CredentialContext esistente con l&#39;API elencata di seguito.
@@ -415,4 +431,4 @@ Se hai effettuato l’aggiornamento da AEM 6.0 Form o AEM 6.1 Forms e stavi util
  public CredentialContext(String credentialAlias, ResourceResolver resourceResolver, boolean isHSMCredential);
 ```
 
-Per informazioni dettagliate sulle API e sul codice di esempio del servizio DocAssurance, vedere [Utilizzo di servizi documentali AEM a livello di programmazione](/help/forms/using/aem-document-services-programmatically.md).
+Per informazioni dettagliate sulle API e sul codice di esempio del servizio DocAssurance, vedere [Utilizzo di AEM Document Services a livello di programmazione](/help/forms/using/aem-document-services-programmatically.md).

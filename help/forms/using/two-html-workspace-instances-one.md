@@ -1,5 +1,5 @@
 ---
-title: Hosting di due istanze dell’area di lavoro AEM Forms su un server
+title: Hosting di due istanze dell’area di lavoro di AEM Forms su un server
 description: Come gli amministratori LC possono personalizzare HTML WS per ospitare due istanze su un singolo server accessibile tramite URL diversi.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,14 +8,32 @@ exl-id: 32a546fc-e33f-46f9-ac3b-45eca0e12239
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '302'
-ht-degree: 0%
-
+ht-degree: 5%
 ---
-
-# Hosting di due istanze dell’area di lavoro AEM Forms su un server {#hosting-two-aem-forms-workspace-instances-on-one-server}
+# Hosting di due istanze dell’area di lavoro di AEM Forms su un server {#hosting-two-aem-forms-workspace-instances-on-one-server}
 
 L’installazione e le impostazioni predefinite di AEM Forms consentono di rendere disponibile una sola area di lavoro AEM Forms sul server. Tuttavia, potrebbe essere necessario ospitare due diverse istanze dell’area di lavoro di AEM Forms su un singolo server AEM Forms. Le due istanze sono accessibili da URL diversi.
 

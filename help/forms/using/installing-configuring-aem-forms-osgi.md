@@ -8,13 +8,31 @@ role: Admin, User, Developer
 exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on OSGi
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 8c4fb903-572c-5473-ad45-8ebb0d5d8134
+    internal-label: AEM Forms on OSGi
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1972'
 ht-degree: 7%
-
 ---
-
 # Installare e configurare le funzionalità di acquisizione dati{#install-and-configure-data-capture-capabilities}
 
 ## Introduzione {#introduction}
@@ -44,18 +62,18 @@ Prima di iniziare a installare e configurare la funzionalità di acquisizione da
 * Il percorso di installazione dell’istanza di AEM non contiene spazi vuoti.
 * Un’istanza di AEM è attiva e in esecuzione. Per gli utenti di Windows, installa l’istanza di AEM in modalità avanzata. Nella terminologia di AEM, per &quot;istanza&quot; si intende una copia di AEM in esecuzione su un server in modalità di authoring o pubblicazione. Sono necessarie almeno due [istanze di AEM (una istanza Author e una Publish)](/help/sites-deploying/deploy.md) per eseguire le funzionalità di acquisizione dati di AEM Forms:
 
-   * **Autore**: istanza di AEM utilizzata per creare, caricare e modificare contenuti e amministrare il sito Web. Quando il contenuto è pronto per essere pubblicato, viene replicato nell’istanza di pubblicazione.
-   * **Pubblicazione**: istanza di AEM che fornisce il contenuto pubblicato al pubblico tramite Internet o una rete interna.
+  * **Autore**: istanza di AEM utilizzata per creare, caricare e modificare contenuti e amministrare il sito Web. Quando il contenuto è pronto per essere pubblicato, viene replicato nell’istanza di pubblicazione.
+  * **Pubblicazione**: istanza di AEM che fornisce il contenuto pubblicato al pubblico tramite Internet o una rete interna.
 
 * I requisiti di memoria sono soddisfatti. Il pacchetto del componente aggiuntivo AEM Forms richiede:
 
-   * 15 GB di spazio temporaneo per le installazioni Microsoft basate su Windows.
-   * 6 GB di spazio temporaneo per installazioni basate su UNIX.
+  * 15 GB di spazio temporaneo per le installazioni Microsoft basate su Windows.
+  * 6 GB di spazio temporaneo per installazioni basate su UNIX.
 
 * Sono impostate la replica e la replica inversa per le istanze di authoring e pubblicazione. Per ulteriori dettagli, vedere [Replica](/help/sites-deploying/replication.md).
 * Per i sistemi basati su UNIX:
 
-   * Installare i seguenti pacchetti a 32 bit dal supporto di installazione:
+  * Installare i seguenti pacchetti a 32 bit dal supporto di installazione:
 
 <table>
  <tbody>
@@ -100,7 +118,7 @@ Prima di iniziare a installare e configurare la funzionalità di acquisizione da
 
 * Installare il seguente pacchetto a 64 bit dal supporto di installazione:
 
-   * libicu
+  * libicu
 
 * Installa [Microsoft Visual Studio 2019 a 32 bit Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170).
 

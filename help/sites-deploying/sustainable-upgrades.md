@@ -10,13 +10,22 @@ feature: Upgrading
 exl-id: b777fdca-e7a5-427a-9e86-688dd7cac636
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '856'
 ht-degree: 0%
-
 ---
-
 # Aggiornamenti sostenibili{#sustainable-upgrades}
 
 ## Framework di personalizzazione {#customization-framework}
@@ -35,7 +44,7 @@ Nelle versioni precedenti di Adobe Experience Manager (AEM), molte API sono stat
 
 * Le API pubbliche sono compatibili con le versioni precedenti dell’installazione di un pacchetto di compatibilità.
 * Il pacchetto di compatibilità contiene un file JAR Uber di compatibilità per garantire la compatibilità con le versioni precedenti
-* Le API Java™ contrassegnate come `Private` devono essere utilizzate solo da bundle interni AEM, non da bundle personalizzati.
+* Le API Java™ contrassegnate come `Private` sono destinate a essere utilizzate solo dai bundle interni di AEM, non da quelli personalizzati.
 
 >[!NOTE]
 >
@@ -45,17 +54,17 @@ Nelle versioni precedenti di Adobe Experience Manager (AEM), molte API sono stat
 
 #### Classificazioni contenuto {#content-classifications}
 
-L’AEM utilizza da tempo il principio delle sovrapposizioni e Sling Resource Merger per consentire ai clienti di estendere e personalizzare la funzionalità dell’AEM. Le funzionalità predefinite che alimentano le console e l&#39;interfaccia utente di AEM sono memorizzate in **/libs**. I clienti non devono mai modificare nulla sotto **/libs**, ma potrebbero aggiungere contenuto aggiuntivo sotto **/apps** per sovrapporre ed estendere la funzionalità definita in **/libs** (Per ulteriori informazioni, consulta Sviluppo con sovrapposizioni). Ciò causava ancora numerosi problemi durante l&#39;aggiornamento dell&#39;AEM poiché il contenuto in **/libs** poteva cambiare causando l&#39;interruzione della funzionalità di sovrapposizione in modi imprevisti. I clienti possono inoltre estendere i componenti AEM tramite l&#39;ereditarietà tramite `sling:resourceSuperType` o semplicemente fare riferimento a un componente in **/libs** direttamente tramite sling:resourceType. Problemi di aggiornamento simili potrebbero verificarsi con casi di utilizzo di riferimento e di sostituzione.
+AEM utilizza da tempo il principal of overlay e Sling Resource Merger per consentire ai clienti di estendere e personalizzare le funzionalità di AEM. Le funzionalità predefinite che alimentano le console e l&#39;interfaccia utente di AEM sono memorizzate in **/libs**. I clienti non devono mai modificare nulla sotto **/libs**, ma potrebbero aggiungere contenuto aggiuntivo sotto **/apps** per sovrapporre ed estendere la funzionalità definita in **/libs** (Per ulteriori informazioni, consulta Sviluppo con sovrapposizioni). Ciò causava ancora numerosi problemi durante l&#39;aggiornamento di AEM poiché il contenuto in **/libs** poteva cambiare causando l&#39;interruzione della funzionalità di sovrapposizione in modi imprevisti. I clienti possono anche estendere i componenti AEM tramite l&#39;ereditarietà tramite `sling:resourceSuperType` o semplicemente fare riferimento a un componente in **/libs** direttamente tramite sling:resourceType. Problemi di aggiornamento simili potrebbero verificarsi con casi di utilizzo di riferimento e di sostituzione.
 
 Per rendere più sicuro e semplice per i clienti capire quali aree di **/libs** sono sicure da utilizzare e sovrapporre il contenuto in **/libs** è stato classificato con i seguenti mixin:
 
 * **Pubblico (granite:PublicArea)** - Definisce un nodo come pubblico in modo che possa essere sovrapposto, ereditato (`sling:resourceSuperType`) o utilizzato direttamente ( `sling:resourceType`). I nodi sotto /libs contrassegnati come pubblici possono essere aggiornati con l’aggiunta di un pacchetto di compatibilità. In generale, i clienti devono utilizzare solo nodi contrassegnati come pubblici.
 
-* **Astratto (granite:AbstractArea)** - Definisce un nodo come astratto. I nodi possono essere sovrapposti o ereditati ( `sling:resourceSupertype`) ma non utilizzati direttamente ( `sling:resourceType`).
+* **Riassunto (granito:AbstractArea)** - Definisce un nodo come astratto. I nodi possono essere sovrapposti o ereditati ( `sling:resourceSupertype`) ma non utilizzati direttamente ( `sling:resourceType`).
 
 * **Finale (granite:FinalArea)** - Definisce un nodo come finale. I nodi classificati come finali idealmente non devono essere sovrapposti o ereditati. I nodi finali possono essere utilizzati direttamente tramite `sling:resourceType`. Per impostazione predefinita, i sottonodi sotto il nodo finale sono considerati interni.
 
-* ***Interno (granite:InternalArea)*** *- *Definisce un nodo interno. I nodi classificati come interni idealmente non devono essere sovrapposti, ereditati o utilizzati direttamente. Questi nodi sono destinati solo alle funzionalità interne dell’AEM
+* ***Interno (granite:InternalArea)*** *- *Definisce un nodo interno. I nodi classificati come interni idealmente non devono essere sovrapposti, ereditati o utilizzati direttamente. Questi nodi sono destinati solo alle funzionalità interne di AEM
 
 * **Nessuna annotazione** - I nodi ereditano la classificazione in base alla gerarchia della struttura. La directory principale / è per impostazione predefinita Public. **Anche i nodi con un elemento padre classificato come Interno o Finale devono essere trattati come Interno.**
 
@@ -63,9 +72,9 @@ Per rendere più sicuro e semplice per i clienti capire quali aree di **/libs** 
 >
 >Questi criteri vengono applicati solo ai meccanismi basati su percorsi di ricerca Sling. Altre aree di **/libs** come una libreria lato client possono essere contrassegnate come `Internal`, ma possono ancora essere utilizzate con l&#39;inclusione clientlib standard. In questi casi è importante che il cliente continui a rispettare la classificazione interna.
 
-#### Indicatori del tipo di contenuto CRXDE Lite {#crxde-lite-content-type-indicators}
+#### Indicatori del tipo di contenuto di CRXDE Lite {#crxde-lite-content-type-indicators}
 
-I mixin applicati in CRXDE Lite mostrano i nodi di contenuto e gli alberi contrassegnati come `INTERNAL` in grigio. Per `FINAL`, solo l&#39;icona è oscurata. Anche i figli di questi nodi vengono visualizzati in grigio. La funzionalità Sovrapponi nodo è disabilitata in entrambi questi casi.
+I mixin applicati in CRXDE Lite mostrano nodi di contenuto e strutture contrassegnati come `INTERNAL` in grigio. Per `FINAL`, solo l&#39;icona è oscurata. Anche i figli di questi nodi vengono visualizzati in grigio. La funzionalità Sovrapponi nodo è disabilitata in entrambi questi casi.
 
 **Pubblico**
 
@@ -87,7 +96,7 @@ I mixin applicati in CRXDE Lite mostrano i nodi di contenuto e gli alberi contra
 >
 >Per ulteriori informazioni, vedere [Valutazione della complessità dell&#39;aggiornamento con il rilevatore pattern](/help/sites-deploying/pattern-detector.md).
 
-L’AEM 6.5 viene fornito con un controllo di integrità per avvisare i clienti se il contenuto sovrapposto o di riferimento viene utilizzato in modo incoerente con la classificazione del contenuto.
+AEM 6.5 viene fornito con un controllo di integrità per avvisare i clienti se il contenuto sovrapposto o di riferimento viene utilizzato in modo incoerente con la classificazione del contenuto.
 
 Il **&#x200B; Sling/Granite Content Access Check** è un nuovo controllo di integrità che monitora l’archivio per verificare se il codice del cliente accede in modo errato ai nodi protetti in AEM.
 
@@ -95,7 +104,7 @@ Questa operazione esegue la scansione di **/apps** e in genere richiede diversi 
 
 Per accedere a questa nuova verifica stato, eseguire le operazioni seguenti:
 
-1. Dalla schermata iniziale dell&#39;AEM, passa a **Strumenti > Operazioni > Rapporti stato**
+1. Dalla schermata iniziale di AEM, passa a **Strumenti > Operazioni > Rapporti stato**
 1. Fai clic su **Controllo accesso a contenuti Sling/Granite**.
 
    ![schermata_shot_2017-12-14alle55648pm](assets/screen_shot_2017-12-14at55648pm.png)

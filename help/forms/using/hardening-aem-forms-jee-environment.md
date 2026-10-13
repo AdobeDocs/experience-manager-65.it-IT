@@ -8,13 +8,29 @@ role: Admin,User
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
-source-git-commit: b6714ae8f3464ef600c252c7ae5dcc75cbe6610b
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '7949'
 ht-degree: 2%
-
 ---
-
 # Rafforzamento dell’ambiente AEM Forms su JEE {#hardening-your-aem-forms-on-jee-environment}
 
 Scopri diverse impostazioni per rafforzare la sicurezza di AEM Forms su JEE in esecuzione in una Intranet aziendale.
@@ -190,12 +206,12 @@ Per eseguire l’application server in cui viene distribuito AEM Forms su JEE, u
    * **Directory GDS**: il percorso della directory GDS viene configurato manualmente durante il processo di installazione di AEM Forms. Se l&#39;impostazione relativa al percorso rimane vuota durante l&#39;installazione, per impostazione predefinita viene utilizzata una directory nell&#39;installazione del server applicazioni in `[JBoss root]/server/[type]/svcnative/DocumentStorage`
    * **Directory di CRX-Repository**: il percorso predefinito è `[AEM-Forms-installation-location]\crx-repository`
    * **Directory temporanee di AEM Forms**:
-      * (Windows) Percorso TMP o TEMP impostato nelle variabili di ambiente
-      * (AIX, Linux o Solaris) Directory principale dell&#39;utente connesso
-Nei sistemi basati su UNIX, un utente non root può utilizzare la seguente directory come directory temporanea:
-      * (Linux) /var/tmp o /usr/tmp
-      * (AIX) /tmp o /usr/tmp
-      * (Solaris) /var/tmp o /usr/tmp
+     * (Windows) Percorso TMP o TEMP impostato nelle variabili di ambiente
+     * (AIX, Linux o Solaris) Directory principale dell&#39;utente connesso
+       Nei sistemi basati su UNIX, un utente non root può utilizzare la seguente directory come directory temporanea:
+     * (Linux) /var/tmp o /usr/tmp
+     * (AIX) /tmp o /usr/tmp
+     * (Solaris) /var/tmp o /usr/tmp
 1. Assegna al nuovo account utente le autorizzazioni di scrittura per le directory seguenti:
    * [JBoss-directory]\standalone\distribuzione
    * [JBoss-directory]\standalone\
@@ -262,7 +278,7 @@ Configuration Manager ha utilizzato un servlet distribuito sul server applicazio
 1. Avvia il server AEM Forms.
 1. Digita l’URL seguente in un browser per verificare la modifica e assicurarti che non funzioni più.
 
-   https://&lt;localhost>:&lt;port>/adobe-bootstrapper/bootstrap
+   https://<localhost>:<port>/adobe-bootstrapper/bootstrap
 
 **Blocca l&#39;accesso remoto all&#39;archivio fonti attendibili**
 
@@ -1030,12 +1046,12 @@ Per impostazione predefinita, l’installazione chiavi in mano di AEM Forms su J
    * **Directory GDS**: il percorso della directory GDS viene configurato manualmente durante il processo di installazione di AEM Forms. Se l&#39;impostazione relativa al percorso rimane vuota durante l&#39;installazione, per impostazione predefinita viene utilizzata una directory nell&#39;installazione del server applicazioni in `[JBoss root]/server/[type]/svcnative/DocumentStorage`
    * **Directory di CRX-Repository**: il percorso predefinito è `[AEM-Forms-installation-location]\crx-repository`
    * **Directory temporanee di AEM Forms**:
-      * (Windows) Percorso TMP o TEMP impostato nelle variabili di ambiente
-      * (AIX, Linux o Solaris) Directory principale dell&#39;utente connesso
-Nei sistemi basati su UNIX, un utente non root può utilizzare la seguente directory come directory temporanea:
-      * (Linux) /var/tmp o /usr/tmp
-      * (AIX) /tmp o /usr/tmp
-      * (Solaris) /var/tmp o /usr/tmp
+     * (Windows) Percorso TMP o TEMP impostato nelle variabili di ambiente
+     * (AIX, Linux o Solaris) Directory principale dell&#39;utente connesso
+       Nei sistemi basati su UNIX, un utente non root può utilizzare la seguente directory come directory temporanea:
+     * (Linux) /var/tmp o /usr/tmp
+     * (AIX) /tmp o /usr/tmp
+     * (Solaris) /var/tmp o /usr/tmp
 1. Assegna al nuovo account utente le autorizzazioni di scrittura per le directory seguenti:
    * [JBoss-directory]\standalone\distribuzione
    * [JBoss-directory]\standalone\

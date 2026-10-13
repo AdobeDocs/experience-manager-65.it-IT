@@ -11,13 +11,27 @@ feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 13c495b8b7e9824c5de8469df96bec00c74c8dbc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: d8e79b3c-92b5-4c4d-a46c-5f16d63a14dc
+    internal-label: Viewer presets
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '4530'
+source-wordcount: '4654'
 ht-degree: 8%
-
 ---
-
 # Gestisci predefiniti visualizzatore{#managing-viewer-presets}
 
 Un predefinito visualizzatore è una raccolta di impostazioni che determinano il modo in cui gli utenti visualizzano le risorse rich media sugli schermi dei loro computer e sui loro dispositivi mobili. Gli amministratori possono creare predefiniti visualizzatore. Le impostazioni sono disponibili per un array di opzioni di configurazione del visualizzatore. Ad esempio, è possibile modificare le dimensioni di visualizzazione o il comportamento di zoom del visualizzatore.
@@ -60,7 +74,7 @@ Per ulteriori informazioni su come incorporare i visualizzatori reattivi nelle p
 >[!NOTE]
 >
 >Pubblica tutti i visualizzatori predefiniti prima di utilizzarli per la prima volta.
->Consulta [Pubblicazione dei predefiniti visualizzatore].(#publishing-viewer-presets)
+>Vedere [Pubblicazione dei predefiniti visualizzatore].(#publishing-viewer-presets)
 
 ### Compatibilità del sistema con il predefinito per visualizzatori {#viewer-preset-system-compatibility}
 
@@ -464,9 +478,9 @@ Ad esempio, per il tipo *VideoPlayer*, in **[!UICONTROL Modificatori]** > **[!UI
    * **[!UICONTROL trattino]** - I video vengono trasmessi solo come trattino. Tuttavia, sui dispositivi Safari/iOS è necessario selezionare **[!UICONTROL hls]** come tipo.
    * **[!UICONTROL hls]** - I video vengono trasmessi solo come hls.
    * **[!UICONTROL auto]** - Procedure consigliate. La creazione di flussi DASH e HLS è ottimizzata per l’archiviazione. Adobe consiglia pertanto di selezionare sempre **[!UICONTROL auto]** come tipo di riproduzione. I video vengono trasmessi come dash, hls o progressive, come nell&#39;ordine di riproduzione seguente:
-      * Se il browser supporta DASH, viene utilizzato prima il flusso DASH.
-      * Se il browser non supporta DASH, viene utilizzato lo streaming HLS, secondo.
-      * Se il browser non supporta DASH o HLS, viene utilizzata la riproduzione progressiva.
+     * Se il browser supporta DASH, viene utilizzato prima il flusso DASH.
+     * Se il browser non supporta DASH, viene utilizzato lo streaming HLS, secondo.
+     * Se il browser non supporta DASH o HLS, viene utilizzata la riproduzione progressiva.
 
 1. Dal menu a discesa **[!UICONTROL Tipo selezionato]**, scegli un componente di cui vuoi modificare i comportamenti.
 

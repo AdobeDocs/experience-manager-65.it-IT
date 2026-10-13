@@ -9,13 +9,28 @@ exl-id: 78673609-8cbc-4b4b-953e-56c31ea1b4ea
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 24%
-
 ---
-
 # Visualizzare l’anteprima delle pagine utilizzando i dati di ContextHub{#previewing-pages-using-contexthub-data}
 
 La barra degli strumenti [ContextHub](/help/sites-developing/contexthub.md) visualizza i dati dagli archivi ContextHub e consente di modificare i dati dell&#39;archivio. La barra degli strumenti di ContextHub è utile per visualizzare in anteprima il contenuto determinato dai dati in un archivio ContextHub.
@@ -49,7 +64,7 @@ Ogni modulo di interfaccia utente fornisce un diverso set di funzioni, ma i segu
 
 ### Contenuto barra degli strumenti {#toolbar-content}
 
-I moduli di interfaccia utente possono visualizzare dati da uno o più archivi di ContextHub nella barra degli strumenti. I moduli di interfaccia utente utilizzano un’icona e un titolo per identificarsi. 
+I moduli di interfaccia utente possono visualizzare dati da uno o più archivi di ContextHub nella barra degli strumenti. I moduli di interfaccia utente utilizzano un’icona e un titolo per identificarsi.
 
 ![schermata_shot_2018-03-23at093936](assets/screen_shot_2018-03-23at093936.png)
 

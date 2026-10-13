@@ -6,13 +6,27 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a9f7d31e-bbe1-4475-966a-5f213546fcd9
+    internal-label: SPA Editor
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2476'
 ht-degree: 1%
-
 ---
-
 
 # Modifica di un’applicazione a pagina singola esterna all’interno di Adobe Experience Manager {#editing-external-spa-within-aem}
 
@@ -30,8 +44,8 @@ I prerequisiti sono semplici.
 
 * Assicurati che un’istanza di AEM sia in esecuzione localmente.
 * Creare un progetto SPA di base di AEM utilizzando [l&#39;archetipo del progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it&#available-properties).
-   * Questo costituisce la base del progetto AEM che verrà aggiornato per includere l’applicazione a pagina singola esterna.
-   * Gli esempi in questo documento utilizzano il punto di partenza del [progetto SPA WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=it#spa-editor).
+  * Questo costituisce la base del progetto AEM che verrà aggiornato per includere l’applicazione a pagina singola esterna.
+  * Gli esempi in questo documento utilizzano il punto di partenza del [progetto SPA WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=it#spa-editor).
 * Avrai a portata di mano l’applicazione a pagina singola React funzionante ed esterna che desideri integrare.
 
 ## Carica applicazione a pagina singola in un progetto AEM {#upload-spa-to-aem-project}
@@ -166,7 +180,7 @@ Prendiamo una pagina di esempio in cui è necessario aggiungere il testo del pro
 
    * `pagePath`: la pagina che contiene il nodo, nell&#39;esempio `/content/wknd-spa-react/us/en/home`
    * `itemPath`: percorso del nodo all&#39;interno della pagina, nell&#39;esempio `root/responsivegrid/text`
-      * È costituito dai nomi degli elementi che la contengono nella pagina.
+     * È costituito dai nomi degli elementi che la contengono nella pagina.
 
    ![Percorso del nodo](assets/external-spa-path.png)
 
@@ -260,9 +274,9 @@ Esistono diversi requisiti per aggiungere componenti foglia virtuali e alcune li
 * Il nodo di pagina fornito nel percorso in `pagePath` deve esistere nel progetto AEM.
 * Il nome del nodo da creare deve essere specificato in `itemPath`.
 * Il componente può essere creato a qualsiasi livello.
-   * Se si specifica `itemPath='text_20'` nell&#39;esempio precedente, il nuovo nodo verrà creato direttamente sotto la pagina, ovvero `/content/wknd-spa-react/us/en/home/jcr:content/text_20`
+  * Se si specifica `itemPath='text_20'` nell&#39;esempio precedente, il nuovo nodo verrà creato direttamente sotto la pagina, ovvero `/content/wknd-spa-react/us/en/home/jcr:content/text_20`
 * Il percorso del nodo in cui viene creato un nuovo nodo deve essere valido quando fornito tramite `itemPath`.
-   * In questo esempio, `root/responsivegrid` deve esistere in modo che il nuovo nodo `text_20` possa essere creato lì.
+  * In questo esempio, `root/responsivegrid` deve esistere in modo che il nuovo nodo `text_20` possa essere creato lì.
 * È supportata solo la creazione di componenti foglia. Contenitore virtuale e pagina saranno supportati nelle versioni future.
 
 ### Contenitori virtuali {#virtual-containers}
@@ -297,8 +311,8 @@ Esistono diversi requisiti per aggiungere contenitori virtuali e alcune limitazi
 
 * Il criterio per determinare quali componenti possono essere aggiunti verrà ereditato dal contenitore principale.
 * L’elemento principale immediato del contenitore da creare deve già esistere in AEM.
-   * Se il contenitore `root/responsivegrid` esiste già nel contenitore AEM, è possibile creare un nuovo contenitore fornendo il percorso `root/responsivegrid/newContainer`.
-   * Tuttavia `root/responsivegrid/newContainer/secondNewContainer` non è possibile.
+  * Se il contenitore `root/responsivegrid` esiste già nel contenitore AEM, è possibile creare un nuovo contenitore fornendo il percorso `root/responsivegrid/newContainer`.
+  * Tuttavia `root/responsivegrid/newContainer/secondNewContainer` non è possibile.
 * È possibile creare un solo nuovo livello di componente alla volta.
 
 ## Personalizzazioni aggiuntive {#additional-customizations}
@@ -355,9 +369,9 @@ Per abilitare la modifica in AEM per questa applicazione a pagina singola di ese
    ![Helper di routing](assets/external-spa-router-helper.png)
 
    * È possibile utilizzare l&#39;helper `toAEMPath` fornito da `@adobe/cq-spa-page-model-manager`. Trasforma il percorso fornito per il routing in modo da includere parti specifiche di AEM quando l’applicazione è aperta su un’istanza di AEM. Accetta tre parametri:
-      * Percorso necessario per il routing
-      * URL di origine dell’istanza di AEM in cui viene modificata l’applicazione a pagina singola
-      * Directory principale del progetto su AEM come determinato nel primo passaggio
+     * Percorso necessario per il routing
+     * URL di origine dell’istanza di AEM in cui viene modificata l’applicazione a pagina singola
+     * Directory principale del progetto su AEM come determinato nel primo passaggio
 
    * Questi valori possono essere impostati come variabili di ambiente per maggiore flessibilità.
 

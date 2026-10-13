@@ -1,5 +1,5 @@
 ---
-title: Modifica degli stili predefiniti dei moduli di HTML5
+title: Modifica degli stili predefiniti dei moduli HTML5
 description: Lo stile dei moduli di HTML5 è basato su CSS. È possibile modificare gli stili predefiniti del modulo.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,18 +9,33 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 4c84cfd1-50a4-416f-b4a5-7f2f4c7f10af
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 0%
-
+source-wordcount: '369'
+ht-degree: 4%
 ---
+# Modifica degli stili predefiniti dei moduli HTML5{#changing-default-styles-of-html-forms}
 
-# Modifica degli stili predefiniti dei moduli di HTML5{#changing-default-styles-of-html-forms}
+I moduli HTML5 vengono sottoposti a rendering utilizzando le funzionalità di HTML5 e lo stile del modulo sottoposto a rendering viene eseguito utilizzando CSS. L&#39;aspetto predefinito dei moduli HTML5 è simile al rendering PDF. Gli sviluppatori possono utilizzare CSS personalizzati per modificare l&#39;aspetto predefinito dei moduli HTML5.
 
-I moduli HTML5 vengono sottoposti a rendering utilizzando le funzionalità di HTML5 e lo stile del modulo sottoposto a rendering viene eseguito utilizzando gli stili CSS. L&#39;aspetto predefinito di un form HTML5 è simile a quello della relativa rappresentazione PDF. Gli sviluppatori possono utilizzare CSS personalizzati per modificare l’aspetto predefinito dei moduli HTML5.
-
-In questo articolo vengono fornite informazioni dettagliate per modificare lo stile di un modulo HTML5 e nell&#39;articolo [Introduzione agli stili](/help/forms/using/css-styles.md) sono contenute informazioni dettagliate su vari aspetti dello stile dei moduli HTML5. Assicurati di aver letto l’articolo Introduzione agli stili prima di eseguire i passaggi menzionati in questo articolo.
+Questo articolo fornisce informazioni dettagliate per modificare lo stile di un modulo di HTML5 e [Introduzione agli stili](/help/forms/using/css-styles.md) contiene informazioni dettagliate su vari aspetti dello stile dei moduli di HTML5. Assicurati di aver letto l’articolo Introduzione agli stili prima di eseguire i passaggi menzionati in questo articolo.
 
 Le due immagini seguenti mostrano la differenza tra gli stili predefiniti e personalizzati.
 
@@ -32,7 +47,7 @@ Le due immagini seguenti mostrano la differenza tra gli stili predefiniti e pers
 
    Accedi all&#39;interfaccia di CRX DE all&#39;URL: **https://&lt;server>:&lt;port>/crx/de** e crea un profilo o scegli un profilo esistente. Per informazioni su come creare un profilo, vedere [Creazione di un profilo](/help/forms/using/custom-profile.md)
 
-1. **Crea un foglio di stile CSS per la formattazione dei moduli HTML5**
+1. **Creare un foglio di stile CSS per la formattazione dei moduli HTML5**
 
    Passa alla cartella in cui hai creato il renderer del profilo e crea un file del foglio di stile CSS. I passaggi da seguire sono
 
@@ -42,7 +57,7 @@ Le due immagini seguenti mostrano la differenza tra gli stili predefiniti e pers
    1. Dal riquadro di navigazione, apri il file CSS creato.
    1. Definisci le classi CSS dei componenti a cui vuoi applicare uno stile e aggiungi gli stili in tali classi.
 
-   Per sapere quali classi CSS creare per un particolare componente nei moduli HTML5, consulta [Introduzione agli stili](/help/forms/using/css-styles.md).
+   Per informazioni sulle classi CSS da creare per un particolare componente nei moduli HTML5, vedere [Introduzione agli stili](/help/forms/using/css-styles.md).
 
 1. **Includi il foglio di stile nel modulo di rendering profili**
 

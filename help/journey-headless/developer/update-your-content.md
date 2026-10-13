@@ -5,13 +5,39 @@ exl-id: af29cb77-0210-4fc4-8d86-2a833d19b49f
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d429a63e-ade4-4117-b04e-9b996d1c94ef
+    internal-label: Integrations
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: a02b73a7-bdfc-4225-bdfd-69f7891ab55e
+    internal-label: GraphQL
+  - id: d781bc8f-52af-43f6-84d0-b73e59a130d5
+    internal-label: Persisted queries
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '1108'
 ht-degree: 84%
-
 ---
-
 # Come aggiornare il contenuto utilizzando le API di AEM Assets. {#update-your-content}
 
 In questa parte del [Percorso per sviluppatori headless di AEM,](overview.md) scopri come utilizzare l’API REST per accedere e aggiornare il contenuto dei frammenti di contenuto.
@@ -30,9 +56,9 @@ Questo articolo si basa su questi elementi fondamentali per comprendere come agg
 
 * **Pubblico**: avanzato
 * **Obiettivo**: scopri come utilizzare l’API REST per accedere e aggiornare il contenuto dei frammenti di contenuto:
-   * introduzione all’API HTTP di AEM Assets.
-   * Introduzione e discussione sul supporto per i frammenti di contenuto nell’API.
-   * Illustrazione dei dettagli dell’API.
+  * introduzione all’API HTTP di AEM Assets.
+  * Introduzione e discussione sul supporto per i frammenti di contenuto nell’API.
+  * Illustrazione dei dettagli dell’API.
 
 <!--
   * Look at sample code to see how things work in practice.
@@ -215,9 +241,9 @@ Associated content is currently not exposed.
 L’API REST di Assets utilizza l’`/api/assets` endpoint e richiede il percorso della risorsa per accedervi (senza l’iniziale `/content/dam`).
 
 * Ciò significa che per accedere alla risorsa in:
-   * `/content/dam/path/to/asset`
+  * `/content/dam/path/to/asset`
 * è necessario richiedere:
-   * `/api/assets/path/to/asset`
+  * `/api/assets/path/to/asset`
 
 Ad esempio, per accedere a `/content/dam/wknd/en/adventures/cycling-tuscany`, richiedi `/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
@@ -247,9 +273,9 @@ L’utilizzo può variare a seconda che utilizzi un ambiente di authoring o pubb
 * Si consiglia vivamente di associare la creazione a un’istanza di authoring (e al momento non esiste alcun modo per replicare un frammento da pubblicare utilizzando questa API).
 * La distribuzione è possibile da entrambi, in quanto AEM fornisce il contenuto richiesto solo in formato JSON.
 
-   * L’archiviazione e la consegna da un’istanza di authoring AEM dovrebbero essere sufficienti per le applicazioni di librerie multimediali dietro il firewall.
+  * L’archiviazione e la consegna da un’istanza di authoring AEM dovrebbero essere sufficienti per le applicazioni di librerie multimediali dietro il firewall.
 
-   * Per la distribuzione web live, si consiglia un’istanza di pubblicazione AEM.
+  * Per la distribuzione web live, si consiglia un’istanza di pubblicazione AEM.
 
 >[!CAUTION]
 >
@@ -326,7 +352,7 @@ Continua il tuo percorso AEM headless consultando il documento [Come iniziare a 
 
 * [API HTTP di Assets](/help/assets/mac-api-assets.md)
 * [API REST per frammenti di contenuto](/help/assets/assets-api-content-fragments.md)
-   * [Riferimento API](/help/assets/assets-api-content-fragments.md#api-reference)
+  * [Riferimento API](/help/assets/assets-api-content-fragments.md#api-reference)
 * [API Adobe Experience Manager Assets - Frammenti di contenuto](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
 * [Utilizzo di frammenti di contenuto](/help/assets/content-fragments/content-fragments.md)
 * [Componenti core AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)

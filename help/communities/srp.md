@@ -9,18 +9,25 @@ exl-id: 5f313274-1a2a-4e83-9289-60a4729b99b4
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '1154'
 ht-degree: 0%
-
 ---
-
 # Panoramica del provider di risorse di archiviazione {#storage-resource-provider-overview}
 
 ## Introduzione {#introduction}
 
-A partire da Adobe Experience Manager (AEM) Communities 6.1, il contenuto della community, comunemente denominato User-generated content (UGC), viene archiviato in un unico archivio comune fornito da un [provider di risorse di archiviazione](working-with-srp.md) (SRP).
+A partire da Adobe Experience Manager (AEM) Communities 6.1, il contenuto della community, comunemente denominato UGC (User-generated Content), viene archiviato in un unico archivio comune fornito da un [provider di risorse di archiviazione](working-with-srp.md) (SRP).
 
 Sono disponibili diverse opzioni SRP, tutte per accedere a UGC tramite una nuova interfaccia AEM Communities, l&#39;[API SocialResourceProvider](srp-and-ugc.md) (API SRP), che include tutte le operazioni di creazione, lettura, aggiornamento ed eliminazione (CRUD).
 
@@ -40,15 +47,15 @@ Consulta anche:
 
 ## Informazioni sull’archivio {#about-the-repository}
 
-Per comprendere i criteri SRP, è utile comprendere il ruolo dell’archivio dell’AEM (Oak) in un sito della community AEM.
+Per comprendere il protocollo SRP, è utile comprendere il ruolo dell’archivio AEM (Oak) in un sito della community AEM.
 
 **Archivio dei contenuti Java™ (JCR)**
 Questo standard definisce un modello dati e un&#39;interfaccia di programmazione dell&#39;applicazione ([API JCR](https://jackrabbit.apache.org/jcr/jcr-api.html)) per gli archivi di contenuti. Combina le caratteristiche dei file system convenzionali con quelle dei database relazionali e aggiunge diverse funzioni aggiuntive di cui le applicazioni di contenuti hanno spesso bisogno.
 
-Un’implementazione del JCR è l’archivio dell’AEM, Oak.
+Un’implementazione di JCR è l’archivio di AEM, Oak.
 
 **Apache Jackrabbit Oak**
-[Oak](../../help/sites-deploying/platform.md) è un&#39;implementazione di JCR 2.0 che è un sistema di archiviazione dei dati progettato per applicazioni incentrate sui contenuti. Si tratta di un tipo di database gerarchico progettato per i dati non strutturati e semistrutturati. L’archivio memorizza non solo il contenuto rivolto all’utente, ma anche tutto il codice, i modelli e i dati interni utilizzati dall’applicazione. L&#39;interfaccia utente per l&#39;accesso al contenuto è [CRXDE Liti](../../help/sites-developing/developing-with-crxde-lite.md).
+[Oak](../../help/sites-deploying/platform.md) è un&#39;implementazione di JCR 2.0 che è un sistema di archiviazione dei dati progettato per applicazioni incentrate sui contenuti. Si tratta di un tipo di database gerarchico progettato per i dati non strutturati e semistrutturati. L’archivio memorizza non solo il contenuto rivolto all’utente, ma anche tutto il codice, i modelli e i dati interni utilizzati dall’applicazione. L&#39;interfaccia utente per accedere al contenuto è [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md).
 
 Sia JCR che Oak vengono in genere utilizzati per fare riferimento all’archivio AEM.
 
@@ -90,13 +97,13 @@ MSRP utilizza Solr per le query.
 
 ### JSRP {#jsrp}
 
-JSRP è il provider predefinito per l’accesso a tutti i contenuti generati dagli utenti su una singola istanza AEM. Consente di utilizzare rapidamente AEM Communities 6.1 senza la necessità di configurare MSRP o ASRP.
+JSRP è il provider predefinito per l’accesso a tutti i contenuti generati dagli utenti su una singola istanza di AEM. Consente di utilizzare rapidamente AEM Communities 6.1 senza la necessità di configurare MSRP o ASRP.
 
 Vedi [JSRP - Provider risorsa di archiviazione JCR](jsrp.md).
 
-Se è presente JSRP mentre UGC è memorizzato in JCR ed è accessibile nelle API CRXDE Liti e JCR, l’Adobe consiglia di non utilizzare mai l’API JCR a tale scopo. In tal caso, le modifiche future potrebbero influire sul codice personalizzato.
+Se è presente JSRP mentre l’UGC è memorizzato in JCR ed è accessibile in CRXDE Lite e nell’API JCR, Adobe consiglia di non utilizzare mai l’API JCR a tale scopo. In tal caso, le modifiche future potrebbero influire sul codice personalizzato.
 
-Inoltre, l’archivio per gli ambienti Author e Publish non è condiviso. Sebbene un cluster di istanze di pubblicazione generi un archivio di pubblicazione condiviso, l’UGC immesso in Publish non è visibile nell’ambiente Author, pertanto non è possibile gestirlo dall’ambiente Author. L’UGC viene mantenuto solo nell’archivio AEM (JCR) dell’istanza in cui è stato inserito.
+Inoltre, l’archivio per gli ambienti Author e Publish non è condiviso. Anche se un cluster di istanze di pubblicazione genera un archivio di pubblicazione condiviso, l’UGC immesso al momento della pubblicazione non è visibile nell’istanza di authoring, pertanto non è possibile gestirlo dall’istanza di authoring. UGC viene mantenuto solo nell’archivio AEM (JCR) dell’istanza in cui è stato inserito.
 
 JSRP utilizza gli indici Oak per le query.
 

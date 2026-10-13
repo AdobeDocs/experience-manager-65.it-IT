@@ -10,18 +10,33 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 7f9c77c6-447a-407f-ae58-6735176dc99c
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 0%
-
+source-wordcount: '652'
+ht-degree: 3%
 ---
-
 # Supporto delle clausole di immagine per i moduli HTML5 {#picture-clause-support-for-html-forms}
 
 HTML5 Forms supporta la clausola immagine XFA per il valore di visualizzazione e il valore formattato per i simboli di data, testo e numerici. Sono supportate le seguenti espressioni della clausola Picture:
 
-* category(locale){picture-clause} | category(locale){picture-clause} | category(locale){picture-clause}
+* category(locale){picture-clause} | categoria(impostazioni locali){picture-clause} | category(locale){picture-clause}
 * category.subcategory{}
 
 >[!NOTE]
@@ -37,7 +52,7 @@ Espressione supportata per la clausola Date Picture:
 * date.medium{}
 * date.full{}
 * date.short{}
-* date{date} Simboli della clausola immagine&rbrace;
+* data{date Picture Clause symbols}
 
 >[!NOTE]
 >
@@ -100,15 +115,15 @@ Espressione supportata per la clausola Date Picture:
 
 I moduli HTML5 supportano i simboli di immagine numerica. Tuttavia, esiste una differenza nel supporto tra PDF forms e HTML Forms.
 
-In **PDF forms**, un numero viene formattato indipendentemente dal numero di simboli nella clausola Picture
+In **PDF forms** un numero viene formattato indipendentemente dal numero di simboli nella clausola Picture
 
 In **HTML Forms** un numero viene formattato solo se il numero contiene cifre inferiori al numero di simboli nella clausola Picture.
 
 **Esempio**: considerare una clausola Picture: num{zzz,zzz,zz9}.
 
-Il numero **10000** è formattato come **10.000** sia in HTML che in PDF forms.
+Il numero **10000** è formattato come **10.000** in HTML e PDF forms.
 
-Il numero 1000000 è formattato come 1.000.000 in PDF forms. Tuttavia, in HTML Forms il numero rimane non formattato come 1000000.
+In PDF forms, il numero 1000000 è formattato come 1.000.000. Tuttavia, in HTML Forms il numero rimane non formattato come 1000000.
 
 Le espressioni supportate per la clausola Numeric Picture in **HTML Forms** sono:
 
@@ -116,7 +131,7 @@ Le espressioni supportate per la clausola Numeric Picture in **HTML Forms** sono
 * num.decimal{}
 * num.currency{}
 * num.percent{}
-* num{Simboli clausola immagine numerica}
+* num{Numeric Picture Clause Symbols}
 
 <table>
  <tbody>
@@ -207,7 +222,7 @@ Le espressioni supportate per la clausola Numeric Picture in **HTML Forms** sono
 
 I moduli HTML5 supportano le seguenti espressioni della clausola Text Picture:
 
-* text{text Simboli della clausola Picture}
+* text{text Picture clause symbols}
 
 | **Simbolo** | **Interpretazione** |
 |---|---|

@@ -10,13 +10,22 @@ exl-id: 88af99df-846b-47b3-9b1f-68bfdfc40eb8
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '5721'
+source-wordcount: '6064'
 ht-degree: 3%
-
 ---
-
 # Componenti per l’authoring delle pagine{#components-for-page-authoring}
 
 I seguenti componenti sono destinati all’utilizzo durante l’authoring di contenuti per una pagina web standard. I componenti costituiscono un sottoinsieme dei componenti disponibili come predefiniti per un’installazione standard di AEM.
@@ -156,7 +165,7 @@ Qui puoi specificare come funziona il carosello:
 * **Elenco**
 Qui puoi specificare in che modo le pagine vengono incluse nel carosello:
 
-  * **Genera elenco con**
+  * **Genera elenco tramite**
     Esistono diversi modi per creare un elenco di pagine: pagine figlie, elenco fisso, ricerca o ricerca avanzata (tutti descritti di seguito).
     Indipendentemente dal metodo scelto, le pagine incluse nell’elenco devono già avere un’immagine associata alla pagina. Questa immagine viene visualizzata nel carosello. Se non è presente alcuna immagine per una pagina nelle Proprietà pagina di tale pagina, è necessario associare un’immagine alla pagina prima di iniziare. In caso contrario, nel carosello viene visualizzata una pagina vuota. Consulta [Modifica delle proprietà di pagina](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
     A seconda dell’elemento scelto, viene visualizzato un nuovo pannello:
@@ -183,7 +192,7 @@ Qui puoi specificare in che modo le pagine vengono incluse nel carosello:
 
       * **Notazione predicato Querybuilder**
         È possibile immettere una query di ricerca utilizzando la notazione del predicato Querybuilder. Ad esempio, puoi immettere &quot;fulltext=Marketing&quot; per far sì che tutte le pagine il cui contenuto contiene &quot;Marketing&quot; vengano visualizzate nel carosello.
-        Per informazioni complete sulle espressioni di query e altri esempi, vedere [API QueryBuilder](/help/sites-developing/querybuilder-api.md).
+        Consulta [API QueryBuilder](/help/sites-developing/querybuilder-api.md) per informazioni complete sulle espressioni di query e altri esempi.
 
   * **Ordina per**
     Selezionare `jcr:title`, `jcr:created`, `cq:lastModified` o `cq:template` dal menu a discesa.
@@ -1014,7 +1023,7 @@ Questo componente necessario definisce l’inizio di un nuovo modulo su una pagi
 
     Percorso delle proprietà del nodo utilizzato per caricare valori predefiniti nei campi modulo.
     Questo campo è facoltativo e specifica il percorso di un nodo nell’archivio. Se le proprietà di questo nodo corrispondono ai nomi dei campi, i campi appropriati del modulo vengono precaricati con il valore di tali proprietà. Se non esiste alcuna corrispondenza, il campo contiene il valore predefinito.
-    Utilizzando **Percorso di caricamento** è possibile precaricare il modulo con i valori presenti nei campi obbligatori. Vedere [Precaricamento dei valori del modulo](/help/sites-developing/developing-forms.md#preloading-form-values).
+    Utilizzando **Percorso di caricamento** è possibile precaricare il modulo con i valori presenti nei campi obbligatori. Vedere [Precaricamento valori modulo](/help/sites-developing/developing-forms.md#preloading-form-values).
 
   * **Convalida client**
 

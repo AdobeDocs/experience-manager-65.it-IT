@@ -1,6 +1,6 @@
 ---
 title: Personalizzazione della console di benvenuto (interfaccia classica)
-description: La console Benvenuti fornisce un elenco di collegamenti alle varie console e funzionalità dell’AEM
+description: La console Benvenuti fornisce un elenco di collegamenti alle varie console e funzionalità di AEM
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
@@ -9,13 +9,22 @@ exl-id: 9e171b62-8efb-4143-a202-ba6555658d4b
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 6%
-
+source-wordcount: '466'
+ht-degree: 8%
 ---
-
 # Personalizzazione della console di benvenuto (interfaccia classica){#customizing-the-welcome-console-classic-ui}
 
 >[!CAUTION]
@@ -35,7 +44,7 @@ La console di benvenuto fornisce un elenco di collegamenti alle varie console e 
 
 ## Collegamenti nella console principale (riquadro sinistro) {#links-in-main-console-left-pane}
 
-Elenco delle principali console dell’AEM.
+Elenca le console principali di AEM.
 
 ![cq_welcomescreenmainconsole](assets/cq_welcomescreenmainconsole.png)
 
@@ -80,7 +89,7 @@ Per impostazione predefinita, sono disponibili tre sezioni (leggermente distanzi
 <table>
  <tbody>
   <tr>
-   <td><strong>Riferimenti</strong></td>
+   <td><strong>Risorse</strong></td>
    <td> </td>
   </tr>
   <tr>
@@ -92,7 +101,7 @@ Per impostazione predefinita, sono disponibili tre sezioni (leggermente distanzi
    <td><code>/libs/cq/core/content/welcome/resources/workflows</code></td>
   </tr>
   <tr>
-   <td> Gestione attività</td>
+   <td> Gestione delle attività</td>
    <td><code>/libs/cq/core/content/welcome/resources/taskmanager</code></td>
   </tr>
   <tr>
@@ -120,7 +129,7 @@ Per impostazione predefinita, sono disponibili tre sezioni (leggermente distanzi
    <td><code>/libs/cq/core/content/welcome/docs/docs</code></td>
   </tr>
   <tr>
-   <td> Riferimenti per sviluppatori</td>
+   <td> Risorse per sviluppatori</td>
    <td><code>/libs/cq/core/content/welcome/docs/dev</code></td>
   </tr>
   <tr>

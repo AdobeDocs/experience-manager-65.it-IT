@@ -9,13 +9,26 @@ exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 33%
-
+source-wordcount: '636'
+ht-degree: 25%
 ---
-
 # Annotazioni durante la modifica di una pagina{#annotations-when-editing-a-page}
 
 L’aggiunta di contenuto alle pagine del sito web è spesso soggetta a discussioni prima che questo venga effettivamente pubblicato. Per facilitare questa fase, molti componenti direttamente correlati al contenuto (anziché, ad esempio, al layout) ti consentono di aggiungere un’annotazione.
@@ -103,13 +116,13 @@ La modalità Annota consente di creare, modificare, spostare o eliminare le anno
 
    * Fare clic sull&#39;indicatore di testo per aprire l&#39;annotazione. Una volta aperta, è possibile visualizzare il testo completo, apportare modifiche o eliminare l’annotazione.
 
-      * Gli schizzi non possono essere eliminati indipendentemente dall’annotazione.
+     * Gli schizzi non possono essere eliminati indipendentemente dall’annotazione.
 
    * Riposiziona il marcatore di testo.
    * Fate clic su una linea di uno schizzo per selezionarlo e trascinarlo nella posizione desiderata.
    * Sposta o copia un componente.
 
-      * Vengono spostate o copiate anche tutte le annotazioni e gli schizzi correlati e la loro posizione rispetto al paragrafo rimane invariata.
+     * Vengono spostate o copiate anche tutte le annotazioni e gli schizzi correlati e la loro posizione rispetto al paragrafo rimane invariata.
 
 1. Per uscire dalla modalità Annotazione e tornare alla modalità utilizzata in precedenza, fare clic sull&#39;icona Annota (simbolo x) a destra della barra degli strumenti superiore.
 
@@ -119,6 +132,6 @@ La modalità Annota consente di creare, modificare, spostare o eliminare le anno
 
 ### Indicatore di annotazione {#annotation-indicator}
 
-Le annotazioni non vengono visualizzate in modalità Modifica, ma il contrassegno in alto a destra della barra degli strumenti mostra il numero di annotazioni esistenti per la pagina corrente. Il contrassegno sostituisce l’icona Annotazioni predefinita, ma continua a fungere da collegamento rapido per attivare o disattivare la modalità Annota:
+Le annotazioni non vengono visualizzate in modalità Modifica, ma il contrassegno in alto a destra della barra degli strumenti mostra il numero di annotazioni esistenti per la pagina corrente. Il badge sostituisce l’icona Annotazioni predefinita, ma funziona ancora come un collegamento rapido che attiva o disattiva la modalità Annota:
 
 ![Indicatore annotazioni](assets/chlimage_1-242.png)

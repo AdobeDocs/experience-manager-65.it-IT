@@ -1,18 +1,27 @@
 ---
-title: Configura [!DNL Workfront for Experience Manager enhanced connector]
-description: Configura [!DNL Workfront for Experience Manager enhanced connector]
+title: Configurare [!DNL Workfront for Experience Manager enhanced connector]
+description: Configurare [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Workfront Integrations and Apps
 exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
 hide: true
 solution: Experience Manager, Workfront
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: a1f87682-0525-5459-aa06-3560bb4c3b2a
+    internal-label: Workfront Integrations and Apps
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '1747'
 ht-degree: 1%
-
 ---
-
 # Configurare [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
 | Versione | Collegamento articolo |
@@ -123,23 +132,23 @@ Questo passaggio del flusso di lavoro consente a un utente di mappare una propri
 
 * `workfront-field` può essere
 
-   * Campo modulo personalizzato identificato dal prefisso `DE:`.
-   * Campo modificabile identificato dal relativo nome. I nomi dei campi sono stati trovati in [[!DNL Workfront] API explorer](https://experience.workfront.com/s/api-explorer).
+  * Campo modulo personalizzato identificato dal prefisso `DE:`.
+  * Campo modificabile identificato dal relativo nome. I nomi dei campi sono stati trovati in [[!DNL Workfront] API explorer](https://experience.workfront.com/s/api-explorer).
 
 * `aem-mapped-property` può essere:
 
-   * Un valore letterale. Queste devono essere racchiuse tra virgolette.
-   * Una proprietà AEM. Questo riferimento deve essere relativo al payload del flusso di lavoro.
-   * Un valore denominato. Queste devono essere racchiuse tra parentesi.
-   * Una concatenazione dei 3 elementi sopra indicati. Specificarlo utilizzando `{+}`.
-   * Una modifica dei 3 elementi precedenti racchiudendo il valore con `{replace(<value>,"old-char","new-char")}`.
+  * Un valore letterale. Queste devono essere racchiuse tra virgolette.
+  * Una proprietà AEM. Questo riferimento deve essere relativo al payload del flusso di lavoro.
+  * Un valore denominato. Queste devono essere racchiuse tra parentesi.
+  * Una concatenazione dei 3 elementi sopra indicati. Specificarlo utilizzando `{+}`.
+  * Una modifica dei 3 elementi precedenti racchiudendo il valore con `{replace(<value>,"old-char","new-char")}`.
 
 * Alcuni esempi sono:
 
-   * `status="INP"`
-   * `DE:Asset Type=jcr:content/metadata/assetType`
-   * `DE:Path={path}`
-   * `URL="https://my-aem-author/assets.html"{+}{path}`
+  * `status="INP"`
+  * `DE:Asset Type=jcr:content/metadata/assetType`
+  * `DE:Path={path}`
+  * `URL="https://my-aem-author/assets.html"{+}{path}`
 
 ![Configurazione per mappare la proprietà](/help/assets/assets/wf-map-property-config.png)
 

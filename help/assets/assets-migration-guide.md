@@ -1,18 +1,36 @@
 ---
 title: Migrare le risorse in blocco
-description: Descrive come inserire risorse in  [!DNL Adobe Experience Manager], applicare metadati, generare rappresentazioni e attivarle nelle istanze di pubblicazione.
+description: Descrive come inserire risorse in [!DNL Adobe Experience Manager], applicare metadati, generare rappresentazioni e attivarle nelle istanze di pubblicazione.
 contentOwner: AG
 role: Developer, Admin
 feature: Migration,Renditions,Asset Management
 exl-id: 184f1645-894a-43c1-85f5-8e0d2d77aa73
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 5be0fc8f-1cff-5c3e-bb92-2903a56a3de6
+    internal-label: Migration
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1739'
-ht-degree: 6%
-
+source-wordcount: '1858'
+ht-degree: 10%
 ---
-
 # Migrazione di risorse in blocco {#assets-migration-guide}
 
 Durante la migrazione delle risorse in [!DNL Adobe Experience Manager], è necessario prendere in considerazione diversi passaggi. L&#39;estrazione di risorse e metadati dalla home corrente esula dall&#39;ambito di questo documento in quanto varia ampiamente tra le implementazioni, ma questo documento descrive come inserire queste risorse in [!DNL Experience Manager], applicarne i metadati, generare rappresentazioni e attivarle per pubblicare le istanze.

@@ -10,13 +10,29 @@ feature: Context Hub,Developing,Personalization
 exl-id: 38b9a795-1c83-406c-ab13-b4456da938dd
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: db974db1-cf49-4452-872e-5a56c5f1d391
+    internal-label: Context Hub
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2996'
-ht-degree: 1%
-
+source-wordcount: '3030'
+ht-degree: 0%
 ---
-
 # ClientContext nei dettagli{#client-context-in-detail}
 
 >[!NOTE]
@@ -190,15 +206,15 @@ AEM fornisce i componenti dell’archivio contestuale genericstore e genericstor
 
 * Coppie proprietà-valore: estendere il componente `GenericStoreProperties`. Questo componente esegue automaticamente il rendering degli archivi di coppie proprietà-valore. Vengono forniti diversi punti di interazione:
 
-   * `prolog.jsp` e `epilog.jsp`: interazione del componente che consente di aggiungere logica lato server prima o dopo il rendering del componente.
+  * `prolog.jsp` e `epilog.jsp`: interazione del componente che consente di aggiungere logica lato server prima o dopo il rendering del componente.
 
 * Dati complessi: estendere il componente `GenericStore`. L’archivio delle sessioni necessita di un metodo &quot;renderer&quot; chiamato ogni volta che è necessario eseguire il rendering del componente. La funzione di rendering viene chiamata con due parametri:
 
-   * `@param {String} store`
-Archivio di cui eseguire il rendering
+  * `@param {String} store`
+    Archivio di cui eseguire il rendering
 
-   * `@param {String} divId`
-ID del div in cui deve essere eseguito il rendering dell’archivio.
+  * `@param {String} divId`
+    ID del div in cui deve essere eseguito il rendering dell’archivio.
 
 >[!NOTE]
 >
@@ -618,11 +634,11 @@ Per creare un secondo contesto client, duplica il ramo:
 
 * La sottocartella:
   `/content`
-contiene il contenuto del contesto client personalizzato.
+  contiene il contenuto del contesto client personalizzato.
 
 * La cartella:
   `/contextstores`
-consente di definire configurazioni diverse per gli archivi contestuali.
+  consente di definire configurazioni diverse per gli archivi contestuali.
 
 Per utilizzare il contesto client personalizzato, modifica la proprietà
 `path`

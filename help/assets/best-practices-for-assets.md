@@ -1,18 +1,29 @@
 ---
-title: Best practice per  [!DNL Assets]
+title: Best practice per [!DNL Assets]
 description: Migliora la stabilità del sistema e le prestazioni sotto carico identificando e aderendo alle best practice che dipendono dalla distribuzione e dalla configurazione.
 contentOwner: AG
 feature: Asset Management
 role: Developer, Admin
 exl-id: 6b50f1b3-9c1c-47c8-a43e-6f40c42a41cc
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 0%
-
+source-wordcount: '512'
+ht-degree: 1%
 ---
-
 # Best practice per [!DNL Assets] {#best-practices-for-assets}
 
 [!DNL Adobe Experience Manager Assets] è un elemento fondamentale per offrire esperienze di marketing digitale di alta qualità che contribuiscono al raggiungimento degli obiettivi aziendali aumentando la velocità dei contenuti. Se si lavora con un numero elevato di risorse in [!DNL Experience Manager Assets] o si caricano regolarmente/periodicamente numerose risorse, inclusi video e Dynamic Media, l&#39;ottimizzazione dell&#39;esperienza di gestione delle risorse digitali è fondamentale per l&#39;efficienza del sistema.

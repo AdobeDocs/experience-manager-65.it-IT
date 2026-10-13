@@ -9,13 +9,22 @@ exl-id: 2f1a3a73-7a20-48c7-8f3e-54252f5fb71c
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 39%
-
+source-wordcount: '544'
+ht-degree: 47%
 ---
-
 # Partecipazione ai flussi di lavoro{#participating-in-workflows}
 
 In genere i flussi di lavoro includono passaggi che richiedono di eseguire un’attività su una pagina o una risorsa. Il flusso di lavoro seleziona un utente o un gruppo per eseguire l’attività e assegna un elemento di lavoro a tale persona o gruppo.
@@ -34,9 +43,9 @@ Per elaborare un elemento di lavoro è possibile eseguire le azioni seguenti:
 
   Gli utenti disponibili per la delega dipendono dal tipo di assegnatario dell’elemento di lavoro:
 
-   * Se l’elemento di lavoro è stato assegnato a un gruppo, sono disponibili i membri del gruppo.
-   * Se l’elemento di lavoro è stato assegnato a un gruppo e poi è stato delegato a un utente, sono disponibili i membri del gruppo e il gruppo.
-   * Se l’elemento di lavoro è stato assegnato a un singolo utente, l’elemento di lavoro non può essere delegato.
+  * Se l’elemento di lavoro è stato assegnato a un gruppo, sono disponibili i membri del gruppo.
+  * Se l’elemento di lavoro è stato assegnato a un gruppo e poi è stato delegato a un utente, sono disponibili i membri del gruppo e il gruppo.
+  * Se l’elemento di lavoro è stato assegnato a un singolo utente, l’elemento di lavoro non può essere delegato.
 
 * **Indietro**
 
@@ -52,7 +61,7 @@ Quando ti viene assegnato un elemento di lavoro (ad esempio, **Approva contenuto
 
   ![workflowstatus-1](assets/workflowstatus-1.png)
 
-* Quando a te o a un gruppo a cui appartieni viene assegnato un elemento di lavoro come parte di un flusso di lavoro, l’elemento di lavoro viene visualizzato nella casella in entrata del flusso di lavoro AEM.
+* Quando a te o a un gruppo a cui appartieni viene assegnato un elemento di lavoro come parte di un flusso di lavoro, l’elemento di lavoro viene visualizzato nella casella in entrata del flusso di lavoro di AEM.
 
   ![workflowinbox](assets/workflowinbox.png)
 

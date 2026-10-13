@@ -11,13 +11,25 @@ role: User
 exl-id: 76652a16-cad6-4e95-9e66-41efec452b03
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+subfeature_v2:
+  - id: e00c7c12-7035-41fe-ad76-1ec82c8c3f01
+    internal-label: Brand Portal
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 43%
-
 ---
-
 # Pubblicare risorse in Brand Portal {#publish-assets-to-brand-portal}
 
 | Versione | Collegamento articolo |
@@ -51,9 +63,9 @@ Per pubblicare le risorse selezionate su Brand Portal, effettua una delle seguen
 
 * Dalla barra degli strumenti, seleziona **[!UICONTROL Gestisci pubblicazione]**.
 
-   1. Quindi dall&#39;**[!UICONTROL Azione]** selezionare **[!UICONTROL Pubblica in Brand Portal]** e da **[!UICONTROL Pianificazione]** selezionare **[!UICONTROL Ora]**. Fai clic su **[!UICONTROL Avanti]**.
+  1. Quindi dall&#39;**[!UICONTROL Azione]** selezionare **[!UICONTROL Pubblica in Brand Portal]** e da **[!UICONTROL Pianificazione]** selezionare **[!UICONTROL Ora]**. Fai clic su **[!UICONTROL Avanti]**.
 
-   2. All&#39;interno di **[!UICONTROL Ambito]**, confermare la selezione e fare clic su **[!UICONTROL Pubblica in Brand Portal]**.
+  2. All&#39;interno di **[!UICONTROL Ambito]**, confermare la selezione e fare clic su **[!UICONTROL Pubblica in Brand Portal]**.
 
 Viene visualizzato un messaggio per informare che le risorse sono state accodate per la pubblicazione su Brand Portal. Per visualizzare le risorse pubblicate, accedi all’interfaccia di Brand Portal.
 

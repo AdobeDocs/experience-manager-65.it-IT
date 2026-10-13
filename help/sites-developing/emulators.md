@@ -10,13 +10,22 @@ exl-id: 009b7e2c-ac37-4acc-a656-0a34d3853dfd
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '618'
 ht-degree: 0%
-
 ---
-
 # Emulatori{#emulators}
 
 {{ue-over-mobile}}
@@ -98,7 +107,7 @@ In questo modo, l’aspetto completo dell’emulatore può essere controllato co
 
 >[!NOTE]
 >
->Si consiglia che il project HTML racchiuda il contenuto del corpo in un singolo div, proprio come nell’esempio precedente. Se il contenuto del corpo contiene più tag, potrebbero verificarsi risultati imprevedibili.
+>Si consiglia che il progetto HTML racchiuda il contenuto del corpo in un singolo div, proprio come nell’esempio precedente. Se il contenuto del corpo contiene più tag, potrebbero verificarsi risultati imprevedibili.
 
 ### Emulatori per dispositivi mobili {#mobile-emulators}
 
@@ -119,14 +128,14 @@ Quando il componente Pagina si basa sul componente Pagina mobile ( `/libs/wcm/mo
 
 * Lo script di inizializzazione dell’emulatore di base per dispositivi mobili definisce tramite JavaScript:
 
-   * Configurazione di tutti gli emulatori definiti per la pagina (emulatorConfigs)
-   * Il gestore dell’emulatore che integra le funzionalità dell’emulatore nella pagina tramite:
+  * Configurazione di tutti gli emulatori definiti per la pagina (emulatorConfigs)
+  * Il gestore dell’emulatore che integra le funzionalità dell’emulatore nella pagina tramite:
 
-     `emulatorMgr.launch(config)`;
+    `emulatorMgr.launch(config)`;
 
-     Il gestore degli emulatori è definito da:
+    Il gestore degli emulatori è definito da:
 
-     `/libs/wcm/emulator/widgets/source/EmulatorManager.js`
+    `/libs/wcm/emulator/widgets/source/EmulatorManager.js`
 
 #### Creazione di un emulatore mobile personalizzato {#creating-a-custom-mobile-emulator}
 
@@ -140,7 +149,7 @@ Per creare un emulatore mobile personalizzato:
 
    Ad esempio, è possibile fare riferimento al nodo `/libs/wcm/mobile/components/emulators/iPhone/css`
 
-1. Se necessario, definisci una libreria client JS, ad esempio, per definire un plug-in specifico: name = js, node type = cq:ClientLibrary
+1. Se necessario, definisci una libreria client JS, ad esempio, per definire un plug-in specifico: nome = js, tipo di nodo = cq:ClientLibrary
 
    Ad esempio, è possibile fare riferimento al nodo `/libs/wcm/mobile/components/emulators/base/js`
 

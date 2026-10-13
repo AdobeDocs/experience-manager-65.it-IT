@@ -9,13 +9,22 @@ exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1898'
-ht-degree: 16%
-
+source-wordcount: '1916'
+ht-degree: 14%
 ---
-
 # Creazione e organizzazione delle pagine{#creating-and-organizing-pages}
 
 Questa sezione descrive come creare e gestire le pagine con Adobe Experience Manager (AEM) in modo da poter [creare contenuto](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) su tali pagine.
@@ -79,13 +88,13 @@ Durante la creazione di una pagina sono disponibili due campi chiave:
 
 * **[Titolo](#title)**:
 
-   * Viene mostrato all’utente nella console ed è disponibile sopra il contenuto della pagina durante la modifica.
-   * Questo campo è obbligatorio.
+  * Viene mostrato all’utente nella console ed è disponibile sopra il contenuto della pagina durante la modifica.
+  * Questo campo è obbligatorio.
 
 * **[Nome](#name)**:
 
-   * Viene utilizzato per generare l’URI.
-   * L’input dell’utente per questo campo è opzionale. Se non viene specificato, il nome viene derivato dal titolo.
+  * Viene utilizzato per generare l’URI.
+  * L’input dell’utente per questo campo è opzionale. Se non viene specificato, il nome viene derivato dal titolo.
 
 Durante la creazione di una pagina, AEM [convalida il nome della pagina in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposte da AEM e JCR.
 
@@ -106,7 +115,7 @@ Se durante la creazione di una pagina si specifica solo una pagina **Titolo**, A
 | Titolo | Nome derivato |
 |---|---|
 | Schön | schoen.html |
-| SC%&amp;&ast;ç+ | sc---c-.html |
+| SC%&amp;&ast;ç+ | sc—c-.html |
 
 #### Nome {#name}
 
@@ -132,7 +141,7 @@ Il modello definisce la struttura di una pagina, incluse un’immagine di miniat
 AEM viene fornito con diversi modelli preconfigurati. I modelli disponibili dipendono dal singolo sito Web e le informazioni da fornire (al momento della creazione della nuova pagina) dipendono dall’interfaccia utente utilizzata. I campi chiave sono i seguenti:
 
 * **Titolo**
-Il titolo visualizzato nella pagina web risultante.
+Titolo visualizzato nella pagina Web risultante.
 
 * **Nome**
 Utilizzato per la denominazione della pagina.
@@ -173,8 +182,8 @@ A meno che non siano state create tutte le pagine in anticipo, prima di poter in
    * Fornisci un **Titolo** da mostrare all&#39;utente.
    * Fornisci un **Nome**; viene utilizzato per generare l&#39;URI. Se non viene specificato, il nome verrà derivato dal titolo.
 
-      * Se durante la creazione di una pagina si specifica **Nome**, AEM [convalida il nome in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposte da AEM e JCR.
-      * Nell&#39;interfaccia classica **non è possibile immettere caratteri non validi** nel campo **Nome**.
+     * Se durante la creazione di una pagina si specifica **Nome**, AEM [convalida il nome in base alle convenzioni](/help/sites-developing/naming-conventions.md) imposte da AEM e JCR.
+     * Nell&#39;interfaccia classica **non è possibile immettere caratteri non validi** nel campo **Nome**.
 
    * Fare clic sul modello da utilizzare per creare la nuova pagina.
 
@@ -210,7 +219,7 @@ Puoi aprire la pagina da [modificare](/help/sites-classic-ui-authoring/classic-p
 
 * Dopo aver aperto una pagina, è possibile passare ad altre pagine del sito (per modificarle) facendo clic sui collegamenti ipertestuali.
 
-### Copiare e incollare una pagina    {#copying-and-pasting-a-page}
+### Copiare e incollare una pagina {#copying-and-pasting-a-page}
 
 Durante la copia, puoi copiare:
 
@@ -322,7 +331,7 @@ Per spostare o rinominare una pagina:
 >
 >Se una pagina è già attivata, verrà automaticamente disattivata prima dell’eliminazione.
 
-### Blocco di una pagina   {#locking-a-page}
+### Blocco di una pagina {#locking-a-page}
 
 È possibile [bloccare/sbloccare una pagina](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page) da una console o durante la modifica di una singola pagina. Le informazioni sulle pagine bloccate vengono visualizzate anche in entrambe le posizioni.
 

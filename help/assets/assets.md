@@ -6,13 +6,26 @@ feature: Asset Management
 role: Leader, Developer, User
 exl-id: 68239634-a2e8-414e-a866-cd8082641ee8
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '924'
 ht-degree: 5%
-
 ---
-
 
 # Informazioni su [!DNL Adobe Experience Manager Assets] come soluzione DAM {#administering-assets}
 
@@ -67,9 +80,9 @@ Quando si lavora con risorse digitali in [!DNL Experience Manager], è utile com
 
 * **I metadati** [!DNL Assets] contengono metadati, ad esempio Autore, Data di scadenza e Informazioni DRM (Digital Rights Management). I metadati sono sotto controllo di accesso. [!DNL Assets] supporta i seguenti schemi di metadati comuni:
 
-   * Dublin Core: include autore, descrizione, data, oggetto e così via.
-   * IPTC: inclusi evento, modello, posizione e così via.
-   * WCM: include le proprietà della pagina, [!UICONTROL Ora di attivazione] e [!UICONTROL Ora di disattivazione] e così via.
+  * Dublin Core: include autore, descrizione, data, oggetto e così via.
+  * IPTC: inclusi evento, modello, posizione e così via.
+  * WCM: include le proprietà della pagina, [!UICONTROL Ora di attivazione] e [!UICONTROL Ora di disattivazione] e così via.
 
 * **Assegnazione tag**: [!DNL Assets] può essere contrassegnato e classificato. Consulta [organizzazione delle risorse](/help/assets/organize-assets.md).
 

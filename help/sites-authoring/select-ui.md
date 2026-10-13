@@ -5,13 +5,26 @@ exl-id: 01cab3c3-4c0d-44d9-b47c-034de9a08cb1
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '754'
 ht-degree: 1%
-
 ---
-
 # Selezione dell’interfaccia utente{#selecting-your-ui}
 
 L’interfaccia utente touch di Adobe Experience Manager (AEM) è ora l’interfaccia utente standard e la parità di funzioni è stata quasi raggiunta con l’amministrazione e la modifica dei siti. Tuttavia, in alcuni casi l&#39;utente potrebbe voler passare alla [interfaccia classica](/help/sites-classic-ui-authoring/classicui.md). Sono disponibili diverse opzioni per eseguire questa operazione.
@@ -107,21 +120,21 @@ Le impostazioni definite da un utente o da un amministratore di sistema possono 
 
 * Durante l’authoring delle pagine:
 
-   * L&#39;utilizzo dell&#39;editor classico viene forzato quando si accede alla pagina utilizzando `cf#` nell&#39;URL. Ad esempio:
-     `https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
+  * L&#39;utilizzo dell&#39;editor classico viene forzato quando si accede alla pagina utilizzando `cf#` nell&#39;URL. Ad esempio:
+    `https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
-   * L&#39;utilizzo dell&#39;editor touch è forzato quando si utilizza `/editor.html` nell&#39;URL o quando si utilizza un dispositivo touch. Ad esempio:
-     `https://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
+  * L&#39;utilizzo dell&#39;editor touch è forzato quando si utilizza `/editor.html` nell&#39;URL o quando si utilizza un dispositivo touch. Ad esempio:
+    `https://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
 
 * Qualsiasi forzatura è temporanea e valida solo per la sessione del browser
 
-   * Un set di cookie viene impostato a seconda che si utilizzi un cookie touch ( `editor.html`) o classico ( `cf#`).
+  * Un set di cookie viene impostato a seconda che si utilizzi un cookie touch ( `editor.html`) o classico ( `cf#`).
 
 * Quando si aprono le pagine tramite `siteadmin`, viene verificata l&#39;esistenza dei seguenti elementi:
 
-   * Il cookie
-   * Preferenza utente
-   * Se non esiste, per impostazione predefinita vengono impostate le definizioni impostate nella [configurazione OSGi](/help/sites-deploying/configuring-osgi.md) del **servizio modalità interfaccia utente di authoring WCM** (servizio `AuthoringUIMode`).
+  * Il cookie
+  * Preferenza utente
+  * Se non esiste, per impostazione predefinita vengono impostate le definizioni impostate nella [configurazione OSGi](/help/sites-deploying/configuring-osgi.md) del **servizio modalità interfaccia utente di authoring WCM** (servizio `AuthoringUIMode`).
 
 >[!NOTE]
 >

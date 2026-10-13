@@ -9,13 +9,27 @@ exl-id: 9e648bab-9284-4fda-abb4-8bd7cd085981
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
-workflow-type: ht
-source-wordcount: '1118'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '1174'
+ht-degree: 97%
 ---
-
 # Recupero dei dati di AEM Forms {#recovering-the-aem-forms-data}
 
 Questa sezione descrive i passaggi necessari per recuperare i dati di AEM Forms. Consulta anche [Considerazioni speciali per il backup e il ripristino](/help/forms/using/admin-help/backup-recovery-strategy-aem-forms.md#special-considerations-for-backup-and-recovery).
@@ -54,11 +68,11 @@ Se un singolo nodo di un cluster multinodo non viene eseguito con successo e i n
 1. Se necessario, ricrea il sistema fisico da un’immagine di sistema. Ad esempio, questo passaggio potrebbe non essere necessario se il motivo del ripristino è un server di database difettoso.
 1. Applica patch o aggiornamenti ad AEM Forms che sono stati applicati dopo la creazione dell’immagine. Queste informazioni sono state registrate nella procedura di backup. Per AEM Forms è necessario eseguire l’operazione patch allo stesso livello di patch utilizzato al momento del backup.
 1. (Server applicazioni WebSphere®) Se si stai eseguendo il ripristino in una nuova istanza del server applicazioni WebSphere®, esegui il comando restoreConfig.bat/sh.
-1. Recupera il database di AEM Forms eseguendo prima un’operazione di ripristino del database tramite i file di backup del database, dopodiché applica i registri di ripetizione delle transazioni al database ripristinato. Consulta [database di AEM forms](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database). Per ulteriori informazioni, consulta uno di questi articoli della knowledge base:
+1. Recupera il database di AEM Forms eseguendo prima un’operazione di ripristino del database tramite i file di backup del database, dopodiché applica i registri di ripetizione delle transazioni al database ripristinato. (Vedi [Database di AEM forms](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).) Per ulteriori informazioni, consulta uno dei seguenti articoli della knowledge base:
 
-   * [DB2](/help/forms/using/admin-help/files-back-recover.md#db2)
+   * [Backup e ripristino di DB2® per AEM Forms](/help/forms/using/admin-help/files-back-recover.md#db2)
    * [Backup e ripristino Oracle per AEM Forms](/help/forms/using/admin-help/files-back-recover.md#oracle)
-   * [Microsoft](/help/forms/using/admin-help/files-back-recover.md#sql-server)
+   * [Backup e ripristino di Microsoft® SQL Server per AEM Forms](/help/forms/using/admin-help/files-back-recover.md#sql-server)
    * [Backup e ripristino MySQL per AEM Forms](/help/forms/using/admin-help/files-back-recover.md#mysql)
 
 1. Recupera la directory GDS eliminando prima il contenuto della directory GDS nell’installazione esistente di AEM Forms e quindi copiando il contenuto della directory GDS da quella di cui è stato eseguito il backup. Se hai modificato il percorso della directory GDS, consulta [Modificare il percorso GDS durante il ripristino](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).
@@ -127,7 +141,7 @@ Se il GDS viene ripristinato in una posizione diversa da quella originale, esegu
 
 ## Ripristino di GDS in un ambiente cluster {#recovering-the-gds-to-a-clustered-environment}
 
-Per modificare la posizione GDS in un ambiente cluster, arresta l’intero cluster ed esegui lo script LCSetGDS su un singolo nodo del cluster. Consulta [Modifica del percorso GDS durante il ripristino](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery). Avvia solo tale nodo. Quando il nodo è completamente avviato, gli altri nodi del cluster possono essere avviati in modo sicuro e punteranno correttamente al nuovo GDS.
+Per modificare la posizione GDS in un ambiente cluster, arresta l’intero cluster ed esegui lo script LCSetGDS su un singolo nodo del cluster. (Consulta [Modificare il percorso GDS durante il ripristino](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery)). Avvia solo quel nodo. Quando il nodo è completamente avviato, gli altri nodi del cluster possono essere avviati in modo sicuro e punteranno correttamente al nuovo GDS.
 
 >[!NOTE]
 >

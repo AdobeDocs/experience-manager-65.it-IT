@@ -10,13 +10,27 @@ role: Developer
 exl-id: 28abf044-6c8e-4578-ae2e-54cdbd694c5f
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1870'
 ht-degree: 1%
-
 ---
-
 # Calcolo dei dati del modulo {#calculating-form-data}
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
@@ -149,10 +163,10 @@ Calcola i dati del modulo utilizzando l’API Forms (Java):
    * Per recuperare i dati del modulo che contengono uno script di calcolo, creare un oggetto `com.adobe.idp.Document` utilizzando il relativo costruttore e richiamando il metodo `getInputStream` dell&#39;oggetto `javax.servlet.http.HttpServletResponse` dall&#39;interno del costruttore.
    * Richiama il metodo `processFormSubmission` dell&#39;oggetto `FormsServiceClient` e passa i seguenti valori:
 
-      * Oggetto `com.adobe.idp.Document` contenente i dati del modulo.
-      * Valore stringa che specifica le variabili di ambiente, incluse tutte le intestazioni HTTP rilevanti. Specificare il tipo di contenuto da gestire specificando uno o più valori per la variabile di ambiente `CONTENT_TYPE`. Per gestire ad esempio i dati XML e PDF, specificare il valore stringa seguente per questo parametro: `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
-      * Valore stringa che specifica il valore dell&#39;intestazione `HTTP_USER_AGENT`, ad esempio `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-      * Un oggetto `RenderOptionsSpec` che memorizza le opzioni di runtime.
+     * Oggetto `com.adobe.idp.Document` contenente i dati del modulo.
+     * Valore stringa che specifica le variabili di ambiente, incluse tutte le intestazioni HTTP rilevanti. Specificare il tipo di contenuto da gestire specificando uno o più valori per la variabile di ambiente `CONTENT_TYPE`. Per gestire ad esempio i dati XML e PDF, specificare il valore stringa seguente per questo parametro: `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
+     * Valore stringa che specifica il valore dell&#39;intestazione `HTTP_USER_AGENT`, ad esempio `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
+     * Un oggetto `RenderOptionsSpec` che memorizza le opzioni di runtime.
 
      Il metodo `processFormSubmission` restituisce un oggetto `FormsResult` contenente i risultati dell&#39;invio del modulo.
 
@@ -196,17 +210,17 @@ Calcola i dati del modulo utilizzando l’API di Forms (servizio web):
    * Creare un oggetto `RenderOptionsSpec` utilizzando il relativo costruttore. Impostare il valore delle impostazioni locali richiamando il metodo `setLocale` dell&#39;oggetto `RenderOptionsSpec` e passando un valore stringa che specifica il valore delle impostazioni locali.
    * Richiama il metodo `processFormSubmission` dell&#39;oggetto `FormsServiceClient` e passa i seguenti valori:
 
-      * Oggetto `BLOB` contenente i dati del modulo.
-      * Valore stringa che specifica che le variabili di ambiente includono tutte le intestazioni HTTP pertinenti. Ad esempio, è possibile specificare il seguente valore stringa: `HTTP_REFERER=referrer&HTTP_CONNECTION=keep-alive&CONTENT_TYPE=application/xml`
-      * Valore stringa che specifica il valore dell&#39;intestazione `HTTP_USER_AGENT`, ad esempio `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-      * Un oggetto `RenderOptionsSpec` che memorizza le opzioni di runtime. Per ulteriori informazioni, .
-      * Oggetto `BLOBHolder` vuoto popolato dal metodo.
-      * Oggetto `javax.xml.rpc.holders.StringHolder` vuoto popolato dal metodo.
-      * Oggetto `BLOBHolder` vuoto popolato dal metodo.
-      * Oggetto `BLOBHolder` vuoto popolato dal metodo.
-      * Oggetto `javax.xml.rpc.holders.ShortHolder` vuoto popolato dal metodo.
-      * Oggetto `MyArrayOf_xsd_anyTypeHolder` vuoto popolato dal metodo. Questo parametro viene utilizzato per memorizzare gli allegati dei file inviati insieme al modulo.
-      * Oggetto `FormsResultHolder` vuoto popolato dal metodo con il modulo inviato.
+     * Oggetto `BLOB` contenente i dati del modulo.
+     * Valore stringa che specifica che le variabili di ambiente includono tutte le intestazioni HTTP pertinenti. Ad esempio, è possibile specificare il seguente valore stringa: `HTTP_REFERER=referrer&HTTP_CONNECTION=keep-alive&CONTENT_TYPE=application/xml`
+     * Valore stringa che specifica il valore dell&#39;intestazione `HTTP_USER_AGENT`, ad esempio `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
+     * Un oggetto `RenderOptionsSpec` che memorizza le opzioni di runtime. Per ulteriori informazioni, .
+     * Oggetto `BLOBHolder` vuoto popolato dal metodo.
+     * Oggetto `javax.xml.rpc.holders.StringHolder` vuoto popolato dal metodo.
+     * Oggetto `BLOBHolder` vuoto popolato dal metodo.
+     * Oggetto `BLOBHolder` vuoto popolato dal metodo.
+     * Oggetto `javax.xml.rpc.holders.ShortHolder` vuoto popolato dal metodo.
+     * Oggetto `MyArrayOf_xsd_anyTypeHolder` vuoto popolato dal metodo. Questo parametro viene utilizzato per memorizzare gli allegati dei file inviati insieme al modulo.
+     * Oggetto `FormsResultHolder` vuoto popolato dal metodo con il modulo inviato.
 
      Il metodo `processFormSubmission` compila il parametro `FormsResultHolder` con i risultati dell&#39;invio del modulo. Il metodo `processFormSubmission` restituisce un oggetto `FormsResult` contenente i risultati dell&#39;invio del modulo.
 

@@ -8,13 +8,22 @@ feature: Upgrading
 exl-id: 28ddd23c-5907-4356-af56-ebc7589a2b5d
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1083'
 ht-degree: 3%
-
 ---
-
 # Ristrutturazione dell’archivio risorse in AEM 6.5 {#assets-repository-restructuring-in-aem}
 
 Come descritto nella pagina [Ristrutturazione dell’archivio padre in AEM 6.5](/help/sites-deploying/repository-restructuring.md), i clienti che eseguono l’aggiornamento a Adobe Experience Manager (AEM) 6.5 devono utilizzare questa pagina per valutare l’impegno di lavoro associato alle modifiche dell’archivio che influiscono sulla soluzione AEM Assets. Alcune modifiche richiedono un impegno di lavoro durante il processo di aggiornamento di AEM 6.5, mentre altre possono essere differite fino a un aggiornamento futuro.
@@ -77,11 +86,11 @@ Come descritto nella pagina [Ristrutturazione dell’archivio padre in AEM 6.5](
    <td><strong>Orientamenti per la ristrutturazione</strong></td>
    <td><p>Se i modelli di posta elettronica sono stati modificati dal cliente, eseguire le azioni seguenti per allinearli alla nuova struttura dell'archivio:</p>
     <ol>
-     <li>Il modello di posta elettronica <code>/libs/settings/dam/notification</code> deve essere copiato da <strong><code>/etc/notification/email/default</code></strong> a <strong><code>/apps/settings/notification/email/default</code></strong>
+     <li>Il modello di posta elettronica <code>/libs/settings/dam/notification</code> deve essere copiato da <strong><code>/etc/notification/email/default</code></strong> in <strong><code>/apps/settings/notification/email/default</code></strong>
       <ol>
        <li>Poiché la destinazione è in <strong> <code>/apps</code></strong>, la modifica deve essere persistente in SCM.</li>
       </ol> </li>
-     <li>Rimuovi la cartella: <strong><code>/etc/dam/notification/email/default</code></strong> dopo lo spostamento dei modelli di posta elettronica al suo interno.<br />
+     <li>Rimuovere la cartella <strong><code>/etc/dam/notification/email/default</code></strong> dopo lo spostamento dei modelli di posta elettronica al suo interno.<br />
       <ol>
        <li>Se non sono stati apportati aggiornamenti al modello di posta elettronica in <strong> <code>/etc/notification/email/default</code></strong>, è possibile rimuovere la cartella perché il modello di posta elettronica originale esiste in <strong><code>/libs/settings/notification/email/default</code></strong> come parte dell'installazione di AEM 4.</li>
       </ol> </li>
@@ -140,7 +149,7 @@ Come descritto nella pagina [Ristrutturazione dell’archivio padre in AEM 6.5](
    <td><strong>Orientamenti per la ristrutturazione</strong></td>
    <td><p>Se i modelli di posta elettronica (<strong>downloadasset</strong> o <strong>transientworkflowcompleted</strong>) sono stati modificati, eseguire la procedura seguente per l'allineamento alla nuova struttura:</p>
     <ol>
-     <li>Il modello di posta elettronica aggiornato deve essere copiato da <strong><code>/etc/dam/workflow/notification/email/downloadasset</code></strong> a <strong><code>/apps/settings/dam/workflow/notification/email/downloadasset</code></strong>
+     <li>Il modello di posta elettronica aggiornato deve essere copiato da <strong><code>/etc/dam/workflow/notification/email/downloadasset</code></strong> in <strong><code>/apps/settings/dam/workflow/notification/email/downloadasset</code></strong>
       <ol>
        <li>Poiché la destinazione è in <strong> <code>/apps</code></strong>, la modifica deve essere persistente in SCM.</li>
       </ol> </li>
@@ -181,11 +190,11 @@ Come descritto nella pagina [Ristrutturazione dell’archivio padre in AEM 6.5](
    <td><strong>Orientamenti per la ristrutturazione</strong></td>
    <td><p>Se il modello e-mail è stato modificato dal cliente, per allinearlo alla nuova struttura dell’archivio:</p>
     <ol>
-     <li>Il modello di posta elettronica aggiornato deve essere copiato da <strong><code>/etc/dam/adhocassetshare</code></strong> a <strong><code>/apps/settings/dam/adhocassetshare</code></strong>
+     <li>Il modello di posta elettronica aggiornato deve essere copiato da <strong><code>/etc/dam/adhocassetshare</code></strong> in <strong><code>/apps/settings/dam/adhocassetshare</code></strong>
       <ol>
        <li>Poiché la destinazione è in<strong><code>/apps</code></strong>, la modifica deve essere persistente in SCM.</li>
       </ol> </li>
-     <li>Rimuovi la cartella: <strong><code>/etc/dam/adhocassetshare</code></strong> dopo lo spostamento dei modelli di posta elettronica al suo interno.<br />
+     <li>Rimuovere la cartella <strong><code>/etc/dam/adhocassetshare</code></strong> dopo lo spostamento dei modelli di posta elettronica al suo interno.<br />
       <ol>
        <li>Se non sono stati apportati aggiornamenti al modello di posta elettronica in <strong> <code>/etc</code></strong>, è possibile rimuovere la cartella perché il modello di posta elettronica originale esiste in <strong><code>/libs/settings/dam/adhocassetshare</code></strong> come parte dell'installazione di AEM 6.4.</li>
       </ol> </li>
@@ -214,7 +223,7 @@ Come descritto nella pagina [Ristrutturazione dell’archivio padre in AEM 6.5](
    <td><strong>Orientamenti per la ristrutturazione</strong></td>
    <td><p>Per allinearsi alla nuova struttura dell’archivio:</p>
     <ol>
-     <li>Copia tutti gli script personalizzati o modificati da <strong><code>/etc/dam/indesign/scripts</code></strong> a <strong><code>/apps/settings/dam/indesign/scripts</code></strong><br />
+     <li>Copia tutti gli script personalizzati o modificati da <strong><code>/etc/dam/indesign/scripts</code></strong> in <strong><code>/apps/settings/dam/indesign/scripts</code></strong><br />
       <ol>
        <li>Copia solo gli script nuovi o modificati come script non modificati forniti da AEM sono disponibili tramite <strong><code>/libs/settings</code></strong> in AEM 6.5</li>
       </ol> </li>

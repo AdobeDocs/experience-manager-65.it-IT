@@ -1,5 +1,5 @@
 ---
-title: Aggiornamento del Forms di ricerca personalizzato
+title: Aggiornamento dei moduli di ricerca personalizzati
 description: Questo articolo descrive le modifiche necessarie dopo un aggiornamento per il funzionamento dei moduli di ricerca personalizzati.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,23 @@ feature: Upgrading
 exl-id: 797bbdf9-917a-4537-a5f9-bf2682db968b
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1797'
-ht-degree: 2%
-
+source-wordcount: '1796'
+ht-degree: 3%
 ---
-
-# Aggiornamento del Forms di ricerca personalizzato{#upgrading-custom-search-forms}
+# Aggiornamento dei moduli di ricerca personalizzati{#upgrading-custom-search-forms}
 
 In AEM 6.2, la posizione in cui sono memorizzati i Forms di ricerca personalizzati nell’archivio è cambiata. Dopo l&#39;upgrade, vengono spostati dalla loro posizione in 6.1 in:
 
@@ -38,7 +47,7 @@ Se non specificato diversamente, la maggior parte delle regolazioni da eseguire 
 
 È possibile modificare la proprietà eseguendo le operazioni seguenti:
 
-1. Apri CRXDE Lite andando in `https://server:port/crx/de/index.jsp`
+1. Apri CRXDE Lite da `https://server:port/crx/de/index.jsp`
 1. Individuare il percorso del nodo da regolare, come specificato nell&#39;Elenco di [Forms di ricerca personalizzato](/help/sites-deploying/upgrading-custom-search-forms.md#list-of-custom-search-forms) di seguito.
 1. Fai clic sul nodo. Nel riquadro delle proprietà di destra, fare clic e modificare la proprietà **sling:resourceType**.
 1. Infine, salvare le modifiche premendo il pulsante **Salva tutto**.
@@ -159,13 +168,13 @@ Lo stato della pagina è stato sostituito da due predicati di proprietà Options
 * Rimuovi il nodo `pagestatuspredicate`
 * Copia nodo
 
-   * `/libs/settings/cq/search/facets/sites/jcr:content/items/publishstatuspredicate`
-   * a `/conf/global/settings/cq/search/facets/sites/jcr:content/items`
+  * `/libs/settings/cq/search/facets/sites/jcr:content/items/publishstatuspredicate`
+  * a `/conf/global/settings/cq/search/facets/sites/jcr:content/items`
 
 * Copia nodo
 
-   * `/libs/settings/cq/search/facets/sites/jcr:content/items/livecopystatuspredicate`
-   * a `/conf/global/settings/cq/search/facets/sites/jcr:content/items`
+  * `/libs/settings/cq/search/facets/sites/jcr:content/items/livecopystatuspredicate`
+  * a `/conf/global/settings/cq/search/facets/sites/jcr:content/items`
 
 * Assicurarsi di impostare la proprietà `listOrder` per il nodo `analyticspredicate` su &quot;**8**&quot;. Ciò è necessario per evitare conflitti.
 
@@ -413,7 +422,7 @@ Nella versione 6.1, il predicato full-text standard faceva parte del modulo di r
 
 Azione: regola la proprietà resourceType (aggiungi &quot;/coral&quot; come nella posizione 6.2 indicata sopra).
 
-### Predicato Publish {#publish-predicate}
+### Predicato pubblicazione {#publish-predicate}
 
 | Nodo/i nel modulo di ricerca predefinito in 6.1 | pubblicazione |
 |---|---|

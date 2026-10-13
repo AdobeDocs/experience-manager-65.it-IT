@@ -9,13 +9,22 @@ exl-id: efebe66d-3d30-4033-9c4c-ae347e134f2f
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '495'
 ht-degree: 6%
-
 ---
-
 # Prova di modelli modificabili in We.Retail{#trying-out-editable-templates-in-we-retail}
 
 Con i modelli modificabili, la creazione e la manutenzione dei modelli non è più un&#39;attività che riguarda solo gli sviluppatori. Un tipo di utente avanzato, detto autore di modelli, può ora creare modelli. Gli sviluppatori devono comunque configurare l’ambiente, creare le librerie client e i componenti da utilizzare, ma una volta che queste nozioni di base sono implementate, l’autore del modello avrà la flessibilità di creare e configurare i modelli senza un progetto di sviluppo.
@@ -57,10 +66,10 @@ Tutte le pagine di We.Retail sono basate su modelli modificabili, che consentono
    * Seleziona un criterio esistente o creane uno per il contenitore
    * Definisci le funzioni disponibili per l’autore della pagina quando utilizza questo componente, ad esempio
 
-      * Incolla origini consentite
-      * Opzioni di formattazione
-      * Stili di paragrafo consentiti
-      * Caratteri speciali consentiti
+     * Incolla origini consentite
+     * Opzioni di formattazione
+     * Stili di paragrafo consentiti
+     * Caratteri speciali consentiti
 
    Molti componenti basati sui componenti core consentono la configurazione di opzioni a livello di componente tramite i modelli modificabili, eliminando la necessità di personalizzazione da parte degli sviluppatori.
 

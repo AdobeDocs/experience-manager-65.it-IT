@@ -7,19 +7,33 @@ role: Admin,User
 exl-id: 847fa303-8d1e-4a17-b90d-5f9da5ca2d77
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1407'
 ht-degree: 0%
-
 ---
-
 # Flussi di lavoro di Forms JEE | Gestione dei dati utente {#forms-jee-workflows-handling-user-data}
 
 I flussi di lavoro di AEM Forms JEE forniscono gli strumenti necessari per progettare, creare e gestire i processi aziendali. Un processo del flusso di lavoro è costituito da una serie di passaggi che vengono eseguiti in un ordine specificato. Ogni passaggio esegue un’azione specifica, ad esempio l’assegnazione di un’attività a un utente o l’invio di un messaggio e-mail. Un processo può interagire con risorse, account utente e servizi e può essere attivato utilizzando uno dei seguenti metodi:
 
 * Avvio di un processo da AEM Forms Workspace
-* Utilizzo del servizio SOAP o RESTful
+* Utilizzo di SOAP o del servizio RESTful
 * Invio di un modulo adattivo
 * Utilizzo della cartella controllata
 * Utilizzo dell’e-mail
@@ -37,7 +51,7 @@ Quando viene attivato un processo, vengono generati un ID univoco dell&#39;istan
 Tuttavia, non è possibile identificare l&#39;ID istanza processo per un iniziatore nei seguenti scenari:
 
 * **Processo attivato tramite una cartella controllata**: impossibile identificare un&#39;istanza del processo utilizzando il relativo iniziatore se il processo è attivato da una cartella controllata. In questo caso, le informazioni utente vengono codificate nei dati memorizzati.
-* **Processo avviato dall&#39;istanza di pubblicazione dell&#39;AEM**: tutte le istanze di processo attivate dall&#39;istanza di pubblicazione dell&#39;AEM non acquisiscono informazioni sull&#39;iniziatore. Tuttavia, i dati utente possono essere acquisiti nel modulo associato al processo, memorizzato nelle variabili del flusso di lavoro.
+* **Processo avviato dall&#39;istanza AEM di pubblicazione**: tutte le istanze di processo attivate dall&#39;istanza AEM Publish non acquisiscono informazioni sull&#39;iniziatore. Tuttavia, i dati utente possono essere acquisiti nel modulo associato al processo, memorizzato nelle variabili del flusso di lavoro.
 * **Processo avviato tramite e-mail**: l&#39;ID e-mail del mittente viene acquisito come proprietà in una colonna BLOB opaca della tabella del database `tb_job_instance`, che non può essere interrogata direttamente.
 
 ### Identificare gli ID delle istanze di processo quando è noto l&#39;iniziatore o il partecipante del flusso di lavoro {#initiator-participant}

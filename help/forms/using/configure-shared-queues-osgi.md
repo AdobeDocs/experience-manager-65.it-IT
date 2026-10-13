@@ -8,13 +8,31 @@ exl-id: 72cd0594-8b5e-4d14-bc6f-bca26bae50f2
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on OSGi
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 8c4fb903-572c-5473-ad45-8ebb0d5d8134
+    internal-label: AEM Forms on OSGi
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '840'
-ht-degree: 1%
-
+source-wordcount: '847'
+ht-degree: 2%
 ---
-
 # Condividere e richiedere l’accesso agli elementi della casella in entrata di un utente {#share-and-request-access}
 
 Una coda è un elenco di elementi nella casella in entrata AEM di un utente. Possono essere elementi assegnati a un utente o elementi condivisi con il gruppo di cui un utente è membro. Puoi accedere alla tua casella in entrata per visualizzare e intervenire sull’elemento della casella in entrata. Ad esempio, condividere un elemento con un altro utente.
@@ -33,7 +51,7 @@ Casella in entrata AEM consente di condividere un singolo o tutti gli elementi d
 
 Per condividere tutti gli elementi di una casella in entrata con un altro utente, effettua le seguenti operazioni:
 
-1. Accedi all’istanza AEM. Selezionare l&#39;icona ![Posta in arrivo](assets/bell.svg) e selezionare **[!UICONTROL Visualizza tutto]**. Viene visualizzato un elenco degli elementi della casella in entrata.
+1. Accedi all’istanza di AEM. Selezionare l&#39;icona ![Posta in arrivo](assets/bell.svg) e selezionare **[!UICONTROL Visualizza tutto]**. Viene visualizzato un elenco degli elementi della casella in entrata.
 1. Seleziona l&#39;icona ![Visualizza selettore](assets/viewlist.svg) o ![Visualizza selettore](assets/calendar.svg) accanto al pulsante **[!UICONTROL Crea]** e seleziona **[!UICONTROL Impostazioni]**. Viene visualizzata la finestra di dialogo delle impostazioni.
 1. Apri la scheda **[!UICONTROL Condividi]** nella finestra di dialogo delle impostazioni.
 1. Immettere il nome di un utente nella casella di testo **[!UICONTROL Concedi l&#39;accesso agli elementi della Posta in arrivo]** e selezionare **[!UICONTROL Concedi]**. Ripeti il passaggio per aggiungere altri utenti. Tutti gli utenti con accesso agli elementi vengono visualizzati nella sezione **Nome utente**.
@@ -47,7 +65,7 @@ Per condividere tutti gli elementi di una casella in entrata con un altro utente
 
 Per condividere un elemento della Casella in entrata con un altro utente, effettuare le seguenti operazioni:
 
-1. Accedi all’istanza AEM. Selezionare l&#39;icona ![Posta in arrivo](assets/bell.svg) e selezionare **[!UICONTROL Visualizza tutto]**. Viene visualizzato un elenco degli elementi della casella in entrata.
+1. Accedi all’istanza di AEM. Selezionare l&#39;icona ![Posta in arrivo](assets/bell.svg) e selezionare **[!UICONTROL Visualizza tutto]**. Viene visualizzato un elenco degli elementi della casella in entrata.
 1. Selezionare un elemento e selezionare **[!UICONTROL Condividi]**. Viene visualizzata una finestra di dialogo.
 1. Immettere il nome di un utente nella casella di testo Aggiungi utenti per condividere l&#39;elemento e selezionare **[!UICONTROL Aggiungi]**. Ripeti il passaggio per aggiungere altri utenti. Tutti gli utenti con accesso agli elementi vengono visualizzati nella sezione **[!UICONTROL Nome utente]**.
 1. Seleziona **[!UICONTROL Salva]**.
@@ -61,7 +79,7 @@ Per condividere un elemento della Casella in entrata con un altro utente, effett
 
 Puoi richiedere l’accesso agli elementi della casella in entrata di un altro utente. Una volta concesso l’accesso, puoi visualizzare, richiedere e intraprendere azioni appropriate sugli elementi condivisi. Per richiedere l’accesso agli elementi della casella in entrata di un altro utente, effettua le seguenti operazioni:
 
-1. Accedi all’istanza AEM. Seleziona l&#39;icona ![Visualizza selettore](assets/bell.svg) e seleziona **[!UICONTROL Visualizza tutto]**.
+1. Accedi all’istanza di AEM. Seleziona l&#39;icona ![Visualizza selettore](assets/bell.svg) e seleziona **[!UICONTROL Visualizza tutto]**.
 1. Seleziona l&#39;icona ![Visualizza selettore](assets/viewlist.svg) o ![Visualizza selettore](assets/calendar.svg) accanto al pulsante **[!UICONTROL Crea]** e seleziona **[!UICONTROL Impostazioni]**. Viene visualizzata la finestra di dialogo delle impostazioni.
 1. Immettere il nome di un utente nella casella di testo **[!UICONTROL Richiedi accesso agli elementi della casella in entrata dell&#39;utente]** e selezionare **[!UICONTROL Richiedi]**. Viene inviata una richiesta all’utente, il cui stato viene visualizzato in base al nome dell’utente. Ripeti il passaggio per aggiungere altri utenti.
 1. Seleziona **[!UICONTROL Salva]**. La richiesta viene inviata come elemento della casella in entrata agli utenti. L’utente può selezionare l’elemento e selezionare Approva o Rifiuta per concedere o rifiutare l’accesso.
@@ -71,7 +89,7 @@ Puoi richiedere l’accesso agli elementi della casella in entrata di un altro u
 
 Puoi iniziare a lavorare su un elemento condiviso solo dopo averlo richiesto. Impedisce a più utenti di lavorare su un singolo elemento. Per richiedere un oggetto, effettuare le seguenti operazioni:
 
-1. Accedi all’istanza AEM. Selezionare l&#39;icona Posta in arrivo ![Posta in arrivo](assets/bell.svg) e selezionare **[!UICONTROL Visualizza tutto]**.
+1. Accedi all’istanza di AEM. Selezionare l&#39;icona Posta in arrivo ![Posta in arrivo](assets/bell.svg) e selezionare **[!UICONTROL Visualizza tutto]**.
 1. Seleziona l&#39;icona ![Solo contenuto](assets/railleft.svg) per aprire il selettore di filtri.
 1. Selezionare l&#39;elenco a discesa **[!UICONTROL Seleziona assegnatario]** per visualizzare e selezionare gli utenti che hanno condiviso con te gli elementi della loro casella in entrata.
 1. Selezionare un elemento e selezionare **[!UICONTROL Attestazione]**. L&#39;elemento viene aggiunto alla Posta in arrivo.
@@ -82,7 +100,7 @@ Puoi lavorare su un elemento condiviso solo dopo averlo richiesto. Gli altri ute
 
 Per rilasciare un elemento, effettua le seguenti operazioni:
 
-1. Accedi all’istanza AEM. Selezionare l&#39;icona Posta in arrivo ![Posta in arrivo](assets/bell.svg) e selezionare **[!UICONTROL Visualizza tutto]**. Viene visualizzato un elenco degli elementi della casella in entrata.
+1. Accedi all’istanza di AEM. Selezionare l&#39;icona Posta in arrivo ![Posta in arrivo](assets/bell.svg) e selezionare **[!UICONTROL Visualizza tutto]**. Viene visualizzato un elenco degli elementi della casella in entrata.
 1. Selezionare l&#39;elemento da rilasciare e selezionare **[!UICONTROL UnClaim]**. L&#39;elemento viene aggiunto nuovamente al pool. Gli altri utenti possono richiedere l&#39;oggetto.
 
 ## Limitazioni {#limitations}

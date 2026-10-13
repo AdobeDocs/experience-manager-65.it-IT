@@ -9,13 +9,33 @@ exl-id: 5e345ffd-4e9c-467f-8ebb-c798eeb61dea
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Multi Site Manager
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e86b80f2-7cb0-4646-8fcd-51d3bf272fce
+    internal-label: Multi Site Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2838'
+source-wordcount: '2853'
 ht-degree: 84%
-
 ---
-
 # Utilizzo dei contenuti di destinazione in più siti{#working-with-targeted-content-in-multisites}
 
 Se devi gestire contenuti mirati, ad esempio attività, esperienze e offerte tra siti diversi, puoi sfruttare il supporto multisito incorporato di AEM per contenuti mirati.
@@ -67,18 +87,18 @@ Grazie al supporto multisito per il contenuto di destinazione, è possibile, ad 
 
 * Un insieme completamente *distinto* di contenuti di destinazione: la modifica dei contenuti di destinazione in uno non influisce sull’altro. I siti che rimandano alle aree distinte sono in grado di leggere e scrivere sulla propria area configurata. Esempio:
 
-   * Il sito A si collega all’area X
-   * Il sito B si collega all’area Y
+  * Il sito A si collega all’area X
+  * Il sito B si collega all’area Y
 
 * Un insieme *comune* di contenuti di destinazione: la modifica in uno ha un impatto diretto su entrambi i siti; puoi eseguire questa operazione con due siti che fanno riferimento alla stessa area. I siti che si collegano alla stessa area condividono il contenuto di destinazione all’interno di quest’area. Esempio:
 
-   * Il sito A si collega all’area X
-   * Il sito B si collega all’area X
+  * Il sito A si collega all’area X
+  * Il sito B si collega all’area X
 
 * Un set distinto di contenuti mirati *ereditato* da un altro sito tramite MSM: il contenuto può essere implementato in modo unidirezionale dalla pagina master alla Live Copy. Esempio:
 
-   * Il sito A si collega all’area X
-   * Il sito B si collega all’area Y (che è una Live Copy dell’area X)
+  * Il sito A si collega all’area X
+  * Il sito B si collega all’area Y (che è una Live Copy dell’area X)
 
 È anche possibile che marchi **multipli** vegano utilizzati in un sito, il che potrebbe essere più complesso di questo esempio.
 

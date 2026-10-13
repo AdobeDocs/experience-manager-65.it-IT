@@ -10,13 +10,28 @@ exl-id: e47270e8-bace-4d0f-a088-7269b6356315
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: f6a6f91a-8819-530a-8e7b-c50884a25aef
+    internal-label: Workflow
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '1534'
 ht-degree: 72%
-
 ---
-
 # Partecipazione ai flussi di lavoro{#participating-in-workflows}
 
 In genere i flussi di lavoro includono passaggi che richiedono di eseguire un’attività su una pagina o una risorsa. Il flusso di lavoro seleziona un utente o un gruppo per eseguire l’attività e assegna un elemento di lavoro a tale persona o gruppo. L’utente riceve una notifica e può quindi intraprendere le azioni appropriate:
@@ -42,12 +57,12 @@ Quando ti viene assegnato un elemento di lavoro (ad esempio, **Approva contenuto
 
 * Quando utilizzi l’editor pagina, la barra di stato mostra quanto segue:
 
-   * Il nome dei flussi di lavoro applicati alla pagina, ad esempio Richiesta di attivazione.
-   * Qualsiasi azione disponibile per l’utente nella fase corrente del flusso di lavoro, per esempio: Completa, Delega, Visualizza dettagli.
-   * Il numero di flussi di lavoro a cui è soggetta la pagina. Operazioni disponibili:
+  * Il nome dei flussi di lavoro applicati alla pagina, ad esempio Richiesta di attivazione.
+  * Qualsiasi azione disponibile per l’utente nella fase corrente del flusso di lavoro, per esempio: Completa, Delega, Visualizza dettagli.
+  * Il numero di flussi di lavoro a cui è soggetta la pagina. Operazioni disponibili:
 
-      * utilizzare la freccia sinistra/destra per navigare tra le informazioni di stato dei vari flussi di lavoro.
-      * fai clic sul numero effettivo per aprire un elenco a discesa di tutti i flussi di lavoro applicabili, quindi seleziona il flusso di lavoro che desideri visualizzare nella barra di stato.
+    * utilizzare la freccia sinistra/destra per navigare tra le informazioni di stato dei vari flussi di lavoro.
+    * fai clic sul numero effettivo per aprire un elenco a discesa di tutti i flussi di lavoro applicabili, quindi seleziona il flusso di lavoro che desideri visualizzare nella barra di stato.
 
   ![wf-59](assets/wf-59.png)
 

@@ -5,13 +5,33 @@ exl-id: d54a0a40-a8af-456a-9bf5-219d84540c97
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
 role: Admin, Developer, User, Leader
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 95%
-
+source-wordcount: '724'
+ht-degree: 92%
 ---
-
 # Informazioni sull’utilizzo dei riferimenti nei frammenti di contenuto {#author-headless-references}
 
 ## Percorso affrontato finora {#story-so-far}
@@ -27,10 +47,10 @@ Questo articolo si basa su questi elementi e spiega come utilizzare i riferiment
 * **Pubblico**: avanzato
 * **Obiettivo**: introdurre l’uso di riferimenti per l’authoring CMS headless. Quali tipi di riferimenti sono disponibili e quali sono i loro scopi:
 
-   * Riferimenti al contenuto
-   * Riferimenti a risorse/file multimediali
-   * Riferimenti ai frammenti
-   * Riferimenti ad hoc dall’interno di un blocco di testo
+  * Riferimenti al contenuto
+  * Riferimenti a risorse/file multimediali
+  * Riferimenti ai frammenti
+  * Riferimenti ad hoc dall’interno di un blocco di testo
 
 ## Cosa sono i riferimenti {#what-are-references}
 
@@ -61,14 +81,14 @@ Ad esempio, è possibile che siano definiti i seguenti modelli di frammento di c
 * Persona
 * Premi
 
-Sembra abbastanza semplice, ma un’Azienda ha sia un amministratore delegato che dei dipendenti...e queste sono tutte persone, ognuna definita come Persona.
+Sembra abbastanza semplice, ma un&#39;azienda ha sia un amministratore delegato che un dipendente.... e queste sono tutte persone, ognuna definita come una persona.
 
 E una Persona può ricevere un Premio (o forse due).
 
 * La mia azienda - Azienda
-   * Amministratore delegato - Persona
-   * Dipendente/i - Persona
-      * Premio(i) personale(i) - Premio
+  * Amministratore delegato - Persona
+  * Dipendente/i - Persona
+    * Premio(i) personale(i) - Premio
 
 E siamo solo all’inizio. A seconda della complessità, un premio potrebbe essere specifico per l’Azienda o un’Azienda potrebbe avere la sua sede principale in una città specifica.
 
@@ -111,22 +131,22 @@ Ora che hai imparato i riferimenti e la struttura nei frammenti di contenuto, il
 
 * [Utilizzo di frammenti di contenuto](/help/assets/content-fragments/content-fragments.md)
 
-   * [Gestione dei frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md)
+  * [Gestione dei frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md)
 
-      * [Applica la configurazione alla cartella Risorse](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+    * [Applica la configurazione alla cartella Risorse](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
-      * [Creazione di un frammento di contenuto](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+    * [Creazione di un frammento di contenuto](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
 
-   * [Varianti - Authoring di frammenti di contenuto](/help/assets/content-fragments/content-fragments-variations.md)
+  * [Varianti - Authoring di frammenti di contenuto](/help/assets/content-fragments/content-fragments-variations.md)
 
-   * [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md)
+  * [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md)
 
-      * [Modelli per frammenti di contenuto - Tipi di dati](/help/assets/content-fragments/content-fragments-models.md#data-types)
+    * [Modelli per frammenti di contenuto - Tipi di dati](/help/assets/content-fragments/content-fragments-models.md#data-types)
 
-      * [Modelli per frammenti di contenuto - Proprietà](/help/assets/content-fragments/content-fragments-models.md#properties)
+    * [Modelli per frammenti di contenuto - Proprietà](/help/assets/content-fragments/content-fragments-models.md#properties)
 
 * Guide introduttive
-   * [Guida rapida alla creazione di una cartella Assets headless](/help/sites-developing/headless/getting-started/create-assets-folder.md)
+  * [Guida rapida alla creazione di una cartella Assets headless](/help/sites-developing/headless/getting-started/create-assets-folder.md)
 
 * [Percorso Architect di contenuti AEM headless](/help/journey-headless/architect/overview.md)
 

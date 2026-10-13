@@ -7,13 +7,27 @@ role: Admin,User
 exl-id: eeeab5d1-073a-4e13-a781-391dfe70bb37
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '904'
-ht-degree: 0%
-
+source-wordcount: '913'
+ht-degree: 2%
 ---
-
 # Gestione degli utenti Forms | Gestione dei dati utente {#forms-user-management-handling-user-data}
 
 La gestione degli utenti è un componente di AEM Forms JEE che consente di creare, gestire e autorizzare gli utenti di AEM Forms ad accedere ad AEM Forms. La gestione degli utenti utilizza i domini come directory per ottenere informazioni sugli utenti. Sono supportati i seguenti tipi di dominio:
@@ -22,13 +36,13 @@ La gestione degli utenti è un componente di AEM Forms JEE che consente di crear
 
 **Domini ibridi**: questo tipo di dominio non è connesso a un sistema di storage di terze parti. Al contrario, gli utenti e i gruppi vengono creati localmente e risiedono nel database User Management. A differenza dei domini locali, i domini ibridi utilizzano un provider di autenticazione esterno, che può essere LDAP, Kerberos, SAML o un provider di autenticazione personalizzato.
 
-**Domini aziendali**: sono costituiti da utenti e gruppi che risiedono in un sistema di storage di terze parti, ad esempio una directory LDAP. Gestione utenti non scrive sul sistema di storage di terze parti. Gestione utenti sincronizza invece le informazioni su utenti e gruppi con il database Gestione utenti. I domini Enterprise utilizzano anche un provider di autenticazione esterno, che può essere LDAP, Kerberos, SAML o un provider di autenticazione personalizzato.
+**Domini aziendali**: sono costituiti da utenti e gruppi che risiedono in un sistema di storage di terze parti, ad esempio una directory LDAP. La Gestione utenti non scrive sul sistema di archiviazione di terze parti. Gestione utenti sincronizza invece le informazioni su utenti e gruppi con il database Gestione utenti. I domini Enterprise utilizzano anche un provider di autenticazione esterno, che può essere LDAP, Kerberos, SAML o un provider di autenticazione personalizzato.
 
 <!-- Fix broken links For more information about how user management works and configured, see AEM Forms JEE administration help. -->
 
 ## Dati utente e archivi dati {#user-data-and-data-stores}
 
-La gestione utente memorizza i dati utente in un database, ad esempio My Sql, Oracle, MS® SQL Server e IBM® DB2®. Inoltre, qualsiasi utente che ha effettuato l&#39;accesso almeno una volta nelle applicazioni Forms sull&#39;istanza di creazione AEM in `https://'[server]:[port]'lc`, viene creato nell&#39;archivio AEM. Pertanto, la gestione degli utenti viene memorizzata nei seguenti archivi di dati:
+La gestione utente memorizza i dati utente in un database, ad esempio My Sql, Oracle, MS® SQL Server e IBM® DB2®. Inoltre, qualsiasi utente che abbia eseguito l&#39;accesso almeno una volta nelle applicazioni Forms su AEM Author all&#39;indirizzo `https://'[server]:[port]'lc`, verrà creato nell&#39;archivio di AEM. Pertanto, la gestione degli utenti viene memorizzata nei seguenti archivi di dati:
 
 * Database
 * Archivio AEM
@@ -87,11 +101,11 @@ Gestione utenti memorizza i dati utente nelle tabelle di database seguenti:
 
 ### Archivio AEM {#aem-repository}
 
-I dati di gestione degli utenti per gli utenti che hanno effettuato almeno un accesso alle applicazioni Forms in `https://'[server]:[port]'lc` vengono memorizzati anche nell&#39;archivio AEM.
+I dati di gestione utente per gli utenti che hanno effettuato almeno un accesso alle applicazioni Forms in `https://'[server]:[port]'lc` vengono memorizzati anche nell&#39;archivio di AEM.
 
 ## Accedere ed eliminare i dati utente {#access-and-delete-user-data}
 
-È possibile accedere ed esportare i dati di gestione utente per gli utenti nei database di gestione utente e nell&#39;archivio AEM e, se necessario, eliminarli definitivamente.
+Puoi accedere ed esportare i dati di gestione utente per gli utenti nei database di gestione utenti e nell’archivio AEM e, se necessario, eliminarli definitivamente.
 
 ### Database {#database-1}
 
@@ -144,7 +158,7 @@ Select * from EdcPrincipalEntity where id='<principal_id>';
 
 Per eliminare i dati di gestione utenti per un ID entità dalle tabelle del database, procedere come segue.
 
-1. Eliminare i dati utente dall&#39;archivio AEM, se applicabile, come descritto in [Eliminare i dati utente](/help/forms/using/user-management-handling-user-data.md#delete-aem).
+1. Eliminare i dati utente dal repository di AEM, se applicabile, come descritto in [Eliminare i dati utente](/help/forms/using/user-management-handling-user-data.md#delete-aem).
 1. Arresta il server AEM Forms.
 1. Eseguire i seguenti comandi di database per eliminare i dati di gestione utente per un ID entità dalle tabelle di database. Nel comando `Delete`, sostituire `<principal_id>` con l&#39;ID principale dell&#39;utente di cui si desidera eliminare i dati.
 
@@ -170,11 +184,11 @@ Per eliminare i dati di gestione utenti per un ID entità dalle tabelle del data
 
 ### Archivio AEM {#aem-repository-1}
 
-Gli utenti di Forms JEE hanno i propri dati nell’archivio AEM se hanno effettuato l’accesso all’istanza di authoring di AEM Forms almeno una. Puoi accedere ai dati dei loro utenti ed eliminarli dall’archivio AEM.
+Gli utenti di Forms JEE hanno i propri dati nell’archivio di AEM se hanno effettuato l’accesso all’istanza di authoring di AEM Forms almeno una. Puoi accedere ai dati utente ed eliminarli dall’archivio di AEM.
 
 #### Accedere ai dati utente {#access-user-data}
 
-Per visualizzare l&#39;utente creato nel repository AEM, accedere a `https://'[server]:[port]'/lc/useradmin` con le credenziali di amministratore AEM. Tieni presente che `server` e `port` nell&#39;URL sono quelli dell&#39;istanza di creazione dell&#39;AEM. Qui puoi cercare gli utenti con il loro nome utente. Fare doppio clic su un utente per visualizzare informazioni quali proprietà, autorizzazioni e gruppi per l&#39;utente. La proprietà `Path` per un utente specifica il percorso del nodo utente creato nell&#39;archivio AEM.
+Per visualizzare l&#39;utente creato nel repository di AEM, accedere a `https://'[server]:[port]'/lc/useradmin` con le credenziali di amministratore AEM. Tieni presente che `server` e `port` nell&#39;URL sono quelli dell&#39;istanza Autore AEM. Qui puoi cercare gli utenti con il loro nome utente. Fare doppio clic su un utente per visualizzare informazioni quali proprietà, autorizzazioni e gruppi per l&#39;utente. La proprietà `Path` per un utente specifica il percorso del nodo utente creato nell&#39;archivio di AEM.
 
 #### Elimina dati utente {#delete-aem}
 
@@ -182,5 +196,5 @@ Per eliminare un utente:
 
 1. Vai a `https://'[server]:[port]'/lc/useradmin` con le credenziali di amministratore AEM.
 1. Cercare un utente e fare doppio clic sul nome utente per aprire le proprietà utente. Copia la proprietà `Path`.
-1. Passare a AEM CRXDE Lite all&#39;indirizzo `https://'[server]:[port]'/lc/crx/de/index.jsp` e navigare o cercare nel percorso utente.
-1. Eliminare il percorso e fare clic su **[!UICONTROL Salva tutto]** per eliminare definitivamente l&#39;utente dall&#39;archivio AEM.
+1. Vai a AEM CRXDE Lite all&#39;indirizzo `https://'[server]:[port]'/lc/crx/de/index.jsp` e naviga o cerca nel percorso utente.
+1. Elimina il percorso e fai clic su **[!UICONTROL Salva tutto]** per eliminare definitivamente l&#39;utente dall&#39;archivio di AEM.

@@ -10,13 +10,24 @@ exl-id: 0f1014a7-b0ba-4455-b3a4-5023bcd4c5a1
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3376'
 ht-degree: 2%
-
 ---
-
 # Pagine di destinazione{#landing-pages}
 
 La funzione delle pagine di destinazione consente di importare in modo rapido e semplice una progettazione e un contenuto direttamente in una pagina AEM. Uno sviluppatore web può preparare il HTML e le risorse aggiuntive da importare come pagina intera o solo come parte di una pagina. Questa funzionalità è utile per creare pagine di destinazione di marketing attive solo per un periodo di tempo limitato e che devono essere create rapidamente.

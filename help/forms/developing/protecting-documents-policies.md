@@ -9,13 +9,29 @@ role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '15601'
 ht-degree: 1%
-
 ---
-
 # Protezione di documenti con criteri {#protecting-documents-with-policies}
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
@@ -248,7 +264,7 @@ Crea una policy utilizzando Document Security API (Java):
    * Creare un oggetto `PolicyManager` richiamando il metodo `getPolicyManager` dell&#39;oggetto `DocumentSecurityClient`.
    * Registrare il criterio richiamando il metodo `registerPolicy` dell&#39;oggetto `PolicyManager` e passando i valori seguenti:
 
-      * Oggetto `Policy` che rappresenta il criterio da registrare.
+     * Oggetto `Policy` che rappresenta il criterio da registrare.
 
    * Valore stringa che rappresenta il set di criteri a cui appartiene il criterio.
 
@@ -284,9 +300,9 @@ Crea una policy utilizzando Document Security API (servizio web):
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegnare il nome utente di AEM Forms al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
-      * Assegnare il valore della password corrispondente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Assegnare il nome utente di AEM Forms al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+     * Assegnare il valore della password corrispondente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
+     * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
@@ -389,8 +405,8 @@ Modifica una policy esistente utilizzando Document Security API (Java):
    * Creare un oggetto `PolicyManager` richiamando il metodo `getPolicyManager` dell&#39;oggetto `RightsManagementClient`.
    * Creare un oggetto `Policy` che rappresenta il criterio da aggiornare richiamando il metodo `getPolicy` dell&#39;oggetto `PolicyManager` e passando i valori seguenti&quot;
 
-      * Valore stringa che rappresenta il nome del set di criteri a cui appartiene il criterio. È possibile specificare `null` che determina l&#39;utilizzo del set di criteri `MyPolicies`.
-      * Valore stringa che rappresenta il nome del criterio.
+     * Valore stringa che rappresenta il nome del set di criteri a cui appartiene il criterio. È possibile specificare `null` che determina l&#39;utilizzo del set di criteri `MyPolicies`.
+     * Valore stringa che rappresenta il nome del criterio.
 
 1. Impostare gli attributi del criterio.
 
@@ -424,9 +440,9 @@ Modifica una policy esistente utilizzando Document Security API (servizio web):
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegnare il nome utente di AEM Forms al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
-      * Assegnare il valore della password corrispondente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Assegnare il nome utente di AEM Forms al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+     * Assegnare il valore della password corrispondente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
+     * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
@@ -498,8 +514,8 @@ Elimina una policy utilizzando Document Security API (Java):
    * Creare un oggetto `PolicyManager` richiamando il metodo `getPolicyManager` dell&#39;oggetto `RightsManagementClient`.
    * Eliminare il criterio richiamando il metodo `deletePolicy` dell&#39;oggetto `PolicyManager` e passando i valori seguenti:
 
-      * Valore stringa che specifica il nome del set di criteri a cui appartiene il criterio. È possibile specificare `null` che determina l&#39;utilizzo del set di criteri `MyPolicies`.
-      * Valore stringa che specifica il nome del criterio da eliminare.
+     * Valore stringa che specifica il nome del set di criteri a cui appartiene il criterio. È possibile specificare `null` che determina l&#39;utilizzo del set di criteri `MyPolicies`.
+     * Valore stringa che specifica il nome del criterio da eliminare.
 
 **Esempi di codice**
 
@@ -527,9 +543,9 @@ Elimina una policy utilizzando l’API di Document Security (servizio web):
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegnare il nome utente di AEM Forms al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
-      * Assegnare il valore della password corrispondente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Assegnare il nome utente di AEM Forms al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+     * Assegnare il valore della password corrispondente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
+     * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
@@ -620,13 +636,13 @@ Applicare una policy a un documento PDF utilizzando Document Security API (Java)
    * Creare un oggetto `DocumentManager` richiamando il metodo `getDocumentManager` dell&#39;oggetto `RightsManagementClient`.
    * Applicare una policy al documento di PDF richiamando il metodo `protectDocument` dell&#39;oggetto `DocumentManager` e passando i valori seguenti:
 
-      * L&#39;oggetto `com.adobe.idp.Document` che contiene il documento PDF a cui viene applicato il criterio.
-      * Valore stringa che specifica il nome del documento.
-      * Valore stringa che specifica il nome del set di criteri a cui appartiene il criterio. È possibile specificare un valore `null` che determina l&#39;utilizzo del set di criteri `MyPolicies`.
-      * Valore stringa che specifica il nome del criterio.
-      * Valore string che rappresenta il nome del dominio del gestore utenti dell&#39;utente che è l&#39;autore del documento. Il valore di questo parametro è facoltativo e può essere null (se il parametro è null, il valore del parametro successivo deve essere null).
-      * Valore stringa che rappresenta il nome canonico dell&#39;utente responsabile dell&#39;utente che è l&#39;autore del documento. Il valore del parametro è facoltativo e può essere `null` (se il parametro è null, il valore del parametro precedente deve essere `null`).
-      * `com.adobe.livecycle.rightsmanagement.Locale` che rappresenta le impostazioni locali utilizzate per la selezione del modello di MS Office. Questo valore di parametro è facoltativo e non viene utilizzato per i documenti di PDF. Per proteggere un documento di PDF, specificare `null`.
+     * L&#39;oggetto `com.adobe.idp.Document` che contiene il documento PDF a cui viene applicato il criterio.
+     * Valore stringa che specifica il nome del documento.
+     * Valore stringa che specifica il nome del set di criteri a cui appartiene il criterio. È possibile specificare un valore `null` che determina l&#39;utilizzo del set di criteri `MyPolicies`.
+     * Valore stringa che specifica il nome del criterio.
+     * Valore string che rappresenta il nome del dominio del gestore utenti dell&#39;utente che è l&#39;autore del documento. Il valore di questo parametro è facoltativo e può essere null (se il parametro è null, il valore del parametro successivo deve essere null).
+     * Valore stringa che rappresenta il nome canonico dell&#39;utente responsabile dell&#39;utente che è l&#39;autore del documento. Il valore del parametro è facoltativo e può essere `null` (se il parametro è null, il valore del parametro precedente deve essere `null`).
+     * `com.adobe.livecycle.rightsmanagement.Locale` che rappresenta le impostazioni locali utilizzate per la selezione del modello di MS Office. Questo valore di parametro è facoltativo e non viene utilizzato per i documenti di PDF. Per proteggere un documento di PDF, specificare `null`.
 
      Il metodo `protectDocument` restituisce un oggetto `RMSecureDocumentResult` contenente il documento PDF protetto tramite policy.
 
@@ -669,9 +685,9 @@ Applicare una policy a un documento PDF utilizzando Document Security API (servi
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegnare il nome utente di AEM Forms al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
-      * Assegnare il valore della password corrispondente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Assegnare il nome utente di AEM Forms al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+     * Assegnare il valore della password corrispondente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
+     * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
@@ -814,9 +830,9 @@ Rimuovi una policy da un documento PDF protetto tramite policy utilizzando Docum
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegnare il nome utente di AEM Forms al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
-      * Assegnare il valore della password corrispondente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
-      * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Assegnare il nome utente di AEM Forms al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
+     * Assegnare il valore della password corrispondente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
+     * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
@@ -927,9 +943,9 @@ Revoca dell’accesso a un documento PDF protetto tramite policy utilizzando Doc
    * Creare un oggetto `LicenseManager` richiamando il metodo `getLicenseManager` dell&#39;oggetto `DocumentSecurityClient`.
    * Revocare il documento protetto tramite policy richiamando il metodo `revokeLicense` dell&#39;oggetto `LicenseManager` e passando i valori seguenti:
 
-      * Valore stringa che specifica il valore dell&#39;identificatore di licenza del documento protetto tramite policy (specificare il valore restituito del metodo `getLicenseId` dell&#39;oggetto `DocumentManager`).
-      * Membro dati statico dell&#39;interfaccia `License` che specifica il motivo della revoca del documento. Ad esempio, è possibile specificare `License.DOCUMENT_REVISED`.
-      * Valore `java.net.URL` che specifica il percorso in cui si trova un documento revisionato. Se non desideri reindirizzare un utente a un altro URL, puoi passare `null`.
+     * Valore stringa che specifica il valore dell&#39;identificatore di licenza del documento protetto tramite policy (specificare il valore restituito del metodo `getLicenseId` dell&#39;oggetto `DocumentManager`).
+     * Membro dati statico dell&#39;interfaccia `License` che specifica il motivo della revoca del documento. Ad esempio, è possibile specificare `License.DOCUMENT_REVISED`.
+     * Valore `java.net.URL` che specifica il percorso in cui si trova un documento revisionato. Se non desideri reindirizzare un utente a un altro URL, puoi passare `null`.
 
 **Esempi di codice**
 
@@ -957,9 +973,9 @@ Revoca dell’accesso a un documento PDF protetto tramite policy utilizzando Doc
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegnare il nome utente di AEM Forms al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
-      * Assegnare il valore della password corrispondente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
-      * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Assegnare il nome utente di AEM Forms al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
+     * Assegnare il valore della password corrispondente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
+     * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
@@ -976,9 +992,9 @@ Revoca dell’accesso a un documento PDF protetto tramite policy utilizzando Doc
    * Recuperare il valore dell&#39;identificatore di licenza del documento protetto tramite policy richiamando il metodo `getLicenseID` dell&#39;oggetto `DocumentSecurityServiceClient` e passando l&#39;oggetto `BLOB` che rappresenta il documento protetto tramite policy. Questo metodo restituisce un valore stringa che rappresenta l&#39;identificatore della licenza.
    * Revocare il documento protetto tramite policy richiamando il metodo `revokeLicense` dell&#39;oggetto `DocumentSecurityServiceClient` e passando i valori seguenti:
 
-      * Valore stringa che specifica il valore dell&#39;identificatore di licenza del documento protetto tramite policy (specificare il valore restituito del metodo `getLicenseId` dell&#39;oggetto `DocumentSecurityServiceService`).
-      * Membro dati statico dell&#39;enumerazione `Reason` che specifica il motivo della revoca del documento. Ad esempio, è possibile specificare `Reason.DOCUMENT_REVISED`.
-      * Valore `string` che specifica la posizione URL in cui si trova un documento revisionato. Se non desideri reindirizzare un utente a un altro URL, puoi passare `null`.
+     * Valore stringa che specifica il valore dell&#39;identificatore di licenza del documento protetto tramite policy (specificare il valore restituito del metodo `getLicenseId` dell&#39;oggetto `DocumentSecurityServiceService`).
+     * Membro dati statico dell&#39;enumerazione `Reason` che specifica il motivo della revoca del documento. Ad esempio, è possibile specificare `Reason.DOCUMENT_REVISED`.
+     * Valore `string` che specifica la posizione URL in cui si trova un documento revisionato. Se non desideri reindirizzare un utente a un altro URL, puoi passare `null`.
 
 **Esempi di codice**
 
@@ -1089,9 +1105,9 @@ Ripristinare l’accesso a un documento revocato utilizzando Document Security A
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegnare il nome utente di AEM Forms al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
-      * Assegnare il valore della password corrispondente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
-      * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Assegnare il nome utente di AEM Forms al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
+     * Assegnare il valore della password corrispondente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
+     * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
@@ -1223,9 +1239,9 @@ Controlla un documento PDF protetto tramite policy utilizzando l’API Document 
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegnare il nome utente di AEM Forms al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
-      * Assegnare il valore della password corrispondente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Assegnare il nome utente di AEM Forms al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+     * Assegnare il valore della password corrispondente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
+     * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
@@ -1443,9 +1459,9 @@ Crea una filigrana utilizzando Document Security API (servizio web):
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegnare il nome utente di AEM Forms al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
-      * Assegnare il valore della password corrispondente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Assegnare il nome utente di AEM Forms al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+     * Assegnare il valore della password corrispondente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
+     * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
@@ -1590,9 +1606,9 @@ Modifica una filigrana utilizzando Document Security API (servizio web):
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegnare il nome utente di AEM Forms al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
-      * Assegnare il valore della password corrispondente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
-      * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Assegnare il nome utente di AEM Forms al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
+     * Assegnare il valore della password corrispondente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
+     * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
@@ -1718,9 +1734,9 @@ Cerca gli eventi utilizzando l’API di Rights Management (servizio web):
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegnare il nome utente di AEM Forms al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
-      * Assegnare il valore della password corrispondente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
-      * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Assegnare il nome utente di AEM Forms al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
+     * Assegnare il valore della password corrispondente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
+     * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
@@ -2020,13 +2036,13 @@ Applicare una policy a un documento di Word utilizzando l’API Document Securit
    * Creare un oggetto `DocumentManager` richiamando il metodo `getDocumentManager` dell&#39;oggetto `DocumentSecurityClient`.
    * Applicare una policy al documento di Word richiamando il metodo `protectDocument` dell&#39;oggetto `DocumentManager` e passando i valori seguenti:
 
-      * L&#39;oggetto `com.adobe.idp.Document` che contiene il documento di Word a cui viene applicato il criterio.
-      * Valore stringa che specifica il nome del documento.
-      * Valore stringa che specifica il nome del set di criteri a cui appartiene il criterio. È possibile specificare un valore `null` che determina l&#39;utilizzo del set di criteri `MyPolicies`.
-      * Valore stringa che specifica il nome del criterio.
-      * Valore string che rappresenta il nome del dominio del gestore utenti dell&#39;utente che è l&#39;autore del documento. Il valore di questo parametro è facoltativo e può essere null (se il parametro è null, il valore del parametro successivo deve essere null).
-      * Valore stringa che rappresenta il nome canonico dell&#39;utente responsabile dell&#39;utente che è l&#39;autore del documento. Il valore del parametro è facoltativo e può essere `null` (se il parametro è `null`, il valore del parametro precedente deve essere `null`).
-      * `com.adobe.livecycle.rightsmanagement.Locale` che rappresenta le impostazioni locali utilizzate per la selezione del modello di MS Office. Il valore di questo parametro è facoltativo ed è possibile specificare `null`.
+     * L&#39;oggetto `com.adobe.idp.Document` che contiene il documento di Word a cui viene applicato il criterio.
+     * Valore stringa che specifica il nome del documento.
+     * Valore stringa che specifica il nome del set di criteri a cui appartiene il criterio. È possibile specificare un valore `null` che determina l&#39;utilizzo del set di criteri `MyPolicies`.
+     * Valore stringa che specifica il nome del criterio.
+     * Valore string che rappresenta il nome del dominio del gestore utenti dell&#39;utente che è l&#39;autore del documento. Il valore di questo parametro è facoltativo e può essere null (se il parametro è null, il valore del parametro successivo deve essere null).
+     * Valore stringa che rappresenta il nome canonico dell&#39;utente responsabile dell&#39;utente che è l&#39;autore del documento. Il valore del parametro è facoltativo e può essere `null` (se il parametro è `null`, il valore del parametro precedente deve essere `null`).
+     * `com.adobe.livecycle.rightsmanagement.Locale` che rappresenta le impostazioni locali utilizzate per la selezione del modello di MS Office. Il valore di questo parametro è facoltativo ed è possibile specificare `null`.
 
      Il metodo `protectDocument` restituisce un oggetto `RMSecureDocumentResult` che contiene il documento Word protetto tramite policy.
 
@@ -2062,9 +2078,9 @@ Applicare una policy a un documento di Word utilizzando Document Security API (s
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegnare il nome utente di AEM Forms al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
-      * Assegnare il valore della password corrispondente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
-      * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Assegnare il nome utente di AEM Forms al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
+     * Assegnare il valore della password corrispondente al campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
+     * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
@@ -2206,9 +2222,9 @@ Rimuovi una policy da un documento Word protetto tramite policy utilizzando Docu
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegnare il nome utente di AEM Forms al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
-      * Assegnare il valore della password corrispondente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Assegnare il nome utente di AEM Forms al campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+     * Assegnare il valore della password corrispondente al campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
+     * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 

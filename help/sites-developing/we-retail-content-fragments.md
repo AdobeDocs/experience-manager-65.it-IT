@@ -1,5 +1,5 @@
 ---
-title: Provare i frammenti di contenuto in We.Retail
+title: Prova dei frammenti di contenuto in We.Retail
 description: Scopri come provare i frammenti di contenuto in Adobe Experience Manager utilizzando We.Retail.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,24 +9,38 @@ exl-id: 1e5d8184-7164-4984-b43e-421015e8bf52
 solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments,Developing
 role: Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 12%
-
+source-wordcount: '516'
+ht-degree: 15%
 ---
-
-# Provare i frammenti di contenuto in We.Retail{#trying-out-content-fragments-in-we-retail}
+# Prova dei frammenti di contenuto in We.Retail{#trying-out-content-fragments-in-we-retail}
 
 I frammenti di contenuto consentono di creare contenuti indipendenti dal canale, con possibili varianti per canali specifici. **We.Retail** (come disponibile in un&#39;istanza predefinita di Adobe Experience Manager) fornisce il frammento **Arctic Surfing in Lofoten** come esempio di base. Questo mostra che:
 
-* I frammenti di contenuto di Adobe Experience Manager (AEM) sono [creati e gestiti come risorse indipendenti dalla pagina](/help/assets/content-fragments/content-fragments.md). Consentono di creare contenuti indipendenti dal canale, con possibili varianti per canali specifici.
+* I frammenti di contenuto di Adobe Experience Manager (AEM) vengono [creati e gestiti come risorse indipendenti dalla pagina](/help/assets/content-fragments/content-fragments.md). Consentono di creare contenuti indipendenti dal canale, con possibili varianti per canali specifici.
 
-   * Vedi [Dove trovare le risorse dei frammenti di contenuto in We.Retail](#where-to-find-content-fragments-in-we-retail)
+  * Vedi [Dove trovare le risorse dei frammenti di contenuto in We.Retail](#where-to-find-content-fragments-in-we-retail)
 
 * Potrai quindi [utilizzare questi frammenti e le relative varianti durante l&#39;authoring](/help/sites-authoring/content-fragments.md) delle pagine di contenuto.
 
-   * Vedi [Dove vengono utilizzati i frammenti di contenuto in We.Retail](#where-content-fragments-are-used-in-we-retail)
+  * Vedi [Dove vengono utilizzati i frammenti di contenuto in We.Retail](#where-content-fragments-are-used-in-we-retail)
 
 Per la documentazione completa sulla creazione, la gestione, l’utilizzo e lo sviluppo di frammenti di contenuto:
 
@@ -49,7 +63,7 @@ Tra questi, **Arctic Surfing in Lofoten**, un frammento con le relative risorse 
 
 * Naviga tramite **Assets**, **Files**, **We.Retail**, **English**, **Experiences**, **Arctic Surfing in Lofoten**:
 
-   * [http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten](http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten)
+  * [http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten](http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten)
 
 ![cf-44](assets/cf-44.png)
 
@@ -77,7 +91,7 @@ Ad esempio, nel frammento di contenuto **Arctic Surfing in Lofoten** è presente
 
 * Naviga tramite **Sites**, **We.Retail**, **Language Masters**, **English**, **Experience**. Quindi apri **Arctic Surfing in Lofoten** per la modifica:
 
-   * [http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html](http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html)
+  * [http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html](http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html)
 
 ![cf-53](assets/cf-53.png)
 
@@ -87,16 +101,16 @@ Per ulteriori dettagli, consulta:
 
 * [Utilizzo di frammenti di contenuto](/help/assets/content-fragments/content-fragments.md)
 
-   * Scopri come creare, modificare e gestire le risorse dei frammenti di contenuto.
+  * Scopri come creare, modificare e gestire le risorse dei frammenti di contenuto.
 
 * [Authoring delle pagine con frammenti di contenuto](/help/sites-authoring/content-fragments.md)
 
-   * Utilizza il frammento di contenuto quando crei una pagina.
+  * Utilizza il frammento di contenuto quando crei una pagina.
 
-* [Sviluppo AEM - Componenti per frammenti di contenuto](/help/sites-developing/components-content-fragments.md)
+* [Sviluppo di AEM: componenti per frammenti di contenuto](/help/sites-developing/components-content-fragments.md)
 
-   * Panoramica dei componenti dei frammenti di contenuto.
+  * Panoramica dei componenti dei frammenti di contenuto.
 
 * [Sviluppo ed estensione di frammenti di contenuto](/help/sites-developing/customizing-content-fragments.md)
 
-   * Informazioni utili per sviluppare ed estendere frammenti di contenuto.
+  * Informazioni utili per sviluppare ed estendere frammenti di contenuto.

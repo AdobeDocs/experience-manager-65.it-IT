@@ -8,13 +8,29 @@ exl-id: b15d8d3b-5e47-4c33-95fe-440fcf96be83
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1859'
 ht-degree: 18%
-
 ---
-
 # Creare o configurare una cartella controllata {#create-or-configure-a-watched-folder}
 
 Un amministratore può configurare una cartella di rete, nota come *cartella controllata*, in modo che, quando un utente inserisce un file (ad esempio un file PDF) nella cartella controllata, venga avviata un&#39;operazione preconfigurata e il file venga manipolato. Dopo aver eseguito l&#39;operazione specificata, il file modificato viene salvato in una cartella di output specificata. Per informazioni dettagliate sull&#39;amministrazione di una cartella controllata, vedere [Guida per l&#39;amministrazione](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md).
@@ -45,9 +61,9 @@ Per creare una cartella controllata, effettua le seguenti operazioni:
    * **Elabora file tramite**: tipo di processo da avviare. Puoi specificare flusso di lavoro, script o servizio.
    * **Nome servizio/Percorso script/Percorso flusso di lavoro**: il comportamento del campo si basa sul valore specificato per il campo **File di processo che utilizzano**. È possibile specificare i seguenti valori:
 
-      * Per Flusso di lavoro, specifica il modello di flusso di lavoro da eseguire. Ad esempio, /etc/workflow/models/&lt;nome_flusso di lavoro>/jcr:content/model
-      * Per Script, specifica il percorso JCR dello script da eseguire. Ad esempio, /etc/watchfolder/test/testScript.ecma
-      * Per Servizio, specifica il filtro utilizzato per individuare un servizio OSGi. Il servizio è registrato come implementazione dell’interfaccia com.adobe.aemfd.watchfolder.service.api.ContentProcessor. Ad esempio, il codice seguente è un’implementazione personalizzata dell’interfaccia ContentProcessor con una proprietà personalizzata (foo=bar).
+     * Per Flusso di lavoro, specifica il modello di flusso di lavoro da eseguire. Ad esempio, /etc/workflow/models/&lt;nome_flusso di lavoro>/jcr:content/model
+     * Per Script, specifica il percorso JCR dello script da eseguire. Ad esempio, /etc/watchfolder/test/testScript.ecma
+     * Per Servizio, specifica il filtro utilizzato per individuare un servizio OSGi. Il servizio è registrato come implementazione dell’interfaccia com.adobe.aemfd.watchfolder.service.api.ContentProcessor. Ad esempio, il codice seguente è un’implementazione personalizzata dell’interfaccia ContentProcessor con una proprietà personalizzata (foo=bar).
 
    >[!NOTE]
    >
@@ -66,8 +82,8 @@ Per creare una cartella controllata, effettua le seguenti operazioni:
 
    * **Filtro mappatore payload:** Quando si crea una cartella controllata, viene creata una struttura di cartelle all&#39;interno della cartella controllata. La struttura di cartelle include cartelle di staging, risultato, conservazione, input e errore. La struttura di cartelle può fungere da payload di input per il flusso di lavoro e accettare l’output da un flusso di lavoro. Può anche elencare eventuali punti di errore. La struttura di un payload è diversa da quella di una cartella controllata. Puoi scrivere script personalizzati per mappare la struttura di una cartella controllata al payload. Tale script è denominato filtro di mappatura payload. Sono disponibili due implementazioni predefinite per la mappatura del payload. Se non disponi di [un&#39;implementazione personalizzata](/help/forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter), utilizza un&#39;implementazione preconfigurata:
 
-      * **Mapper predefinito:** Utilizza il mapper del payload predefinito per mantenere i contenuti di input e output delle cartelle controllate in cartelle di input e output separate nel payload.
-      * **Mappatore payload semplice basato su file:** Utilizzare il mapper payload semplice basato su file per mantenere i contenuti di input e output direttamente nella cartella del payload. Non crea alcuna gerarchia aggiuntiva, come l’mappatore predefinito.
+     * **Mapper predefinito:** Utilizza il mapper del payload predefinito per mantenere i contenuti di input e output delle cartelle controllate in cartelle di input e output separate nel payload.
+     * **Mappatore payload semplice basato su file:** Utilizzare il mapper payload semplice basato su file per mantenere i contenuti di input e output direttamente nella cartella del payload. Non crea alcuna gerarchia aggiuntiva, come l’mappatore predefinito.
 
    * **Modalità di esecuzione**: specificare l&#39;elenco separato da virgole delle modalità di esecuzione consentite per l&#39;esecuzione del flusso di lavoro.
    * **Timeout file di staging dopo**: specificare il numero di secondi di attesa prima che un file o una cartella di input già raccolti per l&#39;elaborazione venga considerato come scaduto e contrassegnato come errore. Il meccanismo di timeout si attiva solo quando il valore di questa proprietà è un numero positivo.
@@ -82,22 +98,22 @@ Per creare una cartella controllata, effettua le seguenti operazioni:
    * **Elimina risultati precedenti a:** Specificare il tempo, in numero di giorni, di attesa prima dell&#39;eliminazione dei file e delle cartelle precedenti al valore specificato. Questa impostazione è utile per garantire che la cartella dei risultati non si riempia. Un valore pari a -1 giorni indica di non eliminare mai la cartella dei risultati. Il valore predefinito è -1.
    * **Nome cartella risultati:** Specificare il nome della cartella in cui archiviare i risultati. Se i risultati non vengono visualizzati in questa cartella, seleziona la cartella errori. I file di sola lettura non vengono elaborati e vengono salvati nella cartella degli errori. È possibile utilizzare un percorso assoluto o relativo con i seguenti modelli di file:
 
-      * %F = prefisso del nome file
-      * %E = estensione del nome file
-      * %Y = anno (completo)
-      * %y = anno (ultime due cifre)
-      * %M = mese
-      * %D = giorno del mese
-      * %d = giorno dell’anno
-      * %H = ora (24 ore)
-      * %h = ora (12 ore)
-      * %m = minuto
-      * %s = secondo
-      * %l = millisecondo
-      * %R = numero casuale (tra 0 e 9)
-      * %P = ID processo
-      * Ad esempio, se sono le 20:00 del 17 luglio 2009 e si specifica C:/Test/WF0/failure/%Y/%M/%D/%H/, la cartella dei risultati sarà C:/Test/WF0/failure/2009/07/17/20.
-      * Se il percorso non è assoluto ma relativo, la cartella viene creata all’interno della cartella controllata. Il valore predefinito è result/%Y/%M/%D/, ovvero la cartella Result all’interno della cartella controllata. Per ulteriori informazioni sui pattern di file, consulta [Informazioni sui pattern di file](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
+     * %F = prefisso del nome file
+     * %E = estensione del nome file
+     * %Y = anno (completo)
+     * %y = anno (ultime due cifre)
+     * %M = mese
+     * %D = giorno del mese
+     * %d = giorno dell’anno
+     * %H = ora (24 ore)
+     * %h = ora (12 ore)
+     * %m = minuto
+     * %s = secondo
+     * %l = millisecondo
+     * %R = numero casuale (tra 0 e 9)
+     * %P = ID processo
+     * Ad esempio, se sono le 20:00 del 17 luglio 2009 e si specifica C:/Test/WF0/failure/%Y/%M/%D/%H/, la cartella dei risultati sarà C:/Test/WF0/failure/2009/07/17/20.
+     * Se il percorso non è assoluto ma relativo, la cartella viene creata all’interno della cartella controllata. Il valore predefinito è result/%Y/%M/%D/, ovvero la cartella Result all’interno della cartella controllata. Per ulteriori informazioni sui pattern di file, consulta [Informazioni sui pattern di file](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
 
    * **Nome cartella errore:** Specificare la cartella in cui vengono salvati i file non riusciti. Questo percorso è sempre relativo alla cartella controllata. Puoi utilizzare i modelli di file, come descritto per la Cartella dei risultati.
    * **Mantieni nome cartella:** Specificare la cartella in cui sono archiviati i file dopo l&#39;analisi e il prelievo completati. Il percorso può essere una directory assoluta, relativa o null. Puoi utilizzare i modelli di file, come descritto per la Cartella dei risultati. Il valore predefinito è mantieni/%A/%M/%G/.

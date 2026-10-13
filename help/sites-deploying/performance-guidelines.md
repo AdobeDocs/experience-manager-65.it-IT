@@ -9,13 +9,22 @@ feature: Configuring
 exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3000'
 ht-degree: 6%
-
 ---
-
 # Linee guida sulle prestazioni{#performance-guidelines}
 
 Questa pagina fornisce linee guida generali su come ottimizzare le prestazioni della distribuzione AEM. Se hai poca esperienza con AEM, consulta le pagine seguenti prima di iniziare a leggere le linee guida sulle prestazioni:
@@ -354,12 +363,12 @@ Sviluppo per AEM con l&#39;obiettivo di **prestazioni e scalabilità**. Di segui
 * Non utilizzare le query dove possibile
 * Non utilizzare le associazioni Sling per ottenere i servizi OSGi nel codice Java™, ma utilizza:
 
-   * @Reference in un componente DS
-   * @Inject in un modello Sling
-   * sling.getService() in una classe Sightly Use
-   * sling.getService() in una JSP
-   * a ServiceTracker
-   * accesso diretto al registro del servizio OSGi
+  * @Reference in un componente DS
+  * @Inject in un modello Sling
+  * sling.getService() in una classe Sightly Use
+  * sling.getService() in una JSP
+  * a ServiceTracker
+  * accesso diretto al registro del servizio OSGi
 
 Per ulteriori dettagli sullo sviluppo in AEM, leggere [Sviluppo - Nozioni di base](/help/sites-developing/the-basics.md). Per ulteriori best practice, consulta [Best practice per lo sviluppo](/help/sites-developing/best-practices.md).
 
@@ -834,24 +843,24 @@ Le linee guida presentate in questa pagina possono essere riassunte come segue:
 
 * **TarMK con archivio dati file** - Architettura consigliata per la maggior parte dei clienti:
 
-   * Topologia minima: un’istanza Author, due istanze Publish, due Dispatcher
-   * Replica senza binari attivata se l&#39;archivio dati file è condiviso
+  * Topologia minima: un’istanza Author, due istanze Publish, due Dispatcher
+  * Replica senza binari attivata se l&#39;archivio dati file è condiviso
 
 * **MongoMK con archivio dati file** - Architettura consigliata per la scalabilità orizzontale del livello di authoring:
 
-   * Topologia minima: tre istanze Author, tre istanze MongoDB, due istanze Publish, due Dispatcher
-   * Replica senza binari attivata se l&#39;archivio dati file è condiviso
+  * Topologia minima: tre istanze Author, tre istanze MongoDB, due istanze Publish, due Dispatcher
+  * Replica senza binari attivata se l&#39;archivio dati file è condiviso
 
 * **Nodestore** - Archiviato nel disco locale, non in un NAS (Network Attached Storage)
 * Quando si utilizza **Amazon S3**:
 
-   * L’archivio dati Amazon S3 è condiviso tra il livello Author e Publish
-   * È necessario attivare la replica senza binario
-   * La raccolta oggetti inattivi del datastore richiede una prima esecuzione su tutti i nodi Author e Publish, quindi una seconda esecuzione su Author
+  * L’archivio dati Amazon S3 è condiviso tra il livello Author e Publish
+  * È necessario attivare la replica senza binario
+  * La raccolta oggetti inattivi del datastore richiede una prima esecuzione su tutti i nodi Author e Publish, quindi una seconda esecuzione su Author
 
 * **L&#39;indice personalizzato deve essere creato in aggiunta all&#39;indice predefinito**, in base alle ricerche più comuni
 
-   * Gli indici Lucene devono essere utilizzati per gli indici personalizzati
+  * Gli indici Lucene devono essere utilizzati per gli indici personalizzati
 
 * **La personalizzazione del flusso di lavoro può migliorare notevolmente le prestazioni**. Rimuovere il passaggio video nel flusso di lavoro &quot;Aggiorna risorsa&quot;, disabilitare i listener non utilizzati e così via.
 

@@ -5,13 +5,27 @@ exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: 2f56e44f62994170eb0a2c35272db7cd33eee3c2
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1909'
 ht-degree: 20%
-
 ---
-
 # Funzioni obsolete e rimosse {#deprecated-and-removed-features}
 
 <!--
@@ -50,7 +64,7 @@ Consigliamo alla clientela di verificare se utilizzano la funzione/funzionalità
 | Dynamic Tag Manager (DTM) | L’integrazione con DTM è stata dichiarata obsoleta. | Passa a utilizzare Adobe Experience Platform Launch come gestore di tag. |   |
 | Adobe Target | Aggiungendo la possibilità per AEM di connettersi al servizio Adobe Target utilizzando l&#39;API Adobe Target Standard basata su [!DNL Adobe I/O] (Rest API) in AEM 6.5, il metodo API di Target Classic (XML) è diventato obsoleto. | Riconfigura l&#39;integrazione in [utilizza la nuova API](/help/sites-administering/target.md). |  |
 | Adobe Target | L&#39;utilizzo dell&#39;integrazione basata su `mbox.js` con Adobe Target in AEM è obsoleto. | Passa a utilizzare `at.js` 1.x. |  |
-| Commerce | [CIF REST](https://github.com/adobe/commerce-cif-api) è stato fornito nel 2018 come set di microservizi per abilitare le integrazioni tra AEM e i motori commerce. Dopo che Adobe ha acquisito Adobe Commerce (precedentemente Magento) a metà del 2018, Adobe ha deciso di cambiare il suo approccio per due motivi. Commerce dispone di un proprio set di API Commerce (REST e GraphQL) e non è buona prassi mantenere due set di API. Le tendenze del mercato indicano che i clienti si stavano muovendo verso GraphQL, perché è un modo più efficiente di interrogare i dati. Nel 2019, Adobe ha rilasciato la nuova Commerce integration framework utilizzando le API GraphQL di Commerce come fonte di verità. Adobe non prevede di effettuare ulteriori investimenti in CIF REST. Si consiglia ai clienti di utilizzare la soluzione sostitutiva. | Per le integrazioni AEM-Commerce, passa a [AEM CIF Archetype](https://github.com/adobe/aem-cif-project-archetype) e [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components). Consulta Integrazione di AEM e Adobe Commerce [con Commerce integration framework](/help/commerce/cif/integrating/magento.md). Il supporto per le integrazioni di terze parti (diverse da Commerce) con il nuovo approccio è nella roadmap di Adobe. |  |
+| Commerce | [CIF REST](https://github.com/adobe/commerce-cif-api) è stato fornito nel 2018 come set di microservizi per abilitare le integrazioni tra AEM e i motori commerce. Dopo che Adobe ha acquisito Adobe Commerce (precedentemente Magento) a metà 2018, Adobe ha deciso di cambiare il suo approccio per due motivi. Commerce dispone di un proprio set di API Commerce (REST e GraphQL) e non è buona prassi mantenere due set di API. Le tendenze del mercato indicano che i clienti si stavano muovendo verso GraphQL, perché è un modo più efficiente di interrogare i dati. Nel 2019, Adobe ha rilasciato la nuova Commerce integration framework utilizzando le API GraphQL di Commerce come fonte di verità. Adobe non prevede di effettuare ulteriori investimenti in CIF REST. Si consiglia ai clienti di utilizzare la soluzione sostitutiva. | Per le integrazioni AEM-Commerce, passa a [AEM CIF Archetype](https://github.com/adobe/aem-cif-project-archetype) e [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components). Consulta Integrazione di AEM e Adobe Commerce [con Commerce integration framework](/help/commerce/cif/integrating/magento.md). Il supporto per le integrazioni di terze parti (diverse da Commerce) con il nuovo approccio è nella roadmap di Adobe. |  |
 | Componenti (AEM Sites) | Adobe non prevede di apportare ulteriori miglioramenti alla maggior parte dei componenti di base memorizzati in `/libs/foundation/components`. Cercare le proprietà `cq:deprecated` e `cq:deprecatedReason` nella cartella dei componenti. In AEM 6.5 sono inclusi i Componenti di base e i clienti che eseguono l’aggiornamento da versioni precedenti possono continuare a utilizzarli nello stato corrente. Inoltre, i Componenti di base sono supportati anche se obsoleti. | Adobe consiglia di utilizzare i Componenti core per i progetti futuri. I siti esistenti possono rimanere invariati oppure utilizzare la [suite di strumenti di modernizzazione AEM](https://github.com/adobe/aem-modernize-tools) per eseguire il refactoring del sito in modo da utilizzare i Componenti core. |  |
 | Componenti (AEM Sites) | I componenti Importazione progettazione `/libs/wcm/designimporter/components` sono stati contrassegnati come obsoleti a partire dalla versione 6.5. Adobe non prevede di apportare ulteriori miglioramenti a tale implementazione dell’importazione progettazione. | Adobe prevede di fornire un’implementazione alternativa del caso d’uso nelle versioni future. |  |
 | Foundation | Framework di offload Granite. Adobe non prevede di apportare ulteriori miglioramenti al framework di offload introdotto in CQ 5.6.1 per esternalizzare l’elaborazione delle risorse. | Adobe sta lavorando a un framework di offload nativo per il cloud di nuova generazione. |  |

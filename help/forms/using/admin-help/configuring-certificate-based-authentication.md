@@ -9,13 +9,29 @@ exl-id: 9cbea8c8-4d42-446b-b98d-c090709624d7
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '730'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 89%
 ---
-
 # Configurazione dell’autenticazione basata su certificati {#configuring-certificate-based-authentication}
 
 >[!NOTE]
@@ -51,7 +67,7 @@ Quando verifichi un certificato, la Gestione utenti carica i controlli del certi
 1. Fai clic su Mappatura di nuovi certificati e, nell’elenco Per emittente, seleziona l’alias del certificato configurato in Gestione archivio di certificati attendibili.
 1. Mappa uno degli attributi del certificato a un attributo dell’utente. Ad esempio, puoi mappare il nome comune del certificato all’ID di accesso dell’utente.
 
-   Se il contenuto dell’attributo nel certificato è diverso da quello nell’attributo dell’utente nel database della Gestione utenti, puoi utilizzare un’espressione regolare Java (regex) per far corrispondere i due attributi. Ad esempio, se i nomi comuni dei certificati sono nomi come *Alex Pink (autenticazione)* e *Alex Pink (firma)* e il nome comune nel database della gestione utenti è *Alex Pink*, utilizza un regex per estrarre la parte dell’attributo del certificato richiesta (in questo esempio, *Alex Pink*). L’espressione regolare specificata deve essere conforme alla specifica Java regex.
+   Se il contenuto dell’attributo nel certificato è diverso da quello nell’attributo dell’utente nel database della Gestione utenti, puoi utilizzare un’espressione regolare Java (regex) per far corrispondere i due attributi. Ad esempio, se i nomi comuni dei certificati sono nomi come *Alex Pink (autenticazione)* e *Alex Pink (firma)* e il nome comune nel database di gestione utenti è *Alex Pink*, utilizzare un regex per estrarre la parte richiesta dell&#39;attributo del certificato (in questo esempio, *Alex Pink*). L’espressione regolare specificata deve essere conforme alla specifica Java regex.
 
    Puoi trasformare l’espressione specificando l’ordine dei gruppi nella casella Ordine personalizzato. L’ordine personalizzato è utilizzato con il metodo `java.util.regex.Matcher.replaceAll()`. Il comportamento visualizzato corrisponderà al comportamento del metodo e la stringa di input (l’ordine personalizzato) deve essere specificata di conseguenza.
 
@@ -60,7 +76,7 @@ Quando verifichi un certificato, la Gestione utenti carica i controlli del certi
    Nel regex puoi utilizzare i seguenti caratteri:
 
    * . (qualsiasi carattere)
-   * &amp;ast; (0 o più occorrenze)
+   * &ast; (0 o più occorrenze)
    * () (specifica il gruppo tra parentesi)
    * \ (utilizzato per sostituire un carattere regex con un carattere regolare)
    * $n (utilizzato per fare riferimento all’n-esimo gruppo)
@@ -69,21 +85,21 @@ Quando verifichi un certificato, la Gestione utenti carica i controlli del certi
 
    * Per estrarre “Alex Pink” da “Alex Pink (Authentication)”
 
-     **Regex:** (.&amp;ast;) \(Authentication\)
+     **Regex:** (.&ast;) \(Autenticazione\)
 
    * Per estrarre “Alex Pink” da “Alex (Authentication) Pink”
 
-     **Regex:** (.&amp;ast;)\(Authentication\) (.&amp;ast;)
+     **Regex:** (.&ast;)\(Authentication\) (.&ast;)
 
    * Per estrarre “Pink Alex” da “Alex (Authentication) Pink”
 
-     **Regex:** (.&amp;ast;)\(Authentication\) (.&amp;ast;)
+     **Regex:** (.&ast;)\(Authentication\) (.&ast;)
 
      Ordine personalizzato: $2 $1 (secondo gruppo restituito, concatenato al primo gruppo, acquisito dal carattere di spazio vuoto)
 
    * Per estrarre “apink@sampleorg.com” da “smtp:apink@sampleorg.com”
 
-     **Regex:** smtp:(.&amp;ast;)
+     **Regex:** smtp:(.&ast;)
 
    Per informazioni dettagliate sull’utilizzo delle espressioni regolari, consulta [Tutorial di Java sulle espressioni regolari](https://java.sun.com/docs/books/tutorial/essential/regex/).
 

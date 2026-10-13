@@ -9,13 +9,27 @@ exl-id: d72a3977-1423-49e0-899b-234bb76be378
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '1592'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '1614'
+ht-degree: 98%
 ---
-
 # Configurazione dei provider di autenticazione {#configuring-authentication-providers}
 
 >[!NOTE]
@@ -31,7 +45,7 @@ Se abiliti SSO utilizzando SPNEGO, aggiungi un provider di autenticazione Kerber
 1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utenti > Gestione dominio.
 1. Fai clic su un dominio esistente nell’elenco. Se stai aggiungendo l’autenticazione per un nuovo dominio, consulta [Aggiungere un dominio Enterprise](/help/forms/using/admin-help/adding-domains.md#add-an-enterprise-domain) o [Aggiungere un dominio ibrido](/help/forms/using/admin-help/adding-domains.md#add-a-hybrid-domain).
 1. Fai clic su Aggiungi autenticazione e, nell’elenco Provider di autenticazione, seleziona un provider, a seconda del meccanismo di autenticazione utilizzato dall’organizzazione.
-1. Fornisci eventuali informazioni aggiuntive richieste sulla pagina. Consulta [Impostazioni di autenticazione](configuring-authentication-providers.md#authentication-settings).
+1. Fornisci eventuali informazioni aggiuntive richieste sulla pagina. (Consulta [Impostazioni di autenticazione](configuring-authentication-providers.md#authentication-settings).)
 1. (Facoltativo) Fai clic su Test per verificare la configurazione.
 1. Fai clic su OK e quindi di nuovo su OK.
 
@@ -101,8 +115,8 @@ Se stai configurando l’autenticazione per un dominio Enterprise o ibrido e sel
 
 Se stai configurando l’autenticazione per un dominio Enterprise o ibrido e selezioni l’autenticazione SAML, sono disponibili le seguenti impostazioni. Per ulteriori informazioni sulle impostazioni SAML, consulta [Configurare le impostazioni del provider di servizi SAML](/help/forms/using/admin-help/configure-saml-service-provider-settings.md#configure-saml-service-provider-settings).
 
-**Seleziona un file metadati provider di identità SAML
-da importare:** fai clic su Sfoglia per selezionare un file metadati del provider di identità SAML generato dall’IDP, quindi fai clic su Importa. Vengono visualizzati i dettagli dall’IDP.
+**Selezionare un metadati provider di identità SAML
+file da importare:** Fare clic su Sfoglia per selezionare un file di metadati del provider di identità SAML generato dall&#39;IDP, quindi fare clic su Importa. Vengono visualizzati i dettagli dall’IDP.
 
 **Titolo:** alias dell’URL indicato da EntityID. Il titolo viene visualizzato anche nella pagina di accesso per gli utenti Enterprise e locali.
 
@@ -159,7 +173,7 @@ Senza il provisioning just-in-time, quando un utente viene autenticato correttam
 1. Per creare un dominio, fai clic su Nuovo dominio enterprise o Nuovo dominio ibrido. Per modificare un dominio esistente, fai clic sul nome del dominio.
 1. Seleziona Abilita provisioning Just In Time.
 
-   ***nota **: se la casella di controllo Abilita provisioning Just In Time non è presente, fai clic su Home > Impostazioni > Gestione utente> Configurazione > Attributi di sistema avanzati, quindi fai clic su Ricarica.*
+   ***nota &#x200B;**: se la casella di controllo Abilita provisioning Just In Time non è presente, fai clic su Home > Impostazioni > Gestione utente> Configurazione > Attributi di sistema avanzati, quindi fai clic su Ricarica.*
 
 1. Aggiungi provider di autenticazione. Durante l’aggiunta dei provider di autenticazione, nella schermata Nuova autenticazione, seleziona un creatore di identità e un provider di assegnazione registrati. Consulta [Configurazione dei provider di autenticazione](configuring-authentication-providers.md#configuring-authentication-providers).
 1. Salva il dominio.

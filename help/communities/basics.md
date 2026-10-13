@@ -1,6 +1,6 @@
 ---
 title: Nozioni di base sui componenti community
-description: Aggiungere funzioni delle community ai siti AEM in modalità di modifica e configurare i componenti
+description: Aggiungere funzioni delle community ai siti di AEM in modalità di modifica e configurare i componenti
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
@@ -9,20 +9,27 @@ exl-id: eb5ce76a-bf28-4540-bc2d-3b5ecb8286f2
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '364'
 ht-degree: 1%
-
 ---
-
 # Nozioni di base sui componenti community {#communities-components-basics}
 
 ## Panoramica {#overview}
 
 La sezione sull’authoring della documentazione descrive l’aggiunta di funzioni di Communities ai siti AEM in modalità di modifica autore e descrive le configurazioni dei componenti.
 
-I componenti possono essere esaminati utilizzando un&#39;istanza AEM e la [guida interattiva ai componenti della community](components-guide.md).
+I componenti possono essere esaminati utilizzando un&#39;istanza di AEM e la [guida interattiva dei componenti della community](components-guide.md).
 
 ## Accesso ai componenti delle community {#accessing-communities-components}
 
@@ -34,7 +41,7 @@ Vedi l&#39;elenco in [Componenti community disponibili](author-communities.md#av
 >
 >Per informazioni generali sull&#39;authoring, consulta la [guida rapida all&#39;authoring delle pagine](../../help/sites-authoring/qg-page-authoring.md).
 >
->Se non conosci l&#39;AEM, consulta la documentazione sulle [operazioni di base](../../help/sites-authoring/basic-handling.md).
+>Se non conosci AEM, consulta la documentazione sulle [operazioni di base](../../help/sites-authoring/basic-handling.md).
 
 ### Entrata in modalità progettazione {#entering-design-mode}
 
@@ -64,7 +71,7 @@ Quando si aggiunge un componente Communities a una pagina, se il risultato è un
 
 ![clientlibs2](assets/clientlibs2.png)
 
-## Assegnazione dei tag {#tagging}
+## Assegnazione tag {#tagging}
 
 Molte funzioni di Communities possono essere configurate per consentire ai membri di assegnare tag al contenuto immesso (pubblicato) nell’ambiente di pubblicazione.
 

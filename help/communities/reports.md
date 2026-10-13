@@ -10,13 +10,20 @@ role: Admin
 exl-id: 2aff2ffe-ba6f-4cc9-a126-40fc2a1161e2
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '415'
 ht-degree: 6%
-
 ---
-
 # Console Rapporti {#reports-console}
 
 ## Panoramica {#overview}
@@ -43,17 +50,17 @@ I report tabulari possono essere esportati in formato .csv per l’elaborazione 
 
 * Scegli tra:
 
-   * **[!UICONTROL Rapporto assegnazioni]**
+  * **[!UICONTROL Rapporto assegnazioni]**
 
-      * Genera un report per il sito community, l&#39;utente o il gruppo e l&#39;assegnazione selezionati.
+    * Genera un report per il sito community, l&#39;utente o il gruppo e l&#39;assegnazione selezionati.
 
-   * **[!UICONTROL Rapporto post]**
+  * **[!UICONTROL Rapporto post]**
 
-      * Genera un report per il sito community, il tipo di contenuto e il periodo di tempo selezionati.
+    * Genera un report per il sito community, il tipo di contenuto e il periodo di tempo selezionati.
 
-   * **[!UICONTROL Rapporto visualizzazioni]**
+  * **[!UICONTROL Rapporto visualizzazioni]**
 
-      * genera un report per il sito community, il tipo di contenuto e il periodo di tempo selezionati.
+    * genera un report per il sito community, il tipo di contenuto e il periodo di tempo selezionati.
 
 ![report](assets/reports1.png)
 
@@ -77,10 +84,10 @@ Selezionare i criteri per il rapporto:
 
   Seleziona una delle seguenti opzioni:
 
-   * Ultimi 7 giorni
-   * Ultimi 30 giorni
-   * Ultimi 90 giorni
-   * Ultimo anno
+  * Ultimi 7 giorni
+  * Ultimi 30 giorni
+  * Ultimi 90 giorni
+  * Ultimo anno
 
 Seleziona **[!UICONTROL Genera]** per creare il report.
 
@@ -106,23 +113,23 @@ Selezionare i criteri per il rapporto:
 
   Seleziona una delle seguenti opzioni:
 
-   * Ultimi 7 giorni
-   * Ultimi 30 giorni
-   * Ultimi 90 giorni
-   * Ultimo anno
+  * Ultimi 7 giorni
+  * Ultimi 30 giorni
+  * Ultimi 90 giorni
+  * Ultimo anno
 
 Seleziona **[!UICONTROL Genera]** per creare il report.
 
 ![genera-report](assets/generate-posts-report.png)
 
-## Risoluzione dei problemi {#troubleshooting}
+## Risoluzione di problemi {#troubleshooting}
 
 ### Nessun sito community elencato {#no-community-sites-listed}
 
 Se non sono elencati siti della community, accertati che Adobe Analytics sia stato abilitato per un sito. Se si sceglie di creare rapporti sulle assegnazioni, assicurarsi che la funzione delle assegnazioni sia inclusa nella struttura del sito community.
 
-### I rapporti non vengono visualizzati nell’istanza di creazione AEM {#reports-do-not-show-in-aem-author-instance}
+### I rapporti non vengono visualizzati nell’istanza di authoring di AEM {#reports-do-not-show-in-aem-author-instance}
 
-Se i rapporti non vengono visualizzati nell’istanza Autore AEM, controlla le personalizzazioni, ad esempio la mappatura URL nell’istanza Publish. Se la mappatura URL viene eseguita solo sull&#39;istanza Publish AEM del sito Communities, verificare che lo stesso sia stato configurato nell&#39;istanza Autore AEM nella configurazione **Site Trend Report Social Component Factory**.
+Se i rapporti non vengono visualizzati nell’istanza Autore di AEM, controlla le personalizzazioni, ad esempio la mappatura URL nell’istanza Pubblica. Se la mappatura URL viene eseguita solo sull&#39;istanza AEM Publish del sito Communities, verificare che lo stesso sia stato configurato nell&#39;istanza AEM Author nella configurazione **Site Trend Report Social Component Factory**.
 
 ![Mappatura URL in AEM Author](assets/sitetrend.png)

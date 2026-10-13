@@ -7,13 +7,27 @@ feature: Metadata
 exl-id: 82148ae5-37e9-4fc5-ada9-db3d91b29c33
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: ed6971a3-2c12-4fd2-81f4-ff329c416250
+    internal-label: Metadata
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '801'
 ht-degree: 7%
-
 ---
-
 # Write-back XMP alle rappresentazioni {#xmp-writeback-to-renditions}
 
 | Versione | Collegamento articolo |
@@ -86,7 +100,7 @@ Il filtraggio dei metadati XMP tramite elenco Consentiti risolve questo problema
 
 1. Per aprire Configuration Manager, accedere a `https://[aem_server]:[port]/system/console/configMgr`.
 1. Apri la configurazione **[!UICONTROL Adobe CQ DAM XmpFilter]**.
-1. Per applicare il filtro tramite un elenco Consentiti, selezionare **[!UICONTROL Applica il filtro a una proprietà di XMP]** e specificare le proprietà da importare nella casella **[!UICONTROL Nomi XML consentiti per il filtro di XMP]**.
+1. Per applicare il filtro tramite un elenco Consentiti, selezionare **[!UICONTROL Applica il filtro di un&#39;istanza di Elenco Consentiti alle proprietà di XMP]** e specificare le proprietà da importare nella casella **[!UICONTROL Nomi XML consentiti per il filtro di XMP]**.
 
    ![chlimage_1-136](assets/chlimage_1-347.png)
 

@@ -1,21 +1,37 @@
 ---
 title: Libreria trascodifica immagini
-description: Scopri come configurare e utilizzare Adobe Imaging Transcoding Library, una soluzione di elaborazione delle immagini in grado di eseguire funzioni di gestione delle immagini di base, tra cui codifica, transcodifica, ricampionamento e ridimensionamento delle immagini.
+description: Scopri come configurare e utilizzare la Libreria di transcodifica delle immagini di Adobe, una soluzione di elaborazione delle immagini in grado di eseguire funzioni di gestione delle immagini di base, tra cui codifica, transcodifica, ricampionamento e ridimensionamento delle immagini.
 contentOwner: AG
 role: Admin
 feature: Renditions,Developer Tools,Asset Processing
 exl-id: b67465f9-177c-49c4-b4eb-a1d6e09ac9a2
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 9014a7dd3c9279a4da3944c1b095fd60352fdbeb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+  - id: ee4c2482-9595-5bc0-b9be-c0c6f02eba50
+    internal-label: Asset Processing
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '977'
-ht-degree: 0%
-
+source-wordcount: '1015'
+ht-degree: 1%
 ---
-
 # Libreria trascodifica immagini {#imaging-transcoding-library}
 
-Adobe Imaging Transcoding Library è una soluzione di elaborazione delle immagini proprietaria in grado di eseguire funzioni di gestione delle immagini di base, tra cui:
+La libreria di transcodifica delle immagini di Adobe è una soluzione proprietaria per l’elaborazione delle immagini in grado di eseguire funzioni di gestione delle immagini di base, tra cui:
 
 * Codifica
 * Transcodifica (conversione dei formati supportati)
@@ -24,14 +40,14 @@ Adobe Imaging Transcoding Library è una soluzione di elaborazione delle immagin
 * Compressione di qualità JPEG
 * Ridimensionamento immagine
 
-La libreria di trascodifica delle immagini fornisce il supporto CMYK e il supporto alfa completo, ad eccezione di CMYK -Alpha.
+La libreria di trascodifica delle immagini fornisce il supporto CMYK e il supporto alpha completo, ad eccezione di CMYK -Alpha.
 
 Oltre a supportare una vasta gamma di formati e profili di file, Imaging Transcoding Library offre vantaggi significativi rispetto ad altre soluzioni di terze parti in termini di prestazioni, scalabilità e qualità. Di seguito sono riportati alcuni dei principali vantaggi dell’utilizzo della libreria di trascodifica di immagini:
 
 * **Scalabilità con aumento delle dimensioni o della risoluzione dei file**: il ridimensionamento viene ottenuto principalmente grazie alla possibilità brevettata di ridimensionare la libreria di trascodifica di immagini durante la decodifica dei file. Questa capacità assicura che l’utilizzo della memoria di runtime sia sempre ottimale e non sia una funzione quadratica di aumento delle dimensioni del file o della risoluzione dei megapixel. La libreria di trascodifica di immagini può elaborare file di grandi dimensioni e ad alta risoluzione (contenenti megapixel più elevati). Strumenti di terze parti, come ImageMagick, non è in grado di gestire file di grandi dimensioni e arresti anomali durante l’elaborazione di tali file.
 * **Algoritmi di compressione e ridimensionamento di qualità Photoshop**: coerenza con gli standard di settore in termini di qualità del downsampling (uniforme, nitida e automatica bicubica) e della qualità della compressione. Imaging Transcoding Library valuta ulteriormente il fattore di qualità dell&#39;immagine di input e utilizza in modo intelligente tabelle e impostazioni di qualità ottimali per l&#39;immagine di output. Questa capacità produce file di dimensioni ottimali senza compromettere la qualità visiva.
 * **Throughput elevato:** Il tempo di risposta è inferiore e il throughput è notevolmente superiore rispetto a ImageMagick. Pertanto, la libreria di transcodifica delle immagini dovrebbe ridurre il tempo di attesa per gli utenti e i costi di hosting.
-* **Scalabilità migliore con carico simultaneo:** La libreria di trascodifica di immagini funziona in modo ottimale in condizioni di carico simultanee. Fornisce un throughput elevato con prestazioni ottimali della CPU, utilizzo della memoria e tempi di risposta ridotti, che contribuiscono a ridurre i costi di hosting.
+* **Scalabilità migliore con carico simultaneo:** La libreria di trascodifica di immagini funziona in modo ottimale in condizioni di carico simultanee. Fornisce un throughput elevato con prestazioni CPU ottimali, utilizzo della memoria e tempi di risposta ridotti, che contribuiscono a ridurre i costi di hosting.
 
 ## Piattaforme supportate {#supported-platforms}
 
@@ -59,8 +75,8 @@ Gli argomenti della riga di comando per Imaging Transcoding Library possono incl
 
 * `X`: funziona in modo simile a [!DNL Experience Manager]. Ad esempio, -resize 319.
 * `WxH`: le proporzioni non vengono mantenute, ad esempio `-resize 319x319`.
-* `Wx`: corregge la larghezza e calcola l&#39;altezza mantenendo le proporzioni. Esempio: `-resize 319x`.
-* `xH`: corregge l&#39;altezza e calcola la larghezza mantenendo le proporzioni. Esempio: `-resize x319`.
+* `Wx`: corregge la larghezza e calcola l&#39;altezza mantenendo le proporzioni. Ad esempio, `-resize 319x`.
+* `xH`: corregge l&#39;altezza e calcola la larghezza mantenendo le proporzioni. Ad esempio, `-resize x319`.
 
 ```shell
  -AllowUpsampling (Resizes smaller images)

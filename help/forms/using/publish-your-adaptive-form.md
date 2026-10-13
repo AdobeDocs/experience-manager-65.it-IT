@@ -8,13 +8,29 @@ feature: Adaptive Forms
 exl-id: c039faec-f832-43d5-8a86-22afa3bef2a4
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '998'
 ht-degree: 4%
-
 ---
-
 # Esercitazione: pubblicare il modulo adattivo {#tutorial-publish-your-adaptive-form}
 
 ![Immagine protagonista](do-not-localize/13-publish-your-adaptive-form-small.png)
@@ -41,7 +57,8 @@ Quando il modulo adattivo viene pubblicato come pagina AEM, l’intera pagina we
 1. Accedi all’istanza di authoring AEM [!DNL Forms] e individua il modulo adattivo shipping-address-add-update-form nell’interfaccia utente AEM [!DNL Forms].
    `https://localhost:4502/aem/forms.html/content/dam/formsanddocuments`
 1. Seleziona il modulo adattivo shipping-address-add-update-form e seleziona **[!UICONTROL Pubblica]**. Viene visualizzata una finestra di dialogo contenente le risorse correlate al modulo adattivo. Seleziona **[!UICONTROL Pubblica]**. Il modulo adattivo viene pubblicato e viene visualizzata una finestra di dialogo di successo.
-1. Apri il modulo sull’istanza Publish. Il modulo può essere compilato e inviato dall’utente finale.   `https://localhost:4503/content/forms/af/shipping-address-add-update-form.html`
+1. Apri il modulo sull’istanza Publish. Il modulo può essere compilato e inviato dall’utente finale.
+   `https://localhost:4503/content/forms/af/shipping-address-add-update-form.html`
 
 ## Incorporare il modulo adattivo in una pagina AEM Sites {#embed-the-adaptive-form-in-an-aem-sites-page}
 
@@ -51,7 +68,7 @@ AEM [!DNL Forms] fornisce un componente, AEM [!DNL Forms] Container, per incorpo
 
 1. Crea e apri una pagina nel sito We.Retail per la modifica. Ad esempio, [https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html](https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html). Modulo adattivo incorporato nella pagina [!DNL Sites].
 
-   È inoltre possibile incorporare il modulo adattivo in una pagina We.Retail [!DNL Site's] esistente. Ad esempio, la pagina INFORMAZIONI SU [https://localhost:4502/editor.html/content/we-retail/us/en/about-us.html](https://localhost:4502/editor.html/content/we-retail/us/en/about-us.html). Consente di risparmiare tempo per creare una pagina. I passaggi seguenti utilizzano la pagina appena creata.
+   È inoltre possibile incorporare il modulo adattivo in una pagina We.Retail [!DNL Site's] esistente. Ad esempio, la pagina INFO SU [https://localhost:4502/editor.html/content/we-retail/us/en/about-us.html](https://localhost:4502/editor.html/content/we-retail/us/en/about-us.html). Consente di risparmiare tempo per creare una pagina. I passaggi seguenti utilizzano la pagina appena creata.
 
    Il sito We.Retail viene fornito con AEM. Se non hai installato il sito We.Retail, consulta la sezione [Implementazione di riferimento We.Retail](https://helpx.adobe.com/it/experience-manager/6-3/help/sites-developing/we-retail.html) per installare il sito.
 

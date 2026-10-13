@@ -11,13 +11,21 @@ thumbnail: 3456-style-cif.jpg
 exl-id: 04d553be-c67d-4ecb-a23f-2694c2adfc2b
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: a45b09c52d780a954e606d4cae73a3a02a8a6aa4
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2684'
+source-wordcount: '2693'
 ht-degree: 19%
-
 ---
-
 # Personalizzare lo stile dei componenti core CIF di AEM {#style-aem-cif-core-components}
 
 Il [progetto CIF Venia](https://github.com/adobe/aem-cif-guides-venia) è una base di codice di riferimento per l&#39;utilizzo di [componenti core CIF](https://github.com/adobe/aem-core-cif-components). In questo tutorial, analizzerai il progetto di riferimento Venia e capirai come sono organizzati i CSS e JavaScript utilizzati dai componenti core di AEM CIF. Verrà inoltre creato uno stile CSS per aggiornare lo stile predefinito del componente **Product Teaser**.
@@ -221,7 +229,7 @@ Ora che gli aggiornamenti del codice sono stati distribuiti, aggiungi una nuova 
 
 Verifica quindi l’inclusione delle librerie client nella pagina.
 
-1. Passa alla **home page** del sito: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
+1. Passare alla **home page** del sito: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
 1. Seleziona il menu **Informazioni pagina** e fai clic su **Visualizza come pubblicato**:
 
@@ -483,5 +491,5 @@ Usa il [Sistema di stili di AEM](/help/sites-authoring/style-system.md) per crea
 * [Componenti core di AEM CIF](https://github.com/adobe/aem-core-cif-components)
 * [Configurare un ambiente di sviluppo AEM locale](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview)
 * [Librerie lato client](/help/sites-developing/clientlibs.md)
-* [Guida introduttiva ad AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it)
+* [Guida introduttiva ad AEM Sites](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview)
 * [Sviluppo con il sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html?lang=it)

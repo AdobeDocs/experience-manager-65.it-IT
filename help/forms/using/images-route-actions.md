@@ -1,6 +1,6 @@
 ---
 title: Personalizzare le immagini utilizzate nelle azioni di indirizzamento
-description: Come personalizzare le immagini utilizzate nelle azioni di indirizzamento nell’area di lavoro LiveCycle AEM Forms.
+description: Come personalizzare le immagini utilizzate nelle azioni di indirizzamento nell’area di lavoro di AEM Forms LiveCycle.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -8,13 +8,27 @@ exl-id: 687c6569-7189-4039-9c7a-bc29658a7756
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 0%
-
+source-wordcount: '300'
+ht-degree: 4%
 ---
-
 # Personalizzare le immagini utilizzate nelle azioni di indirizzamento {#customize-images-used-in-route-actions}
 
 Per personalizzare le immagini utilizzate nelle azioni di route, eseguire i passaggi descritti in [Passaggi generici di personalizzazione](/help/forms/using/generic-steps-html-workspace-customization.md) seguiti dai passaggi descritti in questo articolo.

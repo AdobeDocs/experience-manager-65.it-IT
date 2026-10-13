@@ -9,13 +9,27 @@ exl-id: cb642289-4137-4ba7-8bde-0e458c8c94fe
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 0835dca60d8011ce8660f1e7fdefb2b14ccd6129
-workflow-type: ht
-source-wordcount: '1015'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '1025'
+ht-degree: 97%
 ---
-
 
 # Sincronizzazione delle directory {#synchronizing-directories}
 
@@ -73,7 +87,7 @@ Puoi configurare gestione utenti per verificare periodicamente la presenza di ev
 1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utenti > Configurazione > Configura attributi di sistema avanzati.
 1. In Configura l’espressione Cron del completamento della sincronizzazione, immetti un’espressione Cron che rappresenta l’intervallo di tempo in cui gestione utenti ritenta le sincronizzazione non riuscite. L’utilizzo dell’espressione Cron si basa sul sistema di pianificazione dei processi open source Quartz, versione 1.4.0.
 
-   Il valore predefinito è 0 0/13 &amp;ast; ? &amp;ast; , il che significa che il controllo viene eseguito ogni 13 minuti.
+   Il valore predefinito è 0 0/13 &ast; ? &ast; , il che significa che il controllo viene eseguito ogni 13 minuti.
 
 ## Sincronizzazione manuale delle directory {#manually-synchronize-directories}
 
@@ -89,7 +103,7 @@ Puoi configurare gestione utenti per verificare periodicamente la presenza di ev
 1. Pianifica sincronizzazione:
 
    * Per abilitare la sincronizzazione automatica su base giornaliera, in Modulo di pianificazione, seleziona Occorrenza. Seleziona Giornaliero dall’elenco e digita l’ora nel formato 24 ore nella casella corrispondente. Una volta salvate le impostazioni, questo valore viene convertito in un’espressione Cron, visualizzata nella casella Espressione Cron.
-   * Per pianificare la sincronizzazione in un giorno specifico della settimana o del mese oppure in un mese specifico, seleziona Espressione Cron e digita l’espressione appropriata nella casella. Ad esempio, esegui la sincronizzazione all’1:30 dell’ultimo venerdì del mese.
+   * Per pianificare la sincronizzazione in un giorno specifico della settimana o del mese oppure in un mese specifico, seleziona Espressione Cron e digita l’espressione appropriata nella casella. Ad esempio, esegui la sincronizzazione alle 01:30 dell’ultimo venerdì del mese.
 
 L’utilizzo dell’espressione Cron si basa sul sistema di pianificazione dei processi open source Quartz, versione 1.4.0.
 

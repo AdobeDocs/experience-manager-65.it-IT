@@ -9,13 +9,27 @@ exl-id: 01ec6ebc-6d80-4417-9604-c8571aebb57e
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
-workflow-type: ht
-source-wordcount: '1518'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '1523'
+ht-degree: 93%
 ---
-
 # Strategia di backup e ripristino di AEM Forms{#backup-and-recovery-strategy-for-aem-forms}
 
 Se l’implementazione di AEM Forms memorizza dati personalizzati aggiuntivi in un database diverso, è responsabilità dell’utente implementare una strategia per eseguire il backup di tali dati e assicurarsi che rimangano sincronizzati con i dati di AEM Forms. Inoltre, l’applicazione deve essere progettata in modo da essere sufficientemente solida per gestire uno scenario in cui i database aggiuntivi non sono sincronizzati. Si consiglia vivamente di eseguire le operazioni di database nel contesto di una transazione per mantenere uno stato coerente.
@@ -26,7 +40,7 @@ Dopo aver identificato la modalità di utilizzo di AEM Forms, determinare quali 
 >
 >Come per qualsiasi altro aspetto dell’implementazione di AEM Forms, la strategia di backup e ripristino deve essere sviluppata e testata in un ambiente di sviluppo o di staging prima di essere utilizzata in produzione per garantire che l’intera soluzione funzioni come previsto senza perdita di dati.
 
-Adobe Experience Manager (AEM) è parte integrante di AEM Forms. Pertanto, è necessario eseguire il backup di AEM e sincronizzarlo con il backup di AEM Forms come soluzione e servizi per la gestione della corrispondenza, come Forms Manager, che si basano sui dati memorizzati nella parte AEM di AEM forms. Per evitare perdite di dati, è necessario eseguire il backup dei dati specifici di AEM Forms in modo da garantire la correlazione tra GDS e AEM (archivio) e i riferimenti al database. Le directory radice di database, GDS, AEM e Content Storage devono essere ripristinate su un computer con lo stesso nome DNS dell’originale.
+Adobe Experience Manager (AEM) è parte integrante di AEM Forms. Pertanto, è necessario eseguire il backup di AEM e sincronizzarlo con il backup di AEM Forms come soluzione e servizi per la gestione della corrispondenza, come Forms Manager, che si basano sui dati memorizzati nella parte AEM di AEM forms.Per evitare perdite di dati, è necessario eseguire il backup dei dati specifici di AEM Forms in modo da garantire la correlazione tra GDS e AEM (archivio) e i riferimenti al database.Le directory radice di database, GDS, AEM e Content Storage devono essere ripristinate in un computer con lo stesso nome DNS dell&#39;originale.
 
 ## Tipi di backup {#types-of-backups}
 
@@ -44,9 +58,9 @@ Il database viene utilizzato per archiviare gli artefatti del modulo, le configu
 
 * La modalità **Backup istantanea** indica che il sistema AEM Forms è in una modalità di backup, a tempo indefinito oppure per un numero specificato di minuti, dopo i quali non risulterà più abilitata. Per entrare o uscire dalla modalità di backup istantanea, è possibile utilizzare una delle opzioni seguenti. Dopo uno scenario di ripristino, la modalità di backup istantanea non deve essere abilitata.
 
-   * Utilizza la pagina Impostazioni di backup nella console di amministrazione. Per attivare la modalità istantanea, seleziona la casella di controllo Esegui in modalità di backup sicuro. Deseleziona la casella di controllo per uscire dalla modalità istantanea.
-   * Utilizza lo script LCBackupMode (consulta [Eseguire il backup del database, di GDS e delle directory principali dell’archiviazione dei contenuti](/help/forms/using/admin-help/backing-aem-forms-data.md#back-up-the-database-gds-aem-repository-and-content-storage-root-directories)). Per uscire dalla modalità di backup istantanea, nell’argomento dello script imposta il parametro `continuousCoverage` su `false` o utilizza l’opzione `leaveContinuousCoverage`.
-   * Utilizza l’API di backup/ripristino fornita. <!-- Fix broken link(see AEM forms API Reference section on AEM Forms Help and Tutorials page).-->
+  * Utilizza la pagina Impostazioni di backup nella console di amministrazione. Per attivare la modalità istantanea, seleziona la casella di controllo Esegui in modalità di backup sicuro. Deseleziona la casella di controllo per uscire dalla modalità istantanea.
+  * Utilizza lo script LCBackupMode (consulta [Eseguire il backup del database, di GDS e delle directory principali dell’archiviazione dei contenuti](/help/forms/using/admin-help/backing-aem-forms-data.md#back-up-the-database-gds-aem-repository-and-content-storage-root-directories)). Per uscire dalla modalità di backup istantanea, nell’argomento dello script imposta il parametro `continuousCoverage` su `false` o utilizza l’opzione `leaveContinuousCoverage`.
+  * Utilizza l’API di backup/ripristino fornita. <!-- Fix broken link(see AEM forms API Reference section on AEM Forms Help and Tutorials page).-->
 
 * La modalità di **backup continuo** indica che il sistema è sempre in modalità di backup, con una nuova sessione che viene avviata non appena viene rilasciata quella precedente. Alla modalità di backup continuo non è associato alcun timeout. Quando lo script o le API LCBackupMode vengono chiamati per uscire dalla modalità di backup continuo, viene avviata una nuova sessione di tale modalità. Questa modalità è utile per supportare backup continui, ma consente comunque di eliminare dalla directory GDS i documenti vecchi e non necessari. La modalità di backup continuo non è supportata dalla pagina Backup e ripristino. Dopo uno scenario di ripristino, la modalità di backup continuo rimane abilitata. È possibile uscire dalla modalità di backup continuo (rolling backup mode) utilizzando lo script LCBackupMode con l’opzione `leaveContinuousCoverage`.
 
@@ -109,6 +123,6 @@ Utilizza lo script `LCSetGDS` nella cartella `[*aem-forms root]*\sdk\misc\Founda
 
 >[!NOTE]
 >
->Questa circostanza è l’unica in base alla quale utilizzare questo script per modificare la posizione del GDS. Per modificare la posizione del GDS durante l’esecuzione di AEM Forms, utilizza la console di amministrazione. (Consulta [Configurare le impostazioni generali di AEM Forms](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)*.) *
+>Questa circostanza è l’unica in base alla quale utilizzare questo script per modificare la posizione del GDS. Per modificare la posizione del GDS durante l’esecuzione di AEM Forms, utilizza la console di amministrazione. (Vedi [Configurare le impostazioni generali di AEM Forms](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)*.) *
 
 Dopo aver impostato il percorso GDS, avvia il server Forms in modalità di manutenzione e utilizza la console di amministrazione per aggiornare i percorsi del file system rimanenti per il nuovo nodo. Dopo aver verificato che tutte le configurazioni necessarie siano state aggiornate, riavvia e verifica AEM Forms.

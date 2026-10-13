@@ -10,13 +10,20 @@ exl-id: d98bcbe4-3f80-49ec-b40c-417be0d97350
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 2%
-
+source-wordcount: '311'
+ht-degree: 1%
 ---
-
 # Nozioni di base sul flusso di attività {#activity-stream-essentials}
 
 Le attività di un membro della community che ha effettuato l’accesso, ad esempio la pubblicazione in un forum o in un blog, vengono raccolte in un flusso che può essere filtrato e visualizzato in vari modi tramite la configurazione del componente Flussi di attività.
@@ -70,9 +77,9 @@ Un *[grafico social](/help/communities/essentials-socialgraph.md)* acquisisce le
 
 ## Nozioni di base per lato server {#essentials-for-server-side}
 
-* [API flussi attività](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/api/package-frame.html)
+* [API per flussi di attività](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/api/package-frame.html)
 
-* [API listener Streams per attività](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/listener/api/package-frame.html)
+* [API del listener per flussi attività](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/listener/api/package-frame.html)
 
 * [Personalizzazioni lato server](/help/communities/server-customize.md)
 

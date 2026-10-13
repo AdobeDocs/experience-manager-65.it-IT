@@ -9,13 +9,22 @@ feature: Configuring
 exl-id: 5ecd09a3-c4be-4361-9816-03106435346f
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1999'
 ht-degree: 0%
-
 ---
-
 # Configurazione di OSGi{#configuring-osgi}
 
 [OSGi](https://www.osgi.org/) è un elemento fondamentale nello stack tecnologico di Adobe Experience Manager (AEM). Viene utilizzato per controllare i bundle compositi di AEM e la relativa configurazione.
@@ -34,22 +43,22 @@ Entrambi i metodi possono essere utilizzati anche se ci sono sottili differenze,
 
 * [Console web Adobe CQ](#osgi-configuration-with-the-web-console)
 
-   * La console web è l’interfaccia standard per la configurazione OSGi. Fornisce un’interfaccia utente per la modifica delle varie proprietà, dove è possibile selezionare i valori possibili dagli elenchi predefiniti.
+  * La console web è l’interfaccia standard per la configurazione OSGi. Fornisce un’interfaccia utente per la modifica delle varie proprietà, dove è possibile selezionare i valori possibili dagli elenchi predefiniti.
 
-     In quanto tale, è il metodo più semplice da utilizzare.
+    In quanto tale, è il metodo più semplice da utilizzare.
 
-   * Tutte le configurazioni effettuate con la console web vengono applicate immediatamente e sono applicabili all’istanza corrente, indipendentemente dalla modalità di esecuzione corrente o da eventuali modifiche successive.
+  * Tutte le configurazioni effettuate con la console web vengono applicate immediatamente e sono applicabili all’istanza corrente, indipendentemente dalla modalità di esecuzione corrente o da eventuali modifiche successive.
 
 * [file di configurazione](#osgi-configuration-with-configuration-files)
 
-   * Contengono le impostazioni definite nella console web.
-   * Può essere incluso nei pacchetti di contenuti per l’utilizzo in altre istanze.
+  * Contengono le impostazioni definite nella console web.
+  * Può essere incluso nei pacchetti di contenuti per l’utilizzo in altre istanze.
 
 * [content-nodes (sling:osgiConfig) nell&#39;archivio](#osgi-configuration-in-the-repository)
 
-   * Richiede la configurazione manuale con CRXDE Lite.
-   * A causa delle convenzioni di denominazione dei nodi `sling:OsgiConfig`, è possibile collegare la configurazione a una [modalità di esecuzione](/help/sites-deploying/configure-runmodes.md) specifica. Puoi anche salvare le configurazioni per più di una modalità di esecuzione nello stesso archivio.
-   * Tutte le configurazioni appropriate vengono applicate immediatamente (a seconda della modalità di esecuzione).
+  * Richiede la configurazione manuale con CRXDE Lite.
+  * A causa delle convenzioni di denominazione dei nodi `sling:OsgiConfig`, è possibile collegare la configurazione a una [modalità di esecuzione](/help/sites-deploying/configure-runmodes.md) specifica. Puoi anche salvare le configurazioni per più di una modalità di esecuzione nello stesso archivio.
+  * Tutte le configurazioni appropriate vengono applicate immediatamente (a seconda della modalità di esecuzione).
 
 Indipendentemente dal metodo utilizzato, tutti i metodi di configurazione seguenti:
 
@@ -336,17 +345,17 @@ Per elencare tutti i nodi di configurazione nell&#39;istanza, utilizzare la funz
 
   `/apps/{somewhere}`
 
-   * Per impostazione predefinita `{somewhere}` è `system/config`, quindi la configurazione viene scritta in
+  * Per impostazione predefinita `{somewhere}` è `system/config`, quindi la configurazione viene scritta in
 
-     `/apps/system/config`
+    `/apps/system/config`
 
-   * Tuttavia, se stai modificando una configurazione che proviene inizialmente da un’altra posizione nell’archivio, ad esempio:
+  * Tuttavia, se stai modificando una configurazione che proviene inizialmente da un’altra posizione nell’archivio, ad esempio:
 
-     /libs/foo/config/someconfig
+    /libs/foo/config/someconfig
 
-     La configurazione aggiornata viene quindi scritta nella posizione originale; ad esempio:
+    La configurazione aggiornata viene quindi scritta nella posizione originale; ad esempio:
 
-     `/apps/foo/config/someconfig`
+    `/apps/foo/config/someconfig`
 
 * Le impostazioni modificate da `admin` vengono salvate in `*.config` file in:
 
@@ -354,17 +363,17 @@ Per elencare tutti i nodi di configurazione nell&#39;istanza, utilizzare la funz
      /crx-quickstart/launchpad/config
   ```
 
-   * Quest&#39;area è costituita dai dati privati dell&#39;amministratore della configurazione OSGi e contiene tutti i dettagli di configurazione specificati da `admin`, indipendentemente da come sono stati immessi nel sistema.
-   * Quest’area è un dettaglio di implementazione e non devi mai modificare direttamente questa directory.
-   * Tuttavia, è utile conoscere la posizione di questi file di configurazione in modo che possano essere eseguite copie per il backup, più installazioni o entrambe:
+  * Quest&#39;area è costituita dai dati privati dell&#39;amministratore della configurazione OSGi e contiene tutti i dettagli di configurazione specificati da `admin`, indipendentemente da come sono stati immessi nel sistema.
+  * Quest’area è un dettaglio di implementazione e non devi mai modificare direttamente questa directory.
+  * Tuttavia, è utile conoscere la posizione di questi file di configurazione in modo che possano essere eseguite copie per il backup, più installazioni o entrambe:
 
-      * Console di gestione Apache Felix OSGi
+    * Console di gestione Apache Felix OSGi
 
-        `../crx/org/apache/felix/webconsole/internal/servlet/OsgiManager.config`
+      `../crx/org/apache/felix/webconsole/internal/servlet/OsgiManager.config`
 
-      * Archivio client CRX Sling
+    * Archivio client CRX Sling
 
-        `../com/day/crx/sling/client/impl/CRXSlingClientRepository/<pid-nr>.config`
+      `../com/day/crx/sling/client/impl/CRXSlingClientRepository/<pid-nr>.config`
 
 >[!CAUTION]
 >

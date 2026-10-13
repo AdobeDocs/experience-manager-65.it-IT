@@ -6,16 +6,25 @@ exl-id: d2451710-5abf-4816-8052-57d8f04a228e
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '930'
-ht-degree: 0%
-
+source-wordcount: '970'
+ht-degree: 2%
 ---
-
 # Configurare l’editor Rich Text per creare pagine web e siti accessibili {#configure-rte-for-accessibility}
 
-Adobe Experience Manager supporta molte funzioni di accessibilità standard in conformità con vari standard di accessibilità. Inoltre, gli sviluppatori possono personalizzare o estendere per fornire funzionalità che consentono di creare contenuto accessibile utilizzando componenti di Experience Manager che utilizzano l’editor Rich Text (RTE).
+Adobe Experience Manager supporta molte funzioni di accessibilità standard in conformità con vari standard di accessibilità. Inoltre, gli sviluppatori possono personalizzare o estendere per fornire funzioni che aiutano a creare contenuti accessibili utilizzando i componenti di Experience Manager che utilizzano l’editor Rich Text (RTE).
 
 Durante la progettazione di pagine web e l’aggiunta di contenuto alle pagine, gli sviluppatori e gli autori di contenuti possono utilizzare le funzioni dell’editor Rich Text per fornire informazioni relative all’accessibilità. Ad esempio, aggiungi informazioni strutturali tramite intestazioni ed elementi di paragrafo.
 
@@ -44,7 +53,7 @@ Per istruzioni complete sulla configurazione dell&#39;editor Rich Text, vedere [
 
 Configurando un plug-in nel ramo secondario `rtePlugins` appropriato in CRXDE Lite, puoi attivare tutte o alcune funzionalità specifiche per quel plug-in.
 
-![CRXDE Liti che mostra un rtePlugin di esempio.](assets/chlimage_1-208.png)
+![CRXDE Lite con un esempio di rtePlugin.](assets/chlimage_1-208.png)
 
 ### Esempio: specificare i formati di paragrafo disponibili nel campo di selezione dell’Editor Rich Text {#example-specifying-paragraph-formats-available-in-rte-selection-field}
 
@@ -58,7 +67,7 @@ Nuovi formati di blocchi semantici possono essere resi disponibili per la selezi
    * Utilizzo dell’icona del cursore paragrafo nell’interfaccia utente touch.
    * Utilizzo del campo **Formato** (selettore popup) nell&#39;interfaccia classica.
 
-Con gli elementi strutturali disponibili nell’editor Rich Text attraverso le opzioni di formato dei paragrafi, l’AEM fornisce una buona base per lo sviluppo di contenuti accessibili. Gli autori dei contenuti non possono utilizzare l’editor Rich Text per formattare le dimensioni o i colori dei caratteri o altri attributi correlati, impedendo la creazione di formattazione in linea. Devono invece selezionare gli elementi strutturali appropriati, ad esempio le intestazioni, e utilizzare gli stili globali scelti dall’opzione Stili. In questo modo si garantisce un markup più ordinato, maggiori opzioni per gli utenti che navigano con i propri fogli di stile e contenuti correttamente strutturati.
+Con gli elementi strutturali disponibili nell’editor Rich Text tramite le opzioni di formato paragrafo, AEM fornisce una buona base per lo sviluppo di contenuti accessibili. Gli autori dei contenuti non possono utilizzare l’editor Rich Text per formattare le dimensioni o i colori dei caratteri o altri attributi correlati, impedendo la creazione di formattazione in linea. Devono invece selezionare gli elementi strutturali appropriati, ad esempio le intestazioni, e utilizzare gli stili globali scelti dall’opzione Stili. In questo modo si garantisce un markup più ordinato, maggiori opzioni per gli utenti che navigano con i propri fogli di stile e contenuti correttamente strutturati.
 
 ## Utilizzo della funzione di modifica dell&#39;origine {#use-of-the-source-edit-feature}
 
@@ -68,7 +77,7 @@ In alcuni casi, gli autori di contenuti dovranno esaminare e regolare il codice 
 >
 >Utilizza la funzione `sourceedit` con attenzione. Errori di digitazione e/o funzioni non supportate possono introdurre ulteriori problemi.
 
-## Aggiungi supporto per altri elementi e attributi di HTML {#add-support-for-more-html-elements-and-attributes}
+## Aggiungere supporto per più elementi e attributi di HTML {#add-support-for-more-html-elements-and-attributes}
 
 Per estendere ulteriormente le funzioni di accessibilità di AEM, è possibile estendere i componenti esistenti basati sull&#39;editor Rich Text (ad esempio i componenti **Text** e **Table**) con elementi e attributi aggiuntivi.
 
@@ -84,7 +93,7 @@ In **Tabella**, impostare o rimuovere esplicitamente l&#39;attributo da/verso l&
 >
 >Questa procedura è adatta solo per l’interfaccia utente classica.
 
-### Esempio: creare HTML accessibili quando si utilizza l’enfasi nel testo {#create-accessible-html-for-text}
+### Esempio: creare un HTML accessibile quando si utilizza l’enfasi nel testo {#create-accessible-html-for-text}
 
 L&#39;editor Rich Text può utilizzare `strong` e `em` tag invece di `b` e `i`. Aggiungere il nodo seguente come nodo di pari livello ai nodi `uiSettings` e `rtePlugins` nella finestra di dialogo.
 

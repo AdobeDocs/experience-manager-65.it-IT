@@ -10,13 +10,22 @@ exl-id: 2a0bf59d-8829-4142-9cb4-dcef90f53ae9
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2806'
 ht-degree: 4%
-
 ---
-
 # Reporting {#reporting}
 
 Per aiutarti a monitorare e analizzare lo stato dell’istanza, Adobe Experience Manager (AEM) fornisce una selezione di rapporti predefiniti che possono essere configurati per i tuoi requisiti individuali:
@@ -73,8 +82,8 @@ Per modificare la selezione dei dati:
 
 * per aggiungere una colonna, trascina il componente richiesto dalla barra laterale e rilascialo nella posizione desiderata
 
-   * un segno di spunta verde indica quando la posizione è valida e una coppia di frecce indica esattamente dove viene posizionata
-   * un simbolo rosso &quot;no-go&quot; indica quando la posizione non è valida
+  * un segno di spunta verde indica quando la posizione è valida e una coppia di frecce indica esattamente dove viene posizionata
+  * un simbolo rosso &quot;no-go&quot; indica quando la posizione non è valida
 
 * per spostare una colonna, fare clic sull&#39;intestazione, tenere premuto e trascinare nella nuova posizione
 * per rimuovere una colonna, fare clic sul titolo della colonna, tenere premuto e trascinare verso l&#39;alto nell&#39;area dell&#39;intestazione del report (un simbolo meno rosso indica che la posizione non è valida). Rilasciare il pulsante del mouse e la finestra di dialogo Elimina componenti richiede la conferma dell&#39;eliminazione effettiva della colonna.
@@ -173,8 +182,8 @@ Quando inizia la raccolta dei dati, puoi selezionare:
 
   Ad esempio, se per febbraio 2011 sono disponibili snapshot giornaliere:
 
-   * Se l&#39;intervallo è impostato su `Day`, ogni snapshot viene visualizzato come un singolo valore nel grafico.
-   * Se l&#39;intervallo è impostato su `Month`, tutte le istantanee di febbraio vengono aggregate in un singolo valore (visualizzato come un singolo punto nel grafico).
+  * Se l&#39;intervallo è impostato su `Day`, ogni snapshot viene visualizzato come un singolo valore nel grafico.
+  * Se l&#39;intervallo è impostato su `Month`, tutte le istantanee di febbraio vengono aggregate in un singolo valore (visualizzato come un singolo punto nel grafico).
 
 Seleziona i requisiti, quindi fai clic su **Vai** per applicarli al report. Per aggiornare la visualizzazione dopo aver creato ulteriori snapshot, fare di nuovo clic su **Vai**.
 
@@ -250,17 +259,17 @@ In questa posizione è definito il periodo per la raccolta di snapshot per [Dati
 
 * **Elaborazione report**
 
-   * **aggiorna automaticamente i dati**
+  * **aggiorna automaticamente i dati**
 
-     I dati del rapporto vengono aggiornati ogni volta che si aggiorna la definizione del rapporto.
+    I dati del rapporto vengono aggiornati ogni volta che si aggiorna la definizione del rapporto.
 
-   * **aggiorna manualmente i dati**
+  * **aggiorna manualmente i dati**
 
-     Questa opzione può essere utilizzata per evitare ritardi causati da operazioni di aggiornamento automatico quando il volume di dati è elevato.
+    Questa opzione può essere utilizzata per evitare ritardi causati da operazioni di aggiornamento automatico quando il volume di dati è elevato.
 
-     Selezionando questa opzione, i dati del rapporto devono essere aggiornati manualmente quando viene modificato un qualsiasi aspetto della configurazione del rapporto. Significa anche che quando modifichi un aspetto della configurazione, la tabella del rapporto risulta vuota.
+    Selezionando questa opzione, i dati del rapporto devono essere aggiornati manualmente quando viene modificato un qualsiasi aspetto della configurazione del rapporto. Significa anche che quando modifichi un aspetto della configurazione, la tabella del rapporto risulta vuota.
 
-     Quando questa opzione è selezionata, viene visualizzato il pulsante **[Carica dati](#load-data)** accanto a **Modifica** nel report. **Carica dati** carica i dati e aggiorna i dati del rapporto visualizzati.
+    Quando questa opzione è selezionata, viene visualizzato il pulsante **[Carica dati](#load-data)** accanto a **Modifica** nel report. **Carica dati** carica i dati e aggiorna i dati del rapporto visualizzati.
 
 * **Snapshot**
 È possibile definire la frequenza delle istantanee, giornaliera, oraria o non.

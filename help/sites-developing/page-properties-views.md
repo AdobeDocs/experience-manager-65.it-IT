@@ -1,5 +1,5 @@
 ---
-title: Personalizzazione delle visualizzazioni delle proprietà di pagina
+title: Personalizzazione delle visualizzazioni delle proprietà pagina
 description: Ogni pagina dispone di un set di proprietà che è possibile modificare in base alle esigenze
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,23 @@ exl-id: 292874bf-2ee6-4638-937c-f8f26c93ca65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 0%
-
+source-wordcount: '500'
+ht-degree: 2%
 ---
-
-# Personalizzazione delle visualizzazioni delle proprietà di pagina{#customizing-views-of-page-properties}
+# Personalizzazione delle visualizzazioni delle proprietà pagina{#customizing-views-of-page-properties}
 
 Ogni pagina dispone di un set di [proprietà](/help/sites-authoring/editing-page-properties.md) che possono essere visualizzate e modificate dagli utenti; alcune sono necessarie durante la creazione della pagina (crea visualizzazione), altre possono essere visualizzate e modificate (modifica visualizzazione) in una fase successiva. Queste proprietà di pagina sono definite e rese disponibili dalla finestra di dialogo ( `cq:dialog`) del componente pagina appropriato.
 
@@ -34,13 +43,13 @@ I campi devono essere configurati in modo specifico se è necessaria una modific
 
 * Proprietà di pagina da rendere disponibile nella visualizzazione di creazione (ad esempio, **Creazione guidata pagina**):
 
-   * Nome: `cq:showOnCreate`
-   * Tipo: `Boolean`
+  * Nome: `cq:showOnCreate`
+  * Tipo: `Boolean`
 
 * Proprietà di pagina da rendere disponibile nella visualizzazione di modifica (ad esempio, **Visualizza**/**Modifica**) **Proprietà**):
 
-   * Nome: `cq:hideOnEdit`
-   * Tipo: `Boolean`
+  * Nome: `cq:hideOnEdit`
+  * Tipo: `Boolean`
 
 Ad esempio, vedi le impostazioni per i campi raggruppati sotto **Altri titoli e descrizioni** nella scheda **Base** del componente Pagina di base. Sono visibili nella procedura guidata **Crea pagina** poiché `cq:showOnCreate` è stato impostato su `true`:
 
@@ -112,4 +121,4 @@ CODICE SU GITHUB
 
 Puoi trovare il codice di questa pagina su GitHub
 
-* [Apri progetto aem-authoring-extension-page-dialog su GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog)
+* [Apri il progetto aem-authoring-extension-page-dialog su GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog)

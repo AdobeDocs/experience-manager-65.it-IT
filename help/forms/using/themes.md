@@ -9,13 +9,29 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '5966'
+source-wordcount: '6207'
 ht-degree: 2%
-
 ---
-
 # Creazione e utilizzo di temi {#creating-and-using-themes}
 
 <span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
@@ -210,25 +226,25 @@ L’Editor tema è suddiviso in due pannelli:
 
 * **Barra laterale**- Viene visualizzata sul lato sinistro. Include i seguenti elementi:
 
-   * **Selettore:** mostra il componente selezionato per lo stile e le relative proprietà alle quali è possibile applicare uno stile. Il selettore rappresenta tutti i componenti di un tipo. Se si seleziona un componente casella di testo in un tema per lo stile, lo stile verrà ereditato da tutte le caselle di testo del modulo o dalla comunicazione interattiva. I selettori consentono di selezionare un componente generico o un componente specifico per lo stile. Ad esempio, un componente campo è un componente generico e una casella di testo è un componente specifico.
+  * **Selettore:** mostra il componente selezionato per lo stile e le relative proprietà alle quali è possibile applicare uno stile. Il selettore rappresenta tutti i componenti di un tipo. Se si seleziona un componente casella di testo in un tema per lo stile, lo stile verrà ereditato da tutte le caselle di testo del modulo o dalla comunicazione interattiva. I selettori consentono di selezionare un componente generico o un componente specifico per lo stile. Ad esempio, un componente campo è un componente generico e una casella di testo è un componente specifico.
 
-     **Componente generico di stile:**
-Un campo può essere un campo casella numerica, ad esempio età, oppure un campo casella di testo, ad esempio indirizzo.
-Quando si applica uno stile a un campo, lo stile viene applicato a tutti i campi, ad esempio età, nome e indirizzo.
+    **Stile del componente generico:**
+    Un campo può essere un campo casella numerica, ad esempio età, oppure un campo casella di testo, ad esempio indirizzo.
+    Quando si applica uno stile a un campo, lo stile viene applicato a tutti i campi, ad esempio età, nome e indirizzo.
 
-     **Componente specifico per lo stile**:
-Un componente specifico influisce sugli oggetti della categoria specifica. Quando si applica uno stile al componente casella numerica nel tema, solo l&#39;oggetto casella numerica in eredita lo stile.
+    **Componente specifico per lo stile**:
+    Un componente specifico influisce sugli oggetti della categoria specifica. Quando si applica uno stile al componente casella numerica nel tema, solo l&#39;oggetto casella numerica in eredita lo stile.
 
-     Ad esempio, un campo casella di testo come l&#39;indirizzo ha una lunghezza maggiore e un campo casella numerica come l&#39;età ha una lunghezza inferiore. È possibile selezionare un campo casella numerica, ridurne la lunghezza e applicarlo al modulo. La larghezza di tutti i campi casella numerica viene ridotta nel modulo.
+    Ad esempio, un campo casella di testo come l&#39;indirizzo ha una lunghezza maggiore e un campo casella numerica come l&#39;età ha una lunghezza inferiore. È possibile selezionare un campo casella numerica, ridurne la lunghezza e applicarlo al modulo. La larghezza di tutti i campi casella numerica viene ridotta nel modulo.
 
-     Quando personalizzi tutti i componenti campo con un colore di sfondo specifico, tutti i campi come età, nome e indirizzo ereditano il colore di sfondo. Quando si seleziona una casella numerica, ad esempio età, e se ne riduce la larghezza, la larghezza di tutte le caselle numeriche, ad esempio età, viene ridotto il numero di persone in una famiglia. La larghezza delle caselle di testo non viene modificata.
+    Quando personalizzi tutti i componenti campo con un colore di sfondo specifico, tutti i campi come età, nome e indirizzo ereditano il colore di sfondo. Quando si seleziona una casella numerica, ad esempio età, e se ne riduce la larghezza, la larghezza di tutte le caselle numeriche, ad esempio età, viene ridotto il numero di persone in una famiglia. La larghezza delle caselle di testo non viene modificata.
 
-   * **Stato:** consente di personalizzare gli stili di un oggetto in uno stato specifico. È ad esempio possibile specificare l&#39;aspetto di un oggetto quando si trova nello stato predefinito, attivo, disattivato, al passaggio del mouse o di errore.
-   * **Categorie di proprietà:** Le proprietà di stile sono suddivise in varie categorie. Ad esempio, Dimension &amp; Position, Testo, Sfondo, Bordo ed Effetti. In ogni categoria vengono fornite informazioni sullo stile. Ad esempio, in Sfondo è possibile specificare Colore sfondo e Immagine e sfumatura.
+  * **Stato:** consente di personalizzare gli stili di un oggetto in uno stato specifico. È ad esempio possibile specificare l&#39;aspetto di un oggetto quando si trova nello stato predefinito, attivo, disattivato, al passaggio del mouse o di errore.
+  * **Categorie di proprietà:** Le proprietà di stile sono suddivise in varie categorie. Ad esempio, Dimension &amp; Position, Testo, Sfondo, Bordo ed Effetti. In ogni categoria vengono fornite informazioni sullo stile. Ad esempio, in Sfondo è possibile specificare Colore sfondo e Immagine e sfumatura.
 
-   * **Avanzate:** consente di aggiungere CSS personalizzati a un oggetto, che si sovrappone alle proprietà definite dai controlli visivi in caso di sovrapposizione.
+  * **Avanzate:** consente di aggiungere CSS personalizzati a un oggetto, che si sovrappone alle proprietà definite dai controlli visivi in caso di sovrapposizione.
 
-   * **Visualizza CSS**: consente di visualizzare CSS del componente selezionato
+  * **Visualizza CSS**: consente di visualizzare CSS del componente selezionato
 
   Inoltre, nella barra laterale, in basso è presente una freccia. Facendo clic sulla freccia, si ottengono altre due opzioni: **Simula esito positivo** e **Simula errore.** Queste opzioni, insieme alle opzioni descritte sopra, sono discusse in dettaglio [sotto](../../forms/using/themes.md#using-rail).
 
@@ -261,8 +277,8 @@ I pannelli predefiniti includono:
 * Procedura guidata
 * Layout mobile
 
-   * Titoli dei pannelli nell’intestazione
-   * Senza titoli dei pannelli nell’intestazione
+  * Titoli dei pannelli nell’intestazione
+  * Senza titoli dei pannelli nell’intestazione
 
 I selettori variano per ciascun layout.
 La creazione di stili di layout personalizzati dall’Editor tema prevede:
@@ -356,10 +372,10 @@ Nella barra degli strumenti Area di lavoro vengono visualizzati i seguenti eleme
 * **Attiva/Disattiva pannello laterale** ![attiva/disattiva pannello laterale](assets/toggle-side-panel.png): consente di mostrare o nascondere la barra laterale.
 * **Opzioni tema** ![opzioni tema](assets/theme-options.png): fornisce tre opzioni
 
-   * Configura: fornisce opzioni per selezionare il modulo di anteprima o la comunicazione interattiva, Base clientlib e la configurazione di Adobe Fonts.
-   * Visualizza CSS tema: genera CSS per il tema selezionato.
-   * Gestisci stili: fornisce opzioni per gestire gli stili di testo e immagini
-   * Aiuto: esegue una presentazione guidata dell’immagine dell’Editor tema.
+  * Configura: fornisce opzioni per selezionare il modulo di anteprima o la comunicazione interattiva, Base clientlib e la configurazione di Adobe Fonts.
+  * Visualizza CSS tema: genera CSS per il tema selezionato.
+  * Gestisci stili: fornisce opzioni per gestire gli stili di testo e immagini
+  * Aiuto: esegue una presentazione guidata dell’immagine dell’Editor tema.
 
 * **Emulatore** ![righello](assets/ruler.png): emula l&#39;aspetto del tema per diverse dimensioni di visualizzazione. Una dimensione di visualizzazione viene trattata come punto di interruzione nell’emulatore. È possibile selezionare un punto di interruzione e specificarne uno stile. Ad esempio, Desktop e Tablet sono due punti di interruzione. È possibile specificare stili diversi per ogni punto di interruzione.
 
@@ -641,27 +657,27 @@ Puoi visualizzare il CSS generato utilizzando le seguenti opzioni:
 * Se una risorsa viene aggiunta da un altro tema e l’altro tema viene spostato o eliminato, puoi riscontrare dei problemi con il tema corrente. Si consiglia di evitare di sfogliare e aggiungere risorse da altri temi.
 * **Utilizzo di base clientlib, editor temi e stile in linea**
 
-   * **Libreria client di base**:
+  * **Libreria client di base**:
 
-     La libreria client di base contiene informazioni sullo stile. Per utilizzare le informazioni sullo stile nelle librerie lato client nei temi.
+    La libreria client di base contiene informazioni sullo stile. Per utilizzare le informazioni sullo stile nelle librerie lato client nei temi.
 
-      1. Passa a **Experience Manager > Forms > Temi**.
-      1. Nella pagina Temi selezionare un tema e fare clic su **Visualizza proprietà**.
-      1. Nella pagina Proprietà visualizzata, fare clic su **Avanzate**.
-      1. Nella scheda Avanzate, individua e seleziona la libreria client da utilizzare nel campo Posizione libreria client.
-      1. Fai clic su **Salva**.
+    1. Passa a **Experience Manager > Forms > Temi**.
+    1. Nella pagina Temi selezionare un tema e fare clic su **Visualizza proprietà**.
+    1. Nella pagina Proprietà visualizzata, fare clic su **Avanzate**.
+    1. Nella scheda Avanzate, individua e seleziona la libreria client da utilizzare nel campo Posizione libreria client.
+    1. Fai clic su **Salva**.
 
-     Lo stile specificato nella libreria client viene importato nel tema che lo utilizza. Ad esempio, è possibile specificare lo stile per la casella di testo, la casella numerica e il cambio nella libreria client. Quando si importa la libreria client nel tema, viene importato lo stile della casella di testo, della casella numerica e del commutatore. Puoi quindi assegnare uno stile ad altri componenti utilizzando l’editor di temi.
-Puoi anche creare un tema, crearne copie e quindi modificare lo stile fornito nei temi copiati per casi d’uso simili.
-Vedi [Ottenere un aspetto specifico utilizzando i temi](#specific-af-appearance)
+    Lo stile specificato nella libreria client viene importato nel tema che lo utilizza. Ad esempio, è possibile specificare lo stile per la casella di testo, la casella numerica e il cambio nella libreria client. Quando si importa la libreria client nel tema, viene importato lo stile della casella di testo, della casella numerica e del commutatore. Puoi quindi assegnare uno stile ad altri componenti utilizzando l’editor di temi.
+    Puoi anche creare un tema, crearne copie e quindi modificare lo stile fornito nei temi copiati per casi d’uso simili.
+    Vedi [Ottenere un aspetto specifico utilizzando i temi](#specific-af-appearance)
 
-   * **Editor temi:**
+  * **Editor temi:**
 
-     L’Editor tema consente di creare temi per formattare il modulo o la comunicazione interattiva. È possibile specificare lo stile dei componenti di un tema, che consente di conferire un aspetto uniforme a più moduli o comunicazioni interattive sviluppate dall&#39;utente. Si consiglia di specificare le informazioni sullo stile in un tema e quindi di applicare il tema a un modulo.
+    L’Editor tema consente di creare temi per formattare il modulo o la comunicazione interattiva. È possibile specificare lo stile dei componenti di un tema, che consente di conferire un aspetto uniforme a più moduli o comunicazioni interattive sviluppate dall&#39;utente. Si consiglia di specificare le informazioni sullo stile in un tema e quindi di applicare il tema a un modulo.
 
-   * **Stile in linea:**
+  * **Stile in linea:**
 
-     È possibile assegnare uno stile ai componenti utilizzando la modalità Stile nell&#39;editor multicanale di moduli o comunicazioni interattive quando si utilizza un modulo. L’utilizzo della modalità stile per modificare lo stile dei componenti del modulo sovrascrive lo stile specificato nel tema. Per modificare lo stile di alcuni componenti di un modulo specifico, vedere [Stile in linea dei componenti](../../forms/using/inline-style-adaptive-forms.md).
+    È possibile assegnare uno stile ai componenti utilizzando la modalità Stile nell&#39;editor multicanale di moduli o comunicazioni interattive quando si utilizza un modulo. L’utilizzo della modalità stile per modificare lo stile dei componenti del modulo sovrascrive lo stile specificato nel tema. Per modificare lo stile di alcuni componenti di un modulo specifico, vedere [Stile in linea dei componenti](../../forms/using/inline-style-adaptive-forms.md).
 
 * **Utilizzo delle librerie lato client**
 
@@ -674,4 +690,4 @@ Vedi [Ottenere un aspetto specifico utilizzando i temi](#specific-af-appearance)
 * **Utilizzo dell&#39;editor moduli o dell&#39;editor temi per l&#39;utilizzo di intestazione e piè di pagina**
 
   Utilizzare l&#39;editor tema se si desidera applicare uno stile a intestazione e piè di pagina utilizzando opzioni di stile quali stile, sfondo e trasparenza del carattere.
-Se si desidera fornire informazioni quali un&#39;immagine del logo, il nome della società nell&#39;intestazione e le informazioni sul copyright nel piè di pagina, utilizzare le opzioni dell&#39;editor di moduli.
+  Se si desidera fornire informazioni quali un&#39;immagine del logo, il nome della società nell&#39;intestazione e le informazioni sul copyright nel piè di pagina, utilizzare le opzioni dell&#39;editor di moduli.

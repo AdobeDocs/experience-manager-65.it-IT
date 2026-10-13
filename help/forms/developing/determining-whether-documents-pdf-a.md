@@ -10,13 +10,29 @@ role: Developer
 exl-id: 096fd2ac-616f-484a-b093-9d98b2f87093
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2118'
 ht-degree: 3%
-
 ---
-
 # Determinazione se i documenti sono conformi PDF/A {#determining-whether-documents-are-pdf-a-compliant}
 
 È possibile determinare se un documento di PDF è conforme a PDF/A utilizzando il servizio Assembler. Un documento PDF/A esiste come formato di archiviazione destinato alla conservazione a lungo termine del contenuto del documento. I font vengono incorporati nel documento e il file non è compresso. Di conseguenza, un documento PDF/A è generalmente più grande di un documento PDF standard. Inoltre, un documento PDF/A non include contenuti audio e video.
@@ -143,8 +159,8 @@ Determinare se un documento PDF è conforme a PDF/A utilizzando l&#39;API del se
    * Creare un oggetto `java.util.Map` utilizzato per memorizzare il documento PDF di input utilizzando un costruttore `HashMap`.
    * Aggiungere una voce all&#39;oggetto `java.util.Map` richiamando il relativo metodo `put` e passando i seguenti argomenti:
 
-      * Valore stringa che rappresenta il nome della chiave. Questo valore deve corrispondere al valore dell&#39;elemento di origine specificato nel documento DDX. Ad esempio, il valore dell&#39;elemento di origine nel documento DDX introdotto in questa sezione è Loan.pdf.
-      * Oggetto `com.adobe.idp.Document` contenente il documento PDF di input.
+     * Valore stringa che rappresenta il nome della chiave. Questo valore deve corrispondere al valore dell&#39;elemento di origine specificato nel documento DDX. Ad esempio, il valore dell&#39;elemento di origine nel documento DDX introdotto in questa sezione è Loan.pdf.
+     * Oggetto `com.adobe.idp.Document` contenente il documento PDF di input.
 
 1. Impostare le opzioni di runtime.
 
@@ -197,10 +213,10 @@ Determinare se un documento di PDF è conforme a PDF/A utilizzando l&#39;API del
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegnare il nome utente di AEM Forms al campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
-      * Assegnare il valore della password corrispondente al campo `AssemblerServiceClient.ClientCredentials.UserName.Password`.
-      * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
+     * Assegnare il nome utente di AEM Forms al campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+     * Assegnare il valore della password corrispondente al campo `AssemblerServiceClient.ClientCredentials.UserName.Password`.
+     * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Fare riferimento a un documento DDX esistente.
 

@@ -9,13 +9,27 @@ exl-id: 1272e854-fa64-4bfd-b073-8fbcf210e9b5
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1773'
+source-wordcount: '1774'
 ht-degree: 4%
-
 ---
-
 # Guida introduttiva ai rapporti sui processi{#getting-started-with-process-reporting}
 
 La funzione di reporting sui processi consente agli utenti di AEM Forms di eseguire query sulle informazioni sui processi di AEM Forms attualmente definiti nell’implementazione di AEM Forms. Tuttavia, il reporting dei processi non accede ai dati direttamente dall’archivio di AEM Forms. I dati vengono pubblicati per la prima volta nel repository di Process Reporting in base a una pianificazione (*dal servizio ProcessDataPublisher e ProcessDataStorage* s). I report e le query in Process Reporting vengono quindi generati dai dati di Process Reporting pubblicati nel repository. Process Reporting viene installato come parte del modulo Forms Workflow.
@@ -44,7 +58,7 @@ I servizi di report dei processi pubblicano i dati dal database di AEM Forms all
 
 Questa operazione può richiedere molte risorse e può influire sulle prestazioni dei server AEM Forms. È consigliabile pianificare questa operazione all’esterno degli slot orari occupati del server AEM Forms.
 
-Per impostazione predefinita, la pubblicazione dei dati è pianificata per essere eseguita ogni giorno alle 2:00.
+Per impostazione predefinita, la pubblicazione dei dati viene pianificata per essere eseguita ogni giorno alle 02:00.
 
 Per modificare la pianificazione di pubblicazione, effettuare le seguenti operazioni:
 

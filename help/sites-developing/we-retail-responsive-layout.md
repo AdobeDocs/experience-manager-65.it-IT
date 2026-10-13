@@ -1,5 +1,5 @@
 ---
-title: Prova del layout dinamico in We.Retail
+title: Prova del layout responsive in We.Retail
 description: Scopri come provare il layout dinamico in Adobe Experience Manager utilizzando We.Retail.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,23 @@ exl-id: 6df5fb10-a7f1-4d5d-ac00-b4be3d5d3d18
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 9%
-
+source-wordcount: '261'
+ht-degree: 13%
 ---
-
-# Prova del layout dinamico in We.Retail{#trying-out-responsive-layout-in-we-retail}
+# Prova del layout responsive in We.Retail{#trying-out-responsive-layout-in-we-retail}
 
 Tutte le pagine We.Retail utilizzano il componente Contenitore di layout per implementare una progettazione reattiva. Il contenitore layout fornisce un sistema paragrafo che consente di posizionare i componenti all’interno di una griglia reattiva. Questa griglia può ridisporre il layout in base alle dimensioni e al formato del dispositivo o della finestra. Il componente viene utilizzato insieme alla modalità **Layout** nell&#39;editor pagina, che consente di creare e modificare il layout dinamico in base al dispositivo.
 

@@ -5,13 +5,26 @@ exl-id: d79107b9-dfa4-4e80-870e-0b7ea72f0bc7
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '283'
 ht-degree: 43%
-
 ---
-
 # Console Componenti{#components-console}
 
 La console Componenti consente di sfogliare tutti i componenti definiti per l’istanza e visualizzare le informazioni chiave di ciascun componente.
@@ -40,14 +53,14 @@ Per visualizzare i dettagli di un componente specifico, fai clic sulla risorsa r
 
   Nella scheda Proprietà puoi:
 
-   * Visualizzare le proprietà generali del componente.
-   * Visualizza come è stata definita l&#39;icona o l&#39;abbreviazione [&#128279;](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) per il componente.
+  * Visualizzare le proprietà generali del componente.
+  * Visualizza come è stata definita l&#39;icona o l&#39;abbreviazione [&#128279;](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) per il componente.
 
-      * Facendo clic sull’origine dell’icona si aprirà quel componente.
+    * Facendo clic sull’origine dell’icona si aprirà quel componente.
 
-   * Visualizzare il **Tipo risorsa** e il **Super Tipo risorsa** (se definito) per il componente.
+  * Visualizzare il **Tipo risorsa** e il **Super Tipo risorsa** (se definito) per il componente.
 
-      * Facendo clic sul Super Type della risorsa si aprirà quel componente.
+    * Facendo clic sul Super Type della risorsa si aprirà quel componente.
 
   >[!NOTE]
   >

@@ -9,13 +9,29 @@ feature: Asset Management,Renditions
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3434'
+source-wordcount: '3480'
 ht-degree: 2%
-
 ---
-
 # Imaging avanzato {#smart-imaging}
 
 La tecnologia Smart Imaging applica le esclusive caratteristiche di visualizzazione di ogni utente per fornire le immagini giuste ottimizzate automaticamente per la propria esperienza, con conseguente miglioramento delle prestazioni e del coinvolgimento.
@@ -244,29 +260,29 @@ Quando crei il caso di supporto, specifica le funzioni di Smart Imaging da attiv
 
    * **Dettagli contatto principale:**
 
-      * Immetti nome, e-mail e numero di telefono.
+     * Immetti nome, e-mail e numero di telefono.
 
    * **Funzionalità Smart Imaging da abilitare:**
 
-      * Elencare le funzionalità desiderate per l&#39;account:
+     * Elencare le funzionalità desiderate per l&#39;account:
 
-         * Conversione formato browser: WebP o AVIF
-         * Ottimizzazione della larghezza di banda di rete
-         * DPR: DPR richiede adeguamenti lato client per determinare il `dprValue` corretto. Pertanto, Adobe consiglia di abilitare il DPR tramite gli URL aggiungendo `dpr=on,dprValue`.
+       * Conversione formato browser: WebP o AVIF
+       * Ottimizzazione della larghezza di banda di rete
+       * DPR: DPR richiede adeguamenti lato client per determinare il `dprValue` corretto. Pertanto, Adobe consiglia di abilitare il DPR tramite gli URL aggiungendo `dpr=on,dprValue`.
 
    * **Dominio per Smart Imaging:**
 
-      * Elenca tutti i domini rilevanti, ad esempio *`company.com`* o *`mycompany.scene7.com`*
-      * Smart Imaging supporta domini sia generici che personalizzati.
-      * Per identificare i domini, apri l&#39;[applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/it/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started) e accedi al tuo account aziendale.
+     * Elenca tutti i domini rilevanti, ad esempio *`company.com`* o *`mycompany.scene7.com`*
+     * Smart Imaging supporta domini sia generici che personalizzati.
+     * Per identificare i domini, apri l&#39;[applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/it/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started) e accedi al tuo account aziendale.
 
-         1. Passa a **[!UICONTROL Configurazione]** > **[!UICONTROL Configurazione applicazione]** > **[!UICONTROL Impostazioni generali]**.
-         1. Cerca il campo **[!UICONTROL Nome server pubblicato]** per confermare il dominio.
-         1. Verifica di utilizzare la rete CDN di Adobe anziché una rete gestita da un altro provider.
+       1. Passa a **[!UICONTROL Configurazione]** > **[!UICONTROL Configurazione applicazione]** > **[!UICONTROL Impostazioni generali]**.
+       1. Cerca il campo **[!UICONTROL Nome server pubblicato]** per confermare il dominio.
+       1. Verifica di utilizzare la rete CDN di Adobe anziché una rete gestita da un altro provider.
 
    * **Indicare il supporto HTTP/2:**
 
-      * Specifica se è necessario Smart Imaging per funzionare su HTTP/2.
+     * Specifica se è necessario Smart Imaging per funzionare su HTTP/2.
 
 1. L’Assistenza clienti di Adobe abilita le funzioni di Smart Imaging richieste per impostazione predefinita, eliminando la necessità di aggiungere manualmente i parametri agli URL.
 1. Adobe consiglia di impostare il valore TTL (Time To Live) su almeno 24 ore per massimizzare le prestazioni tramite la memorizzazione in cache.
@@ -338,9 +354,10 @@ Questa intestazione indica quanto segue:
 >
 >**X-Adobe-Smart-Imaging = -1 con WebP consegnato**
 >
->Se il valore di `X-Adobe-Smart-Imaging` è -1 e WebP è ancora in fase di distribuzione, Smart Imaging è attivo. Tuttavia, i vantaggi in termini di dimensioni non sono stati calcolati a causa di una cache obsoleta. Per risolvere il problema, puoi utilizzare `cache=update` (una sola volta) nell&#39;URL dell&#39;immagine.
+>Se il valore di `X-Adobe-Smart-Imaging` è -1 e WebP è ancora in fase di distribuzione, Smart Imaging è attivo. Tuttavia, i vantaggi in termini di dimensioni non sono stati calcolati a causa di una cache obsoleta. Per risolvere il problema, è possibile utilizzare `cache=update` (una sola volta) nell&#39;URL dell&#39;immagine.
 >Esempio di utilizzo del modificatore:
->`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`>Per invalidare l&#39;intera cache, è necessario creare un caso di supporto.
+>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
+>Per invalidare l’intera cache, è necessario creare un caso di supporto.
 
 +++
 

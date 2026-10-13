@@ -10,13 +10,20 @@ role: Admin
 exl-id: 426e3adf-3723-4d17-a988-6eb050939e68
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2963'
-ht-degree: 1%
-
+source-wordcount: '3201'
+ht-degree: 0%
 ---
-
 # Console Siti community {#communities-sites-console}
 
 La console Siti di Communities consente di accedere a:
@@ -103,12 +110,12 @@ Nel pannello Modello di sito vengono specificati il titolo, la descrizione, la d
 
   Nome della pagina principale del sito visualizzato nell&#39;URL.
 
-   * Ricontrolla il nome poiché non è più facile modificarlo dopo la creazione del sito.
-   * L&#39;URL di base ( `https://server:port/site root/site name)` è visualizzato sotto `Community Site Name`.
+  * Ricontrolla il nome poiché non è più facile modificarlo dopo la creazione del sito.
+  * L&#39;URL di base ( `https://server:port/site root/site name)` è visualizzato sotto `Community Site Name`.
 
-   * Per un URL valido, aggiungi un codice della lingua di base + &quot;.html&quot;
+  * Per un URL valido, aggiungi un codice della lingua di base + &quot;.html&quot;
 
-     *Esempio*, `https://localhost:4502/content/sites/mysight/en.html`
+    *Esempio*, `https://localhost:4502/content/sites/mysight/en.html`
 
 * Menu **Modello per sito community**
 
@@ -144,8 +151,8 @@ Quando crei o selezioni un’immagine, tieni presente quanto segue:
 * L&#39;immagine viene fissata al bordo sinistro della finestra del browser.
 * Non esiste alcun ridimensionamento dell’immagine, tale che quando la larghezza dell’immagine è...
 
-   * Inferiore alla larghezza del browser, l’immagine si ripete orizzontalmente.
-   * Maggiore della larghezza del browser, l’immagine sembra essere ritagliata.
+  * Inferiore alla larghezza del browser, l’immagine si ripete orizzontalmente.
+  * Maggiore della larghezza del browser, l’immagine sembra essere ritagliata.
 
 * Seleziona **Avanti**.
 
@@ -179,32 +186,32 @@ Il pannello Impostazioni contiene diversi pannelli secondari che presentano le f
 * **Consenti registrazione utente**
 
   Se questa opzione è selezionata, i visitatori del sito possono diventare membri della community tramite la registrazione autonoma.
-Se questa opzione è deselezionata, il sito community è *limitato* e i visitatori del sito devono essere assegnati al gruppo di membri della community, inoltrare una richiesta o ricevere un invito tramite e-mail. Se questa opzione è deselezionata, l’accesso anonimo non deve essere consentito.
-Deselezionare la casella di controllo per un sito community *private*. Il valore predefinito è selezionato.
+  Se questa opzione è deselezionata, il sito community è *limitato* e i visitatori del sito devono essere assegnati al gruppo di membri della community, inoltrare una richiesta o ricevere un invito tramite e-mail. Se questa opzione è deselezionata, l’accesso anonimo non deve essere consentito.
+  Deselezionare la casella di controllo per un sito community *private*. Il valore predefinito è selezionato.
 
 * **Consenti accesso anonimo**
 
   Se questa opzione è selezionata, il sito della community è *aperto* e qualsiasi visitatore del sito può accedervi.
-Se non è selezionata, solo i membri con accesso possono accedere al sito.
-Deselezionare la casella di controllo per un sito community *private*. Il valore predefinito è selezionato.
+  Se non è selezionata, solo i membri con accesso possono accedere al sito.
+  Deselezionare la casella di controllo per un sito community *private*. Il valore predefinito è selezionato.
 
 * **Consenti messaggi**
 
   Se questa opzione è selezionata, i membri possono inviare messaggi l&#39;uno all&#39;altro e al gruppo all&#39;interno del sito community.
-Se questa opzione è deselezionata, la messaggistica non viene impostata per la community.
-L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è deselezionata, la messaggistica non viene impostata per la community.
+  L&#39;impostazione predefinita è deselezionata.
 
 * **Consenti accesso social network: Facebook**
 
   Se questa opzione è selezionata, consenti ai visitatori del sito di accedere con le credenziali del proprio account Facebook. La [configurazione cloud Facebook](/help/communities/social-login.md#create-a-facebook-connect-cloud-service) selezionata deve essere configurata per aggiungere utenti al gruppo membri del sito community dopo la creazione del sito community.
-Se questa opzione è deselezionata, non viene visualizzato alcun accesso a Facebook.
-Lascia deselezionata l&#39;opzione per un sito community *private*. L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è deselezionata, non viene visualizzato alcun accesso a Facebook.
+  Lascia deselezionata l&#39;opzione per un sito community *private*. L&#39;impostazione predefinita è deselezionata.
 
 * **Consenti accesso social network: Twitter**
 
   Se questa opzione è selezionata, consenti ai visitatori del sito di accedere con le credenziali del proprio account Twitter. La [configurazione cloud Twitter](/help/communities/social-login.md#create-a-twitter-connect-cloud-service) selezionata deve essere configurata per aggiungere utenti al gruppo membri del sito community dopo la creazione del sito community.
-Se questa opzione è deselezionata, non viene visualizzato alcun accesso a Twitter.
-Lascia deselezionata l&#39;opzione per un sito community *private*. L&#39;impostazione predefinita è deselezionata.
+  Se questa opzione è deselezionata, non viene visualizzato alcun accesso a Twitter.
+  Lascia deselezionata l&#39;opzione per un sito community *private*. L&#39;impostazione predefinita è deselezionata.
 
 >[!NOTE]
 >
@@ -267,7 +274,7 @@ L&#39;impostazione globale per la moderazione dei contenuti generati dagli utent
 * **Abilita analisi**
 
   Disponibile solo se Adobe Analytics è stato [configurato](/help/communities/analytics.md) per le funzionalità di Communities.
-L&#39;impostazione predefinita è deselezionata. Se questa opzione è selezionata, viene visualizzato un menu di selezione aggiuntivo:
+  L&#39;impostazione predefinita è deselezionata. Se questa opzione è selezionata, viene visualizzato un menu di selezione aggiuntivo:
 
 ![site-analytics-enable](assets/site-analytics-enable.png)
 
@@ -304,39 +311,39 @@ L&#39;impostazione predefinita è deselezionata. Se questa opzione è selezionat
 
 * **Selezionare le opzioni di traduzione per il sito community**
 
-   * **Traduci intera pagina**
+  * **Traduci intera pagina**
 
-     Se questa opzione è selezionata, tutti i contenuti UGC di una pagina vengono tradotti nella lingua di base della pagina.
+    Se questa opzione è selezionata, tutti i contenuti UGC di una pagina vengono tradotti nella lingua di base della pagina.
 
-     Il valore predefinito è *non selezionato*.
+    Il valore predefinito è *non selezionato*.
 
-   * **Traduci solo selezione**
+  * **Traduci solo selezione**
 
-     Se selezionata, accanto a ciascun post viene visualizzata un&#39;opzione di traduzione che consente la traduzione dei singoli post nella lingua di base della pagina.
-Il valore predefinito è *selected*.
+    Se selezionata, accanto a ciascun post viene visualizzata un&#39;opzione di traduzione che consente la traduzione dei singoli post nella lingua di base della pagina.
+    Il valore predefinito è *selected*.
 
 * **Seleziona opzioni di persistenza**
 
-   * **Traduci contributi su richiesta dell&#39;utente e in seguito mantieni le traduzioni**
-Se selezionato, il contenuto non viene tradotto fino a quando non viene effettuata una richiesta. Una volta tradotta, la traduzione viene memorizzata nell’archivio.
+  * **Traduci contributi su richiesta dell&#39;utente e in seguito mantieni le traduzioni**
+    Se selezionato, il contenuto non viene tradotto fino a quando non viene effettuata una richiesta. Una volta tradotta, la traduzione viene memorizzata nell’archivio.
 
-     Il valore predefinito è *non selezionato*.
+    Il valore predefinito è *non selezionato*.
 
-   * **Non mantenere le traduzioni**
+  * **Non mantenere le traduzioni**
 
-     Se questa opzione è selezionata, le traduzioni non vengono memorizzate nell’archivio.
+    Se questa opzione è selezionata, le traduzioni non vengono memorizzate nell’archivio.
 
-     Se non è selezionata, le traduzioni vengono rese permanenti.
+    Se non è selezionata, le traduzioni vengono rese permanenti.
 
-     Il valore predefinito è *non selezionato*.
+    Il valore predefinito è *non selezionato*.
 
 * **Rendering avanzato**
 
   Seleziona una delle seguenti opzioni:
 
-   * `Always show contributions in the original language` (impostazione predefinita)
-   * `Always show contributions in user preferred language`
-   * `Show contributions in user preferred language for only logged-in users`
+  * `Always show contributions in the original language` (impostazione predefinita)
+  * `Always show contributions in user preferred language`
+  * `Show contributions in user preferred language for only logged-in users`
 
 ### Passaggio 4: creare il sito community {#step-create-communities-site}
 
@@ -409,17 +416,17 @@ Il pannello STRUTTURA consente di modificare la struttura creata inizialmente da
 * Trascinare altre [funzioni community](/help/communities/functions.md) nella struttura del sito.
 * In un’istanza di una funzione community nella struttura del sito:
 
-   * **`gear icon`**
+  * **`gear icon`**
 
-     Modificare le impostazioni, inclusi il titolo visualizzato e il nome URL, e [gruppi di membri con privilegi](/help/communities/users.md#privilegedmembersgroups).
+    Modificare le impostazioni, inclusi il titolo visualizzato e il nome URL, e [gruppi di membri con privilegi](/help/communities/users.md#privilegedmembersgroups).
 
-   * **`trashcan icon`**
+  * **`trashcan icon`**
 
-     Rimuovere (eliminare) le funzioni dalla struttura del sito.
+    Rimuovere (eliminare) le funzioni dalla struttura del sito.
 
-   * **`grid icon`**
+  * **`grid icon`**
 
-     Consente di modificare l&#39;ordine delle funzioni visualizzato nella barra di spostamento di primo livello del sito.
+    Consente di modificare l&#39;ordine delle funzioni visualizzato nella barra di spostamento di primo livello del sito.
 
 >[!NOTE]
 >
@@ -448,7 +455,7 @@ Il pannello PROGETTAZIONE consente di applicare un nuovo tema:
 * [Tema per sito community](#community-site-theme)
 * [Marchio per sito community](#community-site-branding)
 
-   * Scorri fino alla parte inferiore del pannello per modificare l’immagine del brand.
+  * Scorri fino alla parte inferiore del pannello per modificare l’immagine del brand.
 
 ### Modifica impostazioni {#modify-settings}
 
@@ -510,7 +517,7 @@ Per ulteriori dettagli, vedere [Gestione di utenti e gruppi di utenti](/help/com
 
 >[!NOTE]
 >
->Se [Consenti accesso social network: Facebook](#user-management) è abilitato, dopo il gruppo di utenti `community-<site-name>-<uid>-members`
+>Se [Consenti accesso social network: Facebook](#user-management) è abilitato, una volta che il gruppo utenti `community-<site-name>-<uid>-members`
 >è stato creato, il [servizio cloud Facebook](/help/communities/social-login.md#createafacebookcloudservice) applicato deve essere configurato per aggiungere utenti a questo gruppo.
 
 ## Errore di configurazione per l’autenticazione {#configure-for-authentication-error}
@@ -523,7 +530,7 @@ Per reindirizzare correttamente, una volta configurato il sito e inviato per la 
 * Accedi con privilegi di amministratore.
 * Accedi alla [console Web](/help/sites-deploying/configuring-osgi.md).
 
-   * Ad esempio, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
+  * Ad esempio, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
 
 * Individuare `Adobe Granite Login Selector Authentication Handler`.
 * Seleziona l&#39;icona `pencil` per aprire la configurazione per la modifica.
@@ -544,7 +551,7 @@ Nella stessa istanza di pubblicazione di AEM configurata con una mappatura della
 
 * Passare alla home page del sito community.
 
-   * Ad esempio, [https://localhost:4503/content/sites/engage/en.html](https://localhost:4503/content/sites/engage/en.html)
+  * Ad esempio, [https://localhost:4503/content/sites/engage/en.html](https://localhost:4503/content/sites/engage/en.html)
 
 * Selezionare Disconnetti.
 * Seleziona Accedi.

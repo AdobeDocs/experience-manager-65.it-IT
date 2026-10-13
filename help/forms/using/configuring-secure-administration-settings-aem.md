@@ -1,5 +1,5 @@
 ---
-title: Configurazione delle impostazioni di amministrazione protetta per AEM Forms su JEE
+title: Configurazione delle impostazioni di amministrazione sciura per AEM Forms su JEE
 description: Scopri come amministrare account utente e servizi che, sebbene richiesti in un ambiente di sviluppo privato, non sono necessari in un ambiente di produzione di AEM Forms su JEE.
 content-type: reference
 topic-tags: Security
@@ -8,14 +8,30 @@ role: Admin,User
 exl-id: 40bc01b4-a59e-4420-81d6-2887857bddce
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 0%
-
+source-wordcount: '852'
+ht-degree: 2%
 ---
-
-# Configurazione delle impostazioni di amministrazione protetta per AEM Forms su JEE {#configuring-secure-administration-settings-for-aem-forms-on-jee}
+# Configurazione delle impostazioni di amministrazione sciura per AEM Forms su JEE {#configuring-secure-administration-settings-for-aem-forms-on-jee}
 
 Scopri come amministrare account utente e servizi che, sebbene richiesti in un ambiente di sviluppo privato, non sono necessari in un ambiente di produzione di AEM Forms su JEE.
 
@@ -25,11 +41,11 @@ Questo articolo descrive i metodi per ridurre la superficie di attacco complessi
 
 ## Disattivazione dell&#39;accesso remoto non essenziale ai servizi {#disabling-non-essential-remote-access-to-services}
 
-Dopo l’installazione e la configurazione di AEM Forms su JEE, molti servizi sono disponibili per la chiamata remota tramite SOAP e Enterprise JavaBeans™ (EJB). Il termine remoto, in questo caso, si riferisce a qualsiasi chiamante che dispone di accesso di rete alle porte SOAP, EJB o Action Message Format (AMF) per il server applicazioni.
+Dopo l’installazione e la configurazione di AEM Forms su JEE, molti servizi sono disponibili per la chiamata remota tramite SOAP e Enterprise JavaBeans™ (EJB). Il termine remoto, in questo caso, si riferisce a qualsiasi chiamante con accesso di rete alle porte SOAP, EJB o Action Message Format (AMF) per il server applicazioni.
 
 Sebbene i servizi AEM Forms su JEE richiedano il passaggio di credenziali valide per un chiamante autorizzato, è necessario consentire solo l’accesso remoto ai servizi che devono essere accessibili in remoto. Per ottenere un&#39;accessibilità limitata, è necessario ridurre al minimo l&#39;insieme di servizi accessibili in remoto per un sistema funzionante e quindi abilitare la chiamata remota per i servizi aggiuntivi necessari.
 
-I servizi AEM Forms su JEE richiedono sempre almeno l’accesso SOAP. Questi servizi sono in genere necessari per l’utilizzo da Workbench, ma includono anche i servizi richiamati dall’applicazione web Workspace.
+I servizi AEM Forms su JEE richiedono sempre almeno l’accesso a SOAP. Questi servizi sono in genere necessari per l’utilizzo da Workbench, ma includono anche i servizi richiamati dall’applicazione web Workspace.
 
 Eseguire questa procedura utilizzando la pagina Web Applicazioni e servizi di Administration Console:
 
@@ -46,7 +62,7 @@ Eseguire questa procedura utilizzando la pagina Web Applicazioni e servizi di Ad
 1. Per disattivare tutti gli endpoint EJB, selezionare la casella di controllo accanto a ciascuno degli endpoint nell&#39;elenco e fare clic su **Disattiva**.
 1. Fai clic su **Avanti** e ripeti il passaggio precedente per tutti gli endpoint EJB. Prima di disabilitare gli endpoint, accertati che l’EJB sia elencato nella colonna Provider.
 1. Selezionare **SOAP** dall&#39;elenco **Provider**, quindi fare clic su **Filtro**.
-1. Per rimuovere gli endpoint SOAP, selezionare la casella di controllo accanto a ciascuno degli endpoint nell&#39;elenco e fare clic su **Rimuovi**. Non rimuovere i seguenti endpoint:
+1. Per rimuovere gli endpoint di SOAP, selezionare la casella di controllo accanto a ciascuno degli endpoint nell&#39;elenco e fare clic su **Rimuovi**. Non rimuovere i seguenti endpoint:
 
    * AuthenticationManagerService
    * DirectoryManagerService
@@ -62,7 +78,7 @@ Eseguire questa procedura utilizzando la pagina Web Applicazioni e servizi di Ad
    * WorkspaceSingleSignOn
    * ApplicationManager
 
-1. Fai clic su **Avanti** e ripeti il passaggio precedente per gli endpoint SOAP non inclusi nell&#39;elenco precedente. Prima di rimuovere gli endpoint, accertati che SOAP sia elencato nella colonna Provider.
+1. Fai clic su **Avanti** e ripeti il passaggio precedente per gli endpoint di SOAP che non sono nell&#39;elenco precedente. Prima di rimuovere gli endpoint, verificare che SOAP sia elencato nella colonna Provider.
 
 ## Disabilitazione dell’accesso anonimo non essenziale ai servizi {#disabling-non-essential-anonymous-access-to-services}
 

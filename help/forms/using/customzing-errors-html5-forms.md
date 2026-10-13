@@ -1,24 +1,39 @@
 ---
 title: Personalizzazione dei messaggi di errore per i moduli HTML5
-description: Scopri come personalizzare la visualizzazione dei messaggi di errore per i moduli HTML5, incluso come modificarne la posizione e l’aspetto.
+description: Scopri come personalizzare la visualizzazione dei messaggi di errore per i moduli HTML5 e come modificarne posizione e aspetto.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 feature: HTML5 Forms,Mobile Forms
 exl-id: c4ae53a3-8de1-4985-a73e-829749de9814
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '497'
-ht-degree: 0%
-
+source-wordcount: '508'
+ht-degree: 6%
 ---
-
 # Personalizzazione dei messaggi di errore per i moduli HTML5 {#customizing-error-messages-for-html-forms}
 
-Nei moduli di HTML5, i messaggi di errore e gli avvisi hanno una posizione e un aspetto fissi (carattere e colore), l’errore viene visualizzato solo per un campo selezionato e solo un errore.
+Nei moduli di HTML5, i messaggi di errore e gli avvisi hanno una posizione e un aspetto fissi (carattere e colore), l&#39;errore viene visualizzato solo per un campo selezionato e solo un errore.
 
-L’articolo descrive i passaggi per personalizzare i messaggi di errore di HTML5 Forms in modo da poter effettuare le seguenti operazioni:
+L&#39;articolo descrive i passaggi necessari per personalizzare i messaggi di errore di HTML5 Forms in modo da poter eseguire le operazioni seguenti:
 
 * modificare l&#39;aspetto e la posizione dei messaggi di errore. Puoi fare in modo che l’errore venga visualizzato nella parte superiore, inferiore e destra di qualsiasi campo.
 * visualizza messaggi di errore per più campi in un dato momento.
@@ -30,7 +45,7 @@ Prima di personalizzare i messaggi di errore, scarica ed estrai il pacchetto ass
 
 Dopo aver estratto il pacchetto, apri la cartella CustomErrorManager-1.0-SNAPSHOT. Contiene le cartelle jcr_root e META-INF. Queste cartelle contengono i file CSS e JS necessari per personalizzare il messaggio di errore.
 
-[Ottieni file](assets/customerrormanager-1.0-snapshot.zip)
+[Ottieni il file](assets/customerrormanager-1.0-snapshot.zip)
 
 ### Personalizzazione della posizione dei messaggi di errore  {#customizing-the-position-of-error-messages-nbsp}
 

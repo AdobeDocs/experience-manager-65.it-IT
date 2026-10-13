@@ -10,13 +10,22 @@ exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1812'
+source-wordcount: '1824'
 ht-degree: 1%
-
 ---
-
 # Frammenti di esperienza {#experience-fragments}
 
 ## Nozioni di base {#the-basics}
@@ -64,11 +73,11 @@ Il selettore di rendering semplice utilizza un trasformatore invece di script ag
 Il rendering di HTML viene generato utilizzando le pipeline del rewriter di Sling. La pipeline è definita in `/libs/experience-fragments/config/rewriter/experiencefragments`. HTML Transformer supporta le seguenti opzioni:
 
 * `allowedCssClasses`
-   * Un’espressione RegEx che corrisponde alle classi CSS che devono essere lasciate nella rappresentazione finale.
-   * Questa funzione è utile se il cliente desidera eliminare alcune classi CSS specifiche
+  * Un’espressione RegEx che corrisponde alle classi CSS che devono essere lasciate nella rappresentazione finale.
+  * Questa funzione è utile se il cliente desidera eliminare alcune classi CSS specifiche
 * `allowedTags`
-   * Elenco di tag HTML consentiti nella rappresentazione finale.
-   * Per impostazione predefinita sono consentiti i seguenti tag (non è necessaria alcuna configurazione): html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link e script
+  * Elenco di tag HTML consentiti nella rappresentazione finale.
+  * Per impostazione predefinita sono consentiti i seguenti tag (non è necessaria alcuna configurazione): html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link e script
 
 Si consiglia di configurare il rewriter utilizzando una sovrapposizione. Vedi [Sovrapposizioni](/help/sites-developing/overlays.md)
 
@@ -86,12 +95,12 @@ A questo scopo, è necessario utilizzare le seguenti proprietà:
 
 * Per estrarre l&#39;immagine
 
-   * `fileReference`
-   * `fileName`
+  * `fileReference`
+  * `fileName`
 
 * Per estrarre il testo
 
-   * `text`
+  * `text`
 
 I componenti che non utilizzano questa convenzione non vengono presi in considerazione.
 
@@ -114,7 +123,7 @@ Per creare un modello di frammento esperienza rilevato dalla procedura guidata *
 
    1. Il nome del modello deve iniziare con:
       `experience-fragments`
-Ciò consente agli utenti di creare frammenti di esperienza in /content/experience-fragments, in quanto la proprietà `cq:allowedTemplates` di questa cartella include tutti i modelli i cui nomi iniziano con `experience-fragment`. I clienti possono aggiornare questa proprietà per includere il proprio schema di denominazione o le posizioni dei modelli.
+      Ciò consente agli utenti di creare frammenti di esperienza in /content/experience-fragments, in quanto la proprietà `cq:allowedTemplates` di questa cartella include tutti i modelli i cui nomi iniziano con `experience-fragment`. I clienti possono aggiornare questa proprietà per includere il proprio schema di denominazione o le posizioni dei modelli.
 
 1. È possibile configurare [Modelli consentiti](/help/sites-authoring/experience-fragments.md#configure-allowed-templates-folder) nella console Frammenti esperienza.
 <!--
@@ -257,7 +266,7 @@ Affinché il servizio funzioni, è ora necessario implementare tre metodi all’
 * ` [shouldRewrite](#shouldrewrite)`
 * ` [rewriteLink](#rewritelink)`
 
-   * `rewriteLinkExample2`
+  * `rewriteLinkExample2`
 
 * ` [getPriority](#priorities-getpriority)`
 

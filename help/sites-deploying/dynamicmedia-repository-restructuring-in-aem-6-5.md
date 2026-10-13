@@ -1,6 +1,6 @@
 ---
-title: Ristrutturazione dell’archivio Dynamic Medie in Adobe Experience Manager 6.5
-description: Scopri come apportare le modifiche necessarie per migrare alla nuova struttura dell’archivio nell’Experience Manager 6.5 per Dynamic Medie.
+title: Ristrutturazione dell’archivio Dynamic Media in Adobe Experience Manager 6.5
+description: Scopri come apportare le modifiche necessarie per migrare alla nuova struttura dell’archivio in Experience Manager 6.5 per Dynamic Media.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
@@ -8,23 +8,32 @@ feature: Upgrading
 exl-id: 4e736924-74ea-431a-be19-1c4ff022f464
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '413'
 ht-degree: 3%
-
 ---
+# Ristrutturazione dell’archivio Dynamic Media in Adobe Experience Manager 6.5 {#dynamic-media-repository-restructuring-in-aem}
 
-# Ristrutturazione dell’archivio Dynamic Medie in Adobe Experience Manager 6.5 {#dynamic-media-repository-restructuring-in-aem}
-
-Come descritto nella pagina [Ristrutturazione dell&#39;archivio padre in Adobe Experience Manager 6.5](/help/sites-deploying/repository-restructuring.md), i clienti che eseguono l&#39;aggiornamento all&#39;Experience Manager 6.5 devono utilizzare questa pagina per valutare l&#39;impegno di lavoro associato alle modifiche dell&#39;archivio che influiscono su Dynamic Medie. Alcune modifiche richiedono un impegno di lavoro durante il processo di aggiornamento di Experience Manager 6.5, mentre altre possono essere differite fino a un aggiornamento futuro.
+Come descritto nella pagina [Ristrutturazione dell’archivio padre in Adobe Experience Manager 6.5](/help/sites-deploying/repository-restructuring.md), i clienti che eseguono l’aggiornamento ad Experience Manager 6.5 devono utilizzare questa pagina per valutare l’impegno di lavoro associato alle modifiche dell’archivio che influiscono su Dynamic Media. Alcune modifiche richiedono un impegno di lavoro durante il processo di aggiornamento di Experience Manager 6.5, mentre altre possono essere differite fino a un aggiornamento futuro.
 
 **Prima dell&#39;aggiornamento futuro**
 
 * [Configurazioni di codifica video adattiva personalizzate](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#custom-adaptive-video-encoding-configurations)
-* [Configurazione cloud Dynamic Medie (DMS7)](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#dynamic-media-dms-cloud-configuration)
-* [Configurazione Cloud Service Dynamic Medie (DM ibrido)](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#cloudserviceconfiguration)
-* [Dynamic Medie - Configurazione Cloud Service YouTube](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#youtubecloudserviceconfiguration)
+* [Configurazione cloud Dynamic Media (DMS7)](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#dynamic-media-dms-cloud-configuration)
+* [Configurazione Cloud Service Dynamic Media (DM ibrido)](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#cloudserviceconfiguration)
+* [Dynamic Media - Configurazione Cloud Service di YouTube](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#youtubecloudserviceconfiguration)
 * [Varie](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#misc)
 
 ## Prima dell’aggiornamento futuro {#prior-to-upgrade}
@@ -52,7 +61,7 @@ Come descritto nella pagina [Ristrutturazione dell&#39;archivio padre in Adobe E
  </tbody>
 </table>
 
-### Configurazione cloud Dynamic Medie (DMS7) {#dynamic-media-dms-cloud-configuration}
+### Configurazione cloud Dynamic Media (DMS7) {#dynamic-media-dms-cloud-configuration}
 
 <table>
  <tbody>
@@ -69,7 +78,7 @@ Come descritto nella pagina [Ristrutturazione dell&#39;archivio padre in Adobe E
    <td><p>Il cliente può eseguire uno script di migrazione in questa posizione:<br /> </p>
     <ul>
      <li><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li>
-     <li>Riavvia il bundle OSGi di Dynamic Medie.</li>
+     <li>Riavvia il bundle OSGi Dynamic Media.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -79,7 +88,7 @@ Come descritto nella pagina [Ristrutturazione dell&#39;archivio padre in Adobe E
  </tbody>
 </table>
 
-### Configurazione Cloud Service Dynamic Medie (DM ibrido) {#cloudserviceconfiguration}
+### Configurazione Cloud Service Dynamic Media (DM ibrido) {#cloudserviceconfiguration}
 
 <table>
  <tbody>
@@ -102,7 +111,7 @@ Come descritto nella pagina [Ristrutturazione dell&#39;archivio padre in Adobe E
  </tbody>
 </table>
 
-### Dynamic Medie - Configurazione del Cloud Service YouTube  {#youtubecloudserviceconfiguration}
+### Dynamic Media: configurazione di YouTube Cloud Service  {#youtubecloudserviceconfiguration}
 
 <table>
  <tbody>
@@ -116,7 +125,7 @@ Come descritto nella pagina [Ristrutturazione dell&#39;archivio padre in Adobe E
   </tr>
   <tr>
    <td><strong>Orientamenti per la ristrutturazione</strong></td>
-   <td><p>1. Annulla la pubblicazione di tutti i video da YouTube<br /> 2. Creare la configurazione di YouTube utilizzando la nuova interfaccia utente touch (da <code>/conf</code>), inclusa la copia di tutti i canali dalla vecchia posizione<br /> 3. Torna ad YouTube per tutti i video di Publish.</p> <p>Questo flusso di lavoro genera nuovi URL YouTube. Se non annulli la pubblicazione prima di creare una configurazione YouTube dell’interfaccia utente touch, vengono elencati più URL di YouTube in Proprietà, perché i canali ricreati vengono pubblicati nuovamente, se ne hai la possibilità. Questa funzionalità indica che hai URL inutili elencati in Proprietà.</p> </td>
+   <td><p>1. Annulla la pubblicazione di tutti i video da YouTube<br /> 2. Creare la configurazione di YouTube utilizzando la nuova interfaccia utente touch (da <code>/conf</code>), inclusa la copia di tutti i canali dalla vecchia posizione<br /> 3. Pubblica tutti i video su YouTube.</p> <p>Questo flusso di lavoro genera nuovi URL YouTube. Se non annulli la pubblicazione prima di creare una configurazione YouTube dell’interfaccia utente touch, vengono elencati più URL di YouTube in Proprietà, perché i canali ricreati vengono pubblicati nuovamente, se ne hai la possibilità. Questa funzionalità indica che hai URL inutili elencati in Proprietà.</p> </td>
   </tr>
   <tr>
    <td><strong>Note</strong></td>

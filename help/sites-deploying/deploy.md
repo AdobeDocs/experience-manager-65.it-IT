@@ -10,33 +10,45 @@ exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 36cb540cda7faeca5949028c9c14ab2ecf860402
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1779'
-ht-degree: 7%
-
+source-wordcount: '1853'
+ht-degree: 9%
 ---
-
 # Distribuzione e manutenzione{#deploying-and-maintaining}
 
 In questa pagina trovi:
 
 * [Concetti di base](#basic-concepts)
 
-   * [Cos’è AEM?](#what-is-aem)
-   * [Distribuzioni tipiche](#typical-deployment-scenarios)
+  * [Cos’è AEM?](#what-is-aem)
+  * [Distribuzioni tipiche](#typical-deployment-scenarios)
 
-      * [On-premise](#on-premise)
-      * [Managed Services con Cloud Manager](#managed-services-using-cloud-manager)
+    * [On-premise](#on-premise)
+    * [Managed Services con Cloud Manager](#managed-services-using-cloud-manager)
 
 * [Guida introduttiva](#getting-started)
 
-   * [Prerequisiti](#prerequisites)
-   * [Recupero del software](#getting-the-software)
-   * [Installazione locale predefinita](#default-local-install)
-   * [Installazioni di authoring e pubblicazione](#author-and-publish-installs)
-   * [Directory di installazione decompressa](#unpacked-install-directory)
-   * [Avvio e arresto](#starting-and-stopping)
+  * [Prerequisiti](#prerequisites)
+  * [Recupero del software](#getting-the-software)
+  * [Installazione locale predefinita](#default-local-install)
+  * [Installazioni di authoring e pubblicazione](#author-and-publish-installs)
+  * [Directory di installazione decompressa](#unpacked-install-directory)
+  * [Avvio e arresto](#starting-and-stopping)
 
 Dopo aver acquisito familiarità con queste nozioni di base, puoi trovare informazioni più avanzate e dettagliate nelle seguenti sottopagine:
 
@@ -57,7 +69,7 @@ Dopo aver acquisito familiarità con queste nozioni di base, puoi trovare inform
 * [Introduzione alla piattaforma AEM](/help/sites-deploying/platform.md)
 * [Linee guida sulle prestazioni](/help/sites-deploying/performance-guidelines.md)
 * [Guida introduttiva ad AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
-* [Cos&#39;è AEM Screens?](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=it)
+* [Cos’è AEM Screens?](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=it)
 
 ## Concetti di base {#basic-concepts}
 
@@ -140,7 +152,7 @@ Mentre le istanze di produzione vengono eseguite su computer dedicati che eseguo
 
 A scopo di familiarizzazione e per lo sviluppo su AEM, è comune utilizzare un’istanza installata sul computer locale con Apple OS X o versioni desktop di Microsoft® Windows o Linux®.
 
-Sul lato client, AEM funziona con tutti i browser moderni (**Microsoft® Edge**, **Internet Explorer** 11, **Chrome &#x200B;** 51+**&#x200B; **, **Firefox &#x200B;** 47+, **Safari** 8+) sia sui sistemi operativi desktop che su quelli tablet. Per informazioni dettagliate, consulta [Piattaforme client supportate](/help/sites-deploying/technical-requirements.md#supported-client-platforms).
+Sul lato client, AEM funziona con tutti i browser moderni (**Microsoft® Edge**, **Internet Explorer** 11, **Chrome** 51+**&#x200B;**, **Firefox &#x200B;** 47+, **Safari** 8+) sia sui sistemi operativi desktop che su quelli tablet. Per informazioni dettagliate, consulta [Piattaforme client supportate](/help/sites-deploying/technical-requirements.md#supported-client-platforms).
 
 ### Recupero del software {#getting-the-software}
 
@@ -312,4 +324,4 @@ La sezione precedente consente di comprendere le nozioni di base sull’installa
 * [Introduzione alla piattaforma AEM](/help/sites-deploying/platform.md)
 * [Linee guida sulle prestazioni](/help/sites-deploying/performance-guidelines.md)
 * [Guida introduttiva ad AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
-* [Cos&#39;è AEM Screens?](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=it)
+* [Cos’è AEM Screens?](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=it)

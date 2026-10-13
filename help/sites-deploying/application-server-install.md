@@ -9,13 +9,25 @@ exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1186'
 ht-degree: 0%
-
 ---
-
 # Installazione server applicazioni{#application-server-install}
 
 >[!NOTE]
@@ -103,7 +115,7 @@ Prima di una distribuzione, leggere la [Descrizione generale](#general-descripti
 
 * Consenti alle intestazioni di autenticazione di base di passare:
 
-   * Un modo per consentire ad AEM di autenticare un utente consiste nel disabilitare la sicurezza amministrativa globale del server WebSphere®. A tale scopo, passare a Sicurezza > Sicurezza globale e deselezionare la casella di controllo Abilita sicurezza amministrativa, salvare e riavviare il server.
+  * Un modo per consentire ad AEM di autenticare un utente consiste nel disabilitare la sicurezza amministrativa globale del server WebSphere®. A tale scopo, passare a Sicurezza > Sicurezza globale e deselezionare la casella di controllo Abilita sicurezza amministrativa, salvare e riavviare il server.
 
 * imposta `"JAVA_OPTS= -Xmx2048m"`
 * Se desideri installare AEM utilizzando context root = /, modifica la directory principale di contesto dell’applicazione web predefinita esistente.
@@ -113,14 +125,14 @@ Prima di una distribuzione, leggere la [Descrizione generale](#general-descripti
 * Scarica il file .war di AEM
 * Configurare le configurazioni in web.xml se necessario (vedi sopra nella Descrizione generale)
 
-   * Decomprimi file WEB-INF/web.xml
-   * cambiare il parametro sling.run.modes in publish
-   * rimuovi il commento dal parametro iniziale sling.home e imposta il percorso come necessario
-   * Ripristina file web.xml
+  * Decomprimi file WEB-INF/web.xml
+  * cambiare il parametro sling.run.modes in publish
+  * rimuovi il commento dal parametro iniziale sling.home e imposta il percorso come necessario
+  * Ripristina file web.xml
 
 * Distribuire il file .war di AEM
 
-   * Scegli una directory principale di contesto (per impostare le modalità di esecuzione sling, seleziona i passaggi dettagliati della procedura guidata di distribuzione, quindi specificala al passaggio 6 della procedura guidata).
+  * Scegli una directory principale di contesto (per impostare le modalità di esecuzione sling, seleziona i passaggi dettagliati della procedura guidata di distribuzione, quindi specificala al passaggio 6 della procedura guidata).
 
 * Avviare l’applicazione web AEM
 
@@ -158,12 +170,12 @@ Questo utilizza un layout server semplice con un solo server amministratore.
 
 * In `${myDomain}/config/config.xml`aggiungi alla sezione di configurazione della protezione:
 
-   * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` vedere il [https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd) per la posizione corretta (per impostazione predefinita, la posizione alla fine della sezione è ok)
+  * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` vedere il [https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd) per la posizione corretta (per impostazione predefinita, la posizione alla fine della sezione è ok)
 
 * Aumentare le impostazioni della memoria VM:
 
-   * apri `${myDomain}/bin/setDomainEnv.cmd` (resp .sh) ricerca WLS_MEM_ARGS, impostato, ad esempio, impostato `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m`
-   * riavviare il server WebLogic
+  * apri `${myDomain}/bin/setDomainEnv.cmd` (resp .sh) ricerca WLS_MEM_ARGS, impostato, ad esempio, impostato `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m`
+  * riavviare il server WebLogic
 
 * Creare in `${myDomain}` una cartella di pacchetti e all&#39;interno di una cartella cq e in essa una cartella Plan
 
@@ -173,10 +185,10 @@ Questo utilizza un layout server semplice con un solo server amministratore.
 * Inserisci il file .war di AEM nella cartella ${myDomain}/packages/cq
 * Configurare In `WEB-INF/web.xml` se necessario (vedi sopra nella Descrizione generale)
 
-   * Decomprimi `WEB-INF/web.xml` file
-   * cambiare il parametro sling.run.modes in publish
-   * rimuovi il commento dal parametro iniziale sling.home e imposta il percorso come necessario (vedi Descrizione generale)
-   * Ripristina file web.xml
+  * Decomprimi `WEB-INF/web.xml` file
+  * cambiare il parametro sling.run.modes in publish
+  * rimuovi il commento dal parametro iniziale sling.home e imposta il percorso come necessario (vedi Descrizione generale)
+  * Ripristina file web.xml
 
 * Distribuire il file .war di AEM come applicazione (per le altre impostazioni, utilizzare le impostazioni predefinite)
 * L&#39;installazione può richiedere tempo...
@@ -189,64 +201,64 @@ Prima di una distribuzione, leggere la [Descrizione generale](#general-descripti
 
 * **Prepara server Tomcat**
 
-   * Aumentare le impostazioni della memoria VM:
+  * Aumentare le impostazioni della memoria VM:
 
-      * In `bin/catalina.bat` (resp `catalina.sh` su UNIX®) aggiungere la seguente impostazione:
-      * `set "JAVA_OPTS= -Xmx2048m`
+    * In `bin/catalina.bat` (resp `catalina.sh` su UNIX®) aggiungere la seguente impostazione:
+    * `set "JAVA_OPTS= -Xmx2048m`
 
-   * Tomcat consente l&#39;accesso non amministratore o manager al momento dell&#39;installazione. Pertanto, è necessario modificare manualmente `tomcat-users.xml` per consentire l&#39;accesso a questi account:
+  * Tomcat consente l&#39;accesso non amministratore o manager al momento dell&#39;installazione. Pertanto, è necessario modificare manualmente `tomcat-users.xml` per consentire l&#39;accesso a questi account:
 
-      * Modificare `tomcat-users.xml` per includere l&#39;accesso per l&#39;amministratore e il manager. La configurazione deve essere simile al seguente esempio:
+    * Modificare `tomcat-users.xml` per includere l&#39;accesso per l&#39;amministratore e il manager. La configurazione deve essere simile al seguente esempio:
 
-        ```xml
-        <?xml version='1.0' encoding='utf-8'?>
-        <tomcat-users>
-        role rolename="manager"/>
-        role rolename="tomcat"/>
-        <role rolename="admin"/>
-        <role rolename="role1"/>
-        <role rolename="manager-gui"/>
-        <user username="both" password="tomcat" roles="tomcat,role1"/>
-        <user username="tomcat" password="tomcat" roles="tomcat"/>
-        <user username="admin" password="admin" roles="admin,manager-gui"/>
-        <user username="role1" password="tomcat" roles="role1"/>
-        </tomcat-users>
-        ```
+      ```xml
+      <?xml version='1.0' encoding='utf-8'?>
+      <tomcat-users>
+      role rolename="manager"/>
+      role rolename="tomcat"/>
+      <role rolename="admin"/>
+      <role rolename="role1"/>
+      <role rolename="manager-gui"/>
+      <user username="both" password="tomcat" roles="tomcat,role1"/>
+      <user username="tomcat" password="tomcat" roles="tomcat"/>
+      <user username="admin" password="admin" roles="admin,manager-gui"/>
+      <user username="role1" password="tomcat" roles="role1"/>
+      </tomcat-users>
+      ```
 
-   * Se desideri distribuire AEM con la directory principale del contesto &quot;/&quot;, devi modificare la directory principale del contesto della Web app ROOT esistente:
+  * Se desideri distribuire AEM con la directory principale del contesto &quot;/&quot;, devi modificare la directory principale del contesto della Web app ROOT esistente:
 
-      * Arresta e annulla la distribuzione di ROOT Web app
-      * Rinomina cartella ROOT.war nella cartella webapps di tomcat
-      * Avvia di nuovo l&#39;app Web
+    * Arresta e annulla la distribuzione di ROOT Web app
+    * Rinomina cartella ROOT.war nella cartella webapps di tomcat
+    * Avvia di nuovo l&#39;app Web
 
-   * Se installi l’applicazione web AEM utilizzando l’interfaccia grafica di gestione, devi aumentare le dimensioni massime di un file caricato, poiché l’impostazione predefinita consente solo 50 MB di dimensioni di caricamento. Per aprire il file web.xml dell’applicazione web manager,
+  * Se installi l’applicazione web AEM utilizzando l’interfaccia grafica di gestione, devi aumentare le dimensioni massime di un file caricato, poiché l’impostazione predefinita consente solo 50 MB di dimensioni di caricamento. Per aprire il file web.xml dell’applicazione web manager,
 
-     `webapps/manager/WEB-INF/web.xml`
+    `webapps/manager/WEB-INF/web.xml`
 
-     e aumentare le dimensioni max-file-size e max-request-size ad almeno 500 MB, vedi il seguente esempio `multipart-config` di un file `web.xml` di questo tipo.
+    e aumentare le dimensioni max-file-size e max-request-size ad almeno 500 MB, vedi il seguente esempio `multipart-config` di un file `web.xml` di questo tipo.
 
-     ```xml
-     <multipart-config>
-     <!-- 500MB max -->
-     <max-file-size>524288000</max-file-size>
-     <max-request-size>524288000</max-request-size>
-     <file-size-threshold>0</file-size-threshold>
-     </multipart-config>
-     ```
+    ```xml
+    <multipart-config>
+    <!-- 500MB max -->
+    <max-file-size>524288000</max-file-size>
+    <max-request-size>524288000</max-request-size>
+    <file-size-threshold>0</file-size-threshold>
+    </multipart-config>
+    ```
 
 * **Distribuisci applicazione Web AEM**
 
-   * Scarica il file .war di AEM.
-   * Se necessario, effettua le configurazioni in web.xml (vedi sopra nella Descrizione generale).
+  * Scarica il file .war di AEM.
+  * Se necessario, effettua le configurazioni in web.xml (vedi sopra nella Descrizione generale).
 
-      * Decomprimi il file WEB-INF/web.xml.
-      * Modifica il parametro sling.run.modes in publish.
-      * Rimuovi il commento dal parametro iniziale sling.home e imposta il percorso come necessario.
-      * Ripristina il file web.xml.
+    * Decomprimi il file WEB-INF/web.xml.
+    * Modifica il parametro sling.run.modes in publish.
+    * Rimuovi il commento dal parametro iniziale sling.home e imposta il percorso come necessario.
+    * Ripristina il file web.xml.
 
-   * Rinomina il file .war di AEM in ROOT.war se desideri distribuirlo come web app principale. Rinominalo in aemauthor.war se vuoi avere aemauthor come directory principale del contesto.
-   * Copiatelo nella cartella Webapps di Tomcat.
-   * Attendi che AEM sia installato.
+  * Rinomina il file .war di AEM in ROOT.war se desideri distribuirlo come web app principale. Rinominalo in aemauthor.war se vuoi avere aemauthor come directory principale del contesto.
+  * Copiatelo nella cartella Webapps di Tomcat.
+  * Attendi che AEM sia installato.
 
 ## Risoluzione di problemi {#troubleshooting}
 

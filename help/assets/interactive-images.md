@@ -10,13 +10,27 @@ feature: Interactive Images
 role: User, Admin
 exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: de661f96-7584-43db-a310-e01b57fdf199
+    internal-label: Interactive images
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '4463'
+source-wordcount: '4472'
 ht-degree: 1%
-
 ---
-
 # Immagini interattive{#interactive-images}
 
 Puoi arricchire facilmente le immagini statiche e coinvolgerle con i clienti trascinando gli hotspot &quot;shoppable&quot; su un&#39;immagine. Gli hotspot acquistabili combinano informazioni aggiuntive su un prodotto o un servizio con una funzionalità diretta per i punti vendita &quot;Aggiungi al carrello&quot; o &quot;Acquista&quot;. I clienti possono selezionare questi hotspot ed essere collegati direttamente al prodotto o al servizio, aggiungerli al carrello o essere collegati a una pagina web. Esperienze dirette come queste aumentano il coinvolgimento dei clienti e le conversioni sul tuo sito web.
@@ -27,7 +41,7 @@ Di seguito è riportato un banner acquistabile con un pop-up Quickview. L&#39;ut
 
 Consulta le immagini interattive in azione nella pagina web precedente, accedendo al seguente indirizzo:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html?lang=it](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html?lang=it)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html)
 
 ## Guarda come vengono creati i banner interattivi per le immagini {#watch-how-interactive-image-banners-are-created}
 
@@ -39,17 +53,21 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
 
 Cerca l&#39;intestazione **Esempio** all&#39;interno di alcune delle attività di avvio rapido. Contiene una breve esercitazione basata sul seguente esempio di pagina web a cui non sono ancora state aggiunte immagini interattive:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=it](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=it)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
 
 Il tutorial illustra i passaggi necessari per integrare le immagini interattive nel sito web.
 
 Passaggi delle immagini interattive:
 
-1. **(Facoltativo) Identifica le variabili hotspot**. Se utilizzi Experience Manager Assets e Dynamic Media in modo autonomo, inizia identificando le variabili dinamiche utilizzate nell&#39;implementazione Quickview esistente. Quindi puoi immettere i dati dei punti attivi durante la creazione dell’immagine interattiva. Vedere [(facoltativo) Identificare le variabili hotspot](#optional-identifying-hotspot-variables).Tuttavia, se utilizzi Adobe Experience Manager Sites, o Adobe Experience Manager eCommerce, o entrambi, questo passaggio non è necessario.Consulta [Concetti di eCommerce in Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
+1. **(Facoltativo) Identifica le variabili hotspot**. Se utilizzi Experience Manager Assets e Dynamic Media in modo autonomo, inizia identificando le variabili dinamiche utilizzate nell&#39;implementazione Quickview esistente. Quindi puoi immettere i dati dei punti attivi durante la creazione dell’immagine interattiva. Vedere [(facoltativo) Identificare le variabili hotspot](#optional-identifying-hotspot-variables).
+Tuttavia, se utilizzi Adobe Experience Manager Sites, o Adobe Experience Manager eCommerce, o entrambi, questo passaggio non è necessario.
+Consulta [Concetti di eCommerce in Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
 
-1. **(Facoltativo) Crea un predefinito visualizzatore di immagini interattive** - Personalizza l&#39;immagine grafica utilizzata per rappresentare gli hotspot. Non è necessario creare un predefinito visualizzatore di immagini interattive se si intende utilizzare il predefinito visualizzatore di immagini interattive predefinito `Shoppable_Banner`.Vedere [(Facoltativo) Creare un predefinito visualizzatore di immagini interattivo](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset).
+1. **(Facoltativo) Crea un predefinito visualizzatore di immagini interattive** - Personalizza l&#39;immagine grafica utilizzata per rappresentare gli hotspot. Non è necessario creare un predefinito visualizzatore di immagini interattive se si intende utilizzare il predefinito visualizzatore di immagini interattive predefinito `Shoppable_Banner`.
+Vedere [(Facoltativo) Creare un predefinito visualizzatore di immagini interattivo](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset).
 
-1. **Carica un banner immagine** - Carica i banner immagine da rendere interattivi.Vedi [Caricare un banner immagine](#uploading-an-image-banner).
+1. **Carica un banner immagine** - Carica i banner immagine da rendere interattivi.
+Vedi [Caricare un banner immagine](#uploading-an-image-banner).
 
 1. **Aggiungi punti attivi a un banner immagine** - Aggiungi uno o più punti attivi a un banner immagine e associali a un&#39;azione, ad esempio un collegamento ipertestuale, una visualizzazione rapida o un frammento di esperienza. Dopo aver aggiunto gli hotspot, terminerai questa attività pubblicando l’immagine interattiva.
 
@@ -95,9 +113,11 @@ L’approccio consiste quindi nel visitare diverse aree del sito web esistente i
 
 In genere non è necessario utilizzare strumenti di debug specifici. I browser web moderni dispongono di web inspector che svolgono un lavoro adeguato. Di seguito sono riportati alcuni esempi di browser Web che includono i controlli Web:
 
-* Per visualizzare tutte le richieste HTTP in uscita in Google Chrome, premi F12 per aprire il pannello Strumenti di sviluppo e quindi seleziona la scheda Rete.In un Mac, premi Comando+Opzione+I per aprire il pannello Strumenti per sviluppatori, quindi seleziona la scheda Rete.
+* Per visualizzare tutte le richieste HTTP in uscita in Google Chrome, premi F12 per aprire il pannello Strumenti di sviluppo e quindi seleziona la scheda Rete.
+In un Mac, premi Comando+Opzione+I per aprire il pannello Strumenti per sviluppatori, quindi seleziona la scheda Rete.
 
-* In Firefox, puoi attivare il plug-in Firebug premendo F12 e utilizzando la relativa scheda Net, oppure puoi utilizzare lo strumento integrato Inspector e la relativa scheda Network.In un Mac, premere Comando+Opzione+I per aprire il pannello Strumenti per sviluppatori, quindi selezionare la scheda Ispettore.
+* In Firefox, puoi attivare il plug-in Firebug premendo F12 e utilizzando la relativa scheda Net, oppure puoi utilizzare lo strumento integrato Inspector e la relativa scheda Network.
+In un Mac, premere Comando+Opzione+I per aprire il pannello Strumenti per sviluppatori, quindi selezionare la scheda Ispettore.
 
 Quando il monitoraggio della rete è attivato nel browser, attiva Quickview sulla pagina.
 
@@ -153,7 +173,7 @@ Prendi in considerazione i seguenti esempi di URL Quickview e le variabili hotsp
 
 Puoi applicare lo stesso approccio utilizzato nei tre esempi precedenti alla pagina web demo:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=it](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=it)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
 
 La pagina web demo presenta diverse miniature di prodotto, ciascuna con un pulsante Quickview etichettato &quot;See More&quot; (Vedi altro). Con lo strumento di debug del browser ancora attivato, seleziona ogni pulsante e annota gli URL registrati di Quickview. Dopo aver attivato tutti e quattro i prodotti Quickview disponibili nella pagina, viene visualizzato il seguente elenco di richieste Quickview inviate al backend:
 
@@ -273,17 +293,17 @@ Vedi [(facoltativo) Anteprima immagini interattive](#optional-previewing-interac
 
    * Selezionare **[!UICONTROL Quickview]**.
 
-      * Se sei un cliente Experience Manager Sites o eCommerce, seleziona l’icona del selettore prodotti (lente di ingrandimento) per aprire la pagina Seleziona prodotto. Seleziona il prodotto da utilizzare, quindi seleziona **[!UICONTROL Seleziona]** nell&#39;angolo superiore destro della pagina per tornare alla pagina Gestione punti attivi.
-      * Se *non* sei un cliente Experience Manager Sites o eCommerce
+     * Se sei un cliente Experience Manager Sites o eCommerce, seleziona l’icona del selettore prodotti (lente di ingrandimento) per aprire la pagina Seleziona prodotto. Seleziona il prodotto da utilizzare, quindi seleziona **[!UICONTROL Seleziona]** nell&#39;angolo superiore destro della pagina per tornare alla pagina Gestione punti attivi.
+     * Se *non* sei un cliente Experience Manager Sites o eCommerce
 
-         * Vedi [Identificare le variabili hotspot](#optional-identifying-hotspot-variables); è necessario definire queste variabili.
-         * Quindi, immetti manualmente il valore SKU. Nel campo di testo Valore SKU digitare la SKU (Stock Keeping Unit) del prodotto, che rappresenta un identificatore univoco per ogni prodotto o servizio specifico offerto. Il valore SKU immesso popola automaticamente la parte variabile del modello Quickview in modo che il sistema sappia associare il punto attivo selezionato alla visualizzazione rapida di un particolare SKU.
-         * (Facoltativo) Se in Quickview sono presenti altre variabili che è necessario utilizzare per identificare ulteriormente un prodotto, selezionare **[!UICONTROL Aggiungi variabile generica]**. Nel campo di testo, specifica una variabile aggiuntiva. `category=Males` è ad esempio una variabile aggiunta.
+       * Vedi [Identificare le variabili hotspot](#optional-identifying-hotspot-variables); è necessario definire queste variabili.
+       * Quindi, immetti manualmente il valore SKU. Nel campo di testo Valore SKU digitare la SKU (Stock Keeping Unit) del prodotto, che rappresenta un identificatore univoco per ogni prodotto o servizio specifico offerto. Il valore SKU immesso popola automaticamente la parte variabile del modello Quickview in modo che il sistema sappia associare il punto attivo selezionato alla visualizzazione rapida di un particolare SKU.
+       * (Facoltativo) Se in Quickview sono presenti altre variabili che è necessario utilizzare per identificare ulteriormente un prodotto, selezionare **[!UICONTROL Aggiungi variabile generica]**. Nel campo di testo, specifica una variabile aggiuntiva. `category=Males` è ad esempio una variabile aggiunta.
 
    * Seleziona **[!UICONTROL Collegamento ipertestuale]**.
 
-      * Se sei un cliente di Experience Manager Sites, seleziona l’icona Selettore siti (cartella) per passare a un URL. Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo presenta collegamenti con URL relativi, in particolare collegamenti a pagine Experience Manager Sites.
-      * Se si è clienti autonomi, specificare il percorso URL completo di una pagina Web collegata nel campo di testo HREF.
+     * Se sei un cliente di Experience Manager Sites, seleziona l’icona Selettore siti (cartella) per passare a un URL. Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo presenta collegamenti con URL relativi, in particolare collegamenti a pagine Experience Manager Sites.
+     * Se si è clienti autonomi, specificare il percorso URL completo di una pagina Web collegata nel campo di testo HREF.
 
    Assicurati di specificare se aprire il collegamento in una nuova scheda del browser (impostazione predefinita consigliata) o nella stessa scheda.
 
@@ -291,13 +311,14 @@ Vedi [(facoltativo) Anteprima immagini interattive](#optional-previewing-interac
 
    * Seleziona **[!UICONTROL Frammento esperienza]**.
 
-      * Se sei un cliente di Experience Manager Sites, seleziona l’icona Ricerca (lente di ingrandimento) per aprire la pagina Frammento esperienza. Seleziona il frammento di esperienza da utilizzare, quindi seleziona **[!UICONTROL Seleziona]** nell&#39;angolo superiore destro della pagina per tornare alla pagina Gestione punti attivi.Vedi [Frammenti esperienza](/help/sites-authoring/experience-fragments.md).
+     * Se sei un cliente di Experience Manager Sites, seleziona l’icona Ricerca (lente di ingrandimento) per aprire la pagina Frammento esperienza. Seleziona il frammento di esperienza da utilizzare, quindi seleziona **[!UICONTROL Seleziona]** nell&#39;angolo superiore destro della pagina per tornare alla pagina Gestione punti attivi.
+       Vedi [Frammenti esperienza](/help/sites-authoring/experience-fragments.md).
 
-      * Specifica la larghezza e l’altezza del frammento di esperienza da visualizzare sul banner.
+     * Specifica la larghezza e l’altezza del frammento di esperienza da visualizzare sul banner.
 
-        >[!NOTE]
-        >
-        >Gli strumenti per la condivisione di social media nell’immagine interattiva non sono supportati quando si incorpora il visualizzatore in un frammento di esperienza. Per risolvere questo problema, puoi utilizzare o creare predefiniti visualizzatore che non dispongono di strumenti per la condivisione sui social media. Tali predefiniti visualizzatore consentono di incorporarli correttamente in Frammenti esperienza.
+       >[!NOTE]
+       >
+       >Gli strumenti per la condivisione di social media nell’immagine interattiva non sono supportati quando si incorpora il visualizzatore in un frammento di esperienza. Per risolvere questo problema, puoi utilizzare o creare predefiniti visualizzatore che non dispongono di strumenti per la condivisione sui social media. Tali predefiniti visualizzatore consentono di incorporarli correttamente in Frammenti esperienza.
 
 1. Seleziona **[!UICONTROL Salva]** per salvare il lavoro e tornare alla pagina Sfoglia.
 1. Pubblica l’immagine interattiva. La pubblicazione consente di distribuire il banner tramite il cloud e genera anche codice di incorporamento se devi integrarlo con un sito Web di terze parti.
@@ -316,7 +337,10 @@ Vedi [(facoltativo) Anteprima immagini interattive](#optional-previewing-interac
 
 Puoi utilizzare Anteprima per visualizzare una rappresentazione di come l’immagine interattiva viene visualizzata dai clienti e per testare i punti attivi dell’immagine in modo che si comportino come previsto.
 
-Quando sei soddisfatto dell’immagine interattiva, puoi pubblicarla.Vedi [Incorporare il visualizzatore di video o immagini in una pagina Web](/help/assets/embed-code.md).Consulta [Collegare gli URL all&#39;applicazione Web](/help/assets/linking-urls-to-yourwebapplication.md). Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo presenta collegamenti con URL relativi, in particolare collegamenti a pagine Experience Manager Sites.Consulta [Aggiungere Dynamic Media Assets alle pagine](/help/assets/adding-dynamic-media-assets-to-pages.md).
+Quando sei soddisfatto dell’immagine interattiva, puoi pubblicarla.
+Vedi [Incorporare il visualizzatore di video o immagini in una pagina Web](/help/assets/embed-code.md).
+Consulta [Collegare gli URL all&#39;applicazione Web](/help/assets/linking-urls-to-yourwebapplication.md). Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo presenta collegamenti con URL relativi, in particolare collegamenti a pagine Experience Manager Sites.
+Consulta [Aggiungere Dynamic Media Assets alle pagine](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 **Per visualizzare in anteprima le immagini interattive:**
 
@@ -337,15 +361,17 @@ I clienti di Experience Manager Sites possono aggiungere l’immagine interattiv
 
 Se sei un cliente Experience Manager Assets indipendente, puoi aggiungere manualmente l’immagine interattiva al sito web come descritto in questa sezione.
 
-1. Copia il codice di incorporamento dell&#39;immagine interattiva pubblicata.Vedi [Incorporare il visualizzatore di video o immagini in una pagina Web](/help/assets/embed-code.md).
+1. Copia il codice di incorporamento dell&#39;immagine interattiva pubblicata.
+Vedi [Incorporare il visualizzatore di video o immagini in una pagina Web](/help/assets/embed-code.md).
 
-1. Aggiungi il codice da incorporare copiato nella posizione desiderata all’interno della pagina web.Il codice di incorporamento copiato è impostato per un ambiente reattivo in modo che si adatti automaticamente all’area assegnata.
+1. Aggiungi il codice da incorporare copiato nella posizione desiderata all’interno della pagina web.
+Il codice di incorporamento copiato è impostato per un ambiente reattivo in modo che si adatti automaticamente all’area assegnata.
 
 **Esempio**
 
 Utilizzando il sito web demo come esempio:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=it](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=it)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
 
 Si noti che l&#39;immagine dei tre maschi è un tag `IMG` statico:
 
@@ -355,7 +381,7 @@ Si noti che l&#39;immagine dei tre maschi è un tag `IMG` statico:
 
 L&#39;integrazione è semplice come rimuovere il tag `IMG` e sostituirlo con il codice da incorporare copiato da Experience Manager Assets. Puoi visualizzare il risultato nel seguente URL che mostra l’immagine interattiva acquistabile sulla pagina con tre punti attivi circolari:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html?lang=it](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html?lang=it)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html)
 
 >[!NOTE]
 >
@@ -504,7 +530,7 @@ Di seguito è riportato il codice sorgente completo:
 
 Il sito web di dimostrazione finale con l’immagine interattiva completamente integrata è simile al seguente:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html?lang=it](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html?lang=it)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html)
 
 ## Utilizzare Quickview per creare pop-up personalizzati {#using-quickviews-to-create-custom-pop-ups}
 

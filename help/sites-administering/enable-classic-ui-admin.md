@@ -1,6 +1,6 @@
 ---
 title: Admin Console
-description: Scopri come utilizzare gli Admin Console disponibili in Adobe Experience Manager.
+description: Scopri come utilizzare le Admin Console disponibili in Adobe Experience Manager.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
@@ -10,13 +10,22 @@ exl-id: d4de517e-50bc-4ca5-89b1-295d259fd5bb
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 0%
-
+source-wordcount: '238'
+ht-degree: 2%
 ---
-
 
 # Admin Console{#admin-consoles}
 
@@ -26,7 +35,7 @@ Ogni console con una versione dell&#39;interfaccia classica in `/libs/cq/core/co
 
 In questo esempio, stai riattivando l’interfaccia classica per la console Sites.
 
-1. Utilizzando CRXDE Lite, individua il nodo corrispondente all’Admin Console per il quale desideri riabilitare l’interfaccia classica. Si trovano in:
+1. Utilizzando CRXDE Lite, trova il nodo corrispondente all’Admin Console per il quale desideri riabilitare l’interfaccia classica. Si trovano in:
 
    `/libs/cq/core/content/nav`
 
@@ -48,7 +57,7 @@ In questo esempio, stai riattivando l’interfaccia classica per la console Site
 
    `enableDesktopOnly = {Boolean}true`
 
-1. L&#39;opzione **Interfaccia classica** è nuovamente disponibile come opzione a comparsa nell&#39;Admin Console.
+1. L&#39;opzione **Interfaccia classica** è nuovamente disponibile come opzione a comparsa in Admin Console.
 
    ![opzione popover classica dell&#39;interfaccia utente](assets/syui-01-2019-02-27-15-16-55.png)
 

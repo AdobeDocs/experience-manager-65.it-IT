@@ -11,13 +11,29 @@ mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: da0dfbce-df02-4f8b-b32d-a4e3b1d05085
+    internal-label: Configuration
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: ee69dd13-2aba-4eb0-912b-399e82368d73
+    internal-label: Scene7 mode
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '6444'
+source-wordcount: '6668'
 ht-degree: 4%
-
 ---
-
 # Configurare Dynamic Media - Modalità Scene7{#configuring-dynamic-media-scene-mode}
 
 Se utilizzi Adobe Experience Manager configurato per ambienti diversi, ad esempio sviluppo, staging e produzione, configura i servizi cloud per elementi multimediali dinamici per ciascuno di questi ambienti.
@@ -133,25 +149,25 @@ Per ulteriori informazioni, consulta [Installare 18912 feature pack per la migra
    * **[!UICONTROL Percorso cartella principale società]**
 
    * **[!UICONTROL Pubblicazione di Assets]** - È possibile scegliere tra le tre opzioni seguenti:
-      * **[!UICONTROL Immediatamente]** significa che quando le risorse vengono caricate, il sistema le acquisisce e fornisce l&#39;URL/Incorpora immediatamente. Non è necessario alcun intervento da parte dell’utente per pubblicare le risorse.
-      * **[!UICONTROL All&#39;attivazione]** significa che devi pubblicare esplicitamente la risorsa prima di fornire un URL o un collegamento di incorporamento.<br><!-- CQDOC-17478, Added March 9, 2021-->A partire da Experience Manager 6.5.8, l&#39;istanza di Experience Manager Publish riflette i valori accurati dei metadati Dynamic Media, ad esempio `dam:scene7Domain` e `dam:scene7FileStatus`, solo nella modalità di pubblicazione **[!UICONTROL All&#39;attivazione]**. Per abilitare questa funzionalità, installare Service Pack 8, quindi riavviare Experience Manager. Vai a Gestione configurazione Sling. Trovare la configurazione per `Scene7ActivationJobConsumer Component` o crearne una nuova). Seleziona la casella di controllo **[!UICONTROL Replica metadati dopo la pubblicazione in Dynamic Media]**, quindi seleziona **[!UICONTROL Salva]**.
+     * **[!UICONTROL Immediatamente]** significa che quando le risorse vengono caricate, il sistema le acquisisce e fornisce l&#39;URL/Incorpora immediatamente. Non è necessario alcun intervento da parte dell’utente per pubblicare le risorse.
+     * **[!UICONTROL All&#39;attivazione]** significa che devi pubblicare esplicitamente la risorsa prima di fornire un URL o un collegamento di incorporamento.<br><!-- CQDOC-17478, Added March 9, 2021-->A partire da Experience Manager 6.5.8, l&#39;istanza di Experience Manager Publish riflette i valori accurati dei metadati Dynamic Media, ad esempio `dam:scene7Domain` e `dam:scene7FileStatus`, solo nella modalità di pubblicazione **[!UICONTROL All&#39;attivazione]**. Per abilitare questa funzionalità, installare Service Pack 8, quindi riavviare Experience Manager. Vai a Gestione configurazione Sling. Trovare la configurazione per `Scene7ActivationJobConsumer Component` o crearne una nuova). Seleziona la casella di controllo **[!UICONTROL Replica metadati dopo la pubblicazione in Dynamic Media]**, quindi seleziona **[!UICONTROL Salva]**.
 
-        ![Replica metadati dopo la casella di controllo di pubblicazione Dynamic Media](assets-dm/replicate-metadata-setting.png)
+       ![Replica metadati dopo la casella di controllo di pubblicazione Dynamic Media](assets-dm/replicate-metadata-setting.png)
 
-      * **[!UICONTROL Pubblicazione selettiva]** Questa opzione consente di controllare quali cartelle vengono pubblicate in Dynamic Media. Consente di utilizzare funzioni quali Ritaglio avanzato o rappresentazioni dinamiche oppure di determinare quali cartelle vengono pubblicate esclusivamente in Experience Manager per la visualizzazione in anteprima. Le stesse risorse sono *not* pubblicate in Dynamic Media per la distribuzione nel dominio pubblico.<br>È possibile impostare questa opzione qui nella **[!UICONTROL configurazione cloud di Dynamic Media]** oppure, se si preferisce, è possibile scegliere di impostare questa opzione a livello di cartella, nelle **[!UICONTROL proprietà]** di una cartella.<br>Vedere [Operazioni con la pubblicazione selettiva in Dynamic Media](/help/assets/selective-publishing.md).<br>Se successivamente si modifica questa configurazione o la si modifica successivamente a livello di cartella, le modifiche interesseranno solo le nuove risorse caricate da quel momento in poi. Lo stato di pubblicazione delle risorse esistenti nella cartella rimane invariato finché non le modifichi manualmente da **[!UICONTROL Pubblicazione rapida]** o dalla finestra di dialogo **[!UICONTROL Gestisci pubblicazione]**.
+     * **[!UICONTROL Pubblicazione selettiva]** Questa opzione consente di controllare quali cartelle vengono pubblicate in Dynamic Media. Consente di utilizzare funzioni quali Ritaglio avanzato o rappresentazioni dinamiche oppure di determinare quali cartelle vengono pubblicate esclusivamente in Experience Manager per la visualizzazione in anteprima. Le stesse risorse sono *not* pubblicate in Dynamic Media per la distribuzione nel dominio pubblico.<br>È possibile impostare questa opzione qui nella **[!UICONTROL configurazione cloud di Dynamic Media]** oppure, se si preferisce, è possibile scegliere di impostare questa opzione a livello di cartella, nelle **[!UICONTROL proprietà]** di una cartella.<br>Vedere [Operazioni con la pubblicazione selettiva in Dynamic Media](/help/assets/selective-publishing.md).<br>Se successivamente si modifica questa configurazione o la si modifica successivamente a livello di cartella, le modifiche interesseranno solo le nuove risorse caricate da quel momento in poi. Lo stato di pubblicazione delle risorse esistenti nella cartella rimane invariato finché non le modifichi manualmente da **[!UICONTROL Pubblicazione rapida]** o dalla finestra di dialogo **[!UICONTROL Gestisci pubblicazione]**.
 
    * **[!UICONTROL Server di anteprima protetto]** - consente di specificare il percorso URL del server di anteprima delle copie trasformate protette. In altre parole, dopo la generazione delle rappresentazioni, Experience Manager può accedere in modo sicuro e visualizzare in anteprima le rappresentazioni remote di Dynamic Media (nessun binario viene inviato nuovamente all’istanza di Experience Manager).
-A meno che non disponiate di una disposizione speciale per utilizzare il server della vostra società o un server speciale, Adobe consiglia di lasciare questa impostazione come specificato.
+     A meno che non disponiate di una disposizione speciale per utilizzare il server della vostra società o un server speciale, Adobe consiglia di lasciare questa impostazione come specificato.
 
    * **[!UICONTROL Sincronizza tutto il contenuto]** - <!-- NEW OPTION, CQDOC-15371, Added March 4, 2020-->Selezionato per impostazione predefinita. Deseleziona questa opzione se desideri includere o escludere selettivamente le risorse dalla sincronizzazione con Dynamic Media. Deselezionando questa opzione è possibile scegliere tra le due seguenti modalità di sincronizzazione di Dynamic Media:
 
    * **[!UICONTROL Modalità di sincronizzazione Dynamic Media]**
-      * **[!UICONTROL Attivata per impostazione predefinita]** - La configurazione viene applicata a tutte le cartelle per impostazione predefinita, a meno che non si contrassegni una cartella specificamente per l&#39;esclusione. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
-      * **[!UICONTROL Disabilitata per impostazione predefinita]** - La configurazione non viene applicata ad alcuna cartella fino a quando non contrassegni esplicitamente una cartella selezionata per la sincronizzazione con Dynamic Media.
-Per contrassegnare una cartella selezionata per la sincronizzazione con Dynamic Media, seleziona una cartella di risorse, quindi nella barra degli strumenti seleziona **[!UICONTROL Proprietà]**. Nella scheda **[!UICONTROL Dettagli]**, nell&#39;elenco a discesa **[!UICONTROL Modalità di sincronizzazione Dynamic Media]**, scegliere una delle tre opzioni seguenti. Al termine, seleziona **[!UICONTROL Salva]**. *Ricorda: queste tre opzioni non sono disponibili se hai selezionato **[!UICONTROL Sincronizza tutto il contenuto]**&#x200B;in precedenza.* Vedi anche [Operazioni con la pubblicazione selettiva a livello di cartella in Dynamic Media](/help/assets/selective-publishing.md).
-         * **[!UICONTROL Ereditato]** - Nessun valore di sincronizzazione esplicito nella cartella. La cartella eredita invece il valore di sincronizzazione da una delle cartelle precedenti o dalla modalità predefinita nella configurazione cloud. Lo stato dettagliato per ereditato viene visualizzato tramite una descrizione comando.
-         * **[!UICONTROL Abilita per le sottocartelle]** - Includi tutto in questa sottostruttura per la sincronizzazione con Dynamic Media. Le impostazioni specifiche della cartella sovrascrivono la modalità predefinita nella configurazione cloud.
-         * **[!UICONTROL Disattivato per le sottocartelle]** - Escludi tutto ciò che si trova in questa struttura secondaria dalla sincronizzazione in Dynamic Media.
+     * **[!UICONTROL Attivata per impostazione predefinita]** - La configurazione viene applicata a tutte le cartelle per impostazione predefinita, a meno che non si contrassegni una cartella specificamente per l&#39;esclusione. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
+     * **[!UICONTROL Disabilitata per impostazione predefinita]** - La configurazione non viene applicata ad alcuna cartella fino a quando non contrassegni esplicitamente una cartella selezionata per la sincronizzazione con Dynamic Media.
+       Per contrassegnare una cartella selezionata per la sincronizzazione con Dynamic Media, seleziona una cartella di risorse, quindi nella barra degli strumenti seleziona **[!UICONTROL Proprietà]**. Nella scheda **[!UICONTROL Dettagli]**, nell&#39;elenco a discesa **[!UICONTROL Modalità di sincronizzazione Dynamic Media]**, scegliere una delle tre opzioni seguenti. Al termine, seleziona **[!UICONTROL Salva]**. *Ricorda: queste tre opzioni non sono disponibili se hai selezionato **[!UICONTROL Sincronizza tutto il contenuto]**&#x200B;in precedenza.* Vedi anche [Utilizzare la pubblicazione selettiva a livello di cartella in Dynamic Media](/help/assets/selective-publishing.md).
+       * **[!UICONTROL Ereditato]** - Nessun valore di sincronizzazione esplicito nella cartella. La cartella eredita invece il valore di sincronizzazione da una delle cartelle precedenti o dalla modalità predefinita nella configurazione cloud. Lo stato dettagliato per ereditato viene visualizzato tramite una descrizione comando.
+       * **[!UICONTROL Abilita per le sottocartelle]** - Includi tutto in questa sottostruttura per la sincronizzazione con Dynamic Media. Le impostazioni specifiche della cartella sovrascrivono la modalità predefinita nella configurazione cloud.
+       * **[!UICONTROL Disattivato per le sottocartelle]** - Escludi tutto ciò che si trova in questa struttura secondaria dalla sincronizzazione in Dynamic Media.
 
    >[!NOTE]
    >
@@ -659,7 +675,7 @@ La coda del flusso di lavoro di transito Granite è utilizzata per il flusso di 
 
 **Per aggiornare la coda del flusso di lavoro transitorio Granite:**
 
-1. Passa a [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) e cerca **Queue: Granite Transient Workflow Queue**.
+1. Passa a [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) e cerca **Coda: coda flussi di lavoro transitori Granite**.
 
    >[!NOTE]
    >

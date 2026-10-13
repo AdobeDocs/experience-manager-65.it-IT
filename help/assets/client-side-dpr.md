@@ -5,13 +5,27 @@ role: Admin,User
 exl-id: e38f522a-242a-4ea9-a866-d8d129950831
 solution: Experience Manager, Experience Manager Assets
 feature: Smart Imaging
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: b39a6d56-d787-413f-8024-351803c28d44
+    internal-label: Smart Imaging
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '328'
 ht-degree: 0%
-
 ---
-
 # Informazioni sulla tecnologia Smart Imaging con rapporto pixel del dispositivo lato client (DPR) {#client-side-dpr}
 
 La soluzione di Smart Imaging corrente utilizza stringhe dell’agente utente per determinare il tipo di dispositivo (desktop, tablet, dispositivi mobili e così via) utilizzato.
@@ -57,7 +71,7 @@ Il DPR lato client fornisce valori accurati al 100% e funziona per qualsiasi dis
    È possibile combinare entrambi gli script DPR in uno per evitare più richieste di rete.
 
    Adobe consiglia di caricare questi script _prima_ di qualsiasi altro script nella pagina HTML.
-Adobe consiglia inoltre di usare l’app per Bootstrap con il tag HTML diff anziché con un elemento body. Il motivo è che `dprImageInjection.js` inserisce dinamicamente il tag immagine nella parte superiore della sezione body nella pagina HTML.
+   Adobe consiglia inoltre di usare l’app per Bootstrap con il tag HTML diff anziché con un elemento body. Il motivo è che `dprImageInjection.js` inserisce dinamicamente il tag immagine nella parte superiore della sezione body nella pagina HTML.
 
 ## Download di file JavaScript {#client-side-dpr-script}
 

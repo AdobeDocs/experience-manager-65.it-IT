@@ -9,13 +9,22 @@ feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2116'
 ht-degree: 2%
-
 ---
-
 # Concetti di base sulla configurazione{#basic-configuration-concepts}
 
 Adobe Experience Manager (AEM) viene installato con le impostazioni predefinite per tutti i parametri che consentono l’esecuzione &quot;pronta all’uso&quot;. Tuttavia, puoi configurare AEM per i tuoi requisiti specifici.
@@ -303,11 +312,11 @@ Le impression di pagina vengono visualizzate nella colonna **Impression** della 
 
 * Nell’istanza di pubblicazione:
 
-   * [Statistiche pagina WCM Day CQ](/help/sites-deploying/osgi-configuration-settings.md)
+  * [Statistiche pagina WCM Day CQ](/help/sites-deploying/osgi-configuration-settings.md)
 
 * Nell’istanza di authoring:
 
-   * [Tracciamento impression pagina Adobe](/help/sites-deploying/osgi-configuration-settings.md)
+  * [Tracciamento impression pagina Adobe](/help/sites-deploying/osgi-configuration-settings.md)
 
 >[!CAUTION]
 >

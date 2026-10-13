@@ -9,20 +9,34 @@ exl-id: 14314383-5228-4904-98c1-586f48a1142c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '364'
-ht-degree: 3%
-
+ht-degree: 12%
 ---
-
 # Configurazione dei messaggi di convalida {#configuring-validation-messages}
 
 >[!NOTE]
 > 
 > Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
-Per i moduli di cui viene eseguito il rendering come HTML, gli errori di convalida dei moduli che si verificano vengono visualizzati per l’utente. È possibile personalizzare la visualizzazione dei messaggi di convalida. A seconda della posizione in cui vengono visualizzati i messaggi di convalida, è inoltre possibile controllare la posizione del messaggio nel modulo e le dimensioni del bordo del frame.
+Per i moduli sottoposti a rendering come HTML, gli errori di convalida dei moduli che si verificano vengono visualizzati per l’utente. È possibile personalizzare la visualizzazione dei messaggi di convalida. A seconda della posizione in cui vengono visualizzati i messaggi di convalida, è inoltre possibile controllare la posizione del messaggio nel modulo e le dimensioni del bordo del frame.
 
 ## Specificare la modalità di visualizzazione dei messaggi di convalida {#specify-how-validation-messages-are-displayed}
 
@@ -33,7 +47,7 @@ Per i moduli di cui viene eseguito il rendering come HTML, gli errori di convali
 
    **Frame:** Per visualizzare i messaggi di convalida in un frame della stessa finestra.
 
-   **Nessun frame:** Per visualizzare i messaggi di convalida nella stessa finestra. Questo valore è quello predefinito.
+   **Nessun frame:** Per visualizzare i messaggi di convalida nella stessa finestra. Questo valore è predefinito.
 
    **Tramite API (con dati):** Per restituire i messaggi di convalida tramite API (con dati). I messaggi di convalida non vengono visualizzati sullo schermo.
 
@@ -53,7 +67,7 @@ Quando Reporting è impostato su Frame o su No Frame, è possibile specificare l
 
    **Destra:** Per visualizzare i messaggi di convalida sul lato destro del browser Web.
 
-   **Top**: per visualizzare i messaggi di convalida nella parte superiore del browser Web. Questo valore è quello predefinito.
+   **Top**: per visualizzare i messaggi di convalida nella parte superiore del browser Web. Questo valore è predefinito.
 
    **Inferiore**: per visualizzare i messaggi di convalida nella parte inferiore del browser Web.
 

@@ -9,13 +9,20 @@ exl-id: 6bda0f09-7ae5-4540-b035-9dd249ac3186
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '695'
 ht-degree: 1%
-
 ---
-
 # Configurazione iniziale {#initial-setup}
 
 ## Avvia istanze di authoring e pubblicazione {#start-author-and-publish-instances}
@@ -31,13 +38,13 @@ Per AEM Communities,
 
 * L’ambiente di authoring è destinato a:
 
-   * Sviluppo di siti, modelli e componenti.
-   * Attività amministrative e di configurazione.
+  * Sviluppo di siti, modelli e componenti.
+  * Attività amministrative e di configurazione.
 
 * L’ambiente di pubblicazione è destinato a:
 
-   * Esperienza comunitaria di pubblicazione e moderazione di contenuti.
-   * Creazione di gruppi community, membri e gruppi di membri.
+  * Esperienza comunitaria di pubblicazione e moderazione di contenuti.
+  * Creazione di gruppi community, membri e gruppi di membri.
 
 >[!NOTE]
 >
@@ -83,23 +90,23 @@ Crea un utente su *author*, al quale viene assegnato il ruolo di amministratore 
 
 * Sull’istanza di authoring
 
-   * Ad esempio, [http://localhost:4502/](http://localhost:4503/)
+  * Ad esempio, [http://localhost:4502/](http://localhost:4503/)
 
 * Accedi con privilegi di amministratore
 
-   * Ad esempio, nome utente &quot;admin&quot; / password &quot;admin&quot;
+  * Ad esempio, nome utente &quot;admin&quot; / password &quot;admin&quot;
 
 * Dalla console principale, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Sicurezza]** > **[!UICONTROL Utenti]**.
 * Dal menu **Modifica**, seleziona **[!UICONTROL Aggiungi utente]**
 
 * Nella finestra di dialogo `Create New User` immetti:
 
-   * **[!UICONTROL ID]**: sirius
-   * **[!UICONTROL Indirizzo e-mail]**: sirius.nilson@mailinator.com
-   * **[!UICONTROL Password]**: password
-   * **[!UICONTROL Conferma password&ast;]**: password
-   * **[!UICONTROL Nome]**: Sirius
-   * **[!UICONTROL Cognome]**: Nilson
+  * **[!UICONTROL ID]**: sirius
+  * **[!UICONTROL Indirizzo e-mail]**: sirius.nilson@mailinator.com
+  * **[!UICONTROL Password]**: password
+  * **[!UICONTROL Conferma password&ast;]**: password
+  * **[!UICONTROL Nome]**: Sirius
+  * **[!UICONTROL Cognome]**: Nilson
 
 ### Assegna Sirius al gruppo amministratori community {#assign-sirius-to-community-administrators-group}
 
@@ -107,8 +114,8 @@ Scorri verso il basso fino a `Add User to Groups`:
 
 * Inserisci &#39;C&#39; per cercare
 
-   * Seleziona `Community Administrators`
-   * Seleziona `Community Enablement Managers`
+  * Seleziona `Community Administrators`
+  * Seleziona `Community Enablement Managers`
 
 * Seleziona **[!UICONTROL Salva]**.
 

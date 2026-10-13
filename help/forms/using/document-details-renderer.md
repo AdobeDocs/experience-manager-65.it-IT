@@ -8,20 +8,40 @@ exl-id: 946f0f6d-86af-41c1-98ef-98c8f5566e95
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '666'
-ht-degree: 0%
-
+source-wordcount: '675'
+ht-degree: 1%
 ---
-
 # Dettagli documento per renderer {#document-details-for-renderer}
 
 ## Introduzione {#introduction}
 
 Nell’area di lavoro di AEM Forms, sono supportati senza problemi più tipi di modulo. Comprendono:
 
-* PDF forms (XDP/Acroform/Flat PDF)
+* PDF forms (XDP/Acroform/PDF piatti)
 * Nuovi moduli HTML
 * Immagini
 * Applicazioni di terze parti (ad esempio, Gestione della corrispondenza)
@@ -30,9 +50,9 @@ Questo documento spiega il funzionamento di questi renderer dal punto di vista d
 
 ## PDF forms {#pdf-forms}
 
-Il rendering dei PDF forms è eseguito da `PdfTaskForm View`.
+Il rendering di PDF forms viene eseguito da `PdfTaskForm View`.
 
-Quando viene eseguito il rendering di un modulo XDP come PDF, il servizio FormsAugmenter aggiunge un JavaScript™ `FormBridge`. Questo JavaScript™ (all’interno del modulo PDF) consente di eseguire azioni quali l’invio di un modulo, il salvataggio di un modulo o la disconnessione del modulo.
+Quando un modulo XDP viene renderizzato come PDF, il servizio FormsAugmenter aggiunge un JavaScript™ `FormBridge`. Questo JavaScript™ (all’interno del modulo PDF) consente di eseguire azioni quali l’invio di un modulo, il salvataggio di un modulo o la disconnessione del modulo.
 
 Nell&#39;area di lavoro di AEM Forms, la vista PDFTaskForm comunica con `FormBridge`JavaScript tramite un HTML intermedio presente in `/lc/libs/ws/libs/ws/pdf.html`. Il flusso è:
 
@@ -40,7 +60,7 @@ Nell&#39;area di lavoro di AEM Forms, la vista PDFTaskForm comunica con `FormBri
 
 Comunica utilizzando `window.postMessage` / `window.attachEvent('message')`
 
-Questo metodo è il metodo standard di comunicazione tra un frame principale e un iframe. I listener di eventi esistenti dai PDF forms aperti in precedenza vengono rimossi prima di aggiungerne uno nuovo. Questa rimozione considera anche il passaggio tra la scheda del modulo e la scheda della cronologia nella visualizzazione dei dettagli dell’attività.
+Questo metodo è il metodo standard di comunicazione tra un frame principale e un iframe. I listener di eventi esistenti da PDF forms aperti in precedenza vengono rimossi prima di aggiungerne uno nuovo. Questa rimozione considera anche il passaggio tra la scheda del modulo e la scheda della cronologia nella visualizzazione dei dettagli dell’attività.
 
 **pdf.html - `FormBridge`JavaScript all&#39;interno del PDF sottoposto a rendering**
 
@@ -52,17 +72,17 @@ Questo metodo è il metodo standard di comunicazione con un PDFJavaScript di un 
 >
 >Si sconsiglia di modificare il contenuto pdf.html/della visualizzazione PdfTaskForm.
 
-## Nuovo HTML Forms {#new-html-forms}
+## Nuovo Forms HTML {#new-html-forms}
 
-Il rendering dei nuovi moduli HTML viene eseguito dalla vista NewHTMLTaskForm.
+Il rendering dei nuovi moduli di HTML viene eseguito tramite la visualizzazione NewHTMLTaskForm.
 
 Quando si esegue il rendering di un modulo XDP come HTML utilizzando il pacchetto di moduli per dispositivi mobili distribuito su CRX, al modulo viene aggiunto anche `FormBridge`JavaScript aggiuntivo, che espone diversi metodi per il salvataggio e l’invio dei dati del modulo.
 
-Questo JavaScript è diverso da quello a cui si fa riferimento nei PDF forms precedenti, ma ha uno scopo simile.
+Questo JavaScript è diverso da quello a cui si fa riferimento in PDF forms in precedenza, ma ha uno scopo simile.
 
 >[!NOTE]
 >
->L&#39;Adobe non consiglia di modificare il contenuto della visualizzazione NewHTMLTaskForm.
+>Adobe consiglia di non modificare il contenuto della visualizzazione NewHTMLTaskForm.
 
 ## Flex Forms e guide {#flex-forms-and-guides}
 
@@ -72,7 +92,7 @@ Nell&#39;area di lavoro di AEM Forms, queste visualizzazioni comunicano con il S
 
 La comunicazione viene eseguita utilizzando `swfObject.postMessage` / `window.flexMessageHandler`.
 
-Protocollo definito da `WsNextAdapter.swf`. L&#39;oggetto `flexMessageHandlers` esistente nella finestra, da moduli SWF aperti in precedenza, viene rimosso prima di aggiungerne uno nuovo. La logica considera anche il passaggio tra la scheda del modulo e la scheda della cronologia nella visualizzazione dei dettagli dell’attività. `WsNextAdapter.swf` viene utilizzato per eseguire varie azioni del modulo, ad esempio Salva o Invia.
+Protocollo definito da `WsNextAdapter.swf`. L&#39;oggetto `flexMessageHandlers` esistente nella finestra, da SWF Form aperti in precedenza, viene rimosso prima di aggiungerne uno nuovo. La logica considera anche il passaggio tra la scheda del modulo e la scheda della cronologia nella visualizzazione dei dettagli dell’attività. `WsNextAdapter.swf` viene utilizzato per eseguire varie azioni del modulo, ad esempio Salva o Invia.
 
 >[!NOTE]
 >
@@ -86,7 +106,7 @@ Il rendering delle applicazioni di terze parti viene eseguito utilizzando la vis
 
 L&#39;area di lavoro di AEM Forms è in ascolto su `window.global.postMessage([Message],[Payload])`
 
-[Messaggio] può essere una stringa specificata come `SubmitMessage`| `CancelMessage`| `ErrorMessage`| `actionEnabledMessage` in `runtimeMap`. Le applicazioni di terze parti devono utilizzare questa interfaccia per inviare le notifiche necessarie all’area di lavoro di AEM Forms. L’utilizzo di questa interfaccia è obbligatorio perché l’area di lavoro di AEM Forms deve sapere quando l’attività viene inviata in modo da poter pulire la finestra dell’attività.
+[Messaggio] può essere una stringa specificata come `SubmitMessage`| `CancelMessage`| `ErrorMessage`| `actionEnabledMessage`in `runtimeMap`. Le applicazioni di terze parti devono utilizzare questa interfaccia per inviare le notifiche necessarie all’area di lavoro di AEM Forms. L’utilizzo di questa interfaccia è obbligatorio perché l’area di lavoro di AEM Forms deve sapere quando l’attività viene inviata in modo da poter pulire la finestra dell’attività.
 
 **Area di lavoro AEM Forms per comunicazioni applicazioni di terze parti**
 

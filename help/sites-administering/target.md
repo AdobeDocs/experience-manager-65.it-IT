@@ -9,13 +9,24 @@ exl-id: 2b17d8cd-a43c-4d54-b990-a6f0cb1db22b
 solution: Experience Manager, Experience Manager Sites
 feature: Administering,Personalization
 role: Admin
-source-git-commit: f6e1e28d6fbfc240a46c2c69f02c9c5fda1d0d0d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 61%
-
+source-wordcount: '620'
+ht-degree: 60%
 ---
-
 # Integrazione con Adobe Target{#integrating-with-adobe-target}
 
 Come parte di Adobe Marketing Cloud, [Adobe Target](https://www.adobe.com/ro/solutions/testing-targeting/testandtarget.html) consente di aumentare la rilevanza dei contenuti mediante il targeting e la valutazione su tutti i canali. Adobe Target viene utilizzato dagli esperti di marketing per progettare ed eseguire test online, creare all’istante segmenti di pubblico (in base al comportamento) e automatizzare il targeting di contenuti ed esperienze online. AEM ha adottato il flusso di lavoro di targeting utilizzato in Adobe Target Standard. Se utilizzi Target, avrai familiarità con l’ambiente di modifica del targeting in AEM.

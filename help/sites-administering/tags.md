@@ -9,13 +9,22 @@ exl-id: ff041ef0-e566-4373-818e-76680ff668d8
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 3545595dd67b5703d357964a752bf8979a38ea55
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1795'
+source-wordcount: '1796'
 ht-degree: 4%
-
 ---
-
 # Amministrazione dei tag {#administering-tags}
 
 I tag sono un metodo semplice e veloce per classificare i contenuti di un sito web. Possono essere considerate come parole chiave o etichette (metadati) che consentono di trovare più rapidamente il contenuto come risultato di una ricerca.
@@ -40,22 +49,22 @@ Alcune delle funzioni dei tag in AEM includono:
 * La restrizione principale per i nuovi tag creati è che devono essere univoci all’interno di uno spazio dei nomi specifico.
 * Il titolo di un tag non deve includere i caratteri di separazione del percorso del tag (né verranno visualizzati se presenti)
 
-   * due punti `:` - delimita il tag dello spazio dei nomi
-   * barra `/` - delimita i tag secondari
+  * due punti `:` - delimita il tag dello spazio dei nomi
+  * barra `/` - delimita i tag secondari
 
 * I tag possono essere applicati da autori e visitatori del sito. Indipendentemente dall’autore, tutte le forme di tag sono disponibili per la selezione, sia durante l’assegnazione a una pagina che durante la ricerca.
 * I tag possono essere creati e la relativa tassonomia può essere modificata dai membri del gruppo &quot;amministratori di tag&quot; e dai membri con diritti di modifica per `/content/cq:tags`.
 
-   * Un tag che contiene tag figlio viene definito tag contenitore
-   * Un tag che non è un tag contenitore viene definito tag foglia
-   * Uno spazio dei nomi dei tag è un tag foglia o un tag contenitore
+  * Un tag che contiene tag figlio viene definito tag contenitore
+  * Un tag che non è un tag contenitore viene definito tag foglia
+  * Uno spazio dei nomi dei tag è un tag foglia o un tag contenitore
 
 * I tag vengono utilizzati dal [componente Ricerca](https://helpx.adobe.com/it/experience-manager/core-components/using/quick-search.html) per facilitare la ricerca del contenuto.
 * I tag sono utilizzati dal [componente Teaser](https://helpx.adobe.com/it/experience-manager/core-components/using/teaser.html), che monitora il cloud di tag di un utente per fornire contenuti mirati.
 * Se l’assegnazione tag è un aspetto importante del contenuto
 
-   * assicurati di creare un pacchetto di tag con le pagine che li utilizzano
-   * assicurati che [le autorizzazioni tag](#setting-tag-permissions) abilitino l&#39;accesso in lettura
+  * assicurati di creare un pacchetto di tag con le pagine che li utilizzano
+  * assicurati che [le autorizzazioni tag](#setting-tag-permissions) abilitino l&#39;accesso in lettura
 
 ## Console per assegnazione tag {#tagging-console}
 
@@ -69,9 +78,9 @@ Per accedere alla console Assegnazione tag:
 * accedi con privilegi amministrativi
 * dalla navigazione globale
 
-   * seleziona **`Tools`**
-   * seleziona **`General`**
-   * seleziona **`Tagging`**
+  * seleziona **`Tools`**
+  * seleziona **`General`**
+  * seleziona **`Tagging`**
 
 ![managing_tags_usingthetagasministrationconsole](assets/managing_tags_usingthetagasministrationconsolea.png)
 
@@ -252,30 +261,30 @@ Le autorizzazioni per i tag sono [&#39;sicure (per impostazione predefinita)&#39
 
 * sull’istanza di authoring
 
-   * accedi con privilegi amministrativi
-   * accedere a [Console sicurezza](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console),
+  * accedi con privilegi amministrativi
+  * accedere a [Console sicurezza](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console),
 
-      * ad esempio, passare a http://localhost:4502/useradmin
+    * ad esempio, passa a http://localhost:4502/useradmin
 
-   * nel riquadro di sinistra, selezionare il gruppo (o l&#39;utente) per il quale deve essere concessa l&#39;[autorizzazione di lettura](/help/sites-administering/security.md#permissions)
-   * nel riquadro di destra, individua il **Percorso &#x200B;** dello spazio dei nomi dei tag
+  * nel riquadro di sinistra, selezionare il gruppo (o l&#39;utente) per il quale deve essere concessa l&#39;[autorizzazione di lettura](/help/sites-administering/security.md#permissions)
+  * nel riquadro di destra, individua il **Percorso &#x200B;** dello spazio dei nomi dei tag
 
-      * ad esempio, `/content/cq:tags/mycommunity`
+    * ad esempio, `/content/cq:tags/mycommunity`
 
-   * seleziona `checkbox`nella colonna **Leggi**
-   * seleziona **Salva**
+  * seleziona `checkbox`nella colonna **Leggi**
+  * seleziona **Salva**
 
 ![chlimage_1-204](assets/chlimage_1-204.png)
 
 * assicurarsi che tutte le istanze di pubblicazione abbiano le stesse autorizzazioni
 
-   * un approccio consiste nel [creare un pacchetto](/help/sites-administering/package-manager.md#package-manager) dello spazio dei nomi sull&#39;autore
+  * un approccio consiste nel [creare un pacchetto](/help/sites-administering/package-manager.md#package-manager) dello spazio dei nomi sull&#39;autore
 
-      * nella scheda `Advanced`, per `AC Handling` seleziona `Overwrite`
+    * nella scheda `Advanced`, per `AC Handling` seleziona `Overwrite`
 
-   * replicare il pacchetto
+  * replicare il pacchetto
 
-      * scegli `Replicate` da gestione pacchetti
+    * scegli `Replicate` da gestione pacchetti
 
 ## Gestione dei tag in lingue diverse {#managing-tags-in-different-languages}
 

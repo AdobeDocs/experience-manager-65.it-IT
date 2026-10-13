@@ -7,13 +7,31 @@ feature: Adaptive Forms,Foundation Components,Core Components
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '6030'
+source-wordcount: '6063'
 ht-degree: 0%
-
 ---
-
 # Best practice per l’utilizzo dei moduli adattivi {#best-practices-for-working-with-adaptive-forms}
 
 <span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
@@ -39,8 +57,8 @@ Una struttura di progetto semplificata e standardizzata può ridurre notevolment
 
 * Utilizza Apache Maven `aem-project-archetype` per creare e gestire la struttura per il progetto AEM. Crea la struttura e i modelli consigliati per il progetto AEM. Inoltre, fornisce sistemi di automazione della build e di controllo delle modifiche per facilitare la gestione del progetto.
 
-   * Utilizza il comando maven `archetype:generate` per generare la struttura iniziale.
-   * Utilizza il comando maven `eclipse:eclipse` per generare i file di progetto dell’eclissi e importare il progetto nell’eclissi.
+  * Utilizza il comando maven `archetype:generate` per generare la struttura iniziale.
+  * Utilizza il comando maven `eclipse:eclipse` per generare i file di progetto dell’eclissi e importare il progetto nell’eclissi.
 
 Per ulteriori informazioni, consulta [Come creare progetti AEM utilizzando Apache Maven](/help/sites-developing/ht-projects-maven.md).
 
@@ -66,10 +84,10 @@ Dopo aver configurato il progetto AEM, definisci la strategia per la creazione e
 * Si consiglia di caricare i pacchetti del modulo utilizzando l’interfaccia utente di Form Manager invece dell’interfaccia utente di CRX Package Manager, in quanto il caricamento dei pacchetti tramite CRX Package Manager può talvolta causare anomalie.
 * AEM Forms consente di creare moduli adattivi basati sui seguenti modelli di moduli. I modelli di modulo fungono da interfaccia per lo scambio di dati tra un modulo e un sistema AEM e forniscono una struttura basata su XML per il flusso di dati all’interno e all’esterno di un modulo adattivo. Inoltre, i modelli di modulo impongono regole e vincoli ai moduli adattivi sotto forma di vincoli di schema e XFA.
 
-   * **Nessuno**: i moduli adattivi creati con questa opzione non utilizzano alcun modello di modulo. I dati XML generati da tali moduli hanno una struttura piatta con campi e valori corrispondenti.
-   * **Schema XML o JSON**: gli schemi XML e JSON rappresentano la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end dell&#39;organizzazione. È possibile associare uno schema a un modulo adattivo e utilizzarne gli elementi per aggiungere contenuto dinamico al modulo adattivo. Gli elementi dello schema sono disponibili nella scheda Oggetto modello dati del browser dei contenuti per la creazione di moduli adattivi. Puoi trascinare gli elementi dello schema per creare il modulo.
-   * **Modello di modulo XFA**: è un modello di modulo ideale se si dispone di investimenti in moduli HTML5 basati su XFA. Fornisce un modo diretto per convertire i moduli basati su XFA in moduli adattivi. Eventuali regole XFA esistenti vengono mantenute nei moduli adattivi associati. I moduli adattivi risultanti supportano i costrutti XFA, ad esempio convalide, eventi, proprietà e modelli.
-   * **Modello dati modulo**: è un modello di modulo preferito se desideri integrare i sistemi back-end, come database, servizi Web e profilo utente di AEM, per precompilare i moduli adattivi e riscrivere i dati dei moduli inviati nei sistemi back-end. L’editor modello dati modulo consente di definire e configurare entità e servizi in un modello dati modulo da utilizzare per creare moduli adattivi. Per ulteriori informazioni, vedere [Integrazione dati AEM Forms](/help/forms/using/data-integration.md).
+  * **Nessuno**: i moduli adattivi creati con questa opzione non utilizzano alcun modello di modulo. I dati XML generati da tali moduli hanno una struttura piatta con campi e valori corrispondenti.
+  * **Schema XML o JSON**: gli schemi XML e JSON rappresentano la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end dell&#39;organizzazione. È possibile associare uno schema a un modulo adattivo e utilizzarne gli elementi per aggiungere contenuto dinamico al modulo adattivo. Gli elementi dello schema sono disponibili nella scheda Oggetto modello dati del browser dei contenuti per la creazione di moduli adattivi. Puoi trascinare gli elementi dello schema per creare il modulo.
+  * **Modello di modulo XFA**: è un modello di modulo ideale se si dispone di investimenti in moduli HTML5 basati su XFA. Fornisce un modo diretto per convertire i moduli basati su XFA in moduli adattivi. Eventuali regole XFA esistenti vengono mantenute nei moduli adattivi associati. I moduli adattivi risultanti supportano i costrutti XFA, ad esempio convalide, eventi, proprietà e modelli.
+  * **Modello dati modulo**: è un modello di modulo preferito se desideri integrare i sistemi back-end, come database, servizi Web e profilo utente di AEM, per precompilare i moduli adattivi e riscrivere i dati dei moduli inviati nei sistemi back-end. L’editor modello dati modulo consente di definire e configurare entità e servizi in un modello dati modulo da utilizzare per creare moduli adattivi. Per ulteriori informazioni, vedere [Integrazione dati AEM Forms](/help/forms/using/data-integration.md).
 
 È importante scegliere con attenzione il modello dati che non solo soddisfa le tue esigenze, ma estende gli investimenti esistenti in risorse XFA e XSD, se presenti. Utilizzare il modello XSD per creare modelli di modulo, in quanto l&#39;XML generato contiene dati in base all&#39;XPATH definito dallo schema. L’utilizzo del modello XSD come scelta predefinita per il modello dati del modulo è utile anche perché disaccoppia la progettazione del modulo dal sistema back-end che elabora e utilizza i dati e migliora le prestazioni del modulo grazie alla mappatura uno a uno dei campi del modulo. Inoltre, BindRef del campo può essere reso l’XPATH del relativo valore dati in XML.
 
@@ -81,8 +99,8 @@ Per ulteriori informazioni, consulta [Creare un modulo adattivo](/help/forms/usi
 
 * AEM Forms fornisce modelli di moduli adattivi pronti all’uso che è possibile utilizzare per creare moduli adattivi. Puoi anche creare modelli personalizzati. AEM fornisce modelli statici e modificabili.
 
-   * I modelli statici sono definiti e configurati dagli sviluppatori.
-   * I modelli modificabili vengono creati dagli autori mediante l’editor di modelli. L’editor modelli ti consente di definire una struttura di base e il contenuto iniziale in un modello. Qualsiasi modifica nel livello struttura si riflette in tutti i moduli che utilizzano tale modello. Il contenuto iniziale può includere un tema preconfigurato, un servizio di precompilazione, un’azione di invio e così via. Tuttavia, queste impostazioni possono essere modificate per un modulo utilizzando l’editor di moduli. Per ulteriori informazioni, vedere [Modelli di modulo adattivo](/help/forms/using/template-editor.md).
+  * I modelli statici sono definiti e configurati dagli sviluppatori.
+  * I modelli modificabili vengono creati dagli autori mediante l’editor di modelli. L’editor modelli ti consente di definire una struttura di base e il contenuto iniziale in un modello. Qualsiasi modifica nel livello struttura si riflette in tutti i moduli che utilizzano tale modello. Il contenuto iniziale può includere un tema preconfigurato, un servizio di precompilazione, un’azione di invio e così via. Tuttavia, queste impostazioni possono essere modificate per un modulo utilizzando l’editor di moduli. Per ulteriori informazioni, vedere [Modelli di modulo adattivo](/help/forms/using/template-editor.md).
 
 * Per applicare uno stile a un campo o a un&#39;istanza di pannello specifica, utilizza [lo stile in linea](/help/forms/using/inline-style-adaptive-forms.md). In alternativa, puoi definire una classe in un file CSS e specificare il nome della classe nella proprietà Classe CSS del componente.
 * Includi una libreria client in un componente per applicare in modo coerente gli stili tra i moduli adattivi o i frammenti che utilizzano tale componente. Per ulteriori informazioni, consulta [Creare un componente pagina modulo adattivo](/help/forms/using/custom-adaptive-forms-templates.md).
@@ -91,9 +109,9 @@ Per ulteriori informazioni, consulta [Creare un modulo adattivo](/help/forms/usi
 * I moduli adattivi forniscono layout di pannello, ad esempio reattivi, a schede, fisarmoniche e procedura guidata, per controllare il layout dei componenti del modulo in un pannello. È possibile creare layout di pannello personalizzati e renderli disponibili per l&#39;utilizzo da parte degli autori di moduli. Per ulteriori informazioni, consulta [Creazione di componenti di layout personalizzati per moduli adattivi](/help/forms/using/custom-layout-components-forms.md).
 * Puoi anche personalizzare specifici componenti del modulo adattivo, come campi e layout del pannello.
 
-   * Utilizza la funzionalità [Sovrapposizione](/help/sites-developing/overlays.md) di AEM per modificare una copia di un componente. Si sconsiglia di modificare i componenti predefiniti.
-   * Per personalizzare il layout dei componenti predefiniti dei moduli adattivi in /libs, [crea componenti di layout personalizzati](/help/forms/using/custom-layout-components-forms.md) oltre ai [layout predefiniti](/help/forms/using/layout-capabilities-adaptive-forms.md).
-   * Introdurre interattività personalizzate creando widget o aspetti personalizzati. Si sconsiglia di modificare i componenti predefiniti. Per ulteriori informazioni, vedere [Framework aspetto](/help/forms/using/introduction-widgets.md).
+  * Utilizza la funzionalità [Sovrapposizione](/help/sites-developing/overlays.md) di AEM per modificare una copia di un componente. Si sconsiglia di modificare i componenti predefiniti.
+  * Per personalizzare il layout dei componenti predefiniti dei moduli adattivi in /libs, [crea componenti di layout personalizzati](/help/forms/using/custom-layout-components-forms.md) oltre ai [layout predefiniti](/help/forms/using/layout-capabilities-adaptive-forms.md).
+  * Introdurre interattività personalizzate creando widget o aspetti personalizzati. Si sconsiglia di modificare i componenti predefiniti. Per ulteriori informazioni, vedere [Framework aspetto](/help/forms/using/introduction-widgets.md).
 
 * Consulta [Gestione di informazioni personali](/help/forms/using/adaptive-forms-best-practices.md#p-handling-personally-identifiable-information-p) per consigli sulla gestione dei dati PII.
 
@@ -139,18 +157,18 @@ L’editor di regole fornisce un editor visivo e un editor di codice per la scri
 * Quando gestisci regole complesse o di uso comune, considera la scrittura di regole business come funzioni in una libreria client separata che puoi specificare e riutilizzare nei moduli adattivi. La libreria client deve essere una libreria indipendente e non deve avere dipendenze esterne, ad eccezione di jQuery e Underscore.js. È inoltre possibile utilizzare la libreria client per applicare [la riconvalida lato server](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form) dei dati del modulo inviati.
 * I moduli adattivi forniscono un set di API che è possibile utilizzare per comunicare con ed eseguire azioni sui moduli adattivi. Alcune delle API chiave sono le seguenti. Per ulteriori informazioni, vedere [Riferimento API della libreria JavaScript per Forms adattivo](https://adobe.com/go/learn_aemforms_documentation_63).
 
-   * `guideBridge.reset()`: reimposta un modulo.
-   * `guideBridge.submit()`: invia un modulo.
-   * `guideBridge.setFocus(somExp, focusOption, runCompletionExp)`: imposta lo stato attivo su un campo.
-   * `guideBridge.validate(errorList, somExpression, focus)`: convalida un modulo.
-   * `guideBridge.getDataXML(options)`: ottiene i dati del modulo come XML.
-   * `guideBridge.resolveNode(somExpression)`: ottiene un oggetto modulo.
-   * `guideBridge.setProperty(somList, propertyName, valueList)`: imposta la proprietà di un oggetto modulo.
-   * Inoltre, puoi utilizzare le seguenti proprietà del campo:
+  * `guideBridge.reset()`: reimposta un modulo.
+  * `guideBridge.submit()`: invia un modulo.
+  * `guideBridge.setFocus(somExp, focusOption, runCompletionExp)`: imposta lo stato attivo su un campo.
+  * `guideBridge.validate(errorList, somExpression, focus)`: convalida un modulo.
+  * `guideBridge.getDataXML(options)`: ottiene i dati del modulo come XML.
+  * `guideBridge.resolveNode(somExpression)`: ottiene un oggetto modulo.
+  * `guideBridge.setProperty(somList, propertyName, valueList)`: imposta la proprietà di un oggetto modulo.
+  * Inoltre, puoi utilizzare le seguenti proprietà del campo:
 
-      * `field.value` per modificare il valore di un campo.
-      * `field.enabled` per abilitare/disabilitare un campo.
-      * `field.visible` per modificare la visibilità di un campo.
+    * `field.value` per modificare il valore di un campo.
+    * `field.enabled` per abilitare/disabilitare un campo.
+    * `field.visible` per modificare la visibilità di un campo.
 
 * Gli autori di moduli adattivi potrebbero dover scrivere codice JavaScript per creare una logica di business in un modulo. JavaScript è potente ed efficace, ma probabilmente potrebbe compromettere le aspettative di sicurezza. Pertanto, devi assicurarti che l’autore del modulo sia un utente fidato e che esistano processi per rivedere e approvare il codice JavaScript prima che un modulo venga messo in produzione. L’amministratore può limitare l’accesso all’editor di regole ai gruppi di utenti in base al loro ruolo o funzione. Consulta [Concedere l&#39;accesso all&#39;editor di regole a specifici gruppi di utenti](/help/forms/using/rule-editor-access-user-groups.md).
 * È possibile utilizzare le espressioni nelle regole per rendere dinamici i moduli adattivi. Tutte le espressioni sono espressioni JavaScript valide e utilizzano API di modelli di script per moduli adattivi. Queste espressioni restituiscono valori di determinati tipi. Per ulteriori informazioni sulle espressioni e sulle relative best practice, vedere [Espressioni modulo adattivo](/help/forms/using/adaptive-form-expressions.md).
@@ -210,17 +228,17 @@ Per risolvere i problemi di prestazioni con i moduli di grandi dimensioni, consi
 * Includi solo i campi e i pannelli nei moduli adattivi che acquisiscono informazioni dall’utente. Valuta se mantenere minimo il contenuto statico o utilizza URL per aprirli in una finestra separata.
 * Anche se ogni modulo è progettato per uno scopo specifico, nella maggior parte dei moduli sono presenti alcuni segmenti comuni. Ad esempio, dati personali, indirizzo, dettagli sull’impiego e così via. Crea [frammenti di moduli adattivi](/help/forms/using/adaptive-form-fragments.md) per sezioni e elementi modulo comuni e utilizzali in tutti i moduli. È inoltre possibile salvare un pannello in un modulo esistente come frammento. Qualsiasi modifica in un frammento si riflette in tutti i moduli adattivi associati. Promuove l’authoring collaborativo in quanto più autori possono lavorare contemporaneamente su diversi frammenti che compongono un modulo.
 
-   * È consigliabile creare frammenti di modulo anche per sezioni non riutilizzabili durante la creazione di moduli. Man mano che le dimensioni e la complessità dei moduli aumentano, la loro suddivisione in frammenti può semplificare notevolmente il processo di authoring e rendere il modulo più semplice da gestire. Questo approccio consente di concentrarsi su parti più piccole e più gestibili del modulo, anziché occuparsi dell&#39;intero modulo contemporaneamente.
-   * Analogamente ai moduli adattivi, si consiglia di definire nella libreria client tutti gli stili e gli script personalizzati specifici del frammento, utilizzando la finestra di dialogo del contenitore di frammenti. Inoltre, prova a creare frammenti autosufficienti che non dipendono da oggetti esterni.
-   * Evita l’utilizzo di script per più frammenti. Se è presente un oggetto esterno al frammento a cui si deve fare riferimento, provare a rendere tale oggetto parte del modulo principale. Se l’oggetto deve ancora trovarsi in un altro frammento, fai riferimento a esso con il relativo nome nello script.
+  * È consigliabile creare frammenti di modulo anche per sezioni non riutilizzabili durante la creazione di moduli. Man mano che le dimensioni e la complessità dei moduli aumentano, la loro suddivisione in frammenti può semplificare notevolmente il processo di authoring e rendere il modulo più semplice da gestire. Questo approccio consente di concentrarsi su parti più piccole e più gestibili del modulo, anziché occuparsi dell&#39;intero modulo contemporaneamente.
+  * Analogamente ai moduli adattivi, si consiglia di definire nella libreria client tutti gli stili e gli script personalizzati specifici del frammento, utilizzando la finestra di dialogo del contenitore di frammenti. Inoltre, prova a creare frammenti autosufficienti che non dipendono da oggetti esterni.
+  * Evita l’utilizzo di script per più frammenti. Se è presente un oggetto esterno al frammento a cui si deve fare riferimento, provare a rendere tale oggetto parte del modulo principale. Se l’oggetto deve ancora trovarsi in un altro frammento, fai riferimento a esso con il relativo nome nello script.
 
 * Utilizza Salva e riprendi con salvataggio automatico per salvare periodicamente il modulo adattivo e consentire agli utenti di visitarlo nuovamente in un secondo momento per completare il modulo.
 * Configura i frammenti per caricarli in modo differito. In fase di runtime, il rendering del frammento contrassegnato per il caricamento in modo differito viene eseguito solo quando necessario. Riduce in modo significativo il tempo di caricamento per i moduli di grandi dimensioni. È supportato anche nei frammenti con pannelli ripetibili. Per ulteriori informazioni, vedere [Configurare il caricamento lento](/help/forms/using/lazy-loading-adaptive-forms.md).
 
-   * Non configurare il caricamento lento sui frammenti in un layout di griglia reattiva o nel primo pannello.
-   * I componenti Allegato file e Termini e condizioni non sono supportati nei frammenti caricati in modo differito.
-   * Contrassegna un valore in un pannello con caricamento lazy come Usa valore a livello globale se tale valore viene utilizzato in un’altra parte del modulo in modo che sia disponibile per l’uso quando il pannello che lo contiene viene scaricato.
-   * È consigliabile scrivere regole di visibilità per i frammenti che devono essere visualizzati o nascosti in base a una condizione.
+  * Non configurare il caricamento lento sui frammenti in un layout di griglia reattiva o nel primo pannello.
+  * I componenti Allegato file e Termini e condizioni non sono supportati nei frammenti caricati in modo differito.
+  * Contrassegna un valore in un pannello con caricamento lazy come Usa valore a livello globale se tale valore viene utilizzato in un’altra parte del modulo in modo che sia disponibile per l’uso quando il pannello che lo contiene viene scaricato.
+  * È consigliabile scrivere regole di visibilità per i frammenti che devono essere visualizzati o nascosti in base a una condizione.
 * Imposta il valore di **Numero di chiamate per richiesta** in **Apache Sling Main Servlet** su un numero abbastanza grande. Consente al server Forms di consentire chiamate aggiuntive. Nella configurazione viene visualizzato il valore predefinito 1500. Il valore, 1500 chiamate, è per altri componenti di Experience Manager come Sites e Assets. Il set di valori predefinito per i moduli adattivi è 20000. Se l&#39;errore `too many calls` si verifica nei registri o se il rendering del modulo non riesce, prova ad aumentare il valore a un numero elevato per risolvere il problema. Se il numero di chiamate supera i 20000, significa che il modulo è complesso e potrebbe richiedere un po’ di tempo per il rendering nel browser. Questo accade solo la prima volta che il modulo viene caricato, dopo che il modulo è stato memorizzato nella cache e una volta memorizzato nella cache, non vi è alcun impatto significativo sulle prestazioni.
 
 ### Considerazioni sulle dimensioni dei DOM e prestazioni del browser
@@ -232,10 +250,10 @@ Durante la creazione di moduli adattivi complessi e di grandi dimensioni, è imp
 * **Differenze di rendering del browser**: le prestazioni di rendering possono variare in modo significativo tra browser e dispositivi diversi. Alcuni motori di rendering del browser elaborano gli aggiornamenti DOM dinamici in modo diverso, con approcci diversi ai ricalcoli degli stili, ai riflussi e ai ritocchi. Ciò è particolarmente evidente nel caso di contenuti di grandi dimensioni caricati dinamicamente. In alcuni browser, ogni manipolazione DOM significativa può attivare un ricalcolo completo del layout e un aggiornamento della pagina, che intensificano i problemi di prestazioni con moduli complessi o di grandi dimensioni.
 
 * **Fattori di prestazioni**: diversi fattori influiscono sulle prestazioni di caricamento lento:
-   * Dimensioni e complessità dei frammenti
-   * Stili CSS applicati agli elementi
-   * Numero di rientri attivati dagli aggiornamenti dinamici
-   * Funzionalità del dispositivo e del browser
+  * Dimensioni e complessità dei frammenti
+  * Stili CSS applicati agli elementi
+  * Numero di rientri attivati dagli aggiornamenti dinamici
+  * Funzionalità del dispositivo e del browser
 
 * **Impatto reale**: nei casi osservati, i moduli con dimensioni DOM di circa 400 KB hanno subito ritardi di rendering significativi fino a 15 secondi su alcuni browser. Questi ritardi sono dovuti non solo alle dimensioni del frammento, ma anche all’elaborazione CSS e ai rientri di pagina attivati durante l’inserimento dinamico dei contenuti.
 
@@ -287,9 +305,9 @@ Un documento di record (DoR) è una versione PDF semplificata di un modulo adatt
 
 * A seconda del modello di dati del modulo su cui si basa un modulo adattivo, è possibile configurare un modello per DoR come segue:
 
-   * **Modello di modulo XFA**: utilizza il file XDP associato come modello DoR.
-   * **Schema XSD**: utilizza il modello XFA associato che utilizza lo stesso schema XML utilizzato dal modulo adattivo.
-   * **Nessuno**: usa DoR generato automaticamente.
+  * **Modello di modulo XFA**: utilizza il file XDP associato come modello DoR.
+  * **Schema XSD**: utilizza il modello XFA associato che utilizza lo stesso schema XML utilizzato dal modulo adattivo.
+  * **Nessuno**: usa DoR generato automaticamente.
 
 * Configura intestazione, piè di pagina, immagini, colore, font e così via direttamente dalla scheda Documento di record dell’editor di moduli adattivi.
 * Utilizzare `DoRService` per generare il DoR a livello di programmazione.
@@ -365,7 +383,7 @@ Di seguito sono riportate alcune best practice per configurare AEM per migliorar
 * Crea [pagine di errore personalizzate visualizzate dal gestore degli errori](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/customizing-errorhandler-pages.html?lang=it).
 * Server AEM Forms protetto.
 
-   * Utilizzare la modalità di esecuzione `nosamplecontent` per verificare che non siano presenti contenuti di esempio e utenti di esempio distribuiti nel server di produzione. Vedere [Esecuzione di AEM in modalità pronta per la produzione](/help/sites-administering/production-ready.md).
+  * Utilizzare la modalità di esecuzione `nosamplecontent` per verificare che non siano presenti contenuti di esempio e utenti di esempio distribuiti nel server di produzione. Vedere [Esecuzione di AEM in modalità pronta per la produzione](/help/sites-administering/production-ready.md).
 
 * Mantenere le dimensioni heap su un minimo di 8 GB. Per altre impostazioni, vedere [Ottimizzazione delle prestazioni del server AEM Forms](/help/forms/using/performance-tuning-aem-forms.md).
 * Utilizzare le sessioni utente di servizio anziché le sessioni di amministrazione per eseguire attività a livello di servizio. Per ulteriori informazioni, vedere [Autenticazione servizio](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html).
@@ -439,17 +457,17 @@ Prima di decidere di utilizzare librerie client personalizzate, è importante co
 **Le funzioni personalizzate** offrono un vantaggio notevole rispetto all&#39;**editor di codice** perché forniscono una netta separazione tra contenuto e codice, migliorando la collaborazione e semplificando i flussi di lavoro. Si consiglia di utilizzare funzioni personalizzate per i seguenti vantaggi:
 
 * **Utilizza senza problemi il controllo delle versioni come Git:**
-   * L’isolamento del codice dai contenuti riduce in modo significativo i conflitti Git durante la gestione dei contenuti e promuove un archivio ben organizzato.
-   * Le funzioni personalizzate sono utili per progetti con più collaboratori che lavorano simultaneamente.
+  * L’isolamento del codice dai contenuti riduce in modo significativo i conflitti Git durante la gestione dei contenuti e promuove un archivio ben organizzato.
+  * Le funzioni personalizzate sono utili per progetti con più collaboratori che lavorano simultaneamente.
 
 * **Vantaggi tecnici:**
-   * Le funzioni personalizzate offrono modularità e incapsulamento.
-   * I moduli possono essere sviluppati, testati e manutenuti in modo indipendente.
-   * Migliora la riutilizzabilità e la manutenzione del codice.
+  * Le funzioni personalizzate offrono modularità e incapsulamento.
+  * I moduli possono essere sviluppati, testati e manutenuti in modo indipendente.
+  * Migliora la riutilizzabilità e la manutenzione del codice.
 
 * **Processo di sviluppo efficiente:**
-   * La modularità consente agli sviluppatori di concentrarsi su funzionalità specifiche.
-   * Riduce il carico di lavoro degli sviluppatori riducendo la complessità dell&#39;intera base di codice per un processo di sviluppo più efficiente.
+  * La modularità consente agli sviluppatori di concentrarsi su funzionalità specifiche.
+  * Riduce il carico di lavoro degli sviluppatori riducendo la complessità dell&#39;intera base di codice per un processo di sviluppo più efficiente.
 
 
 

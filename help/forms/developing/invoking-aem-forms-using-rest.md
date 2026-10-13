@@ -9,13 +9,29 @@ role: Developer
 exl-id: 991fbc56-f144-4ae6-b010-8d02f780d347
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: 94663796-0ee7-58b9-84f4-b425ebb69e83
+    internal-label: AEM Forms on JEE
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2399'
+source-wordcount: '2508'
 ht-degree: 1%
-
 ---
-
 # Richiamare AEM Forms tramite richieste REST {#invoking-aem-forms-using-rest-requests}
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
@@ -319,7 +335,7 @@ Quando viene richiamato, il processo esegue le azioni seguenti:
 
 Specifica l&#39;URL per richiamare il processo nel campo *Invia all&#39;URL* del pulsante, come illustrato nella figura seguente.
 
-L&#39;URL completo da richiamare è https://hiro-xp:8080/rest/services/MyApplication/EncryptDocument.
+L’URL completo per richiamare il processo è https://hiro-xp:8080/rest/services/MyApplication/EncryptDocument.
 
 Se il processo richiede un documento PDF come valore di input, assicurarsi di inviare il modulo come PDF, come illustrato nella figura precedente. Inoltre, per richiamare correttamente un processo, è necessario che quest&#39;ultimo restituisca un documento PDF. In caso contrario, Acrobat non può gestire il valore restituito e si verifica un errore. Non è necessario specificare il nome della variabile di processo di input. Ad esempio, il processo *MyApplication/EncryptDocument* ha una variabile di input denominata `inDoc`. Non è necessario specificare inDoc, purché il modulo venga inviato come PDF.
 

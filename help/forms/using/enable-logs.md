@@ -1,5 +1,5 @@
 ---
-title: Abilita registrazione per moduli HTML5
+title: Abilitare la registrazione per i moduli HTML5
 description: L'utilità logger consente di registrare un modulo e di eseguire il debug dei problemi correlati ai moduli.
 contentOwner: robhagat
 content-type: reference
@@ -10,22 +10,37 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 2f574c98-550c-4b84-be1e-46a2700e7277
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '629'
-ht-degree: 4%
-
+source-wordcount: '644'
+ht-degree: 6%
 ---
+# Abilitare la registrazione per i moduli HTML5{#enable-logging-for-html-forms}
 
-# Abilita registrazione per moduli HTML5{#enable-logging-for-html-forms}
-
-È possibile configurare l&#39;utilità logger per avviare la creazione di registri per i moduli HTML5. L&#39;utilità logger dispone di vari livelli, è possibile impostare un livello in base alle proprie esigenze. HTML5 Forms dispone di componenti server e client. Puoi configurare i registri per entrambi i componenti.
+È possibile configurare l&#39;utilità logger per avviare la creazione di registri per i moduli HTML5. L&#39;utilità logger dispone di vari livelli, è possibile impostare un livello in base alle proprie esigenze. HTML5 forms dispone di componenti server e client. Puoi configurare i registri per entrambi i componenti.
 
 ## Configurazione della registrazione lato server {#configuring-server-side-logging}
 
 Per configurare i registri lato server, effettua le seguenti operazioni:
 
-1. Vai a `https://'[server]:[port]'/system/console/configMgr`. Individua e apri l&#39;opzione *Configurazione logger di accesso Sling*. Viene visualizzata una finestra di dialogo:
+1. Passa a `https://'[server]:[port]'/system/console/configMgr`. Individua e apri l&#39;opzione *Configurazione logger di accesso Sling*. Viene visualizzata una finestra di dialogo:
 
    Finestra di dialogo dell&#39;opzione di configurazione del logger di registrazione di Sling ![&#x200B; dell&#39;interfaccia](assets/logconfig.png)
 
@@ -43,7 +58,7 @@ Per configurare i registri lato server, effettua le seguenti operazioni:
 
 ## Configurazione della registrazione client {#configuring-client-logging}
 
-Per abilitare la registrazione lato client nei moduli HTML5, puoi utilizzare i seguenti metodi:
+Per abilitare la registrazione lato client nei moduli HTML5, è possibile utilizzare i metodi seguenti:
 
 * Utilizzo del parametro della richiesta denominato `log`
 * Utilizzo di CQ Configuration Manager

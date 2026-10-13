@@ -9,13 +9,24 @@ feature: PDF Generator
 exl-id: 0e2c12b5-24c8-4aca-8826-cb661051ce4f
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: b26425d0-6fde-5e02-bfd6-e560e2fa86c9
+    internal-label: PDF Generator
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1222'
 ht-degree: 100%
-
 ---
-
 # Conversione di file con PDF Generator{#converting-files-using-pdf-generator}
 
 >[!NOTE]
@@ -51,7 +62,7 @@ I documenti PDF creati da PDF Generator in Acrobat 5.0 o versione successiva con
 
 I metadati del documento contengono informazioni (ma non solo) che vengono visualizzate anche nella scheda Descrizione della finestra di dialogo Proprietà documento in Acrobat. Le modifiche apportate nella scheda Descrizione vengon riflesse nei metadati del documento. I metadati del documento possono essere estesi e modificati utilizzando prodotti di terze parti.
 
-Adobe Extensible Metadata Platform (XMP) fornisce alle applicazioni Adobe un framework XML comune che standardizza la creazione, l’elaborazione e lo scambio di metadati del documento tra i flussi di lavoro di pubblicazione. Puoi salvare e importare il codice sorgente XML dei metadati del documento in formato XMP per semplificare la condivisione dei metadati tra vari documenti. Per ulteriori informazioni sui file di XMP, consulta [Extensible Metadata Platform (XMP)](https://www.adobe.com/it/products/xmp/) e il [centro sviluppatori Adobe XMP](https://www.adobe.com/devnet/xmp.html).
+Adobe Extensible Metadata Platform (XMP) fornisce alle applicazioni Adobe un framework XML comune che standardizza la creazione, l’elaborazione e lo scambio di metadati del documento tra i flussi di lavoro di pubblicazione. Puoi salvare e importare il codice sorgente XML dei metadati del documento in formato XMP per semplificare la condivisione dei metadati tra vari documenti. Per ulteriori informazioni sui file di XMP, consulta [Extensible Metadata Platform (XMP)](https://www.adobe.com/products/xmp/) e il [centro sviluppatori Adobe XMP](https://www.adobe.com/devnet/xmp.html).
 
 Puoi creare file XMP in Acrobat.
 

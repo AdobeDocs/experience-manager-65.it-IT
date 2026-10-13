@@ -8,13 +8,26 @@ feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 4876a742-a341-5402-aba7-e749c45e777c
+    internal-label: Form Data Model
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2096'
+source-wordcount: '2186'
 ht-degree: 3%
-
 ---
-
 # Configurare origini dati{#configure-data-sources}
 
 | Versione | Collegamento articolo |
@@ -131,10 +144,10 @@ Per configurare i servizi RESTful, effettuare le seguenti operazioni:
    * Selezionate URL o File dal menu a discesa Swagger Source, quindi specificate l&#39;URL Swagger nel file di definizione Swagger o caricate il file Swagger dal file system locale.
    * In base all’input di Swagger Source, i seguenti campi sono precompilati con i valori:
 
-      * Schema: protocolli di trasferimento utilizzati dall’API REST. Il numero di tipi di schema visualizzati nell&#39;elenco a discesa dipende dagli schemi definiti nell&#39;origine Swagger.
-      * Host: il nome di dominio o l’indirizzo IP dell’host che serve l’API REST. È un campo obbligatorio.
-      * Percorso base: prefisso URL per tutti i percorsi API. È un campo facoltativo.\
-        Se necessario, modifica i valori precompilati per questi campi.
+     * Schema: protocolli di trasferimento utilizzati dall’API REST. Il numero di tipi di schema visualizzati nell&#39;elenco a discesa dipende dagli schemi definiti nell&#39;origine Swagger.
+     * Host: il nome di dominio o l’indirizzo IP dell’host che serve l’API REST. È un campo obbligatorio.
+     * Percorso base: prefisso URL per tutti i percorsi API. È un campo facoltativo.\
+       Se necessario, modifica i valori precompilati per questi campi.
 
    * Selezionare il tipo di autenticazione, ovvero Nessuno, OAuth2.0([Codice di autorizzazione](https://oauth.net/2/grant-types/authorization-code/), [Credenziali client](https://oauth.net/2/grant-types/client-credentials/)), Autenticazione di base, Chiave API, Autenticazione personalizzata o Autenticazione reciproca, per accedere al servizio RESTful e fornire di conseguenza i dettagli per l&#39;autenticazione.
 
@@ -181,7 +194,7 @@ I servizi Web basati su SOAP sono descritti utilizzando [le specifiche WSDL (Web
    * Selezionare il tipo di autenticazione, ovvero Nessuno, OAuth2.0([Codice di autorizzazione](https://oauth.net/2/grant-types/authorization-code/), [Credenziali client](https://oauth.net/2/grant-types/client-credentials/)), Autenticazione di base, Autenticazione personalizzata, Token X509 o Autenticazione reciproca, per accedere al servizio SOAP e fornire i dettagli per l&#39;autenticazione.
 
      Se si seleziona **[!UICONTROL X509 Token]** come tipo di autenticazione, configurare il certificato X509. Per ulteriori informazioni, vedere [Configurare i certificati](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
-Specificare l&#39;alias KeyStore per il certificato X509 nel campo **[!UICONTROL Alias chiave]**. Nel campo **[!UICONTROL Durata]** specificare il tempo, in secondi, fino a quando la richiesta di autenticazione non rimane valida. Facoltativamente, seleziona per firmare il corpo del messaggio o l’intestazione della marca temporale o entrambi.
+     Specificare l&#39;alias KeyStore per il certificato X509 nel campo **[!UICONTROL Alias chiave]**. Nel campo **[!UICONTROL Durata]** specificare il tempo, in secondi, fino a quando la richiesta di autenticazione non rimane valida. Facoltativamente, seleziona per firmare il corpo del messaggio o l’intestazione della marca temporale o entrambi.
 
      Se si seleziona **[!UICONTROL Autenticazione reciproca]** come tipo di autenticazione, vedere [Autenticazione reciproca basata su certificato per i servizi Web RESTful e SOAP](#mutual-authentication).
 
@@ -194,7 +207,7 @@ Un servizio OData è identificato dall&#39;URL radice del servizio. Per configur
 >[!NOTE]
 >
 >Il modello dati del modulo supporta [OData versione 4](https://www.odata.org/documentation/).
->Per una guida dettagliata alla configurazione di Microsoft Dynamics 365, online o on-premise, vedere [Configurazione OData di Microsoft Dynamics](/help/forms/using/ms-dynamics-odata-configuration.md).
+>Per una guida dettagliata alla configurazione di Microsoft Dynamics 365, online o on-premise, vedere [Configurazione di Microsoft Dynamics OData](/help/forms/using/ms-dynamics-odata-configuration.md).
 
 1. Vai a **[!UICONTROL Strumenti > Servizi cloud > Origini dati]**. Seleziona per selezionare la cartella in cui desideri creare una configurazione cloud.
 

@@ -9,20 +9,29 @@ exl-id: c81c5910-b6c9-41bd-8840-a6782792701f
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 0%
-
+source-wordcount: '359'
+ht-degree: 1%
 ---
-
 # Design e Designer{#designs-and-the-designer}
 
 >[!CAUTION]
 >
->Questo articolo descrive come creare un sito web basato sull’interfaccia classica. L&#39;Adobe consiglia di utilizzare le tecnologie AEM più recenti per i siti Web, come descritto in dettaglio nell&#39;articolo [Guida introduttiva allo sviluppo di AEM Sites](/help/sites-developing/getting-started.md).
+>Questo articolo descrive come creare un sito web basato sull’interfaccia classica. Adobe consiglia di utilizzare le tecnologie AEM più recenti per i siti Web, come descritto in dettaglio nell&#39;articolo [Guida introduttiva allo sviluppo di AEM Sites](/help/sites-developing/getting-started.md).
 
-Il Designer viene utilizzato per creare una progettazione per il sito Web utilizzando l&#39;[interfaccia utente classica](/help/release-notes/touch-ui-features-status.md) nell&#39;AEM.
+Designer consente di creare una progettazione per il sito Web utilizzando l&#39;[interfaccia utente classica](/help/release-notes/touch-ui-features-status.md) in AEM.
 
 >[!NOTE]
 >
@@ -44,7 +53,7 @@ Le progettazioni sono archiviate in `/apps/<your-project>`. Il percorso della st
 >
 >Tutte le modifiche apportate in una pagina in modalità progettazione vengono mantenute sotto il nodo di progettazione del sito e vengono applicate automaticamente a tutte le pagine con la stessa progettazione.
 
-## Cosa ti servirà {#what-you-will-need}
+## Di cosa avrai bisogno {#what-you-will-need}
 
 Per realizzare il tuo progetto avrai bisogno di:
 

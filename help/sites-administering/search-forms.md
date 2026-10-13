@@ -9,13 +9,22 @@ exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: d4b1cd8bc04ea21378c8084f4fac8cd66d6c1d3c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2079'
+source-wordcount: '2083'
 ht-degree: 7%
-
 ---
-
 
 # Configurazione dei moduli di ricerca{#configuring-search-forms}
 
@@ -27,9 +36,9 @@ Puoi [configurare i moduli di ricerca](#configuring-your-search-forms) utilizzat
 
 * **Strumenti**
 
-   * **Generale**
+  * **Generale**
 
-      * **Cerca in Forms**
+    * **Cerca in Forms**
 
 La prima volta che accedi a questa console puoi vedere che tutte le configurazioni hanno un simbolo lucchetto. Ciò indica che la configurazione appropriata è quella predefinita (predefinita) e non può essere eliminata. Dopo aver personalizzato la configurazione, il blocco scompare a meno che non si [elimini la configurazione personalizzata](#deleting-a-configuration-to-reinstate-the-default). In tal caso, viene ripristinato il valore predefinito (e l&#39;indicatore del lucchetto).
 

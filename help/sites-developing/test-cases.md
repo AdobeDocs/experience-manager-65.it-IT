@@ -1,5 +1,5 @@
 ---
-title: Definizione dei test case
+title: Definizione dei casi di test
 description: I test case devono essere basati sui casi d’uso e sulle specifiche dettagliate dei requisiti
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,18 +10,27 @@ exl-id: c09cde0d-401c-437f-9ec8-a0530c1312d5
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 0%
-
+source-wordcount: '532'
+ht-degree: 2%
 ---
-
-# Definizione dei test case{#defining-your-test-cases}
+# Definizione dei casi di test{#defining-your-test-cases}
 
 I test case devono essere basati su:
 
-**Casi d&#39;uso**
+**Casi d’uso**
 
 * Definiscono le funzionalità richieste in termini di interazione tra gli attori (ruoli che avviano determinate azioni) e il sistema.
 * I casi d’uso devono essere definiti dal cliente.
@@ -50,19 +59,19 @@ Tuttavia, automatizzare i test case è un investimento significativo, pertanto a
 
 ## Verifica di aspetti specifici {#testing-specific-aspects}
 
-Durante il test dell’AEM, sono di particolare interesse alcuni dettagli specifici:
+Durante il test di AEM, sono di particolare interesse alcuni dettagli specifici:
 
 **Ambienti Author e Publish**
 
-Anche se trattato in [Ambienti](/help/sites-developing/the-basics.md#environments), vale la pena evidenziare un fattore decisivo dell&#39;AEM per quanto riguarda i test.
+Anche se trattato in [Ambienti](/help/sites-developing/the-basics.md#environments), vale la pena evidenziare un fattore decisivo di AEM riguardo ai test.
 
-Considerare l’AEM come due applicazioni:
+Considera AEM come due applicazioni:
 
 * ambiente *Author*
 Questa istanza consente agli autori di inserire e pubblicare contenuti.
 Questo ha un piccolo(i) set prevedibile di utenti, per i quali sono fondamentali funzionalità e prestazioni specifiche.
 
-* ambiente *Publish*
+* ambiente *Pubblica*
 Questa istanza presenta il sito web nel relativo modulo pubblicato per l’accesso da parte dei visitatori.
 Questo di solito ha un set più ampio di utenti, dove il volume di traffico non è sempre prevedibile al 100%. Le prestazioni sono ancora cruciali, quando si risponde alle richieste. Considera anche la memorizzazione nella cache e il bilanciamento del carico.
 
@@ -97,15 +106,15 @@ Verificare che il sito Web sia ancora disponibile quando un server viene arresta
 * **Cluster**
 Utilizzato per fornire quanto segue:
 
-   * **Failover**
-Se un server ha esito negativo, l&#39;elaborazione verrà ripresa dagli altri server del cluster.
+  * **Failover**
+    Se un server ha esito negativo, l&#39;elaborazione verrà ripresa dagli altri server del cluster.
 
-   * **Prestazioni**
-Il bilanciamento del carico con failover completo aumenta le prestazioni di un cluster.
-Se utilizzato per un progetto del cliente, il cluster deve essere testato per confermare il corretto funzionamento della configurazione.
+  * **Prestazioni**
+    Il bilanciamento del carico con failover completo aumenta le prestazioni di un cluster.
+    Se utilizzato per un progetto del cliente, il cluster deve essere testato per confermare il corretto funzionamento della configurazione.
 
 ## Verifica del software di terze parti {#testing-third-party-software}
 
-Qualsiasi software di terze parti interfacciato con l&#39;AEM sarà menzionato nelle Specifiche dettagliate dei requisiti.
+Qualsiasi software di terze parti interfacciato con AEM sarà referenziato nelle Specifiche dettagliate dei requisiti.
 
 Tutte le prove necessarie (a seconda dell’ambito definito) devono essere analizzate e si deve ottenere una prova pulita.

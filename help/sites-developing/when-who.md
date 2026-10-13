@@ -9,13 +9,22 @@ exl-id: 5a16be40-eede-4a47-b03b-3993e285232e
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 0%
-
+source-wordcount: '270'
+ht-degree: 3%
 ---
-
 # Test: quando e con chi?{#testing-when-and-with-whom}
 
 Possono essere coinvolti diversi ruoli nel test e in varie fasi di sviluppo del progetto.
@@ -33,8 +42,8 @@ Possono essere coinvolti diversi ruoli nel test e in varie fasi di sviluppo del 
    <td>Questi test sono i primi nella catena, anche se vengono ripetuti / estesi durante lo sviluppo.</td>
   </tr>
   <tr>
-   <td>Team di controllo qualità</td>
-   <td><p>È necessario un team di controllo qualità (di qualsiasi dimensione) per i test funzionali e delle prestazioni.</p> <p>Si tratta di tester neutrali e dedicati: una regola d'oro del software afferma sempre che uno sviluppatore non dovrebbe mai testare il proprio lavoro.</p> <p>I membri di questo team possono provenire dal team di progetto Day, dal partner e/o dal team del cliente.</p> </td>
+   <td>Team Assurance di qualità</td>
+   <td><p>È necessario un team Assurance di qualità (di qualsiasi dimensione) per i test funzionali e delle prestazioni.</p> <p>Si tratta di tester neutrali e dedicati: una regola d'oro del software afferma sempre che uno sviluppatore non dovrebbe mai testare il proprio lavoro.</p> <p>I membri di questo team possono provenire dal team di progetto Day, dal partner e/o dal team del cliente.</p> </td>
    <td><p>La prima versione della funzione deve essere messa a disposizione dei tester (quando possibile). Anche se una versione provvisoria anticipata può generare molti bug, può fornire un feedback anticipato su problemi critici.</p> </td>
   </tr>
   <tr>

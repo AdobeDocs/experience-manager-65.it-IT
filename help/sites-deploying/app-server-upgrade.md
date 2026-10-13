@@ -1,22 +1,31 @@
 ---
-title: Passaggi per l'aggiornamento delle installazioni di Application Server
+title: Passaggi per l’aggiornamento delle installazioni del server applicazioni
 description: Scopri come aggiornare le istanze di AEM distribuite tramite Application Server.
 feature: Upgrading
 exl-id: 86dd10ae-7f16-40c8-84b6-91ff2973a523
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 0%
-
+source-wordcount: '449'
+ht-degree: 2%
 ---
+# Passaggi per l’aggiornamento delle installazioni del server applicazioni{#upgrade-steps-for-application-server-installations}
 
-# Passaggi per l&#39;aggiornamento delle installazioni di Application Server{#upgrade-steps-for-application-server-installations}
+Questa sezione descrive la procedura da seguire per aggiornare le installazioni di AEM for Application Server.
 
-In questa sezione viene descritta la procedura da seguire per aggiornare AEM per le installazioni di Application Server.
-
-Tutti gli esempi in questa procedura utilizzano Tomcat come server applicazioni e indicano che è già stata distribuita una versione funzionante di AEM. La procedura consente di documentare gli aggiornamenti eseguiti dalla **versione 6.4 dell&#39;AEM alla 6.5**.
+Tutti gli esempi in questa procedura utilizzano Tomcat come server applicazioni e indicano che è già stata distribuita una versione funzionante di AEM. La procedura consente di documentare gli aggiornamenti eseguiti da **AEM versione 6.4 a 6.5**.
 
 1. Per prima cosa, avvia TomCat. Nella maggior parte dei casi, è possibile eseguire lo script di avvio di `./catalina.sh` eseguendo questo comando dal terminale:
 
@@ -74,7 +83,7 @@ Tutti gli esempi in questa procedura utilizzano Tomcat come server applicazioni 
    * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`
    * `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.cfg`
 
-   Questi due file configureranno l’AEM per l’utilizzo di un archivio nodi TarMK e di un archivio dati File.
+   Questi due file configurano AEM per l’utilizzo di un archivio nodi TarMK e di un archivio dati File.
 
 1. Modifica i file di configurazione per renderli pronti per l’uso. Più precisamente:
 
@@ -89,7 +98,7 @@ Tutti gli esempi in questa procedura utilizzano Tomcat come server applicazioni 
      minRecordLength=4096
      ```
 
-1. È ora necessario modificare le modalità di esecuzione nel file .war AEM 6.5. Per farlo, creare innanzitutto una cartella temporanea che ospiterà la guerra AEM 6.5. Il nome della cartella in questo esempio sarà `temp`. Una volta copiato il file .war, estrarre il contenuto dall&#39;interno della cartella temporanea:
+1. Ora devi modificare le modalità di esecuzione nel file .war di AEM 6.5. Per farlo, crea innanzitutto una cartella temporanea che ospiterà la guerra AEM 6.5. Il nome della cartella in questo esempio sarà `temp`. Una volta copiato il file .war, estrarre il contenuto dall&#39;interno della cartella temporanea:
 
    ```
    jar xvf aem-quickstart-6.5.0.war

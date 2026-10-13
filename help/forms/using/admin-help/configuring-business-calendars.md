@@ -9,13 +9,27 @@ exl-id: 4282718a-41f1-411a-9cd7-8c470005107d
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '1912'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '1949'
+ht-degree: 89%
 ---
-
 # Configurazione dei calendari aziendali {#configuring-business-calendars}
 
 I *calendari aziendali* definiscono i giorni lavorativi e non lavorativi (ad esempio, le festività riconosciute pr legge, i fine settimana e i giorni di chiusura dell’azienda) dell’organizzazione. Quando si utilizzano i calendari aziendali, AEM Forms ignora i giorni non lavorativi durante l’esecuzione di determinati calcoli di date. In Workbench è possibile specificare se utilizzare i calendari aziendali per gli eventi associati all’utente, ad esempio promemoria di attività, scadenze ed escalation, oppure per le azioni non associate all’utente, ad esempio Eventi con timer e Servizio di attesa.
@@ -24,7 +38,7 @@ Ad esempio, un promemoria di attività è configurato per essere visualizzato tr
 
 >[!NOTE]
 >
->Quando le date e le ore vengono calcolate utilizzando i calendari aziendali, AEM Forms utilizza la data e l’ora del server in cui è in esecuzione e non modifica la differenza tra i fusi orari. Ad esempio, se un promemoria dell’attività è pianificato per le ore 10:00 su un server in esecuzione a Londra, ma l’utente che deve ricevere il promemoria si trova a New York, riceverà il promemoria alle 5:00 ora locale.
+>Quando le date e le ore vengono calcolate utilizzando i calendari aziendali, AEM Forms utilizza la data e l’ora del server in cui è in esecuzione e non modifica la differenza tra i fusi orari. Ad esempio, se un promemoria attività è pianificato per le 10:00 su un server in esecuzione a Londra, ma l’utente che riceve il promemoria si trova a New York, riceverà il promemoria alle 5:00 ora locale.
 
 ## Utilizzare il calendario aziendale predefinito {#using-the-default-business-calendar}
 
@@ -46,9 +60,9 @@ Se alcuni utenti dell’organizzazione dispongono di giorni non lavorativi diver
 
    Il modo in cui assegni le chiavi del calendario aziendale agli utenti dipende dal fatto che utilizzi un dominio enterprise, locale o ibrido. Per informazioni dettagliate sulla configurazione dei domini, consulta [Aggiungere domini](/help/forms/using/admin-help/adding-domains.md#adding-domains).
 
-   Se utilizzi un dominio locale o ibrido, le informazioni relative agli utenti vengono memorizzate solo nel database di Gestione utenti. Per impostare la chiave del calendario aziendale per questi utenti, immetti una stringa nel campo Chiave del calendario aziendale quando aggiungi o modifichi un utente in Gestione utente. (Consulta [Aggiungere e configurare utenti](/help/forms/using/admin-help/adding-configuring-users.md#adding-and-configuring-users).) Puoi quindi mappare le chiavi del calendario aziendale (le stringhe) ai calendari aziendali in Forms Workflow. (Consulta [Mappatura di utenti e gruppi a un calendario aziendale](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
+   Se utilizzi un dominio locale o ibrido, le informazioni relative agli utenti vengono memorizzate solo nel database di Gestione utenti. Per impostare la chiave del calendario aziendale per questi utenti, immetti una stringa nel campo Chiave del calendario aziendale quando aggiungi o modifichi un utente in Gestione utente. (Vedi [Aggiunta e configurazione di utenti](/help/forms/using/admin-help/adding-configuring-users.md#adding-and-configuring-users).) È quindi possibile mappare le chiavi del calendario aziendale (le stringhe) ai calendari aziendali nel flusso di lavoro dei moduli. (Consulta [Mappatura di utenti e gruppi a un calendario aziendale](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
 
-   Se utilizzi un dominio enterprise, le informazioni sugli utenti risiedono in un sistema di archiviazione di terze parti, ad esempio una directory LDAP, che Gestione utenti sincronizza con il proprio database. In questo modo potrai eseguire la mappatura di una chiave del calendario aziendale a un campo nella directory LDAP. Ad esempio, se ogni record utente della directory contiene un campo “paese” e desideri assegnare calendari aziendali in base al paese in cui si trova l’utente, specifica il nome del campo “paese” nel campo Chiave del calendario aziendale quando specifichi le impostazioni utente per la directory. (Consulta [Configurare le directory](/help/forms/using/admin-help/configuring-directories.md#configuring-directories).) Puoi eseguire la mappatura delle chiavi del calendario aziendale (i valori definiti per il campo “paese” nella directory LDAP) ai calendari aziendali in Forms Workflow. (Consulta [Mappatura di utenti e gruppi a un calendario aziendale](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
+   Se utilizzi un dominio enterprise, le informazioni sugli utenti risiedono in un sistema di archiviazione di terze parti, ad esempio una directory LDAP, che Gestione utenti sincronizza con il proprio database. In questo modo potrai eseguire la mappatura di una chiave del calendario aziendale a un campo nella directory LDAP. Ad esempio, se ogni record utente della directory contiene un campo “paese” e desideri assegnare calendari aziendali in base al paese in cui si trova l’utente, specifica il nome del campo “paese” nel campo Chiave del calendario aziendale quando specifichi le impostazioni utente per la directory. (Vedi [Configurazione delle directory](/help/forms/using/admin-help/configuring-directories.md#configuring-directories).) È quindi possibile mappare le chiavi del calendario aziendale (i valori definiti per il campo &quot;paese&quot; nella directory LDAP) ai calendari aziendali nel flusso di lavoro dei moduli. (Consulta [Mappatura di utenti e gruppi a un calendario aziendale](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
 
 1. In Forms Workflow, definisci un calendario per ogni gruppo di utenti che condividono gli stessi giorni non lavorativi. (Consulta [Creare o aggiornare un calendario aziendale](configuring-business-calendars.md#create-or-update-a-business-calendar).)
 1. In Forms Workflow, esegui la mappatura delle chiavi del calendario aziendale o delle iscrizioni ai gruppi per ogni calendario. (Consulta [Mappatura di utenti e gruppi a un calendario aziendale](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
@@ -78,7 +92,7 @@ Se l’organizzazione prevede diversi gruppi di utenti con giorni non lavorativi
 
    Se selezioni questa opzione, un evento che si verifica prima dell’intervallo di tempo specificato viene spostato all’inizio dell’intervallo di tempo e un evento che si verifica dopo l’intervallo di tempo viene spostato all’ora di inizio del giorno lavorativo successivo.
 
-   Consideriamo ad esempio la situazione in cui a un utente viene assegnata un’attività alle 2:00:00 del mattino di martedì e il promemoria per tale attività è impostato su due giorni lavorativi. Senza l’orario di lavoro, il promemoria si verificherebbe alle 2:00:00 di giovedì. Se l’orario di lavoro è impostato dalle 8:00:00 alle 17:00:00, il promemoria verrà inviato alle 8:00:00 di giovedì. Senza orario di lavoro, se un evento di promemoria è stato creato alle 18:00 di martedì, il promemoria si verificherebbe al di fuori dell’orario lavorativo di giovedì. :00 Con l’orario di lavoro impostato dalle 8:00:00 alle 17:00:00, il promemoria si verificherà alle 8:00:00 di venerdì.
+   Consideriamo ad esempio la situazione in cui a un utente viene assegnata un’attività alle 02:00 del martedì e il promemoria per tale attività è impostato su due giorni lavorativi. Senza l’orario di lavoro, il promemoria verrà visualizzato alle 02:00 del giovedì. Se l’orario di lavoro è impostato sulle 8:00 alle 17:00, il promemoria verrà inviato alle 8:00 del giovedì. Senza orario di lavoro, se un evento di promemoria è stato creato alle 18:00 di martedì, il promemoria si verificherà dopo l’orario di lavoro di giovedì. Con l’orario di lavoro impostato sulle 08:00 alle 17:00, il promemoria verrà visualizzato alle 08:00 del venerdì.
 
 5. Nel calendario a sinistra fai doppio clic su qualsiasi altro giorno non lavorativo, ad esempio su una festività. Non è possibile selezionare date pregresse. I giorni non lavorativi selezionati vengono visualizzati in un elenco sulla destra, con la data riportata due volte su una riga. Seleziona la data a sinistra per digitare il nome o la descrizione del giorno non lavorativo.
 

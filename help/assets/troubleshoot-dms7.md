@@ -11,13 +11,27 @@ exl-id: d4507059-a54d-4dc9-a263-e55dfa27eeb1
 feature: Troubleshooting
 mini-toc-levels: 3
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: cda65036-5305-4f01-89da-9b3506ae8c50
+    internal-label: Administration
+subfeature_v2:
+  - id: aaba5717-080e-40d6-a128-c9c8a9255476
+    internal-label: Troubleshooting
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1411'
 ht-degree: 1%
-
 ---
-
 # Risoluzione problemi di Dynamic Media - Modalità Scene7{#troubleshooting-dynamic-media-scene-mode}
 
 Nel documento seguente viene descritta la risoluzione dei problemi per Dynamic Media che esegue la modalità di esecuzione **dynamicmedia_scene7**.
@@ -54,7 +68,7 @@ Per confermare la corretta sincronizzazione della risorsa da Experience Manager 
 
 ### Registrazione sincronizzazione {#synchronization-logging}
 
-Errori e problemi di sincronizzazione registrati in `error.log` (directory server Experience Manager `/crx-quickstart/logs/`). È disponibile una registrazione sufficiente per determinare la causa principale della maggior parte dei problemi, tuttavia è possibile aumentare la registrazione a DEBUG nel pacchetto `com.adobe.cq.dam.ips` tramite la console Sling ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) per raccogliere ulteriori informazioni.
+Errori e problemi di sincronizzazione registrati in `error.log` (directory server Experience Manager `/crx-quickstart/logs/`). È disponibile una registrazione sufficiente per determinare la causa principale della maggior parte dei problemi, tuttavia è possibile aumentare la registrazione a DEBUG sul pacchetto `com.adobe.cq.dam.ips` tramite la console Sling ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) per raccogliere ulteriori informazioni.
 
 ### Sposta, Copia, Elimina {#move-copy-delete}
 
@@ -243,7 +257,7 @@ In CRXDE Lite eseguire le operazioni seguenti:
    * `"is/content"`
    * `dam:scene7Folder`
    * `<asset-name>`
-Esempio: `https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
+     Esempio: `https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
 
 **Soluzione**
 
@@ -255,7 +269,8 @@ Se le risorse di esempio o il disegno del predefinito visualizzatore non è stat
 1. Cercare il pacchetto visualizzatore nell&#39;elenco; inizia con `cq-dam-scene7-viewers-content`.
 1. Selezionare **Reinstalla**.
 1. In Cloud Services, passa alla pagina Configurazione di Dynamic Media, quindi apri la finestra di dialogo di configurazione per la configurazione di Dynamic Media - S7.
-1. Non apportare modifiche, selezionare **Salva**.Questa azione di salvataggio attiva nuovamente la logica per creare e sincronizzare le risorse di esempio, il CSS del predefinito visualizzatore e il disegno.
+1. Non apportare modifiche, selezionare **Salva**.
+Questa azione di salvataggio attiva nuovamente la logica per creare e sincronizzare le risorse di esempio, il CSS del predefinito visualizzatore e il disegno.
 
 ### Problema: l’anteprima dell’immagine non viene caricata nella creazione dei predefiniti del visualizzatore {#image-preview-not-loading}
 

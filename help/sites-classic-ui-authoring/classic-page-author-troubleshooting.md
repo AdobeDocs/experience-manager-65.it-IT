@@ -9,13 +9,22 @@ exl-id: 27a6b012-576e-40bc-9b50-c310b3c56c9e
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 28%
-
 ---
-
 # Risoluzione di problemi AEM durante l’authoring{#troubleshooting-aem-when-authoring}
 
 Nella seguente sezione vengono descritti alcuni problemi che potresti riscontrare durante l’utilizzo di AEM e vengono proposte possibili soluzioni.
@@ -32,56 +41,56 @@ Nella seguente sezione vengono descritti alcuni problemi che potresti riscontrar
 
 * **Problema**:
 
-   * Hai apportato modifiche a una pagina e l&#39;hai replicata nel sito pubblicato, ma nel sito pubblicato viene ancora visualizzata la versione *vecchia* della pagina.
+  * Hai apportato modifiche a una pagina e l&#39;hai replicata nel sito pubblicato, ma nel sito pubblicato viene ancora visualizzata la versione *vecchia* della pagina.
 
 * **Motivo**:
 
-   * Questo può avere diverse cause, il più delle volte la cache (sia nel browser locale che in Dispatcher), anche se a volte può essere un problema con la coda di replica.
+  * Questo può avere diverse cause, il più delle volte la cache (sia nel browser locale che in Dispatcher), anche se a volte può essere un problema con la coda di replica.
 
 * **Soluzioni**:
 
-   * Esistono varie possibilità:
-   * Verifica che la pagina sia stata replicata correttamente. Controlla lo stato della pagina e, se necessario, lo stato della coda di replica.
-   * Cancella la cache del browser locale e accedi di nuovo alla pagina.
-   * Aggiungi `?` alla fine dell&#39;URL della pagina. Ad esempio:
+  * Esistono varie possibilità:
+  * Verifica che la pagina sia stata replicata correttamente. Controlla lo stato della pagina e, se necessario, lo stato della coda di replica.
+  * Cancella la cache del browser locale e accedi di nuovo alla pagina.
+  * Aggiungi `?` alla fine dell&#39;URL della pagina. Ad esempio:
 
-     `http://localhost:4502/sites.html/content?`
+    `http://localhost:4502/sites.html/content?`
 
-     In questo modo la pagina viene richiesta direttamente da AEM senza passare dal Dispatcher. Se viene visualizzata la pagina aggiornata, significa che è necessario cancellare la cache del Dispatcher.
+    In questo modo la pagina viene richiesta direttamente da AEM senza passare dal Dispatcher. Se viene visualizzata la pagina aggiornata, significa che è necessario cancellare la cache del Dispatcher.
 
-   * In caso di problemi relativi alla coda di replica, rivolgiti all’amministratore di sistema.
+  * In caso di problemi relativi alla coda di replica, rivolgiti all’amministratore di sistema.
 
 ## Sidekick non visibile {#sidekick-not-visible}
 
 * **Problema**:
 
-   * Sidekick non è visibile quando si modifica una pagina di contenuto nell’ambiente di authoring.
+  * Sidekick non è visibile quando si modifica una pagina di contenuto nell’ambiente di authoring.
 
 * **Motivo**:
 
-   * In rari casi, l&#39;intestazione della barra laterale potrebbe essere stata posizionata al di fuori dell&#39;ambito della finestra corrente. Ciò significa che non è più possibile riposizionarlo.
+  * In rari casi, l&#39;intestazione della barra laterale potrebbe essere stata posizionata al di fuori dell&#39;ambito della finestra corrente. Ciò significa che non è più possibile riposizionarlo.
 
 * **Soluzione**:
 
-   * Esci dalla sessione corrente e accedi di nuovo. Sidekick tornerà alla posizione predefinita.
+  * Esci dalla sessione corrente e accedi di nuovo. Sidekick tornerà alla posizione predefinita.
 
 ## Trova e sostituisci: non tutte le istanze vengono sostituite {#find-replace-not-all-instances-are-replaced}
 
 * **Problema:**
 
-   * Quando si utilizza l&#39;opzione **Trova e sostituisci**, è possibile che non tutte le istanze del termine `find` vengano sostituite in una pagina.
+  * Quando si utilizza l&#39;opzione **Trova e sostituisci**, è possibile che non tutte le istanze del termine `find` vengano sostituite in una pagina.
 
 * **Motivo**:
 
-   * La capacità di **Trova e sostituisci** dipende da come viene salvato il contenuto e se è possibile eseguirne la ricerca. Ad esempio, il testo di un blog viene archiviato nella proprietà `jcr:text` che non è configurata per la ricerca. L&#39;ambito predefinito per il servlet find e replace include le seguenti proprietà:
+  * La capacità di **Trova e sostituisci** dipende da come viene salvato il contenuto e se è possibile eseguirne la ricerca. Ad esempio, il testo di un blog viene archiviato nella proprietà `jcr:text` che non è configurata per la ricerca. L&#39;ambito predefinito per il servlet find e replace include le seguenti proprietà:
 
-      * `jcr:title`
-      * `jcr:description`
-      * `jcr:text`
-      * `text`
+    * `jcr:title`
+    * `jcr:description`
+    * `jcr:text`
+    * `text`
 
 * **Soluzione**:
 
-   * È possibile modificare queste definizioni con la configurazione per **Day CQ WCM Find Replace Servlet** utilizzando la **console Web**; ad esempio, all&#39;indirizzo
+  * È possibile modificare queste definizioni con la configurazione per **Day CQ WCM Find Replace Servlet** utilizzando la **console Web**; ad esempio, all&#39;indirizzo
 
-     `http://localhost:4502/system/console/configMgr`
+    `http://localhost:4502/system/console/configMgr`

@@ -9,13 +9,26 @@ feature: PDF Generator,Document Security
 exl-id: be076477-2681-4570-953d-6c44d3c30843
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '1430'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: b26425d0-6fde-5e02-bfd6-e560e2fa86c9
+    internal-label: PDF Generator
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '1443'
+ht-degree: 88%
 ---
-
 # Configurare le impostazioni di protezione{#configuring-security-settings}
 
 Puoi limitare l’accesso ai documenti PDF impostando una password e limitando alcune funzionalità, ad esempio la stampa e la modifica. Quando un documento PDF dispone di funzioni limitate, gli strumenti e le voci di menu correlati a tali funzioni vengono disattivati. È inoltre possibile utilizzare altri metodi per creare documenti protetti, ad esempio la crittografia o la certificazione di un documento. Un’impostazione di protezione contiene la password e le opzioni specifiche da utilizzare per determinate conversioni di PDF.
@@ -61,11 +74,11 @@ Assicurati che il livello di compatibilità sia coerente con il livello di compa
 
 **Crittografa tutto il contenuto del documento:** il documento e i metadati del documento vengono crittografati. Quando questa opzione è selezionata, i motori di ricerca non possono accedere ai metadati del documento.
 
-**Crittografa tutto il contenuto del documento tranne i metadati (compatibile con Acrobat
-6 e versioni successive):** il contenuto di un documento viene crittografato, ma i motori di ricerca possono comunque accedere ai metadati del documento. Questa opzione è disponibile solo se l’opzione Compatibilità è impostata su Acrobat 6.0 o versioni successive, Acrobat 7.0 o versioni successive oppure Acrobat 9.0 o versioni successive.
+**Crittografa tutto il contenuto del documento tranne i metadati (Acrobat
+6 And Later Compatible):** Crittografa il contenuto di un documento, ma consente comunque ai motori di ricerca di accedere ai metadati del documento. Questa opzione è disponibile solo se l’opzione Compatibilità è impostata su Acrobat 6.0 o versioni successive, Acrobat 7.0 o versioni successive oppure Acrobat 9.0 o versioni successive.
 
-**Crittografa solo file allegati (compatibile con Acrobat 7 e versioni 
-successive):** gli utenti possono aprire il documento senza una password, ma devono immettere una password per aprire i file allegati. Questa opzione è disponibile solo se l’opzione Compatibilità è impostata su Acrobat 7.0 o versioni successive o su Acrobat 9.0 o versioni successive.
+**Crittografa Solo File Allegati (Acrobat 7 E Versioni Successive)
+Compatibile):** Gli utenti possono aprire il documento senza una password, ma devono immettere una password per aprire i file allegati. Questa opzione è disponibile solo se l’opzione Compatibilità è impostata su Acrobat 7.0 o versioni successive o su Acrobat 9.0 o versioni successive.
 
 Queste impostazioni configurano la protezione della password:
 
@@ -87,8 +100,8 @@ Queste impostazioni configurano la protezione della password:
 
 Queste opzioni configurano le autorizzazioni:
 
-**Utilizzare una password per limitare la stampa e la modifica del
-documento e delle relative impostazioni di protezione:** abilita le restrizioni alle autorizzazioni.
+**Utilizzare Una Password Per Limitare La Stampa E La Modifica Di
+Il documento e le relative impostazioni di protezione:** abilita le restrizioni alle autorizzazioni.
 
 **Password autorizzazioni:** impedisce agli utenti di stampare e modificare. Gli utenti non possono modificare queste impostazioni di protezione a meno che non digitino la password specificata. Non è possibile utilizzare la stessa password utilizzata per la password di apertura del documento. Quando imposti una password di autorizzazione, solo gli utenti che digitano tale password possono modificare le impostazioni di protezione. Se il documento PDF dispone di entrambi i tipi di password, verrà aperto da una delle password. Tuttavia, un utente può solo impostare o modificare le funzioni con restrizioni con la password delle autorizzazioni. Se il documento PDF dispone solo della password di autorizzazione o se un utente apre il documento utilizzando la password di apertura del documento, quando l’utente tenta di modificare le impostazioni di sicurezza viene visualizzata la richiesta di password.
 
@@ -108,22 +121,21 @@ documento e delle relative impostazioni di protezione:** abilita le restrizioni 
 
 **Inserimento, eliminazione e rotazione di pagine:** consente agli utenti di inserire, eliminare e ruotare pagine e di creare segnalibri e pagine in miniatura. Questa opzione è disponibile solo se è stato selezionato un livello di crittografia elevato (Acrobat 5.0, 6.0, 7.0 o 9.0).
 
-**Compilare i campi del modulo e firmare i campi della firma
-esistenti:** consente agli utenti di compilare moduli e aggiungere firme digitali. Tuttavia, gli utenti non possono aggiungere commenti o creare campi modulo. Questa opzione è disponibile solo se è stato selezionato un livello di crittografia elevato (Acrobat 5.0, 6.0, 7.0 o 9.0).
+**Compilazione Dei Campi Del Modulo E Firma Della Firma Esistente
+Campi:** Consente agli utenti di compilare moduli e aggiungere firme digitali. Tuttavia, gli utenti non possono aggiungere commenti o creare campi modulo. Questa opzione è disponibile solo se è stato selezionato un livello di crittografia elevato (Acrobat 5.0, 6.0, 7.0 o 9.0).
 
-**Commentare, compilare i campi del modulo e firmare i campi
-della firma
-esistenti:** consente agli utenti di compilare moduli e aggiungere firme digitali e commenti.
+**Commento, Compilazione Dei Campi Del Modulo E Firma Esistente
+Campi firma:** Consente agli utenti di compilare moduli e aggiungere firme digitali e commenti.
 
-**Layout di pagina, ritocco, compliare campi del modulo e firmare
-i campi della firma esistenti:** consente agli utenti di inserire, ruotare o eliminare pagine e creare segnalibri o miniature, compilare moduli e aggiungere firme digitali. Questa opzione non consente agli utenti di creare campi modulo. Questa opzione è disponibile solo se è selezionato un livello di crittografia basso (Acrobat 3.0).
+**Layout Di Pagina, Ritocco, Compilazione Dei Campi Del Modulo E Firma
+Campi firma esistenti:** consente agli utenti di inserire, ruotare o eliminare pagine e creare segnalibri o miniature, compilare moduli e aggiungere firme digitali. Questa opzione non consente agli utenti di creare campi modulo. Questa opzione è disponibile solo se è selezionato un livello di crittografia basso (Acrobat 3.0).
 
 **Qualsiasi eccezione durante l’estrazione delle pagine:** consente agli utenti di modificare il documento utilizzando qualsiasi metodo nell’elenco Modifiche consentite, ad eccezione della rimozione delle pagine.
 
 **Abilita la copia di testo, immagini e altro contenuto:** consente agli utenti di selezionare e copiare il contenuto del documento PDF. Consente inoltre alle utility che hanno bisogno di accedere ai contenuti di un file PDF, come Acrobat Catalog, di accedere a tali contenuti. Questa opzione è disponibile solo se è stato selezionato un livello di crittografia elevato.
 
-**Abilitare l’accesso ai dispositivi di lettura dello schermo per
-ipovedenti:** consente agli utenti con disabilità visive di leggere il documento utilizzando lettori dello schermo. Tuttavia, gli utenti non possono copiare o estrarre il contenuto del documento. Questa opzione è disponibile solo se è stato selezionato un livello di crittografia elevato.
+**Abilita L&#39;Accesso Di Testo Ai Dispositivi Reader Per Schermo Per
+Ipovedenti:** Consente agli utenti con problemi di vista di leggere il documento utilizzando utilità per la lettura dello schermo. Tuttavia, gli utenti non possono copiare o estrarre il contenuto del documento. Questa opzione è disponibile solo se è stato selezionato un livello di crittografia elevato.
 
 ## Eliminare un’impostazione di protezione {#delete-a-security-setting}
 

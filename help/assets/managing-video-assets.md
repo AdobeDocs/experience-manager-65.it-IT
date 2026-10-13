@@ -7,13 +7,22 @@ feature: Asset Management
 exl-id: 21d3e0bd-5955-470a-8ca2-4d995c17eb4c
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '5414'
+source-wordcount: '5614'
 ht-degree: 8%
-
 ---
-
 # Gestire le risorse video {#manage-video-assets}
 
 | Versione | Collegamento articolo |
@@ -261,7 +270,7 @@ A partire da Experience Manager 6.4, è stato introdotto un nuovo metodo di inte
 1. Nella pagina Crea configurazione YouTube, seleziona Impostazioni piattaforma Google Cloud, quindi immetti l’ID progetto Google nel campo **[!UICONTROL Nome applicazione]**.
 
    Hai specificato l’ID del progetto al momento della configurazione iniziale delle impostazioni di Google Cloud.
-Lascia aperta la pagina Crea configurazione di YouTube; tra un attimo la tornerai.
+   Lascia aperta la pagina Crea configurazione di YouTube; tra un attimo la tornerai.
 
    ![6_5_youtubepublish-createyoutubeconfiguration](assets/6_5_youtubepublish-createyoutubeconfiguration.png)
 
@@ -309,7 +318,7 @@ Lascia aperta la pagina Crea configurazione di YouTube; tra un attimo la tornera
 1. Nella finestra di dialogo Impostazioni account di YouTube, immetti l’ID progetto Google nel campo **[!UICONTROL Nome applicazione]**.
 
    Hai specificato l&#39;ID del progetto quando hai [configurato le impostazioni di Google Cloud](/help/assets/video.md#configuring-google-cloud-settings) in precedenza.
-Lascia aperta la finestra di dialogo YouTube Account Setting (Impostazione account di); tornerai su di essa tra un attimo.
+   Lascia aperta la finestra di dialogo YouTube Account Setting (Impostazione account di); tornerai su di essa tra un attimo.
 
 1. Utilizzando un editor di testo normale, apri il file JSON scaricato e salvato in precedenza nell’attività Configurazione delle impostazioni di Google Cloud.
 1. Seleziona e copia l’intero testo JSON.
@@ -360,19 +369,19 @@ Per automatizzare l’impostazione delle proprietà predefinite di YouTube per i
 1. Nella parte destra della pagina, nella scheda **[!UICONTROL Impostazioni]**, eseguire le operazioni seguenti:
 
    * Nel campo di testo **[!UICONTROL Mappa su proprietà]**, seleziona e copia il valore.
-Incolla il valore copiato nell’editor di testo aperto. Questo valore sarà necessario in un secondo momento quando creerai il profilo di elaborazione dei metadati. Lascia aperto l’editor di testo.
+     Incolla il valore copiato nell’editor di testo aperto. Questo valore sarà necessario in un secondo momento quando creerai il profilo di elaborazione dei metadati. Lascia aperto l’editor di testo.
 
    * In **[!UICONTROL Scelte]**, seleziona e copia il valore predefinito che desideri utilizzare (ad esempio Persone e blog o Scienza e tecnologia).
-Incolla il valore copiato nell’editor di testo aperto. Questo valore sarà necessario in un secondo momento quando creerai il profilo di elaborazione dei metadati. Lascia aperto l’editor di testo.
+     Incolla il valore copiato nell’editor di testo aperto. Questo valore sarà necessario in un secondo momento quando creerai il profilo di elaborazione dei metadati. Lascia aperto l’editor di testo.
 
 1. Nell&#39;intestazione Pubblicazione YouTube, seleziona **[!UICONTROL Privacy YouTube]**.
 1. Nella parte destra della pagina, nella scheda **[!UICONTROL Impostazioni]**, eseguire le operazioni seguenti:
 
    * Nel campo di testo **[!UICONTROL Mappa su proprietà]**, seleziona e copia il valore.
-Incolla il valore copiato nell’editor di testo aperto. Questo valore sarà necessario in un secondo momento quando creerai il profilo di elaborazione dei metadati. Lascia aperto l’editor di testo.
+     Incolla il valore copiato nell’editor di testo aperto. Questo valore sarà necessario in un secondo momento quando creerai il profilo di elaborazione dei metadati. Lascia aperto l’editor di testo.
 
    * In **[!UICONTROL Scelte]**, seleziona e copia il valore predefinito che desideri utilizzare. Notate che le scelte sono raggruppate in coppie di due. Il campo inferiore della coppia è il valore predefinito che si desidera copiare, ad esempio public, unlisted o private.
-Incolla il valore copiato nell’editor di testo aperto. Questo valore sarà necessario in un secondo momento quando creerai il profilo di elaborazione dei metadati. Lascia aperto l’editor di testo.
+     Incolla il valore copiato nell’editor di testo aperto. Questo valore sarà necessario in un secondo momento quando creerai il profilo di elaborazione dei metadati. Lascia aperto l’editor di testo.
 
 1. Fare clic su **[!UICONTROL Annulla]** nell&#39;angolo superiore destro della pagina Editor schema metadati.
 1. Nell&#39;angolo superiore sinistro di Experience Manager, seleziona il logo Experience Manager, quindi nella barra a sinistra fai clic su **[!UICONTROL Strumenti]** (icona a forma di martello) > **[!UICONTROL Assets]** > **[!UICONTROL Profili metadati]**.
@@ -522,7 +531,7 @@ Quando carichi un nuovo video in una cartella a cui è applicata la codifica vid
 
    >[!NOTE]
    >
-   >Potrebbero essere necessari tempi lunghi per la registrazione dei messaggi di errore/guasto, a causa della presenza di più configurazioni di flusso di lavoro nei **[!UICONTROL nuovi tentativi]**, nel **[!UICONTROL nuovo ritardo]** e nel **[!UICONTROL timeout]** da [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), ad esempio:
+   >Potrebbero essere necessari tempi lunghi per la registrazione dei messaggi di errore/guasto, a causa della presenza di più configurazioni di flusso di lavoro nei **[!UICONTROL nuovi tentativi]**, nel **[!UICONTROL ritardo tentativi]** e nel **[!UICONTROL timeout]** da [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), ad esempio:
    >
    >* Configurazione coda processi Apache Sling
    >* Gestore processo esterno flusso di lavoro di Adobe Granite

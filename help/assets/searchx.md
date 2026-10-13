@@ -1,18 +1,27 @@
 ---
 title: Estendere la funzionalità di ricerca
-description: Estendi le funzionalità di ricerca di  [!DNL Adobe Experience Manager Assets]  oltre i valori predefiniti.
+description: Estendere le funzionalità di ricerca di [!DNL Adobe Experience Manager Assets] oltre i valori predefiniti.
 contentOwner: AG
 role: Developer
 feature: Search
 exl-id: 9e33d1c0-232b-458a-ad6a-f595aa541a5a
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 74ec00bc-0862-520e-86dc-e377aeccc141
+    internal-label: Search
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 16%
-
+source-wordcount: '830'
+ht-degree: 7%
 ---
-
 # Estendere la ricerca delle risorse {#extending-assets-search}
 
 È possibile estendere le funzionalità di ricerca di [!DNL Adobe Experience Manager Assets]. [!DNL Experience Manager Assets] cerca le risorse per stringhe.
@@ -23,7 +32,7 @@ La ricerca viene eseguita tramite l&#39;interfaccia QueryBuilder, in modo che la
 
 >[!CAUTION]
 >
->A partire da [!DNL Experience Manager] 6.4, l&#39;interfaccia classica è obsoleta. L’Adobe consiglia di utilizzare l’interfaccia utente touch. Per la personalizzazione, vedere [facet di ricerca](/help/assets/search-facets.md).
+>A partire da [!DNL Experience Manager] 6.4, l&#39;interfaccia classica è obsoleta. Adobe consiglia di utilizzare l’interfaccia utente touch. Per la personalizzazione, vedere [facet di ricerca](/help/assets/search-facets.md).
 
 ## Sovrapposizione {#overlaying}
 
@@ -140,7 +149,7 @@ Per creare un predicato di proprietà:
    </script>
    ```
 
-1. Per rendere disponibile il componente, devi essere in grado di modificarlo. Per rendere modificabile un componente, in CRXDE aggiungi un nodo **cq:editConfig** di tipo principale **cq:EditConfig**. Per rimuovere i paragrafi, aggiungi una proprietà con più valori **cq:actions** che presenta un singolo valore **DELETE**.
+1. Per rendere disponibile il componente, devi essere in grado di modificarlo. Per rendere modificabile un componente, in CRXDE aggiungere un nodo **cq:editConfig** di tipo primario **cq:EditConfig**. Per rimuovere i paragrafi, aggiungi una proprietà con più valori **cq:actions** con un singolo valore di **DELETE**.
 1. Passa al browser e, nella pagina di esempio (ad esempio, **press.html**), passa alla modalità progettazione e abilita il nuovo componente per il sistema paragrafo predicato (ad esempio, **left**).
 
 1. In modalità **Modifica**, il nuovo componente è ora disponibile nella barra laterale (nel gruppo **Ricerca**). Inserire il componente nella colonna **Predicati** e digitare una parola di ricerca, ad esempio **Rombo**, quindi fare clic sulla lente di ingrandimento per avviare la ricerca.
@@ -244,7 +253,7 @@ Per creare un predicato di gruppo:
        });
    ```
 
-1. Per rendere disponibile il componente, devi essere in grado di modificarlo. Per rendere modificabile un componente, in CRXDE aggiungi un nodo **cq:editConfig** di tipo principale **cq:EditConfig**. Per rimuovere i paragrafi, aggiungi una proprietà con più valori **cq:actions** che presenta un singolo valore **DELETE**.
+1. Per rendere disponibile il componente, devi essere in grado di modificarlo. Per rendere modificabile un componente, in CRXDE aggiungere un nodo **cq:editConfig** di tipo primario **cq:EditConfig**. Per rimuovere i paragrafi, aggiungi una proprietà con più valori **cq:actions** con un singolo valore di **DELETE**.
 1. Passa al browser e, nella pagina di esempio (ad esempio, **press.html**), passa alla modalità progettazione e abilita il nuovo componente per il sistema paragrafo predicato (ad esempio, **left**).
 1. In modalità **Modifica**, il nuovo componente è ora disponibile nella barra laterale (nel gruppo **Ricerca**). Inserire il componente nella colonna **Predicati**.
 

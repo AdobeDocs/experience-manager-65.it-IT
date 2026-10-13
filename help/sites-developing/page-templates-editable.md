@@ -10,21 +10,30 @@ exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3187'
-ht-degree: 4%
-
+source-wordcount: '3283'
+ht-degree: 5%
 ---
-
 # Modelli di pagina - Modificabili {#page-templates-editable}
 
 Sono stati introdotti modelli modificabili per:
 
 * Consenti agli autori specializzati di [creare e modificare modelli](/help/sites-authoring/templates.md).
 
-   * Tali autori specializzati sono denominati **autori di modelli**
-   * Gli autori dei modelli devono essere membri del gruppo `template-authors`.
+  * Tali autori specializzati sono denominati **autori di modelli**
+  * Gli autori dei modelli devono essere membri del gruppo `template-authors`.
 
 * Fornisci modelli che mantengano una connessione dinamica a qualsiasi pagina creata da essi. In questo modo, eventuali modifiche al modello verranno applicate anche alle pagine.
 * Rendi il componente Pagina più generico, in modo che il componente Pagina principale possa essere utilizzato senza personalizzazione.
@@ -39,7 +48,7 @@ Questo documento:
 
 * Panoramica sulla creazione di modelli modificabili
 
-   * Per ulteriori dettagli, vedere [Creazione di modelli di pagina](/help/sites-authoring/templates.md)
+  * Per ulteriori dettagli, vedere [Creazione di modelli di pagina](/help/sites-authoring/templates.md)
 
 * Descrive le attività di amministrazione/sviluppatore necessarie per creare modelli modificabili
 * Descrive le basi tecniche dei modelli modificabili
@@ -55,7 +64,7 @@ In questo documento si presuppone che tu abbia già familiarità con la creazion
 
 La creazione di modelli modificabili viene eseguita principalmente con la console [modelli e l&#39;editor modelli](/help/sites-authoring/templates.md) da un autore di modelli. Questa sezione offre una panoramica di questo processo e segue con una descrizione di ciò che accade a livello tecnico.
 
-Per informazioni sull&#39;utilizzo di modelli modificabili in un progetto AEM, vedere [Creazione di un progetto AEM tramite Lazybones](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478?profile.language=it).
+Per informazioni sull&#39;utilizzo dei modelli modificabili in un progetto AEM, vedere [Creazione di un progetto AEM tramite Lazybones](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478).
 
 Quando crei un modello modificabile:
 
@@ -73,7 +82,7 @@ Quando crei un modello modificabile:
    * La struttura ti consente di definire componenti e contenuti per il modello.
    * I componenti definiti nella struttura del modello non possono essere spostati in una pagina risultante né eliminati dalle pagine risultanti.
 
-      * Se si crea un modello in una cartella personalizzata all&#39;esterno del contenuto di esempio di `We.Retail`, è possibile scegliere Componenti di base o utilizzare [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=it).
+     * Se si crea un modello in una cartella personalizzata all&#39;esterno del contenuto di esempio di `We.Retail`, è possibile scegliere Componenti di base o utilizzare [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=it).
 
    * Se desideri che gli autori delle pagine possano aggiungere e rimuovere componenti, aggiungi un sistema di paragrafi al modello.
    * I componenti possono essere sbloccati e bloccati di nuovo per consentire di definire il contenuto iniziale.
@@ -86,7 +95,7 @@ Quando crei un modello modificabile:
 
    * I criteri per contenuto definiscono le proprietà di progettazione di un componente.
 
-      * Ad esempio, i componenti disponibili o le dimensioni minima/massima.
+     * Ad esempio, i componenti disponibili o le dimensioni minime/massime.
 
    * Questi criteri sono applicabili al modello (e alle pagine create con il modello).
 
@@ -105,7 +114,7 @@ Quando crei un modello modificabile:
 
    **Layout**
 
-   * Puoi definire il layout del modello per una serie di dispositivi.
+   * È possibile definire il layout del modello per una serie di dispositivi.
    * Il layout reattivo per i modelli funziona come per la creazione delle pagine.
 
    Per informazioni dettagliate su come un autore di modelli definisce il layout del modello, vedere [Creazione di modelli di pagina](/help/sites-authoring/templates.md#editing-a-template-layout-template-author).
@@ -244,7 +253,7 @@ Le cartelle dei modelli per l&#39;implementazione di riferimento [`We.Retail`](/
 
 #### Gruppo di autori di modelli {#the-template-authors-group}
 
-Il gruppo `template-authors` è il gruppo utilizzato per gestire l&#39;accesso ai modelli e viene fornito come standard con AEM, ma è vuoto. Gli utenti devono essere aggiunti al gruppo per il progetto/sito.
+Il gruppo `template-authors` è il gruppo utilizzato per gestire l&#39;accesso ai modelli ed è fornito come standard con AEM, ma è vuoto. Gli utenti devono essere aggiunti al gruppo per il progetto/sito.
 
 >[!CAUTION]
 >
@@ -374,18 +383,18 @@ Durante la creazione di un modello, specificare un tipo di modello:
 
 * I tipi di modello forniscono in modo efficace i modelli per un modello. Durante la creazione di un modello, vengono utilizzati la struttura e il contenuto iniziale del tipo di modello selezionato.
 
-   * Il tipo di modello viene copiato per creare il modello.
-   * Una volta eseguita la copia, l&#39;unica connessione tra il modello e il tipo di modello è un riferimento statico a scopo informativo.
+  * Il tipo di modello viene copiato per creare il modello.
+  * Una volta eseguita la copia, l&#39;unica connessione tra il modello e il tipo di modello è un riferimento statico a scopo informativo.
 
 * I tipi di modello consentono di definire:
 
-   * Tipo di risorsa del componente Pagina.
-   * Il criterio del nodo principale, che definisce i componenti consentiti nell’editor di modelli.
-   * L’Adobe consiglia di definire i punti di interruzione per la griglia reattiva e la configurazione dell’emulatore mobile in sul tipo di modello. Questo passaggio è facoltativo, perché la configurazione può essere definita anche nel singolo modello (vedi [Tipo di modello e Gruppi di dispositivi mobili](/help/sites-developing/page-templates-editable.md#p-template-type-and-mobile-device-groups-br-p)).
+  * Tipo di risorsa del componente Pagina.
+  * Il criterio del nodo principale, che definisce i componenti consentiti nell’editor di modelli.
+  * Adobe consiglia di definire i punti di interruzione per la griglia reattiva e la configurazione dell’emulatore mobile in sul tipo di modello. Questo passaggio è facoltativo, perché la configurazione può essere definita anche nel singolo modello (vedi [Tipo di modello e Gruppi di dispositivi mobili](/help/sites-developing/page-templates-editable.md#p-template-type-and-mobile-device-groups-br-p)).
 
 * AEM fornisce una piccola selezione di tipi di modelli predefiniti, ad esempio Pagina di HTML5 e Pagina modulo adattivo.
 
-   * Ulteriori esempi vengono forniti come parte del contenuto di esempio [`We.Retail`](/help/sites-developing/we-retail.md).
+  * Ulteriori esempi vengono forniti come parte del contenuto di esempio [`We.Retail`](/help/sites-developing/we-retail.md).
 
 * I tipi di modello vengono in genere definiti dagli sviluppatori.
 
@@ -492,11 +501,11 @@ Gli elementi principali sono i seguenti:
 
 * `<template-name>`
 
-   * ` [initial](#initial-content)`
-   * `jcr:content`
-   * ` [structure](#structure)`
-   * ` [policies](#policies)`
-   * `thumbnail.png`
+  * ` [initial](#initial-content)`
+  * `jcr:content`
+  * ` [structure](#structure)`
+  * ` [policies](#policies)`
+  * `thumbnail.png`
 
 ### jcr:content {#jcr-content}
 
@@ -506,9 +515,9 @@ Questo nodo contiene le proprietà per il modello:
 
 * **Nome**: `status`
 
-   * **Tipo**: `String`
+  * **Tipo**: `String`
 
-   * **Valore**: `draft`, `enabled` o `disabled`
+  * **Valore**: `draft`, `enabled` o `disabled`
 
 ### Struttura {#structure}
 
@@ -518,10 +527,10 @@ Definisce la struttura della pagina risultante:
 * Le modifiche apportate alla struttura vengono applicate a tutte le pagine create con il modello.
 * Il nodo `root` ( `structure/jcr:content/root`) definisce l&#39;elenco dei componenti disponibili nella pagina risultante.
 
-   * I componenti definiti nella struttura del modello non possono essere spostati o eliminati dalle pagine risultanti.
-   * Dopo lo sblocco di un componente, la proprietà `editable` viene impostata su `true`.
+  * I componenti definiti nella struttura del modello non possono essere spostati o eliminati dalle pagine risultanti.
+  * Dopo lo sblocco di un componente, la proprietà `editable` viene impostata su `true`.
 
-   * Dopo lo sblocco di un componente che contiene già contenuto, questo contenuto viene spostato nel ramo `initial`.
+  * Dopo lo sblocco di un componente che contiene già contenuto, questo contenuto viene spostato nel ramo `initial`.
 
 * Il nodo `cq:responsive` contiene le definizioni per il layout reattivo.
 
@@ -545,7 +554,7 @@ I criteri di contenuto (o progettazione) definiscono le proprietà di progettazi
 
 * La proprietà `cq:policy` nel nodo `root`
   `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
-Fornisce un riferimento relativo al criterio del contenuto per il sistema paragrafo della pagina.
+  Fornisce un riferimento relativo al criterio del contenuto per il sistema paragrafo della pagina.
 
 * La proprietà `cq:policy`, nei nodi espliciti del componente in `root`, fornisce collegamenti ai criteri per i singoli componenti.
 
@@ -580,23 +589,21 @@ I criteri di pagina consentono di definire il [criterio contenuto](#content-poli
 
    * Impostazione della proprietà di stato nel nodo `jcr:content`.
 
-      * Ad esempio, su:
+     * Ad esempio, su:
+       `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
-        `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
+     * Definisci la proprietà:
 
-      * Definisci la proprietà:
-
-         * Nome: stato
-         * Tipo: String
-         * Valore: `enabled`
+       * Nome: stato
+       * Tipo: String
+       * Valore: `enabled`
 
 1. **Modelli consentiti**
 
    * [Definisci i percorsi dei modelli consentiti nelle **Proprietà pagina**](/help/sites-authoring/templates.md#allowing-a-template-author) della pagina appropriata o della pagina principale di un ramo secondario.
    * Imposta la proprietà:
-
      `cq:allowedTemplates`
-Nel nodo `jcr:content` del ramo richiesto.
+     Nel nodo `jcr:content` del ramo richiesto.
 
    Ad esempio, con un valore di:
 
@@ -610,11 +617,11 @@ Pagine create da modelli modificabili:
 
 * Includere riferimenti alle informazioni contenute nel modello e nel tipo di modello. È possibile ottenere questa funzionalità con un nodo `jcr:content` con le proprietà:
 
-   * `cq:template`
-Fornisce il riferimento dinamico al modello effettivo e consente di riflettere le modifiche al modello sulle pagine effettive.
+  * `cq:template`
+    Fornisce il riferimento dinamico al modello effettivo e consente di riflettere le modifiche al modello sulle pagine effettive.
 
-   * `cq:templateType`
-Fornisce un riferimento al tipo di modello.
+  * `cq:templateType`
+    Fornisce un riferimento al tipo di modello.
 
 ![chlimage_1-71](assets/chlimage_1-71.png)
 
@@ -636,15 +643,15 @@ Durante il rendering di una pagina:
 
 * **Modelli**:
 
-   * Per accedere al modello corrispondente alla pagina, viene fatto riferimento alla proprietà `cq:template` del nodo `jcr:content`.
+  * Per accedere al modello corrispondente alla pagina, viene fatto riferimento alla proprietà `cq:template` del nodo `jcr:content`.
 
 * **Componenti**:
 
-   * Il componente page unisce la struttura `structure/jcr:content` del modello con la struttura `jcr:content` della pagina.
+  * Il componente page unisce la struttura `structure/jcr:content` del modello con la struttura `jcr:content` della pagina.
 
-   * Il componente Pagina consente all’autore di modificare solo i nodi della struttura del modello contrassegnati come modificabili (e gli eventuali elementi secondari).
-   * Durante il rendering di un componente su una pagina, il percorso relativo di tale componente viene preso dal nodo `jcr:content`; viene quindi cercato lo stesso percorso sotto il nodo `policies/jcr:content` del modello.
+  * Il componente Pagina consente all’autore di modificare solo i nodi della struttura del modello contrassegnati come modificabili (e gli eventuali elementi secondari).
+  * Durante il rendering di un componente su una pagina, il percorso relativo di tale componente viene preso dal nodo `jcr:content`; viene quindi cercato lo stesso percorso sotto il nodo `policies/jcr:content` del modello.
 
-      * La proprietà `cq:policy` di questo nodo punta al criterio del contenuto effettivo, ovvero contiene la configurazione di progettazione per quel componente.
+    * La proprietà `cq:policy` di questo nodo punta al criterio del contenuto effettivo, ovvero contiene la configurazione di progettazione per quel componente.
 
-      * Questa funzionalità consente di disporre di più modelli che riutilizzano le stesse configurazioni dei criteri per i contenuti.
+    * Questa funzionalità consente di disporre di più modelli che riutilizzano le stesse configurazioni dei criteri per i contenuti.

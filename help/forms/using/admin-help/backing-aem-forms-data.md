@@ -9,13 +9,27 @@ exl-id: 536615a4-ab42-4b72-83b1-fad110b011ee
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
-workflow-type: ht
-source-wordcount: '1527'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '1555'
+ht-degree: 98%
 ---
-
 # Backup dei dati Adobe Experience Manager (AEM) Forms {#backing-up-the-aem-forms-data}
 
 <!-- back up is two words when used as a verb; backup is one word when used as an adjective or noun. -->
@@ -55,19 +69,19 @@ Inoltre, osserva le seguenti linee guida per il processo di backup/ripristino.
 
   Quando esegui il backup delle istanze di authoring e pubblicazione, tieni presente quanto segue:
 
-   * Assicurati che il backup per le istanze di authoring e pubblicazione sia sincronizzato e venga avviato allo stesso tempo. Sebbene sia possibile continuare a utilizzare le istanze di authoring e pubblicazione durante l’esecuzione del backup, si consiglia di non pubblicare alcuna risorsa durante il backup per evitare modifiche non acquisite. Prima di pubblicare nuove risorse, attendi la fine del backup delle istanze di authoring e pubblicazione.
-   * Il backup completo del nodo di authoring include il backup dei dati di Forms Manager e dell’area di lavoro di AEM Forms.
-   * Gli sviluppatori di Workbench possono continuare a lavorare sui propri processi a livello locale. Durante la fase di backup non devono distribuire nuovi processi.
-   * La decisione sulla durata di ciascuna sessione di backup (per la modalità di backup continuo) deve essere basata sul tempo totale impiegato per eseguire il backup di tutti i dati in AEM Forms (DB, GDS, archivio AEM ed eventuali altri dati personalizzati aggiuntivi).
+  * Assicurati che il backup per le istanze di authoring e pubblicazione sia sincronizzato e venga avviato allo stesso tempo. Sebbene sia possibile continuare a utilizzare le istanze di authoring e pubblicazione durante l’esecuzione del backup, si consiglia di non pubblicare alcuna risorsa durante il backup per evitare modifiche non acquisite. Prima di pubblicare nuove risorse, attendi la fine del backup delle istanze di authoring e pubblicazione.
+  * Il backup completo del nodo di authoring include il backup dei dati di Forms Manager e dell’area di lavoro di AEM Forms.
+  * Gli sviluppatori di Workbench possono continuare a lavorare sui propri processi a livello locale. Durante la fase di backup non devono distribuire nuovi processi.
+  * La decisione sulla durata di ciascuna sessione di backup (per la modalità di backup continuo) deve essere basata sul tempo totale impiegato per eseguire il backup di tutti i dati in AEM Forms (DB, GDS, archivio AEM ed eventuali altri dati personalizzati aggiuntivi).
 
 Esegui il backup del database di AEM Forms, compresi eventuali registri delle transazioni. Consulta [Database AEM Forms](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).
 
 Per ulteriori informazioni, consulta l’articolo di knowledge base appropriato per il database:
 <!-- The four URLs below are all 404s; checked July 19, 2023 -->
 * [Backup e ripristino Oracle per AEM Forms](https://www.adobe.com/go/kb403624)
-* [Backup e ripristino di MySQL per AEM Forms](https://www.adobe.com/go/kb403625)
+* [Backup e ripristino MySQL per AEM Forms](https://www.adobe.com/go/kb403625)
 * [Backup e ripristino di Microsoft® SQL Server per AEM Forms](https://www.adobe.com/go/kb403623)
-* [Backup e ripristino di DB2® per AEM Forms](https://www.adobe.com/go/kb403626)
+* [Backup e ripristino DB2® per AEM Forms](https://www.adobe.com/go/kb403626)
 
 Questi articoli forniscono indicazioni sulle funzioni di base del database per il backup e il recupero dei dati. Non sono intesi come guide tecniche complete sulle funzioni di backup e ripristino del database di un fornitore specifico. Descrivono i comandi necessari per creare una strategia di backup del database affidabile per i dati dell’applicazione AEM Forms.
 
@@ -97,7 +111,7 @@ Questi articoli forniscono indicazioni sulle funzioni di base del database per i
 
 1. Impostare ADOBE_LIVECYCLE e avviare il server applicazioni.
 1. Accedere alla cartella `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline`.
-1. A seconda del sistema operativo in uso, modificare lo script `LCBackupMode.cmd` o `LCBackupMode.sh` per fornire valori predefiniti appropriati per il sistema.
+1. A seconda del sistema operativo in uso, modifica lo script `LCBackupMode.cmd` o `LCBackupMode.sh` per fornire valori predefiniti appropriati per il sistema.
 1. Al prompt dei comandi, eseguire il comando seguente su un’unica riga:
 
    * (Windows) `LCBackupMode.cmd enter [-Host=`*hostname* `] [-port=`*portnumber* `] [-user=`*username* `] [-password=`*password* `] [-label=`*labelname* `] [-timeout=`*seconds* `]`
@@ -109,9 +123,9 @@ Questi articoli forniscono indicazioni sulle funzioni di base del database per i
 
    `port` è la porta WebServices del server applicazioni in cui è in esecuzione AEM Forms.
 
-   `user` è il nome utente dell’amministratore AEM Forms.
+   `user` è il nome utente dell’amministratore di AEM Forms.
 
-   `password` è la password dell’amministratore AEM Forms.
+   `password` è la password dell’amministratore di AEM Forms.
 
    `label` è l’etichetta di testo, che può essere qualsiasi stringa, per questo backup.
 

@@ -10,13 +10,31 @@ exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e2cac356-c071-4141-ad6f-827893261a16
+    internal-label: Launches
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 69%
-
+source-wordcount: '908'
+ht-degree: 68%
 ---
-
 # Lanci{#launches}
 
 I lanci consentono di creare in modo efficiente contenuti per una versione futura.
@@ -51,45 +69,45 @@ I lanci consentono di:
 
 * Crea una copia delle pagine sorgente:
 
-   * La copia è il lancio.
-   * Le pagine sorgente di primo livello sono note come **Produzione**.
+  * La copia è il lancio.
+  * Le pagine sorgente di primo livello sono note come **Produzione**.
 
-      * Le pagine sorgente possono essere ricavate da più rami (separati).
+    * Le pagine sorgente possono essere ricavate da più rami (separati).
 
   ![Panoramica delle azioni di avvio](assets/chlimage_1-111.png)
 
 * Modifica la configurazione del lancio:
 
-   * Aggiungi o rimuovi pagine e/o rami da/verso il lancio.
-   * Modifica le proprietà di lancio, come **Titolo**, **Data lancio** e il flag **Production Ready**.
+  * Aggiungi o rimuovi pagine e/o rami da/verso il lancio.
+  * Modifica le proprietà di lancio, come **Titolo**, **Data lancio** e il flag **Production Ready**.
 
 * Puoi promuovere e pubblicare il contenuto manualmente o automaticamente:
 
-   * Manualmente:
+  * Manualmente:
 
-      * Promuovi il contenuto del lancio fino al **Target** (pagine sorgente) quando è pronto per la pubblicazione.
-      * Pubblica il contenuto dalle pagine sorgente (dopo la promozione).
-      * Promuovi tutte le pagine o solo le pagine modificate.
+    * Promuovi il contenuto del lancio fino al **Target** (pagine sorgente) quando è pronto per la pubblicazione.
+    * Pubblica il contenuto dalle pagine sorgente (dopo la promozione).
+    * Promuovi tutte le pagine o solo le pagine modificate.
 
-   * Automaticamente - questo implica le seguenti attività:
+  * Automaticamente - questo implica le seguenti attività:
 
-      * Il campo **Data** **lancio**(**Live**): può essere impostato durante la creazione o la modifica di un lancio.
+    * Il campo **Data** **lancio**(**Live**): può essere impostato durante la creazione o la modifica di un lancio.
 
-      * Il flag **Pronto per la produzione** può essere impostato solo durante la modifica di un lancio.
-      * Se è impostato il flag **Production Ready**, il lancio verrà promosso automaticamente alle pagine di produzione nel **Launch**(**Live**) **date** specificato. Dopo la promozione, le pagine di produzione vengono pubblicate automaticamente.\
-        Se la data non è stata impostata, il flag non ha alcun effetto.
+    * Il flag **Pronto per la produzione** può essere impostato solo durante la modifica di un lancio.
+    * Se è impostato il flag **Production Ready**, il lancio verrà promosso automaticamente alle pagine di produzione nel **Launch**(**Live**) **date** specificato. Dopo la promozione, le pagine di produzione vengono pubblicate automaticamente.\
+      Se la data non è stata impostata, il flag non ha alcun effetto.
 
 * Aggiorna parallelamente la pagina sorgente e la pagina di lancio:
 
-   * Le modifiche apportate alle pagine sorgente vengono automaticamente implementate nella copia lancio (se impostate con ereditarietà; ovvero come Live Copy).
-   * Le modifiche apportate alla copia di lancio possono essere effettuate senza interrompere gli aggiornamenti automatici o le pagine sorgenti.
+  * Le modifiche apportate alle pagine sorgente vengono automaticamente implementate nella copia lancio (se impostate con ereditarietà; ovvero come Live Copy).
+  * Le modifiche apportate alla copia di lancio possono essere effettuate senza interrompere gli aggiornamenti automatici o le pagine sorgenti.
 
   ![Panoramica degli aggiornamenti](assets/chlimage_1-112.png)
 
 * [Creare un lancio nidificato](/help/sites-authoring/launches-creating.md#creating-a-nested-launch) ovvero un lancio all’interno di un lancio:
 
-   * L’origine è un lancio esistente.
-   * È possibile [promuovere un lancio nidificato](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch) per qualsiasi target; può trattarsi di un lancio principale o delle pagine sorgente di livello superiore (Produzione).
+  * L’origine è un lancio esistente.
+  * È possibile [promuovere un lancio nidificato](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch) per qualsiasi target; può trattarsi di un lancio principale o delle pagine sorgente di livello superiore (Produzione).
 
   ![Panoramica del lancio nidificato](assets/chlimage_1-113.png)
 

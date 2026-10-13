@@ -5,13 +5,25 @@ feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 3a38a2f1e753e33d9d3d4d4e7ebc24f16f795966
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1577'
+source-wordcount: '1576'
 ht-degree: 82%
-
 ---
-
 # Imparare a utilizzare GraphQL con AEM: contenuto di esempio e query {#learn-graphql-with-aem-sample-content-queries}
 
 Scopri come utilizzare GraphQL con AEM per distribuire i contenuti headless esplorando contenuti e query di esempio.
@@ -1245,11 +1257,11 @@ Questa query rappresenta un’interrogazione per ottenere:
 Questa query di esempio rappresenta un’interrogazione per ottenere:
 
 * per un singolo frammento di contenuto di tipo `article` in un percorso specifico
-   * all’interno del percorso, tutti i formati di contenuto:
-      * HTML
-      * Markdown
-      * Testo normale
-      * JSON
+  * all’interno del percorso, tutti i formati di contenuto:
+    * HTML
+    * Markdown
+    * Testo normale
+    * JSON
 
 **Query di esempio**
 
@@ -1275,7 +1287,7 @@ Questa query di esempio rappresenta un’interrogazione per ottenere:
 Questa query di esempio rappresenta un’interrogazione per ottenere:
 
 * un singolo frammento di contenuto
-   * dettagli del modello per frammenti di contenuto sottostante
+  * dettagli del modello per frammenti di contenuto sottostante
 
 **Query di esempio**
 
@@ -1299,7 +1311,7 @@ Questa query di esempio rappresenta un’interrogazione per ottenere:
 Questa query rappresenta un’interrogazione per ottenere:
 
 * un singolo frammento di contenuto di tipo `article` in un percorso specifico
-   * all’interno di tale percorso, il percorso e l’autore del frammento (nidificato) a cui si fa riferimento
+  * all’interno di tale percorso, il percorso e l’autore del frammento (nidificato) a cui si fa riferimento
 
 >[!NOTE]
 >
@@ -1329,7 +1341,7 @@ Questa query rappresenta un’interrogazione per ottenere:
 Questa query rappresenta un’interrogazione per ottenere:
 
 * più frammenti di contenuto di tipo `bookmark`
-   * con riferimenti ai frammenti ad altri frammenti del tipo di modello specifico `Article`
+  * con riferimenti ai frammenti ad altri frammenti del tipo di modello specifico `Article`
 
 >[!NOTE]
 >
@@ -1353,7 +1365,7 @@ Questa query rappresenta un’interrogazione per ottenere:
 Questa query rappresenta un’interrogazione per ottenere:
 
 * più frammenti di contenuto di tipo `bookmark`
-   * con riferimenti ai frammenti per altri frammenti di tipi di modello specifici `Article` e `Adventure`
+  * con riferimenti ai frammenti per altri frammenti di tipi di modello specifici `Article` e `Adventure`
 
 >[!NOTE]
 >
@@ -1388,7 +1400,7 @@ Sono disponibili due tipi di questa query:
 Tali query rappresentano interrogazioni per ottenere:
 
 * più frammenti di contenuto di tipo `bookmark`
-   * con riferimenti ai contenuti per altri frammenti
+  * con riferimenti ai contenuti per altri frammenti
 
 #### Query di esempio per più frammenti di contenuto con riferimenti di prelettura {#sample-wknd-multiple-fragments-prefetched-references}
 
@@ -1470,7 +1482,7 @@ La query seguente restituisce tutti gli `attachments`: un campo specifico (grupp
 Questa query rappresenta un’interrogazione per ottenere:
 
 * un singolo frammento di contenuto di tipo `bookmark` in un percorso specifico
-   * all’interno del quale, sono presenti riferimenti dell’editor Rich Text in linea
+  * all’interno del quale, sono presenti riferimenti dell’editor Rich Text in linea
 
 >[!NOTE]
 >
@@ -1516,7 +1528,7 @@ Questa query rappresenta un’interrogazione per ottenere:
 Questa query rappresenta un’interrogazione per ottenere:
 
 * un singolo frammento di contenuto di tipo `article` in un percorso specifico
-   * all&#39;interno di tale percorso, i dati relativi alla variante: `variation1`
+  * all&#39;interno di tale percorso, i dati relativi alla variante: `variation1`
 
 **Query di esempio**
 
@@ -1655,9 +1667,9 @@ Le query di esempio si basano sulla seguente struttura, che utilizza:
 
 Per le query di esempio, utilizza i seguenti modelli di contenuto e le relative interrelazioni (riferimenti ->):
 
-* [Azienda](#model-company)
--> [Utente](#model-person)
--> [Riconoscimento](#model-award)
+* [Società](#model-company)
+-> [Persona](#model-person)
+    -> [Riconoscimento](#model-award)
 
 * [Città](#model-city)
 

@@ -9,13 +9,24 @@ exl-id: 8eb4f691-a66b-498e-8114-307221f63718
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
-workflow-type: ht
-source-wordcount: '904'
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '908'
 ht-degree: 100%
-
 ---
-
 # Configurazione di SSL per il server applicazioni JBoss {#configuring-ssl-for-jboss-application-server}
 
 Per configurare SSL sul server applicazioni JBoss, è necessaria una credenziale SSL per l’autenticazione. Puoi utilizzare lo strumento Java Keytool per creare una credenziale o per richiedere e importare una credenziale da un’autorità di certificazione (CA). Devi quindi abilitare SSL su JBoss.
@@ -89,7 +100,8 @@ In questa procedura:
 
    * Cluster di server - `[appserver root]`/domain/configuration/domain_&lt;dbname>.xml
 
-1. * **Per il server singolo,** nel file lc_&lt;dbaname/tunkey>.xml, aggiungi quanto segue dopo la sezione &lt;security-realms>:
+1. &#x200B;
+   * **Per il server singolo,** nel file lc_&lt;dbaname/tunkey>.xml, aggiungi quanto segue dopo la sezione &lt;security-realms>:
 
    ```xml
    <security-realm name="SSLRealm">
@@ -138,25 +150,25 @@ In questa procedura:
 
    * Per le installazioni preconfigurate:
 
-      * Nel Pannello di controllo di Windows fai clic su Strumenti di amministrazione e quindi su Servizi.
-      * Seleziona JBoss per Adobe Experience Manager Forms.
-      * Seleziona Azione > Interrompi.
-      * Attendere che lo stato del servizio venga visualizzato come interrotto.
-      * Seleziona Azione > Avvia.
+     * Nel Pannello di controllo di Windows fai clic su Strumenti di amministrazione e quindi su Servizi.
+     * Seleziona JBoss per Adobe Experience Manager Forms.
+     * Seleziona Azione > Interrompi.
+     * Attendere che lo stato del servizio venga visualizzato come interrotto.
+     * Seleziona Azione > Avvia.
 
    * Per le installazioni JBoss preconfigurate da Adobe o configurate manualmente:
 
-      * Dal prompt dei comandi passa a *`[appserver root]`*/bin.
-      * Arresta il server immettendo il comando seguente:
+     * Dal prompt dei comandi passa a *`[appserver root]`*/bin.
+     * Arresta il server immettendo il comando seguente:
 
-         * (Windows) `shutdown.bat -S`
-         * (Linux) `./shutdown.sh -S`
+       * (Windows) `shutdown.bat -S`
+       * (Linux) `./shutdown.sh -S`
 
-      * Attendi che il processo JBoss venga arrestato completamente (quando il processo JBoss restituisce il controllo al terminale in cui è stato avviato).
-      * Avvia il server immettendo il comando seguente:
+     * Attendi che il processo JBoss venga arrestato completamente (quando il processo JBoss restituisce il controllo al terminale in cui è stato avviato).
+     * Avvia il server immettendo il comando seguente:
 
-         * (Windows) `run.bat -c <profile>`
-         * (Linux) `./run.sh -c <profile>`
+       * (Windows) `run.bat -c <profile>`
+       * (Linux) `./run.sh -c <profile>`
 
 1. Per accedere alla console di amministrazione tramite SSL, digita `https://[host name]:'port'/adminui` in un browser web:
 

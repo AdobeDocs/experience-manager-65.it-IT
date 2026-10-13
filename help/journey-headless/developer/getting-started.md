@@ -5,13 +5,39 @@ exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d429a63e-ade4-4117-b04e-9b996d1c94ef
+    internal-label: Integrations
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: a02b73a7-bdfc-4225-bdfd-69f7891ab55e
+    internal-label: GraphQL
+  - id: d781bc8f-52af-43f6-84d0-b73e59a130d5
+    internal-label: Persisted queries
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3072'
 ht-degree: 94%
-
 ---
-
 # Guida introduttiva ad AEM Headless {#getting-started}
 
 In questa parte del [Percorso per sviluppatori headless di AEM,](overview.md) scopri cosa è necessario per avviare il tuo progetto con AEM headless.
@@ -144,7 +170,7 @@ Per ogni progetto riuscito è importante definire chiaramente non solo i requisi
 
 È importante disporre di un ambito chiaramente definito per il progetto. L’ambito segnala i criteri di accettazione e consente di stabilire una definizione di operazione completata.
 
-La prima domanda che dovresti porti è “Cosa sto cercando di fare con AEM headless?” In generale, la risposta dovrebbe essere che in futuro disponi di un’applicazione Experience creata con i tuoi strumenti di sviluppo e non con AEM. Questa applicazione di esperienza potrebbe essere un’app mobile, un sito web o qualsiasi altra applicazione di esperienza rivolta ai clienti e alle clienti finali. L’obiettivo nell’utilizzo di AEM headless è alimentare l’applicazione di esperienza con contenuti creati, memorizzati e gestiti in AEM con API all’avanguardia che richiamerebbero AEM headless per recuperare contenuti o persino contenuti completamente CRUD direttamente dall’applicazione di esperienza. Se questo non è quello che stai cercando di fare, probabilmente vorrai [tornare indietro per consultare la documentazione AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=it) e trovare la sezione che meglio si adatta a ciò che desideri realizzare.
+La prima domanda che dovresti porti è “Cosa sto cercando di fare con AEM headless?” In generale, la risposta dovrebbe essere che in futuro disponi di un’applicazione Experience creata con i tuoi strumenti di sviluppo e non con AEM. Questa applicazione di esperienza potrebbe essere un’app mobile, un sito web o qualsiasi altra applicazione di esperienza rivolta a clienti e utenti finali. L’obiettivo nell’utilizzo di AEM headless è alimentare l’applicazione di esperienza con contenuti creati, memorizzati e gestiti in AEM con API all’avanguardia che richiamerebbero AEM headless per recuperare contenuti o persino contenuti completamente CRUD direttamente dall’applicazione di esperienza. Se questo non è quello che stai cercando di fare, probabilmente vorrai [tornare indietro per consultare la documentazione AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=it) e trovare la sezione che meglio si adatta a ciò che desideri realizzare.
 
 ### Ruoli e responsabilità {#roles-responsibilities}
 

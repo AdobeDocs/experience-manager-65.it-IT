@@ -9,16 +9,25 @@ exl-id: a3606d72-1bd8-4886-9285-6457dae66486
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '304'
 ht-degree: 0%
-
 ---
-
 # Authoring delle pagine{#authoring-pages}
 
-Di seguito viene fornita una panoramica sull’authoring con AEM:
+Di seguito è riportata una panoramica sull’authoring con AEM:
 
 * [Primi passi per autori](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md): introduzione per i nuovi autori
 
@@ -30,7 +39,7 @@ Di seguito viene fornita una panoramica sull’authoring con AEM:
 
 Per facilitare l’authoring delle pagine, l’ambiente di authoring offre funzioni quali:
 
-* **Trascina**
+* **Trascinare**
 I componenti (come Testo, Immagine) e le risorse digitali (come le immagini) possono essere posizionati nella pagina semplicemente trascinandoli e rilasciandoli nella posizione desiderata.
 
 * **Modifica**
@@ -43,10 +52,10 @@ I componenti Testo e Immagine possono essere modificati direttamente nella pagin
 Una finestra mobile &quot;Inspector&quot; che appare sulla pagina modificabile. Da qui è possibile trascinare nuovi componenti sulla pagina e eseguire azioni specifiche per la pagina.
 
 * **[Ricerca contenuti](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#thecontentfinderclassicui)**
-Sul lato sinistro di ogni pagina modificabile, Content Finder consente di accedere rapidamente a una serie di risorse, tra cui risorse digitali (come altre immagini, elementi di Flash e documenti), altre pagine e paragrafi. Questi elementi possono essere trascinati sulla pagina, ad esempio per posizionare le risorse o creare collegamenti ad altre pagine.
+Sul lato sinistro di ogni pagina modificabile, Content Finder consente di accedere rapidamente a una serie di risorse, tra cui risorse digitali (come altre immagini, elementi e documenti Flash), altre pagine e paragrafi. Questi elementi possono essere trascinati sulla pagina, ad esempio per posizionare le risorse o creare collegamenti ad altre pagine.
 
 * **Menu di scelta rapida**
 Facendo clic con il pulsante destro del mouse sulla maggior parte degli elementi sullo schermo, ad esempio i paragrafi della pagina, viene visualizzato un menu di scelta rapida con le opzioni di azione appropriate.
 
 * **Cerca durante la digitazione**
-In alcuni scenari (ad esempio, la selezione del percorso nelle finestre di dialogo di modifica) la ricerca di contenuto tramite l’interfaccia AEM presenta corrispondenze dinamiche durante la digitazione della query.
+In alcuni scenari (ad esempio, la selezione del percorso nelle finestre di dialogo di modifica) la ricerca di contenuto tramite l’interfaccia di AEM presenta corrispondenze dinamiche durante la digitazione della query.

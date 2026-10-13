@@ -9,43 +9,57 @@ exl-id: 55bf5196-22c6-4286-8c92-ff44d81dde49
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '311'
-ht-degree: 0%
-
+ht-degree: 17%
 ---
-
 # Avvio e arresto dei servizi {#starting-and-stopping-services}
 
 >[!NOTE]
 > 
 > Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
-Esistono due tipi di servizi che fanno parte delle forme AEM:
+Esistono due tipi di servizi che fanno parte di AEM Forms:
 
-* Servizi che controllano il server applicazioni e il database AEM forms.
-* Servizi che controllano i moduli per moduli AEM
+* Servizi che controllano il server applicazioni e il database di AEM Form.
+* Servizi che controllano i moduli di AEM Forms
 
-## Avviare o arrestare i servizi associati ai moduli AEM Forms {#start-or-stop-the-services-associated-with-aem-forms-modules}
+## Avviare o arrestare i servizi associati ai moduli di AEM Forms {#start-or-stop-the-services-associated-with-aem-forms-modules}
 
-I moduli di moduli AEM (ad esempio, Forms, Rights Management, Output) funzionano come servizi. A volte, potrebbe essere necessario interrompere o avviare i servizi per questi moduli AEM Forms. Ad esempio, è necessario arrestare e quindi riavviare un servizio AEM forms dopo aver modificato un&#39;impostazione per il servizio.
+I moduli di AEM Forms (ad esempio, Forms, Rights Management, Output) funzionano come servizi. A volte può essere necessario arrestare o avviare i servizi per questi moduli di AEM Forms. È ad esempio necessario arrestare e riavviare un servizio AEM Forms dopo aver modificato un&#39;impostazione per il servizio.
 
 >[!NOTE]
 >
-> Si consiglia di utilizzare il comando &#39;Ctrl + C&#39; per riavviare SDK. Il riavvio del SDK dell’AEM con metodi alternativi, ad esempio l’arresto dei processi Java, può portare a incongruenze nell’ambiente di sviluppo dell’AEM.
+> Si consiglia di utilizzare il comando “Ctrl + C” per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.
 
 1. Nella console di amministrazione, fare clic su **Servizi** > **Applicazioni e servizi** > **Gestione servizi**.
 1. Nella pagina Gestione servizio selezionare la casella di controllo accanto al servizio da arrestare o avviare e fare clic su Arresta o Avvia.
 
 ## Avviare o arrestare i servizi per il server applicazioni e il database {#start-or-stop-services-for-the-application-server-and-database}
 
-Un&#39;implementazione completa dei moduli AEM include un server applicazioni e servizi di database:
+Un&#39;implementazione completa di AEM Forms include un server applicazioni e servizi di database:
 
-* *`[application server]`* per i moduli AEM
-* *`[database]`* per i moduli AEM
+* *`[application server]`* per AEM Forms
+* *`[database]`* per AEM Forms
 
-In Windows, questi servizi sono accessibili tramite **Strumenti di amministrazione** > **Pannello servizi**. Ad esempio, se hai installato i moduli AEM su JBoss utilizzando il metodo chiavi in mano, sul sistema sono disponibili i seguenti servizi:
+In Windows, questi servizi sono accessibili tramite **Strumenti di amministrazione** > **Pannello servizi**. Ad esempio, se AEM Forms è stato installato su JBoss utilizzando il metodo chiavi in mano, nel sistema sono disponibili i seguenti servizi:
 
 * JBoss per Adobe Experience Manager forms
 * MySQL per Adobe Experience Manager forms

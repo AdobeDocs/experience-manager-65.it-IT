@@ -9,13 +9,29 @@ feature: Context Hub,Developing,Personalization
 exl-id: b472d96f-b1a5-40b7-be2a-52f3396f6884
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: db974db1-cf49-4452-872e-5a56c5f1d391
+    internal-label: Context Hub
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '4976'
 ht-degree: 2%
-
 ---
-
 # Riferimento API di JavaScript per ContextHub{#contexthub-javascript-api-reference}
 
 L&#39;API JavaScript ContextHub è disponibile per gli script quando il componente [ContextHub è stato aggiunto alla pagina](/help/sites-developing/ch-adding.md#adding-contexthub-to-a-page-component).
@@ -271,9 +287,9 @@ Inizializza l’archivio.
 * **nome:** nome dell&#39;archivio.
 * **config:** Oggetto contenente le proprietà di configurazione:
 
-   * eventDeferring: il valore predefinito è 32.
-   * Evento: l&#39;oggetto [ContextHub.Utils.Eventing](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) per questo archivio. Il valore predefinito è ContextHub.eventing utilizzato dall&#39;oggetto.
-   * persistenza: oggetto ContextHub.Utils.Persistence per questo archivio. Il valore predefinito è l&#39;oggetto ContextHub.persistence.
+  * eventDeferring: il valore predefinito è 32.
+  * Evento: l&#39;oggetto [ContextHub.Utils.Eventing](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) per questo archivio. Il valore predefinito è ContextHub.eventing utilizzato dall&#39;oggetto.
+  * persistenza: oggetto ContextHub.Utils.Persistence per questo archivio. Il valore predefinito è l&#39;oggetto ContextHub.persistence.
 
 #### isEventingPaused() {#iseventingpaused}
 
@@ -303,7 +319,7 @@ Facoltativamente, è possibile impedire l&#39;attivazione dell&#39;evento `data`
 * **chiave:** (stringa) Il nome della chiave da rimuovere.
 * **opzioni:** (oggetto) Un oggetto di opzioni. Le seguenti proprietà dell&#39;oggetto sono valide:
 
-   * Silenzioso: un valore di `true` impedisce l&#39;attivazione dell&#39;evento `data`. Il valore predefinito è `false`.
+  * Silenzioso: un valore di `true` impedisce l&#39;attivazione dell&#39;evento `data`. Il valore predefinito è `false`.
 
 **Restituisce**
 
@@ -376,7 +392,7 @@ I dati evento includono il nome dell&#39;archivio, la chiave, il valore preceden
 * **chiave:** (stringa) Il nome della chiave.
 * **opzioni:** (oggetto) Un oggetto di opzioni. Le seguenti proprietà dell&#39;oggetto sono valide:
 
-   * Silenzioso: un valore di `true` impedisce l&#39;attivazione dell&#39;evento `data`. Il valore predefinito è `false`.
+  * Silenzioso: un valore di `true` impedisce l&#39;attivazione dell&#39;evento `data`. Il valore predefinito è `false`.
 
 * **value:** (oggetto) il valore da associare alla chiave.
 
@@ -405,16 +421,16 @@ Configura i dettagli per la connessione al servizio JSONP utilizzato da questo o
 
 * **serviceConfig:** oggetto contenente le proprietà seguenti:
 
-   * host: (stringa) il nome o l’indirizzo IP del server.
-   * jsonp: (booleano) Un valore true indica che il servizio è un servizio JSONP, in caso contrario false. Se è true, l&#39;oggetto {callback: &quot;ContextHub.Callbacks.*Object.name*} viene aggiunto all&#39;oggetto service.params.
-   * parametri: (Oggetto) parametri URL rappresentati come proprietà oggetto. I nomi dei parametri sono nomi di proprietà e i valori dei parametri sono valori di proprietà.
-   * path: (String) il percorso del servizio.
-   * porta: (Numero) il numero di porta del servizio.
-   * secure: (stringa o booleano) determina il protocollo da utilizzare per l’URL del servizio:
+  * host: (stringa) il nome o l’indirizzo IP del server.
+  * jsonp: (booleano) Un valore true indica che il servizio è un servizio JSONP, in caso contrario false. Se è true, l&#39;oggetto {callback: &quot;ContextHub.Callbacks.*Object.name*} viene aggiunto all&#39;oggetto service.params.
+  * parametri: (Oggetto) parametri URL rappresentati come proprietà oggetto. I nomi dei parametri sono nomi di proprietà e i valori dei parametri sono valori di proprietà.
+  * path: (String) il percorso del servizio.
+  * porta: (Numero) il numero di porta del servizio.
+  * secure: (stringa o booleano) determina il protocollo da utilizzare per l’URL del servizio:
 
-      * auto: //
-      * true: https://
-      * false: https://
+    * auto: //
+    * true: https://
+    * false: https://
 
 * **override:** (booleano). Un valore di `true` fa sì che la configurazione del servizio esistente venga sostituita dalle proprietà di `serviceConfig`. Il valore `false` determina l&#39;unione delle proprietà di configurazione del servizio esistenti con le proprietà di `serviceConfig`.
 
@@ -442,9 +458,9 @@ Oggetto con le seguenti proprietà:
 * **porta:** (numero) Il numero di porta del servizio.
 * **secure:** (stringa o booleano) determina il protocollo da utilizzare per l&#39;URL del servizio:
 
-   * auto: //
-   * true: https://
-   * false: https://
+  * auto: //
+  * true: https://
+  * false: https://
 
 #### getServiceURL(resolve) {#getserviceurl-resolve}
 
@@ -467,24 +483,24 @@ inizializza l&#39;oggetto ContextHub.Store.JSONPStore.
 * **nome:** (stringa) Il nome dell&#39;archivio.
 * **config:** (oggetto) Oggetto contenente la proprietà del servizio. L&#39;oggetto JSONPStore utilizza le proprietà dell&#39;oggetto `service` per creare l&#39;URL del servizio JSONP:
 
-   * eventDeferring: 32.
-   * evento: l&#39;oggetto ContextHub.Utils.Eventing per questo archivio. Il valore predefinito è `ContextHub.eventing`.
-   * persistenza: oggetto ContextHub.Utils.Persistence per questo archivio. Per impostazione predefinita, viene utilizzata la persistenza della memoria (oggetto JavaScript).
-   * service: (oggetto)
+  * eventDeferring: 32.
+  * evento: l&#39;oggetto ContextHub.Utils.Eventing per questo archivio. Il valore predefinito è `ContextHub.eventing`.
+  * persistenza: oggetto ContextHub.Utils.Persistence per questo archivio. Per impostazione predefinita, viene utilizzata la persistenza della memoria (oggetto JavaScript).
+  * service: (oggetto)
 
-      * host: (stringa) il nome o l’indirizzo IP del server.
-      * jsonp: (booleano) Un valore true indica che il servizio è un servizio JSONP, in caso contrario false. Se è true, l&#39;oggetto `{callback: "ContextHub.Callbacks.*Object.name*}` viene aggiunto a `service.params`.
-      * parametri: (Oggetto) parametri URL rappresentati come proprietà oggetto. I nomi e i valori dei parametri sono rispettivamente i nomi e i valori delle proprietà dell&#39;oggetto.
-      * path: (String) il percorso del servizio.
-      * porta: (Numero) il numero di porta del servizio.
-      * secure: (stringa o booleano) determina il protocollo da utilizzare per l’URL del servizio:
+    * host: (stringa) il nome o l’indirizzo IP del server.
+    * jsonp: (booleano) Un valore true indica che il servizio è un servizio JSONP, in caso contrario false. Se è true, l&#39;oggetto `{callback: "ContextHub.Callbacks.*Object.name*}` viene aggiunto a `service.params`.
+    * parametri: (Oggetto) parametri URL rappresentati come proprietà oggetto. I nomi e i valori dei parametri sono rispettivamente i nomi e i valori delle proprietà dell&#39;oggetto.
+    * path: (String) il percorso del servizio.
+    * porta: (Numero) il numero di porta del servizio.
+    * secure: (stringa o booleano) determina il protocollo da utilizzare per l’URL del servizio:
 
-         * auto: //
-         * true: https://
-         * false: https://
+      * auto: //
+      * true: https://
+      * false: https://
 
-      * timeout: (numero) il tempo di attesa della risposta del servizio JSONP prima del timeout, in millisecondi.
-      * ttl: tempo minimo in millisecondi che intercorre tra le chiamate al servizio JSONP. (Vedi la funzione [queryService](/help/sites-developing/contexthub-api.md#queryservice-reload)).
+    * timeout: (numero) il tempo di attesa della risposta del servizio JSONP prima del timeout, in millisecondi.
+    * ttl: tempo minimo in millisecondi che intercorre tra le chiamate al servizio JSONP. (Vedi la funzione [queryService](/help/sites-developing/contexthub-api.md#queryservice-reload)).
 
 #### queryService(reload) {#queryservice-reload}
 
@@ -580,10 +596,10 @@ Restituisce tutti i cookie con chiavi che corrispondono a un filtro.
 
 * (Facoltativo) **filtro:** Criteri per le chiavi dei cookie corrispondenti. Per restituire tutti i cookie, non specificare alcun valore. Sono supportati i seguenti tipi:
 
-   * Stringa: la stringa viene confrontata con la chiave del cookie.
-   * Array: ogni elemento nell’array è un filtro.
-   * Un oggetto RegExp: la funzione di test dell’oggetto viene utilizzata per far corrispondere le chiavi dei cookie.
-   * Una funzione: funzione che verifica una chiave cookie per rilevare una corrispondenza. La funzione deve utilizzare la chiave del cookie come parametro e restituire true se il test conferma una corrispondenza.
+  * Stringa: la stringa viene confrontata con la chiave del cookie.
+  * Array: ogni elemento nell’array è un filtro.
+  * Un oggetto RegExp: la funzione di test dell’oggetto viene utilizzata per far corrispondere le chiavi dei cookie.
+  * Una funzione: funzione che verifica una chiave cookie per rilevare una corrispondenza. La funzione deve utilizzare la chiave del cookie come parametro e restituire true se il test conferma una corrispondenza.
 
 **Restituisce**
 
@@ -621,10 +637,10 @@ Restituisce una matrice delle chiavi dei cookie esistenti che corrispondono a un
 
 * **filtro:** criteri per le chiavi cookie corrispondenti. Sono supportati i seguenti tipi:
 
-   * Stringa: la stringa viene confrontata con la chiave del cookie.
-   * Array: ogni elemento nell’array è un filtro.
-   * Un oggetto RegExp: la funzione di test dell’oggetto viene utilizzata per far corrispondere le chiavi dei cookie.
-   * Una funzione: funzione che verifica una chiave cookie per rilevare una corrispondenza. La funzione deve utilizzare la chiave del cookie come parametro e restituire `true` se il test conferma una corrispondenza.
+  * Stringa: la stringa viene confrontata con la chiave del cookie.
+  * Array: ogni elemento nell’array è un filtro.
+  * Un oggetto RegExp: la funzione di test dell’oggetto viene utilizzata per far corrispondere le chiavi dei cookie.
+  * Una funzione: funzione che verifica una chiave cookie per rilevare una corrispondenza. La funzione deve utilizzare la chiave del cookie come parametro e restituire `true` se il test conferma una corrispondenza.
 
 **Restituisce**
 
@@ -666,9 +682,9 @@ Crea un cookie della chiave e del valore specificati e aggiunge il cookie al doc
 * **valore:** Stringa contenente il valore del cookie.
 * **opzioni:** (facoltativo) oggetto contenente una delle seguenti proprietà che configurano gli attributi del cookie:
 
-   * Scadenza: valore `date` o `number` che specifica la scadenza del cookie. Un valore di data specifica l&#39;ora assoluta di scadenza. Un numero (in giorni) imposta l&#39;ora di scadenza sull&#39;ora corrente più il numero. Il valore predefinito è `undefined`.
-   * secure: valore `boolean` che specifica l&#39;attributo `Secure` del cookie. Il valore predefinito è `false`.
-   * path: valore `String` da utilizzare come attributo `Path` del cookie. Il valore predefinito è `undefined`.
+  * Scadenza: valore `date` o `number` che specifica la scadenza del cookie. Un valore di data specifica l&#39;ora assoluta di scadenza. Un numero (in giorni) imposta l&#39;ora di scadenza sull&#39;ora corrente più il numero. Il valore predefinito è `undefined`.
+  * secure: valore `boolean` che specifica l&#39;attributo `Secure` del cookie. Il valore predefinito è `false`.
+  * path: valore `String` da utilizzare come attributo `Path` del cookie. Il valore predefinito è `undefined`.
 
 **Restituisce**
 

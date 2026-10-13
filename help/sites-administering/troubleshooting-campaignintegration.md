@@ -9,13 +9,22 @@ exl-id: 317bab41-3504-4e46-9ddc-72e291a34e06
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 0%
-
 ---
-
 
 # Risoluzione dei problemi relativi all’integrazione di Adobe Campaign Classic{#troubleshooting-your-adobe-campaign-classic-integration}
 
@@ -28,8 +37,8 @@ I seguenti suggerimenti per la risoluzione dei problemi consentono di risolvere 
 Controlla se le chiamate HTTP vengono inviate e ricevute da entrambe le soluzioni (AEM > Adobe Campaign Classic, Adobe Campaign Classic > AEM). Questo suggerimento consente di evitare problemi firewall/SSL.
 
 * Per la funzionalità AEM, puoi vedere che le chiamate JSON sono richieste dall’interfaccia di authoring di AEM
-   * Queste chiamate non devono causare un errore HTTP-500.
-   * Se vengono visualizzati errori HTTP-500, controllare `error.log` per ulteriori informazioni.
+  * Queste chiamate non devono causare un errore HTTP-500.
+  * Se vengono visualizzati errori HTTP-500, controllare `error.log` per ulteriori informazioni.
 * Anche l’aumento del livello di debug per le classi di campagna in AEM può essere utile per risolvere i problemi.
 
 ## Se la connessione non riesce {#when-the-connection-fails}
@@ -131,8 +140,8 @@ Per risolvere questo problema, eseguire le operazioni seguenti:
 
 * AEM Dispatcher o reverse proxy devono essere configurati in modo da trasmettere il protocollo originale come intestazione.
 * Il filtro SSL **di** Apache Felix Http Service nella configurazione OSGi di AEM deve essere configurato con le impostazioni di intestazione richieste.
-   * `https://<host>:<port>/system/console/configMgr`
-   * Vedi [https://github.com/apache/felix-dev/tree/master/http#using-the-ssl-filter](https://github.com/apache/felix-dev/tree/master/http#using-the-ssl-filter)
+  * `https://<host>:<port>/system/console/configMgr`
+  * Vedi [https://github.com/apache/felix-dev/tree/master/http#using-the-ssl-filter](https://github.com/apache/felix-dev/tree/master/http#using-the-ssl-filter)
 
 ## Impossibile selezionare un modello personalizzato nelle proprietà della pagina {#if-the-custom-template-i-created-cannot-be-selected-in-page-properties}
 

@@ -10,13 +10,20 @@ role: Admin
 exl-id: cadb62c9-210d-4204-8abc-d0cf70960392
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 0%
-
 ---
-
 # Notifiche community {#communities-notifications}
 
 ## Panoramica {#overview}
@@ -34,13 +41,13 @@ Ciò che distingue le notifiche dalle attività e dagli abbonamenti è:
 
 * Un collegamento alla sezione delle notifiche è sempre presente nell’intestazione di un sito community:
 
-   * Le attività richiedono l&#39;inclusione della funzione [flusso attività](/help/communities/functions.md#activity-stream-function) nella struttura del sito community.
-   * Gli abbonamenti richiedono [la configurazione dell&#39;e-mail](/help/communities/email.md).
+  * Le attività richiedono l&#39;inclusione della funzione [flusso attività](/help/communities/functions.md#activity-stream-function) nella struttura del sito community.
+  * Gli abbonamenti richiedono [la configurazione dell&#39;e-mail](/help/communities/email.md).
 
 * L’implementazione delle notifiche avviene tramite canali scalabili e collegabili:
 
-   * Le attività sono disponibili solo sul web.
-   * Gli abbonamenti sono disponibili solo tramite e-mail.
+  * Le attività sono disponibili solo sul web.
+  * Gli abbonamenti sono disponibili solo tramite e-mail.
 
 A partire da Communities [FP1](/help/communities/deploy-communities.md#latestfeaturepack), i canali di notifica disponibili sono:
 
@@ -80,11 +87,11 @@ Verrà visualizzato il pulsante **[!UICONTROL Segui]**:
 * Quando si visualizza il profilo di un altro membro.
 * In una pagina delle funzioni principali, ad esempio forum, domande e blog:
 
-   * Segue tutte le attività per quella funzione generale.
+  * Segue tutte le attività per quella funzione generale.
 
 * Per una voce specifica, ad esempio un argomento forum, una domanda di controllo qualità o un articolo di blog:
 
-   * Segue tutte le attività per quella voce specifica.
+  * Segue tutte le attività per quella voce specifica.
 
 ## Gestione delle impostazioni di notifica {#managing-notification-settings}
 

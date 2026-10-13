@@ -1,6 +1,6 @@
 ---
 title: Generare l’anteprima HTML5 di un modulo XDP
-description: È possibile utilizzare la scheda Anteprima HTML in LiveCycle Designer per visualizzare in anteprima i moduli così come vengono visualizzati in un browser.
+description: La scheda Anteprima HTML in LiveCycle Designer può essere utilizzata per visualizzare in anteprima i moduli così come vengono visualizzati in un browser.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
@@ -8,20 +8,35 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 0%
-
+source-wordcount: '807'
+ht-degree: 3%
 ---
-
 # Generare l’anteprima HTML5 di un modulo XDP{#generate-html-preview-of-an-xdp-form}
 
-Durante la progettazione di un modulo in AEM Forms Designer, oltre a visualizzare l’anteprima della copia trasformata PDF di un modulo, puoi anche visualizzarne una copia trasformata HTML 5. È possibile utilizzare la scheda **Anteprima HTML** per visualizzare in anteprima un modulo come apparirebbe in un browser.
+Durante la progettazione di un modulo in AEM Forms Designer, oltre a visualizzare in anteprima il rendering PDF di un modulo, puoi anche visualizzarne un rendering HTML5. È possibile utilizzare la scheda **Anteprima HTML** per visualizzare in anteprima un modulo come apparirebbe in un browser.
 
-## Abilitare l’anteprima HTML per i moduli XDP in Designer {#html-preview-of-forms-in-forms-designer}
+## Abilitare l’anteprima di HTML per i moduli XDP in Designer {#html-preview-of-forms-in-forms-designer}
 
-Per consentire a Designer di generare un’anteprima HTML dei moduli XDP, esegui le seguenti configurazioni:
+Per consentire a Designer di generare l’anteprima HTML dei moduli XDP, esegui le seguenti configurazioni:
 
 * Configurare il servizio di autenticazione Apache Sling
 * Disattiva modalità protetta
@@ -37,13 +52,13 @@ Per consentire a Designer di generare un’anteprima HTML dei moduli XDP, esegui
 
    * AEM Forms su JEE
 
-      * -/content/xfaforms
-      * -/etc/clientlibs
+     * -/content/xfaforms
+     * -/etc/clientlibs
 
    * AEM Forms su OSGi
 
-      * -/content/xfaforms
-      * -/etc/clientlibs/fd/xfaforms
+     * -/content/xfaforms
+     * -/etc/clientlibs/fd/xfaforms
 
    >[!NOTE]
    >
@@ -54,9 +69,9 @@ Per consentire a Designer di generare un’anteprima HTML dei moduli XDP, esegui
 
 ### Disattiva modalità protetta {#disable-protected-mode}
 
-La [modalità protetta](../../forms/using/get-xdp-pdf-documents-aem.md) è attivata per impostazione predefinita. Tienilo abilitato per gli ambienti di produzione. Puoi disabilitarlo per un ambiente di sviluppo per visualizzare in anteprima HTML5 Forms in desinger. Per disattivarla, effettua le seguenti operazioni:
+La [modalità protetta](../../forms/using/get-xdp-pdf-documents-aem.md) è attivata per impostazione predefinita. Tienilo abilitato per gli ambienti di produzione. È possibile disattivarlo per un ambiente di sviluppo per visualizzare in anteprima HTML5 Forms in desinger. Per disattivarla, effettua le seguenti operazioni:
 
-1. Accedi alla console web dell’AEM come amministratore.
+1. Accedi ad AEM Web Console come amministratore.
 
    * L&#39;URL per AEM Forms su OSGi è `https://'[server]:[port]'/system/console/configMgr`
    * L&#39;URL per AEM Forms su JEE è `https://'[server]:[port]'/lc/system/console/configMgr`
@@ -74,14 +89,14 @@ La [modalità protetta](../../forms/using/get-xdp-pdf-documents-aem.md) è attiv
    * **Numero porta HTTP**: porta del server AEM. Il valore predefinito è 4502.
    * **Contesto anteprima HTML:** Percorso del profilo per il rendering dei moduli XFA. I seguenti profili predefiniti vengono utilizzati per visualizzare in anteprima il modulo in Designer. Tuttavia, puoi anche specificare il percorso di un profilo personalizzato.
 
-      * `/content/xfaforms/profiles/default.html` (AEM Forms su OSGi)
+     * `/content/xfaforms/profiles/default.html` (AEM Forms su OSGi)
 
-      * `/lc/content/xfaforms/profiles/default.html` (AEM Forms su JEE)
+     * `/lc/content/xfaforms/profiles/default.html` (AEM Forms su JEE)
 
    * **Contesto di Forms Manager:** Percorso contestuale in cui viene distribuita l&#39;interfaccia utente di Forms Manager. I valori predefiniti sono:
 
-      * `/aem/forms` (AEM Forms su OSGi)
-      * `/lc/forms` (AEM Forms su JEE)
+     * `/aem/forms` (AEM Forms su OSGi)
+     * `/lc/forms` (AEM Forms su JEE)
 
    >[!NOTE]
    >
@@ -91,21 +106,21 @@ La [modalità protetta](../../forms/using/get-xdp-pdf-documents-aem.md) è attiv
 
    Opzioni AEM Forms Designer
 
-1. Per visualizzare l&#39;anteprima di un modulo in HTML, fare clic sulla scheda **Anteprima HTML**.
+1. Per visualizzare in anteprima un modulo in HTML, fare clic sulla scheda **Anteprima HTML**.
 
    >[!NOTE]
    >
    >
    >
    >
-   >    * Se la scheda Anteprima HTML è chiusa, premere F4 per aprire la scheda Anteprima HTML. Per aprire la scheda Anteprima HTML, è inoltre possibile selezionare Anteprima HTML dal menu Visualizza.
+   >    * Se la scheda Anteprima HTML è chiusa, premere F4 per aprire la scheda Anteprima HTML. Per aprire la scheda Anteprima HTML, è anche possibile selezionare Anteprima HTML dal menu Visualizza.
    >    * L&#39;anteprima HTML non supporta i documenti PDF, l&#39;anteprima HTML è solo per i documenti XDP.
    >
    >
 
    >[!CAUTION]
    >
-   >Per testare la reale esperienza dell’utente finale, puoi anche visualizzare in anteprima i moduli in browser esterni (Google Chrome, Microsoft Edge, Mozilla Firefox e altro). Ogni browser utilizza un motore separato per il rendering di HTML, pertanto ci potrebbero essere alcune differenze nel modo in cui un modulo viene visualizzato in anteprima in Designer e nel browser esterno.
+   >Per testare la reale esperienza dell’utente finale, puoi anche visualizzare in anteprima i moduli in browser esterni (Google Chrome, Microsoft Edge, Mozilla Firefox e altro). Ogni browser utilizza un motore separato per eseguire il rendering di HTML, quindi ci potrebbero essere alcune differenze nel modo in cui un modulo viene visualizzato in anteprima in Designer e nel browser esterno.
 
 ## Per visualizzare in anteprima un modulo utilizzando dati di esempio {#to-preview-a-form-using-sample-data}
 
@@ -119,7 +134,7 @@ Il test del modulo tramite un&#39;origine dati di esempio assicura che i dati e 
 
 1. Fare clic sulla scheda **Anteprima** e nella casella File di dati digitare il percorso completo del file di dati di prova. È inoltre possibile utilizzare il pulsante Sfoglia per passare al file.
 
-1. Fare clic su **OK**. Alla successiva anteprima del modulo nella scheda **Anteprima HTML**, i valori dei dati del file XML di esempio verranno visualizzati nei rispettivi oggetti.
+1. Fai clic su **OK**. Alla successiva anteprima del modulo nella scheda **Anteprima HTML**, i valori dei dati del file XML di esempio verranno visualizzati nei rispettivi oggetti.
 
 ## Anteprima dei moduli in un archivio {#html-preview-of-forms-in-forms-manager}
 

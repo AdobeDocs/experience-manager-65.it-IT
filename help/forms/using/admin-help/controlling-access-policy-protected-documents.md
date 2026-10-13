@@ -9,13 +9,24 @@ feature: Document Security
 exl-id: 0eb6e769-97c1-41ee-8d12-91bece984947
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
-workflow-type: ht
-source-wordcount: '2167'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '2196'
+ht-degree: 96%
 ---
-
 # Controllo dell’accesso ai documenti protetti da criteri {#controlling-access-to-policy-protected-documents}
 
 Puoi controllare in che modo i destinatari utilizzano i file protetti da criteri, indipendentemente da quanto è ampia la distribuzione.
@@ -125,7 +136,7 @@ Quando cambi un criterio, il nuovo criterio viene applicato come segue:
 
 * Se il documento è online e chiuso, la modifica ha effetto quando il destinatario esegue una nuova sincronizzazione con la protezione dei documenti aprendo online qualsiasi documento protetto tramite criteri.
 * Se il documento è online e aperto, la modifica ha effetto quando l’utente chiude il documento.
-* Se il documento è offline (in uso senza una connessione Internet o di rete attiva, ad esempio su un laptop), la modifica viene applicata quando il destinatario esegue una nuova sincronizzazione con la protezione dei documenti aprendo online un documento protetto tramite criteri.
+* Se il documento è offline (in uso senza una connessione Internet o di rete attiva, ad esempio su un laptop), la modifica viene applicata quando il destinatario esegue una nuova sincronizzazione degli utenti con la protezione dei documenti aprendo online un documento protetto tramite criteri.
 
 >[!NOTE]
 >
@@ -195,12 +206,12 @@ Puoi utilizzare il supporto Pagina 0 (Wrapper) per consentire agli utenti che no
 Utilizza i seguenti processi in Workbench:
 
 **Proteggi
-documento con copertina:** protegge un documento PDF con il criterio specificato e aggiunge una copertina al documento
+Documento con copertina:** Protegge un documento PDF con la policy specificata e aggiunge una copertina al documento
 
 **Estrai documento protetto:** estrae il documento PDF protetto da criterio dal documento PDF con copertina
 
 Utilizza le seguenti API di protezione dei documenti:
 
-**protectDocumentWithCoverPage:** protegge un determinato PDF con il criterio specificato e restituisce un documento con una copertina e il documento protetto come allegato
-`//Create a ServiceClientFactory instance ServiceClientFactory factory = ServiceClientFactory.createInstance(connectionProps); //Create a RightsManagementClient object RightsManagementClient rightsClient = new RightsManagementClient(factory); //Reference a PDF document to which a policy is applied FileInputStream fileInputStream = new FileInputStream("C:\\testFile.pdf"); Document inPDF = new Document(fileInputStream); //Reference a Cover Page document FileInputStream coverPageInputStream = new FileInputStream("C:\\CoverPage.pdf"); Document inCoverDoc = new Document(coverPageInputStream); //Create a Document Manager object DocumentManager documentManager = rightsClient.getDocumentManager(); //Apply a policy to the PDF document RMSecureDocumentResult rmSecureDocument = documentManager.protectDocumentWithCoverPage( inPDF, "ProtectedPDF.pdf", "PolicySetName", "PolicyName", null, null, inCoverDoc, true); //Retrieve the policy-protected PDF document Document protectPDF = rmSecureDocument.getProtectedDoc(); //Save the policy-protected PDF document File myFile = new File("C:\\PolicyProtectedDoc.pdf"); protectPDF.copyToFile(myFile);` **extractProtectedDocument:** estrae il documento protetto che è un allegato nel documento con copertina. Puoi creare il documento con copertina utilizzando il metodo protectDocumentWithCoverPage
+**protectDocumentWithCoverPage:** protegge un determinato PDF con la policy specificata e restituisce un documento con una copertina e il documento protetto come allegato
+`//Create a ServiceClientFactory instance ServiceClientFactory factory = ServiceClientFactory.createInstance(connectionProps); //Create a RightsManagementClient object RightsManagementClient rightsClient = new RightsManagementClient(factory); //Reference a PDF document to which a policy is applied FileInputStream fileInputStream = new FileInputStream("C:\\testFile.pdf"); Document inPDF = new Document(fileInputStream); //Reference a Cover Page document FileInputStream coverPageInputStream = new FileInputStream("C:\\CoverPage.pdf"); Document inCoverDoc = new Document(coverPageInputStream); //Create a Document Manager object DocumentManager documentManager = rightsClient.getDocumentManager(); //Apply a policy to the PDF document RMSecureDocumentResult rmSecureDocument = documentManager.protectDocumentWithCoverPage( inPDF, "ProtectedPDF.pdf", "PolicySetName", "PolicyName", null, null, inCoverDoc, true); //Retrieve the policy-protected PDF document Document protectPDF = rmSecureDocument.getProtectedDoc(); //Save the policy-protected PDF document File myFile = new File("C:\\PolicyProtectedDoc.pdf"); protectPDF.copyToFile(myFile);` **extractProtectedDocument:** Estrae il documento protetto che è un allegato nel documento con frontespizio. È possibile creare il documento con la pagina di copertina utilizzando il metodo protectDocumentWithCoverPage
 `//Create a ServiceClientFactory instance ServiceClientFactory factory = ServiceClientFactory.createInstance(connectionProps); //Create a RightsManagementClient object RightsManagementClient rightsClient = new RightsManagementClient(factory); //Reference a protected PDF document with a Cover Page FileInputStream fileInputStream = new FileInputStream("C:\\policyProtectedDocWithCoverPage.pdf"); Document inPDF = new Document(fileInputStream); //Create a Document Manager object DocumentManager documentManager = rightsClient.getDocumentManager(); //Apply a policy to the PDF document Document extractedDoc = documentManager.extractProtectedDocument(inPDF); //Save the policy-protected PDF document File myFile = new File("C:\\PolicyProtectedDoc.pdf"); extractedDoc.copyToFile(myFile);`

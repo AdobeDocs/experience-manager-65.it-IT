@@ -9,13 +9,27 @@ exl-id: 30edcef2-e8fa-403a-9850-b8dfeeb9ac65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e9afc12af78140ae0ec12cc2ee95fc9e175f8d94
-workflow-type: ht
-source-wordcount: '3241'
-ht-degree: 100%
-
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '3263'
+ht-degree: 99%
 ---
-
 
 # Configurare le directory {#configuring-directories}
 
@@ -126,7 +140,7 @@ Se nelle impostazioni della directory hai selezionato l’opzione Abilita riferi
 
 Sebbene il DN di base sia un’impostazione obbligatoria nella console di amministrazione, alcuni server delle directory, come IBM Domino Enterprise Server, potrebbero richiedere un DN di base vuoto. Per specificare un DN di base vuoto, esporta il file config.xml, modifica l’impostazione nel file config.xml, quindi reimportalo. Consulta [Importazione ed esportazione del file di configurazione](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).
 
-**Filtro di ricerca:** (obbligatorio) il filtro di ricerca da utilizzare per trovare il record associato all’utente. Puoi eseguire una ricerca a un livello o a un livello secondario. Consulta Sintassi del filtro di ricerca o RFC 2254. Per ulteriori informazioni sullo schema di Microsoft AD, consulta Schema di Active Directory.
+**Filtro di ricerca:** (obbligatorio) il filtro di ricerca da utilizzare per trovare il record associato all’utente. Puoi eseguire una ricerca a un livello o a un livello secondario. Consultate Sintassi del filtro di ricerca o RFC 2254. Per ulteriori informazioni sullo schema di Microsoft AD, vedere Schema di Active Directory.
 
 **Descrizione:** l’attributo dello schema per la descrizione dell’utente
 
@@ -208,7 +222,7 @@ Se DN è specificato come identificatore univoco, non devi configurare l’ident
 
 >[!NOTE]
 >
->Per abilitare VLV, configura Sun One. Consultare [Configurare la gestione utenti per l’utilizzo di VLV (Virtual List View)](configuring-directories.md#configure-user-management-to-use-virtual-list-view-vlv).
+>Per abilitare VLV, configura Sun One. Consulta [Configurare la gestione utenti per l’utilizzo di VLV (Virtual List View)](configuring-directories.md#configure-user-management-to-use-virtual-list-view-vlv).
 
 **Nome campo di ordinamento:** se hai selezionato l’opzione Abilita controllo VLV (Virtual List View), specifica il nome dell’attributo utilizzato per ordinare l’indice. Questo nome attributo è quello specificato al momento della creazione di un indice per VLV sul server delle directory.
 
@@ -279,7 +293,7 @@ Di seguito è riportato un esempio di script LDIF per la voce VLV per gli utenti
 
    >[!NOTE]
    >
-   >Come convenzione, anche il nome della voce vlvIndex è impostato su `lcuser`, ma puoi assegnarle un nome diverso. Utilizza lo stesso nome nello strumento vlvindex. (Consulta [Creare l’indice del server delle directory per VLV ](configuring-directories.md#create-the-directory-server-index-for-vlv)*.)*
+   >Come convenzione, anche il nome della voce vlvIndex è impostato su `lcuser`, ma puoi assegnarle un nome diverso. Utilizza lo stesso nome nello strumento vlvindex. (Consulta [Creare l’indice del server delle directory per VLV &#x200B;](configuring-directories.md#create-the-directory-server-index-for-vlv)*.)*
 
 1. Utilizzando lo strumento `ldapmodify` fornito con il server Sun ONE, crea una voce simile per i gruppi utilizzando rispettivamente il DN di base, il filtro di ricerca e il campo di ordinamento del gruppo:
 

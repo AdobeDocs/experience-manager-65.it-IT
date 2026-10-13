@@ -5,13 +5,25 @@ feature: Content Fragments
 role: User
 exl-id: 25c91a85-06ff-4666-a809-46778a689e25
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 11a8181e860c724c817dd549b351df079c8227e2
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1741'
 ht-degree: 75%
-
 ---
-
 # Gestione dei frammenti di contenuto {#managing-content-fragments}
 
 Scopri come utilizzare la console Assets per gestire i frammenti di contenuto AEM, che costituiscono la base dei contenuti headless.
@@ -59,7 +71,7 @@ Il metodo per creare un frammento di contenuto è:
 
    * [Modello](/help/assets/content-fragments/content-fragments-models.md): utilizzato per creare un frammento che richiede contenuto strutturato, ad esempio il modello **Avventura**
 
-      * Vengono visualizzati tutti i modelli disponibili.
+     * Vengono visualizzati tutti i modelli disponibili.
 
    Dopo la selezione, utilizza **Successivo** per procedere.
 
@@ -69,23 +81,23 @@ Il metodo per creare un frammento di contenuto è:
 
    * **Base**
 
-      * **Titolo**
+     * **Titolo**
 
-        Titolo del frammento.
+       Titolo del frammento.
 
-        Obbligatorio
+       Obbligatorio
 
-      * **Descrizione**
+     * **Descrizione**
 
-      * **Tag**
+     * **Tag**
 
    * **Avanzate**
 
-      * **Nome**
+     * **Nome**
 
-        Il nome; viene utilizzato per formare l’URL.
+       Il nome; viene utilizzato per formare l’URL.
 
-        Obbligatorio; deriverà automaticamente dal titolo, ma può essere aggiornato.
+       Obbligatorio; deriverà automaticamente dal titolo, ma può essere aggiornato.
 
 1. Seleziona **Crea** per completare l’azione, quindi **Apri** il frammento per la modifica oppure tornare alla console facendo clic su **Fine**.
 
@@ -105,17 +117,17 @@ Seleziona il frammento per visualizzare la barra degli strumenti con le azioni a
 
 * **Download**
 
-   * Salva il frammento come file ZIP; puoi definire se includere elementi, varianti, metadati.
+  * Salva il frammento come file ZIP; puoi definire se includere elementi, varianti, metadati.
 
 * **Crea**
 * **Estrazione**
 * **Proprietà**
 
-   * Consente di visualizzare e/o modificare i metadati del frammento.
+  * Consente di visualizzare e/o modificare i metadati del frammento.
 
 * **Modifica**
 
-   * Consente di [aprire il frammento per la modifica del contenuto](/help/assets/content-fragments/content-fragments-variations.md) insieme ai relativi elementi, varianti, contenuto e metadati associati.
+  * Consente di [aprire il frammento per la modifica del contenuto](/help/assets/content-fragments/content-fragments-variations.md) insieme ai relativi elementi, varianti, contenuto e metadati associati.
 
 * **Gestisci tag**
 * **Alla raccolta**
@@ -191,17 +203,17 @@ Alcune funzioni nella barra degli strumenti superiore sono disponibili in divers
 
 * Sotto il nome del frammento è possibile visualizzare il nome del [Modello per frammento di contenuto](/help/assets/content-fragments/content-fragments-models.md) utilizzato per creare il frammento corrente:
 
-   * Il nome è anche un collegamento che apre l’editor modelli.
+  * Il nome è anche un collegamento che apre l’editor modelli.
 
 * Consulta lo stato del frammento; ad esempio, per informazioni su quando è stato creato, modificato o pubblicato.
 
 * **Salva** fornisce accesso all’opzione **Salva e chiudi**.
 
 * I tre punti (**...**) fornisce accesso ad azioni aggiuntive:
-   * **Aggiorna i riferimenti di pagina**
-      * Questo aggiorna tutti i riferimenti di pagina.
-   * **[Pubblicazione rapida](#publishing-and-referencing-a-fragment)**
-   * **[Gestisci pubblicazione](#publishing-and-referencing-a-fragment)**
+  * **Aggiorna i riferimenti di pagina**
+    * Questo aggiorna tutti i riferimenti di pagina.
+  * **[Pubblicazione rapida](#publishing-and-referencing-a-fragment)**
+  * **[Gestisci pubblicazione](#publishing-and-referencing-a-fragment)**
 
 <!--
 * See the status of the fragment; for example, information about when it was created, modified or published. The status is also color-coded:
@@ -227,8 +239,8 @@ L’editor dispone di diverse opzioni:
 
 * **Salva** e **Salva e chiudi**
 
-   * **Salva** salva le modifiche più recenti e rimane nell’editor.
-   * **Salva e chiudi** salva le modifiche più recenti e chiude l’editor.
+  * **Salva** salva le modifiche più recenti e rimane nell’editor.
+  * **Salva e chiudi** salva le modifiche più recenti e chiude l’editor.
 
   >[!CAUTION]
   >
@@ -290,17 +302,17 @@ Oltre alle opzioni standard, [Timeline](/help/assets/manage-assets.md#timeline) 
 * Visualizza informazioni su versioni, commenti e annotazioni
 * Azioni per le versioni
 
-   * **[Ripristina questa versione](#reverting-to-a-version)** (seleziona un frammento esistente, quindi una versione specifica)
+  * **[Ripristina questa versione](#reverting-to-a-version)** (seleziona un frammento esistente, quindi una versione specifica)
 
-   * **[Confronta con corrente](#comparing-fragment-versions)** (seleziona un frammento esistente, quindi una versione specifica)
+  * **[Confronta con corrente](#comparing-fragment-versions)** (seleziona un frammento esistente, quindi una versione specifica)
 
-   * Aggiungi un’**Etichetta** e/o un **Commento** (seleziona un frammento esistente, quindi una versione specifica)
+  * Aggiungi un’**Etichetta** e/o un **Commento** (seleziona un frammento esistente, quindi una versione specifica)
 
-   * **Salva come versione** (seleziona un frammento esistente, quindi la freccia su nella parte inferiore della timeline)
+  * **Salva come versione** (seleziona un frammento esistente, quindi la freccia su nella parte inferiore della timeline)
 
 * Azioni per le annotazioni
 
-   * **Eliminare**
+  * **Eliminare**
 
 >[!NOTE]
 >
@@ -334,9 +346,9 @@ Le versioni vengono visualizzate affiancate e:
 
 * Eventuali differenze sono evidenziate
 
-   * Testo eliminato: rosso
-   * Testo inserito: verde
-   * Testo sostituito: blu
+  * Testo eliminato: rosso
+  * Testo inserito: verde
+  * Testo sostituito: blu
 
 * L’icona a schermo intero consente di aprire una versione da sola, quindi di tornare alla vista parallela
 * È possibile **ritornare** alla versione specifica

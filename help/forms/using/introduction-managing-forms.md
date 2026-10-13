@@ -9,13 +9,27 @@ exl-id: 3e063456-7f96-483d-86a3-6a414746db8a
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User
-source-git-commit: c6dd35fbedba6ace60975a7c31e987edd69a8c69
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 1%
-
 ---
-
 # Introduzione alla gestione dei moduli {#introduction-to-managing-forms}
 
 AEM [!DNL Forms] fornisce un&#39;interfaccia utente semplificata ma potente per la creazione e la gestione di moduli, documenti, temi, lettere, frammenti di documenti, dizionari dati e risorse correlate. Consente di gestire l&#39;intero ciclo di vita di moduli, documenti e risorse correlate, dal desktop di uno sviluppatore all&#39;offerta
@@ -56,8 +70,8 @@ Il pulsante Crea è il punto iniziale del processo di creazione o caricamento de
 
 * **Cartella:** l&#39;interfaccia utente di AEM [!DNL Forms] utilizza le cartelle per organizzare le risorse. Supporta due tipi di cartelle:
 
-   * **Cartella generale:** Queste cartelle vengono utilizzate per le risorse create nell&#39;interfaccia utente di AEM [!DNL Forms]. Queste cartelle non hanno una struttura di cartelle rigida. In queste cartelle è possibile rinominare, creare sottocartelle e archiviare moduli adattivi, comunicazioni interattive, frammenti di moduli adattivi, modelli di modulo (XDP), PDF forms, documenti e risorse correlate.
-   * **Cartella Forms Workflow:** le cartelle del flusso di lavoro di Forms vengono create quando i processi di Workbench (archivi LiveCycle) vengono migrati e sincronizzati con l&#39;interfaccia utente di AEM [!DNL Forms]. Non è consentito rinominare, creare una sottocartella, creare una comunicazione interattiva, un frammento di modulo adattivo o una comunicazione interattiva. Inoltre, non è consentito eliminare una cartella delle versioni o creare e caricare un modulo adattivo, un frammento di modulo adattivo o una comunicazione interattiva in parallelo alla cartella delle versioni.
+  * **Cartella generale:** Queste cartelle vengono utilizzate per le risorse create nell&#39;interfaccia utente di AEM [!DNL Forms]. Queste cartelle non hanno una struttura di cartelle rigida. In queste cartelle è possibile rinominare, creare sottocartelle e archiviare moduli adattivi, comunicazioni interattive, frammenti di moduli adattivi, modelli di modulo (XDP), PDF forms, documenti e risorse correlate.
+  * **Cartella Forms Workflow:** le cartelle del flusso di lavoro di Forms vengono create quando i processi di Workbench (archivi LiveCycle) vengono migrati e sincronizzati con l&#39;interfaccia utente di AEM [!DNL Forms]. Non è consentito rinominare, creare una sottocartella, creare una comunicazione interattiva, un frammento di modulo adattivo o una comunicazione interattiva. Inoltre, non è consentito eliminare una cartella delle versioni o creare e caricare un modulo adattivo, un frammento di modulo adattivo o una comunicazione interattiva in parallelo alla cartella delle versioni.
 
   ![cartelle](assets/folders.png)
 
@@ -106,8 +120,8 @@ Il pannello strumenti di AEM contiene strumenti per vari componenti. Per passare
 
 * **Barra a sinistra:** Puoi fare clic sull&#39;icona della barra a sinistra ![railleftpng](assets/railleftpng.png) per visualizzare le funzionalità Timeline e Riferimenti di AEM [!DNL Forms].
 
-   * **Timeline:** Puoi aggiungere e visualizzare commenti su una risorsa disponibile per la revisione nella timeline. Per istruzioni dettagliate, consulta [Creazione e gestione delle revisioni per le risorse nei moduli](../../forms/using/create-reviews-forms.md).
-   * **Riferimenti:** una risorsa AEM [!DNL Forms] può essere utilizzata in più risorse AEM [!DNL Forms]. Ad esempio, un frammento di documento può essere utilizzato in più lettere. I riferimenti sono un elenco di risorse (altre forme o risorse) in cui viene utilizzata la risorsa selezionata e anche l’elenco delle altre risorse utilizzate dalla risorsa selezionata.
+  * **Timeline:** Puoi aggiungere e visualizzare commenti su una risorsa disponibile per la revisione nella timeline. Per istruzioni dettagliate, consulta [Creazione e gestione delle revisioni per le risorse nei moduli](../../forms/using/create-reviews-forms.md).
+  * **Riferimenti:** una risorsa AEM [!DNL Forms] può essere utilizzata in più risorse AEM [!DNL Forms]. Ad esempio, un frammento di documento può essere utilizzato in più lettere. I riferimenti sono un elenco di risorse (altre forme o risorse) in cui viene utilizzata la risorsa selezionata e anche l’elenco delle altre risorse utilizzate dalla risorsa selezionata.
 
 * **Breadcrumb:** Un breadcrumb rappresenta il titolo della console o della cartella corrente. Puoi fare clic sull’opzione Breadcrumb per spostarti tra i livelli di cartelle più elevati nella gerarchia.
 * **Commutatore visualizzazione:** Per passare rapidamente dalla visualizzazione elenco alla visualizzazione scheda, fare clic sull&#39;icona del commutatore di visualizzazione ![elenco](assets/viewlist.png) o ![scheda](assets/viewcard.png). Per ulteriori informazioni sui componenti comuni dell&#39;interfaccia utente, vedere [Authoring](/help/sites-authoring/author.md).

@@ -10,13 +10,27 @@ feature: Carousel Banners
 role: User, Admin
 exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: e82a35fa-5829-4d45-8047-ede0efd4c4ad
+    internal-label: Carousel banners
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '4665'
+source-wordcount: '4791'
 ht-degree: 3%
-
 ---
-
 # Banner a carosello{#carousel-banners}
 
 I banner carosello consentono agli addetti al marketing di promuovere la conversione dei contenuti creando facilmente contenuti promozionali a rotazione interattivi e distribuendoli a qualsiasi schermo.
@@ -88,7 +102,7 @@ Per iniziare subito a usare i banner a carosello:
 
    * [Aggiungi un banner carosello alla pagina del tuo sito Web](#adding-a-carousel-banner-to-your-website-page) Puoi aggiungere l&#39;URL del banner carosello o il codice da incorporare copiato nella pagina del sito Web.
 
-      * [Integrare il banner del carosello con un Quickview esistente](#integrating-the-carousel-banner-with-an-existing-quickview). Se utilizzi un sistema di gestione dei contenuti web di terze parti, devi integrare il nuovo banner carosello con l’implementazione Quickview esistente sul tuo sito web.
+     * [Integrare il banner del carosello con un Quickview esistente](#integrating-the-carousel-banner-with-an-existing-quickview). Se utilizzi un sistema di gestione dei contenuti web di terze parti, devi integrare il nuovo banner carosello con l’implementazione Quickview esistente sul tuo sito web.
 
    * [Aggiungi un banner carosello al tuo sito Web in Experience Manager](/help/assets/adding-dynamic-media-assets-to-pages.md) Se sei un cliente Experience Manager Sites puoi aggiungere il set carosello direttamente alla pagina in Experience Manager, utilizzando il componente File multimediali interattivi.
 
@@ -286,23 +300,23 @@ Vedi anche [Aggiungere mappe immagine](/help/assets/image-maps.md).
 
    * Selezionare **[!UICONTROL Quickview]**.
 
-      * Se sei un cliente di Experience Manager Sites e Ecommerce, seleziona l’icona del selettore prodotti (lente di ingrandimento) per aprire la pagina Seleziona prodotto. Seleziona il prodotto da utilizzare, quindi fai clic sul segno di spunta nell’angolo superiore destro della pagina per tornare all’editor di banner a carosello.
-      * Se non sei un cliente Experience Manager Sites o e-commerce
+     * Se sei un cliente di Experience Manager Sites e Ecommerce, seleziona l’icona del selettore prodotti (lente di ingrandimento) per aprire la pagina Seleziona prodotto. Seleziona il prodotto da utilizzare, quindi fai clic sul segno di spunta nell’angolo superiore destro della pagina per tornare all’editor di banner a carosello.
+     * Se non sei un cliente Experience Manager Sites o e-commerce
 
-         * Se vuoi definire queste variabili, consulta [Identificare le variabili del punto attivo](#identifying-hotspot-and-image-map-variables).
-         * Quindi, immetti manualmente il valore SKU. Nel campo di testo Valore SKU digitare la SKU (Stock Keeping Unit) del prodotto, che rappresenta un identificatore univoco per ogni prodotto o servizio specifico offerto. Il valore SKU immesso popola automaticamente la parte variabile del modello Quickview in modo che il sistema sappia associare il punto attivo toccato alla visualizzazione rapida di una particolare SKU.
-         * (Facoltativo) Se in Quickview sono presenti altre variabili che è necessario utilizzare per identificare ulteriormente un prodotto, selezionare **[!UICONTROL Aggiungi variabile generica]**. Nel campo di testo, specifica una variabile aggiuntiva. Ad esempio, category=Mens è una variabile aggiunta.
+       * Se vuoi definire queste variabili, consulta [Identificare le variabili del punto attivo](#identifying-hotspot-and-image-map-variables).
+       * Quindi, immetti manualmente il valore SKU. Nel campo di testo Valore SKU digitare la SKU (Stock Keeping Unit) del prodotto, che rappresenta un identificatore univoco per ogni prodotto o servizio specifico offerto. Il valore SKU immesso popola automaticamente la parte variabile del modello Quickview in modo che il sistema sappia associare il punto attivo toccato alla visualizzazione rapida di una particolare SKU.
+       * (Facoltativo) Se in Quickview sono presenti altre variabili che è necessario utilizzare per identificare ulteriormente un prodotto, selezionare **[!UICONTROL Aggiungi variabile generica]**. Nel campo di testo, specifica una variabile aggiuntiva. Ad esempio, category=Mens è una variabile aggiunta.
 
-         * Per ulteriori informazioni, vedere [Utilizzare i selettori](/help/assets/working-with-selectors.md).
+       * Per ulteriori informazioni, vedere [Utilizzare i selettori](/help/assets/working-with-selectors.md).
 
    * Seleziona **[!UICONTROL Collegamento ipertestuale]**.
 
-      * Se sei un cliente di Experience Manager Sites, seleziona l’icona Selettore siti (cartella) per passare a un URL.
-        >[!NOTE]
-        >
-        >Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo presenta collegamenti con URL relativi, in particolare collegamenti a pagine Experience Manager Sites.
+     * Se sei un cliente di Experience Manager Sites, seleziona l’icona Selettore siti (cartella) per passare a un URL.
+       >[!NOTE]
+       >
+       >Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo presenta collegamenti con URL relativi, in particolare collegamenti a pagine Experience Manager Sites.
 
-      * Se si è clienti autonomi, specificare il percorso URL completo di una pagina Web collegata nel campo di testo HREF.
+     * Se si è clienti autonomi, specificare il percorso URL completo di una pagina Web collegata nel campo di testo HREF.
 
    Assicurati di specificare se aprire il collegamento in una nuova scheda del browser (impostazione predefinita consigliata) o nella stessa scheda.
 
@@ -310,16 +324,16 @@ Vedi anche [Aggiungere mappe immagine](/help/assets/image-maps.md).
 
    * Seleziona **[!UICONTROL Frammento esperienza]**.
 
-      * Se sei un cliente di Experience Manager Sites, seleziona l’icona Ricerca (lente di ingrandimento) per aprire la pagina Frammento esperienza. Seleziona il frammento di esperienza da utilizzare, quindi seleziona **[!UICONTROL Seleziona]** nell&#39;angolo superiore destro della pagina per tornare alla pagina di gestione dei punti attivi.
-Vedi [Frammenti esperienza](/help/sites-authoring/experience-fragments.md).
+     * Se sei un cliente di Experience Manager Sites, seleziona l’icona Ricerca (lente di ingrandimento) per aprire la pagina Frammento esperienza. Seleziona il frammento di esperienza da utilizzare, quindi seleziona **[!UICONTROL Seleziona]** nell&#39;angolo superiore destro della pagina per tornare alla pagina di gestione dei punti attivi.
+       Vedi [Frammenti esperienza](/help/sites-authoring/experience-fragments.md).
 
-      * Specifica la larghezza e l&#39;altezza del frammento di esperienza così come viene visualizzato sul banner.
+     * Specifica la larghezza e l&#39;altezza del frammento di esperienza così come viene visualizzato sul banner.
 
-        >[!NOTE]
-        >
-        >Gli strumenti di condivisione per social media nel banner carosello non sono supportati quando si incorpora il visualizzatore in un frammento di esperienza.
-        >
-        >Per risolvere questo problema, crea predefiniti visualizzatore che non dispongono di strumenti per la condivisione sui social media. Tali predefiniti visualizzatore consentono di incorporarli correttamente in Frammenti esperienza.
+       >[!NOTE]
+       >
+       >Gli strumenti di condivisione per social media nel banner carosello non sono supportati quando si incorpora il visualizzatore in un frammento di esperienza.
+       >
+       >Per risolvere questo problema, crea predefiniti visualizzatore che non dispongono di strumenti per la condivisione sui social media. Tali predefiniti visualizzatore consentono di incorporarli correttamente in Frammenti esperienza.
 
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 

@@ -9,13 +9,22 @@ exl-id: 2b396850-e9fb-46d9-9daa-ebd410a9e1a5
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '2057'
-ht-degree: 0%
-
+source-wordcount: '2069'
+ht-degree: 1%
 ---
-
 # Interazione con i flussi di lavoro a livello di programmazione{#interacting-with-workflows-programmatically}
 
 Quando [personalizzi ed estendi i flussi di lavoro](/help/sites-developing/workflows-customizing-extending.md) puoi accedere agli oggetti del flusso di lavoro:
@@ -409,8 +418,8 @@ Per modificare il **Titolo flusso di lavoro** visualizzato nella scheda **Istanz
 
 * con i seguenti parametri:
 
-   * `action`: il valore deve essere: `UPDATE`
-   * `workflowTitle`: titolo del flusso di lavoro
+  * `action`: il valore deve essere: `UPDATE`
+  * `workflowTitle`: titolo del flusso di lavoro
 
 #### Come modificare il Titolo del flusso di lavoro - REST utilizzando CURL {#how-to-change-the-workflow-title-rest-using-curl}
 
@@ -491,8 +500,8 @@ Durante la creazione di un modello:
 
 * L&#39;editor modelli di flusso di lavoro richiede che i modelli utilizzino una struttura di nodo specifica sotto `/var/workflow/models`. Il nodo padre del modello deve essere di tipo `cq:Page` con un nodo `jcr:content` con i seguenti valori di proprietà:
 
-   * `sling:resourceType`: `cq/workflow/components/pages/model`
-   * `cq:template`: `/libs/cq/workflow/templates/model`
+  * `sling:resourceType`: `cq/workflow/components/pages/model`
+  * `cq:template`: `/libs/cq/workflow/templates/model`
 
   Quando si crea un modello, è innanzitutto necessario creare il nodo `cq:Page` e utilizzare il relativo nodo `jcr:content` come nodo principale del nodo del modello.
 

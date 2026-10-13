@@ -8,13 +8,29 @@ feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2045'
+source-wordcount: '2047'
 ht-degree: 10%
-
 ---
-
 # Formati supportati in [!DNL Adobe Experience Manager Assets] {#assets-supported-formats}
 
 [!DNL Experience Manager Assets] supporta un&#39;ampia gamma di formati di file e ogni funzionalità supporta diversi tipi MIME. Per integrare [!DNL Assets] con altre soluzioni DAM (Digital Asset Management) e software desktop conformi agli standard, utilizzare Adobe [!DNL Extensible Metadata Platform] (XMP).
@@ -339,7 +355,7 @@ Vedi anche [Utilizzo di risorse 3D in Dynamic Media](/help/assets/assets-3d.md).
 | GLB | Trasmissione GL binaria | model/gltf-binary | Include i materiali e le texture come un&#39;unica risorsa. |
 | OBJ | File oggetto WaveFront 3D | application/x-tgif |  |
 | STL | Stereolitografia | application/vnd.ms-pki.stl |  |
-| USDZ | Universal Scene Description Archivio zip | model/vnd.usdz+zip | *Supporto solo per l&#39;acquisizione. Nessuna visualizzazione o interazione disponibile.* USDZ è un formato 3D proprietario che può essere visualizzato in modalità nativa dai dispositivi Safari e iOS. |
+| USDZ | Archivio zip Universal Scene Description | model/vnd.usdz+zip | *Supporto solo per l&#39;acquisizione. Nessuna visualizzazione o interazione disponibile.* USDZ è un formato 3D proprietario che può essere visualizzato in modalità nativa dai dispositivi Safari e iOS. |
 
 >[!MORELIKETHIS]
 >

@@ -5,13 +5,29 @@ exl-id: b377e01f-e392-4ef5-a259-73ce9ff941d0
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
 role: Admin, Developer
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '692'
 ht-degree: 92%
-
 ---
-
 # Scopri come creare modelli per frammenti di contenuto in AEM {#architect-headless-content-fragment-models}
 
 ## Percorso affrontato finora {#story-so-far}
@@ -117,22 +133,22 @@ Dopo aver appreso le nozioni di base, il passaggio successivo consiste nell’in
 
 * [Utilizzo di frammenti di contenuto](/help/assets/content-fragments/content-fragments.md)
 
-   * [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md)
+  * [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md)
 
-      * [Definizione del modello per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md#defining-your-content-fragment-model)
+    * [Definizione del modello per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md#defining-your-content-fragment-model)
 
-      * [Abilitazione o disabilitazione di un modello per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md#enabling-disabling-a-content-fragment-model)
+    * [Abilitazione o disabilitazione di un modello per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md#enabling-disabling-a-content-fragment-model)
 
-      * [Consentire modelli per frammenti di contenuto nella cartella delle risorse](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+    * [Consentire modelli per frammenti di contenuto nella cartella delle risorse](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 
-      * [Eliminazione di un modello per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md#deleting-a-content-fragment-model)
+    * [Eliminazione di un modello per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md#deleting-a-content-fragment-model)
 
-      * [Pubblicazione di un modello per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
+    * [Pubblicazione di un modello per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
 
-      * [Annullamento della pubblicazione di un modello per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
+    * [Annullamento della pubblicazione di un modello per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
 
-      * [Modelli per frammenti di contenuto bloccati (pubblicati)](/help/assets/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
+    * [Modelli per frammenti di contenuto bloccati (pubblicati)](/help/assets/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
 
 * Guide introduttive
 
-   * [Guida rapida alla creazione di modelli per frammenti di contenuto headless](/help/sites-developing/headless/getting-started/create-content-model.md)
+  * [Guida rapida alla creazione di modelli per frammenti di contenuto headless](/help/sites-developing/headless/getting-started/create-content-model.md)

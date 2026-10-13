@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilizza la documentazione di Adobe Experience Manager 6.5 per scoprire come funziona e come può esserti utile il software.
 breadcrumb-title: Guida utente
 user-guide-title: AEM 6.5
-source-git-commit: f46e653863a8724a5f50bed7a2f76079803b162e
+source-git-commit: 1af0281a94789888e87ba959f82ff491f4d7ee60
 workflow-type: tm+mt
-source-wordcount: '8300'
+source-wordcount: '8302'
 ht-degree: 95%
 ---
 
@@ -433,6 +433,7 @@ ht-degree: 95%
     + [Configurare la funzionalità dei metadati](/help/assets/metadata-config.md)
     + [Schemi di metadati](/help/assets/metadata-schemas.md)
     + [Write-back XMP alle rappresentazioni](/help/assets/xmp-writeback.md)
+    + [Metadati C2PA](/help/assets/c2pa-metadata.md)
     + [Condivisione dei collegamenti delle risorse](/help/assets/link-sharing.md)
     + [Rapporti sulle risorse](/help/assets/asset-reports.md)
     + [Configurare il Servizio di contenuti avanzati per l’assegnazione tag](/help/assets/config-smart-tagging.md)

@@ -9,13 +9,27 @@ exl-id: 601c8d95-0d1a-4945-a522-e85d3e9fc4ae
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 5%
-
+source-wordcount: '293'
+ht-degree: 8%
 ---
-
 # Registrazione nei flussi di lavoro di AEM Forms{#logging-in-aem-forms-workflows}
 
 I passaggi di Forms Workflow forniscono registri dettagliati per eseguire il debug dei problemi correlati al flusso di lavoro in modo semplice. Abilita la registrazione di debug per i flussi di lavoro di AEM Forms per visualizzare i registri.
@@ -70,7 +84,7 @@ L’esempio seguente illustra i registri per il passaggio Firma documento:
 Utilizza i registri per valutare quanto segue:
 
 * Stai utilizzando una configurazione Adobe Sign corretta.
-* Il servizio Adobe Sign termina dopo la creazione di un contratto.
+* Il servizio Adobe Sign viene chiuso dopo la creazione di un contratto.
 * Il passaggio Firma documento termina con un messaggio di successo.
 
 In caso di eccezione, è possibile visualizzare l&#39;analisi completa dello stack per valutare la causa dell&#39;errore.
@@ -79,9 +93,9 @@ In caso di eccezione, è possibile visualizzare l&#39;analisi completa dello sta
 
 Effettua le seguenti operazioni per abilitare la registrazione di debug per i flussi di lavoro AEM Forms:
 
-1. Vai a Gestione configurazione console web AEM all’indirizzo:
+1. Passa a Gestione configurazione console web AEM all’indirizzo:
 
-   https://&#39;[server]:[porta]&#39;/system/console/configMgr
+   https://'[server]:[porta]'/system/console/configMgr
 
 1. Selezionare **[!UICONTROL Sling]** > **[!UICONTROL Supporto log]**.
 1. Seleziona **[!UICONTROL Aggiungi nuovo logger.]**

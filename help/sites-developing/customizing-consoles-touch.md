@@ -10,13 +10,22 @@ exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '690'
 ht-degree: 1%
-
 ---
-
 # Personalizzazione delle console {#customizing-the-consoles}
 
 >[!CAUTION]
@@ -29,7 +38,7 @@ AEM offre diversi meccanismi per consentirti di personalizzare le console (e la 
 Le clientlibs consentono di estendere l’implementazione predefinita per realizzare nuove funzionalità, riutilizzando le funzioni, gli oggetti e i metodi standard. Durante la personalizzazione, puoi creare una libreria client personalizzata in `/apps.`. Ad esempio, può contenere il codice necessario per il componente personalizzato.
 
 * Sovrapposizioni
-Le sovrapposizioni si basano sulle definizioni dei nodi e consentono di sovrapporre la funzionalità standard (in `/libs`) con la funzionalità personalizzata (in `/apps`). Durante la creazione di una sovrapposizione, non è necessaria una copia 1:1 dell’originale, in quanto la fusione di risorse sling consente l’ereditarietà.
+Le sovrapposizioni si basano sulle definizioni dei nodi e consentono di sovrapporre la funzionalità standard (in `/libs`) con la funzionalità personalizzata (in `/apps`). Quando crei una sovrapposizione, non è necessaria una copia 1:1 dell’originale, in quanto la fusione di risorse sling consente l’ereditarietà.
 
 Questi possono essere utilizzati in molti modi per estendere le console AEM. Di seguito è riportata una piccola selezione (ad alto livello).
 
@@ -60,7 +69,7 @@ Ad esempio, è possibile sovrapporre la seguente posizione all&#39;interno della
 
 * console (tutte le console basate sulle pagine dell’interfaccia utente Granite); ad esempio:
 
-   * `/libs/wcm/core/content`
+  * `/libs/wcm/core/content`
 
 >[!NOTE]
 >

@@ -1,6 +1,6 @@
 ---
 title: Configurazione dei componenti in modalità Progettazione
-description: Quando l’istanza AEM è installata come preconfigurata, nella barra laterale è immediatamente disponibile una selezione di componenti. Oltre a questi, sono disponibili vari altri componenti. È possibile utilizzare la modalità Progettazione per abilitare/disabilitare tali componenti.
+description: Quando l’istanza AEM è installata come predefinita, nella barra laterale è immediatamente disponibile una selezione di componenti. Oltre a questi, sono disponibili vari altri componenti. È possibile utilizzare la modalità Progettazione per abilitare/disabilitare tali componenti.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
@@ -10,16 +10,25 @@ exl-id: cb2d2d0d-feb4-4b89-8325-80f735816904
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '514'
 ht-degree: 0%
-
 ---
-
 # Configurazione dei componenti in modalità Progettazione{#configuring-components-in-design-mode}
 
-Quando l’istanza AEM è installata come preconfigurata, nella barra laterale è immediatamente disponibile una selezione di componenti.
+Quando l’istanza AEM è installata come predefinita, nella barra laterale è immediatamente disponibile una selezione di componenti.
 
 Oltre a questi, sono disponibili vari altri componenti. È possibile utilizzare la modalità Progettazione per [abilitare/disabilitare tali componenti](#enabledisablecomponentsusingdesignmode). Se attivato e si trova nella pagina, è possibile utilizzare la modalità Progettazione per [configurare gli aspetti della progettazione del componente](#configuringcomponentsusingdesignmode) modificando i parametri dell&#39;attributo.
 
@@ -44,7 +53,7 @@ Ad esempio, il contenuto di una pagina di prodotto può contenere un sistema par
 
 In modalità Progettazione, la barra laterale viene ridotta a icona e puoi configurare i componenti accessibili per l’authoring:
 
-1. Per accedere alla modalità Progettazione, apri una pagina per la modifica e utilizza l’icona del Sidekick:
+1. Per accedere alla modalità Progettazione, apri una pagina per la modifica e utilizza l’icona Sidekick:
 
    ![Modalità progettazione](do-not-localize/chlimage_1.png)
 
@@ -52,13 +61,13 @@ In modalità Progettazione, la barra laterale viene ridotta a icona e puoi confi
 
    ![schermata_shot_2012-02-08at102726am](assets/screen_shot_2012-02-08at102726am.png)
 
-1. Viene aperta una finestra di dialogo in cui sono elencati i gruppi di componenti visualizzati nel Sidekick e i singoli componenti in essi contenuti.
+1. Viene aperta una finestra di dialogo in cui sono elencati i gruppi di componenti visualizzati in Sidekick e i singoli componenti in essi contenuti.
 
    Seleziona questa opzione per aggiungere o rimuovere i componenti da rendere disponibili nella barra laterale.
 
    ![schermata_shot_2012-02-08at103407am](assets/screen_shot_2012-02-08at103407am.png)
 
-1. Il Sidekick si riduce a icona in modalità Progettazione. Facendo clic sulla freccia è possibile ingrandire il Sidekick e tornare alla modalità di modifica:
+1. Sidekick riduce a icona in modalità Progettazione. Facendo clic sulla freccia è possibile ingrandire il Sidekick e tornare alla modalità di modifica:
 
    ![Sidekick ridotto a icona](do-not-localize/sidekick-collapsed.png)
 
@@ -66,7 +75,7 @@ In modalità Progettazione, la barra laterale viene ridotta a icona e puoi confi
 
 In modalità Progettazione è inoltre possibile configurare gli attributi per i singoli componenti. Ogni componente ha i propri parametri. Nell&#39;esempio seguente viene illustrato il componente **Immagine**:
 
-1. Per accedere alla modalità Progettazione, apri una pagina per la modifica e utilizza l’icona del Sidekick:
+1. Per accedere alla modalità Progettazione, apri una pagina per la modifica e utilizza l’icona Sidekick:
 
    ![Modalità progettazione - Sidekick](do-not-localize/chlimage_1-1.png)
 
@@ -78,6 +87,6 @@ In modalità Progettazione è inoltre possibile configurare gli attributi per i 
 
 1. Fai clic su **OK** per salvare le modifiche.
 
-1. Il Sidekick si riduce a icona in modalità Progettazione. Facendo clic sulla freccia è possibile ingrandire il Sidekick e tornare alla modalità di modifica:
+1. Sidekick riduce a icona in modalità Progettazione. Facendo clic sulla freccia è possibile ingrandire il Sidekick e tornare alla modalità di modifica:
 
    ![Sidekick ridotto a icona](do-not-localize/sidekick-collapsed-1.png)

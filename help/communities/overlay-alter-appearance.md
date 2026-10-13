@@ -1,6 +1,6 @@
 ---
 title: Modificare l'aspetto
-description: Scopri come modificare lo script comment.hbs che è responsabile della creazione delle HTML generali di ogni commento nelle community Adobe Experience Manager.
+description: Scopri come modificare lo script comment.hbs che è responsabile della creazione del HTML complessivo per ogni commento nelle community Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -10,13 +10,20 @@ exl-id: cb8f6967-216c-46d3-a7ba-068b0f5e3b94
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '242'
 ht-degree: 0%
-
 ---
-
 # Modificare l&#39;aspetto {#alter-the-appearance}
 
 ## Modificare lo script {#modify-the-script}

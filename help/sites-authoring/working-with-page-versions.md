@@ -5,22 +5,35 @@ exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1567'
+source-wordcount: '1568'
 ht-degree: 61%
-
 ---
-
-# Utilizzo delle versioni di una pagina  {#working-with-page-versions}
+# Utilizzo delle versioni di una pagina{#working-with-page-versions}
 
 Il controllo delle versioni crea lo snapshot di una pagina in un determinato momento. Con il controllo delle versioni è possibile eseguire le azioni seguenti:
 
 * Creare una versione di una pagina.
 * Ripristina una pagina a una versione precedente, ad esempio:
-   * per annullare una modifica apportata alla pagina.
+  * per annullare una modifica apportata alla pagina.
 * Confrontare la versione corrente di una pagina con una versione precedente:
-   * per evidenziare le differenze nel testo e nelle immagini.
+  * per evidenziare le differenze nel testo e nelle immagini.
 
 >[!NOTE]
 >
@@ -29,7 +42,7 @@ Il controllo delle versioni crea lo snapshot di una pagina in un determinato mom
 >* Quando si visualizzano le versioni, il contenuto viene visualizzato con il codice, CSS e JavaScript correnti dell’archivio.
 >* Durante il ripristino delle versioni, viene ripristinato solo il contenuto e vengono applicati il codice, i CSS e il JavaScript correnti dell’archivio.
 
-## Creazione di una nuova versione   {#creating-a-new-version}
+## Creazione di una nuova versione {#creating-a-new-version}
 
 Puoi creare una versione della risorsa da:
 
@@ -77,13 +90,13 @@ Dopo aver creato una versione della pagina, esistono diversi metodi per ripristi
 
 * L&#39;opzione **Ripristina** dalla [barra delle azioni](/help/sites-authoring/basic-handling.md#actions-toolbar) in alto
 
-   * **Ripristina versione**
+  * **Ripristina versione**
 
-     Ripristina le versioni delle pagine specificate nella cartella attualmente selezionata; questo può anche includere il ripristino di pagine precedentemente eliminate.
+    Ripristina le versioni delle pagine specificate nella cartella attualmente selezionata; questo può anche includere il ripristino di pagine precedentemente eliminate.
 
-   * **Ripristina albero**
+  * **Ripristina albero**
 
-     Ripristinare la versione dell&#39;intera struttura così come appariva a una data e un&#39;ora specificate può includere pagine precedentemente eliminate.
+    Ripristinare la versione dell&#39;intera struttura così come appariva a una data e un&#39;ora specificate può includere pagine precedentemente eliminate.
 
 >[!NOTE]
 >
@@ -165,7 +178,7 @@ Questo metodo può essere utilizzato per ripristinare una versione di una strutt
 
 1. Seleziona **Ripristina** per la versione selezionata della struttura da ripristinare come versione *attuale*.
 
-## Anteprima di una versione   {#previewing-a-version}
+## Anteprima di una versione {#previewing-a-version}
 
 Puoi visualizzare l’anteprima di una versione specifica:
 
@@ -197,7 +210,7 @@ Per mettere a confronto una versione precedente con la pagina corrente:
 
 1. Seleziona **Confronta con corrente**. Si apre la [pagina diff](/help/sites-authoring/page-diff.md) per visualizzare le differenze.
 
-## Timewarp   {#timewarp}
+## Timewarp {#timewarp}
 
 Timewarp è una funzione progettata per simulare lo stato *di pubblicazione* di una pagina in specifici momenti nel passato.
 
@@ -208,7 +221,7 @@ Timewarp è una funzione progettata per simulare lo stato *di pubblicazione* di 
 La creazione dei contenuti è un processo continuo e collaborativo. Lo scopo di Timewarp è quello di consentire agli autori di tenere traccia del sito web pubblicato nel tempo, per aiutarli a comprendere come è cambiato il contenuto. Questa funzione utilizza le versioni delle pagine per determinare lo stato dell’ambiente di pubblicazione:
 
 * il sistema cerca la versione della pagina che era attiva al momento selezionato.
-   * Questa versione della pagina è stata creata/attivata *prima* del momento selezionato in Timewarp.
+  * Questa versione della pagina è stata creata/attivata *prima* del momento selezionato in Timewarp.
 * Quando si passa a una pagina che è stata eliminata, questa viene riprodotta purché nell’archivio siano ancora disponibili le versioni precedenti della pagina.
 * Se non viene trovata alcuna versione pubblicata, Timewarp ripristina lo stato corrente della pagina nell’ambiente di authoring (per evitare un errore 404 di pagina non trovata, che impedirebbe la navigazione).
 

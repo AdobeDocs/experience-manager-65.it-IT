@@ -1,6 +1,6 @@
 ---
 title: Applicazione dei flussi di lavoro alle pagine
-description: I flussi di lavoro possono essere avviati dalla console Siti Web o, quando si modifica una pagina, dal Sidekick.
+description: I flussi di lavoro possono essere avviati dalla console Siti Web o, quando si modifica una pagina, da Sidekick.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -9,13 +9,22 @@ exl-id: d8b604c5-a6da-47c4-9422-b519e224c7ca
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 15%
-
+source-wordcount: '255'
+ht-degree: 14%
 ---
-
 # Applicazione dei flussi di lavoro alle pagine{#applying-workflows-to-pages}
 
 Quando applichi il flusso di lavoro, specifichi le informazioni seguenti:
@@ -25,16 +34,16 @@ Quando applichi il flusso di lavoro, specifichi le informazioni seguenti:
   Puoi utilizzare qualsiasi flusso di lavoro a cui hai accesso, secondo quanto assegnato dall’amministratore AEM.
 * Facoltativamente:
 
-   * Un commento che fornisce informazioni sul motivo per cui hai avviato il flusso di lavoro.
-   * Titolo che consente di identificare l’istanza del flusso di lavoro nella casella in entrata di un utente.
+  * Un commento che fornisce informazioni sul motivo per cui hai avviato il flusso di lavoro.
+  * Titolo che consente di identificare l’istanza del flusso di lavoro nella casella in entrata di un utente.
 
 >[!NOTE]
 >
->Gli amministratori AEM possono avviare i flussi di lavoro utilizzando [diversi altri metodi](/help/sites-administering/workflows-starting.md).
+>Gli amministratori di AEM possono avviare i flussi di lavoro utilizzando [diversi altri metodi](/help/sites-administering/workflows-starting.md).
 
 ## Applicazione dei flussi di lavoro {#applying-workflows}
 
-I flussi di lavoro possono essere avviati dalla console Siti Web o, quando si modifica una pagina, dal Sidekick.
+I flussi di lavoro possono essere avviati dalla console Siti Web o, quando si modifica una pagina, da Sidekick.
 
 La colonna **Stato** nella console **Siti Web** indica se un flusso di lavoro è stato applicato a una pagina:
 
@@ -51,7 +60,7 @@ La colonna **Stato** nella console **Siti Web** indica se un flusso di lavoro è
 
 1. Apri la console Siti Web.
 1. Apri la pagina richiesta.
-1. Seleziona la scheda Flusso di lavoro dal Sidekick.
+1. Seleziona la scheda Flusso di lavoro da Sidekick.
 1. Espandi la finestra di dialogo **Flusso di lavoro**, che consente di selezionare il **Flusso di lavoro** e di immettere facoltativamente **Titolo flusso di lavoro** e **Commento**.
 
    ![workflowstartsidekick](assets/workflowstartsidekick.png)

@@ -8,13 +8,27 @@ feature: Adaptive Forms,Core Components
 exl-id: 2118d77f-1314-48f1-88e3-e27dd8e9f17b
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2271'
+source-wordcount: '2451'
 ht-degree: 2%
-
 ---
-
 # Gestori di errori in Forms adattivo (componenti core) {#error-handlers-in-adaptive-form}
 
 | Versione | Collegamento articolo |
@@ -100,19 +114,19 @@ Con i miglioramenti delle funzioni e i successivi aggiornamenti delle versioni d
 
 Dove:
 * `type (required)` specifica il tipo di errore. Può corrispondere a uno dei seguenti valori:
-   * `SERVER_SIDE_VALIDATION` indica un errore dovuto alla convalida lato server.
-   * `FORM_SUBMISSION` indica un errore durante l&#39;invio del modulo
-   * `SERVICE_INVOCATION` indica un errore durante una chiamata di un servizio di terze parti.
-   * `FAILURE` indica un errore generale.
-   * `VALIDATION_ERROR` indica un errore a causa di un errore di convalida.
+  * `SERVER_SIDE_VALIDATION` indica un errore dovuto alla convalida lato server.
+  * `FORM_SUBMISSION` indica un errore durante l&#39;invio del modulo
+  * `SERVICE_INVOCATION` indica un errore durante una chiamata di un servizio di terze parti.
+  * `FAILURE` indica un errore generale.
+  * `VALIDATION_ERROR` indica un errore a causa di un errore di convalida.
 
 * `title (optional)` fornisce un titolo o una breve descrizione dell&#39;errore.
 * `detail (optional)` fornisce ulteriori dettagli sull&#39;errore, se necessario.
 * `instance (optional)` rappresenta un&#39;istanza o un identificatore associato all&#39;errore e consente di tenere traccia o identificare l&#39;occorrenza specifica dell&#39;errore.
 * `validationErrors (required)` contiene informazioni sugli errori di convalida. Include i campi seguenti:
-   * `fieldname` fa riferimento al nome campo qualificato dei campi che non soddisfano i criteri di convalida.
-   * `dataRef` rappresenta il percorso JSON o XPath dei campi che non hanno superato la convalida.
-   * `details` contengono il messaggio di errore di convalida con il campo errato.
+  * `fieldname` fa riferimento al nome campo qualificato dei campi che non soddisfano i criteri di convalida.
+  * `dataRef` rappresenta il percorso JSON o XPath dei campi che non hanno superato la convalida.
+  * `details` contengono il messaggio di errore di convalida con il campo errato.
 * Il campo `originCode (optional)` è stato aggiunto da AEM e contiene il codice di stato http restituito dal servizio esterno
 * Il campo `originMessage (optional)` è stato aggiunto da AEM e contiene i dati di errore non elaborati restituiti dal servizio esterno.
 

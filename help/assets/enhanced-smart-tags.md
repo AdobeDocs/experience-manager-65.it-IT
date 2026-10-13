@@ -7,13 +7,27 @@ role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 74ec00bc-0862-520e-86dc-e377aeccc141
+    internal-label: Search
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: f0e3b2ca-813f-4b7a-81df-52339e17ddcf
+    internal-label: Smart Tags
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1611'
-ht-degree: 3%
-
+source-wordcount: '1612'
+ht-degree: 8%
 ---
-
 # Comprendere, applicare e curare tag avanzati {#enhanced-smart-tags}
 
 | Versione | Collegamento articolo |
@@ -21,9 +35,9 @@ ht-degree: 3%
 | AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags.html?lang=it) |
 | AEM 6.5 | Questo articolo |
 
-Le organizzazioni che si occupano di risorse digitali utilizzano sempre più spesso il vocabolario controllato dalla tassonomia nei metadati delle risorse. In sostanza, include un elenco di parole chiave utilizzate comunemente da dipendenti, partner e clienti per fare riferimento e cercare risorse digitali di una particolare classe. L’assegnazione dei tag alle risorse tramite un vocabolario controllato dalla tassonomia consente di identificarle e recuperarle facilmente.
+Le organizzazioni che si occupano di risorse digitali utilizzano sempre più spesso il vocabolario controllato dalla tassonomia nei metadati delle risorse. In sostanza, si tratta di elenchi di parole chiave che dipendenti, partner e clienti utilizzano abitualmente per ricercare specifiche categorie di risorse digitali. L’assegnazione dei tag alle risorse tramite un vocabolario controllato dalla tassonomia consente di identificarle e recuperarle facilmente.
 
-Rispetto ai vocabolari del linguaggio naturale, assegnare tag alle risorse digitali in base alla tassonomia aziendale consente di allinearle alle attività aziendali e assicura che le risorse più rilevanti vengano visualizzate nelle ricerche.
+A differenza del linguaggio naturale, l’assegnazione di tag alle risorse in base alla tassonomia aziendale garantisce un perfetto allineamento con i processi di business, assicurando che i risultati di ricerca siano sempre pertinenti e accurati.
 
 Ad esempio, un produttore di automobili può taggare le immagini dell’auto con i nomi dei modelli, in modo che vengano visualizzate solo le immagini pertinenti quando si cercano immagini di vari modelli per progettare una campagna promozionale.
 
@@ -133,7 +147,7 @@ Puoi eseguire il flusso di lavoro sui tag periodicamente o quando necessario.
 
 Puoi abilitare il Servizio di contenuti avanzati per assegnare periodicamente tag alle risorse all’interno di una cartella. Apri la pagina delle proprietà della cartella di risorse, seleziona **[!UICONTROL Abilita tag avanzati]** nella scheda **[!UICONTROL Dettagli]** e salva le modifiche.
 
-Una volta selezionata questa opzione per una cartella, il Servizio di contenuti avanzati assegna automaticamente i tag alle risorse all’interno della cartella. Per impostazione predefinita, il flusso di lavoro sui tag viene eseguito ogni giorno alle ore 00:00.:00
+Una volta selezionata questa opzione per una cartella, il Servizio di contenuti avanzati assegna automaticamente i tag alle risorse all’interno della cartella. Per impostazione predefinita, il flusso di lavoro sui tag viene eseguito ogni giorno alle 00:00.
 
 ### Assegnazione di tag su richiesta {#on-demand-tagging}
 

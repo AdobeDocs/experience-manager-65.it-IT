@@ -8,13 +8,17 @@ exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
 solution: Experience Manager
 feature: Mobile
 role: Developer
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '547'
-ht-degree: 5%
-
+source-wordcount: '571'
+ht-degree: 4%
 ---
-
 # Rendering e consegna{#rendering-and-delivery}
 
 {{ue-over-mobile}}
@@ -156,7 +160,7 @@ La tabella seguente mostra le proprietà:
    <td>String[] </td>
    <td>-</td>
    <td>sling:resourceType</td>
-   <td>Per i seguenti tipi di risorse sling, non restituire l’esportazione JSON CaaS predefinita.<br /> Restituisci un'esportazione JSON cliente eseguendo il rendering della risorsa come;<br /> &lt;RISORSA&gt;.&lt;SELECTOR_TO_INC&gt;.json </td>
+   <td>Per i seguenti tipi di risorse sling, non restituire l'esportazione predefinita CaaS json.<br /> Restituire un'esportazione JSON cliente eseguendo il rendering della risorsa come;<br /> &lt;RESOURCE&gt;.&lt;SELECTOR_TO_INC&gt;.json </td>
   </tr>
  </tbody>
 </table>
@@ -172,7 +176,7 @@ Content Services include due configurazioni di esportazione:
 
 La configurazione di esportazione predefinita di Content Services viene applicata se è specificata una configurazione nell&#39;URI richiesto.
 
-&lt;RISORSA>.caas[.&lt;INT-PROFONDITÀ>].json
+&lt;RESOURCE>.caas[.&lt;DEPTH-INT>].json
 
 <table>
  <tbody>
@@ -219,7 +223,7 @@ La configurazione di esportazione predefinita di Content Services viene applicat
 
 Questa configurazione estende l’impostazione predefinita per includere il raggruppamento di elementi secondari sotto un nodo secondario.
 
-&lt;SITE_PAGE>.caas.page[.&lt;INT-PROFONDITÀ>].json
+&lt;PAGE_SITO>.caas.page[.&lt;INT-PROFONDITÀ>].json
 
 ### Risorse aggiuntive {#additional-resources}
 

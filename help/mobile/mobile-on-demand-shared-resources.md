@@ -9,13 +9,17 @@ exl-id: 4b3acc7c-f1f7-4837-ae3a-9435d6ce1349
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '273'
 ht-degree: 0%
-
 ---
-
 # Caricamento delle risorse condivise {#uploading-shared-resources}
 
 {{ue-over-mobile}}
@@ -24,7 +28,7 @@ Le azioni di gestione dei contenuti sono gli elementi costitutivi che consentono
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulle considerazioni di progettazione per le app AEM Mobile, consulta [Considerazioni di progettazione per le app AEM Mobile](https://helpx.adobe.com/it/digital-publishing-solution/help/design-app.html) nella Guida in linea.
+>Per ulteriori informazioni sulle considerazioni di progettazione per le app AEM Mobile, consulta [Considerazioni di progettazione per le app AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) nella Guida in linea.
 
 >[!CAUTION]
 >
@@ -56,4 +60,4 @@ Dopo aver appreso come creare e pubblicare i contenuti, consulta
 
 Oppure è ancora necessario conoscere gli argomenti relativi all’authoring, consulta
 
-[Creazione di contenuti AEM per le app AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md)
+[Authoring di contenuti AEM per le app AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md)

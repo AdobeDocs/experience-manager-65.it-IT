@@ -5,13 +5,25 @@ feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 11a8181e860c724c817dd549b351df079c8227e2
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2309'
-ht-degree: 59%
-
+source-wordcount: '2442'
+ht-degree: 60%
 ---
-
 # Varianti - Authoring dei contenuti di frammenti{#variations-authoring-fragment-content}
 
 [Le varianti](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sono una caratteristica importante dei frammenti di contenuto di AEM, in quanto consentono di creare e modificare copie del contenuto principale da utilizzare su canali e/o scenari specifici, rendendo la distribuzione di contenuti headless ancora più flessibile.
@@ -51,22 +63,22 @@ Operazioni disponibili:
 
 * Apporta modifiche al contenuto direttamente nella scheda **Varianti**; ogni tipo di dati fornisce diverse opzioni di modifica, ad esempio:
 
-   * per i campi **Testo su più righe**, puoi anche aprire l&#39;[editor a schermo intero](#full-screen-editor) in:
+  * per i campi **Testo su più righe**, puoi anche aprire l&#39;[editor a schermo intero](#full-screen-editor) in:
 
-      * Selezionare il [Formato](#formats)
-      * Accedere a ulteriori opzioni di modifica (per il formato [Testo formattato](#rich-text))
-      * Accedere a una serie di [azioni](#actions)
+    * Selezionare il [Formato](#formats)
+    * Accedere a ulteriori opzioni di modifica (per il formato [Testo formattato](#rich-text))
+    * Accedere a una serie di [azioni](#actions)
 
-   * Per i campi **Riferimento frammento**, l&#39;opzione [Modifica frammento di contenuto](#fragment-references-edit-content-fragment) può essere disponibile, a seconda della definizione del modello.
+  * Per i campi **Riferimento frammento**, l&#39;opzione [Modifica frammento di contenuto](#fragment-references-edit-content-fragment) può essere disponibile, a seconda della definizione del modello.
 
 * Assegna **Tag** alla variante corrente; i tag possono essere aggiunti, aggiornati e rimossi
 
-   * [I tag](/help/sites-authoring/tags.md) sono utili per organizzare i frammenti in quanto possono essere utilizzati per la classificazione e la tassonomia dei contenuti. I tag possono essere utilizzati per trovare il contenuto (per tag) e applicare operazioni in blocco.
+  * [I tag](/help/sites-authoring/tags.md) sono utili per organizzare i frammenti in quanto possono essere utilizzati per la classificazione e la tassonomia dei contenuti. I tag possono essere utilizzati per trovare il contenuto (per tag) e applicare operazioni in blocco.
 
-      * La ricerca di un tag restituisce il frammento, con la variante tag evidenziata.
-      * I tag delle varianti possono essere utilizzati anche per raggruppare le varianti per un profilo della rete per la consegna dei contenuti (CDN) specifico (per la memorizzazione nella cache della CDN), invece di utilizzare il nome della variante.
+    * La ricerca di un tag restituisce il frammento, con la variante tag evidenziata.
+    * I tag delle varianti possono essere utilizzati anche per raggruppare le varianti per un profilo della rete per la consegna dei contenuti (CDN) specifico (per la memorizzazione nella cache della CDN), invece di utilizzare il nome della variante.
 
-     Ad esempio, puoi assegnare ai frammenti rilevanti il tag “Lancio di Natale” in modo da poter visualizzare solo tale sottoinsieme di frammenti, oppure per copiarli in una nuova cartella e utilizzarli per un altro lancio futuro.
+    Ad esempio, puoi assegnare ai frammenti rilevanti il tag “Lancio di Natale” in modo da poter visualizzare solo tale sottoinsieme di frammenti, oppure per copiarli in una nuova cartella e utilizzarli per un altro lancio futuro.
 
   >[!NOTE]
   >
@@ -130,10 +142,10 @@ La modifica in formato RTF consente di formattare:
 * Stile paragrafo: Paragrafo, Titolo 1/2/3
 * [Inserisci risorsa](#inserting-assets-into-your-fragment)
 * Aprire l’editor a schermo intero, in cui sono disponibili le seguenti opzioni di formattazione:
-   * Ricerca
-   * Trova/Sostituisci
-   * Controllo ortografia
-   * [Annotazioni](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
+  * Ricerca
+  * Trova/Sostituisci
+  * Controllo ortografia
+  * [Annotazioni](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
 * [Inserisci frammento di contenuto](#inserting-content-fragment-into-your-fragment); disponibile quando il campo **Testo su più righe** è configurato con **Consenti riferimento frammento**.
 
 Dall’editor a schermo intero sono accessibili anche le [azioni](#actions).

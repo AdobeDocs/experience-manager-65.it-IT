@@ -10,13 +10,20 @@ exl-id: ebc4e1e7-34f0-4f4e-9f00-178dfda23ce4
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1210'
+source-wordcount: '1212'
 ht-degree: 0%
-
 ---
-
 # Esperienza del sito pubblicato {#experience-the-published-site}
 
 ## Passa al nuovo sito al momento della pubblicazione {#browse-to-new-site-on-publish}
@@ -87,8 +94,8 @@ Dopo aver effettuato l&#39;accesso come membro della community registrato, notar
 * L&#39;opzione **Profilo** consente di visualizzare e modificare il profilo.
 * L&#39;opzione [Messaggi](/help/communities/configure-messaging.md) ti indirizza alla sezione Messaggistica diretta, in cui puoi eseguire le seguenti operazioni:
 
-   1. Visualizza i messaggi diretti ricevuti (Posta in arrivo), inviati (Elementi inviati) ed eliminati (Cestino).
-   1. Comporre nuovi messaggi diretti in modo da poter inviare a singoli utenti e gruppi.
+  1. Visualizza i messaggi diretti ricevuti (Posta in arrivo), inviati (Elementi inviati) ed eliminati (Cestino).
+  1. Comporre nuovi messaggi diretti in modo da poter inviare a singoli utenti e gruppi.
 
 * L&#39;opzione [Notifiche](/help/communities/notifications.md) ti indirizza alla sezione delle notifiche, dove puoi visualizzare gli eventi di tuo interesse e modificare le impostazioni delle notifiche.
 * [Amministrazione](/help/communities/published-site.md#moderationlink) reindirizza alla pagina di moderazione di AEM Communities, se si dispone di privilegi di moderazione.
@@ -154,13 +161,13 @@ Ad esempio, aggiungere due `new groups`.
 
 * Uno denominato `Baseball`
 
-   * Lascialo impostato come `Open Group` (iscrizione obbligatoria).
-   * Nella scheda Modelli, selezionare `Conversational Group`.
+  * Lascialo impostato come `Open Group` (iscrizione obbligatoria).
+  * Nella scheda Modelli, selezionare `Conversational Group`.
 
 * Uno denominato `Gymnastics`
 
-   * Cambia l&#39;impostazione in `Member Only Group` (appartenenza limitata).
-   * Nella scheda Modelli, selezionare `Conversational Group`.
+  * Cambia l&#39;impostazione in `Member Only Group` (appartenenza limitata).
+  * Nella scheda Modelli, selezionare `Conversational Group`.
 
 **Avviso**:
 

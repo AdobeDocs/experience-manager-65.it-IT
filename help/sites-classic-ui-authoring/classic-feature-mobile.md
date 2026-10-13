@@ -9,13 +9,22 @@ exl-id: d5372474-d8aa-4e64-919d-0bd29ba99d99
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 52%
-
+source-wordcount: '302'
+ht-degree: 58%
 ---
-
 # Authoring di una pagina per dispositivi mobili{#authoring-a-page-for-mobile-devices}
 
 Quando si effettua l’authoring di una pagina mobile, questa viene visualizzata in modo da emulare il dispositivo mobile. Durante l’authoring della pagina, puoi passare da un emulatore all’altro per vedere cosa vedrà l’utente finale quando accede alla pagina.
@@ -31,14 +40,14 @@ I dispositivi sono raggruppati nelle categorie funzione, smart e touch in base a
 Segui la procedura seguente per creare una pagina mobile:
 
 1. Nel browser, accedi alla console **Siteadmin**.
-1. Apri la pagina **Prodotti** sotto **Siti Web** >> **Geometrixx sito demo mobile** >> **Inglese**.
+1. Apri la pagina **Prodotti** sotto **Siti Web** >> **Sito Geometrixx Mobile Demo** >> **Inglese**.
 
 1. Passa a un emulatore diverso. A tale scopo, puoi effettuare le seguenti operazioni:
 
    * Fai clic sull’icona del dispositivo nella parte superiore della pagina.
-   * Fai clic sul pulsante **Modifica** nel **Sidekick** e seleziona il dispositivo nel menu a discesa.
+   * Fai clic sul pulsante **Modifica** in **Sidekick** e seleziona il dispositivo nel menu a discesa.
 
-1. Trascina e rilascia il componente **Testo e immagine** dalla scheda Mobile del Sidekick alla pagina.
+1. Trascina e rilascia il componente **Testo e immagine** dalla scheda Mobile di Sidekick alla pagina.
 1. Modifica il componente e aggiungi del testo. Fare clic su **OK** per salvare le modifiche.
 
 L&#39;aspetto della pagina è lo stesso del seguente:

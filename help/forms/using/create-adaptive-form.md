@@ -5,13 +5,29 @@ feature: Adaptive Forms
 exl-id: c0a2adcd-528a-41af-99b5-d8b423cd6605
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1415'
+source-wordcount: '1419'
 ht-degree: 9%
-
 ---
-
 # Esercitazione: creare un modulo adattivo {#do-not-publish-tutorial-create-an-adaptive-form}
 
 ![02-create-adaptive-form-main-image](assets/02-create-adaptive-form-main-image.png)
@@ -36,7 +52,7 @@ Avrai un modulo simile al seguente entro la fine dell’articolo:\
 
 ## Passaggio 1: creare il modulo adattivo {#step-create-the-adaptive-form}
 
-1. Accedi all&#39;istanza di AEM Author e passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**. L&#39;URL predefinito è [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
+1. Accedi all&#39;istanza di AEM Author e passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**. URL predefinito: [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
 1. Seleziona **[!UICONTROL Crea]** e **[!UICONTROL Modulo adattivo]**. Viene visualizzata un&#39;opzione per selezionare un modello. Seleziona il modello **[!UICONTROL Vuoto]** per selezionarlo e scegli **[!UICONTROL Successivo]**.
 
 1. Viene visualizzata un&#39;opzione per **[!UICONTROL Aggiungi proprietà]**. I campi **[!UICONTROL Titolo]** e **[!UICONTROL Nome]** sono obbligatori:
@@ -182,7 +198,7 @@ La procedura seguente consente di configurare l’azione di invio e-mail e l’a
 
 I moduli adattivi offrono anche un’opzione per emulare l’esperienza di un modulo per vari dispositivi. Ad esempio, iPhone, iPad e Desktop. Puoi utilizzare entrambe le opzioni **[!UICONTROL Anteprima]** e **[!UICONTROL Emulatore]** ![righello](assets/ruler.png) insieme per visualizzare in anteprima un modulo per dispositivi con dimensioni di schermo diverse.
 
-1. Seleziona l&#39;opzione **[!UICONTROL Anteprima]** sul lato destro dell&#39;editor di moduli. Il modulo viene aperto in modalità anteprima. Se hai utilizzato il nome menzionato nell&#39;esercitazione, l&#39;URL di anteprima del modulo è [http://localhost:4502/content/dam/formsanddocuments/shipping-address-add-update-form/jcr:content?wcmmode=disabled](http://localhost:4502/content/dam/formsanddocuments/shipping-address-addition-updation-form/jcr:content?wcmmode=disabled)
+1. Seleziona l&#39;opzione **[!UICONTROL Anteprima]** sul lato destro dell&#39;editor di moduli. Il modulo viene aperto in modalità anteprima. Se è stato utilizzato il nome menzionato nell&#39;esercitazione, l&#39;URL di anteprima del modulo è [http://localhost:4502/content/dam/formsanddocuments/shipping-address-add-update-form/jcr:content?wcmmode=disabled](http://localhost:4502/content/dam/formsanddocuments/shipping-address-addition-updation-form/jcr:content?wcmmode=disabled)
 1. Utilizza ![righello](assets/ruler.png) per visualizzare l&#39;aspetto del modulo su vari dispositivi.
 1. Compila i campi del modulo e seleziona **[!UICONTROL Invia]**. Il modulo è stato inviato e si è reindirizzati alla pagina predefinita **Grazie**. È inoltre possibile specificare una pagina di ringraziamento personalizzata. Per ulteriori dettagli, vedere [Configurazione della pagina di reindirizzamento](/help/forms/using/configuring-redirect-page.md).
 
