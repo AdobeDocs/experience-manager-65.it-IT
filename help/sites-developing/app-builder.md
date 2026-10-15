@@ -1,17 +1,15 @@
 ---
-title: Estensione di  [!DNL Adobe Experience Manager] 6.5 tramite Adobe Developer App Builder.
-description: Estensione di  [!DNL Adobe Experience Manager] 6.5 tramite Adobe Developer App Builder.
+title: Estensione di [!DNL Adobe Experience Manager] 6.5 tramite Adobe Developer App Builder.
+description: Estensione di [!DNL Adobe Experience Manager] 6.5 tramite Adobe Developer App Builder.
 exl-id: 8221c2db-82d4-43df-ad38-e8e7831541ac
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '528'
 ht-degree: 0%
-
 ---
-
 # Estensione di [!DNL Adobe Experience Manager] tramite Adobe Developer App Builder {#extend-using-app-builder}
 
 ## Cos’è App Builder per AEM {#project-appbuilder}
@@ -28,7 +26,7 @@ App Builder offre ai clienti un modo per estendere facilmente Adobe Experience M
 
 >[!NOTE]
 >
->Per i clienti di AEM as a Cloud Service che desiderano utilizzare App Builder, consulta [Estensione di Adobe Experience Manager as a Cloud Service con Adobe Developer App Builder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html?lang=it).
+>Per i clienti di AEM as a Cloud Service che desiderano utilizzare App Builder, consulta [Estensione di Adobe Experience Manager as a Cloud Service con Adobe Developer App Builder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html).
 
 ## Architettura {#architecture}
 
@@ -62,5 +60,5 @@ App Builder fornisce video e documentazione per gli sviluppatori, incluse guide 
 
 Sei pronto a iniziare a sviluppare? Sono disponibili numerose applicazioni di esempio per aiutarti a passare rapidamente all’azione:
 
-* [Laboratori di codice App Builder sul sito Web Adobe Developer](https://developer.adobe.com/app-builder/docs/resources/)
+* [App Builder Code Labs sul sito web Adobe Developer](https://developer.adobe.com/app-builder/docs/resources/)
 
