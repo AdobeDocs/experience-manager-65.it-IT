@@ -1143,7 +1143,7 @@ Se il sistema sta esaurendo lo spazio su disco o si notano problemi di accesso a
 * Indica se e come hai configurato [Rimozione versione](/help/sites-deploying/version-purging.md)
 * Knowledge Base:
 
-  * [Troppi file aperti]&#x200B;(https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html)
+  * [Troppi file aperti]&#x200B;(https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=it)
 
 ### Degradazione delle prestazioni regolare {#regular-performance-degradation}
 
