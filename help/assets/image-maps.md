@@ -44,7 +44,7 @@ Le mappe immagine consentono di aggiungere una o più aree con collegamenti iper
 
    ![chlimage_1-422](assets/chlimage_1-422.png)
 
-1. Fare clic sull&#39;area sensibile e immettere l&#39;URL e il testo Alt. Dall&#39;elenco **[!UICONTROL Target]**, specificare la posizione in cui si desidera visualizzare la mappa immagine, ad esempio la stessa scheda, una nuova scheda o un iFrame. Ad esempio, immetti `https://www.adobe.com` come URL, `Adobe website` come testo Alt e specifica **[!UICONTROL Nuova scheda]** dall&#39;elenco **[!UICONTROL Target]** per aprire la mappa immagine in una nuova scheda.
+1. Fare clic sull&#39;area sensibile e immettere l&#39;URL e il testo Alt. Dall&#39;elenco **[!UICONTROL Target]**, specificare la posizione in cui si desidera visualizzare la mappa immagine, ad esempio la stessa scheda, una nuova scheda o un iFrame. Ad esempio, immetti `https://www.adobe.com/it` come URL, `Adobe website` come testo Alt e specifica **[!UICONTROL Nuova scheda]** dall&#39;elenco **[!UICONTROL Target]** per aprire la mappa immagine in una nuova scheda.
 
    ![chlimage_1-423](assets/chlimage_1-423.png)
 

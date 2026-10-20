@@ -66,7 +66,7 @@ AEM Forms Document Security fornisce diversi strumenti per applicare i criteri d
 
 * **Adobe Acrobat:** è possibile utilizzare Adobe Acrobat per applicare i criteri di sicurezza ai documenti PDF creati utilizzando le applicazioni desktop più diffuse, ad esempio Microsoft® Office, browser Web o qualsiasi applicazione che supporti la stampa in formato PDF.
 
-  Puoi acquistare e scaricare Adobe Acrobat dal [sito Web Adobe](https://www.adobe.com/acrobat/free-trial-download.html). L&#39;articolo di Adobe Acrobat [impostazione dei criteri di sicurezza per PDF](https://helpx.adobe.com/it/acrobat/using/setting-security-policies-pdfs.html) fornisce informazioni dettagliate sulla creazione e l&#39;applicazione dei criteri in Adobe Acrobat.
+  Puoi acquistare e scaricare Adobe Acrobat dal [sito Web Adobe](https://www.adobe.com/it/acrobat/free-trial-download.html). L&#39;articolo di Adobe Acrobat [impostazione dei criteri di sicurezza per PDF](https://helpx.adobe.com/it/acrobat/using/setting-security-policies-pdfs.html) fornisce informazioni dettagliate sulla creazione e l&#39;applicazione dei criteri in Adobe Acrobat.
 
 * **Document Security Extension for Microsoft® Office**: è possibile utilizzare Document Security Extension for Microsoft® Office per applicare policy predefinite ai file di Microsoft® Office direttamente dalle applicazioni di Microsoft® Office. L’estensione garantisce che solo gli utenti autorizzati possano utilizzare file Microsoft® Word, Excel e PowerPoint protetti tramite policy. Solo gli utenti autorizzati che dispongono del plug-in possono utilizzare i file protetti tramite policy.
 

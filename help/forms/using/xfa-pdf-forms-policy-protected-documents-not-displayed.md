@@ -32,7 +32,7 @@ ht-degree: 8%
 
 Se non riesci ad aprire un modulo PDF basato su XFA o un documento protetto tramite policy utilizzando Adobe LiveCycle Rights Management, verifica i seguenti motivi:
 
-* I documenti PDF forms basati su XFA e protetti tramite policy richiedono Adobe® Acrobat® o Adobe® Reader®, versione 8 e successive. Consulta [Download di Adobe](https://www.adobe.com/downloads.html) per scaricare il Reader o Acrobat più recente.
+* I documenti PDF forms basati su XFA e protetti tramite policy richiedono Adobe® Acrobat® o Adobe® Reader®, versione 8 e successive. Consulta [Download di Adobe](https://www.adobe.com/it/downloads.html) per scaricare il Reader o Acrobat più recente.
 * Browser come Mozilla Firefox e Google Chrome offrono un visualizzatore PDF integrato che non supporta PDF forms basato su XFA. Per visualizzare i PDF forms basati su XFA in questi browser, è necessario configurare per l’apertura di PDF con Acrobat o Reader. Per ulteriori informazioni, consulta PDF forms basato su XFA su Mozilla Firefox e Google Chrome.
 * Acrobat e Reader, su Microsoft® Windows®, consentono di configurare per l’apertura di PDF in modalità Visualizzazione protetta, impedendo l’apertura di documenti PDF forms basati su XFA e protetti tramite policy. Assicurati che la modalità Visualizzazione protetta nell’Acrobat o nel Reader sia disabilitata. Per ulteriori informazioni, vedere [Visualizzazione protetta (solo Windows)](https://helpx.adobe.com/it/acrobat/kb/end-of-support-acrobat-x-reader-x.html).
 * Se tenti di accedere a documenti PDF forms basati su XFA o protetti tramite policy sul tuo dispositivo mobile, considera quanto segue:

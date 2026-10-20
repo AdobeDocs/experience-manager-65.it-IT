@@ -47,7 +47,7 @@ Prima di configurare l’autenticazione esterna del browser, verifica che siano 
 
 >[!NOTE]
 >
-> L’autenticazione tramite browser esterno richiede una versione supportata di Adobe Acrobat o Adobe Acrobat Reader sul client. Consulta [Note sulla versione di Acrobat (Continuous Track, marzo 2026)](https://www.adobe.com/devnet-docs/acrobatetk/tools/ReleaseNotesDC/continuous/dccontinuousmarch2026.html#dccontinuousmarchtwentytwentysix) per i dettagli e gli aggiornamenti della versione.
+> L’autenticazione tramite browser esterno richiede una versione supportata di Adobe Acrobat o Adobe Acrobat Reader sul client. Consulta [Note sulla versione di Acrobat (Continuous Track, marzo 2026)](https://www.adobe.com/it/devnet-docs/acrobatetk/tools/ReleaseNotesDC/continuous/dccontinuousmarch2026.html#dccontinuousmarchtwentytwentysix) per i dettagli e gli aggiornamenti della versione.
 
 ### Collegamenti di distribuzione software per AEM Forms JEE Hotfix2 6.5.24.0 {#software-distribution-links}
 

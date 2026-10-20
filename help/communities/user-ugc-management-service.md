@@ -32,7 +32,7 @@ ht-degree: 3%
 
 AEM Communities espone le API pronte all’uso per gestire i profili utente e i contenuti generati dagli utenti (UGC, User Generated Content) in blocco. Una volta attivato, il servizio **UserUgcManagement** consente agli utenti con privilegi (amministratori e moderatori della community) di disabilitare i profili utente ed eliminare in blocco o esportare in blocco UGC per utenti specifici. Queste API consentono inoltre ai titolari del trattamento e ai responsabili del trattamento dei dati dei clienti di conformarsi alle normative generali sulla protezione dei dati (RGPD) dell’Unione Europea e ad altri mandati sulla privacy ispirati al RGPD.
 
-Per ulteriori informazioni, visita la pagina [RGPD all&#39;Adobe Privacy Center.](https://www.adobe.com/privacy/general-data-protection-regulation.html)
+Per ulteriori informazioni, visita la pagina [RGPD all&#39;Adobe Privacy Center.](https://www.adobe.com/it/privacy/general-data-protection-regulation.html)
 
 >[!NOTE]
 >

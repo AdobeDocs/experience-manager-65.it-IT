@@ -44,7 +44,7 @@ Il Regolamento generale sulla protezione dei dati dell&#39;Unione Europea sui di
 
 AEM Sites è pronta ad aiutare i clienti a rispettare gli obblighi di conformità ai requisiti RGPD. Questa pagina guida i clienti attraverso le procedure per gestire le richieste RGPD in AEM Sites. Descrive la posizione dei dati privati memorizzati e come rimuoverli manualmente o con codice.
 
-Per ulteriori informazioni, visita la pagina [RGPD all&#39;Adobe Privacy Center](https://www.adobe.com/privacy/general-data-protection-regulation.html).
+Per ulteriori informazioni, visita la pagina [RGPD all&#39;Adobe Privacy Center](https://www.adobe.com/it/privacy/general-data-protection-regulation.html).
 
 >[!NOTE]
 >
