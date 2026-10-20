@@ -87,7 +87,7 @@ Gli svantaggi:
 
 >[!NOTE]
 >
->La distribuzione in standby a freddo in questo esempio di TarMK richiede che le istanze principale e in standby siano concesse in licenza separatamente, in quanto esiste una replica costante sul server di failover. Per ulteriori informazioni sulle licenze, consultare le [Condizioni generali di licenza di Adobe](https://www.adobe.com/legal/terms/enterprise-licensing.html).
+>La distribuzione in standby a freddo in questo esempio di TarMK richiede che le istanze principale e in standby siano concesse in licenza separatamente, in quanto esiste una replica costante sul server di failover. Per ulteriori informazioni sulle licenze, consultare le [Condizioni generali di licenza di Adobe](https://www.adobe.com/it/legal/terms/enterprise-licensing.html).
 
 ### Farm TarMK {#tarmk-farm}
 

@@ -93,5 +93,5 @@ Vedi [Video in Dynamic Media: aggiungi sottotitoli al video](/help/assets/video.
 
 >[!MORELIKETHIS]
 >
->* [Accessibilità per le soluzioni Adobe](https://www.adobe.com/accessibility.html)
+>* [Accessibilità per le soluzioni Adobe](https://www.adobe.com/it/accessibility.html)
 >* [Accessibilità in [!DNL Experience Manager Assets]](/help/assets/accessibility.md)

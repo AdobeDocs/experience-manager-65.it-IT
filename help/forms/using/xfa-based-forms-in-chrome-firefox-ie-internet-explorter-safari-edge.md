@@ -32,7 +32,7 @@ ht-degree: 0%
 
 Molte versioni recenti del browser hanno incluso il proprio supporto limitato per PDF forms basato su XFA. Anche se questi browser possono aprire PDF forms basato su XFA, le funzionalità fornite sono limitate. Se non riesci ad aprire o inviare un modulo PDF basato su XFA in un browser moderno, utilizza uno dei seguenti metodi:
 
-* Utilizza [Adobe® Acrobat®](https://www.adobe.com/acrobat.html) o [Adobe® Adobe® Reader®](https://get.adobe.com/it/reader/), versione 8 o successiva per aprire e inviare PDF forms basato su XFA.
+* Utilizza [Adobe® Acrobat®](https://www.adobe.com/it/acrobat.html) o [Adobe® Adobe® Reader®](https://get.adobe.com/it/reader/), versione 8 o successiva per aprire e inviare PDF forms basato su XFA.
 * Acrobat e Reader, su Microsoft® Windows®, consentono di configurare per aprire i PDF in modalità Visualizzazione protetta, che impedisce l’apertura di PDF forms basato su XFA. Assicurati che la modalità Visualizzazione protetta nell’Acrobat o nel Reader sia disabilitata. Per ulteriori informazioni, vedere [Visualizzazione protetta (solo Windows)](https://helpx.adobe.com/in/reader/using/protected-mode-windows.html).
 * (Per sviluppatori Forms) Adobe Experience Manager Forms fornisce anche supporto per:
 
