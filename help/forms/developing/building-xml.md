@@ -1,18 +1,16 @@
 ---
 title: Come si utilizza il servizio di esecuzione script in AEM Forms su JEE Workbench per generare dati XML?
-description: Utilizzo del servizio Execute Script in AEM Forms su JEE Workbench per generare dati XML
+description: Utilizzo del servizio di esecuzione dello script in AEM Forms su JEE Workbench per generare dati XML
 exl-id: 2ec57cd4-f41b-4e5c-849d-88ca3d2cfe19
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 361f0a5f2d1484cf594edfda73250c5690ed7cab
 workflow-type: tm+mt
-source-wordcount: '1043'
-ht-degree: 0%
-
+source-wordcount: '1060'
+ht-degree: 2%
 ---
-
-# Utilizzo del servizio Execute Script in AEM Forms su JEE Workbench per generare dati XML {#using-execute-script-service-forms-jee-workbench}
+# Utilizzo del servizio di esecuzione dello script in AEM Forms su JEE Workbench per generare dati XML {#using-execute-script-service-forms-jee-workbench}
 
 I flussi di lavoro di AEM Forms per la gestione dei processi JEE contengono molti XML, ad esempio: le informazioni XML possono essere create in un processo e inviate a un&#39;applicazione Flex in AEM Forms su JEE Workspace, utilizzate per le impostazioni di sistema o per la trasmissione di informazioni da e verso i moduli. Esistono molte istanze in cui uno sviluppatore AEM Forms su JEE deve gestire XML e molte volte questo richiede che l’XML sia gestito tramite un processo AEM Forms su JEE.
 
