@@ -22,9 +22,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: 9eee0eef3e19a4787b7104f470d35b4c98fd53db
 workflow-type: tm+mt
-source-wordcount: '7612'
+source-wordcount: '7677'
 ht-degree: 4%
 ---
 # [!DNL Adobe Experience Manager] 6.5 Note sulla versione più recente del Service Pack {#aem-service-pack-release-notes}
@@ -618,6 +618,8 @@ Frammenti di contenuto-Anteprima non riuscita a causa della protezione DoS per u
 
 * **FORMS-23722** Quando un modulo contenente un campo **File allegato** che utilizza `bindref` viene inviato a un flusso di lavoro di AEM con un passaggio **Assegna attività**, gli allegati non vengono visualizzati. Di conseguenza, non vengono visualizzate quando l&#39;attività viene aperta dalla cartella Posta in arrivo. I file vengono salvati correttamente nell’archivio, ma l’interfaccia utente del passaggio Assegna attività non riesce a visualizzare gli allegati.
 
+* **FORMS-28517** Quando un PDF con firma digitale viene allegato a un&#39;attività in AEM Forms JEE Workspace, il caricamento rimane bloccato nello stato di caricamento o non riesce con un errore &quot;File non valido&quot;. Di conseguenza, non è possibile aggiungere all&#39;attività allegati PDF firmati di dimensioni maggiori. Questo problema è stato risolto in una versione successiva. Per un aggiornamento rapido sulla versione corrente/esistente, contatta il supporto Adobe.
+
 #### Problemi noti con gli hotfix disponibili {#aem-forms-issues-with-hotfixes}
 
 Nei seguenti problemi è disponibile un hotfix per il download e l’installazione. Puoi [scaricare e installare l&#39;Hotfix](/help/release-notes/aem-forms-hotfix.md) per risolvere questi problemi:
@@ -651,13 +653,13 @@ I seguenti file zip contengono i documenti di testo che elencano i bundle OSGi e
 Questi siti Web sono disponibili solo per i clienti. Se fai parte della clientela e necessiti dell’accesso, contatta il responsabile dell’account Adobe.
 
 * [Scarica il prodotto all’indirizzo licensing.adobe.com](https://licensing.adobe.com/)
-* Contatta l’[Assistenza Clienti di Adobe](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
+* Contatta l’[Assistenza Clienti di Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] pagina prodotto](https://business.adobe.com/it/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 documentazione](https://experienceleague.adobe.com/it/docs/experience-manager-65)
->* [Iscriviti agli aggiornamenti dei prodotti con priorità Adobe](https://www.adobe.com/it/subscription/priority-product-update.html)
+>* [Iscriviti agli aggiornamenti dei prodotti con priorità Adobe](https://www.adobe.com/subscription/priority-product-update.html)
 
 
 
