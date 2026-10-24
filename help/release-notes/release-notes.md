@@ -653,13 +653,13 @@ I seguenti file zip contengono i documenti di testo che elencano i bundle OSGi e
 Questi siti Web sono disponibili solo per i clienti. Se fai parte della clientela e necessiti dell’accesso, contatta il responsabile dell’account Adobe.
 
 * [Scarica il prodotto all’indirizzo licensing.adobe.com](https://licensing.adobe.com/)
-* Contatta l’[Assistenza Clienti di Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
+* Contatta l’[Assistenza Clienti di Adobe](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] pagina prodotto](https://business.adobe.com/it/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 documentazione](https://experienceleague.adobe.com/it/docs/experience-manager-65)
->* [Iscriviti agli aggiornamenti dei prodotti con priorità Adobe](https://www.adobe.com/subscription/priority-product-update.html)
+>* [Iscriviti agli aggiornamenti dei prodotti con priorità Adobe](https://www.adobe.com/it/subscription/priority-product-update.html)
 
 
 
