@@ -21,7 +21,7 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: 1919f4aff8dd2cb07b1e298511001e2f51ed520b
 workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 40%
@@ -42,7 +42,7 @@ I Frammenti di esperienza AEM possono essere esportati nell’area di lavoro pre
 >
 >[Le integrazioni IMS sono ora configurate con OAuth S2S](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
 >
->Le configurazioni precedenti sono state create con [credenziali JWT che ora sono soggette a deprecazione in Adobe Developer Console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md).
+>Le configurazioni precedenti sono state create con credenziali JWT che ora sono soggette a obsolescenza in Adobe Developer Console.
 
 >[!NOTE]
 >
@@ -70,7 +70,7 @@ Sono necessarie diverse azioni:
    >
    >[Le integrazioni IMS sono ora configurate con OAut S2S](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
    >
-   >Le configurazioni precedenti sono state create con [credenziali JWT che ora sono soggette a deprecazione in Adobe Developer Console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md).
+   >Le configurazioni precedenti sono state create con credenziali JWT che ora sono soggette a obsolescenza in Adobe Developer Console.
 
 1. I frammenti di esperienza vengono esportati dall&#39;istanza di authoring di AEM, pertanto devi [Configurare AEM Link Externalizer](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) nell&#39;istanza di authoring per garantire che tutti i riferimenti all&#39;interno del frammento di esperienza siano esternalizzati per la distribuzione web.
 

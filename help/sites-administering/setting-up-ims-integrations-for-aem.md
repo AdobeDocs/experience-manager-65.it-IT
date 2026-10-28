@@ -18,10 +18,10 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: 1919f4aff8dd2cb07b1e298511001e2f51ed520b
 workflow-type: tm+mt
 source-wordcount: '504'
-ht-degree: 58%
+ht-degree: 54%
 ---
 # Configurazione delle integrazioni IMS per AEM {#setting-up-ims-integrations-for-aem}
 
@@ -46,7 +46,7 @@ Le integrazioni utilizzano un’integrazione IMS, configurata con OAuth S2S.
 
 >[!CAUTION]
 >
->In precedenza, le configurazioni venivano effettuate con [Credenziali JWT che ora sono obsolete in Adobe Developer Console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md).
+>In precedenza, le configurazioni venivano effettuate con credenziali JWT che ora sono soggette a obsolescenza in Adobe Developer Console.
 >
 >Tali configurazioni non possono più essere create o aggiornate, ma è possibile eseguirne la migrazione alle configurazioni OAuth.
 
