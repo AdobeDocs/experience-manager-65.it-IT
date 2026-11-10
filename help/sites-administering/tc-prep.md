@@ -20,10 +20,10 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
+source-git-commit: 6fb39326f3a012bb7e774f65200feae143d2d30d
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 42%
+source-wordcount: '780'
+ht-degree: 36%
 ---
 # Preparazione del contenuto per la traduzione{#preparing-content-for-translation}
 
@@ -64,6 +64,14 @@ Per creare la directory principale della lingua è necessario creare una pagina 
 * `<language-code>`Il codice della lingua supportato è un codice a due lettere come definito dallo standard ISO-639-1, ad esempio `en`.
 
 * `<language-code>_<country-code>` o `<language-code>-<country-code>`Il codice paese supportato è un codice a due lettere minuscole o maiuscole come definito dallo standard ISO 3166, ad esempio `en_US`, `en_us`, `en_GB`, `en-gb`.
+
+>[!NOTE]
+>
+>Per le installazioni AEM in esecuzione su Java 17 o Java 21, la mappatura predefinita delle impostazioni locali Java utilizza `he` per l&#39;ebraico, `yi` per lo yiddish e `id` per l&#39;indonesiano invece dei codici legacy `iw`, `ji` e `in`. I dizionari i18n esistenti che utilizzano i codici legacy potrebbero non essere trovati.
+>
+>Utilizza i codici correnti per le directory principali della lingua e i dizionari i18n: sostituisci `iw` con `he`, `ji` con `yi` e `in` con `id`.
+>
+>Se è necessario mantenere i codici legacy come soluzione alternativa per la compatibilità, impostare la proprietà del sistema Java `java.locale.useOldISOCodes` su `true` all&#39;avvio di AEM, utilizzando l&#39;argomento JVM `-Djava.locale.useOldISOCodes=true`. La proprietà è di sola lettura all’avvio del runtime Java; la modifica durante l’esecuzione di AEM non ha alcun effetto.
 
 Puoi utilizzare entrambi i formati, in base alla struttura scelta per il sito globale.  La pagina principale della copia in lingua francese del sito Geometrixx, ad esempio, ha `fr` come proprietà Name. La proprietà Name viene utilizzata come nome del nodo della pagina nell’archivio e quindi determina il percorso della pagina. (http://localhost:4502/content/geometrixx/fr.html)
 
