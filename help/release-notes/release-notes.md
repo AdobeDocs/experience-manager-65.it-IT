@@ -4,6 +4,7 @@ description: Trova informazioni sulla versione, novità, procedure di installazi
 mini-toc-levels: 4
 solution: Experience Manager
 feature: Release Information
+contentOwner: Rick Brough
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 product_v2:
@@ -22,10 +23,10 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 9eee0eef3e19a4787b7104f470d35b4c98fd53db
+source-git-commit: d777049ff8873ab60b286ec268fd544dc61fb038
 workflow-type: tm+mt
-source-wordcount: '7677'
-ht-degree: 4%
+source-wordcount: '7172'
+ht-degree: 3%
 ---
 # [!DNL Adobe Experience Manager] 6.5 Note sulla versione più recente del Service Pack {#aem-service-pack-release-notes}
 
@@ -42,391 +43,372 @@ DO NOT DELETE THIS HIDDEN NOTE!      DO NOT DELETE THIS HIDDEN NOTE!
 
 | Prodotto | [!DNL Adobe Experience Manager] 6.5 |
 | -------- | ---------------------------- |
-| Versione | 6.5.25.0 <!-- UPDATE FOR EACH NEW RELEASE --> |
+| Versione | 6.5.26.0 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | Tipo | Versione del Service Pack |
-| Data | 21 maggio 2026 <!-- UPDATE FOR EACH NEW RELEASE --> |
-| URL di download | [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.25.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
+| Data | 12 novembre 2026 <!-- UPDATE FOR EACH NEW RELEASE --> |
+| URL di download | [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.26.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
 
-Experience Manager 6.5.25.0 include nuove funzionalità, miglioramenti chiave richiesti dai clienti e correzioni di bug. Include inoltre miglioramenti a livello di prestazioni, stabilità e sicurezza basati sulla base 6.5 disponibile da aprile 2019.
 
-Questa versione del service pack fornisce 275 porte posteriori tra Sites, Assets e Foundation, incluse correzioni di bug critici e protezione avanzata. Questa versione migliora inoltre l’accessibilità nell’authoring di Sites grazie a funzioni avanzate di navigazione da tastiera, gestione dell’attivazione, semantica ARIA, miglioramenti del contrasto dei colori e dimensioni del target di contatto in linea con gli standard WCAG.
+<!-- REWRITE AI GENERATED SUMMARY OF NOTES BELOW FOR EACH NEW SERVICE PACK RELEASE -->
 
-Crosswalk è disponibile per impostazione predefinita in questa versione, eliminando la necessità di un pacchetto o una configurazione separata dopo l&#39;installazione.
+Experience Manager 6.5.26.0 include nuove funzionalità, miglioramenti chiave richiesti dai clienti e correzioni di bug. Include inoltre miglioramenti a livello di accessibilità, localizzazione, prestazioni, stabilità e sicurezza basati sulla base 6.5 disponibile da aprile 2019.
 
-Le back-port di sicurezza risolvono le vulnerabilità XSS e migliorano la gestione dei metadati delle risorse condivise.
+Gli elementi di rilievo del Service Pack 26 sono i seguenti:
 
-Anche i frammenti di contenuto e l’API GraphQL ricevono miglioramenti in termini di affidabilità, che riguardano i riferimenti alle immagini incorporate, la gestione delle query persistenti e la localizzazione degli editor.
+* Sicurezza. Due correzioni critiche chiudono una vulnerabilità di inserimento di modelli lato server nell’Editor metadati e violazioni cross-site scripting (XSS) nei servlet dell’interfaccia utente Coral.
+* Conformità C2PA. Assets ora rileva le credenziali C2PA e firma le rappresentazioni generate dal flusso di lavoro Aggiorna risorsa. La firma viene eseguita localmente in ogni istanza e l’infrastruttura di firma dedicata o di proprietà del cliente non è supportata.
+* Accessibilità. Oltre 25 correzioni aiutano l’Editor pagina e la console Sites a soddisfare i requisiti di contrasto, tastiera e utilità per la lettura dello schermo delle linee guida WCAG.
+* Localizzazione. Decine di correzioni traducono stringhe e correggono problemi di layout in Sites, Assets, Security e Operations.
+* Affidabilità Sono stati risolti i conflitti di blocco degli indirizzi GraphQL nelle istanze di pubblicazione, nei rollout MSM, nelle azioni della barra degli strumenti dell’Editor Rich Text e nell’attivazione delle pagine nell’interfaccia classica.
+* Analytics. L’integrazione di Launch utilizza l’API di Adobe Analytics 2.0 prima della fine del ciclo di vita di Analytics 1.4, il 31 agosto 2026.
 
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
-### Funzioni chiave e miglioramenti per Forms
-
-* [Conversioni PDF Generator multithread](/help/forms/using/install-configure-document-services.md#windows-only-enable-multi-threaded-pdf-generator-conversions): è stato aggiunto il supporto per l&#39;esecuzione di conversioni simultanee di Microsoft Word (doc/docx) ed Excel (xls/xlsx) quando AEM Forms viene eseguito come servizio Windows con un singolo account di servizio configurato.
-
-* [Segnalibri gerarchici per PDF basati su XFA](https://helpx.adobe.com/content/dam/help/it/experience-manager/6-5/forms/pdf/using-designer.pdf): il servizio di output e AEM Forms Designer ora generano gerarchie di segnalibri strutturate in PDF statici interattivi e piatti basati su XFA. I segnalibri seguono i livelli di intestazione (H1-H6) impostati nelle proprietà di accessibilità per le caselle di testo, pertanto le voci H1-H6 vengono nidificate sotto l&#39;elemento padre corretto anziché apparire in parallelo.
-
-* [Dettagli a livello di modulo nei registri delle transazioni JEE](/help/forms/using/transaction-report-overview-jee.md#form-level-details-transaction-log-jee): AEM Forms in JEE registra i dettagli a livello di modulo in `transaction_log.log` per ogni transazione, insieme alle informazioni sul servizio e sull&#39;operazione. Gli amministratori possono correlare i dati di reporting delle transazioni con moduli specifici durante l’analisi di invii, rappresentazioni e conversioni. (FORMS-21574)
-
-* [Matrice di piattaforma supportata aggiornata](/help/forms/using/aem-forms-jee-supported-platforms.md): AEM Forms su JEE Service Pack 6.5.25.0 aggiunge il supporto per la compatibilità con le seguenti tecnologie più recenti:
-  * JBoss® Enterprise Application Platform (EAP) 7.4.23
-  * Client IBM® Content Manager 8.7
-  * AEM Forms Designer su Microsoft® Windows Terminal Server 2025
-
-  >[!NOTE]
-  >
-  > Per aggiornare JBoss EAP dal 7.4.10 al 7.4.23, consulta:
-  > * [Aggiornamento di JBoss EAP dal 7.4.10 al 7.4.23 per AEM Forms su JEE](/help/forms/using/upgrade-jboss-eap-from-7-4-10-to-7-4-23.md) per ambienti autonomi.
-  > * [Aggiorna il cluster EAP JBoss da 7.4.10 a 7.4.23 per AEM Forms su JEE](/help/forms/using/upgrade-jboss-eap-cluster-from-7-4-10-to-7-4-23.md) per gli ambienti cluster.
-
-* **Richiesta credenziali modalità rapida di Configuration Manager (LCM):** Quando si configura AEM Forms su JEE in modalità rapida, LCM richiede di immettere le credenziali dell&#39;amministratore AEM anziché utilizzare le impostazioni predefinite. Questa modifica è disponibile tramite [hotfix](/help/release-notes/aem-forms-hotfix.md) per AEM Service Pack 6.5.25.0. Per i passaggi di configurazione, consulta [Installazione e distribuzione di AEM Forms 6.5 su JEE utilizzando JBoss Turnkey](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-turnkey.pdf). (FORMS-26365)
-
-## Problemi risolti in Service Pack 25 {#fixed-issues}
+## Problemi risolti, miglioramenti e miglioramenti in Service Pack 26 {#fixed-issues}
 
 <!-- 6.5.25.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE? -->
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
 
-### [!DNL Sites]{#sites-6525}
-
-#### Accessibilità {#sites-accessibility-6525}
-
-* I controlli di trascinamento della riga della tabella nella vista a elenco Sites ora funzionano con la navigazione da tastiera. Gli utenti che usano un’utilità di lettura dello schermo e una tastiera possono riordinare le righe e ricevere feedback durante l’azione. (SITES-24946)
-
-* La barra degli strumenti Modifica layout presenta ora le etichette per schermi e tablet più piccoli in una sequenza significativa di utilità per la lettura dello schermo. Gli utenti sentono le etichette con le misurazioni del righello correlate invece di sentirle fuori ordine. (SITES-25291)
-* La finestra modale a comparsa Campioni ora gestisce correttamente lo stato attivo quando si apre dalla finestra modale Annotazione. Lo stato attivo inizia dall’intestazione modale invece di spostarsi direttamente sul pulsante campione selezionato. (SITES-25275)
-* Il modale Teaser ora fornisce un modo accessibile per spostare la finestra di dialogo con una tastiera. Gli utenti non hanno più bisogno di un mouse per riposizionare il modale sulla pagina. (SITES-25226)
-* La vista a schede migliora l’accessibilità rimuovendo il comportamento superfluo della griglia ARIA. Gli utenti di utilità di lettura dello schermo ricevono informazioni più chiare sulle schede senza controlli di navigazione della griglia che non corrispondono al layout visivo. (SITES-24933)
-* Le descrizioni comandi nella finestra modale Elimina ora vengono visualizzate in modo coerente dopo ripetute azioni al passaggio del mouse. Gli utenti possono spostare il puntatore e tornare all&#39;icona per leggere nuovamente la descrizione. (SITES-24778)
-* La barra a sinistra ora viene attivata nell’ordine previsto dopo che gli utenti la aprono dalla home page di Sites. Gli utenti che utilizzano la tastiera e l’assistente vocale possono passare dal pulsante di configurazione al contenuto della barra senza saltare l’area espansa. (SITES-24754)
-* La gestione del focus ora funziona in modo coerente nella finestra di dialogo modale Carosello. Gli utenti che utilizzano la tastiera o un assistente vocale possono iniziare dall&#39;intestazione modale e tornare al controllo originale dopo aver chiuso la finestra di dialogo. (SITES-24716)
-* La finestra di dialogo Selezione collegamento consente ora di spostare lo stato attivo sul controllo che lo ha aperto dopo che gli utenti hanno chiuso la finestra di dialogo. Gli utenti che utilizzano la tastiera e l’assistente vocale non perdono più il contesto di navigazione dopo aver chiuso la finestra di dialogo. (SITES-24707)
-* La finestra modale Immagine non sposta più lo stato attivo sulla prima scheda o sul punto di riferimento della pagina principale quando gli autori aprono o chiudono la finestra di dialogo. Lo stato attivo si sposta prima sull&#39;intestazione della finestra di dialogo, quindi ritorna al controllo che ha aperto la finestra di dialogo. (SITES-24693)
-* La barra dei riferimenti ora gestisce correttamente lo stato attivo quando si apre una finestra di dialogo modale. Gli utenti che utilizzano la tastiera e l&#39;utilità di lettura dello schermo rimangono all&#39;interno della finestra di dialogo fino a quando non la chiudono, quindi proseguono la navigazione senza perdere contesto. (SITES-24683)
-* La finestra modale di selezione del percorso del collegamento ipertestuale non sposta più lo stato attivo sul campo o sul controllo errato quando gli autori lo aprono o lo chiudono. Lo stato attivo inizia dall’intestazione modale e torna al pulsante che ha aperto il modale. (SITES-24672)
-* La finestra modale Teaser non sposta più lo stato attivo sulla prima scheda o sulla parte superiore della pagina quando gli autori la aprono o la chiudono. Lo stato di attivazione segue ora il flusso previsto della finestra di dialogo e riduce gli annunci non necessari degli assistenti vocali. (SITES-24522)
-
-* Il pulsante di blocco Editor pagina ora fornisce un feedback più preciso sull’utilità di lettura dello schermo. Gli assistenti vocali utilizzano l’attributo title quando disponibile, il che riduce gli annunci dettagliati per gli autori che utilizzano tecnologie per l’accessibilità. (SITES-41431)
-* La navigazione tramite tastiera ora ignora il contenuto nascosto. Gli utenti possono spostarsi tra gli elementi visibili dell’interfaccia senza spostare lo stato attivo su contenuti che non possono visualizzare. (SITES-41430)
-* Lo stato attivo su tastiera ora ritorna all’elemento attivatore dopo che gli utenti hanno chiuso una sovrapposizione. L’Editor pagina non riporta più lo stato attivo sulla sovrapposizione, migliorando la navigazione per gli utenti che utilizzano la tastiera. (SITES-40819)
-* La barra degli strumenti Editor pagina ora visualizza etichette, come le descrizioni comandi, quando gli utenti navigano tra gli elementi della barra degli strumenti utilizzando una tastiera. Gli utenti possono comprendere ogni azione della barra degli strumenti quando lo stato attivo si sposta da un elemento all’altro. (SITES-40751)
-* Il passaggio del mouse sugli elementi del browser Componenti non rimuove più lo stato attivo da un componente Testo attivo. Gli autori possono modificare il testo senza interruzioni e lo stato attivo sulla tastiera rimane prevedibile. (SITES-35370)
-* Gli assistenti vocali ora annunciano più chiaramente il pulsante Search Modal sort direction (Ricerca modale). L’etichetta del pulsante non ripete più la stessa direzione e descrive meglio il comportamento di attivazione/disattivazione. (SITES-25534)
-* Nella casella di riepilogo Cambia file o cartella viene ora visualizzato un indicatore visivo per l&#39;opzione selezionata. Gli utenti possono identificare l’opzione breadcrumb corrente senza affidarsi esclusivamente allo stato attivo. (SITES-25532)
-* La finestra modale Ricerca ora aumenta il contrasto per l’etichetta Ordina per. Il testo soddisfa i requisiti di accessibilità e migliora la leggibilità per gli utenti ipovedenti. (SITES-25531)
-* I pulsanti di selezione dei dispositivi ora mostrano le informazioni corrette sullo stato corrente nella barra degli strumenti Modifica layout. Gli utenti di utilità di lettura dello schermo possono identificare il dispositivo attivo senza sentire uno stato di attivazione fuorviante. (SITES-25524)
-* La navigazione tramite tastiera e utilità di lettura dello schermo ora chiude il menu Posta in arrivo quando lo stato attivo non è più disponibile. Gli utenti evitano lo stato confusionale in cui il menu rimane aperto mentre lo stato attivo si sposta altrove. (SITES-25518)
-* La navigazione tramite tastiera e utilità di lettura dello schermo ora chiude il menu della Guida quando lo stato attivo non è più disponibile. Lo stato di attivazione non si sposta più sul contenuto all&#39;esterno del menu mentre quest&#39;ultimo rimane aperto. (SITES-25517)
-* La home page Frammenti di contenuto fornisce ora un’etichetta accessibile coerente per le schede della barra laterale. NVDA annuncia correttamente l&#39;etichetta della scheda quando gli utenti passano ai controlli della scheda. (SITES-25509)
-* Le opzioni attivate nel menu Informazioni pagina ora soddisfano i requisiti di contrasto minimo. Il contrasto migliorato aiuta gli utenti ipovedenti a identificare la voce di menu attiva. (SITES-25321)
-* La navigazione tramite tastiera ora ignora i controlli nascosti nella barra degli strumenti Demografica compressa. Lo stato attivo resta sugli elementi interattivi visibili, che migliorano l’ordine di navigazione nell’anteprima di layout. (SITES-25304)
-* Il pulsante Ruota dispositivo ora fornisce un feedback più chiaro sull’utilità di lettura dello schermo nella barra degli strumenti Modifica layout. Gli assistenti vocali annunciano l’orientamento corrente e l’azione che lo modifica. (SITES-25292)
-* Sulla barra degli strumenti Modifica layout viene ora visualizzato uno stato deselezionato per il pulsante Desktop. L&#39;opzione Desktop corrisponde agli altri pulsanti del dispositivo e facilita l&#39;identificazione della visualizzazione attiva. (SITES-25290)
-* La barra degli strumenti Modifica layout ora etichetta l’area del righello per le tecnologie per l’accessibilità. Gli utenti di utilità di lettura dello schermo non rilevano più valori di misurazione senza etichetta durante la modifica del layout. (SITES-25287)
-* Sulla barra degli strumenti Modifica layout l&#39;etichetta completa del pulsante iPhone 8 Plus è ora deselezionata. L’etichetta non viene più troncata quando intorno al pulsante è presente spazio sufficiente. (SITES-25284)
-* Il problema segnalato descriveva un indicatore dello stato attivo nella barra degli strumenti Modifica layout che sembrava coprire più controlli dispositivo. Il problema riguarda gli utenti che utilizzano la tastiera e che non possono identificare il controllo attivo quando il profilo dello stato attivo include pulsanti adiacenti. Il problema funzionava come previsto. (SITES-25283)
-* Il problema segnalato descriveva i pulsanti modali per l’annotazione che annunciavano l’annotazione prima di ogni etichetta di pulsante. Il problema si concentrava sull’output non chiaro dell’utilità di lettura dello schermo per azioni quali Annota, Campioni ed Elimina. (SITES-25277)
-* Il testo del pulsante Annotazione ora utilizza un contrasto sufficiente nel modale Annotazione. Questo aggiornamento migliora la leggibilità per gli utenti ipovedenti e supporta i requisiti di contrasto WCAG. (SITES-25267)
-* Gli assistenti vocali ricevono ora gli aggiornamenti di stato quando gli utenti filtrano l’elenco Inserisci nuovo componente. Il modale annuncia le modifiche dei risultati in modo che gli utenti possano capire che l’elenco è cambiato mentre digitavano. (SITES-25251)
-* Il problema registrato descriveva la semantica di intestazione mancante per il titolo modale dell’annotazione. La preoccupazione si è concentrata sulla navigazione degli assistenti vocali e sulla capacità di comprendere la struttura modale. (SITES-25248)
-* I livelli di intestazione nella barra laterale dell’Editor pagina ora seguono una gerarchia di contenuti più chiara. La sezione Barra a sinistra non viene più visualizzata come intestazione della pagina principale per le tecnologie per l’accessibilità. (SITES-25222)
-* Il pulsante Modifica nella barra a sinistra di Assets ora ha un target touch più grande. Gli utenti con disabilità possono attivare il pulsante più facilmente ed evitare i controlli nelle vicinanze. (SITES-25221)
-* La barra a sinistra di Assets ora identifica quando il pulsante Modifica apre una nuova scheda del browser. Gli utenti possono anticipare il cambiamento di navigazione invece di perdere il contesto in modo imprevisto. (SITES-25220)
-* I titoli dei componenti ora vengono visualizzati correttamente quando gli utenti applicano una maggiore spaziatura del testo. La barra laterale mantiene le etichette leggibili e supporta i requisiti di spaziatura del testo WCAG. (SITES-25219)
-* Il campo del filtro in Componenti della barra laterale ora espone un nome accessibile corretto. Questo aggiornamento consente agli utenti di utilità di lettura dello schermo di identificare il campo senza affidarsi al testo segnaposto. (SITES-25212)
-* Il problema segnalato descriveva una sequenza di attivazione illogica in modalità Annotation. È stato segnalato che gli utenti che utilizzano la tastiera non hanno visualizzato la barra degli strumenti delle annotazioni, a meno che non utilizzino Maiusc+Tab dopo l’attivazione della modalità. (SITES-24996)
-* L’area di lavoro dell’editor espone il titolo della barra superiore come intestazione. Gli assistenti vocali possono annunciare il titolo con la struttura corretta, migliorando la navigazione e la comprensione della pagina. (SITES-24993)
-* Nel rapporto sull’accessibilità è stato rilevato un contrasto insufficiente per il messaggio di stato di caricamento visualizzato quando gli utenti passano da una visualizzazione all’altra. La preoccupazione si è concentrata sulla leggibilità per gli utenti ipovedenti o con daltonismo. (SITES-24991)
-* Nel rapporto sull’accessibilità si osservava che i collegamenti delle schede includevano testo non descrittivo. Questa preoccupazione si concentra sull’aiutare gli utenti di utilità di lettura dello schermo a comprendere ogni destinazione di collegamento senza ulteriore contesto. (SITES-24975)
-* Nella vista a elenco Sites ora viene visualizzato il testo Live Copy con un contrasto maggiore. L’aggiornamento migliora la leggibilità per gli autori ipovedenti e per gli utenti che lavorano in condizioni di luminosità dello schermo. (SITES-24956)
-* La navigazione da tastiera ora sposta lo stato attivo nel menu dell’emulatore dopo che gli utenti lo hanno espanso. Questo comportamento consente agli utenti di utilità per la lettura dello schermo e della tastiera di accedere alle opzioni di menu nell’ordine previsto. (SITES-24954)
-* La vista a elenco Sites ora migliora la visibilità dei pulsanti di trascinamento nelle righe della tabella. Gli autori possono identificare il controllo più facilmente quando riordinano il contenuto. (SITES-24951)
-* Una scheda non espone più sia il collegamento immagine che il collegamento intestazione come collegamenti separati quando condividono la stessa destinazione. L’aggiornamento riduce la complessità dell’utilità di lettura dello schermo e migliora l’efficienza della navigazione. (SITES-24947)
-* I pulsanti del menu intestazione ora utilizzano attributi di accessibilità più precisi. Gli assistenti vocali annunciano che i pulsanti sono controlli espandibili anziché controlli che consentono l&#39;apertura di finestre di dialogo. (SITES-24742)
-* La casella in entrata ora contrassegna i collegamenti correlati con il markup dell’elenco semantico. Gli utenti che usano un’utilità di lettura dello schermo possono comprendere più facilmente il numero e il raggruppamento dei collegamenti nella casella in entrata. (SITES-24730)
-* Le etichette dei pulsanti di intestazione ora evitano nomi accessibili in modalità dettagliata. Gli utenti che usano un’utilità di lettura dello schermo ricevono annunci più chiari senza duplicare le informazioni sul ruolo dal testo dell’icona. (SITES-24715)
-* Il pulsante Rapporto CSV fornisce ora un feedback più chiaro sul comportamento delle nuove schede. Gli utenti possono comprendere che selezionando il pulsante si apre una nuova scheda del browser prima di attivarlo. (SITES-24704)
-* Le finestre di dialogo modali ora utilizzano markup di accessibilità più precisi per i controlli intestazione. I pulsanti Guida in linea e Attiva/Disattiva schermo intero rimangono controlli interattivi e non vengono più visualizzati come intestazioni per gli assistenti vocali. (SITES-24696)
-* Il punto di riferimento della barra dei filtri ora utilizza un’etichetta distinta che ne identifica lo scopo. Gli utenti che usano un’utilità di lettura dello schermo possono navigare tra le pagine con più punti di riferimento simili in modo più affidabile. (SITES-24686)
-* I messaggi della barra dei riferimenti ora forniscono una migliore leggibilità per gli utenti che si basano su un contrasto di testo sufficiente. Il problema segnalato riguardava la selezione e i messaggi di selezione multipla che apparivano troppo chiari sullo sfondo. (SITES-24666)
-* Il modale di ricerca ora fornisce destinazioni di contatto più grandi per i pulsanti Rimuovi posizione e Chiudi. Questa modifica consente agli utenti con disabilità o ipovedenti di attivare il controllo desiderato. (SITES-24530)
-* È stato segnalato che il collegamento dell’intestazione Adobe Experience Manager utilizzava un attributo ARIA errato. I test hanno confermato che il collegamento controlla il contenuto espandibile, pertanto lo stato accessibile esistente rimane appropriato. (SITES-24528)
-* L&#39;indicatore di stato attivo per il pulsante Byline non viene più visualizzato tagliato nell&#39;elenco Componenti. La struttura visibile consente agli utenti che utilizzano la tastiera di tenere traccia della loro posizione nell’editor. (SITES-24503)
-* Un problema segnalato descriveva un’alternativa testuale mancante per l’icona della descrizione comando delle informazioni nel pannello Componenti. Il problema non si riproduce, ma il riesame ha confermato che le icone informative devono esporre un nome chiaramente accessibile. (SITES-24500)
-* L’Editor pagina non espone più più punti di riferimento per più aree geografiche con la stessa etichetta. Ogni punto di riferimento ora ha un nome accessibile univoco, in modo che gli utenti di utilità di lettura dello schermo possano identificare la regione corrente. (SITES-24497)
-* Il controllo Cambia file o cartella ora separa l&#39;etichetta del controllo dalle informazioni sullo stato. Gli utenti che usano un’utilità di lettura dello schermo sentono un nome più breve e chiaro quando navigano nel controllo dell’intestazione. (SITES-24496)
-* I controlli interattivi nella tabella Amministratore frammenti di contenuto ora supportano la navigazione da tastiera standard. Gli utenti che utilizzano la tastiera possono passare a pulsanti e collegamenti invece di individuarli solo tramite la navigazione con tasti di direzione. (SITES-24285)
-* L’interfaccia utente di amministrazione di Sites ora tratta correttamente le icone decorative di Globe per gli assistenti vocali. Le icone utilizzano testo alternativo vuoto, in modo che gli utenti possano ascoltare solo contenuti significativi dell’interfaccia. (SITES-3057)
+### [!DNL Sites]{#sites-6526}
 
-#### Interfaccia utente amministratore{#sites-adminui-6525}
+#### Accessibilità {#sites-accessibility-6526}
 
-Nella console Sites sono ora visualizzate correttamente le impostazioni di colonna **Vista elenco** salvate. Le colonne selezionate rimangono selezionate quando gli autori riaprono la finestra di dialogo delle impostazioni e il numero di colonne attive rimane accurato. (SITES-38576)
+* Gli autori possono aggiungere, spostare e rimuovere componenti utilizzando solo la tastiera. L’interazione di trascinamento della selezione ha richiesto l’uso di un puntatore, pertanto non è riuscito il criterio WCAG 2.1.1 Keyboard. L’editor ora fornisce i componenti Inserisci a comparsa, Taglia e Incolla ed Elimina come equivalenti utilizzabili da tastiera. (SITES-25359)
 
-#### Interfaccia classica{#sites-classicui-6525}
+* Gli autori possono ora visualizzare il pulsante Formato (&quot;T&quot;) attivo nel menu in linea del componente Testo. Dopo che gli autori hanno applicato la formattazione in grassetto o corsivo, l’icona del pulsante è rimasta scura su uno sfondo grigio scuro e non ha rispettato il rapporto di contrasto minimo di 4,5:1 delle linee guida WCAG 2.1 AA. Il CSS aggiornato schiarisce l’icona, ripristinando il contrasto fornito dai service pack precedenti. (SITES-51864)
 
-Le finestre di dialogo del componente Testo dell’interfaccia classica ora visualizzano il contenuto dell’Editor Rich Text (RTE) come testo formattato invece che come HTML non elaborato. Gli autori possono modificare il testo esistente senza passare alla modalità Source o rimuovere manualmente il markup. (SITES-38709)
+* Nella scheda Assets dell’Editor pagina ora viene visualizzata una stringa tradotta nel menu a discesa Seleziona componenti, dopo aver scelto Paragrafi dal menu a discesa Immagini. In precedenza, la stringa &quot;OTHER&quot; appariva in inglese perché mancava nelle risorse di localizzazione. Il dizionario aggiornato fornisce la traduzione in tutte le lingue. (SITES-24525)
 
-#### Console dei componenti{#sites-component-console-6525}
 
-* Ora gli utenti possono cercare nella console Componenti con caratteri localizzati o multibyte. Nella console viene inoltre visualizzata un&#39;etichetta **Rimuovi** localizzata al posto della stringa inglese non tradotta. (SITES-39747)
-* La pagina Proprietà componente ora localizza le stringhe in Strumenti > Componenti > Proprietà componente. Gli utenti non vedono più le etichette inglesi non tradotte nelle interfacce di authoring localizzate. (SITES-39745)
 
-#### [!DNL Content Fragments]{#sites-contentfragments-6525}
 
-Assets Search ora risponde correttamente quando gli utenti selezionano o modificano i filtri. Il set di risultati filtrato viene aggiornato come previsto, ripristinando un perfezionamento affidabile della ricerca nella console Assets. (SITES-38686)
+* L’iframe ContextHub nell’Editor pagina ora dispone di un attributo titolo descrittivo. In precedenza, l&#39;elemento `contexthub-ui-iframe` non aveva alcun titolo, pertanto gli utenti di utilità di lettura dello schermo non erano in grado di identificarlo quando lo stato attivo veniva spostato su di esso. Il titolo ora viene visualizzato in ogni pagina e visualizzazione dell’editor, inclusi Canvas, Side Rail e Layout Preview. (SITES-24650)
+* Il pulsante Filtri nella barra dei filtri della console Sites non aggiunge etichette visibili sopra i campi Ricerche salvate e Seleziona directory di ricerca. Un controllo di audit ha segnalato che le etichette venivano visualizzate quando lo stato attivo lasciava il pulsante, quando veniva premuto un tasto o quando si faceva clic sul pulsante. Il test non è riuscito a riprodurre il comportamento, quindi non è stata necessaria alcuna modifica. (SITES-24706)
+* I collegamenti nella console Sites per la navigazione nelle app ora si distinguono più chiaramente. Il testo del collegamento ha un rapporto di contrasto di 4,5:1, ma lo spessore sottile e le dimensioni ridotte del carattere hanno reso i collegamenti difficili da vedere. Un font più grande e dimensioni maggiori facilitano la lettura del testo per gli utenti con disabilità visive. (SITES-24723)
+* Gli assistenti vocali non visualizzano più il messaggio &quot;vuoto&quot; prima del contenuto della descrizione comando nella finestra modale Preferenze utente. In precedenza, l&#39;icona Info utilizzava `role="tooltip"` con un riferimento `aria-labelledby`, quindi NVDA leggeva prima un&#39;etichetta vuota. L&#39;icona ora utilizza `role="button"` e un `aria-label` di &quot;informazioni&quot; e la modifica si applica ai componenti del modulo Coral che condividono il modello. (SITES-24732)
+* Il pulsante Elimina nella finestra modale Elimina ora soddisfa il requisito di contrasto di 4.5:1 delle linee guida WCAG 1.4.3. In precedenza, il testo bianco su sfondo rosso dava un rapporto di 3,9:1 dopo che gli autori avevano selezionato un elemento e fatto clic su Elimina nella barra degli strumenti Azione. Il colore più scuro del pulsante rende l’etichetta leggibile per gli autori con disabilità visive. (SITES-24772)
+* L&#39;intestazione Riferimenti nella barra Riferimenti della console Sites ora utilizza un elemento intestazione invece di `div`. In precedenza, gli assistenti vocali non riuscivano ad annunciare il testo come intestazione, pertanto gli utenti non riuscivano a spostarsi per intestazione. L&#39;intestazione viene visualizzata anche nella parte superiore della vista Riferimenti iniziale. (SITES-24967)
+* L’indicatore di messa a fuoco per i pulsanti a soffietto nella barra dei filtri della console Sites ora soddisfa il requisito di contrasto 3:1 di WCAG 1.4.11. In precedenza, l’indicatore blu mostrava un rapporto di 2,3:1 sullo sfondo, il che rendeva difficile trovare il pulsante del Pannello a soffietto Tag per gli utenti che utilizzano la tastiera. Il colore aggiornato offre agli utenti della tastiera un chiaro segnale di messa a fuoco. (SITES-24986)
+* L’indicatore della messa a fuoco per i pulsanti di scelta nella barra dei filtri della console Sites ora soddisfa il requisito di contrasto WCAG 1.4.11 di 3:1. In precedenza, l&#39;indicatore blu chiaro mostrava un rapporto di 1,7:1 sullo sfondo. Gli utenti che utilizzano la tastiera ora possono tenere traccia della loro posizione nel pannello a soffietto Data di modifica. (SITES-24987)
+* Il pulsante Seleziona accanto ai campi Percorso e Tag nella barra laterale dell’Editor pagina non utilizza più un’icona di casella di controllo. In precedenza, l’icona suggeriva di attivare o disattivare il pulsante, ma quest’ultimo apriva una finestra modale contenente la directory ad albero. Il pulsante Select ora comunica correttamente la sua funzione e lo stesso vale per i moduli Image e Teaser. (SITES-25210)
+* Gli assistenti vocali ora ignorano le miniature delle risorse nella barra laterale dell’Editor pagina. Precedentemente, ogni immagine conteneva del testo alternativo che duplicava il nome della risorsa visibile, in modo che gli utenti potessero ascoltare lo stesso testo due volte. Un attributo `alt` vuoto contrassegna l&#39;immagine come decorativa e mantiene il nome nel titolo della scheda. (SITES-25213)
+* Gli assistenti vocali riconoscono l’elenco dei componenti della barra laterale come un elenco. Un controllo di audit ha segnalato gli elementi come elementi non correlati, ma il test ha confermato che il markup utilizza un elemento elenco e voci elenco. Non è stata necessaria alcuna modifica del codice. (SITES-25214)
+* Le icone delle informazioni per i componenti nella barra laterale dell’Editor pagina sono più grandi e più facili da visualizzare. In precedenza, le icone utilizzavano dimensioni molto piccole, pari a circa 12 px, difficili da vedere per gli utenti con disabilità visive. Le icone ora utilizzano le dimensioni medie.(SITES-25217)
+* L’indicatore di stato attivo sul pulsante Campione nella finestra modale Annotazione ora si distingue dal pulsante. In precedenza, l’indicatore corrispondeva al colore del campione. Ciò rendeva difficile per gli utenti di tastiera vedere quale pulsante aveva lo stato attivo. Un offset fornisce all&#39;indicatore un contrasto sufficiente rispetto allo sfondo e lo mantiene chiaramente visibile. (SITES-25253)
+* Il campo Data nella finestra modale Timewarp non contiene più `aria-haspopup="dialog"`. In precedenza, gli assistenti vocali avevano annunciato che il campo apriva una finestra di dialogo, anche se non lo faceva. La rimozione dell’attributo fornisce agli utenti di utilità di lettura dello schermo informazioni accurate. (SITES-25263)
+* Le etichette di testo nella barra degli strumenti Demografia, ad esempio &quot;Consigliato&quot;, soddisfano ora il requisito di contrasto di 4.5:1 delle linee guida WCAG 1.4.3. In precedenza, il testo grigio su uno sfondo grigio scuro restituiva un rapporto di 2,8:1 in modalità Anteprima. Testo più scuro o più chiaro, a seconda dello sfondo, rende leggibile ogni etichetta. (SITES-25307)
+* L’indicatore di focus sui pulsanti Commerce, Persona e Device nella barra degli strumenti Demografia soddisfa ora il requisito di contrasto WCAG 1.4.11 di 3:1. In precedenza, l’indicatore mostrava un rapporto di 1,9:1 sullo sfondo della barra degli strumenti. Gli utenti che utilizzano la tastiera ora possono tenere traccia della loro posizione. (SITES-25308)
+* Il testo digitato dagli autori nei campi di testo della barra degli strumenti Demografia soddisfa ora il requisito di contrasto di 4.5:1 delle linee guida WCAG 1.4.3. In precedenza, il testo bianco su sfondo grigio produceva un rapporto di 2,9:1 nei campi, ad esempio nel campo a discesa Profilo `displayName` in modalità Anteprima. I colori aggiornati consentono agli autori con disabilità visive di leggere i valori digitati. (SITES-25318)
+* Gli assistenti vocali ora leggono la descrizione quando lo stato attivo raggiunge le caselle di controllo nelle finestre di dialogo Teaser, Immagine e Carosello. In precedenza, il testo non era associato alla casella di controllo a livello di programmazione, pertanto gli utenti non potevano ascoltare le istruzioni. Un attributo `aria-describedby` collega ora ogni casella di controllo alla relativa descrizione. (SITES-25364)
+* Gli assistenti vocali ora annunciano quale pulsante Formati di paragrafo è attivo nell’Editor Rich Text. In precedenza, la selezione di un&#39;opzione dall&#39;elenco non forniva alla tecnologia per l&#39;accessibilità alcuna indicazione sulla scelta corrente. Il pulsante attivo ora contiene `aria-current="true"` e l&#39;opzione Target collegamento ipertestuale attivo contiene `aria-selected="true"`. (SITES-25367)
+* I pulsanti Ordina nell’intestazione della tabella della Vista a elenco della console Sites soddisfano ora il requisito di contrasto 3:1 delle linee guida WCAG 1.4.11. In precedenza, le icone grigio chiaro mostravano un rapporto di 1,5:1 sullo sfondo dell’intestazione. Il colore più scuro dell’icona rende i pulsanti visibili agli autori con disabilità visive. (SITES-25372)
+* La scheda Assets nella barra laterale dell’Editor pagina non viene più ricaricata quando lo stato attivo si sposta sul campo Filtro. In precedenza, quando si selezionava il campo vuoto, veniva attivato un ricaricamento e gli assistenti vocali annunciavano ogni volta un messaggio di caricamento. La scheda ora viene ricaricata solo dopo aver modificato il valore del filtro e aver premuto Invio. (SITES-25377)
+* L’icona campione selezionata nella finestra modale Annotation soddisfa ora il requisito di contrasto WCAG 1.4.11 di 3:1. In precedenza, il segno di spunta bianco mostrava un rapporto di appena 1,58:1 sui campioni di colore giallo, arancione e verde. L’icona aggiornata fornisce agli autori con disabilità visive un chiaro indicatore. (SITES-25523)
+* L’elenco Componenti nel pannello laterale dell’Editor pagina non è più attivo dalla tastiera. Gli utenti che utilizzano la tastiera selezionano e spostano i componenti con i controlli nella finestra del contenuto, pertanto l’elenco dei pannelli laterali ha ripetuto la funzione. Una nota sotto il filtro del componente indica agli utenti della tastiera dove trovare i controlli. (SITES-40752)
 
-#### [!DNL Content Fragments] - Amministratore{#sites-admin-6525}
 
-* Nella vista a elenco di Assets è ora disponibile una descrizione comando Localizzato Estratto da per per i frammenti di contenuto bloccati. Questa correzione migliora la coerenza della localizzazione quando gli autori esaminano le righe del flusso di lavoro. (SITES-42531)
+#### Interfaccia utente amministratore{#sites-adminui-6526}
 
-* AEM ora localizza l’etichetta Principale nella finestra di dialogo di download del frammento di contenuto. La correzione mantiene la coerenza del flusso di lavoro di download tra le lingue diverse dall’inglese. (SITES-42534)
-* AEM ora traduce l’etichetta di stato `Later` quando gli autori pianificano la pubblicazione del frammento di contenuto da Assets. Questa correzione mantiene la coerenza della colonna Pubblicato tra le interfacce localizzate. (SITES-42532)
-* Durante la creazione di frammenti di contenuto ora viene visualizzato un messaggio di convalida localizzato quando gli autori immettono caratteri non validi nel campo Titolo. La finestra di dialogo non mostra più la stringa non localizzata &quot;Nome non valido fornito&quot;. (SITES-19796)
-* La pagina Modifica frammento di contenuto ora utilizza etichette localizzate per tag e raccolte. Gli autori visualizzano i nomi dei campi tradotti invece delle stringhe inglesi non localizzate. (SITES-977)
 
-#### [!DNL Content Fragments] - Editor frammenti{#sites-fragments-editor-6525}
+#### Interfaccia classica{#sites-classicui-6526}
 
-* Contenuto associato nell’Editor frammento di contenuto ora mostra la stringa localizzata corretta quando gli autori rimuovono contenuto da una raccolta. La finestra di dialogo non sostituisce più il nome del contenuto con non definito. (SITES-33675)
-* L’Editor frammento di contenuto ora visualizza un’etichetta Generale tradotta per le schede senza un segnaposto configurato. Le interfacce localizzate non mostrano più la stringa inglese non tradotta in quell’area dell’editor. (SITES-30715)
-* Il selettore Riferimento contenuto nell’Editor frammento di contenuto ora mostra le etichette localizzate per i tipi di risorse consentiti. Le interfacce localizzate non visualizzano più nomi di tipo inglese per le categorie di risorse supportate. (SITES-29699)
+* Gli autori possono attivare nuovamente le pagine nella console Sites dell&#39;interfaccia classica (`siteadmin.html`). In precedenza, il pulsante Attiva pagina mostrava un’icona di selezione &quot;Caricamento&quot; a tempo indefinito e non attivava mai la replica, perché uno script di tracciamento non riuscito arrestava il gestore di clic. Il gestore di clic ora viene eseguito senza errori e completa l’attivazione. (SITES-52165)
+* Il codice della lingua indonesiana viene ora visualizzato come ID nelle proprietà della copia in lingua. In precedenza, la barra Riferimenti mostrava il codice legacy IN per le pagine sotto la directory principale della lingua indonesiana. L’aggiornamento del bundle cq-wcm-core corregge il valore, in modo che il codice corrisponda allo standard ISO. (SITES-4491)
 
-#### [!DNL Content Fragments] - API GraphQL {#sites-graphql-api-6525}
+<!--
+#### Component Console{#sites-component-console-6526}
 
-* Le risposte JSON GraphQL ora includono riferimenti a immagini incorporate da campi Rich Text di frammenti di contenuto quando i nomi di file DAM contengono spazi o caratteri non ASCII. Questa correzione consente alle applicazioni di eseguire il rendering delle immagini di riferimento senza richiedere agli autori di rinominare le risorse. (SITES-42191)
-* Le risposte di GraphQL per i frammenti di contenuto ora gestiscono in modo più affidabile le query persistenti. Gli aggiornamenti correggono le intestazioni della cache duplicate, migliorano la gestione delle variabili codificate e restituiscono risposte più chiare in caso di contenuto mancante o query non riuscite. (SITES-40159)
-* Le query persistenti GraphQL ora vengono eseguite senza messaggi di ERRORE e AVVISO non necessari nei registri. AEM gestisce correttamente le variabili codificate, pertanto le query riuscite non creano più `PersistedQueryServlet` voci fuorvianti. (SITES-39354)
 
-* La finestra di dialogo Modifica endpoint GraphQL ora localizza le relative stringhe di interfaccia. Gli utenti non vedono più che lo schema di GraphQL non tradotto viene preso dal messaggio di configurazione nelle interfacce localizzate. (SITES-34018)
 
-#### [!DNL Content Fragments] - Editor di query GraphQL{#sites-graphql-query-editor-6525}
+#### [!DNL Content Fragments]{#sites-contentfragments-6526}
 
-Ora gli utenti possono aprire GraphQL Query Editor quando il nome del browser di configurazione selezionato contiene caratteri CJK o cirillici. L’editor visualizza le query persistenti per l’endpoint invece di mostrare un errore. (SITES-31616)
 
-#### [!DNL Content Fragments] - Modelli e Editor modelli{#sites-models-model-editor-6525}
 
-* Ora gli utenti visualizzano un messaggio di convalida localizzato nell’Editor modello per frammenti di contenuto quando un valore selezionato richiede un tipo di modello valido. L’editor non visualizza più il messaggio in inglese non tradotto nelle interfacce localizzate. (SITES-41117)
-* Il pannello dei filtri Modello per frammenti di contenuto ora ne localizza lo stato e le stringhe di titolo. Gli utenti non visualizzano più le etichette non tradotte per Titolo modello, Stato, Bozza, Abilitato e Disabilitato. (SITES-30863)
+#### [!DNL Content Fragments] - Admin{#sites-admin-6526}
+-->
 
-<!-- #### [!DNL Content Fragments] - REST API{#sites-restapi-6525} -->
 
-#### ContextHub{#sites-contexthub-6525}
+#### [!DNL Content Fragments] - Editor frammento{#sites-fragments-editor-6526}
 
-ContextHub ora viene caricato senza un errore JavaScript che ha interrotto la personalizzazione. I teaser e altre esperienze personalizzate possono essere visualizzati correttamente sulle pagine interessate. (SITES-38430)
+* Il pulsante Modifica frammento di contenuto viene visualizzato immediatamente per ogni riferimento a più campi nell’editor frammento di contenuto. In precedenza, il pulsante rimaneva nascosto fino a quando gli autori non salvavano il frammento principale e non faceva nulla dopo aver aperto il browser Percorsi. L’editor ora crea l’elenco delle azioni al primo rendering, in modo che gli autori aprano i frammenti di riferimento senza passaggi aggiuntivi. (SITES-43733)
 
-<!-- #### Core Backend{#sites-core-backend-6525} -->
+* I caratteri cinesi, giapponesi e coreani non vengono più visualizzati in corsivo nel segnaposto della finestra di dialogo Crea frammento di contenuto. In precedenza, lo stile corsivo veniva applicato ai caratteri CJK in **Assets** > **File**, rendendo difficile la lettura del testo. Gli stili aggiornati ignorano il corsivo per le lingue CJK. (SITES-43548)
+* L’editor del frammento di contenuto convalida correttamente i campi dopo l’aggiornamento dell’interfaccia utente Granite. Una recente modifica dell’interfaccia utente di Granite ha causato una regressione, pertanto le librerie client dell’editor non corrispondono più al nuovo comportamento di convalida. Le librerie e i test adattati risolvono la mancata corrispondenza. (SITES-46650)
 
-#### Componenti core{#sites-core-components-6525}
 
-* AEM non genera più errori ThumbnailServlet ripetuti quando una richiesta viene indirizzata a una risorsa DAM mancante. Il servlet interrompe l’elaborazione dopo il reindirizzamento, impedendo alle voci NullPointerException di inondare il registro degli errori. (SITES-41238)
-* AEM non contrassegna più i campi delle finestre di dialogo facoltative come obbligatori quando gli autori riaprono le finestre di dialogo dei componenti. La finestra di dialogo mantiene la convalida incentrata sui campi che richiedono l’input, impedendo in tal modo errori fuorvianti a livello di scheda. (SITES-40449)
+#### [!DNL Content Fragments] - API GraphQL {#sites-graphql-api-6526}
 
-* AEM include diverse correzioni di sicurezza supportate che rafforzano Sites e i relativi componenti di Cloud Services. Queste correzioni riducono il rischio di scripting tra siti e migliorano la gestione delle richieste tra i percorsi di authoring interessati. (SITES-38314)
-* La finestra di dialogo Image v3 Component configuration (Configurazione del componente Immagine v3) ora localizza le stringhe nell’Editor pagina. Gli autori non visualizzano più le etichette non tradotte quando configurano i componenti Immagine nelle interfacce localizzate. (SITES-38726)
+* Le query GraphQL sui frammenti di contenuto ora riconoscono i riferimenti RemoteRef a Dynamic Media con OpenAPI Assets. In precedenza, le query non riuscivano con un &quot;Errore di convalida query persistente&quot; e non restituivano dati sulle risorse quando AEM 6.5 Sites utilizzava AEM as a Cloud Service Assets. Le risposte ora includono l’ID dell’archivio e l’ID della risorsa, in modo che i clienti possano creare gli URL di consegna. (SITES-48507)
 
-<!-- #### Campaign integration{#sites-campaign-integration-6525} -->
+* Le istanze di pubblicazione rimangono reattive durante il traffico GraphQL intenso. Blocca il conflitto in `GraphQLServiceImpl` thread di elaborazione delle richieste ritardati ai metodi dello schema, rallentando le richieste e richiedendo riavvii. La sincronizzazione migliorata risolve il problema delle prestazioni e mantiene la disponibilità dei siti e delle app mobili. (SITES-48699)
 
-<!-- #### ContentHub {#sites-contenthub-6525} -->
+* Il messaggio sulla pagina GraphQL Endpoints rimane localizzato dopo il ricaricamento della pagina. In precedenza, al momento della creazione e dell’eliminazione degli endpoint, nella tua lingua veniva visualizzato il messaggio &quot;Nessun endpoint trovato&quot;, ma dopo un ricaricamento veniva ripristinato l’inglese. La pagina ora carica la stringa tradotta a ogni visita. (SITES-43586)
 
-#### Crosswalk {#sites-crosswalk-6525}
 
-* Dopo l&#39;installazione, il percorso incrociato non richiede più l&#39;installazione separata del pacchetto e della configurazione. AEM include nel pacchetto standard i bundle richiesti, i pacchetti di contenuti, gli utenti del sistema, le mappature degli utenti del servizio e gli interruttori delle funzioni. (SITES-41417)
-* I flussi di lavoro cross-walk ora funzionano con il supporto cq-wcm-core richiesto in AEM 6.5. Gli autori possono utilizzare le azioni Crea modello e Apri editor universale senza aggiornamenti separati dei bundle di base. (SITES-37666)
+<!--
+#### [!DNL Content Fragments] - GraphQL Query Editor{#sites-graphql-query-editor-6526}
+-->
 
-#### Frammenti di esperienza{#sites-experiencefragments-6525}
 
-AEM ora carica i modelli corretti quando gli autori creano varianti di Frammento esperienza e scorrono oltre i primi 40 risultati. Il selettore modelli mantiene il percorso del frammento esperienza selezionato durante l’impaginazione. (SITES-41531)
+#### [!DNL Content Fragments] - Modelli e Editor modelli{#sites-models-model-editor-6526}
 
-<!-- #### Foundation Components (Legacy){#sites-foundation-components-legacy-6525} -->
+* Le miniature per i modelli per frammenti di contenuto vengono visualizzate in **Strumenti** > **Generale** > **Modelli per frammenti di contenuto** quando il nome della configurazione contiene caratteri localizzati, ad esempio &quot;español テスト&quot;. In precedenza, la miniatura caricata non veniva visualizzata perché i caratteri causavano un errore nel percorso. La gestione aggiornata codifica correttamente il nome. (SITES-39242)
 
-#### Lanci{#sites-launches-6525}
+* La stringa Etichetta campo nell’area di lavoro dell’Editor modello per frammenti di contenuto ora viene visualizzata nella lingua dell’utente. In precedenza, l’etichetta rimaneva in inglese dopo che gli autori avevano trascinato un componente sull’area di lavoro, e tradotto solo dopo aver salvato e riaperto il modello. L’etichetta ora si traduce immediatamente, corrispondente al pannello Proprietà. (SITES-45383)
 
-* La Timeline Sites ora localizza il messaggio visualizzato quando AEM crea una versione prima di promuovere un lancio. Gli utenti non visualizzano più la stringa inglese non tradotta nelle interfacce localizzate. (SITES-39157)
-* L’elenco Lanci ora visualizza la descrizione corretta per i lanci creati senza l’ereditarietà di modelli o Live Copy. Gli utenti non visualizzano più l’etichetta ingannevole del modello sostituito. (SITES-34229)
 
-<!-- #### Link Checker{#sites-link-checker-6525} -->
+<!--
+#### [!DNL Content Fragments] - REST API{#sites-restapi-6526}
 
-#### Localizzazione{#sites-localization-6525}
+#### ContextHub{#sites-contexthub-6526}
+-->
 
-* Le proprietà dei componenti di testo nei Frammenti esperienza ora utilizzano etichette localizzate. Il menu Formato non mostra più stringhe non localizzate per le scelte di paragrafo, intestazione, virgolette o testo preformattato. (SITES-15091)
 
-* Il testo dello stato del modello ora è allineato correttamente in **Strumenti** > **Generale** > **Modelli**. Le etichette di stato aggiornate, attivate e pubblicate vengono visualizzate su una linea orizzontale. (SITES-36797)
-* Nella finestra di dialogo Sposta pagina viene ora visualizzata l&#39;etichetta Seleziona data e ora completa. L’etichetta non troncerà più nelle interfacce localizzate come il francese. (SITES-36795)
-* La sezione Assets nell’Editor modelli ora mostra un’etichetta di Tag tradotti. Le interfacce di authoring localizzate presentano etichette coerenti durante la configurazione del modello. (SITES-33770)
-* Le descrizioni dei criteri di pagina ora vengono visualizzate correttamente nell’Editor modelli. Gli utenti possono leggere la guida completa sulle classi CSS predefinite senza troncare il testo nella scheda Stili. (SITES-29724)
-* Ora quando un autore tenta di trascinare un componente su un modello eliminato, nell’Editor modelli viene visualizzato un errore localizzato. Il messaggio non viene più visualizzato come stringa non tradotta &quot;durante l’elaborazione&quot;. (SITES-19313)
-* Ora viene visualizzata l’etichetta &quot;Target&quot; nella finestra Configurazione teaser con testo localizzato. La sezione Collegamento ipertestuale non mostra più la stringa inglese in lingue diverse dall&#39;inglese. (SITES-18622)
-* La finestra di dialogo Avvia flusso di lavoro nell’Editor pagina ora visualizza le etichette delle azioni per il flusso di lavoro localizzato. Gli autori non visualizzano più le stringhe in inglese per le opzioni del flusso di lavoro. Le opzioni includono le azioni di approvazione, pubblicazione, richiesta e annullamento della pubblicazione. (SITES-18103)
-* Il menu a discesa Padre nel pannello di modifica Separatore ora visualizza le stringhe localizzate senza troncamento. Gli autori possono rivedere l’etichetta completa quando configurano il componente. (SITES-17480)
-* L’Editor pagina ora visualizza le etichette localizzate per &quot;Larghezza intera&quot; e &quot;Larghezza fissa&quot; nel menu Stili del componente Contenitore. Gli autori che utilizzano le lingue supportate non visualizzano più tali stringhe in inglese. (SITES-17478)
-* Ora gli autori possono leggere la descrizione completa nell’area Proprietà di navigazione della console Modelli. L’interfaccia utente mantiene la descrizione allineata e impedisce il troncamento del testo durante la modifica del modello. (SITES-15480)
-* Gli autori ora possono leggere l’etichetta completa &quot;Forms e documenti con modello&quot; nel pannello laterale Riferimenti. La console Modelli non taglia più la stringa per le lingue supportate. (SITES-13167)
-* Nella vista Riferimenti viene ora utilizzato il testo localizzato per il messaggio di errore di aggiornamento. Gli autori visualizzano i messaggi tradotti quando AEM non può aggiornare l’elenco dei riferimenti. (SITES-13102)
-* La convalida del modulo ora identifica il campo che contiene un valore di ora non valido. La finestra modale Alterazione ora visualizza un messaggio di errore più chiaro, in modo che gli autori possano correggere il campo Ore o Minuti interessato. (SITES-10980)
-* Nella console Modelli ora viene visualizzata un’etichetta Assets localizzata nella finestra di dialogo Seleziona immagine. L’etichetta viene visualizzata correttamente quando gli autori sfogliano le risorse dalle proprietà del modello. (SITES-8113)
+#### Back-end core{#sites-core-backend-6526}
 
-#### MSM - Live Copy{#sites-msm-live-copies-6525}
+* L’attivazione pianificata della pagina tramite l’ora di attivazione viene ora eseguita solo quando necessario. `OnOffTriggerProcessor` ha attivato in precedenza la replica e l&#39;annullamento della validità della cache troppo spesso, costringendo gli autori a ripubblicare il contenuto manualmente. La correzione backported elimina l’elaborazione non necessaria e ripristina la pubblicazione pianificata affidabile. (SITES-48483)
 
-* La Panoramica Live Copy ora localizza i formati delle date nella vista Stato relazione. I campi L **Live Copy Source Last Modified**, **Live Copy Last Modified** e **Last rollout** mostrano date che corrispondono alle impostazioni locali dell&#39;utente. (SITES-40756)
-* MSM ora registra ulteriori dettagli per gli eventi push-on-modify. Le informazioni sull’evento aggiunte consentono ai team di tracciare l’attività di rollout e identificare l’origine di modifiche di pagina impreviste. (SITES-38029)
+* Il caricamento dei file funziona per le risorse remote da Gestione risorse di nuova generazione in un campo multiplo. In precedenza, il caricamento non riusciva quando gli autori sceglievano una risorsa remota per un campo all’interno di un campo multiplo. L’aggiornamento dei Componenti core ripristina il flusso di caricamento, in modo che il campo accetti la risorsa. (SITES-44266)
 
-#### Editor di pagine{#sites-pageeditor-6525}
 
-* Gli autori possono ora creare tag che includono lettere maiuscole o spazi e applicarli durante il primo salvataggio delle Proprietà pagina. Durante la stessa operazione, AEM crea il tag e scrive il valore corretto nei metadati della pagina. (SITES-42550)
+#### Componenti core{#sites-core-components-6526}
 
-* Gli autori ora possono creare frammenti di contenuto nelle cartelle DAM i cui nomi contengono un apostrofo. AEM gestisce correttamente il percorso della cartella codificata e non attiva più un’eccezione NullPointerException durante la creazione. (SITES-38653)
+* Il selettore risorse remote mantiene separata l’immagine di ogni elemento con più campi. In precedenza, quando si selezionava un’immagine in un elemento con più campi, questa veniva applicata a tutti gli altri elementi e il riferimento della risorsa remota non veniva salvato. Ogni elemento ora contiene la propria selezione e il riferimento persiste dopo il salvataggio della finestra di dialogo. (SITES-42376)
 
-* AEM ora supporta le azioni di copia e incolla per i componenti Frammento di contenuto configurati nell’Editor pagina. Il componente conserva il riferimento Frammento di contenuto, in modo che gli autori possano duplicare il contenuto senza dover eseguire nuovamente l’authoring manuale. (SITES-41586)
-* L’Editor pagina ora visualizza correttamente le descrizioni del primo campo nelle finestre di dialogo dei componenti. Le descrizioni lunghe rimangono visibili, pertanto gli autori possono rivedere le istruzioni dei campi senza perdere testo nella parte superiore della descrizione comando. (SITES-39937)
-* Gli autori possono ora aprire la finestra di dialogo Collegamento editor Rich Text quando utilizzano AEM su HTTP. La correzione ripristina la modifica dei collegamenti per gli ambienti locali che non utilizzano HTTPS. (SITES-39467)
+* Questa versione include correzioni backported per Commerce, Componenti core, Componenti di base (legacy), Launches e Live Copy MSM. Le correzioni riguardano vulnerabilità di sicurezza, violazioni cross-site scripting (XSS), comportamento di caricamento dei file e comportamento Live Copy. I backport consentono di allineare AEM 6.5 e AEM 6.5 LTS alle correzioni fornite in precedenza in AEM as a Cloud Service. (SITES-43738)
 
-<!-- #### Replication{#sites-replication-6525} -->
 
-<!-- #### Rich Text Editor{#sites-rte-6525} -->
+<!--
+#### Campaign integration{#sites-campaign-integration-6526}
 
-#### Editor universale {#sites-universal-editor-6525}
+#### ContentHub {#sites-contenthub-6526}
 
-* Per impostazione predefinita, Universal Editor non si apre più in modalità Anteprima. AEM invia gli utenti all’ambiente di produzione Universal Editor, a meno che non richiedano esplicitamente il comportamento di anteprima. (SITES-37193)
-* Universal Editor ora si apre in modalità Anteprima per gli ambienti di sviluppo, sviluppo rapido e stage di AEM. Il comando Apri utilizza il comportamento di anteprima corretto per le istanze non di produzione. (SITES-33839)
+#### Crosswalk {#sites-crosswalk-6526}
 
-### [!DNL Assets] {#assets-6525}
+#### Experience Fragments{#sites-experiencefragments-6526}
 
-* La libreria client Le mie condivisioni ora gestisce in modo sicuro i dati del titolo della risorsa condivisa prima di aggiungerla al markup della pagina. Le pagine di condivisione generate non espongono più gli utenti all’inserimento di script tramite metadati di risorse manipolati. (ASSETS-60898)
+#### Foundation Components (Legacy){#sites-foundation-components-legacy-6526}
+-->
 
-* Le licenze di Adobe Stock ora funzionano correttamente nell’interfaccia utente di Assets. Il pulsante License (Licenza) non rimane più disattivato dopo il caricamento da parte di AEM del profilo della risorsa Stock e dei dati di adesione. (ASSETS-62610)
-* La notifica di scadenza della risorsa standard ora gestisce correttamente le date di scadenza. Le e-mail di promemoria vengono eseguite quando il tempo rimanente raggiunge la soglia configurata invece di saltare le risorse con una scadenza di otto giorni. (ASSETS-57857)
 
-* AEM Assets ora ripristina la navigazione da tastiera dopo che gli utenti hanno scelto una ricerca salvata. L’interfaccia consente agli utenti di allontanarsi dal menu a discesa senza aggiornare o riavviare la vista Assets. (ASSETS-52061)
+#### Headless - Amministratore {#sites-headless-admin-6526}
 
-* Il flusso di lavoro di download della visualizzazione amministratore ora mantiene correttamente i nomi dei file ZIP. Il download di una risorsa ZIP non produce più un nome file con estensione .zip doppia. (ASSETS-62207)
-* Il flusso di lavoro di riferimento Assets ora gestisce correttamente gli spazi nei nomi dei file. Gli aggiornamenti delle risorse correlate non hanno più esito negativo se il nome di un file selezionato include uno o più spazi. (ASSETS-56418)
+Miglioramento: la vista Anteprima nell’amministratore headless ora passa il percorso della variante selezionata al componente di anteprima. Questa modifica garantisce che le anteprime di frammenti di contenuto con più varianti caricino il contenuto dalla variante corretta. L&#39;array `draftFragmentIds` include il parametro di variante. (SITES-42714)
 
-#### [!DNL Dynamic Media]{#assets-dm-6525}
 
-Il menu a discesa Sottotitoli e tracce audio mostra ora l’arabo come lingua supportata in Dynamic Media. Questo aggiornamento consente agli utenti di aggiungere tracce di sottotitoli in arabo senza soluzioni alternative personalizzate. (ASSETS-61771)
+#### Lanci{#sites-launches-6526}
 
-### [!DNL Forms]{#forms-6525}
+* Le voci della timeline per i lanci promossi ora vengono visualizzate nella lingua dell’utente. In precedenza, le stringhe &quot;Created version of&quot; (Versione creata di) e &quot;before promotion launch&quot; (Prima di promuovere il lancio) rimanevano in inglese dopo che gli autori avevano promosso un lancio e aperto la Timeline per il sito in Sites. Le risorse aggiornate forniscono le traduzioni in tutte le lingue. (SITES-13389)
+* Il segnaposto Seleziona percorso di Launch Source nel pannello dei filtri Launches viene visualizzato completamente. In precedenza, il testo veniva tagliato nelle interfacce localizzate, come francese, italiano e portoghese, perché non rientrava nel campo. Il layout aggiornato mostra il segnaposto completo. (SITES-42792)
+* La colonna Data attivazione in Strumenti > Siti > Lanci non mostra più AM o PM nelle lingue tedesca, francese, spagnola, italiana, portoghese brasiliana e cinese tradizionale. In precedenza, la colonna utilizzava un formato di 12 ore che non corrispondeva a tali impostazioni internazionali. Nella colonna viene ora visualizzato il formato 24 ore. (SITES-43178)
 
-* L&#39;anteprima delle comunicazioni interattive ora carica correttamente il contenuto dopo AEM Forms Service Pack 6.5.24.0. Poiché il testo non viene più caricato lentamente senza spazi, l’anteprima corrisponde al contenuto creato e rimane più facile da leggere. (FORMS-25346)
-* I dettagli di convalida vengono ora visualizzati nei componenti core di Forms adattivi dopo aver configurato un modello di convalida e aver salvato il modulo. Il pattern rimane visibile nell&#39;interfaccia di creazione. (FORMS-25236)
-* La generazione di documenti ora gestisce correttamente i frammenti XDP (Extensible Forms Description Language) nidificati negli ambienti AEM Forms 6.5 Service Pack 23 e AEM Forms Service Pack 6.5.24.0. (FORMS-25234)
-* Durante la riconvalida lato server di Adaptive Forms tramite il motore Rhino, ora il testo localizzato all’esterno dei frammenti di modulo viene visualizzato nella lingua corretta. Dopo l’invio, il testo non torna più alla lingua predefinita. (FORMS-25224)
-* Il servizio di output non si arresta più in modo anomalo a causa di un errore di istruzione non valida in Red Hat Enterprise Linux (RHEL) 8 dopo l&#39;aggiornamento ad AEM Forms Service Pack 6.5.24.0. Generazione dei documenti ed elaborazione dell&#39;output dei moduli completate senza interruzioni brusche del servizio. (FORMS-25192)
-* I pannelli e il contenuto aggiunti in modo dinamico utilizzando la funzione addInstance() in Adaptive Forms ora vengono visualizzati quando il numero iniziale di istanze è impostato su 0. (FORMS-25169, FORMS-25124)
-* Le traduzioni in cinese tradizionale (Hong Kong) ora vengono visualizzate correttamente negli ambienti di authoring e pubblicazione dopo l&#39;aggiornamento ad AEM Forms Service Pack 6.5.24.0. Il contenuto zh-HK localizzato non viene più visualizzato nella lingua errata o viene reindirizzato alle stringhe predefinite in modo imprevisto. (FORMS-25042)
-* La navigazione da tastiera sposta lo stato attivo in modo coerente attraverso il campo della firma scarabocchio in Adaptive Forms durante la tabulazione nel modulo. (FORMS-25011)
-* I file WSDL (Web Services Description Language) ora vengono caricati correttamente nel passaggio Richiama servizio Web durante le operazioni di configurazione e aggiornamento. (FORMS-24992, FORMS-24789, FORMS-24188)
-* Le bozze di lettere ora mantengono le interruzioni di riga quando si applicano le condizioni ai frammenti di testo. Il contenuto su più righe non viene più visualizzato come una singola riga continua. (FORMS-24602)
-* I flussi di lavoro di Adobe Sign in AEM Forms su Adobe Managed Services (AMS) non si interrompono più se la risposta sullo stato del segno non viene restituita dopo aver raggiunto il passaggio di Adobe Sign. (FORMS-24514)
-* La conversione da HTML a PDF (Portable Document Format) non si interrompe più in modo intermittente in AEM Forms Service Pack 6.5.24.0, anche per processi di conversione più grandi o complessi. (FORMS-23978)
-* La gestione della modalità di backup sicuro nell’interfaccia utente di amministrazione ora funziona correttamente dopo l’installazione della patch AEMForms-6.5.0-0112. Gli utenti possono disattivare o disattivare la modalità di backup sicuro quando questa opzione è disponibile. (FORMS-23976, FORMS-23718)
-* La ricerca dell&#39;origine dati del modello dati modulo non ha più esito negativo o visualizza i tag HTML (HyperText Markup Language) non elaborati nei risultati della ricerca. I risultati mostrano testo leggibile. (FORMS-23875)
-* Le funzioni personalizzate ora vengono caricate in fase di runtime quando Forms adattivo è incorporato nelle pagine Sites utilizzando le versioni dei componenti core supportate in AEM Forms Service Pack 6.5.24.0. (FORMS-23802)
-* Le regole numeriche per le comunicazioni interattive ora valutano correttamente i valori durante l’analisi con la libreria aggiornata Sling Commons JavaScript Object Notation (JSON). I campi numerici gestiscono le modifiche di analisi BigDecimal in modo coerente. (FORMS-23733)
-* Il comportamento del documento record è ora coerente quando si lavora tra le versioni 6.5.0 e successive. L’output del modulo e la relativa elaborazione si allineano al comportamento previsto dagli ambienti più recenti. (FORMS-23338)
 
-#### JEE per Forms {#forms-jee-6525}
+<!--
+#### Link Checker{#sites-link-checker-6526}
+-->
 
-* L’avvio dell’applicazione non ha più esito negativo durante il caricamento del componente di registrazione con l’errore &quot;no class found&quot; per org.owasp.esapi.reference.JavaLogFactory. Gli ambienti interessati vengono inizializzati correttamente senza che sia necessario riavviare o riconfigurare il servizio. (FORMS-25348)
-* Avvio completato dopo l&#39;applicazione del Service Pack 25. Il processo di avvio automatico del sistema non ha più esito negativo prima del completamento dell&#39;inizializzazione. (FORMS-25347)
-* I componenti core PDF (Portable Document Format) (CPDF) ora vengono generati ed eseguiti correttamente in ambienti Linux senza interruzioni impreviste durante l’esecuzione. (FORMS-25115)
-* La decodifica del codice a barre non ha più esito negativo in presenza di errori DecodingException durante l&#39;elaborazione di alcuni file PDF (Portable Document Format) durante l&#39;estrazione del codice a barre. (FORMS-23534, FORMS-23449)
 
-#### Forms Designer {#forms-designer-6525}
+#### Localizzazione{#sites-localization-6526}
 
-* L’output ExportData ora corrisponde ai dati del modulo quando si utilizza ExportData nella versione 6.5. I campi XML (Extensible Markup Language) esportati sono allineati ai valori visualizzati nei moduli originali. (LC-3922791)
-* Il servizio di output ora genera i tag di accessibilità corretti nei file PDF (Portable Document Format) creati in AEM Forms Service Pack 6.5.22.0. Le tecnologie per l’accessibilità leggono il contenuto nell’ordine corretto senza saltare gli elementi. (LC-3922756)
-* Il servizio di output ora riflette correttamente gli stati dei campi nascosti o disabilitati quando si appiattiscono i moduli PDF (Portable Document Format) con l’assegnazione tag abilitata. (LC-3922708)
-* Ai campi con sottotitoli in basso nel Workbench vengono ora assegnati tag corretti, che migliorano la coerenza e l’accessibilità dei documenti generati. (LC-3922619)
-* I codici QR nei moduli rimangono analizzabili dopo l&#39;aggiornamento ad AEM Forms Service Pack 6.5.20.0. Gli scanner standard leggono in modo affidabile i codici QR generati. (LC-3922551)
-* Il rendering del servizio Forms ora produce un output coerente quando si utilizza un input identico tra Service Pack diversi. I valori di rendering non differiscono più tra AEM Forms Service Pack 6.5.17.0 e AEM Forms Service Pack 6.5.18.0. (LC-3922461)
-* I documenti PDF/A generati dai modelli XDP (XML Data Package) ora eseguono correttamente il rendering degli stili dei bordi Incassati. L&#39;aspetto del campo modulo corrisponde al layout progettato. (LC-3922180)
-* Gli invii in formato PDF (Portable Document Format) appiattito ora conservano i dati in tutte le sezioni. I valori immessi rimangono nel documento appiattito finale. (LC-3922008)
-* I file PDF (Portable Document Format) statici convertiti non generano più più più tag di collegamento da un singolo collegamento nel modello XDP originale. (LC-3921997)
-* L’esportazione degli invii da AEM Forms ora include tutti i campi nei file di output esportati. (LC-3921983)
+* Le stringhe nelle pagine dei report di stato in **Strumenti** > **Operazioni** vengono ora visualizzate nella lingua dell&#39;utente. In precedenza, i messaggi relativi a Percorso di ricerca delle risorse, Manutenzione, Coda di replica, Errori di registro, Bundle attivi e Prestazioni richieste rimanevano in lingua inglese. Le risorse i18n aggiornate forniscono le traduzioni e un file di fallback mantiene le stringhe disponibili. (NPR-44279)
 
+* Il messaggio di errore &quot;Le impostazioni del percorso JSON vengono ignorate quando è selezionata l&#39;opzione &#39;Aggiungi manualmente&#39;&quot; ora viene visualizzato nella lingua dell&#39;utente nella console **Strumenti** > **Assets** > **Schemi di metadati**. In precedenza, il messaggio rimaneva in inglese dopo che gli autori avevano aggiunto un elemento a discesa, avevano selezionato Aggiungi tramite percorso JSON e avevano scelto Aggiungi manualmente. Le risorse aggiornate forniscono le traduzioni. (ASSETS-31575)
+* La stringa &quot;innalzato di livello&quot; in **Assets** > **Gestisci** tag ora viene visualizzata nella lingua dell&#39;utente. In precedenza, la stringa rimaneva in inglese quando si passava il cursore sopra uno smart tag dopo aver selezionato Promuovi. Le risorse aggiornate forniscono la traduzione in tutte le lingue. (ASSETS-36070)
+* L&#39;etichetta del pulsante Aggiungi non si sovrappone più al pulsante in **Proprietà cartella** > **Contributo risorsa**. In precedenza, il testo si scontrava con il pulsante nelle interfacce tedesca, italiana e portoghese brasiliana dopo aver creato una cartella con l’impostazione &quot;Contributo risorse&quot;. Gli stili aggiornati offrono alle etichette tradotte più a lungo spazio sufficiente. (ASSETS-36746)
+* I titoli delle colonne nella Vista a elenco di Assets ora vengono visualizzati orizzontalmente nell’interfaccia giapponese. In precedenza, i titoli venivano visualizzati in verticale nella Vista a elenco in **Assets** > **File** e nella vista a schede dell&#39;editor frammenti di contenuto. Il pacchetto `cq-dam-content` aggiornato corregge la direzione del testo.(ASSETS-43105)
+* Nella vista a colonne di Assets, ora nella lingua dell’utente viene visualizzato lo stato di pubblicazione &quot;Pianificato per un momento successivo&quot;. In precedenza, la stringa rimaneva in inglese dopo che gli autori avevano selezionato una risorsa, scelto **Gestisci pubblicazione**, selezionato l&#39;opzione **Più tardi**, aggiunto una data e pubblicato. Il pacchetto `cq-dam-content` aggiornato fornisce le traduzioni in tutte le lingue. (ASSETS-43307)
+* Le stringhe nella scheda **Configurazione tag avanzati** vengono ora visualizzate completamente per il francese e il portoghese brasiliano. In precedenza, il testo veniva tagliato dopo aver fatto clic su **Crea** in **Strumenti** > **Servizi cloud** > **Tag avanzati**. Per leggere il testo senza una descrizione, utilizza l’aggiornamento CSS che fornisce spazio sufficiente. (ASSETS-68045)
+* La stringa &quot;Predicato proprietà valore percorso multiplo&quot; nella barra di ricerca di amministrazione di Assets ora viene visualizzata nella lingua dell’utente. In precedenza, la stringa rimaneva in inglese quando gli amministratori modificavano il modulo di ricerca in **Strumenti** > **Generale** > **Cerca** moduli e trascinavano il predicato nel modulo. Il pacchetto `cq-dam-content` aggiornato fornisce le traduzioni.(CQ-4336103)
+* Le etichette Aria nella vista Progetti ora vengono visualizzate nella lingua dell’utente. In precedenza, il pulsante Azioni su ogni sezione del progetto non aveva un nome accessibile e l’azione Configura sezione utilizzava un’etichetta inglese hardcoded mentre le etichette di pari livello erano localizzate. Lo script di riquadro aggiornato fornisce un’etichetta localizzata per entrambe le azioni. (CQ-4352359)
+* Ora le raccolte avanzate con caratteri cinesi, giapponesi o coreani nel nome vengono salvate correttamente. In precedenza, il salvataggio di una raccolta da **Assets** > **Files** > **Filter** non era riuscito con &quot;Save Search Failed - Invalid request, duplicate collection not allowed&quot; (Salvataggio della ricerca non riuscito - Richiesta non valida, raccolta duplicata non consentita) quando il nome conteneva caratteri CJK. Il controllo dei duplicati ora confronta i titoli delle raccolte anziché i nomi dei nodi, in modo che le raccolte con titoli CJK diversi non entrino più in conflitto. (GRANITE-62592)
+* Il menu a discesa Paese in **Sicurezza** > **Utenti** > **Crea** ora ordina alfabeticamente i nomi nella lingua dell&#39;utente. In precedenza, l’elenco elencava i nomi ordinati in inglese mentre mostrava i nomi localizzati, pertanto i paesi risultavano fuori ordine in lingue come il giapponese. Il bundle `com.adobe.granite.security.content` aggiornato viene ordinato in base alle regole che supportano le impostazioni locali. (GRANITE-67789)
+* La liberatoria sull&#39;attività di manutenzione del Registro di controllo in **Strumenti** > **Operazioni** > **Manutenzione** viene ora visualizzata nella lingua dell&#39;utente. In precedenza, l’avviso relativo all’eliminazione del registro di audit e ai requisiti di conformità rimaneva in inglese dopo che gli utenti avevano fatto clic sull’icona della liberatoria nella finestra Manutenzione settimanale. Le risorse aggiornate forniscono la traduzione in tutte le lingue. (NPR-44189)
+* I nomi delle autorizzazioni in **Sicurezza** > **Autorizzazioni** > **Visualizzazione di controllo** vengono ora visualizzati nella lingua dell&#39;utente. In precedenza, i nomi apparivano in inglese perché mancavano le traduzioni. Il bundle `com.adobe.granite.platform.i18n` aggiornato li fornisce. (NPR-44477)
+* La finestra di dialogo Verifica stato in **Sicurezza** > **Configurazioni Adobe IMS** viene ora visualizzata nella lingua dell&#39;utente. In precedenza, la finestra di dialogo mostrava stringhe inglesi nelle interfacce localizzate perché mancavano le traduzioni. Il bundle `com.adobe.granite.platform.i18n` aggiornato li fornisce. (NPR-44479)
+* Le stringhe nello strumento Diagnostica sincronizzazione utenti in **Strumenti** > **Operazioni** > **Diagnosi** vengono ora visualizzate nella lingua dell&#39;utente. In precedenza, lo strumento mostrava testo inglese nelle interfacce localizzate. Il bundle `com.adobe.granite.platform.i18n` aggiornato fornisce le traduzioni. (NPR-44481)
+* I flussi di configurazione ora mostrano messaggi di errore di facile utilizzo nella lingua dell’utente. Precedentemente, errori nelle pagine di configurazione di AEM generavano testo tecnico o non tradotto. Il bundle `com.adobe.granite.ui.content` aggiornato gestisce gli errori e fornisce messaggi localizzati. (NPR-44840)
+* Il messaggio di errore visualizzato quando si modificano le proprietà di un gruppo eliminato in **Sicurezza** > **Gruppi** viene ora visualizzato nella lingua dell&#39;utente. In precedenza, il messaggio rimaneva in inglese per le interfacce localizzate. Il bundle `com.adobe.granite.security.content` aggiornato fornisce le traduzioni. (NPR-44841)
+* Il messaggio di errore &quot;Si è verificato un errore durante il salvataggio delle modifiche nel gruppo!&quot; ora viene visualizzato nella lingua dell&#39;utente nella console **Sicurezza** > **Gruppi** > **Modifica gruppo**. In precedenza, il messaggio rimaneva in inglese per le interfacce localizzate. Il bundle `com.adobe.granite.security.content` aggiornato fornisce le traduzioni. (NPR-44842)
+* I caratteri cinesi, giapponesi e coreani non vengono più visualizzati in corsivo nel messaggio di errore relativo all’icona Posta in arrivo. In precedenza, lo stile corsivo distorceva i caratteri e rendeva il testo più difficile da leggere. Il bundle `com.adobe.granite.ui.coralui3` aggiornato rimuove lo stile di tali lingue. (NPR-44843)
+* I numeri in **Operazioni** > **Monitoraggio** ora seguono il formato locale dell&#39;utente. In precedenza, la pagina mostrava numeri in un formato fisso indipendentemente dalla lingua dell’interfaccia. Il bundle `com.adobe.granite.monitoring.dashboard` aggiornato applica i separatori e il formato corretti. (NPR-44844)
+* Nella scheda Spiega query è ora visibile lo strumento Query Builder Debugger. nella lingua dell’utente. In precedenza, il testo del collegamento era mancante nelle interfacce localizzate perché la stringa non era esternalizzata. Il bundle `com.adobe.granite.monitoring.dashboard` aggiornato lo ripristina. (NPR-44845)
+* Il testo nella finestra di dialogo dello strumento Query Builder Debugger viene ora visualizzato nella lingua dell&#39;utente nella scheda Spiega query. In precedenza, diverse stringhe rimanevano in inglese perché non erano esternalizzate. Il bundle `cq-platform-content` aggiornato fornisce le traduzioni. (NPR-44846)
+* Il testo nella pagina Risultato del controllo di coerenza ora viene visualizzato nella lingua dell’utente. In precedenza, diverse stringhe apparivano in inglese perché non erano esternalizzate. Il bundle `com.adobe.granite.operations.ui.core` aggiornato fornisce le traduzioni. (NPR-44847)
+* Il Grafico di monitoraggio ora visualizza le etichette dei mesi e delle settimane nella lingua dell&#39;utente. In precedenza, le etichette erano hardcoded in inglese, pertanto il grafico ignorava le impostazioni locali dell’interfaccia. Il bundle `com.adobe.granite.monitoring.dashboard` aggiornato esternalizza le stringhe e ora vengono visualizzate le traduzioni. (NPR-44848)
+* Il menu a discesa Paese in **Sicurezza** > **Utenti** > **Crea** ora ordina correttamente le voci. In precedenza, per alcune lingue i nomi dei paesi localizzati apparivano in ordine errato. Il bundle `com.adobe.granite.security.content` aggiornato applica l&#39;ordinamento in base alle impostazioni locali. (NPR-44942)
+* Le descrizioni comandi nella finestra di dialogo del componente Pulsante vengono ora visualizzate nella lingua dell’utente. In precedenza, il testo delle informazioni per i campi Testo pulsante, Collegamento, Icona, HTML ID e `aria-label` rimaneva in inglese anche se le stringhe erano presenti nel servizio di localizzazione. Il dizionario aggiornato fornisce le traduzioni in tutte le lingue supportate. (SITES-7579)
+* Le descrizioni nella sezione Proprietà del componente Elenco frammenti di contenuto vengono ora visualizzate nella lingua dell’utente. In precedenza, il testo delle informazioni per i campi Modello per frammento di contenuto, Tag, Numero massimo di elementi, Percorso principale, Ordinamento e Ordina per rimaneva in inglese. Il dizionario aggiornato fornisce le traduzioni per tutte le lingue supportate. (SITES-14969)
+* I collegamenti della Guida per i Componenti core nell’Editor modelli ora consentono di accedere alle pagine localizzate della documentazione. In precedenza, selezionando Aiuto nella finestra di dialogo di configurazione del componente, veniva aperta la pagina Inglese indipendentemente dalla lingua dell’interfaccia. Gli URL aggiornati ora indirizzano gli utenti alla pagina per la lingua. (SITES-15058)
+* Le descrizioni comandi delle informazioni nella finestra di dialogo Frammento di contenuto vengono ora visualizzate nella lingua dell’utente. In precedenza, il testo della descrizione comando per le modalità Elemento di testo singolo e Più elementi e per il percorso Frammento di contenuto rimaneva in inglese. Un dizionario aggiornato fornisce traduzioni per tutte le lingue. (SITES-17333)
+* I messaggi di errore nell’editor dei criteri dei componenti dell’Editor modelli ora vengono visualizzati nella lingua dell’utente. In precedenza, i messaggi &quot;La risorsa {} non è modificabile&quot; e &quot;Impossibile creare un nodo in&quot; rimanevano in inglese quando gli autori modificavano un criterio per un componente o ne creavano uno nuovo. Le risorse aggiornate forniscono traduzioni per tutte le lingue supportate. (SITES-17475)
+* Nella scheda Assets dell’Editor pagina ora viene visualizzata una stringa tradotta nel menu a discesa Seleziona componenti, dopo aver scelto Paragrafi dal menu a discesa Immagini. In precedenza, la stringa &quot;OTHER&quot; appariva in inglese perché mancava nelle risorse di localizzazione. Il dizionario aggiornato fornisce la traduzione in tutte le lingue. (SITES-21481)
+* Le descrizioni comandi nella finestra di dialogo Configura componente Editor pagina non mostrano più un&#39;interruzione di riga aggiuntiva. In precedenza, le descrizioni dei componenti, come PDF Viewer e Progress Bar, venivano racchiuse in modo errato in diverse lingue. Ora le descrizioni comandi vengono racchiuse correttamente e la sillabazione delle parole funziona come previsto. (SITES-38567)
+* La descrizione comando &quot;per uscire dall’editor di testo premi il tasto ESC&quot; viene ora visualizzata nella lingua dell’utente nella finestra di dialogo di configurazione del componente Testo. In precedenza, la stringa veniva visualizzata in inglese perché mancava nelle risorse di localizzazione. La descrizione comando ora si traduce in tutte le lingue. (SITES-43186)
+* L&#39;etichetta STRUCTURE nell&#39;Editor modelli ora viene visualizzata nella lingua dell&#39;utente. In precedenza, l’etichetta rimaneva in inglese quando gli autori aprivano un modello di modulo adattivo, perché la stringa non era presente nelle risorse di localizzazione. L&#39;etichetta ora si traduce in tutte le lingue. (SITES-43599)
 
-### Foundation {#foundation-6525}
 
-#### Apache Felix {#foundation-apachefelix-6525}
+#### MSM - Live Copy{#sites-msm-live-copies-6526}
 
-Il servizio CredentialsSupport per l&#39;autenticazione basata su Felix viene ora eseguito correttamente all&#39;avvio. In questo modo si evitano errori di dipendenza che possono influire sull’autenticazione dei token durante l’avvio di AEM. (GRANITE-63186)
+* La finestra di dialogo Rollout MSM carica nuovamente l’elenco Live Copy dopo un aggiornamento. In precedenza, un `NullPointerException` in `AsyncOperationServlet.doGet` ha interrotto la finestra di dialogo su un dispositivo di rotazione, pertanto gli autori non sono riusciti a selezionare le impostazioni locali di destinazione o ad avviare il rollout. Un bundle `com.adobe.granite.jobs.async` aggiornato gestisce i dati del processo mancanti e completa la richiesta. (SITES-43116)
+* Il rollout dalla barra degli strumenti modificabile in una pagina blueprint funziona di nuovo. Azione della barra degli strumenti non riuscita con &quot;Impossibile leggere le proprietà di non definito (lettura di &#39;doRollout&#39;)&quot; perché la libreria client `MSM.Rollout` non è stata caricata. La pagina aggiornata carica ora la libreria, quindi inizia il processo di rollout e le modifiche raggiungono le Live Copy. (SITES-46052)
 
-<!-- #### Campaign{#foundation-campaign-6525} -->
+* La disattivazione batch di una pagina blueprint e delle relative pagine figlie non invia più eventi di rollout duplicati. Quando hai disattivato un elemento padre e i relativi elementi secondari in una richiesta, il sistema di replica ha emesso cinque eventi invece di tre e ogni pagina figlio è stata sottoposta a rollout due volte. La deduplicazione nel gestore di rollout ora invia un rollout per pagina, quindi le Live Copy non ricevono pacchetti ridondanti. (SITES-44988)
 
-<!-- #### Cloud Services{#foundation-cloudservices-6525} -->
 
-<!-- #### Communities {#foundation-communities-6525} -->
+#### Editor pagina{#sites-pageeditor-6526}
 
-<!-- #### Content distribution{#foundation-content-distribution-6525} -->
+* Lo stile selezionato rimane evidenziato nella finestra di dialogo di selezione dello stile Editor pagina dopo lo scorrimento dell&#39;elenco. In precedenza, uno stile veniva evidenziato quando lo si selezionava, ma l&#39;evidenziazione svaniva quando si faceva clic sulla barra di scorrimento. Questa regressione è iniziata dopo SP22 e la finestra di dialogo ora mantiene visibile lo stato selezionato. (SITES-30874)
 
-#### Adobe CRX {#foundation-crx-6525}
+* Gli autori possono modificare le pagine in modalità Layout quando i componenti principali e secondari definiscono punti di interruzione reattivi diversi. La funzione getResponsiveCssClasses non è riuscita in precedenza con un TypeError sui componenti che hanno omesso la larghezza di cq:responsive/telefono. Ora la funzione torna ai valori disponibili e continua il rendering. (SITES-46681)
+* I rapporti di ritaglio personalizzati ora vengono caricati in modalità di modifica in linea ibrida per i componenti con più destinazioni di rilascio delle immagini. In precedenza, l’Editor immagini inizializzava un ipeConfig generico per tutte le destinazioni di rilascio, quindi mostrava solo le proporzioni predefinite e ignorava le proporzioni di ciascuna destinazione. L’editor ora legge la configurazione della destinazione di rilascio selezionata e il ritaglio viene applicato sia nella vista in linea che nella vista a schermo intero. (SITES-45771)
+* Premendo Backspace nell’Editor Rich Text non vengono aggiunti al testo stili inline aggiuntivi. Un cliente ha segnalato che la rimozione di un’interruzione di riga dopo il testo in grassetto ha aggiunto style=&quot;font-size: 0.8125rem; background-color: transparent;&quot; al tag in grassetto. Il test sul service pack più recente non è riuscito a riprodurre il comportamento, pertanto non è stata necessaria alcuna modifica. (SITES-15883)
 
-La modifica dei file JSP ora funziona come previsto in CRXDE Lite dopo gli aggiornamenti di AEM 6.5. L’editor CodeMirror carica il contenuto del file invece di lasciare vuota la scheda JSP. (GRANITE-64333)
 
-<!-- #### Granite{#foundation-granite-6525} -->
+<!--
+#### Replication{#sites-replication-6526}
+-->
 
-<!-- #### Integrations{#foundation-integrations-6525} -->
 
-<!-- #### Jetty{#foundation-jetty-6525} -->
+#### Editor Rich Text{#sites-rte-6526}
 
-#### Localizzazione{#foundation-localization-6525}
+* I pulsanti della barra degli strumenti dell’Editor Rich Text funzionano in modalità Visualizzazione reattiva e Layout. In precedenza, i pulsanti venivano evidenziati quando si faceva clic su di essi, ma la selezione rimaneva invariata e non veniva aperta alcuna finestra di dialogo. Lo script dell’editor aggiornato applica la formattazione, che corrisponde al comportamento in modalità Modifica. (SITES-44233)
+* Gli autori possono aggiungere simboli di valuta e di marchio ai componenti Testo senza perderli. Il plug-in Caratteri speciali (Special Characters) ha inserito i simboli, ma questi vengono visualizzati come spazi sia nell&#39;editor che nell&#39;output pubblicato. La gestione corretta esegue il rendering di ogni simbolo come inserito. (SITES-46532)
+* L’icona Schermo intero nella barra degli strumenti dell’Editor Rich Text espande nuovamente l’editor. In precedenza, facendo clic sull’icona nel componente Testo core non veniva eseguita alcuna operazione e le dimensioni dell’editor rimanevano invariate. Gli autori ora dispongono di un’area di lavoro specifica per i contenuti in formato esteso, sia nella modifica in linea che nella modifica tramite finestra di dialogo. (SITES-46396)
 
-* La finestra di dialogo Caricamento certificato in Sicurezza > Archivio attendibile ora mostra le etichette per il formato dei dati localizzati. Gli utenti non visualizzano più le etichette inglesi non localizzate quando aggiungono un certificato. (NPR-43412)
 
-* La finestra di dialogo Crea registro chiavi allinea il pulsante Annulla agli altri pulsanti della finestra di dialogo. Il layout del pulsante rimane coerente e non si sposta più fuori allineamento. (NPR-43291)
-* Nella finestra di dialogo Verifica in **Sicurezza** > A **Configurazioni DOBE IMS** viene ora visualizzato il testo di conferma localizzato. I messaggi di controllo ed eliminazione non vengono più visualizzati come stringhe inglesi non localizzate. (NPR-43289)
-* Le etichette dell’interfaccia utente localizzate ora vengono visualizzate correttamente nelle finestre di dialogo interessate e nella scheda Registro chiavi. I valori Aria-label utilizzano stringhe tradotte e le etichette dei campi della password vengono visualizzate senza troncamento. (NPR-43285)
-* Il flusso di lavoro Crea nuovo utente ora mostra gli errori di convalida localizzati per i caratteri non validi. Gli utenti ricevono un messaggio chiaro e tradotto invece di una stringa IllegalArgumentException non localizzata. (GRANITE-52920)
+#### Interfaccia utente amministratore sito{#sites-admin-ui-6526}
 
-<!-- #### Oak {#foundation-oak-6525} -->
+Se si ripristina una versione precedente di una risorsa, la miniatura della scheda viene aggiornata. Una modifica della codifica URL nella libreria client Timeline ha causato una mancata corrispondenza del percorso, pertanto la ricerca della scheda non è riuscita e la miniatura è rimasta obsoleta. L’aggiornamento viene ripristinato in base ai percorsi codificati e non elaborati. (SITES-46590)
 
-#### Platform{#foundation-platform-6525}
+<!--
+#### Universal editor {#sites-universal-editor-6526}
+-->
 
-* Il pulsante Mostra riferimenti tag ora visualizza il numero di riferimenti per il tag selezionato. Questo aggiornamento consente agli utenti di comprendere l’utilizzo dei tag senza navigazione aggiuntiva. (CQ-4355509)
-* La finestra di dialogo Sposta in Assegnazione tag consente ora di posizionare correttamente i messaggi di convalida. Il testo dell’errore non copre più l’icona del percorso di ricerca quando gli utenti inviano la finestra di dialogo con un campo obbligatorio vuoto. (CQ-4353009)
+#### Estensioni flusso di lavoro {#sites-workflow-extensions-6526}
 
-#### Sicurezza{#foundation-security-6525}
+Visualizza payload ora apre l’editor di pacchetti dell’interfaccia utente touch per i flussi di lavoro che Gestisci pubblicazione viene avviato per più pagine. In precedenza, l’azione apriva l’editor di pacchetti dell’interfaccia classica obsoleto, anche se gli autori avevano avviato il flusso di lavoro nell’interfaccia touch. Gli autori ora esaminano il payload senza uscire dall’interfaccia utente touch. (SITES-40928)
 
-* AEM ora inserisce nell&#39;elenco Consentiti ulteriori parole chiave che contengono segreto client. La creazione della configurazione non ha più esito negativo quando le integrazioni supportate utilizzano tali pattern di denominazione client-segreto. (GRANITE-66495)
-* Il bundle Sling XSS ora utilizza la libreria Java HTML Sanitizer e il metodo `XSSAPI#filterHTML()` deve essere utilizzato per il rendering del contenuto HTML in modo sicuro e non per la trasmissione di dati ad altre API. (GRANITE-63840)
 
-<!-- #### Sling{#foundation-sling-6525} -->
+### [!DNL Assets] {#assets-6526}
 
-<!-- #### SPA editor {#foundation-spa-editor-6525} -->
+* Miglioramento: AEM Assets 6.5 include il supporto per la conformità Coalition for Content Provenance and Authenticity (C2PA) per i contenuti di intelligenza artificiale generativi. Il flusso di lavoro Aggiorna risorsa rileva le credenziali C2PA, estrae i metadati e firma le rappresentazioni rigenerate dal flusso di lavoro. La firma viene eseguita localmente in ogni istanza di AEM, pertanto i clienti non hanno bisogno di un’infrastruttura di firma dedicata. (ASSETS-75868)
 
-#### Traduzione{#foundation-translation-6525}
+* Miglioramento della documentazione: la nuova documentazione pubblica spiega come personalizzare la pipeline di elaborazione delle risorse mantenendo la conformità C2PA. La documentazione illustra come posizionare il passaggio Rileva credenziali C2PA prima dei passaggi di rendering e come la firma viene eseguita localmente in ogni istanza di AEM. La documentazione indica anche la limitazione sull’infrastruttura di firma dedicata o di proprietà del cliente. (ASSETS-76100)
+* Il menu a discesa Aiuto nell’intestazione della shell ora rimane aperto quando passi il cursore del mouse sui relativi collegamenti negli ambienti AEM 6.5 SP26. In precedenza, il menu a discesa si chiudeva quando il puntatore veniva inserito nell’elenco, pertanto gli autori non potevano fare clic sui collegamenti alla documentazione, alla community o al supporto. Il bundle `com.adobe.granite.ui.content` aggiornato posticipa il controllo dello stato attivo, quindi il menu si chiude solo quando lo stato attivo esce davvero. (ASSETS-65676)
 
-I conteggi dello stato del progetto di traduzione ora vengono aggiornati correttamente dopo l’aggiornamento. Gli autori possono rivedere i valori bozza, bozza in corso e valori completi senza affidarsi a metadati obsoleti derivati dal comportamento precedente dei service pack. (NPR-43418)
+<!--
+#### [!DNL Dynamic Media]{#assets-dm-6526}
+-->
 
-#### Interfaccia utente{#foundation-ui-6525}
+### [!DNL Forms]{#forms-6526}
 
-* Gli URL immessi manualmente nella console Sites ora vengono risolti nel percorso della pagina o della cartella desiderato. La gerarchia dei contenuti rimane coerente dopo l’aggiornamento e non viene più utilizzata come fallback dell’URL di base. (NPR-43688)
-* La suite di test di Adobe CRX Package Manager non ha più esito negativo dopo l&#39;aggiornamento di un&#39;istanza AEM 6.5 LTS SP1 a LTS SP2. Il test del servlet elenco miniature ora viene completato come previsto. (NPR-43534)
+* Nuova funzione: Supporto per i tag di accessibilità negli elenchi in formato Rich Text. In precedenza, i tag elenco venivano visualizzati nella struttura dei tag di accessibilità solo quando il modello seguiva una struttura specifica. La richiesta è stata chiusa come duplicato di un ticket correlato che fornisce la funzione. (LC-3923202)
 
-* La struttura del contenuto della console Sites ora viene caricata in modo coerente dopo ogni aggiornamento del browser. Gli autori non visualizzano più una barra a sinistra vuota o un messaggio &quot;Non esiste alcun elemento&quot; quando il contenuto esiste. (NPR-43442)
 
-<!-- #### WCM{#foundation-wcm-6525} -->
+<!--
+#### Forms JEE {#forms-jee-6526}
 
-#### Flusso di lavoro{#foundation-workflow-6525}
+#### Forms Designer {#forms-designer-6526}
+-->
 
-* L’editor modelli di flusso di lavoro ora convalida correttamente i percorsi dei modelli di flusso di lavoro specifici del tenant. I clienti che memorizzano i modelli di flusso di lavoro nei percorsi /conf a livello di tenant possono modificare tali modelli senza spostarli nei percorsi di configurazione globali. (GRANITE-65376)
 
-* L’editor modelli di flusso di lavoro ora normalizza i percorsi dei file di Windows durante la convalida del percorso. Gli autori possono modificare i modelli di flusso di lavoro sui server Windows senza errori di accesso che bloccano gli aggiornamenti dei modelli. (GRANITE-63692)
-* La creazione delle attività ora include la convalida lato server per le date di scadenza. Gli utenti non possono creare attività con una data di scadenza che si verifica prima della data di inizio, che mantiene coerenti i dati delle attività della casella in entrata. (CQ-4362253)
-* La creazione dello spazio dei nomi ora gestisce correttamente il testo localizzato. Gli utenti possono immettere caratteri non latini nel campo Titolo e creare lo spazio dei nomi senza un errore di convalida. (CQ-4355587)
+### Foundation {#foundation-6526}
 
-## Installa [!DNL Experience Manager] 6.5.25.0{#install}
+* La stringa &quot;Paese&quot; nella finestra di dialogo **Sicurezza** > **Utenti** > **Crea** utente viene ora visualizzata nella lingua dell&#39;utente. In precedenza, l’etichetta rimaneva in inglese per le interfacce localizzate. Il bundle `com.adobe.granite.security.content` aggiornato fornisce le traduzioni. (NPR-43882)
+* Il menu a discesa Aiuto nell’intestazione della shell ora rimane aperto quando passi il cursore del mouse sui relativi collegamenti negli ambienti AEM 6.5 SP26. In precedenza, il menu a discesa si chiudeva quando il puntatore veniva inserito nell’elenco, pertanto gli autori non potevano fare clic sui collegamenti alla documentazione, alla community o al supporto. Il bundle `com.adobe.granite.ui.content` aggiornato posticipa il controllo dello stato attivo, quindi il menu si chiude solo quando lo stato attivo esce davvero. (NPR-44686)
+* Miglioramento: la query `HtmlLibraryManagerImpl` ora include un tag di tipo nodo in modo che la query utilizzi sempre l&#39;indice previsto. Il servizio registra inoltre un errore quando non trova librerie client, avvisando gli amministratori del problema. L&#39;aggiornamento esegue il bump della versione del bundle `com.adobe.granite.clientlibs` nel service pack. (NPR-44698)
+
+
+<!--
+#### Apache Felix {#foundation-apachefelix-6526}
+-->
+
+
+#### Autenticazione {#foundation-authentication-6526}
+
+Salva e chiudi nell’editor utente ora ritorna ai risultati della ricerca corrente. In precedenza, dopo aver cercato un secondo utente in Omnisearch, aver modificato le proprietà e aver fatto clic su Salva e chiudi, la pagina apriva le proprietà del primo utente. Lo script UserProperties.js aggiornato ripristina la navigazione prevista. (NPR-44774)
+
+<!--
+#### Campaign{#foundation-campaign-6526}
+
+#### Cloud Services{#foundation-cloudservices-6526}
+
+#### Communities {#foundation-communities-6526}
+
+#### Content distribution{#foundation-content-distribution-6526}
+
+#### Adobe CRX {#foundation-crx-6526}
+-->
+
+
+#### Granite{#foundation-granite-6526}
+
+* Ora il segnaposto &quot;Modello per frammenti di contenuto&quot; nel filtro di Assets Omnisearch viene visualizzato completamente. In precedenza, il testo veniva tagliato dopo essere passati ad Assets, dopo aver fatto clic sull’icona Filtri o Ricerca e aver espanso il campo Modello per frammenti di contenuto. Lo stile aggiornato offre al segnaposto spazio sufficiente. (GRANITE-54387)
+* Il menu a discesa della Guida nell&#39;intestazione della shell ora rimane aperto quando si sposta il puntatore sui relativi collegamenti. In precedenza, il menu a discesa si chiudeva non appena il puntatore entrava nell’elenco dei collegamenti per la documentazione, la community e il supporto, rendendo i collegamenti irraggiungibili con il mouse. Il gestore di messa a fuoco ora rimanda il controllo al fotogramma di animazione successivo, quindi il passaggio del mouse non conta più come elemento attivo che esce dal menu. (GRANITE-70978)
+
+<!--
+#### Jetty{#foundation-jetty-6526}
+-->
+
+#### Integrazioni Launch{#foundation-launch-integrations-6526}
+
+Miglioramento: l’integrazione di Adobe Analytics con Adobe Experience Manager Launch utilizza l’API Analytics 2.0. L’API di Analytics 1.4 raggiunge la fine del ciclo di vita il 31 agosto 2026. La migrazione mantiene il reporting e il funzionamento delle integrazioni Launch dopo tale data. (CQ-4365074, CQ-4365080)
+
+<!--
+#### Localization{#foundation-localization-6526}
+
+#### Oak {#foundation-oak-6526}
+-->
+
+#### Platform{#foundation-platform-6526}
+
+* Il collegamento Aiuto nel piè di pagina della pagina di accesso di AEM ora apre una pagina di lavoro. In precedenza, il collegamento puntava a un URL marketing.adobe.com che non esiste più. La configurazione del piè di pagina ora utilizza l&#39;URL [documentazione di Adobe Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager). (NPR-44388)
+* Miglioramento: una richiesta del cliente ha richiesto l’API del grafico Microsoft come alternativa a SMTP quando AEM invia un’e-mail. Il ticket è stato risolto come duplicato, perché un altro ticket implementa già il flusso API di Graph. SMTP con OAuth 2.0 rimane disponibile per i clienti che devono abbandonare l’autenticazione di base SMTP. (GRANITE-57478)
+
+* Le stringhe nella finestra di dialogo Autorizzazioni effettive ora vengono allineate correttamente nel browser **Strumenti** > **Generale** > **Configurazione**. In precedenza, una stringa veniva visualizzata fuori linea dopo aver selezionato una cartella, fatto clic su Proprietà e su Autorizzazioni effettive. Le regole di layout aggiornate ripristinano l’allineamento. (CQ-4359166)
+
+
+#### Progetti {#foundation-projects-6526}
+
+Ora viene visualizzata la stringa &quot;Seleziona directory principale&quot; nella finestra di dialogo Seleziona dizionario i18n. In precedenza, il testo veniva tagliato in diverse interfacce localizzate dopo la creazione di un progetto di traduzione e l’aggiunta di un dizionario i18n. Il pacchetto `cq-projects-translation-content` aggiornato fornisce alla stringa spazio sufficiente. (CQ-4355405)
+
+<!--
+#### Security{#foundation-security-6526}
+
+#### Sling{#foundation-sling-6526}
+
+#### SPA editor {#foundation-spa-editor-6526}
+-->
+
+
+#### Traduzione{#foundation-translation-6526}
+
+Le opzioni di stile per il componente Elenco ora vengono visualizzate nella lingua dell’utente. In precedenza, stringhe come Blocca e Griglia rimanevano in inglese nel menu Stili dopo che gli autori avevano aggiunto il componente Elenco a un frammento di esperienza. Le risorse aggiornate forniscono le traduzioni, incluse le interfacce Coreano, Cinese semplificato e Cinese tradizionale. (CQ-4349666)
+
+<!--
+#### User interface{#foundation-ui-6526}
+
+#### WCM{#foundation-wcm-6526}
+-->
+
+#### Flusso di lavoro{#foundation-workflow-6526}
+
+Miglioramento: l’Editor pagina per l’interfaccia utente touch ora esegue il rendering della struttura del contenuto e supporta la modifica dei componenti Definizione risorsa nelle pagine dei pacchetti del flusso di lavoro. In precedenza, le pagine in `/etc/workflow/packages/` create da **Gestisci pubblicazione** > **Pubblica più tardi** non mostravano alcuna struttura contenuto nel pannello sinistro e gli autori non potevano modificare i componenti Definizione risorsa. Gli approvatori ora esaminano le pagine e le risorse all’interno di un payload del flusso di lavoro nell’interfaccia utente touch, in base al comportamento dell’interfaccia classica. (GRANITE-65620)
+
+## Installa [!DNL Experience Manager] 6.5.26.0{#install}
 
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
 
-* [!DNL Experience Manager] 6.5.25.0 richiede [!DNL Experience Manager] 6.5. Per istruzioni dettagliate, consulta la [documentazione sull&#39;aggiornamento](/help/sites-deploying/upgrade.md). <!-- UPDATE FOR EACH NEW RELEASE -->
-* Il download del Service Pack è disponibile in Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.25.0.zip).
-* In una distribuzione con MongoDB e più istanze, installare [!DNL Experience Manager] 6.5.25.0 in una delle istanze di authoring utilizzando Gestione pacchetti.<!-- UPDATE FOR EACH NEW RELEASE -->
+* [!DNL Experience Manager] 6.5.26.0 richiede [!DNL Experience Manager] 6.5. Per istruzioni dettagliate, consulta la [documentazione sull&#39;aggiornamento](/help/sites-deploying/upgrade.md). <!-- UPDATE FOR EACH NEW RELEASE -->
+* Il download del Service Pack è disponibile in Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.26.0.zip).
+* In una distribuzione con MongoDB e più istanze, installare [!DNL Experience Manager] 6.5.26.0 in una delle istanze di authoring utilizzando Gestione pacchetti.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 >[!IMPORTANT]
 >
-> Adobe consiglia di non rimuovere o disinstallare il pacchetto [!DNL Experience Manager] 6.5.25.0. Per eseguire il rollback, se necessario, creare un backup di `crx-repository` prima di installare il pacchetto. <!-- UPDATE FOR EACH NEW RELEASE -->
+> Adobe consiglia di non rimuovere o disinstallare il pacchetto [!DNL Experience Manager] 6.5.26.0. Per eseguire il rollback, se necessario, creare un backup di `crx-repository` prima di installare il pacchetto. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 <!-- FORMS For instructions to install Service Pack for Experience Manager Forms, see [Experience Manager Forms Service Pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md). -->
 
@@ -436,7 +418,7 @@ I conteggi dello stato del progetto di traduzione ora vengono aggiornati corrett
 
 1. Prima di eseguire l&#39;installazione, creare una copia istantanea o un nuovo backup dell&#39;istanza [!DNL Experience Manager].
 
-1. Scarica il Service Pack da [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.25.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
+1. Scarica il Service Pack da [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.26.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. Apri Gestione pacchetti, quindi seleziona **[!UICONTROL Carica pacchetto]** per caricare il pacchetto. Per ulteriori informazioni, vedere [Gestione pacchetti](/help/sites-administering/package-manager.md).
 
@@ -446,24 +428,24 @@ I conteggi dello stato del progetto di traduzione ora vengono aggiornati corrett
 
 >[!NOTE]
 >
->Talvolta la finestra di dialogo nell’interfaccia utente di Gestione pacchetti si chiude durante l’installazione del Service Pack. Adobe consiglia di attendere la stabilizzazione dei registri di errore prima di accedere alla distribuzione. Attendi i registri specifici relativi alla disinstallazione del bundle di aggiornamento prima di confermare che l’installazione è andata a buon fine. Questo problema si verifica in genere nel browser [!DNL Safari], ma può verificarsi in modo intermittente in qualsiasi browser.
+>Talvolta la finestra di dialogo nell’interfaccia utente di Gestione pacchetti si chiude durante l’installazione del Service Pack. Adobe consiglia di attendere che i registri di errore non vengano più modificati prima di accedere alla distribuzione. Attendi i registri specifici relativi alla disinstallazione del bundle di aggiornamento prima di confermare che l’installazione è andata a buon fine. Questo problema si verifica nel browser [!DNL Safari] ma può verificarsi occasionalmente in qualsiasi browser.
 
 **Installazione automatica**
 
-Per installare [!DNL Experience Manager] 6.5.25.0 è possibile utilizzare due metodi diversi.<!-- UPDATE FOR EACH NEW RELEASE -->
+Per installare [!DNL Experience Manager] 6.5.26.0 è possibile utilizzare due metodi diversi.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 * Inserire il pacchetto nella cartella `../crx-quickstart/install` quando il server è disponibile online. Il pacchetto viene installato automaticamente.
 * Utilizza l&#39;API HTTP [da Gestione pacchetti](/help/sites-administering/package-manager.md#package-share). Utilizzare `cmd=install&recursive=true` per installare i pacchetti nidificati.
 
 >[!NOTE]
 >
->Experience Manager 6.5.25.0 non supporta l&#39;installazione di Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
+>Experience Manager 6.5.26.0 non supporta l&#39;installazione di Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 **Convalida l&#39;installazione**
 
-Per informazioni sulle piattaforme certificate per l&#39;utilizzo di questa versione, vedere i [requisiti tecnici](/help/sites-deploying/technical-requirements.md).
+Per le piattaforme certificate per l&#39;utilizzo di questa versione, vedere i [requisiti tecnici](/help/sites-deploying/technical-requirements.md).
 
-1. Nella pagina delle informazioni sul prodotto (`/system/console/productinfo`) viene visualizzata la stringa di versione aggiornata `Adobe Experience Manager (6.5.25.0)` in [!UICONTROL Prodotti installati]. <!-- UPDATE FOR EACH NEW RELEASE -->
+1. Nella pagina delle informazioni sul prodotto (`/system/console/productinfo`) viene visualizzata la stringa di versione aggiornata `Adobe Experience Manager (6.5.26.0)` in [!UICONTROL Prodotti installati]. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. Tutti i bundle OSGi sono **[!UICONTROL ACTIVE]** o **[!UICONTROL FRAGMENT]** nella console OSGi (usa la console Web: `/system/console/bundles`).
 
@@ -491,7 +473,7 @@ Se non si installa questo pacchetto, si verificano query GraphQL lente o non riu
 
 ### UberJar{#uber-jar}
 
-UberJar per [!DNL Experience Manager] 6.5.25.0 è disponibile nel [archivio centrale Maven](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.25/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
+UberJar per [!DNL Experience Manager] 6.5.26.0 è disponibile nel [archivio centrale Maven](https://repo1.maven.org/maven2/com/adobe/aem/uber-jar/6.5.26/). <!-- CHECK FOR UPDATE EACH NEW RELEASE FROM MADHULIKA SINGH -->
 
 Per utilizzare UberJar in un progetto Maven, vedi [come utilizzare UberJar](/help/sites-developing/ht-projects-maven.md) e includi nel POM del progetto la seguente dipendenza: <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
@@ -499,7 +481,7 @@ Per utilizzare UberJar in un progetto Maven, vedi [come utilizzare UberJar](/hel
   <dependency>
   <groupId>com.adobe.aem</groupId>
   <artifactId>uber-jar</artifactId>
-  <version>6.5.25</version>
+  <version>6.5.26</version>
   <scope>provided</scope>          
   </dependency>
 ```
@@ -560,7 +542,7 @@ Da Service Pack 13 e versioni successive è stato avviato il seguente log degli 
      * `diff-cache`
 
   1. Installa il Service Pack o riavvia Experience Manager as a Cloud Service.
-     Le nuove cartelle di `cache` e `diff-cache` vengono create automaticamente e non si verifica più un&#39;eccezione relativa a `mvstore` in `error.log`.
+     Le nuove cartelle per `cache` e `diff-cache` vengono create automaticamente e non si verifica più un&#39;eccezione relativa a `mvstore` in `error.log`.
 
 * Aggiorna le query GraphQL che hanno utilizzato un nome API personalizzato per il modello di contenuto in modo da utilizzare il nome predefinito del modello di contenuto.
 
@@ -582,7 +564,7 @@ Da Service Pack 13 e versioni successive è stato avviato il seguente log degli 
 
   Dopo aver modificato la definizione dell&#39;indice, è necessario reindicizzare (`reindex` = `true`).
 
-  Dopo questi passaggi, le query GraphQL funzionano più rapidamente.
+  Dopo questi passaggi, le query GraphQL vengono eseguite con una velocità migliorata.
 
 * Quando si tenta di spostare, eliminare o pubblicare frammenti di contenuto, siti o pagine, si verifica un problema durante il recupero dei riferimenti ai frammenti di contenuto. La query in background non riesce; la funzionalità non funziona.
 Per garantire il corretto funzionamento, è necessario aggiungere le seguenti proprietà al nodo di definizione dell&#39;indice `/oak:index/damAssetLucene` (non è richiesta alcuna reindicizzazione):
@@ -608,44 +590,46 @@ Per garantire il corretto funzionamento, è necessario aggiungere le seguenti pr
 
 * A partire da AEM 6.5.15, il motore JavaScript Rhino fornito dal bundle `org.apache.servicemix.bundles.rhino` ha un nuovo comportamento di posizionamento. Gli script che utilizzano la modalità rigorosa (`use strict;`) devono dichiarare le variabili corrette. In caso contrario, non vengono eseguiti e finiscono per generare un errore di runtime.
 
-* Se si installa il contenuto standard correlato ai tag tramite un pacchetto di aggiornamento ufficiale, la proprietà Languages del nodo `/content/cq:tags` viene ripristinata sul valore predefinito. Questa azione è valida per Service Pack, Service Pack di sicurezza, Feature Pack estesi, Feature Pack cumulativi, patch e così via. Pertanto, è necessario aggiungerlo dalle proprietà prima dell’installazione.
+* Se si installa il contenuto standard correlato ai tag tramite un pacchetto di aggiornamento ufficiale, la proprietà Languages del nodo `/content/cq:tags` viene ripristinata sul valore predefinito. Questa azione è valida per Service Pack, Service Pack di sicurezza, Feature Pack estesi, Feature Pack cumulativi, patch e così via. Pertanto, è necessario aggiungerlo alle proprietà prima dell’installazione.
 
-### Problema noto per AEM Sites {#known-issues-aem-sites-6525}
+### Problema noto per AEM Sites {#known-issues-aem-sites-6526}
 
-Frammenti di contenuto-Anteprima non riuscita a causa della protezione DoS per una grande struttura ad albero di frammenti. Vedi l&#39;articolo [KB sulle opzioni di configurazione predefinite di GraphQL Query Executor](https://experienceleague.adobe.com/it/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
+<!--
+* Known issue with a hotfix available for AEM Foundation {#known-issue-foundation-hotfix-6526}
 
-### Problemi noti per AEM Forms {#known-issues-aem-forms-6525}
+  After you upgrade from an earlier service pack to Experience Manager 6.5.26.0, the OSGi version ordering for CRXDE Lite can prevent Experience Manager from selecting the intended bundle. An earlier service pack contains a higher CRXDE Lite version than the artifact that Service Pack 26 includes (`com.adobe.granite.crxde-lite-1.1.44-CQ651-B00024`).
+  
+  To resolve this issue, download and install the hotfix [cq-6.5.26-hotfix-GRANITE-76725.zip](https://artifactory.corp.adobe.com/ui/native/maven-aem-release-local/com/adobe/cq/hotfix/cq-6.5.26-hotfix-GRANITE-76725/1.0/cq-6.5.26-hotfix-GRANITE-76725.zip). The hotfix updates CRXDE Lite to `com.adobe.granite.crxde-lite-1.1.44-CQ651-B0026`, and it contains a version change only, with no code or functional changes. (GRANITE-76725)
+-->
 
-* **FORMS-23722** Quando un modulo contenente un campo **File allegato** che utilizza `bindref` viene inviato a un flusso di lavoro di AEM con un passaggio **Assegna attività**, gli allegati non vengono visualizzati. Di conseguenza, non vengono visualizzate quando l&#39;attività viene aperta dalla cartella Posta in arrivo. I file vengono salvati correttamente nell’archivio, ma l’interfaccia utente del passaggio Assegna attività non riesce a visualizzare gli allegati.
+* Frammenti di contenuto-Anteprima non riuscita a causa della protezione DoS per una grande struttura ad albero di frammenti. Vedi l&#39;articolo [KB sulle opzioni di configurazione predefinite di GraphQL Query Executor](https://experienceleague.adobe.com/it/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
 
-* **FORMS-28517** Quando un PDF con firma digitale viene allegato a un&#39;attività in AEM Forms JEE Workspace, il caricamento rimane bloccato nello stato di caricamento o non riesce con un errore &quot;File non valido&quot;. Di conseguenza, non è possibile aggiungere all&#39;attività allegati PDF firmati di dimensioni maggiori. Questo problema è stato risolto in una versione successiva. Per un aggiornamento rapido sulla versione corrente/esistente, contatta il supporto Adobe.
+### Problemi noti per AEM Forms {#known-issues-aem-forms-6526}
+
+* Quando un modulo contenente un campo **File allegato** che utilizza `bindref` viene inviato a un flusso di lavoro di AEM con un passaggio **Assegna attività**, gli allegati non vengono visualizzati. Di conseguenza, non vengono visualizzate quando l&#39;attività viene aperta dalla cartella Posta in arrivo. I file vengono salvati correttamente nell’archivio, ma l’interfaccia utente del passaggio Assegna attività non riesce a visualizzare gli allegati. (FORMS-23722)
+
+* Quando un PDF con firma digitale viene allegato a un’attività in AEM Forms JEE Workspace, il caricamento rimane bloccato nello stato di caricamento o non riesce con un errore &quot;File non valido&quot;. Di conseguenza, non è possibile aggiungere all&#39;attività allegati PDF firmati di dimensioni maggiori. Questo problema è stato risolto in una versione successiva. Per un hotfix sulla versione, contatta il supporto Adobe. (FORMS-28517)
 
 #### Problemi noti con gli hotfix disponibili {#aem-forms-issues-with-hotfixes}
 
 Nei seguenti problemi è disponibile un hotfix per il download e l’installazione. Puoi [scaricare e installare l&#39;Hotfix](/help/release-notes/aem-forms-hotfix.md) per risolvere questi problemi:
 
-* **NPR-44100** Dopo aver installato AEM 6.5 Service Pack 25 per le distribuzioni WAR/JEE (incluso AEM Forms su JEE), il bundle `com.adobe.cq.screens.sessions` rimane nello stato Installato e non diventa mai Attivo. Per risolvere il problema, [scarica e installa l&#39;aggiornamento rapido](/help/release-notes/aem-forms-hotfix.md) per AEM Service Pack 6.5.25.0.
-* **FORMS-26802** Dopo la protezione avanzata dell&#39;autenticazione di SOAP SDK, Gestione configurazione LCM, Workbench e Designer non riescono a connettersi al server AEM Forms su JEE con errore `ALC-LCM-200-001` perché l&#39;endpoint `/soap/sdk` rifiuta le richieste non autenticate. Per risolvere il problema, [scarica e installa l&#39;aggiornamento rapido](/help/release-notes/aem-forms-hotfix.md) per AEM Service Pack 6.5.25.0.
-* **FORMS-26679** In AEM Forms Document Security, i cookie di autenticazione vengono eliminati dopo un reindirizzamento di Microsoft Entra ID (MFA), causando un errore di tipo &quot;I cookie non sono abilitati&quot; all’apertura di documenti protetti tramite policy. Per risolvere il problema, [scarica e installa l&#39;aggiornamento rapido](/help/release-notes/aem-forms-hotfix.md) per AEM Service Pack 6.5.25.0.
-* **FORMS-26617** [!DNL AEM Forms] nelle impostazioni del database [!DNL JEE] [!DNL WebLogic] non riesce con &quot;Nessun driver appropriato trovato&quot; utilizzando il driver JDBC di Microsoft SQL Server 12.10.0. Per risolvere il problema, [scarica e installa l&#39;aggiornamento rapido](/help/release-notes/aem-forms-hotfix.md) per AEM Service Pack 6.5.25.0.
-* **FORMS-27869** PDF si aprono lentamente dopo l&#39;installazione della build AEM Forms 6.5 più recente. Per risolvere il problema, [scarica e installa l&#39;aggiornamento rapido](/help/release-notes/aem-forms-hotfix.md) per AEM Service Pack 6.5.25.0.
-* **FORMS-23491** CVE-2025-64775, una vulnerabilità Apache Struts di tipo denial-of-service nell&#39;elaborazione di richieste in più parti, influisce sulle distribuzioni AEM Forms 6.5.24.0 JEE (JBoss, WebLogic, WebSphere). Per risolvere il problema, [scarica e installa l&#39;aggiornamento rapido](/help/release-notes/aem-forms-hotfix.md) per AEM Service Pack 6.5.24.0.
-* **FORMS-14926** Dopo aver installato AEM Forms JEE Service Pack 21 (6.5.21.0), se trovi voci duplicate dei file JAR Geode `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` nella cartella `<AEM_Forms_Installation>/lib/caching/lib`, effettua le seguenti operazioni per risolvere il problema:
+* Dopo aver installato AEM Forms JEE Service Pack 21 (6.5.21.0), se trovi voci duplicate dei file jar Geode `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` nella cartella `<AEM_Forms_Installation>/lib/caching/lib`, effettua le seguenti operazioni per risolvere il problema (FORMS-14926):
 
   1. Fermate i localizzatori, se sono in esecuzione.
-  2. Arresta il server AEM.
-  3. Passare a `<AEM_Forms_Installation>/lib/caching/lib`.
-  4. Rimuovere tutti i file patch Geode ad eccezione di `geode-*-1.15.1.2.jar`. Verificare che siano presenti solo i file jar Geode con `version 1.15.1.2`.
-  5. Apri il prompt dei comandi in modalità amministratore.
-  6. Installare la patch Geode utilizzando il file `geode-*-1.15.1.2.jar`.
+  1. Arresta il server AEM.
+  1. Passare a `<AEM_Forms_Installation>/lib/caching/lib`.
+  1. Rimuovere tutti i file patch Geode ad eccezione di `geode-*-1.15.1.2.jar`. Verificare che siano presenti solo i file jar Geode con `version 1.15.1.2`.
+  1. Apri il prompt dei comandi in modalità di amministrazione.
+  1. Installare la patch Geode utilizzando il file `geode-*-1.15.1.2.jar`.
 
 ## Bundle OSGi e pacchetti di contenuti inclusi{#osgi-bundles-and-content-packages-included}
 
 I seguenti file zip contengono i documenti di testo che elencano i bundle OSGi e i pacchetti di contenuti inclusi in questa versione di [!DNL Experience Manager] 6.5 Service Pack:
 
-* [Elenco dei bundle OSGi inclusi in Experience Manager 6.5.25.0](/help/release-notes/assets/65250-bundles.zip)
+* [Elenco dei bundle OSGi inclusi in Experience Manager 6.5.26.0](/help/release-notes/assets/65260-bundles.zip)
 <!-- UPDATE FOR EACH NEW RELEASE -->
-* [Elenco dei pacchetti di contenuti inclusi in Experience Manager 6.5.25.0](/help/release-notes/assets/65250-packages.zip)
+* [Elenco dei pacchetti di contenuti inclusi in Experience Manager 6.5.26.0](/help/release-notes/assets/65260-packages.zip)
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## Siti web con restrizioni{#restricted-sites}
@@ -653,13 +637,13 @@ I seguenti file zip contengono i documenti di testo che elencano i bundle OSGi e
 Questi siti Web sono disponibili solo per i clienti. Se fai parte della clientela e necessiti dell’accesso, contatta il responsabile dell’account Adobe.
 
 * [Scarica il prodotto all’indirizzo licensing.adobe.com](https://licensing.adobe.com/)
-* Contatta l’[Assistenza Clienti di Adobe](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
+* Contatta l’[Assistenza Clienti di Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] pagina prodotto](https://business.adobe.com/it/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 documentazione](https://experienceleague.adobe.com/it/docs/experience-manager-65)
->* [Iscriviti agli aggiornamenti dei prodotti con priorità Adobe](https://www.adobe.com/it/subscription/priority-product-update.html)
+>* [Iscriviti agli aggiornamenti dei prodotti con priorità Adobe](https://www.adobe.com/subscription/priority-product-update.html)
 
 
 
