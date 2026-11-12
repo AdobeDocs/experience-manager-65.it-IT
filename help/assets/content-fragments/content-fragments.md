@@ -19,9 +19,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: efd3c8e390cdbb5b5cc526906f7a2d756a978c21
 workflow-type: tm+mt
-source-wordcount: '2373'
+source-wordcount: '2361'
 ht-degree: 59%
 ---
 # Utilizzo di frammenti di contenuto {#working-with-content-fragments}
@@ -145,7 +145,7 @@ I frammenti di contenuto sono:
   * I frammenti di contenuto (e le relative varianti) possono essere creati e gestiti dalla console **Assets**.
   * Vengono creati e modificati nell’Editor frammenti di contenuto.
 
-* Utilizzato nell&#39;editor di pagine [&#x200B; con il componente Frammento di contenuto](/help/sites-authoring/content-fragments.md) (componente di riferimento):
+* Utilizzato nell&#39;editor di pagine [ con il componente Frammento di contenuto](/help/sites-authoring/content-fragments.md) (componente di riferimento):
 
   * Il componente **Frammento di contenuto** è disponibile per gli autori delle pagine. Consente loro di fare riferimento e distribuire il frammento di contenuto richiesto in formato HTML o JSON.
 
@@ -269,7 +269,7 @@ Le risorse dei frammenti di contenuto sono composte dalle seguenti parti (dirett
   * Possono essere definite durante l’authoring del frammento.
   * Sono memorizzate nel frammento, per evitare la dispersione delle copie del contenuto.
   * Le varianti possono essere [sincronizzate](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) con l’elemento principale se il suo contenuto viene aggiornato.
-  * Il testo può essere [riepilogato](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text) per ridurlo rapidamente a una lunghezza predefinita.
+
   * Sono disponibili nella scheda [Varianti](/help/assets/content-fragments/content-fragments-variations.md) dell’editor di frammenti.
 
 ### Contenuto intermedio nell’authoring di pagine con frammenti di contenuto {#in-between-content-when-page-authoring-with-content-fragments}
