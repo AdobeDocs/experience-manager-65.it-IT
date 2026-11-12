@@ -19,10 +19,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: efd3c8e390cdbb5b5cc526906f7a2d756a978c21
 workflow-type: tm+mt
-source-wordcount: '2442'
-ht-degree: 60%
+source-wordcount: '2078'
+ht-degree: 58%
 ---
 # Varianti - Authoring dei contenuti di frammenti{#variations-authoring-fragment-content}
 
@@ -42,8 +42,6 @@ Puoi eseguire una serie di altre azioni a seconda del tipo di dati in corso di m
 * [Caricare contenuti](#uploading-content)
 
 * [Visualizzare le statistiche chiave](#viewing-key-statistics) (informazioni sul testo su più righe)
-
-* [Ottenere un riepilogo del testo](#summarizing-text)
 
 * [Sincronizzare le varianti con il contenuto principale](#synchronizing-with-master)
 
@@ -112,8 +110,6 @@ Quando l’editor a schermo intero (ovvero testo su più righe) è aperto, sono 
 * [Mostrare statistiche sul testo](#viewing-key-statistics)
 
 * [Sincronizzare con il contenuto principale](#synchronizing-with-master) (se si modifica una variante)
-
-* [Ottenere un riepilogo del testo](#summarizing-text)
 
 ### Formati {#formats}
 
@@ -228,60 +224,6 @@ Esempio:
 ### Caricamento del contenuto {#uploading-content}
 
 Per semplificare il processo di creazione dei frammenti di contenuto, puoi caricare il testo, prepararlo in un editor esterno e aggiungerlo direttamente al frammento.
-
-### Ottenere un riepilogo del testo {#summarizing-text}
-
-La funzione di riepilogo del testo è progettata per aiutare gli utenti a ridurre la lunghezza del testo a un numero predefinito di parole, mantenendo i punti chiave e il significato generale.
-
->[!NOTE]
->
->A livello più tecnico, il sistema mantiene le frasi che ritiene fornire il *miglior rapporto tra densità e unicità delle informazioni* in base a specifici algoritmi.
-
->[!CAUTION]
->
->Il frammento di contenuto deve avere come predecessore una cartella di lingua valida (codice ISO), che viene utilizzata per determinare il modello della lingua.
->
->Ad esempio: `en/` nel seguente percorso:
->
->  `/content/dam/my-brand/en/path-down/my-content-fragment`
-
->[!CAUTION]
->
->L’inglese è disponibile in modo predefinito.
->
->Altre lingue sono disponibili come pacchetti modello di lingua da Condivisione pacchetti:
->
->* [Francese (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
->* [Tedesco (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
->* [Italiano (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
->* [Spagnolo (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
->
-
-1. Seleziona **Principale** o la variante richiesta.
-1. Apri l’editor a schermo intero.
-
-1. Seleziona **Riepiloga testo** nella barra degli strumenti.
-
-   ![riepilogo](assets/cfm-variations-05.png)
-
-1. Specifica il numero di parole desiderato e seleziona **Inizia**:
-1. Il testo originale viene visualizzato affiancato al riepilogo proposto:
-
-   * Tutte le frasi da eliminare sono evidenziate in rosso e barrate.
-   * Fai clic su una frase evidenziata se desideri mantenerla nel contenuto del riepilogo.
-   * Fare clic su una frase non evidenziata se si desidera eliminarla.
-
-1. Seleziona **Riepiloga** per confermare le modifiche.
-
-1. Il testo originale viene visualizzato affiancato al riepilogo proposto:
-
-   * Tutte le frasi da eliminare sono evidenziate in rosso e barrate.
-   * Fai clic su una frase evidenziata se desideri mantenerla nel contenuto del riepilogo.
-   * Fare clic su una frase non evidenziata se si desidera eliminarla.
-   * Vengono visualizzate le statistiche di riepilogo: **Effettivo** e **Destinazione**
-   * È possibile **visualizzare in nteprima** le modifiche.
-
-   ![confronto del riepilogo](assets/cfm-variations-06.png)
 
 ### Annotazione di un frammento di contenuto {#annotating-a-content-fragment}
 
