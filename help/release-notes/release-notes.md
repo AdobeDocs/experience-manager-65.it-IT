@@ -23,9 +23,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 56b13809475a59f188750b86503e316e69171fe1
+source-git-commit: b910e5ac8537f465d7cab85670de8557c2529a32
 workflow-type: tm+mt
-source-wordcount: '7273'
+source-wordcount: '7369'
 ht-degree: 3%
 ---
 # [!DNL Adobe Experience Manager] 6.5 Note sulla versione più recente del Service Pack {#aem-service-pack-release-notes}
@@ -48,7 +48,6 @@ DO NOT DELETE THIS HIDDEN NOTE!      DO NOT DELETE THIS HIDDEN NOTE!
 | Data | 12 novembre 2026 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | URL di download | [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.26.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
 
-
 <!-- REWRITE AI GENERATED SUMMARY OF NOTES BELOW FOR EACH NEW SERVICE PACK RELEASE -->
 
 Experience Manager 6.5.26.0 include nuove funzionalità, miglioramenti chiave richiesti dai clienti e correzioni di bug. Include inoltre miglioramenti a livello di accessibilità, localizzazione, prestazioni, stabilità e sicurezza basati sulla base 6.5 disponibile da aprile 2019.
@@ -62,6 +61,13 @@ Gli elementi di rilievo del Service Pack 26 sono i seguenti:
 * Affidabilità Sono stati risolti i conflitti di blocco degli indirizzi GraphQL nelle istanze di pubblicazione, nei rollout MSM, nelle azioni della barra degli strumenti dell’Editor Rich Text e nell’attivazione delle pagine nell’interfaccia classica.
 * Analytics. L’integrazione di Launch utilizza l’API di Adobe Analytics 2.0 prima della fine del ciclo di vita di Analytics 1.4, il 31 agosto 2026.
 
+>[!IMPORTANT]
+>
+>Adobe fornisce Service Pack trimestrali per AEM 6.5 LTS, con una strategia di correzione di sicurezza cumulativa per i Service Pack supportati per adattarsi alla frequenza degli aggiornamenti in quest’area.
+>
+> Per chi utilizza AEM 6.5 classico, il Service Pack 26 offre continuità, mentre il supporto e la manutenzione continuano attraverso il flusso di lavoro AEM 6.5 LTS. La copertura di supporto standard (febbraio 2027) ed estesa (febbraio 2028) Service Pack 26, che riceve solo correzioni di sicurezza.
+>
+>Adobe offre risorse per aiutarti a passare ad AEM 6.5 LTS o AEM as a Cloud Service e a utilizzare le ultime innovazioni AI per aumentare la produttività e ottimizzare per nuovi tipi di pubblico.
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -87,26 +93,26 @@ Gli elementi di rilievo del Service Pack 26 sono i seguenti:
 
 * L’iframe ContextHub nell’Editor pagina ora dispone di un attributo titolo descrittivo. In precedenza, l&#39;elemento `contexthub-ui-iframe` non aveva alcun titolo, pertanto gli utenti di utilità di lettura dello schermo non erano in grado di identificarlo quando lo stato attivo veniva spostato su di esso. Il titolo ora viene visualizzato in ogni pagina e visualizzazione dell’editor, inclusi Canvas, Side Rail e Layout Preview. (SITES-24650)
 * Il pulsante Filtri nella barra dei filtri della console Sites non aggiunge etichette visibili sopra i campi Ricerche salvate e Seleziona directory di ricerca. Un controllo di audit ha segnalato che le etichette venivano visualizzate quando lo stato attivo lasciava il pulsante, quando veniva premuto un tasto o quando si faceva clic sul pulsante. Il test non è riuscito a riprodurre il comportamento, quindi non è stata necessaria alcuna modifica. (SITES-24706)
-* I collegamenti nella console Sites per la navigazione nelle app ora si distinguono più chiaramente. Il testo del collegamento ha un rapporto di contrasto di 4,5:1, ma lo spessore sottile e le dimensioni ridotte del carattere hanno reso i collegamenti difficili da vedere. Un font più grande e dimensioni maggiori facilitano la lettura del testo per gli utenti con disabilità visive. (SITES-24723)
+* Ora i collegamenti nella console Sites per la navigazione nelle app sono più visibili. Il testo del collegamento ha un rapporto di contrasto di 4,5:1, ma lo spessore sottile e le dimensioni ridotte del carattere hanno reso i collegamenti difficili da vedere. Un font più grande e dimensioni maggiori facilitano la lettura del testo per gli utenti ipovedenti. (SITES-24723)
 * Gli assistenti vocali non visualizzano più il messaggio &quot;vuoto&quot; prima del contenuto della descrizione comando nella finestra modale Preferenze utente. In precedenza, l&#39;icona Info utilizzava `role="tooltip"` con un riferimento `aria-labelledby`, quindi NVDA leggeva prima un&#39;etichetta vuota. L&#39;icona ora utilizza `role="button"` e un `aria-label` di &quot;informazioni&quot; e la modifica si applica ai componenti del modulo Coral che condividono il modello. (SITES-24732)
-* Il pulsante Elimina nella finestra modale Elimina ora soddisfa il requisito di contrasto di 4.5:1 delle linee guida WCAG 1.4.3. In precedenza, il testo bianco su sfondo rosso dava un rapporto di 3,9:1 dopo che gli autori avevano selezionato un elemento e fatto clic su Elimina nella barra degli strumenti Azione. Il colore più scuro del pulsante rende l’etichetta leggibile per gli autori con disabilità visive. (SITES-24772)
+* Il pulsante Elimina nella finestra modale Elimina ora soddisfa il requisito di contrasto di 4.5:1 delle linee guida WCAG 1.4.3. In precedenza, il testo bianco su sfondo rosso dava un rapporto di 3,9:1 dopo che gli autori avevano selezionato un elemento e fatto clic su Elimina nella barra degli strumenti Azione. Il colore più scuro del pulsante rende l’etichetta leggibile per gli autori ipovedenti. (SITES-24772)
 * L&#39;intestazione Riferimenti nella barra Riferimenti della console Sites ora utilizza un elemento intestazione invece di `div`. In precedenza, gli assistenti vocali non riuscivano ad annunciare il testo come intestazione, pertanto gli utenti non riuscivano a spostarsi per intestazione. L&#39;intestazione viene visualizzata anche nella parte superiore della vista Riferimenti iniziale. (SITES-24967)
 * L’indicatore di messa a fuoco per i pulsanti a soffietto nella barra dei filtri della console Sites ora soddisfa il requisito di contrasto 3:1 di WCAG 1.4.11. In precedenza, l’indicatore blu mostrava un rapporto di 2,3:1 sullo sfondo, il che rendeva difficile trovare il pulsante del Pannello a soffietto Tag per gli utenti che utilizzano la tastiera. Il colore aggiornato offre agli utenti della tastiera un chiaro segnale di messa a fuoco. (SITES-24986)
 * L’indicatore della messa a fuoco per i pulsanti di scelta nella barra dei filtri della console Sites ora soddisfa il requisito di contrasto WCAG 1.4.11 di 3:1. In precedenza, l&#39;indicatore blu chiaro mostrava un rapporto di 1,7:1 sullo sfondo. Gli utenti che utilizzano la tastiera ora possono tenere traccia della loro posizione nel pannello a soffietto Data di modifica. (SITES-24987)
 * Il pulsante Seleziona accanto ai campi Percorso e Tag nella barra laterale dell’Editor pagina non utilizza più un’icona di casella di controllo. In precedenza, l’icona suggeriva di attivare o disattivare il pulsante, ma quest’ultimo apriva una finestra modale contenente la directory ad albero. Il pulsante Select ora comunica correttamente la sua funzione e lo stesso vale per i moduli Image e Teaser. (SITES-25210)
 * Gli assistenti vocali ora ignorano le miniature delle risorse nella barra laterale dell’Editor pagina. Precedentemente, ogni immagine conteneva del testo alternativo che duplicava il nome della risorsa visibile, in modo che gli utenti potessero ascoltare lo stesso testo due volte. Un attributo `alt` vuoto contrassegna l&#39;immagine come decorativa e mantiene il nome nel titolo della scheda. (SITES-25213)
 * Gli assistenti vocali riconoscono l’elenco dei componenti della barra laterale come un elenco. Un controllo di audit ha segnalato gli elementi come elementi non correlati, ma il test ha confermato che il markup utilizza un elemento elenco e voci elenco. Non è stata necessaria alcuna modifica del codice. (SITES-25214)
-* Le icone delle informazioni per i componenti nella barra laterale dell’Editor pagina sono più grandi e più facili da visualizzare. In precedenza, le icone utilizzavano dimensioni molto piccole, pari a circa 12 px, difficili da vedere per gli utenti con disabilità visive. Le icone ora utilizzano le dimensioni medie.(SITES-25217)
-* L’indicatore di stato attivo sul pulsante Campione nella finestra modale Annotazione ora si distingue dal pulsante. In precedenza, l’indicatore corrispondeva al colore del campione. Ciò rendeva difficile per gli utenti di tastiera vedere quale pulsante aveva lo stato attivo. Un offset fornisce all&#39;indicatore un contrasto sufficiente rispetto allo sfondo e lo mantiene chiaramente visibile. (SITES-25253)
+* Le icone delle informazioni per i componenti nella barra laterale dell’Editor pagina sono più grandi e più facili da visualizzare. Precedentemente, le icone utilizzavano dimensioni molto piccole, pari a circa 12 px, che gli utenti ipovedenti avevano difficoltà a vedere. Le icone ora utilizzano le dimensioni medie.(SITES-25217)
+* L’indicatore di attivazione sul pulsante Campione nella finestra modale Annotazione ora è chiaramente distinto dal pulsante. In precedenza, l’indicatore corrispondeva al colore del campione. Ciò rendeva difficile per gli utenti di tastiera vedere quale pulsante aveva lo stato attivo. Un offset fornisce all&#39;indicatore un contrasto sufficiente rispetto allo sfondo e lo mantiene chiaramente visibile. (SITES-25253)
 * Il campo Data nella finestra modale Timewarp non contiene più `aria-haspopup="dialog"`. In precedenza, gli assistenti vocali avevano annunciato che il campo apriva una finestra di dialogo, anche se non lo faceva. La rimozione dell’attributo fornisce agli utenti di utilità di lettura dello schermo informazioni accurate. (SITES-25263)
 * Le etichette di testo nella barra degli strumenti Demografia, ad esempio &quot;Consigliato&quot;, soddisfano ora il requisito di contrasto di 4.5:1 delle linee guida WCAG 1.4.3. In precedenza, il testo grigio su uno sfondo grigio scuro restituiva un rapporto di 2,8:1 in modalità Anteprima. Testo più scuro o più chiaro, a seconda dello sfondo, rende leggibile ogni etichetta. (SITES-25307)
 * L’indicatore di focus sui pulsanti Commerce, Persona e Device nella barra degli strumenti Demografia soddisfa ora il requisito di contrasto WCAG 1.4.11 di 3:1. In precedenza, l’indicatore mostrava un rapporto di 1,9:1 sullo sfondo della barra degli strumenti. Gli utenti che utilizzano la tastiera ora possono tenere traccia della loro posizione. (SITES-25308)
-* Il testo digitato dagli autori nei campi di testo della barra degli strumenti Demografia soddisfa ora il requisito di contrasto di 4.5:1 delle linee guida WCAG 1.4.3. In precedenza, il testo bianco su sfondo grigio produceva un rapporto di 2,9:1 nei campi, ad esempio nel campo a discesa Profilo `displayName` in modalità Anteprima. I colori aggiornati consentono agli autori con disabilità visive di leggere i valori digitati. (SITES-25318)
+* Il testo digitato dagli autori nei campi di testo della barra degli strumenti Demografia soddisfa ora il requisito di contrasto di 4.5:1 delle linee guida WCAG 1.4.3. In precedenza, il testo bianco su sfondo grigio produceva un rapporto di 2,9:1 nei campi, ad esempio nel campo a discesa Profilo `displayName` in modalità Anteprima. I colori aggiornati consentono agli autori ipovedenti di leggere i valori digitati. (SITES-25318)
 * Gli assistenti vocali ora leggono la descrizione quando lo stato attivo raggiunge le caselle di controllo nelle finestre di dialogo Teaser, Immagine e Carosello. In precedenza, il testo non era associato alla casella di controllo a livello di programmazione, pertanto gli utenti non potevano ascoltare le istruzioni. Un attributo `aria-describedby` collega ora ogni casella di controllo alla relativa descrizione. (SITES-25364)
 * Gli assistenti vocali ora annunciano quale pulsante Formati di paragrafo è attivo nell’Editor Rich Text. In precedenza, la selezione di un&#39;opzione dall&#39;elenco non forniva alla tecnologia per l&#39;accessibilità alcuna indicazione sulla scelta corrente. Il pulsante attivo ora contiene `aria-current="true"` e l&#39;opzione Target collegamento ipertestuale attivo contiene `aria-selected="true"`. (SITES-25367)
-* I pulsanti Ordina nell’intestazione della tabella della Vista a elenco della console Sites soddisfano ora il requisito di contrasto 3:1 delle linee guida WCAG 1.4.11. In precedenza, le icone grigio chiaro mostravano un rapporto di 1,5:1 sullo sfondo dell’intestazione. Il colore più scuro dell’icona rende i pulsanti visibili agli autori con disabilità visive. (SITES-25372)
+* I pulsanti Ordina nell’intestazione della tabella della Vista a elenco della console Sites soddisfano ora il requisito di contrasto 3:1 delle linee guida WCAG 1.4.11. In precedenza, le icone grigio chiaro mostravano un rapporto di 1,5:1 sullo sfondo dell’intestazione. Il colore più scuro dell&#39;icona rende i pulsanti visibili agli autori ipovedenti. (SITES-25372)
 * La scheda Assets nella barra laterale dell’Editor pagina non viene più ricaricata quando lo stato attivo si sposta sul campo Filtro. In precedenza, quando si selezionava il campo vuoto, veniva attivato un ricaricamento e gli assistenti vocali annunciavano ogni volta un messaggio di caricamento. La scheda ora viene ricaricata solo dopo aver modificato il valore del filtro e aver premuto Invio. (SITES-25377)
-* L’icona campione selezionata nella finestra modale Annotation soddisfa ora il requisito di contrasto WCAG 1.4.11 di 3:1. In precedenza, il segno di spunta bianco mostrava un rapporto di appena 1,58:1 sui campioni di colore giallo, arancione e verde. L’icona aggiornata fornisce agli autori con disabilità visive un chiaro indicatore. (SITES-25523)
+* L’icona campione selezionata nella finestra modale Annotation soddisfa ora il requisito di contrasto WCAG 1.4.11 di 3:1. In precedenza, il segno di spunta bianco mostrava un rapporto di appena 1,58:1 sui campioni di colore giallo, arancione e verde. L’icona aggiornata fornisce agli autori ipovedenti un chiaro indicatore. (SITES-25523)
 * L’elenco Componenti nel pannello laterale dell’Editor pagina non è più attivo dalla tastiera. Gli utenti che utilizzano la tastiera selezionano e spostano i componenti con i controlli nella finestra del contenuto, pertanto l’elenco dei pannelli laterali ha ripetuto la funzione. Una nota sotto il filtro del componente indica agli utenti della tastiera dove trovare i controlli. (SITES-40752)
 
 
@@ -347,7 +353,7 @@ Salva e chiudi nell’editor utente ora ritorna ai risultati della ricerca corre
 #### Granite{#foundation-granite-6526}
 
 * Ora il segnaposto &quot;Modello per frammenti di contenuto&quot; nel filtro di Assets Omnisearch viene visualizzato completamente. In precedenza, il testo veniva tagliato dopo essere passati ad Assets, dopo aver fatto clic sull’icona Filtri o Ricerca e aver espanso il campo Modello per frammenti di contenuto. Lo stile aggiornato offre al segnaposto spazio sufficiente. (GRANITE-54387)
-* Il menu a discesa della Guida nell&#39;intestazione della shell ora rimane aperto quando si sposta il puntatore sui relativi collegamenti. In precedenza, il menu a discesa si chiudeva non appena il puntatore entrava nell’elenco dei collegamenti per la documentazione, la community e il supporto, rendendo i collegamenti irraggiungibili con il mouse. Il gestore di messa a fuoco ora rimanda il controllo al fotogramma di animazione successivo, quindi il passaggio del mouse non conta più come elemento attivo che esce dal menu. (GRANITE-70978)
+* Il menu a discesa della Guida nell&#39;intestazione della shell ora rimane aperto quando si sposta il puntatore sui relativi collegamenti. In precedenza, il menu a discesa si chiudeva non appena il puntatore entrava nell’elenco dei collegamenti per la documentazione, la community e il supporto, rendendo i collegamenti irraggiungibili con il mouse. Il gestore di messa a fuoco ora rimanda il controllo al fotogramma di animazione successivo, quindi il passaggio del mouse non conta più come lo stato attivo che esce dal menu. (GRANITE-70978)
 
 <!--
 #### Jetty{#foundation-jetty-6526}
@@ -408,7 +414,7 @@ Miglioramento: l’Editor pagina per l’interfaccia utente touch ora esegue il 
 
 >[!IMPORTANT]
 >
-> Adobe consiglia di non rimuovere o disinstallare il pacchetto [!DNL Experience Manager] 6.5.26.0. Per eseguire il rollback, se necessario, creare un backup di `crx-repository` prima di installare il pacchetto. <!-- UPDATE FOR EACH NEW RELEASE -->
+> Adobe consiglia di non eliminare o disinstallare il pacchetto 6.5.26.0 di [!DNL Experience Manager]. Per eseguire il rollback, se necessario, creare un backup di `crx-repository` prima di installare il pacchetto. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 <!-- FORMS For instructions to install Service Pack for Experience Manager Forms, see [Experience Manager Forms Service Pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md). -->
 
@@ -428,7 +434,7 @@ Miglioramento: l’Editor pagina per l’interfaccia utente touch ora esegue il 
 
 >[!NOTE]
 >
->Talvolta la finestra di dialogo nell’interfaccia utente di Gestione pacchetti si chiude durante l’installazione del Service Pack. Adobe consiglia di attendere che i registri di errore non vengano più modificati prima di accedere alla distribuzione. Attendi i registri specifici relativi alla disinstallazione del bundle di aggiornamento prima di confermare che l’installazione è andata a buon fine. Questo problema si verifica nel browser [!DNL Safari] ma può verificarsi occasionalmente in qualsiasi browser.
+>Talvolta la finestra di dialogo nell’interfaccia utente di Gestione pacchetti si chiude durante l’installazione del Service Pack. Adobe consiglia di attendere che i registri di errore interrompano l’aggiornamento prima di accedere alla distribuzione. Attendi i registri specifici relativi alla disinstallazione del bundle di aggiornamento prima di confermare che l’installazione è andata a buon fine. Questo problema si verifica nel browser [!DNL Safari] ma può verificarsi occasionalmente in qualsiasi browser.
 
 **Installazione automatica**
 
@@ -488,7 +494,7 @@ Per utilizzare UberJar in un progetto Maven, vedi [come utilizzare UberJar](/hel
 
 >[!NOTE]
 >
->UberJar e gli altri artefatti correlati sono disponibili nell&#39;archivio centrale di Maven anziché nell&#39;archivio pubblico Maven di Adobe (`repo.adobe.com`). Il file UberJar principale è stato rinominato in `uber-jar-<version>.jar`. Non esiste alcun `classifier`, con `apis` come valore, per il tag `dependency`.
+>UberJar e gli altri artefatti correlati sono disponibili nell&#39;archivio centrale di Maven anziché nell&#39;archivio pubblico Maven di Adobe (`repo.adobe.com`). Il file UberJar principale è stato rinominato in `uber-jar-<version>.jar`. Nessun `classifier` con `apis` come valore per il tag `dependency`.
 
 
 
@@ -564,7 +570,7 @@ Da Service Pack 13 e versioni successive è stato avviato il seguente log degli 
 
   Dopo aver modificato la definizione dell&#39;indice, è necessario reindicizzare (`reindex` = `true`).
 
-  Dopo questi passaggi, le query GraphQL vengono eseguite con una velocità migliorata.
+  Dopo questi passaggi, le query GraphQL funzionano più rapidamente.
 
 * Quando si tenta di spostare, eliminare o pubblicare frammenti di contenuto, siti o pagine, si verifica un problema durante il recupero dei riferimenti ai frammenti di contenuto. La query in background non riesce; la funzionalità non funziona.
 Per garantire il corretto funzionamento, è necessario aggiungere le seguenti proprietà al nodo di definizione dell&#39;indice `/oak:index/damAssetLucene` (non è richiesta alcuna reindicizzazione):
@@ -588,7 +594,7 @@ Per garantire il corretto funzionamento, è necessario aggiungere le seguenti pr
   * Il punto attivo in un’immagine interattiva di Dynamic Media non è visibile quando si visualizza l’anteprima della risorsa tramite il visualizzatore di banner Shoppable.
   * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Timeout in attesa del completamento della modifica del registro per l&#39;annullamento della registrazione.
 
-* A partire da AEM 6.5.15, il motore JavaScript Rhino fornito dal bundle `org.apache.servicemix.bundles.rhino` ha un nuovo comportamento di posizionamento. Gli script che utilizzano la modalità rigorosa (`use strict;`) devono dichiarare le variabili corrette. In caso contrario, non vengono eseguiti e finiscono per generare un errore di runtime.
+* A partire da AEM 6.5.15, il motore JavaScript Rhino fornito dal bundle `org.apache.servicemix.bundles.rhino` ha un nuovo comportamento di posizionamento. Gli script che utilizzano la modalità rigorosa (`use strict;`) devono dichiarare le variabili corrette. In caso contrario, non vengono eseguite e finiscono per generare un errore di runtime.
 
 * Se si installa il contenuto standard correlato ai tag tramite un pacchetto di aggiornamento ufficiale, la proprietà Languages del nodo `/content/cq:tags` viene ripristinata sul valore predefinito. Questa azione è valida per Service Pack, Service Pack di sicurezza, Feature Pack estesi, Feature Pack cumulativi, patch e così via. Pertanto, è necessario aggiungerlo alle proprietà prima dell’installazione.
 
