@@ -23,9 +23,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: b910e5ac8537f465d7cab85670de8557c2529a32
+source-git-commit: 383a6624329826101fc85861ee31d34ae7e59d71
 workflow-type: tm+mt
-source-wordcount: '7369'
+source-wordcount: '7975'
 ht-degree: 3%
 ---
 # [!DNL Adobe Experience Manager] 6.5 Note sulla versione più recente del Service Pack {#aem-service-pack-release-notes}
@@ -312,13 +312,24 @@ Visualizza payload ora apre l’editor di pacchetti dell’interfaccia utente to
 ### [!DNL Forms]{#forms-6526}
 
 * Nuova funzione: Supporto per i tag di accessibilità negli elenchi in formato Rich Text. In precedenza, i tag elenco venivano visualizzati nella struttura dei tag di accessibilità solo quando il modello seguiva una struttura specifica. La richiesta è stata chiusa come duplicato di un ticket correlato che fornisce la funzione. (LC-3923202)
+* Miglioramento: AEM Forms aggiunge un’API di runtime che seleziona la modalità di esportazione dei dati XML (Extensible Markup Language) legacy o predefinita per ogni richiesta. In precedenza, solo il parametro JVM (Java Virtual Machine) `-Dcom.adobe.fd.forms.export.legacy` controllava la modalità e l&#39;impostazione veniva applicata a ogni esportazione nel server. Quando una richiesta non utilizza l’API, il parametro JVM continua a controllare il comportamento. (FORMS-23114, FORMS-22983)
+* I file Portable Document Format (PDF) certificati con una firma di certificazione invisibile non si aprono più lentamente in Adobe Acrobat. La correzione applicata in precedenza solo alle firme di certificazione visibili ora riguarda anche quelle invisibili. (FORMS-25171)
+* In Forms adattivo basato su componenti Foundation, il componente File allegato ora controlla i file rispetto all’elenco dei tipi di file consentiti al momento del caricamento. In precedenza, file come `.xsd` hanno superato il passaggio di caricamento anche quando l&#39;elenco consentiva solo `application/pdf`, `image/jpeg` e `image/png`. Il modulo li ha rifiutati solo al momento dell’invio con un avviso generico per file non supportato. (FORMS-24295)
 
+#### JEE per Forms {#forms-jee-6526}
 
-<!--
-#### Forms JEE {#forms-jee-6526}
+* Miglioramento: AEM Forms Document Security aggiunge il supporto passkey (Web Authentication o WebAuthn) per Adobe Acrobat (PPKLite). (FORMS-21762)
+* Miglioramento: il connettore IBM Content Manager ora supporta IBM Content Manager 8.7, perché IBM ha terminato il supporto per le versioni 8.5 e 8.6. (FORMS-6827)
+* In Windows, il servizio ConvertPDF non si blocca più quando si convertono determinati file Portable Document Format (PDF) in immagini come TIFF. (FORMS-25796)
+* L’autenticazione SAML (Security Assertion Markup Language) ora convalida le firme delle asserzioni con il certificato dai metadati del provider di identità caricato (IdP). L&#39;autenticazione non riesce quando il certificato IdP cambia e i metadati non vengono aggiornati. (FORMS-24679)
+* Dopo l&#39;aggiornamento a AEM Forms Service Pack 6.5.24.0, `server.log` e `error.log` non vengono più visualizzati `[XMLSecurity]` messaggi WARN, ad esempio &quot;Creazione della factory del parser protetto non riuscita. Qualsiasi parser XML creato potrebbe essere vulnerabile agli exploit basati su XML.&quot; I messaggi venivano visualizzati diverse volte al secondo, anche sui server inattivi, e consumavano spazio su disco rapidamente. (FORMS-23717)
+* I componenti sul lato JEE includono ora Apache POI 5.4.0. In precedenza, alcuni bundle includevano ancora Apache POI 3.17 e 3.9, contrassegnati per le scansioni di sicurezza dopo l&#39;aggiornamento ad AEM Forms Service Pack 6.5.24.0. (FORMS-23678)
 
 #### Forms Designer {#forms-designer-6526}
--->
+
+* Miglioramento: Forms Designer e il servizio di output generano segnalibri PDF (Portable Document Format) nidificati dal livello di intestazione 1 ai ruoli di accessibilità di livello di intestazione 6 in file PDF statici interattivi e flat. Il livello di intestazione 1 diventa il segnalibro di primo livello, senza la voce vuota o duplicata precedentemente rimossa manualmente dagli autori in Adobe Acrobat. Per ripristinare il comportamento precedente dei segnalibri, aggiungere `<behaviorOverride>patch-LC-3922369:1</behaviorOverride>` a un file XCI personalizzato. (LC-3923490, LC-3922369)
+* Miglioramento: la selezione di un segnalibro in un file PDF (Portable Document Format) statico interattivo o piatto consente ora di far scorrere l&#39;intestazione corrispondente fino alla parte superiore della pagina. (LC-3923489, LC-3923289)
+* Miglioramento: Forms Designer può aggiungere l&#39;elemento segnalibro `extras` agli oggetti di testo che utilizzano un ruolo di accessibilità da Livello intestazione 1 a Livello intestazione 6. In precedenza, per generare segnalibri, gli autori dovevano aggiungere `<extras name="bookmark">` manualmente in XML Source per ogni intestazione. (FORMS-24361)
 
 
 ### Foundation {#foundation-6526}
@@ -371,7 +382,7 @@ Miglioramento: l’integrazione di Adobe Analytics con Adobe Experience Manager 
 
 #### Platform{#foundation-platform-6526}
 
-* Il collegamento Aiuto nel piè di pagina della pagina di accesso di AEM ora apre una pagina di lavoro. In precedenza, il collegamento puntava a un URL marketing.adobe.com che non esiste più. La configurazione del piè di pagina ora utilizza l&#39;URL [documentazione di Adobe Experience Manager](https://experienceleague.adobe.com/it/docs/experience-manager). (NPR-44388)
+* Il collegamento Aiuto nel piè di pagina della pagina di accesso di AEM ora apre una pagina di lavoro. In precedenza, il collegamento puntava a un URL marketing.adobe.com che non esiste più. La configurazione del piè di pagina ora utilizza l&#39;URL [documentazione di Adobe Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager). (NPR-44388)
 * Miglioramento: una richiesta del cliente ha richiesto l’API del grafico Microsoft come alternativa a SMTP quando AEM invia un’e-mail. Il ticket è stato risolto come duplicato, perché un altro ticket implementa già il flusso API di Graph. SMTP con OAuth 2.0 rimane disponibile per i clienti che devono abbandonare l’autenticazione di base SMTP. (GRANITE-57478)
 
 * Le stringhe nella finestra di dialogo Autorizzazioni effettive ora vengono allineate correttamente nel browser **Strumenti** > **Generale** > **Configurazione**. In precedenza, una stringa veniva visualizzata fuori linea dopo aver selezionato una cartella, fatto clic su Proprietà e su Autorizzazioni effettive. Le regole di layout aggiornate ripristinano l’allineamento. (CQ-4359166)
@@ -612,6 +623,20 @@ Per garantire il corretto funzionamento, è necessario aggiungere le seguenti pr
 
 * Quando un PDF con firma digitale viene allegato a un’attività in AEM Forms JEE Workspace, il caricamento rimane bloccato nello stato di caricamento o non riesce con un errore &quot;File non valido&quot;. Di conseguenza, non è possibile aggiungere all&#39;attività allegati PDF firmati di dimensioni maggiori. Questo problema è stato risolto in una versione successiva. Per un hotfix sulla versione, contatta il supporto Adobe. (FORMS-28517)
 
+* In IBM WebSphere, il caricamento di un file WSDL (Web Services Description Language) tramite l&#39;attività Richiama servizio Web in AEM Forms Workbench può non riuscire con AEM Forms JEE 6.5.26.0 (Service Pack 26), come riportato nella patch 135. La stessa operazione funziona su JBoss. (FORMS-29972)
+
+  **Soluzione:** aggiungere un argomento Java Virtual Machine (JVM) nel server applicazioni WebSphere che ospita AEM Forms JEE. Si tratta di un’impostazione lato server, non di un’impostazione client di Workbench.
+
+  1. Apri la configurazione JVM per l’Application Server WebSphere che ospita AEM Forms JEE.
+  1. Aggiungere l&#39;argomento seguente agli argomenti JVM del server. Mantieni gli argomenti esistenti.
+
+     ```shell
+     -Dcom.adobe.idp.dsc.webservice.loadSOAPClasses=true
+     ```
+
+  1. Salvare la configurazione, quindi riavviare il server applicazioni WebSphere in modo che l&#39;argomento abbia effetto.
+  1. Riconnettiti da AEM Forms Workbench, quindi carica di nuovo il file WSDL nell’attività Richiama servizio web.
+
 #### Problemi noti con gli hotfix disponibili {#aem-forms-issues-with-hotfixes}
 
 Nei seguenti problemi è disponibile un hotfix per il download e l’installazione. Puoi [scaricare e installare l&#39;Hotfix](/help/release-notes/aem-forms-hotfix.md) per risolvere questi problemi:
@@ -639,13 +664,13 @@ I seguenti file zip contengono i documenti di testo che elencano i bundle OSGi e
 Questi siti Web sono disponibili solo per i clienti. Se fai parte della clientela e necessiti dell’accesso, contatta il responsabile dell’account Adobe.
 
 * [Scarica il prodotto all’indirizzo licensing.adobe.com](https://licensing.adobe.com/)
-* Contatta l’[Assistenza Clienti di Adobe](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
+* Contatta l’[Assistenza Clienti di Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] pagina prodotto](https://business.adobe.com/it/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 documentazione](https://experienceleague.adobe.com/it/docs/experience-manager-65)
->* [Iscriviti agli aggiornamenti dei prodotti con priorità Adobe](https://www.adobe.com/it/subscription/priority-product-update.html)
+>* [Iscriviti agli aggiornamenti dei prodotti con priorità Adobe](https://www.adobe.com/subscription/priority-product-update.html)
 
 
 
