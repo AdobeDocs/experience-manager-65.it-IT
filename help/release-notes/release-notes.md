@@ -23,10 +23,10 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 8e3fd4184adcd62256cb7faea6592b06796e7ddf
+source-git-commit: 0619d81cc1270ec91062fc1f4e4ca0a59a388cfc
 workflow-type: tm+mt
-source-wordcount: '8356'
-ht-degree: 2%
+source-wordcount: '8294'
+ht-degree: 3%
 ---
 # [!DNL Adobe Experience Manager] 6.5 Note sulla versione più recente del Service Pack {#aem-service-pack-release-notes}
 
@@ -625,8 +625,6 @@ Per garantire il corretto funzionamento, è necessario aggiungere le seguenti pr
 * In WebLogic con AEM Forms su JEE Service Pack 26 patch 136, il passaggio di Configuration Manager `validateApplicationServerTopology` non riesce in entrambe le modalità GUI e CLI. Per applicare la soluzione alternativa manuale, espandere **4. Installare AEM Forms nel service pack JEE** nelle istruzioni di installazione del service pack [JEE](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md#download-and-install-for-jee-service-pack) e seguire la soluzione alternativa per la convalida della topologia WebLogic. (FORMS-30037)
 
 * Quando un modulo contenente un campo **File allegato** che utilizza `bindref` viene inviato a un flusso di lavoro di AEM con un passaggio **Assegna attività**, gli allegati non vengono visualizzati. Di conseguenza, non vengono visualizzate quando l&#39;attività viene aperta dalla cartella Posta in arrivo. I file vengono salvati correttamente nell’archivio, ma l’interfaccia utente del passaggio Assegna attività non riesce a visualizzare gli allegati. (FORMS-23722)
-
-* Quando un PDF con firma digitale viene allegato a un’attività in AEM Forms JEE Workspace, il caricamento rimane bloccato nello stato di caricamento o non riesce con un errore &quot;File non valido&quot;. Di conseguenza, non è possibile aggiungere all&#39;attività allegati PDF firmati di dimensioni maggiori. Questo problema è stato risolto in una versione successiva. Per un hotfix sulla versione, contatta il supporto Adobe. (FORMS-28517)
 
 * L’importazione di un archivio LiveCycle (LCA) tramite la console di amministrazione o il codice Java (EJB/SOA) può causare il mancato funzionamento delle successive operazioni PDF Generator (PDFG) e ConvertPDF. Questo problema riguarda lo stack JDK e Oracle WebLogic 14c su Windows e Linux con un’istanza di authoring AEM incorporata. (FORMS-30031)
 
